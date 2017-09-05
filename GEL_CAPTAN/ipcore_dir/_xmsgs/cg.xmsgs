@@ -8,19 +8,16 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;ethernet_FIFO&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;EthernetRAM&apos; already exists in the project. Output products for this core may be overwritten.</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;ethernet_FIFO&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;EthernetRAM&apos; already exists in the project. Output products for this core may be overwritten.</arg>
 </msg>
 
-<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;ethernet_FIFO&apos;...</arg>
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;EthernetRAM&apos;...</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">BlackBox generator run option &apos;-ifmt&apos; found multiple times. Only the first occurence is considered.</arg>
-</msg>
-
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/tmp/_cg/ethernet_FIFO/doc/fifo_generator_v9_3_vinfo.html with file from view xilinx_documentation</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/tmp/_cg/EthernetRAM/doc/blk_mem_gen_v7_3_vinfo.html with file from view xilinx_documentation</arg>
 </msg>
 
 <msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
