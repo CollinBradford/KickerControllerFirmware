@@ -1,0 +1,19 @@
+
+NET "PHY_RXCLK" TNM_NET = PHY_RXCLK;
+TIMESPEC TS_PHY_RXCLK = PERIOD "PHY_RXCLK" 8 ns HIGH 50%;
+
+NET "CLK15NS" TNM_NET = CLK15NS;
+TIMESPEC TS_CLK15NS = PERIOD "CLK15NS" 16 ns HIGH 50%;
+
+NET "secondary_clk" TNM_NET = secondary_clk;
+TIMESPEC TS_secondary_clk = PERIOD "secondary_clk" 256 ns HIGH 50%;
+
+
+TIMESPEC "TS_secondary_clk_to_PHY_RXCLK"	= FROM "secondary_clk" TO "PHY_RXCLK" TIG;
+TIMESPEC "TS_secondary_clk_to_CLK15NS" 		= FROM "secondary_clk" TO "CLK15NS" TIG;
+
+TIMESPEC "TS_CLK15NS_to_PHY_RXCLK"			= FROM "CLK15NS" TO "PHY_RXCLK" TIG;
+TIMESPEC "TS_CLK15NS_to_secondary_clk" 		= FROM "CLK15NS" TO "secondary_clk" TIG;
+
+TIMESPEC "TS_PHY_RXCLK_to_secondary_clk"	= FROM "PHY_RXCLK" TO "secondary_clk" TIG;
+TIMESPEC "TS_PHY_RXCLK_to_CLK15NS" 			= FROM "PHY_RXCLK" TO "CLK15NS" TIG;

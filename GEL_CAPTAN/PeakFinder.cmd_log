@@ -1,0 +1,25 @@
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/PeakFinder.sym 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/PeakFinder.sym 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/PeakFinder.sym 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/PeakFinder.sym 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/PeakFinder.sym 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl D:/cbradford/SignalProcessing/GEL_CAPTAN/PeakFinder.sym 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl D:/cbradford/SignalProcessing/GEL_CAPTAN/PeakFinder.sym 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl C:/Users/Collin/Fermilab/NewADCFirmware/GEL_CAPTAN/PeakFinder.sym 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.sym 
+vhdtdtfi -lib work PeakFinder.vhd -prj dig_mac -o PeakFinder.spl -module PeakFinder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PeakFinder.spl D:/cbradford/PulsePerPackage/GEL_CAPTAN/PeakFinder.sym 

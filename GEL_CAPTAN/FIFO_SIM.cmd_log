@@ -1,0 +1,6 @@
+vhdtdtfi -lib work FIFO_SIM.vhd -prj dig_mac -o FIFO_SIM.spl -module FIFO_SIM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 FIFO_SIM.spl D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/FIFO_SIM.sym 
+vhdtdtfi -lib work FIFO_SIM.vhd -prj dig_mac -o FIFO_SIM.spl -module FIFO_SIM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work FIFO_SIM.vhd -prj dig_mac -o FIFO_SIM.spl -module FIFO_SIM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work FIFO_SIM.vhd -prj dig_mac -o FIFO_SIM.spl -module FIFO_SIM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 FIFO_SIM.spl D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/FIFO_SIM.sym 

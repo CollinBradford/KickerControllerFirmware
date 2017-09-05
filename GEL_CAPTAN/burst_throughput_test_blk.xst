@@ -1,0 +1,4 @@
+set -tmpdir "./xst/projnav.tmp"
+elaborate
+-ifn burst_throughput_test_blk.prj
+-ifmt mixed

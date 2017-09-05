@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="DATA_MANAGER">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2011-4-8T15:19:29</timestamp>
+    <pin polarity="Input" x="0" y="-640" name="reset" />
+    <pin polarity="Input" x="0" y="-736" name="MASTER_CLK" />
+    <pin polarity="Input" x="0" y="-688" name="reset_n" />
+    <pin polarity="Input" x="0" y="-224" name="gec_user_rx_size_out(10:0)" />
+    <pin polarity="Input" x="0" y="-544" name="gec_user_crc_err" />
+    <pin polarity="Input" x="0" y="-416" name="gec_user_rx_valid_out" />
+    <pin polarity="Input" x="0" y="-288" name="gec_user_rx_data_out(7:0)" />
+    <pin polarity="Input" x="0" y="-480" name="gec_user_busy" />
+    <pin polarity="Input" x="0" y="-352" name="gec_user_tx_enable_out" />
+    <pin polarity="Input" x="0" y="128" name="b_data_we" />
+    <pin polarity="Input" x="0" y="16" name="tx_data(63:0)" />
+    <pin polarity="Input" x="0" y="192" name="b_data(63:0)" />
+    <pin polarity="Input" x="0" y="256" name="b_end_packet" />
+    <pin polarity="Output" x="736" y="16" name="rx_data(63:0)" />
+    <pin polarity="Output" x="736" y="-112" name="ram_wren" />
+    <pin polarity="Output" x="736" y="-48" name="ram_addr(63:0)" />
+    <pin polarity="Output" x="736" y="-480" name="gec_user_tx_data_in(7:0)" />
+    <pin polarity="Output" x="736" y="-416" name="gec_user_tx_size_in(10:0)" />
+    <pin polarity="Output" x="736" y="-544" name="gec_user_trigger" />
+    <pin polarity="Output" x="736" y="128" name="b_enable" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="368" y="-776" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-640" type="pin reset" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-736" type="pin MASTER_CLK" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-688" type="pin reset_n" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin gec_user_rx_size_out(10:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin gec_user_crc_err" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin gec_user_rx_valid_out" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin gec_user_rx_data_out(7:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin gec_user_busy" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin gec_user_tx_enable_out" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="128" type="pin b_data_we" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="16" type="pin tx_data(63:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="192" type="pin b_data(63:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="256" type="pin b_end_packet" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="664" y="16" type="pin rx_data(63:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="664" y="-112" type="pin ram_wren" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="664" y="-48" type="pin ram_addr(63:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="664" y="-480" type="pin gec_user_tx_data_in(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="664" y="-416" type="pin gec_user_tx_size_in(10:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="664" y="-544" type="pin gec_user_trigger" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="664" y="128" type="pin b_enable" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <rect width="64" x="0" y="-300" height="24" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <rect width="64" x="0" y="-236" height="24" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <line x2="736" y1="-544" y2="-544" x1="672" />
+        <line x2="736" y1="-480" y2="-480" x1="672" />
+        <rect width="64" x="672" y="-492" height="24" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <line x2="736" y1="-416" y2="-416" x1="672" />
+        <rect width="64" x="672" y="-428" height="24" />
+        <line x2="0" y1="-736" y2="-736" x1="64" />
+        <line x2="736" y1="-48" y2="-48" x1="672" />
+        <rect width="64" x="672" y="-60" height="24" />
+        <line x2="736" y1="-112" y2="-112" x1="672" />
+        <line x2="736" y1="128" y2="128" x1="672" />
+        <line x2="0" y1="128" y2="128" x1="64" />
+        <line x2="0" y1="256" y2="256" x1="64" />
+        <rect width="64" x="0" y="180" height="24" />
+        <line x2="0" y1="192" y2="192" x1="64" />
+        <line x2="0" y1="-688" y2="-688" x1="64" />
+        <line x2="0" y1="-640" y2="-640" x1="64" />
+        <rect width="608" x="64" y="-768" height="1056" />
+        <rect width="64" x="0" y="4" height="24" />
+        <line x2="0" y1="16" y2="16" x1="64" />
+        <rect width="64" x="672" y="4" height="24" />
+        <line x2="736" y1="16" y2="16" x1="672" />
+    </graph>
+</symbol>

@@ -1,0 +1,13 @@
+[Inputs]
+Reset
+Clk
+CRC_init
+CRC_en
+CRC_chk_en
+=CRC_data[7:0]=
+[Outputs]
+CRC_err
+[BiDir]
+[ATTRIBUTES]
+VeriModel CRC_chk
+

@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family virtex4 -refsym stat_pulse_module D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sch D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sym 
+sch2sym -intstyle ise -family virtex4 -refsym stat_pulse_module D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sch D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sym 
+sch2sym -intstyle ise -family virtex4 -refsym stat_pulse_module D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sch D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sym 
+sch2sym -intstyle ise -family virtex4 -w -refsym stat_pulse_module D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sch D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sym 
+sch2sym -intstyle ise -family virtex4 -w -refsym stat_pulse_module D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sch D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.sym 

@@ -1,0 +1,13 @@
+[Inputs]
+clka
+clkb
+=dina[63:0]=
+=addra[5:0]=
+=wea[0:0]=
+=dinb[63:0]=
+=addrb[5:0]=
+=web[0:0]=
+[Outputs]
+=douta[63:0]=
+=doutb[63:0]=
+[BiDir]

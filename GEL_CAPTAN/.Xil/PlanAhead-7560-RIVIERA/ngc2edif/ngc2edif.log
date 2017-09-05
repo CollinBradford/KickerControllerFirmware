@@ -1,0 +1,61 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design TOP_LEVEL_cs.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SRL
+   16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_SRL16.U_GAND_SR
+   L16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_SRL16.U_GAND_SR
+   L16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_G
+   ANDX_SRL16/sel<158 : 0> on block ila_pro_0 is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_pro is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_req_chk_sum_sig_15_add0000_lut<15 :
+   0> on block icmp_ping_checksum_calc is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_udp_data_valid_sig_cmp_gt0000_lut<4 : 0> on block decipherer is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_zero_fill_count_not0000<10 : 0> on
+   block create_packet is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_tx_data_count_addsub0000_cy<8 : 3>
+   on block tx_seq_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_qw_count_addsub0000_cy<6 : 3> on
+   block tx_seq_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_mem_loc_count_reg_addsub0000_cy<5 :
+   2> on block ram_comm_dec is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_q_w_count_addsub0000_cy<5 : 3> on
+   block rx_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_q_w_counter_addsub0000_cy<5 : 2> on
+   block rx_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ots_dout<63 : 0> on block
+   ethernet_interface is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file TOP_LEVEL_cs.edif ...
+ngc2edif: Total memory usage is 98648 kilobytes
+

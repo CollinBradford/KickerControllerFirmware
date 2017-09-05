@@ -1,0 +1,10 @@
+[Inputs]
+clock
+reset_n
+we
+=addr[63:0]=
+=data[31:0]=
+[Outputs]
+wr_out
+=data_out[31:0]=
+[BiDir]

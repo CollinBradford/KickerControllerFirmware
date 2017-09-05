@@ -1,0 +1,4 @@
+set -tmpdir "./xst/projnav.tmp"
+elaborate
+-ifn GEC_RX_DATA_MUX.prj
+-ifmt mixed

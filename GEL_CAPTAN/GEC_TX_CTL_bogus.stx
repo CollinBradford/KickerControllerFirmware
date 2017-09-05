@@ -1,0 +1,30 @@
+Release 10.1.01 - xst K.34 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/aprosser/Desktop/dig_mac_GEL-CAPTAN-J1_3/dig-mac_GEL_V02/GEL_CAPTAN/params_package.vhd" in Library work.
+Architecture params_package of Entity params_package is up to date.
+Compiling vhdl file "//blue1/cd_ese_projects/CAPTAN/DAQ/Firmware/GEC_TX_CTL_bogus.vhd" in Library work.
+Entity <gec_tx_ctl_bogus> compiled.
+Entity <gec_tx_ctl_bogus> (Architecture <gec_tx_ctl_bogus>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.34 secs
+ 
+--> 
+
+Total memory usage is 104008 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

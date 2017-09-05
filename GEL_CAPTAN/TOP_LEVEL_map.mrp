@@ -1,0 +1,661 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'TOP_LEVEL'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc4vlx25-ff668-10 -timing -logic_opt on -ol std -t 1 -register_duplication off
+-global_opt off -ir off -pr off -u -power off -o TOP_LEVEL_map.ncd TOP_LEVEL.ngd TOP_LEVEL.pcf 
+Target Device  : xc4vlx25
+Target Package : ff668
+Target Speed   : -10
+Mapper Version : virtex4 -- $Revision: 1.55 $
+Mapped Date    : Thu Jul 27 11:30:10 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  122
+Logic Utilization:
+  Total Number Slice Registers:       3,822 out of  21,504   17%
+    Number used as Flip Flops:        3,821
+    Number used as Latches:               1
+  Number of 4 input LUTs:             5,221 out of  21,504   24%
+Logic Distribution:
+  Number of occupied Slices:          4,311 out of  10,752   40%
+    Number of Slices containing only related logic:   4,311 out of   4,311 100%
+    Number of Slices containing unrelated logic:          0 out of   4,311   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       5,517 out of  21,504   25%
+    Number used as logic:             4,363
+    Number used as a route-thru:        296
+    Number used for Dual Port RAMs:     384
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:     474
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  Number of bonded LOWCAPIOBs              2 out of     112    1%
+  Number of bonded IOBs:                 79 out of     448   17%
+  Number of BUFG/BUFGCTRLs:              11 out of      32   34%
+    Number used as BUFGs:                11
+  Number of FIFO16/RAMB16s:              47 out of      72   65%
+    Number used as RAMB16s:              47
+  Number of DCM_ADVs:                     5 out of       8   62%
+  Number of BSCAN_VIRTEX4s:               1 out of       4   25%
+  Number of IDELAYCTRLs:                  1 out of      16    6%
+
+  Number of RPM macros:           12
+Average Fanout of Non-Clock Nets:                3.34
+
+Peak Memory Usage:  641 MB
+Total REAL time to MAP completion:  1 mins 
+Total CPU time to MAP completion:   58 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
+   "XLXI_5952" (output signal=CLK_187_5) has a mix of clock and non-clock loads.
+   The non-clock loads are:
+   Pin I1 of XLXI_6004/I_36_8
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
+   "XLXI_5993" (output signal=CLK_375) has a mix of clock and non-clock loads.
+   The non-clock loads are:
+   Pin I2 of XLXI_6004/I_36_8
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_i> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<5>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<4>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D9> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D10> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
+   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.r
+   sts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
+   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/empty> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_data_fifo_empty> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/RX_DATA_FIFO/empty> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<0>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<4>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<5>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<6>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<7>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<9>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<0>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<6>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<7>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<2>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<5>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<9>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<8>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<9>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<15>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss
+   .wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.w
+   sts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<35>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<10>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<12>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<14>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<15>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<21>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<11>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<14>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<11>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<12>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<22>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<14>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<24>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<25>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<28>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<29>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6004/O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
+   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss
+   .rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<18>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<23>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<11>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<7>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<16>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<27>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<33>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<34>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<31>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<10>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<26>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<32>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<17>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<30>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
+   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<14>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<15>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<13>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<11>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<4>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<10>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<8>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<10>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<6>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<7>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<8>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<10>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<5>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<9>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D11> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<3>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<15>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D12> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<2>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<2>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<3>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<12>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<13>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<4>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<15>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<13>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<0>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<3>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<7>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<8>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<4>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<1>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<2>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<12>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D15> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<12>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<1>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<3>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<1>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<5>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<11>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6296/Q<13>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6298/Q<0>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6299/Q<6>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6297/Q<1>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/full> is incomplete. The signal does
+   not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network icon_control0<10> has no load.
+INFO:LIT:395 - The above info message is repeated 336 more times for the
+   following (max. 5 shown):
+   icon_control0<11>,
+   icon_control0<15>,
+   icon_control0<21>,
+   icon_control0<16>,
+   icon_control0<22>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of
+   the DCM_ADV comp XLXI_3410, consult the device Data Sheet.
+INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of
+   the DCM_ADV comp XLXI_5949, consult the device Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  38 block(s) removed
+ 314 block(s) optimized away
+   3 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[1].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSR" (ROM) removed.
+Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B"
+(ROM) removed.
+Loadless block "XLXI_6009" (CKBUF) removed.
+Loadless block "XLXI_6202" (CKBUF) removed.
+ The signal "XLXN_15092" is loadless and has been removed.
+Loadless block "XLXI_6291" (BUF) removed.
+Loadless block "XLXI_6323" (SFF) removed.
+ The signal "psudo_data_select_map" is loadless and has been removed.
+  Loadless block "XLXI_3432/I_36_53" (AND) removed.
+Loadless block "XLXI_6324" (SFF) removed.
+Loadless block "XLXI_6325" (SFF) removed.
+Loadless block "XLXI_6339" (BUF) removed.
+ The signal "EbufValid" is loadless and has been removed.
+  Loadless block
+"XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
+hf.rhf/ram_valid_d1" (FF) removed.
+Loadless block "XLXI_6369" (BUF) removed.
+Unused block "XLXI_6227/data_manager_blk/RX_DATA_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/RX_DATA_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_DATA_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_DATA_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		U_icon_pro/XST_GND
+VCC 		U_icon_pro/XST_VCC
+LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
+   optimized to 0
+GND 		U_ila_pro_0/XST_GND
+VCC 		U_ila_pro_0/XST_VCC
+GND 		XLXI_4359/XST_GND
+VCC 		XLXI_4359/XST_VCC
+GND 		XLXI_5338/XST_GND
+GND 		XLXI_6185/XST_GND
+VCC 		XLXI_6185/XST_VCC
+GND 		XLXI_6227/XST_GND
+VCC 		XLXI_6227/XST_VCC
+GND 		XLXI_6227/burst_traffic_controller_blk/XST_GND
+VCC 		XLXI_6227/burst_traffic_controller_blk/XST_VCC
+GND 		XLXI_6227/data_manager_blk/GEC_RX_CTRL/XST_GND
+VCC 		XLXI_6227/data_manager_blk/GEC_RX_CTRL/XST_VCC
+GND 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_GND
+VCC 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_VCC
+GND 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_GND
+VCC 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_VCC
+GND 		XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/burst_controller_sm/XST_GND
+GND 		XLXI_6227/ec_wrapper/crcSplice/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/AddressContainer/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/ArpReplyBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ArpReplyBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingChecksumCalcBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingChecksumCalcBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/XST_VCC
+GND 		XLXI_6227/reset_mgr/XST_GND
+VCC 		XLXI_6227/reset_mgr/XST_VCC
+GND 		XLXI_6248/XST_GND
+VCC 		XLXI_6248/XST_VCC
+GND 		XLXI_6253/XST_GND
+VCC 		XLXI_6253/XST_VCC
+GND 		XLXI_6341/XST_GND
+VCC 		XLXI_6341/XST_VCC
+GND 		XLXI_6349/XST_GND
+VCC 		XLXI_6349/XST_VCC
+GND 		XLXI_6351
+VCC 		XLXI_6368
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BUSA_26DN_53S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_26DP_52S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_28DN_57S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_28DP_56S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_29DN_59S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_29DP_58S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_30DN_61S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_30DP_60S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSBHS_02DN_05S                    | LOWCAPIOB        | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSBHS_02DP_04S                    | LOWCAPIOB        | INPUT     | LVDS_25              | TRUE  |          |      |              |          | 0        |
+| BUSBHS_03DN_07S                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSBHS_03DP_06S                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSB_00DN_01S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_00DP_00S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_01DN_03S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_01DP_02S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_02DN_05S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_02DP_04S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_03DN_07S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_03DP_06S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_04DN_09S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_04DP_08S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_05DN_11S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_05DP_10S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_06DN_13S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_06DP_12S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_07DN_15S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_07DP_14S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_08DN_17S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_08DP_16S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_09DN_19S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_09DP_18S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_10DN_21S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_10DP_20S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_11DN_23S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_11DP_22S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_12DN_25S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_12DP_24S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_13DN_27S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_13DP_26S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_14DN_29S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_14DP_28S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_15DN_31S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSB_15DP_30S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSC_14DN_29S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_14DP_28S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_15DN_31S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_15DP_30S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_16DN_33S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_16DP_32S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_17DN_35S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_17DP_34S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_18DN_37S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_18DP_36S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_19DN_39S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_19DP_38S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_20DN_41S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_20DP_40S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_21DN_43S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_24DN_49S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_24DP_48S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_25DN_51S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_25DP_50S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_26DN_53S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_27DN_55S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_27DP_54S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSDD_00DP_00S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_01DP_02S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_02DP_04S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_03DP_06S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_04DP_08S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_05DP_10S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| GEL_RXCLK                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| GENERAL_12DN_25S                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| GENERAL_12DP_24S                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| INTERNAL_08DN_17S                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| INTERNAL_08DP_16S                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SECONDARY_CLK                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| U10_1                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| U10_2                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| U10_3                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CDONE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCMPCE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WHCMPCE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WLCMPCE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_SCNT_CMP_I_SRL16.U
+_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_HCMP_I_SRL16.
+U_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_LCMP_I_SRL16.
+U_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_
+SRL16.U_GANDX_SRL16_MSET
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,2 @@
+vhdl work "params_package.vhd"
+vhdl work "//blue1/cd_ese_projects/CAPTAN/DAQ/Firmware/GEC_TX_CTL_bogus.vhd"

@@ -1,0 +1,30 @@
+Release 10.1.01 - xst K.34 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/rrivera/Desktop/CAPTAN FIRMWARE/dig-mac_GEL_V02/GEL_CAPTAN/params_package.vhd" in Library work.
+Architecture params_package of Entity params_package is up to date.
+Compiling vhdl file "C:/Documents and Settings/rrivera/Desktop/CAPTAN FIRMWARE/dig-mac_GEL_V02/GEL_CAPTAN/GEC_RX_CTL_8.vhd" in Library work.
+Entity <gec_rx_ctl_8> compiled.
+ERROR:HDLParsers:800 - "C:/Documents and Settings/rrivera/Desktop/CAPTAN FIRMWARE/dig-mac_GEL_V02/GEL_CAPTAN/GEC_RX_CTL_8.vhd" Line 71. Type of state_machine_out is incompatible with type of Sreg0.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> 
+
+Total memory usage is 104012 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

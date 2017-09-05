@@ -1,0 +1,13 @@
+run
+-ifmt VHDL
+-ent buf_one_exdes
+-p xc4vlx25-ff668-10
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn buf_one_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain

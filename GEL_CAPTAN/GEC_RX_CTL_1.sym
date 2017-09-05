@@ -1,0 +1,89 @@
+VERSION 5
+BEGIN SYMBOL GEC_RX_CTL_1
+SYMBOLTYPE BLOCK
+TIMESTAMP 2008 6 18 15 27 41
+SYMPIN 0 -544 Input block_en
+SYMPIN 0 -480 Input clock
+SYMPIN 0 -416 Input data_fifo_full
+SYMPIN 0 -352 Input data_fifo_wrerr
+SYMPIN 0 -288 Input gec_user_crc_err
+SYMPIN 0 -224 Input gec_user_rx_valid_out
+SYMPIN 0 -160 Input reset_n
+SYMPIN 0 -96 Input gec_user_rx_data_out(7:0)
+SYMPIN 0 -32 Input gec_user_rx_size_out(10:0)
+SYMPIN 752 -544 Output crc_err_flag
+SYMPIN 752 -416 Output data_fifo_wren
+SYMPIN 752 -288 Output info_fifo_wren
+SYMPIN 752 -160 Output data_fifo_q_w_data(63:0)
+SYMPIN 752 -32 Output info_fifo_wr_data(15:0)
+RECTANGLE N 64 -576 688 0 
+BEGIN DISPLAY 376 -584 ATTR SymbolName
+    ALIGNMENT BCENTER
+    FONT 56 "Arial"
+END DISPLAY
+BEGIN DISPLAY 72 -544 PIN block_en ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -544 0 -544 
+BEGIN DISPLAY 72 -480 PIN clock ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -480 0 -480 
+BEGIN DISPLAY 72 -416 PIN data_fifo_full ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -416 0 -416 
+BEGIN DISPLAY 72 -352 PIN data_fifo_wrerr ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -352 0 -352 
+BEGIN DISPLAY 72 -288 PIN gec_user_crc_err ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -288 0 -288 
+BEGIN DISPLAY 72 -224 PIN gec_user_rx_valid_out ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -224 0 -224 
+BEGIN DISPLAY 72 -160 PIN reset_n ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -160 0 -160 
+BEGIN DISPLAY 72 -96 PIN gec_user_rx_data_out(7:0) ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+RECTANGLE N 0 -108 64 -84 
+LINE N 64 -96 0 -96 
+BEGIN DISPLAY 72 -32 PIN gec_user_rx_size_out(10:0) ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+RECTANGLE N 0 -44 64 -20 
+LINE N 64 -32 0 -32 
+BEGIN DISPLAY 680 -544 PIN crc_err_flag ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 688 -544 752 -544 
+BEGIN DISPLAY 680 -416 PIN data_fifo_wren ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 688 -416 752 -416 
+BEGIN DISPLAY 680 -288 PIN info_fifo_wren ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 688 -288 752 -288 
+BEGIN DISPLAY 680 -160 PIN data_fifo_q_w_data(63:0) ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+RECTANGLE N 688 -172 752 -148 
+LINE N 688 -160 752 -160 
+BEGIN DISPLAY 680 -32 PIN info_fifo_wr_data(15:0) ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+RECTANGLE N 688 -44 752 -20 
+LINE N 688 -32 752 -32 
+END SYMBOL

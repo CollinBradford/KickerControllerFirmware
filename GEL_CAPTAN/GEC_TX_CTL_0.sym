@@ -1,0 +1,92 @@
+VERSION 5
+BEGIN SYMBOL GEC_TX_CTL_0
+SYMBOLTYPE BLOCK
+TIMESTAMP 2008 6 10 16 35 20
+SYMPIN 0 -608 Input gec_user_busy
+SYMPIN 0 -544 Input gec_user_tx_enable_out
+SYMPIN 0 -368 Input data_fifo_empty
+SYMPIN 0 -432 Input data_fifo_rderr
+SYMPIN 0 -256 Input info_fifo_rd_data(15:0)
+SYMPIN 0 -192 Input info_fifo_empty
+SYMPIN 0 -128 Input info_fifo_rderr
+SYMPIN 0 112 Input clk
+SYMPIN 0 48 Input reset_n
+SYMPIN 0 -16 Input block_en
+SYMPIN 736 -608 Output gec_user_trigger
+SYMPIN 736 -544 Output gec_user_tx_size_in(10:0)
+SYMPIN 736 -336 Output info_fifo_rden
+SYMPIN 736 -80 Output data_fifo_rden_en
+SYMPIN 736 -144 Output data_fifo_rden
+RECTANGLE N 64 -640 672 136 
+BEGIN DISPLAY 328 -648 ATTR SymbolName
+    ALIGNMENT BCENTER
+    FONT 56 "Arial"
+END DISPLAY
+BEGIN DISPLAY 72 -608 PIN gec_user_busy ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -608 0 -608 
+BEGIN DISPLAY 72 -544 PIN gec_user_tx_enable_out ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -544 0 -544 
+BEGIN DISPLAY 72 -368 PIN data_fifo_empty ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -368 0 -368 
+BEGIN DISPLAY 72 -432 PIN data_fifo_rderr ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -432 0 -432 
+BEGIN DISPLAY 72 -256 PIN info_fifo_rd_data(15:0) ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+RECTANGLE N 0 -268 64 -244 
+LINE N 64 -256 0 -256 
+BEGIN DISPLAY 72 -192 PIN info_fifo_empty ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -192 0 -192 
+BEGIN DISPLAY 72 -128 PIN info_fifo_rderr ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -128 0 -128 
+BEGIN DISPLAY 72 112 PIN clk ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 112 0 112 
+BEGIN DISPLAY 72 48 PIN reset_n ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 48 0 48 
+BEGIN DISPLAY 72 -16 PIN block_en ATTR PinName
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 64 -16 0 -16 
+BEGIN DISPLAY 664 -608 PIN gec_user_trigger ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 672 -608 736 -608 
+RECTANGLE N 672 -556 736 -532 
+LINE N 672 -544 736 -544 
+BEGIN DISPLAY 664 -544 PIN gec_user_tx_size_in(10:0) ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+BEGIN DISPLAY 664 -336 PIN info_fifo_rden ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 672 -336 736 -336 
+BEGIN DISPLAY 664 -80 PIN data_fifo_rden_en ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 672 -80 736 -80 
+BEGIN DISPLAY 664 -144 PIN data_fifo_rden ATTR PinName
+    ALIGNMENT RIGHT
+    FONT 24 "Arial"
+END DISPLAY
+LINE N 672 -144 736 -144 
+END SYMBOL

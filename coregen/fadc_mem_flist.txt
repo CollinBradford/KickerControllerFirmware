@@ -1,0 +1,22 @@
+# Output products list for <fadc_mem>
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+fadc_mem.gise
+fadc_mem.ngc
+fadc_mem.vhd
+fadc_mem.vho
+fadc_mem.xco
+fadc_mem.xise
+fadc_mem_flist.txt
+fadc_mem_ste\example_design\bmg_wrapper.vhd
+fadc_mem_ste\example_design\fadc_mem_top.ucf
+fadc_mem_ste\example_design\fadc_mem_top.vhd
+fadc_mem_ste\example_design\fadc_mem_top.xdc
+fadc_mem_ste\implement\implement.sh
+fadc_mem_ste\implement\planAhead_rdn.bat
+fadc_mem_ste\implement\planAhead_rdn.sh
+fadc_mem_ste\implement\planAhead_rdn.tcl
+fadc_mem_ste\implement\xst.prj
+fadc_mem_ste\implement\xst.scr
+fadc_mem_xmdf.tcl
+summary.log

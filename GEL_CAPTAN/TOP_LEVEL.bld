@@ -1,0 +1,691 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ../ipcore_dir -sd ipcore_dir -aul -nt timestamp -uc
+TOP_LEVEL.ucf -p xc4vlx25-ff668-10 TOP_LEVEL_cs.ngc TOP_LEVEL.ngd
+
+Reading NGO file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL_cs.ngc" ...
+Gathering constraint information from source properties...
+Done.
+INFO:NgdBuild:889 - Pad net 'adc_fifo_overflow' is not connected to an external
+   port in this design.  A new port 'adc_fifo_overflow' has been added and is
+   connected to this signal.
+INFO:NgdBuild:889 - Pad net 'ethernet_fifo_overflow' is not connected to an
+   external port in this design.  A new port 'ethernet_fifo_overflow' has been
+   added and is connected to this signal.
+
+Annotating constraints to design from ucf file "TOP_LEVEL.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_00DP_00S"LOC = D10;>
+   [TOP_LEVEL.ucf(285)]: NET "BUSA_00DP_00S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_00DP_00S"LOC = D10;> [TOP_LEVEL.ucf(285)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_00DP_00S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(286)]: INST "BUSA_00DP_00S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_00DN_01S"LOC = C10;>
+   [TOP_LEVEL.ucf(287)]: NET "BUSA_00DN_01S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_00DN_01S"LOC = C10;> [TOP_LEVEL.ucf(287)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_00DN_01S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(288)]: INST "BUSA_00DN_01S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_01DP_02S"LOC = D9;>
+   [TOP_LEVEL.ucf(289)]: NET "BUSA_01DP_02S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_01DP_02S"LOC = D9;> [TOP_LEVEL.ucf(289)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_01DP_02S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(290)]: INST "BUSA_01DP_02S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_01DN_03S"LOC = C8;>
+   [TOP_LEVEL.ucf(291)]: NET "BUSA_01DN_03S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_01DN_03S"LOC = C8;> [TOP_LEVEL.ucf(291)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_01DN_03S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(292)]: INST "BUSA_01DN_03S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_02DP_04S"LOC = A8;>
+   [TOP_LEVEL.ucf(293)]: NET "BUSA_02DP_04S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_02DP_04S"LOC = A8;> [TOP_LEVEL.ucf(293)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_02DP_04S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(294)]: INST "BUSA_02DP_04S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_02DN_05S"LOC = A7;>
+   [TOP_LEVEL.ucf(295)]: NET "BUSA_02DN_05S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_02DN_05S"LOC = A7;> [TOP_LEVEL.ucf(295)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_02DN_05S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(296)]: INST "BUSA_02DN_05S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_03DP_06S"LOC = D8;>
+   [TOP_LEVEL.ucf(297)]: NET "BUSA_03DP_06S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_03DP_06S"LOC = D8;> [TOP_LEVEL.ucf(297)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_03DP_06S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(298)]: INST "BUSA_03DP_06S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_03DN_07S"LOC = D7;>
+   [TOP_LEVEL.ucf(299)]: NET "BUSA_03DN_07S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_03DN_07S"LOC = D7;> [TOP_LEVEL.ucf(299)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_03DN_07S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(300)]: INST "BUSA_03DN_07S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_04DP_08S"LOC = F10;>
+   [TOP_LEVEL.ucf(301)]: NET "BUSA_04DP_08S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_04DP_08S"LOC = F10;> [TOP_LEVEL.ucf(301)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_04DP_08S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(302)]: INST "BUSA_04DP_08S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_04DN_09S"LOC = E10;>
+   [TOP_LEVEL.ucf(303)]: NET "BUSA_04DN_09S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_04DN_09S"LOC = E10;> [TOP_LEVEL.ucf(303)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_04DN_09S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(304)]: INST "BUSA_04DN_09S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_05DP_10S"LOC = A6;>
+   [TOP_LEVEL.ucf(305)]: NET "BUSA_05DP_10S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_05DP_10S"LOC = A6;> [TOP_LEVEL.ucf(305)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_05DP_10S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(306)]: INST "BUSA_05DP_10S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_05DN_11S"LOC = A5;>
+   [TOP_LEVEL.ucf(307)]: NET "BUSA_05DN_11S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_05DN_11S"LOC = A5;> [TOP_LEVEL.ucf(307)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_05DN_11S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(308)]: INST "BUSA_05DN_11S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_06DP_12S"LOC = E9;>
+   [TOP_LEVEL.ucf(309)]: NET "BUSA_06DP_12S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_06DP_12S"LOC = E9;> [TOP_LEVEL.ucf(309)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_06DP_12S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(310)]: INST "BUSA_06DP_12S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_06DN_13S"LOC = F9;>
+   [TOP_LEVEL.ucf(311)]: NET "BUSA_06DN_13S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_06DN_13S"LOC = F9;> [TOP_LEVEL.ucf(311)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_06DN_13S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(312)]: INST "BUSA_06DN_13S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_07DP_14S"LOC = E7;>
+   [TOP_LEVEL.ucf(313)]: NET "BUSA_07DP_14S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_07DP_14S"LOC = E7;> [TOP_LEVEL.ucf(313)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_07DP_14S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(314)]: INST "BUSA_07DP_14S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_07DN_15S"LOC = D6;>
+   [TOP_LEVEL.ucf(315)]: NET "BUSA_07DN_15S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_07DN_15S"LOC = D6;> [TOP_LEVEL.ucf(315)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_07DN_15S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(316)]: INST "BUSA_07DN_15S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_08DP_16S"LOC = E6;>
+   [TOP_LEVEL.ucf(317)]: NET "BUSA_08DP_16S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_08DP_16S"LOC = E6;> [TOP_LEVEL.ucf(317)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_08DP_16S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(318)]: INST "BUSA_08DP_16S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_08DN_17S"LOC = E5;>
+   [TOP_LEVEL.ucf(319)]: NET "BUSA_08DN_17S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_08DN_17S"LOC = E5;> [TOP_LEVEL.ucf(319)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_08DN_17S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(320)]: INST "BUSA_08DN_17S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_09DP_18S"LOC = F7;>
+   [TOP_LEVEL.ucf(321)]: NET "BUSA_09DP_18S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_09DP_18S"LOC = F7;> [TOP_LEVEL.ucf(321)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_09DP_18S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(322)]: INST "BUSA_09DP_18S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_09DN_19S"LOC = G7;>
+   [TOP_LEVEL.ucf(323)]: NET "BUSA_09DN_19S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_09DN_19S"LOC = G7;> [TOP_LEVEL.ucf(323)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_09DN_19S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(324)]: INST "BUSA_09DN_19S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_10DP_20S"LOC = C2;>
+   [TOP_LEVEL.ucf(325)]: NET "BUSA_10DP_20S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_10DP_20S"LOC = C2;> [TOP_LEVEL.ucf(325)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_10DP_20S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(326)]: INST "BUSA_10DP_20S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_10DN_21S"LOC = C1;>
+   [TOP_LEVEL.ucf(327)]: NET "BUSA_10DN_21S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_10DN_21S"LOC = C1;> [TOP_LEVEL.ucf(327)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_10DN_21S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(328)]: INST "BUSA_10DN_21S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_11DP_22S"LOC = H8;>
+   [TOP_LEVEL.ucf(329)]: NET "BUSA_11DP_22S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_11DP_22S"LOC = H8;> [TOP_LEVEL.ucf(329)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_11DP_22S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(330)]: INST "BUSA_11DP_22S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_11DN_23S"LOC = H7;>
+   [TOP_LEVEL.ucf(331)]: NET "BUSA_11DN_23S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_11DN_23S"LOC = H7;> [TOP_LEVEL.ucf(331)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_11DN_23S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(332)]: INST "BUSA_11DN_23S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_12DP_24S"LOC = D3;>
+   [TOP_LEVEL.ucf(333)]: NET "BUSA_12DP_24S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_12DP_24S"LOC = D3;> [TOP_LEVEL.ucf(333)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_12DP_24S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(334)]: NET "BUSA_12DP_24S" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_12DN_25S"LOC = E4;>
+   [TOP_LEVEL.ucf(335)]: NET "BUSA_12DN_25S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_12DN_25S"LOC = E4;> [TOP_LEVEL.ucf(335)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_12DN_25S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(336)]: INST "BUSA_12DN_25S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_13DP_26S"LOC = G6;>
+   [TOP_LEVEL.ucf(337)]: NET "BUSA_13DP_26S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_13DP_26S"LOC = G6;> [TOP_LEVEL.ucf(337)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_13DP_26S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(338)]: INST "BUSA_13DP_26S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_13DN_27S"LOC = G5;>
+   [TOP_LEVEL.ucf(339)]: NET "BUSA_13DN_27S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_13DN_27S"LOC = G5;> [TOP_LEVEL.ucf(339)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_13DN_27S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(340)]: INST "BUSA_13DN_27S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_14DP_28S"LOC = F8;>
+   [TOP_LEVEL.ucf(341)]: NET "BUSA_14DP_28S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_14DP_28S"LOC = F8;> [TOP_LEVEL.ucf(341)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_14DP_28S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(342)]: NET "BUSA_14DP_28S" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_14DN_29S"LOC = G8;>
+   [TOP_LEVEL.ucf(343)]: NET "BUSA_14DN_29S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_14DN_29S"LOC = G8;> [TOP_LEVEL.ucf(343)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_14DN_29S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(344)]: INST "BUSA_14DN_29S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_15DP_30S"LOC = B7;>
+   [TOP_LEVEL.ucf(345)]: NET "BUSA_15DP_30S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_15DP_30S"LOC = B7;> [TOP_LEVEL.ucf(345)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_15DP_30S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(346)]: INST "BUSA_15DP_30S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_15DN_31S"LOC = C7;>
+   [TOP_LEVEL.ucf(347)]: NET "BUSA_15DN_31S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_15DN_31S"LOC = C7;> [TOP_LEVEL.ucf(347)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_15DN_31S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(348)]: INST "BUSA_15DN_31S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:178 - TNM 'GEL_RXCLK', used in period specification
+   'TS_GEL_RXCLK', was traced into DCM_ADV instance XLXI_3410. The following new
+   TNM groups and period specifications were generated at the DCM_ADV output(s):
+    
+   CLKFX: <TIMESPEC TS_XLXN_12257 = PERIOD "XLXN_12257" TS_GEL_RXCLK / 1.6 HIGH
+   50%>
+
+INFO:ConstraintSystem:178 - TNM 'GEL_RXCLK', used in period specification
+   'TS_GEL_RXCLK', was traced into DCM_ADV instance XLXI_5949. The following new
+   TNM groups and period specifications were generated at the DCM_ADV output(s):
+    
+   CLKFX: <TIMESPEC TS_XLXN_12669 = PERIOD "XLXN_12669" TS_GEL_RXCLK / 1.5 HIGH
+   50%>
+
+INFO:ConstraintSystem:178 - TNM 'BUSBHS_02DN_05S', used in period specification
+   'TS_BUSBHS_02DN_05S', was traced into DCM_ADV instance XLXI_6199. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLK0: <TIMESPEC TS_XLXN_15087 = PERIOD "XLXN_15087" TS_BUSBHS_02DN_05S HIGH
+   50%>
+
+INFO:ConstraintSystem:178 - TNM 'BUSBHS_02DP_04S', used in period specification
+   'TS_BUSBHS_02DP_04S', was traced into DCM_ADV instance XLXI_6199. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLK0: <TIMESPEC TS_XLXN_15087_0 = PERIOD "XLXN_15087_0" TS_BUSBHS_02DP_04S
+   HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XLXN_12669', used in period specification
+   'TS_XLXN_12669', was traced into DCM_ADV instance XLXI_5953. The following
+   new TNM groups and period specifications were generated at the DCM_ADV
+   output(s): 
+   CLK2X: <TIMESPEC TS_XLXN_12781 = PERIOD "XLXN_12781" TS_XLXN_12669 / 2 HIGH
+   50%>
+
+Done...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (5.33333333)
+   was detected for the CLKIN_PERIOD attribute on DCM "XLXI_5953".  This does
+   not match the PERIOD constraint value (5.33333333 ns.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+WARNING:NgdBuild:1212 - User specified non-default attribute value (2.66666667)
+   was detected for the CLKIN_PERIOD attribute on DCM "XLXI_5963".  This does
+   not match the PERIOD constraint value (2.66666667 ns.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+WARNING:NgdBuild:1212 - User specified non-default attribute value (5.33333333)
+   was detected for the CLKIN_PERIOD attribute on DCM "XLXI_6199".  This does
+   not match the PERIOD constraint value (5 ns.).  The uncertainty calculation
+   will use the non-default attribute value.  This could result in incorrect
+   uncertainty calculated for DCM output clocks.
+WARNING:NgdBuild:1212 - User specified non-default attribute value (5.33333333)
+   was detected for the CLKIN_PERIOD attribute on DCM "XLXI_6199".  This does
+   not match the PERIOD constraint value (5 ns.).  The uncertainty calculation
+   will use the non-default attribute value.  This could result in incorrect
+   uncertainty calculated for DCM output clocks.
+Checking expanded design ...
+ERROR:NgdBuild:604 - logical block 'XLXI_6378' with type 'MUX16_2' could not be
+   resolved. A pin name misspelling can cause this, a missing edif or ngc file,
+   case mismatch between the block name and the edif or ngc file name, or the
+   misspelling of a type name. Symbol 'MUX16_2' is not supported in target
+   'virtex4'.
+ERROR:NgdBuild:604 - logical block 'XLXI_6379' with type 'MUX16_2' could not be
+   resolved. A pin name misspelling can cause this, a missing edif or ngc file,
+   case mismatch between the block name and the edif or ngc file name, or the
+   misspelling of a type name. Symbol 'MUX16_2' is not supported in target
+   'virtex4'.
+ERROR:NgdBuild:604 - logical block 'XLXI_6380' with type 'MUX16_2' could not be
+   resolved. A pin name misspelling can cause this, a missing edif or ngc file,
+   case mismatch between the block name and the edif or ngc file name, or the
+   misspelling of a type name. Symbol 'MUX16_2' is not supported in target
+   'virtex4'.
+ERROR:NgdBuild:604 - logical block 'XLXI_6381' with type 'MUX16_2' could not be
+   resolved. A pin name misspelling can cause this, a missing edif or ngc file,
+   case mismatch between the block name and the edif or ngc file name, or the
+   misspelling of a type name. Symbol 'MUX16_2' is not supported in target
+   'virtex4'.
+ERROR:NgdBuild:455 - logical net 'adc_fifo_overflow' has multiple driver(s):
+     pin PAD on block adc_fifo_overflow with type PAD,
+     pin Q on block
+   XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
+   gwhf.whf/overflow_i with type FD
+ERROR:NgdBuild:924 - input pad net 'adc_fifo_overflow' is driving non-buffer
+   primitives:
+     pin Q on block
+   XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
+   gwhf.whf/overflow_i with type FD,
+     pin D on block U_ila_pro_0/U0/I_TQ0.G_TW[222].U_TQ with type FDP
+ERROR:NgdBuild:455 - logical net 'ethernet_fifo_overflow' has multiple
+   driver(s):
+     pin PAD on block ethernet_fifo_overflow with type PAD,
+     pin Q on block
+   XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
+   gwhf.whf/overflow_i with type FD
+ERROR:NgdBuild:924 - input pad net 'ethernet_fifo_overflow' is driving
+   non-buffer primitives:
+     pin Q on block
+   XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
+   gwhf.whf/overflow_i with type FD,
+     pin D on block U_ila_pro_0/U0/I_TQ0.G_TW[174].U_TQ with type FDP
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<48>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<49>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<50>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<51>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<52>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<53>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<54>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<55>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<56>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<57>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<58>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<59>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<60>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<61>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<62>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<63>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<10>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<11>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<12>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<13>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<14>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<15>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<0>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<10>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<1>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<2>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<3>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<4>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<5>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<6>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<7>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<8>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<9>'
+   has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     8
+  Number of warnings:  79
+
+Total memory usage is 283020 kilobytes
+
+Total REAL time to NGDBUILD completion:  10 sec
+Total CPU time to NGDBUILD completion:   10 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "TOP_LEVEL.bld"...

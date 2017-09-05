@@ -1,0 +1,9 @@
+vhdtdtfi -prj dig_mac -o D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/psudoData.vhi -module psudoData -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work psudoData.vhd 
+vhdtdtfi -lib work psudoData.vhd -prj dig_mac -o psudoData.spl -module psudoData -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 psudoData.spl D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/psudoData.sym 
+vhdtdtfi -lib work psudoData.vhd -prj dig_mac -o psudoData.spl -module psudoData -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 psudoData.spl D:/cbradford/SignalProcessing/GEL_CAPTAN/psudoData.sym 
+vhdtdtfi -lib work psudoData.vhd -prj dig_mac -o psudoData.spl -module psudoData -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 psudoData.spl D:/cbradford/NewADCFirmware/GEL_CAPTAN/psudoData.sym 
+vhdtdtfi -lib work psudoData.vhd -prj dig_mac -o psudoData.spl -module psudoData -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 psudoData.spl D:/cbradford/NewADCFirmware/GEL_CAPTAN/psudoData.sym 

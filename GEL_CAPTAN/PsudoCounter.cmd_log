@@ -1,0 +1,4 @@
+vhdtdtfi -lib work PsudoCounter.vhd -prj dig_mac -o PsudoCounter.spl -module PsudoCounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PsudoCounter.spl D:/cbradford/PulsePerPackage/GEL_CAPTAN/PsudoCounter.sym 
+vhdtdtfi -lib work PsudoCounter.vhd -prj dig_mac -o PsudoCounter.spl -module PsudoCounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 PsudoCounter.spl D:/cbradford/PulsePerPackage/GEL_CAPTAN/PsudoCounter.sym 

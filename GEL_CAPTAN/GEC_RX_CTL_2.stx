@@ -1,0 +1,32 @@
+Release 10.1.01 - xst K.34 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/params_package is now defined in a different file.  It was defined in "C:/Documents and Settings/rrivera/Desktop/CAPTAN FIRMWARE/dig_mac_GEL-CAPTAN-J1_3/dig_mac_4GEL/params_package.vhd", and is now defined in "C:/Documents and Settings/aprosser/Desktop/dig_mac_GEL-CAPTAN-J1_3/dig-mac_GEL_V02/GEL_CAPTAN/params_package.vhd".
+WARNING:HDLParsers:3607 - Unit work/params_package is now defined in a different file.  It was defined in "C:/Documents and Settings/rrivera/Desktop/CAPTAN FIRMWARE/dig_mac_GEL-CAPTAN-J1_3/dig_mac_4GEL/params_package.vhd", and is now defined in "C:/Documents and Settings/aprosser/Desktop/dig_mac_GEL-CAPTAN-J1_3/dig-mac_GEL_V02/GEL_CAPTAN/params_package.vhd".
+Compiling vhdl file "C:/Documents and Settings/aprosser/Desktop/dig_mac_GEL-CAPTAN-J1_3/dig-mac_GEL_V02/GEL_CAPTAN/params_package.vhd" in Library work.
+Architecture params_package of Entity params_package is up to date.
+Compiling vhdl file "C:/Documents and Settings/aprosser/Desktop/dig_mac_GEL-CAPTAN-J1_3/dig-mac_GEL_V02/GEL_CAPTAN/GEC_RX_CTL_2.vhd" in Library work.
+Entity <gec_rx_ctl_2> compiled.
+Entity <gec_rx_ctl_2> (Architecture <gec_rx_ctl_2>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> 
+
+Total memory usage is 104008 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

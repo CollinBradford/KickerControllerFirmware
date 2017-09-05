@@ -1,0 +1,4 @@
+vhdtdtfi -lib work psudo_data_allOne.vhd -prj dig_mac -o psudo_data_allOne.spl -module psudo_data_allOne -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 psudo_data_allOne.spl D:/cbradford/SignalProcessing/GEL_CAPTAN/psudo_data_allOne.sym 
+vhdtdtfi -lib work psudo_data_allOne.vhd -prj dig_mac -o psudo_data_allOne.spl -module psudo_data_allOne -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 psudo_data_allOne.spl D:/cbradford/SignalProcessing/GEL_CAPTAN/psudo_data_allOne.sym 

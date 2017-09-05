@@ -1,0 +1,28 @@
+Release 10.1.01 - xst K.34 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/rrivera/Desktop/CAPTAN FIRMWARE/dig-mac_GEL_V02/GEL_CAPTAN/burst_test_fifo64.vhd" in Library work.
+Entity <burst_test_fifo64> compiled.
+Entity <burst_test_fifo64> (Architecture <burst_test_fifo64_a>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.52 secs
+ 
+--> 
+
+Total memory usage is 104012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

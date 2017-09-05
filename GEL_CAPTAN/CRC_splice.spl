@@ -1,0 +1,7 @@
+[Inputs]
+rd
+=data[7:0]=
+=crc[7:0]=
+[Outputs]
+=dataout[7:0]=
+[BiDir]

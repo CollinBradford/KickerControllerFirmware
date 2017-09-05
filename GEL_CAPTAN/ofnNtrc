@@ -1,0 +1,363 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter xsthdpdir set to E:/CMS_TB/GEL_CAPTAN/xst\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:1363 - Option "-crit" is not available for command run.
+WARNING:Xst:1363 - Option "-opt_level_power" is not available for command run.
+WARNING:Xst:1363 - Option "-mapstyle" is not available for command run.
+WARNING:Xst:1363 - Option "-t" is not available for command run.
+WARNING:Xst:1363 - Option "-addsub_extract" is not available for command run.
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP_LEVEL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP_LEVEL"
+Output Format                      : NGC
+Target Device                      : xc4vlx25-10-ff668
+
+---- Source Options
+Top Module Name                    : TOP_LEVEL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : Yes
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : auto
+Automatic Register Balancing       : No
+FSM Encoding Algorithm             : Auto
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+Mapping Style                      : lut
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Library Search Order               : TOP_LEVEL.lso
+Keep Hierarchy                     : YES
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+Optimization Goal                  : Speed
+
+---- Other Options
+opt_level_power                    : 1
+t                                  : XILINX
+addsub_extract                     : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/PsiDecoderParameters.vhd" in Library work.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/params_package.vhd" in Library work.
+Architecture params_package of Entity params_package is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/arp_reply.vhd" in Library work.
+Architecture arp_reply_arch of Entity arp_reply is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/or33.vhd" in Library work.
+Architecture or33_arch of Entity or33 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/ip_checksum_calc.vhd" in Library work.
+Architecture ip_checksum_calc_arch of Entity ip_checksum_calc is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/create_packet.vhd" in Library work.
+Architecture create_packet_arch of Entity create_packet is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/dataout_mux.vhd" in Library work.
+Architecture dataout_mux_arch of Entity dataout_mux is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/decipherer.vhd" in Library work.
+Architecture decipherer_arch of Entity decipherer is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/dest_info_container.vhd" in Library work.
+Architecture dest_info_container_arch of Entity dest_info_container is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/filter_data_out.vhd" in Library work.
+Architecture filter_data_out_arch of Entity filter_data_out is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/udp_data_splicer.vhd" in Library work.
+Architecture udp_data_splicer_arch of Entity udp_data_splicer is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/user_addrs_mux.vhd" in Library work.
+Architecture user_addrs_mux_arch of Entity user_addrs_mux is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/Levels_Memory.vhd" in Library work.
+Architecture levels_memory of Entity levels_memory is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/Comparator.vhd" in Library work.
+Architecture comparator of Entity comparator is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/Sample_Manager.vhd" in Library work.
+Architecture sample_manager of Entity sample_manager is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/State_Machine.vhd" in Library work.
+Architecture state_machine of Entity state_machine is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/data_out_mux.vhd" in Library work.
+Architecture data_out_mux_arch of Entity data_out_mux is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/DATA_FIFO_0.vhd" in Library work.
+Architecture data_fifo_0_a of Entity data_fifo_0 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/INFO_FIFO_0.vhd" in Library work.
+Architecture info_fifo_0_a of Entity info_fifo_0 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/burst_controller_sm.vhd" in Library work.
+Architecture burst_controller_sm_arch of Entity burst_controller_sm is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/GEC_RX_CTL_8.vhd" in Library work.
+Architecture gec_rx_ctl_8 of Entity gec_rx_ctl_8 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/RAM_COMM_DEC_9.vhd" in Library work.
+Architecture ram_comm_dec_9 of Entity ram_comm_dec_9 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/GEC_TX_SEQ_CTL_8.vhd" in Library work.
+Architecture gec_tx_seq_ctl_8 of Entity gec_tx_seq_ctl_8 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/delay_counter.vhd" in Library work.
+Architecture delay_counter of Entity delay_counter is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/MUX16_2.vhd" in Library work.
+Architecture behavioral of Entity mux16_2 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/MUX64_2.vhd" in Library work.
+Architecture behavioral of Entity mux64_2 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/CRC_splice.vhd" in Library work.
+Architecture behavioral of Entity crc_splice is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/DIG_GEC.vhd" in Library work.
+Architecture dig_gec of Entity dig_gec is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/RX_IN_LATCH.vhd" in Library work.
+Architecture behavioral of Entity rx_in_latch is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/ADC_block_2.vhf" in Library work.
+Architecture behavioral of Entity adc_block_2 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/burst_test_fifo64.vhd" in Library work.
+Architecture burst_test_fifo64_a of Entity burst_test_fifo64 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/psidecoderblock_v1_0.vhd" in Library work.
+Architecture psidecoderblock of Entity psidecoderblock is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/adc_burst_data_splicer.vhd" in Library work.
+Architecture behavioral of Entity adc_burst_data_splicer is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/adc_sample_fifo12.vhd" in Library work.
+Architecture adc_sample_fifo12_a of Entity adc_sample_fifo12 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/psi_token_delay_blk.vhd" in Library work.
+Architecture behavioral of Entity psi_token_delay_blk is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/PSI_Chip_Readout_Blk.vhf" in Library work.
+Architecture behavioral of Entity m2_1_mxilinx_psi_chip_readout_blk is up to date.
+Architecture behavioral of Entity psi_chip_readout_blk is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/chip_token_manager.vhd" in Library work.
+Architecture chip_token_manager_arch of Entity chip_token_manager is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/gigabit_ethernet_controller.vhf" in Library work.
+Architecture behavioral of Entity gigabit_ethernet_controller is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/ADC_frame_counter.vhd" in Library work.
+Architecture behavioral of Entity adc_frame_counter is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/DATA_MANAGER.vhf" in Library work.
+Architecture behavioral of Entity m2_1_mxilinx_data_manager is up to date.
+Architecture behavioral of Entity data_manager is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/DELAY16.vhf" in Library work.
+Architecture behavioral of Entity delay16 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/RESET_INIT.vhf" in Library work.
+Architecture behavioral of Entity reset_init is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/ADC_single_frame_counter.vhd" in Library work.
+Architecture behavioral of Entity adc_single_frame_counter is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/burst_traffic_controller.vhd" in Library work.
+Architecture burst_traffic_controller_arch of Entity burst_traffic_controller is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/VERSION_BLK.vhd" in Library work.
+Architecture behavioral of Entity version_blk is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/psi_command_sender.vhd" in Library work.
+Architecture behavioral of Entity psi_command_sender is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/psi_cmd_fifo32.vhd" in Library work.
+Architecture psi_cmd_fifo32_a of Entity psi_cmd_fifo32 is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/token_trigger_controller.vhd" in Library work.
+Architecture behavioral of Entity token_trigger_controller is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/display_fifo.vhd" in Library work.
+Architecture display_fifo_a of Entity display_fifo is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/PLAQ_ID_GEN.vhd" in Library work.
+Architecture behavioral of Entity plaq_id_gen is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/plaq_enable_blk.vhd" in Library work.
+Architecture behavioral of Entity plaq_enable_blk is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/External_Trigger_Handler.vhd" in Library work.
+Architecture behavioral of Entity external_trigger_handler is up to date.
+Compiling vhdl file "E:/CMS_TB/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
+Architecture behavioral of Entity ftc_mxilinx_top_level is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
+Architecture behavioral of Entity ftrse_mxilinx_top_level is up to date.
+Architecture behavioral of Entity cb4re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
+Architecture behavioral of Entity top_level is up to date.
+Compiling verilog file "CRC_gen.v" in library work
+Compiling verilog file "CRC_chk.v" in library work
+Module <CRC_gen> compiled
+Module <CRC_chk> compiled
+No errors in compilation
+Analysis of file <"TOP_LEVEL.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PSI_Chip_Readout_Blk> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <chip_token_manager> in library <work> (architecture <chip_token_manager_arch>).
+
+Analyzing hierarchy for entity <gigabit_ethernet_controller> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADC_frame_counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CB4RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DATA_MANAGER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DELAY16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RESET_INIT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADC_single_frame_counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <burst_traffic_controller> in library <work> (architecture <burst_traffic_controller_arch>).
+
+Analyzing hierarchy for entity <VERSION_BLK> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <psi_command_sender> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <token_trigger_controller> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PLAQ_ID_GEN> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <plaq_enable_blk> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <External_Trigger_Handler> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FTC_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADC_block_2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX64_2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1_MXILINX_PSI_Chip_Readout_Blk> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PsiDecoderBlock> in library <work> (architecture <psidecoderblock>).
+
+Analyzing hierarchy for entity <adc_burst_data_splicer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <psi_token_delay_blk> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for module <CRC_chk> in library <work>.
+
+Analyzing hierarchy for module <CRC_gen> in library <work>.
+
+Analyzing hierarchy for entity <CRC_splice> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DIG_GEC> in library <work> (architecture <dig_gec>).
+
+Analyzing hierarchy for entity <RX_IN_LATCH> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FTRSE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <burst_controller_sm> in library <work> (architecture <burst_controller_sm_arch>).
+
+Analyzing hierarchy for entity <GEC_RX_CTL_8> in library <work> (architecture <gec_rx_ctl_8>).
+
+Analyzing hierarchy for entity <RAM_COMM_DEC_9> in library <work> (architecture <ram_comm_dec_9>).
+
+Analyzing hierarchy for entity <GEC_TX_SEQ_CTL_8> in library <work> (architecture <gec_tx_seq_ctl_8>).
+
+Analyzing hierarchy for entity <delay_counter> in library <work> (architecture <delay_counter>).
+
+Analyzing hierarchy for entity <MUX16_2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1_MXILINX_DATA_MANAGER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Levels_Memory> in library <work> (architecture <levels_memory>).
+
+Analyzing hierarchy for entity <Comparator> in library <work> (architecture <comparator>).
+
+Analyzing hierarchy for entity <Sample_Manager> in library <work> (architecture <sample_manager>).
+
+Analyzing hierarchy for entity <State_Machine> in library <work> (architecture <state_machine>).
+
+Analyzing hierarchy for entity <data_out_mux> in library <work> (architecture <data_out_mux_arch>).
+
+Analyzing hierarchy for entity <arp_reply> in library <work> (architecture <arp_reply_arch>).
+
+Analyzing hierarchy for entity <or33> in library <work> (architecture <or33_arch>).
+
+Analyzing hierarchy for entity <ip_checksum_calc> in library <work> (architecture <ip_checksum_calc_arch>).
+
+Analyzing hierarchy for entity <create_packet> in library <work> (architecture <create_packet_arch>).
+
+Analyzing hierarchy for entity <dataout_mux> in library <work> (architecture <dataout_mux_arch>).
+
+Analyzing hierarchy for entity <decipherer> in library <work> (architecture <decipherer_arch>).
+
+Analyzing hierarchy for entity <dest_info_container> in library <work> (architecture <dest_info_container_arch>).
+
+Analyzing hierarchy for entity <filter_data_out> in library <work> (architecture <filter_data_out_arch>).
+
+Analyzing hierarchy for entity <udp_data_splicer> in library <work> (architecture <udp_data_splicer_arch>).
+
+Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture <user_addrs_mux_arch>).
+
+--> 
+
+Total memory usage is 140704 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

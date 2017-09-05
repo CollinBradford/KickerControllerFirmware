@@ -1,0 +1,474 @@
+VERSION 6
+BEGIN SCHEMATIC
+    BEGIN ATTR DeviceFamilyName "virtex4"
+        DELETE all:0
+        EDITNAME all:0
+        EDITTRAIT all:0
+    END ATTR
+    BEGIN NETLIST
+        SIGNAL XLXN_7
+        SIGNAL XLXN_8
+        SIGNAL XLXN_11
+        SIGNAL CLOCK_INIT
+        SIGNAL in_sig
+        SIGNAL XLXN_36
+        SIGNAL XLXN_37
+        SIGNAL XLXN_39
+        SIGNAL XLXN_41
+        SIGNAL XLXN_45
+        SIGNAL XLXN_46
+        SIGNAL XLXN_48
+        SIGNAL XLXN_50
+        SIGNAL XLXN_54
+        SIGNAL XLXN_55
+        SIGNAL XLXN_57
+        SIGNAL XLXN_59
+        SIGNAL RESET_INIT
+        PORT Input CLOCK_INIT
+        PORT Input in_sig
+        PORT Output RESET_INIT
+        BEGIN BLOCKDEF fd
+            TIMESTAMP 2000 1 1 10 10 10
+            RECTANGLE N 64 -320 320 -64 
+            LINE N 0 -128 64 -128 
+            LINE N 0 -256 64 -256 
+            LINE N 384 -256 320 -256 
+            LINE N 80 -128 64 -144 
+            LINE N 64 -112 80 -128 
+        END BLOCKDEF
+        BEGIN BLOCK XLXI_7 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_7
+            PIN Q XLXN_41
+        END BLOCK
+        BEGIN BLOCK XLXI_3 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_8
+            PIN Q XLXN_7
+        END BLOCK
+        BEGIN BLOCK XLXI_2 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_11
+            PIN Q XLXN_8
+        END BLOCK
+        BEGIN BLOCK XLXI_1 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D in_sig
+            PIN Q XLXN_11
+        END BLOCK
+        BEGIN BLOCK XLXI_36 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_36
+            PIN Q XLXN_50
+        END BLOCK
+        BEGIN BLOCK XLXI_37 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_37
+            PIN Q XLXN_36
+        END BLOCK
+        BEGIN BLOCK XLXI_38 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_39
+            PIN Q XLXN_37
+        END BLOCK
+        BEGIN BLOCK XLXI_39 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_41
+            PIN Q XLXN_39
+        END BLOCK
+        BEGIN BLOCK XLXI_40 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_45
+            PIN Q XLXN_59
+        END BLOCK
+        BEGIN BLOCK XLXI_41 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_46
+            PIN Q XLXN_45
+        END BLOCK
+        BEGIN BLOCK XLXI_42 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_48
+            PIN Q XLXN_46
+        END BLOCK
+        BEGIN BLOCK XLXI_43 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_50
+            PIN Q XLXN_48
+        END BLOCK
+        BEGIN BLOCK XLXI_44 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_54
+            PIN Q RESET_INIT
+        END BLOCK
+        BEGIN BLOCK XLXI_45 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_55
+            PIN Q XLXN_54
+        END BLOCK
+        BEGIN BLOCK XLXI_46 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_57
+            PIN Q XLXN_55
+        END BLOCK
+        BEGIN BLOCK XLXI_47 fd
+            BEGIN ATTR INIT "1"
+                VERILOG all:0 dp:1nosynth wsynop:1 wsynth:1
+                VHDL all:0 gm:1nosynth wa:1 wd:1
+                VALUETYPE Bit
+            END ATTR
+            PIN C CLOCK_INIT
+            PIN D XLXN_59
+            PIN Q XLXN_57
+        END BLOCK
+    END NETLIST
+    BEGIN SHEET 1 3520 2720
+        BEGIN INSTANCE XLXI_7 2560 624 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 2480 496 2560 496
+            BEGIN DISPLAY 2480 496 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_3 1840 624 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 1760 496 1840 496
+            BEGIN DISPLAY 1760 496 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_7
+            WIRE 2224 368 2560 368
+        END BRANCH
+        BEGIN BRANCH XLXN_8
+            WIRE 1520 368 1824 368
+            WIRE 1824 368 1840 368
+        END BRANCH
+        BEGIN INSTANCE XLXI_2 1136 624 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 1056 496 1136 496
+            BEGIN DISPLAY 1056 496 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_11
+            WIRE 832 368 1136 368
+        END BRANCH
+        BEGIN INSTANCE XLXI_1 448 624 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 352 496 448 496
+        END BRANCH
+        BEGIN BRANCH in_sig
+            WIRE 192 368 256 368
+            WIRE 256 368 448 368
+            BEGIN DISPLAY 256 368 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        IOMARKER 352 496 CLOCK_INIT R180 28
+        BEGIN INSTANCE XLXI_36 2560 1168 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 2480 1040 2560 1040
+            BEGIN DISPLAY 2480 1040 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_37 1840 1168 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 1760 1040 1840 1040
+            BEGIN DISPLAY 1760 1040 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_36
+            WIRE 2224 912 2560 912
+        END BRANCH
+        BEGIN BRANCH XLXN_37
+            WIRE 1520 912 1824 912
+            WIRE 1824 912 1840 912
+        END BRANCH
+        BEGIN INSTANCE XLXI_38 1136 1168 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 1056 1040 1136 1040
+            BEGIN DISPLAY 1056 1040 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_39
+            WIRE 832 912 1136 912
+        END BRANCH
+        BEGIN INSTANCE XLXI_39 448 1168 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH XLXN_41
+            WIRE 256 640 256 912
+            WIRE 256 912 448 912
+            WIRE 256 640 3168 640
+            WIRE 2944 368 3168 368
+            WIRE 3168 368 3168 640
+            BEGIN DISPLAY 256 912 ATTR Name
+                ALIGNMENT SOFT-TCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_40 2560 1744 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 2480 1616 2560 1616
+            BEGIN DISPLAY 2480 1616 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_41 1840 1744 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 1760 1616 1840 1616
+            BEGIN DISPLAY 1760 1616 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_45
+            WIRE 2224 1488 2560 1488
+        END BRANCH
+        BEGIN BRANCH XLXN_46
+            WIRE 1520 1488 1824 1488
+            WIRE 1824 1488 1840 1488
+        END BRANCH
+        BEGIN INSTANCE XLXI_42 1136 1744 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 1056 1616 1136 1616
+            BEGIN DISPLAY 1056 1616 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_48
+            WIRE 832 1488 1136 1488
+        END BRANCH
+        BEGIN INSTANCE XLXI_43 448 1744 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 352 1616 448 1616
+            BEGIN DISPLAY 352 1616 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_50
+            WIRE 256 1200 256 1488
+            WIRE 256 1488 448 1488
+            WIRE 256 1200 3168 1200
+            WIRE 2944 912 3168 912
+            WIRE 3168 912 3168 1200
+            BEGIN DISPLAY 256 1488 ATTR Name
+                ALIGNMENT SOFT-TCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_44 2560 2256 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 2480 2128 2560 2128
+            BEGIN DISPLAY 2480 2128 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_45 1840 2256 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 1760 2128 1840 2128
+            BEGIN DISPLAY 1760 2128 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_54
+            WIRE 2224 2000 2560 2000
+        END BRANCH
+        BEGIN BRANCH XLXN_55
+            WIRE 1520 2000 1824 2000
+            WIRE 1824 2000 1840 2000
+        END BRANCH
+        BEGIN INSTANCE XLXI_46 1136 2256 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 1056 2128 1136 2128
+            BEGIN DISPLAY 1056 2128 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_57
+            WIRE 832 2000 1136 2000
+        END BRANCH
+        BEGIN INSTANCE XLXI_47 448 2256 R0
+            BEGIN DISPLAY 0 -408 ATTR INIT
+                FONT 28 "Arial"
+                DISPLAYFORMAT NAMEEQUALSVALUE
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 352 2128 448 2128
+            BEGIN DISPLAY 352 2128 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_59
+            WIRE 256 1744 256 2000
+            WIRE 256 2000 448 2000
+            WIRE 256 1744 3168 1744
+            WIRE 2944 1488 3168 1488
+            WIRE 3168 1488 3168 1744
+            BEGIN DISPLAY 256 2000 ATTR Name
+                ALIGNMENT SOFT-TCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH RESET_INIT
+            WIRE 2944 2000 3168 2000
+        END BRANCH
+        BEGIN BRANCH CLOCK_INIT
+            WIRE 352 1040 448 1040
+            BEGIN DISPLAY 352 1040 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        IOMARKER 3168 2000 RESET_INIT R0 28
+        IOMARKER 192 368 in_sig R180 28
+    END SHEET
+END SCHEMATIC

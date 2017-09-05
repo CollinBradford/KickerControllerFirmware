@@ -1,0 +1,7 @@
+vhdtdtfi -lib work stat_pulse.vhd -prj dig_mac -o stat_pulse.spl -module stat_pulse -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 stat_pulse.spl D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse.sym 
+vhdtdtfi -lib work stat_pulse.vhd -prj dig_mac -o stat_pulse.spl -module stat_pulse -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work stat_pulse.vhd -prj dig_mac -o stat_pulse.spl -module stat_pulse -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 stat_pulse.spl D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse.sym 
+vhdtdtfi -lib work stat_pulse.vhd -prj dig_mac -o stat_pulse.spl -module stat_pulse -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 -w stat_pulse.spl D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse.sym 

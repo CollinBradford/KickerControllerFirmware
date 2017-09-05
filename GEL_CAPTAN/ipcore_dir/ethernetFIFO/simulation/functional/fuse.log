@@ -1,0 +1,50 @@
+Running: fuse.exe -relaunch "work.ethernetFIFO_tb" -L "xilinxcorelib" -L "unisim" -o "ethernetFIFO_tb.exe" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package attributes
+Compiling package std_logic_misc
+Compiling package numeric_std
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package ethernetfifo_pkg
+Compiling package vcomponents
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,17)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,16)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,15)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,14)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,13)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,12)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,11)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,10)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,9)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,8)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,7)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,6)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,5)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,4)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,3)\]
+Compiling architecture rg_arch of entity ethernetFIFO_rng [\ethernetFIFO_rng(8,2)\]
+Compiling architecture fg_dg_arch of entity ethernetFIFO_dgen [\ethernetFIFO_dgen(32,128,0,2)\]
+Compiling architecture fg_dv_arch of entity ethernetFIFO_dverif [\ethernetFIFO_dverif(32,128,0,0,...]
+Compiling architecture fg_pc_arch of entity ethernetFIFO_pctrl [\ethernetFIFO_pctrl("Native",0,3...]
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture behavioral of entity fifo_generator_v9_3_bhv_as [\fifo_generator_v9_3_bhv_as(32,"...]
+Compiling architecture behavioral of entity fifo_generator_v9_3_conv [\fifo_generator_v9_3_conv(0,0,10...]
+Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator_v9_3(0,0,10,"Bla...]
+Compiling architecture ethernetfifo_a of entity ethernetFIFO [ethernetfifo_default]
+Compiling architecture xilinx of entity ethernetFIFO_exdes [ethernetfifo_exdes_default]
+Compiling architecture simulation_arch of entity ethernetFIFO_synth [\ethernetFIFO_synth(0,2,2)\]
+Compiling architecture ethernetfifo_arch of entity ethernetfifo_tb
+Time Resolution for simulation is 1ps.
+Waiting for 22 sub-compilation(s) to finish...
+Compiled 64 VHDL Units
+Built simulation executable ethernetFIFO_tb.exe
+Fuse Memory Usage: 53880 KB
+Fuse CPU Usage: 966 ms

@@ -1,0 +1,7 @@
+[Inputs]
+sel
+=in0[15:0]=
+=in1[15:0]=
+[Outputs]
+=muxout[15:0]=
+[BiDir]

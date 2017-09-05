@@ -1,0 +1,2 @@
+vhdl work "params_package.vhd"
+vhdl work "GEC_RX_CTL_2.vhd"

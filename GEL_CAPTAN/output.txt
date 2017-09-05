@@ -1,0 +1,17 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf32p          [32 M]
+FF
+fadc_prom
+C:\Captan\FastADC\FAST_ADC_FW_01\FAST_ADC_FW_\GEL_CAPTAN\
+
+MCS
+Yes
+1
+No
+
+
+MCS
+Yes
+1
+No

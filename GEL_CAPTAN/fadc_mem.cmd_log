@@ -1,0 +1,2 @@
+vhdtdtfi -lib work fadc_mem.vhd -prj dig_mac -o fadc_mem.spl -module fadc_mem -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 fadc_mem.spl C:/Captan/FastADC/FAST_ADC_FW_01/FAST_ADC_FW_/GEL_CAPTAN/fadc_mem.sym 

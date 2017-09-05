@@ -1,0 +1,65 @@
+Alright, here are the project notes.  This is where I will put notes and documentation about the project, especially the 
+schematic design where comments are not supported very well.  
+
+I am currently working on redesigning the test modules.  The system involves a multiplexer that selects input from a
+different source.  The address space is as follows: 
+
+Multiplexer Address: 6
+
+X = data input select
+
+00000500 0000000000000XXX
+
+000 = NTB (Name That Bit)
+001 = OIA (One Is All)
+010 = Sawtooth Wave
+011 = 
+100 = 
+101 = 
+110 = 
+111 = ADC INPUT
+
+Psudo Input Configuration:
+
+These bits set up the selected psudo input.  What each register does depends on the psudo input mode that is selected.  
+
+00000600 XXXXXXXXXXXXXXXX
+
+X = As Defined Below:
+
+NTB:
+
+Name That Bit allows you to set each input bit indivisually.  
+
+00000000DDCCBBAA
+
+AA = Rising Sample One
+BB = Rising Sample Two
+CC = Falling Sample One
+DD = Falling Sample Two
+
+OIA:
+
+One Is All allows you to set one number that is set for each sample.  
+
+00000000000000XX
+
+X = Sample Value
+
+
+
+TRIG_ATTRIBUTES: 5
+
+00000000XXYYYYZZ
+
+XX = Delay time for data_send module in clocks
+YYYY = Number of samples to read after trig
+ZZ = Threshold for the Peak_Finder module.   
+
+STEPS TO LOCK CLOCKS:
+
+Master_CLK cleanup: dcm_reset_0, DCM_RESET_MAP, rxdata(0)
+Master_CLK to 375: dcm_reset_1, DCM_RESET_MAP, rxdata(4)
+375 to 675: dcm_reset_2, DCM_RESET_MAP, rxdata(8)
+
+FADC_CLK cleanup: fadc_dclk_reset, FADC_DELAY_MAP, rxdata(8)

@@ -1,0 +1,4 @@
+set -tmpdir "./xst/projnav.tmp"
+elaborate
+-ifn RX_IN_LATCH.prj
+-ifmt mixed

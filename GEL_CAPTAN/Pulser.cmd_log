@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Pulser.vhd -prj dig_mac -o Pulser.spl -module Pulser -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 Pulser.spl D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/Pulser.sym 

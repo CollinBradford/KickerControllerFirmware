@@ -1,0 +1,4 @@
+set -tmpdir "./xst/projnav.tmp"
+elaborate
+-ifn burst_test_fifo64.prj
+-ifmt mixed

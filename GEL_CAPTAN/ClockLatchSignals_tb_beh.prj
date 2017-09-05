@@ -1,0 +1,2 @@
+vhdl work "ClockLatchSignals.vhd"
+vhdl work "ClockLatchSignals_tb.vhd"

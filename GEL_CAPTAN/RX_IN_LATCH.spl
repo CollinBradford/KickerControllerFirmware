@@ -1,0 +1,10 @@
+[Inputs]
+clk
+dv
+er
+=d[7:0]=
+[Outputs]
+dvo
+ero
+=do[7:0]=
+[BiDir]

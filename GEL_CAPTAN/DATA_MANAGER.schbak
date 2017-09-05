@@ -1,0 +1,1330 @@
+VERSION 6
+BEGIN SCHEMATIC
+    BEGIN ATTR DeviceFamilyName "virtex4"
+        DELETE all:0
+        EDITNAME all:0
+        EDITTRAIT all:0
+    END ATTR
+    BEGIN NETLIST
+        SIGNAL data_fifo_rd_data(63:0)
+        SIGNAL tx_info_fifo_src_sel
+        SIGNAL tx_info_fifo_empty
+        SIGNAL tx_info_fifo_data_burst(15:0)
+        SIGNAL tx_info_fifo_wren_burst
+        SIGNAL tx_info_fifo_full
+        SIGNAL tx_info_fifo_rden
+        SIGNAL reset
+        SIGNAL tx_info_fifo_wren_comm
+        SIGNAL tx_info_fifo_data_comm(15:0)
+        SIGNAL tx_info_fifo_dout(15:0)
+        SIGNAL tx_data_fifo_src_sel
+        SIGNAL tx_data_fifo_wren_comm
+        SIGNAL tx_data_fifo_read_enable
+        SIGNAL tx_data_fifo_wren_burst
+        SIGNAL tx_data_fifo_full
+        SIGNAL MASTER_CLK
+        SIGNAL reset_n
+        SIGNAL rx_info_fifo_empty
+        SIGNAL rx_info_fifo_rden
+        SIGNAL info_fifo_rd_data(15:0)
+        SIGNAL rx_data(63:0)
+        SIGNAL rx_data_fifo_read_enable
+        SIGNAL burst_done
+        SIGNAL burst_stop
+        SIGNAL burst_start
+        SIGNAL rx_fifo_reset
+        SIGNAL gec_user_rx_size_out(10:0)
+        SIGNAL gec_user_crc_err
+        SIGNAL gec_user_rx_valid_out
+        SIGNAL gec_user_rx_data_out(7:0)
+        SIGNAL gec_user_busy
+        SIGNAL gec_user_tx_enable_out
+        SIGNAL b_data_we
+        SIGNAL ram_wren
+        SIGNAL ram_addr(63:0)
+        SIGNAL gec_user_tx_data_in(7:0)
+        SIGNAL gec_user_tx_size_in(10:0)
+        SIGNAL gec_user_trigger
+        SIGNAL b_enable
+        SIGNAL XLXN_443
+        SIGNAL tx_data_fifo_rden
+        SIGNAL data_fifo_rden_en
+        SIGNAL start_delay_count
+        SIGNAL delay_count
+        SIGNAL clear_delay_count
+        SIGNAL data_fifo_empty
+        SIGNAL tx_info_fifo_din(15:0)
+        SIGNAL tx_info_fifo_wr_en
+        SIGNAL tx_data_fifo_din(63:0)
+        SIGNAL tx_data_fifo_wr_en
+        SIGNAL tx_data(63:0)
+        SIGNAL b_data(63:0)
+        SIGNAL tx_data_fifo_empty
+        SIGNAL tx_fifo_reset_sig
+        SIGNAL data_fifo_full
+        SIGNAL XLXN_342
+        SIGNAL info_fifo_wr_data(15:0)
+        SIGNAL data_fifo_wr_data(63:0)
+        SIGNAL info_fifo_wren
+        SIGNAL data_fifo_wren
+        SIGNAL crc_err_flag
+        SIGNAL rx_data_fifo_empty
+        SIGNAL XLXN_463
+        SIGNAL XLXN_1735
+        SIGNAL tx_fifo_reset
+        SIGNAL b_end_packet
+        SIGNAL rx_fifo_reset_sig
+        PORT Input reset
+        PORT Input MASTER_CLK
+        PORT Input reset_n
+        PORT Output rx_data(63:0)
+        PORT Input gec_user_rx_size_out(10:0)
+        PORT Input gec_user_crc_err
+        PORT Input gec_user_rx_valid_out
+        PORT Input gec_user_rx_data_out(7:0)
+        PORT Input gec_user_busy
+        PORT Input gec_user_tx_enable_out
+        PORT Input b_data_we
+        PORT Output ram_wren
+        PORT Output ram_addr(63:0)
+        PORT Output gec_user_tx_data_in(7:0)
+        PORT Output gec_user_tx_size_in(10:0)
+        PORT Output gec_user_trigger
+        PORT Output b_enable
+        PORT Input tx_data(63:0)
+        PORT Input b_data(63:0)
+        PORT Input b_end_packet
+        BEGIN BLOCKDEF m2_1
+            TIMESTAMP 2000 1 1 10 10 10
+            LINE N 96 -64 96 -192 
+            LINE N 256 -96 96 -64 
+            LINE N 256 -160 256 -96 
+            LINE N 96 -192 256 -160 
+            LINE N 176 -32 96 -32 
+            LINE N 176 -80 176 -32 
+            LINE N 0 -32 96 -32 
+            LINE N 320 -128 256 -128 
+            LINE N 0 -96 96 -96 
+            LINE N 0 -160 96 -160 
+        END BLOCKDEF
+        BEGIN BLOCKDEF MUX16_2
+            TIMESTAMP 2008 6 18 18 41 56
+            RECTANGLE N 64 -192 320 0 
+            LINE N 64 -160 0 -160 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 320 -172 384 -148 
+            LINE N 320 -160 384 -160 
+        END BLOCKDEF
+        BEGIN BLOCKDEF INFO_FIFO_0
+            TIMESTAMP 2008 6 10 19 16 26
+            RECTANGLE N 64 -320 320 68 
+            LINE N 64 -96 0 -96 
+            LINE N 64 48 0 48 
+            LINE N 64 0 0 0 
+            RECTANGLE N 0 -300 64 -276 
+            LINE N 64 -288 0 -288 
+            LINE N 64 -48 0 -48 
+            RECTANGLE N 320 -300 384 -276 
+            LINE N 320 -288 384 -288 
+            LINE N 320 -128 384 -128 
+            LINE N 320 0 384 0 
+        END BLOCKDEF
+        BEGIN BLOCKDEF MUX64_2
+            TIMESTAMP 2008 6 18 18 43 41
+            RECTANGLE N 64 -192 320 0 
+            LINE N 64 -160 0 -160 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 320 -172 384 -148 
+            LINE N 320 -160 384 -160 
+        END BLOCKDEF
+        BEGIN BLOCKDEF DATA_FIFO_0
+            TIMESTAMP 2008 7 30 13 9 21
+            RECTANGLE N 64 -320 320 0 
+            LINE N 64 -288 0 -288 
+            LINE N 64 -224 0 -224 
+            LINE N 64 -160 0 -160 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            LINE N 320 -288 384 -288 
+            LINE N 320 -160 384 -160 
+            RECTANGLE N 320 -44 384 -20 
+            LINE N 320 -32 384 -32 
+        END BLOCKDEF
+        BEGIN BLOCKDEF vcc
+            TIMESTAMP 2000 1 1 10 10 10
+            LINE N 64 -32 64 -64 
+            LINE N 64 0 64 -32 
+            LINE N 96 -64 32 -64 
+        END BLOCKDEF
+        BEGIN BLOCKDEF and2
+            TIMESTAMP 2000 1 1 10 10 10
+            LINE N 0 -64 64 -64 
+            LINE N 0 -128 64 -128 
+            LINE N 256 -96 192 -96 
+            ARC N 96 -144 192 -48 144 -48 144 -144 
+            LINE N 144 -48 64 -48 
+            LINE N 64 -144 144 -144 
+            LINE N 64 -48 64 -144 
+        END BLOCKDEF
+        BEGIN BLOCKDEF GEC_TX_SEQ_CTL_8
+            TIMESTAMP 2008 8 8 15 14 7
+            RECTANGLE N 64 -768 656 0 
+            LINE N 64 -736 0 -736 
+            LINE N 64 -672 0 -672 
+            LINE N 64 -608 0 -608 
+            LINE N 64 -544 0 -544 
+            LINE N 64 -480 0 -480 
+            LINE N 64 -416 0 -416 
+            LINE N 64 -352 0 -352 
+            LINE N 64 -288 0 -288 
+            LINE N 64 -224 0 -224 
+            LINE N 64 -160 0 -160 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            LINE N 656 -736 720 -736 
+            LINE N 656 -640 720 -640 
+            LINE N 656 -544 720 -544 
+            LINE N 656 -448 720 -448 
+            LINE N 656 -352 720 -352 
+            LINE N 656 -256 720 -256 
+            RECTANGLE N 656 -172 720 -148 
+            LINE N 656 -160 720 -160 
+            RECTANGLE N 656 -76 720 -52 
+            LINE N 656 -64 720 -64 
+        END BLOCKDEF
+        BEGIN BLOCKDEF GEC_RX_CTL_8
+            TIMESTAMP 2008 8 1 14 55 56
+            RECTANGLE N 64 -576 688 0 
+            LINE N 64 -544 0 -544 
+            LINE N 64 -480 0 -480 
+            LINE N 64 -416 0 -416 
+            LINE N 64 -352 0 -352 
+            LINE N 64 -288 0 -288 
+            LINE N 64 -224 0 -224 
+            LINE N 64 -160 0 -160 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            LINE N 688 -544 752 -544 
+            LINE N 688 -416 752 -416 
+            LINE N 688 -288 752 -288 
+            RECTANGLE N 688 -172 752 -148 
+            LINE N 688 -160 752 -160 
+            RECTANGLE N 688 -44 752 -20 
+            LINE N 688 -32 752 -32 
+        END BLOCKDEF
+        BEGIN BLOCKDEF gnd
+            TIMESTAMP 2000 1 1 10 10 10
+            LINE N 64 -64 64 -96 
+            LINE N 76 -48 52 -48 
+            LINE N 68 -32 60 -32 
+            LINE N 88 -64 40 -64 
+            LINE N 64 -64 64 -80 
+            LINE N 64 -128 64 -96 
+        END BLOCKDEF
+        BEGIN BLOCKDEF delay_counter
+            TIMESTAMP 2008 8 1 16 35 53
+            RECTANGLE N 64 -256 416 0 
+            LINE N 64 -224 0 -224 
+            LINE N 64 -160 0 -160 
+            LINE N 64 -96 0 -96 
+            LINE N 64 -32 0 -32 
+            LINE N 416 -224 480 -224 
+        END BLOCKDEF
+        BEGIN BLOCKDEF RAM_COMM_DEC_9
+            TIMESTAMP 2009 1 6 22 53 45
+            LINE N 672 32 736 32 
+            LINE N 672 96 736 96 
+            LINE N 64 -864 0 -864 
+            LINE N 64 -752 0 -752 
+            LINE N 64 -640 0 -640 
+            LINE N 64 -528 0 -528 
+            LINE N 64 -416 0 -416 
+            LINE N 64 -304 0 -304 
+            RECTANGLE N 0 -204 64 -180 
+            LINE N 64 -192 0 -192 
+            RECTANGLE N 0 -92 64 -68 
+            LINE N 64 -80 0 -80 
+            LINE N 672 -864 736 -864 
+            LINE N 672 -800 736 -800 
+            LINE N 672 -672 736 -672 
+            LINE N 672 -608 736 -608 
+            LINE N 672 -544 736 -544 
+            LINE N 672 -480 736 -480 
+            LINE N 672 -416 736 -416 
+            LINE N 672 -352 736 -352 
+            LINE N 672 -288 736 -288 
+            LINE N 672 -224 736 -224 
+            RECTANGLE N 672 -172 736 -148 
+            LINE N 672 -160 736 -160 
+            RECTANGLE N 672 -108 736 -84 
+            LINE N 672 -96 736 -96 
+            RECTANGLE N 672 -44 736 -20 
+            LINE N 672 -32 736 -32 
+            RECTANGLE N 64 -896 672 128 
+        END BLOCKDEF
+        BEGIN BLOCKDEF burst_controller_sm
+            TIMESTAMP 2008 8 1 15 6 8
+            LINE N 64 96 0 96 
+            LINE N 64 32 0 32 
+            LINE N 384 32 448 32 
+            LINE N 64 -416 0 -416 
+            LINE N 64 -352 0 -352 
+            LINE N 64 -288 0 -288 
+            LINE N 64 -224 0 -224 
+            LINE N 64 -160 0 -160 
+            LINE N 64 -96 0 -96 
+            LINE N 64 -32 0 -32 
+            LINE N 384 -416 448 -416 
+            LINE N 384 -288 448 -288 
+            LINE N 384 -160 448 -160 
+            RECTANGLE N 384 -44 448 -20 
+            LINE N 384 -32 448 -32 
+            RECTANGLE N 64 -448 384 128 
+        END BLOCKDEF
+        BEGIN BLOCKDEF or2
+            TIMESTAMP 2000 1 1 10 10 10
+            LINE N 0 -64 64 -64 
+            LINE N 0 -128 64 -128 
+            LINE N 256 -96 192 -96 
+            ARC N 28 -224 204 -48 112 -48 192 -96 
+            ARC N -40 -152 72 -40 48 -48 48 -144 
+            LINE N 112 -144 48 -144 
+            ARC N 28 -144 204 32 192 -96 112 -144 
+            LINE N 112 -48 48 -48 
+        END BLOCKDEF
+        BEGIN BLOCK XLXI_3511 vcc
+            PIN P XLXN_443
+        END BLOCK
+        BEGIN BLOCK XLXI_3513 GEC_TX_SEQ_CTL_8
+            PIN block_en XLXN_443
+            PIN clk MASTER_CLK
+            PIN data_fifo_empty data_fifo_empty
+            PIN data_fifo_rderr
+            PIN delay_count delay_count
+            PIN gec_user_busy gec_user_busy
+            PIN gec_user_tx_enable_out gec_user_tx_enable_out
+            PIN info_fifo_empty tx_info_fifo_empty
+            PIN info_fifo_rderr
+            PIN reset_n reset_n
+            PIN data_fifo_rd_data(63:0) data_fifo_rd_data(63:0)
+            PIN info_fifo_rd_data(15:0) tx_info_fifo_dout(15:0)
+            PIN clear_delay_count clear_delay_count
+            PIN data_fifo_rden tx_data_fifo_rden
+            PIN data_fifo_rden_en data_fifo_rden_en
+            PIN gec_user_trigger gec_user_trigger
+            PIN info_fifo_rden tx_info_fifo_rden
+            PIN start_delay_count start_delay_count
+            PIN gec_user_tx_data_in(7:0) gec_user_tx_data_in(7:0)
+            PIN gec_user_tx_size_in(10:0) gec_user_tx_size_in(10:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_3514 delay_counter
+            PIN clear_delay_count clear_delay_count
+            PIN clock MASTER_CLK
+            PIN reset_n reset_n
+            PIN start_delay_count start_delay_count
+            PIN delay_count delay_count
+        END BLOCK
+        BEGIN BLOCK XLXI_3512 and2
+            PIN I0 tx_data_fifo_rden
+            PIN I1 data_fifo_rden_en
+            PIN O tx_data_fifo_read_enable
+        END BLOCK
+        BEGIN BLOCK TX_INFO_FIFO INFO_FIFO_0
+            PIN wr_en tx_info_fifo_wr_en
+            PIN clk MASTER_CLK
+            PIN srst tx_fifo_reset_sig
+            PIN din(15:0) tx_info_fifo_din(15:0)
+            PIN rd_en tx_info_fifo_rden
+            PIN dout(15:0) tx_info_fifo_dout(15:0)
+            PIN empty tx_info_fifo_empty
+            PIN full tx_info_fifo_full
+        END BLOCK
+        BEGIN BLOCK XLXI_3526 MUX16_2
+            PIN sel tx_info_fifo_src_sel
+            PIN in0(15:0) tx_info_fifo_data_comm(15:0)
+            PIN in1(15:0) tx_info_fifo_data_burst(15:0)
+            PIN muxout(15:0) tx_info_fifo_din(15:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_3527 m2_1
+            PIN D0 tx_info_fifo_wren_comm
+            PIN D1 tx_info_fifo_wren_burst
+            PIN S0 tx_info_fifo_src_sel
+            PIN O tx_info_fifo_wr_en
+        END BLOCK
+        BEGIN BLOCK XLXI_3531 MUX64_2
+            PIN sel tx_data_fifo_src_sel
+            PIN in0(63:0) tx_data(63:0)
+            PIN in1(63:0) b_data(63:0)
+            PIN muxout(63:0) tx_data_fifo_din(63:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_3532 m2_1
+            PIN D0 tx_data_fifo_wren_comm
+            PIN D1 tx_data_fifo_wren_burst
+            PIN S0 tx_data_fifo_src_sel
+            PIN O tx_data_fifo_wr_en
+        END BLOCK
+        BEGIN BLOCK TX_DATA_FIFO DATA_FIFO_0
+            PIN clk MASTER_CLK
+            PIN rd_en tx_data_fifo_read_enable
+            PIN srst tx_fifo_reset_sig
+            PIN wr_en tx_data_fifo_wr_en
+            PIN din(63:0) tx_data_fifo_din(63:0)
+            PIN empty tx_data_fifo_empty
+            PIN full tx_data_fifo_full
+            PIN dout(63:0) data_fifo_rd_data(63:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_3364 vcc
+            PIN P XLXN_342
+        END BLOCK
+        BEGIN BLOCK XLXI_3365 GEC_RX_CTL_8
+            PIN block_en XLXN_342
+            PIN clock MASTER_CLK
+            PIN data_fifo_full data_fifo_full
+            PIN data_fifo_wrerr
+            PIN gec_user_crc_err gec_user_crc_err
+            PIN gec_user_rx_valid_out gec_user_rx_valid_out
+            PIN reset_n reset_n
+            PIN gec_user_rx_data_out(7:0) gec_user_rx_data_out(7:0)
+            PIN gec_user_rx_size_out(10:0) gec_user_rx_size_out(10:0)
+            PIN crc_err_flag crc_err_flag
+            PIN data_fifo_wren data_fifo_wren
+            PIN info_fifo_wren info_fifo_wren
+            PIN data_fifo_q_w_data(63:0) data_fifo_wr_data(63:0)
+            PIN info_fifo_wr_data(15:0) info_fifo_wr_data(15:0)
+        END BLOCK
+        BEGIN BLOCK RX_INFO_FIFO INFO_FIFO_0
+            PIN wr_en info_fifo_wren
+            PIN clk MASTER_CLK
+            PIN srst rx_fifo_reset_sig
+            PIN din(15:0) info_fifo_wr_data(15:0)
+            PIN rd_en rx_info_fifo_rden
+            PIN dout(15:0) info_fifo_rd_data(15:0)
+            PIN empty rx_info_fifo_empty
+            PIN full
+        END BLOCK
+        BEGIN BLOCK RX_DATA_FIFO DATA_FIFO_0
+            PIN clk MASTER_CLK
+            PIN rd_en rx_data_fifo_read_enable
+            PIN srst rx_fifo_reset_sig
+            PIN wr_en data_fifo_wren
+            PIN din(63:0) data_fifo_wr_data(63:0)
+            PIN empty rx_data_fifo_empty
+            PIN full
+            PIN dout(63:0) rx_data(63:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_3401 vcc
+            PIN P XLXN_463
+        END BLOCK
+        BEGIN BLOCK XLXI_3506 RAM_COMM_DEC_9
+            PIN block_en XLXN_463
+            PIN burst_done burst_done
+            PIN clock MASTER_CLK
+            PIN reset_n reset_n
+            PIN rx_info_fifo_empty rx_info_fifo_empty
+            PIN tx_info_fifo_full tx_info_fifo_full
+            PIN rx_data_fifo_rd_data(63:0) rx_data(63:0)
+            PIN rx_info_fifo_rd_data(15:0) info_fifo_rd_data(15:0)
+            PIN burst_start burst_start
+            PIN burst_stop burst_stop
+            PIN ram_en
+            PIN ram_wren ram_wren
+            PIN rx_data_fifo_rden rx_data_fifo_read_enable
+            PIN Rx_FIFO_Reset rx_fifo_reset
+            PIN rx_info_fifo_rden rx_info_fifo_rden
+            PIN tx_data_fifo_src_sel tx_data_fifo_src_sel
+            PIN tx_data_fifo_wren tx_data_fifo_wren_comm
+            PIN Tx_FIFO_Reset tx_fifo_reset
+            PIN tx_info_fifo_src_sel tx_info_fifo_src_sel
+            PIN tx_info_fifo_wren tx_info_fifo_wren_comm
+            PIN ram_addr(63:0) ram_addr(63:0)
+            PIN state_diag(0:5)
+            PIN tx_info_fifo_wr_data(15:0) tx_info_fifo_data_comm(15:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_2539 burst_controller_sm
+            PIN b_data_we b_data_we
+            PIN b_end_burst XLXN_1735
+            PIN b_end_packet b_end_packet
+            PIN burst_start burst_start
+            PIN burst_stop burst_stop
+            PIN clk MASTER_CLK
+            PIN reset_n reset_n
+            PIN tx_data_full tx_data_fifo_full
+            PIN b_enable b_enable
+            PIN burst_done burst_done
+            PIN tx_data_we tx_data_fifo_wren_burst
+            PIN tx_info_we tx_info_fifo_wren_burst
+            PIN tx_info(15:0) tx_info_fifo_data_burst(15:0)
+            PIN tx_info_full tx_info_fifo_full
+        END BLOCK
+        BEGIN BLOCK XLXI_3540 gnd
+            PIN G XLXN_1735
+        END BLOCK
+        BEGIN BLOCK XLXI_3541 or2
+            PIN I0 rx_fifo_reset
+            PIN I1 reset
+            PIN O rx_fifo_reset_sig
+        END BLOCK
+        BEGIN BLOCK XLXI_3505 or2
+            PIN I0 tx_fifo_reset
+            PIN I1 reset
+            PIN O tx_fifo_reset_sig
+        END BLOCK
+    END NETLIST
+    BEGIN SHEET 1 7040 5440
+        BEGIN BRANCH reset
+            WIRE 416 176 640 176
+        END BRANCH
+        BEGIN BRANCH reset_n
+            WIRE 416 224 640 224
+        END BRANCH
+        BEGIN BRANCH MASTER_CLK
+            WIRE 416 128 640 128
+        END BRANCH
+        BEGIN BRANCH gec_user_crc_err
+            WIRE 416 272 640 272
+        END BRANCH
+        BEGIN BRANCH gec_user_rx_valid_out
+            WIRE 416 320 640 320
+        END BRANCH
+        BEGIN BRANCH gec_user_rx_data_out(7:0)
+            WIRE 416 368 640 368
+        END BRANCH
+        BEGIN BRANCH gec_user_rx_size_out(10:0)
+            WIRE 416 416 640 416
+        END BRANCH
+        BEGIN BRANCH gec_user_busy
+            WIRE 416 464 640 464
+        END BRANCH
+        BEGIN BRANCH gec_user_tx_enable_out
+            WIRE 400 512 640 512
+        END BRANCH
+        BEGIN BRANCH b_data_we
+            WIRE 400 560 640 560
+        END BRANCH
+        IOMARKER 416 176 reset R180 28
+        IOMARKER 416 224 reset_n R180 28
+        IOMARKER 416 128 MASTER_CLK R180 28
+        IOMARKER 416 272 gec_user_crc_err R180 28
+        IOMARKER 416 320 gec_user_rx_valid_out R180 28
+        IOMARKER 416 368 gec_user_rx_data_out(7:0) R180 28
+        IOMARKER 416 416 gec_user_rx_size_out(10:0) R180 28
+        IOMARKER 416 464 gec_user_busy R180 28
+        IOMARKER 400 512 gec_user_tx_enable_out R180 28
+        IOMARKER 400 560 b_data_we R180 28
+        INSTANCE XLXI_3511 704 2912 R270
+        BEGIN BRANCH MASTER_CLK
+            WIRE 704 2912 928 2912
+            BEGIN DISPLAY 704 2912 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH data_fifo_empty
+            WIRE 704 2976 928 2976
+            BEGIN DISPLAY 704 2976 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH XLXN_443
+            WIRE 704 2848 928 2848
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_empty
+            WIRE 704 3296 928 3296
+            BEGIN DISPLAY 704 3296 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH gec_user_tx_enable_out
+            WIRE 704 3232 928 3232
+            BEGIN DISPLAY 704 3232 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH gec_user_busy
+            WIRE 704 3168 928 3168
+            BEGIN DISPLAY 704 3168 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH reset_n
+            WIRE 704 3424 928 3424
+            BEGIN DISPLAY 704 3424 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_rden
+            WIRE 1648 2944 2000 2944
+            BEGIN DISPLAY 2000 2944 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH gec_user_trigger
+            WIRE 1648 3136 1904 3136
+            BEGIN DISPLAY 1904 3136 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_rden
+            WIRE 1648 3232 1904 3232
+            BEGIN DISPLAY 1904 3232 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH gec_user_tx_size_in(10:0)
+            WIRE 1648 3520 1904 3520
+            BEGIN DISPLAY 1904 3520 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH gec_user_tx_data_in(7:0)
+            WIRE 1648 3424 1904 3424
+            BEGIN DISPLAY 1904 3424 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH data_fifo_rden_en
+            WIRE 1648 3040 2448 3040
+        END BRANCH
+        BEGIN BRANCH start_delay_count
+            WIRE 1648 3328 1904 3328
+            BEGIN DISPLAY 1904 3328 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH delay_count
+            WIRE 704 3104 928 3104
+            BEGIN DISPLAY 704 3104 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH clear_delay_count
+            WIRE 1648 2848 1904 2848
+            BEGIN DISPLAY 1904 2848 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH data_fifo_rd_data(63:0)
+            WIRE 688 3488 928 3488
+            BEGIN DISPLAY 688 3488 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_dout(15:0)
+            WIRE 704 3552 928 3552
+            BEGIN DISPLAY 704 3552 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_3513 928 3584 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_3514 1056 3920 R0
+        END INSTANCE
+        BEGIN BRANCH clear_delay_count
+            WIRE 848 3696 1056 3696
+            BEGIN DISPLAY 848 3696 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH MASTER_CLK
+            WIRE 848 3760 1056 3760
+            BEGIN DISPLAY 848 3760 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH reset_n
+            WIRE 848 3824 1056 3824
+            BEGIN DISPLAY 848 3824 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH start_delay_count
+            WIRE 848 3888 1056 3888
+            BEGIN DISPLAY 848 3888 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH delay_count
+            WIRE 1536 3696 1712 3696
+            BEGIN DISPLAY 1712 3696 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_read_enable
+            WIRE 2704 3072 2752 3072
+            BEGIN DISPLAY 2752 3072 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_rden
+            WIRE 2336 3104 2448 3104
+            BEGIN DISPLAY 2336 3104 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        INSTANCE XLXI_3512 2448 3168 R0
+        BEGIN INSTANCE TX_INFO_FIFO 5088 3184 R0
+            BEGIN DISPLAY 16 -408 ATTR InstName
+                FONT 28 "Arial"
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH MASTER_CLK
+            WIRE 4848 3232 5088 3232
+            BEGIN DISPLAY 4848 3232 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_din(15:0)
+            WIRE 4784 2896 4896 2896
+            WIRE 4896 2896 5088 2896
+            BEGIN DISPLAY 4896 2896 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_dout(15:0)
+            WIRE 5472 2896 5856 2896
+            BEGIN DISPLAY 5856 2896 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_3526 4400 3056 R0
+        END INSTANCE
+        BEGIN BRANCH tx_info_fifo_data_comm(15:0)
+            WIRE 4224 2960 4400 2960
+            BEGIN DISPLAY 4224 2960 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        INSTANCE XLXI_3527 4000 3344 R0
+        BEGIN BRANCH tx_info_fifo_src_sel
+            WIRE 3936 3312 4000 3312
+            BEGIN DISPLAY 3936 3312 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_wr_en
+            WIRE 4320 3216 4432 3216
+            WIRE 4432 3088 4432 3216
+            WIRE 4432 3088 4912 3088
+            WIRE 4912 3088 5088 3088
+            BEGIN DISPLAY 4912 3088 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_wren_comm
+            WIRE 3936 3184 4000 3184
+            BEGIN DISPLAY 3936 3184 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_fifo_reset_sig
+            WIRE 4864 3184 5088 3184
+            BEGIN DISPLAY 4864 3184 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_rden
+            WIRE 4864 3136 5088 3136
+            BEGIN DISPLAY 4864 3136 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_full
+            WIRE 5472 3184 5760 3184
+            BEGIN DISPLAY 5760 3184 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_wren_burst
+            WIRE 3936 3248 4000 3248
+            BEGIN DISPLAY 3936 3248 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_data_burst(15:0)
+            WIRE 4224 3024 4400 3024
+            BEGIN DISPLAY 4224 3024 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_empty
+            WIRE 5472 3056 5728 3056
+            BEGIN DISPLAY 5728 3056 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_src_sel
+            WIRE 4224 2896 4400 2896
+            BEGIN DISPLAY 4224 2896 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH MASTER_CLK
+            WIRE 5728 3520 5952 3520
+            BEGIN DISPLAY 5728 3520 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_din(63:0)
+            WIRE 5376 3776 5648 3776
+            WIRE 5648 3776 5952 3776
+            BEGIN DISPLAY 5648 3776 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_3531 4992 3936 R0
+        END INSTANCE
+        INSTANCE XLXI_3532 4720 3696 R0
+        BEGIN BRANCH tx_data_fifo_src_sel
+            WIRE 4480 3664 4720 3664
+            BEGIN DISPLAY 4480 3664 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_src_sel
+            WIRE 4752 3776 4992 3776
+            BEGIN DISPLAY 4752 3776 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_wren_comm
+            WIRE 4496 3536 4720 3536
+            BEGIN DISPLAY 4496 3536 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_wr_en
+            WIRE 5040 3568 5376 3568
+            WIRE 5376 3568 5376 3712
+            WIRE 5376 3712 5584 3712
+            WIRE 5584 3712 5952 3712
+            BEGIN DISPLAY 5584 3712 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_read_enable
+            WIRE 5728 3584 5952 3584
+            BEGIN DISPLAY 5728 3584 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH data_fifo_rd_data(63:0)
+            WIRE 6336 3776 6624 3776
+            BEGIN DISPLAY 6624 3776 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data(63:0)
+            WIRE 4752 3840 4992 3840
+            BEGIN DISPLAY 4752 3840 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_wren_burst
+            WIRE 4496 3600 4720 3600
+            BEGIN DISPLAY 4496 3600 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH b_data(63:0)
+            WIRE 4752 3904 4992 3904
+            BEGIN DISPLAY 4752 3904 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_empty
+            WIRE 6336 3520 6608 3520
+            BEGIN DISPLAY 6608 3520 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE TX_DATA_FIFO 5952 3808 R0
+            BEGIN DISPLAY 16 -408 ATTR InstName
+                FONT 28 "Arial"
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH gec_user_rx_size_out(10:0)
+            WIRE 1664 1168 1904 1168
+            BEGIN DISPLAY 1664 1168 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH reset_n
+            WIRE 1664 1040 1904 1040
+            BEGIN DISPLAY 1664 1040 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH data_fifo_full
+            WIRE 1664 784 1904 784
+            BEGIN DISPLAY 1664 784 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH MASTER_CLK
+            WIRE 1664 720 1904 720
+            BEGIN DISPLAY 1664 720 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        INSTANCE XLXI_3364 1664 720 R270
+        BEGIN BRANCH XLXN_342
+            WIRE 1664 656 1904 656
+        END BRANCH
+        BEGIN BRANCH gec_user_crc_err
+            WIRE 1664 912 1904 912
+            BEGIN DISPLAY 1664 912 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH gec_user_rx_valid_out
+            WIRE 1664 976 1904 976
+            BEGIN DISPLAY 1664 976 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH gec_user_rx_data_out(7:0)
+            WIRE 1664 1104 1904 1104
+            BEGIN DISPLAY 1664 1104 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH info_fifo_wr_data(15:0)
+            WIRE 2656 1168 2944 1168
+            BEGIN DISPLAY 2944 1168 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH data_fifo_wr_data(63:0)
+            WIRE 2656 1040 2944 1040
+            BEGIN DISPLAY 2944 1040 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH info_fifo_wren
+            WIRE 2656 912 2960 912
+            BEGIN DISPLAY 2960 912 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH data_fifo_wren
+            WIRE 2656 784 2960 784
+            BEGIN DISPLAY 2960 784 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_err_flag
+            WIRE 2656 656 2960 656
+            BEGIN DISPLAY 2960 656 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_3365 1904 1200 R0
+        END INSTANCE
+        BEGIN BRANCH rx_fifo_reset_sig
+            WIRE 3952 688 4192 688
+            BEGIN DISPLAY 3952 688 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH info_fifo_rd_data(15:0)
+            WIRE 4576 400 4752 400
+            BEGIN DISPLAY 4752 400 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH info_fifo_wren
+            WIRE 3952 592 4192 592
+            BEGIN DISPLAY 3952 592 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_info_fifo_rden
+            WIRE 3952 640 4192 640
+            BEGIN DISPLAY 3952 640 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH info_fifo_wr_data(15:0)
+            WIRE 3952 400 4192 400
+            BEGIN DISPLAY 3952 400 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE RX_INFO_FIFO 4192 688 R0
+            BEGIN DISPLAY 16 -408 ATTR InstName
+                FONT 28 "Arial"
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH rx_info_fifo_empty
+            WIRE 4576 560 4864 560
+            BEGIN DISPLAY 4864 560 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_data(63:0)
+            WIRE 4928 1264 5200 1264
+            BEGIN DISPLAY 5200 1264 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH MASTER_CLK
+            WIRE 4336 1008 4544 1008
+            BEGIN DISPLAY 4336 1008 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_fifo_reset_sig
+            WIRE 4336 1136 4544 1136
+            BEGIN DISPLAY 4336 1136 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH data_fifo_wr_data(63:0)
+            WIRE 4336 1264 4544 1264
+            BEGIN DISPLAY 4336 1264 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH data_fifo_wren
+            WIRE 4336 1200 4544 1200
+            BEGIN DISPLAY 4336 1200 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_data_fifo_read_enable
+            WIRE 4320 1072 4544 1072
+            BEGIN DISPLAY 4320 1072 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_data_fifo_empty
+            WIRE 4928 1008 5248 1008
+            BEGIN DISPLAY 5248 1008 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE RX_DATA_FIFO 4544 1296 R0
+            BEGIN DISPLAY 32 -408 ATTR InstName
+                FONT 28 "Arial"
+            END DISPLAY
+        END INSTANCE
+        INSTANCE XLXI_3401 2672 1760 R270
+        BEGIN INSTANCE XLXI_3506 3040 2560 R0
+        END INSTANCE
+        BEGIN BRANCH XLXN_463
+            WIRE 2672 1696 3040 1696
+        END BRANCH
+        BEGIN BRANCH burst_done
+            WIRE 2816 1808 3040 1808
+            BEGIN DISPLAY 2816 1808 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH MASTER_CLK
+            WIRE 2736 1920 3040 1920
+            BEGIN DISPLAY 2736 1920 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH reset_n
+            WIRE 2736 2032 3040 2032
+            BEGIN DISPLAY 2736 2032 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_info_fifo_empty
+            WIRE 2720 2144 3040 2144
+            BEGIN DISPLAY 2720 2144 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_full
+            WIRE 2720 2256 3040 2256
+            BEGIN DISPLAY 2720 2256 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH info_fifo_rd_data(15:0)
+            WIRE 2736 2480 3040 2480
+            BEGIN DISPLAY 2736 2480 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_data(63:0)
+            WIRE 2784 2368 3040 2368
+            BEGIN DISPLAY 2784 2368 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH burst_stop
+            WIRE 3776 1760 3952 1760
+            BEGIN DISPLAY 3952 1760 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH burst_start
+            WIRE 3776 1696 3968 1696
+            BEGIN DISPLAY 3968 1696 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_data_fifo_read_enable
+            WIRE 3776 2016 4000 2016
+            BEGIN DISPLAY 4000 2016 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_src_sel
+            WIRE 3776 2272 4016 2272
+            BEGIN DISPLAY 4016 2272 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_wren_comm
+            WIRE 3776 2336 4016 2336
+            BEGIN DISPLAY 4016 2336 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_src_sel
+            WIRE 3776 2144 4016 2144
+            BEGIN DISPLAY 4016 2144 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_wren_comm
+            WIRE 3776 2208 4016 2208
+            BEGIN DISPLAY 4016 2208 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH ram_addr(63:0)
+            WIRE 3776 2400 4048 2400
+            BEGIN DISPLAY 4048 2400 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_info_fifo_rden
+            WIRE 3776 2080 3984 2080
+            BEGIN DISPLAY 3984 2080 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH ram_wren
+            WIRE 3776 1952 4064 1952
+            BEGIN DISPLAY 4064 1952 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_data_comm(15:0)
+            WIRE 3776 2528 4032 2528
+            BEGIN DISPLAY 4032 2528 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH MASTER_CLK
+            WIRE 3040 4832 3264 4832
+            BEGIN DISPLAY 3040 4832 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_2539 3264 4928 R0
+        END INSTANCE
+        BEGIN BRANCH tx_info_fifo_wren_burst
+            WIRE 3712 4768 3920 4768
+            BEGIN DISPLAY 3920 4768 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_data_burst(15:0)
+            WIRE 3712 4896 3936 4896
+            BEGIN DISPLAY 3936 4896 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH reset_n
+            WIRE 3024 4896 3264 4896
+            BEGIN DISPLAY 3024 4896 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH burst_stop
+            WIRE 3040 4768 3264 4768
+            BEGIN DISPLAY 3040 4768 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH burst_start
+            WIRE 3040 4704 3264 4704
+            BEGIN DISPLAY 3040 4704 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH burst_done
+            WIRE 3712 4640 3904 4640
+            BEGIN DISPLAY 3904 4640 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH b_enable
+            WIRE 3712 4512 3904 4512
+            BEGIN DISPLAY 3904 4512 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH b_data_we
+            WIRE 3056 4512 3264 4512
+            BEGIN DISPLAY 3056 4512 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_full
+            WIRE 3024 4960 3264 4960
+            BEGIN DISPLAY 3024 4960 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_wren_burst
+            WIRE 3712 4960 3936 4960
+            BEGIN DISPLAY 3936 4960 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_info_fifo_full
+            WIRE 3024 5024 3264 5024
+            BEGIN DISPLAY 3024 5024 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        INSTANCE XLXI_3540 2736 4704 R0
+        BEGIN BRANCH XLXN_1735
+            WIRE 2800 4576 3216 4576
+            WIRE 3216 4576 3264 4576
+        END BRANCH
+        BEGIN BRANCH ram_wren
+            WIRE 6128 160 6384 160
+        END BRANCH
+        BEGIN BRANCH ram_addr(63:0)
+            WIRE 6128 224 6384 224
+        END BRANCH
+        BEGIN BRANCH gec_user_tx_data_in(7:0)
+            WIRE 6128 288 6384 288
+        END BRANCH
+        BEGIN BRANCH gec_user_tx_size_in(10:0)
+            WIRE 6128 352 6384 352
+        END BRANCH
+        BEGIN BRANCH gec_user_trigger
+            WIRE 6128 416 6384 416
+        END BRANCH
+        BEGIN BRANCH rx_data(63:0)
+            WIRE 6128 480 6384 480
+        END BRANCH
+        BEGIN BRANCH b_enable
+            WIRE 6128 544 6384 544
+        END BRANCH
+        IOMARKER 6384 160 ram_wren R0 28
+        IOMARKER 6384 224 ram_addr(63:0) R0 28
+        IOMARKER 6384 288 gec_user_tx_data_in(7:0) R0 28
+        IOMARKER 6384 352 gec_user_tx_size_in(10:0) R0 28
+        IOMARKER 6384 416 gec_user_trigger R0 28
+        IOMARKER 6384 480 rx_data(63:0) R0 28
+        IOMARKER 6384 544 b_enable R0 28
+        BEGIN BRANCH tx_data(63:0)
+            WIRE 400 608 640 608
+        END BRANCH
+        IOMARKER 400 608 tx_data(63:0) R180 28
+        BEGIN BRANCH b_data(63:0)
+            WIRE 400 656 640 656
+        END BRANCH
+        IOMARKER 400 656 b_data(63:0) R180 28
+        BEGIN BRANCH rx_fifo_reset
+            WIRE 3776 2592 4064 2592
+            BEGIN DISPLAY 4064 2592 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_fifo_reset
+            WIRE 3776 2656 4064 2656
+            BEGIN DISPLAY 4064 2656 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_data_fifo_full
+            WIRE 6336 3648 6448 3648
+            WIRE 6448 3648 6608 3648
+            BEGIN DISPLAY 6608 3648 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH b_end_packet
+            WIRE 3040 4640 3264 4640
+            BEGIN DISPLAY 3040 4640 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH b_end_packet
+            WIRE 400 704 640 704
+        END BRANCH
+        IOMARKER 400 704 b_end_packet R180 28
+        BEGIN BRANCH MASTER_CLK
+            WIRE 3952 736 4192 736
+            BEGIN DISPLAY 3952 736 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        INSTANCE XLXI_3541 4672 1584 R0
+        BEGIN BRANCH rx_fifo_reset
+            WIRE 4544 1520 4672 1520
+            BEGIN DISPLAY 4544 1520 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH reset
+            WIRE 4448 1456 4672 1456
+            BEGIN DISPLAY 4448 1456 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_fifo_reset_sig
+            WIRE 4928 1488 5088 1488
+            BEGIN DISPLAY 5088 1488 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        INSTANCE XLXI_3505 5664 4144 R0
+        BEGIN BRANCH reset
+            WIRE 5440 4016 5664 4016
+            BEGIN DISPLAY 5440 4016 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_fifo_reset
+            WIRE 5536 4080 5664 4080
+            BEGIN DISPLAY 5536 4080 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_fifo_reset_sig
+            WIRE 5920 4048 6080 4048
+            BEGIN DISPLAY 6080 4048 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH tx_fifo_reset_sig
+            WIRE 5840 3648 5952 3648
+            BEGIN DISPLAY 5840 3648 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+    END SHEET
+END SCHEMATIC

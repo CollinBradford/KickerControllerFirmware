@@ -1,0 +1,464 @@
+VERSION 6
+BEGIN SCHEMATIC
+    BEGIN ATTR DeviceFamilyName "virtex4"
+        DELETE all:0
+        EDITNAME all:0
+        EDITTRAIT all:0
+    END ATTR
+    BEGIN NETLIST
+        SIGNAL crc_gen_en
+        SIGNAL crc_gen_rd
+        SIGNAL crc_gen_init
+        SIGNAL crc_chk_en
+        SIGNAL crc_init
+        SIGNAL crc_chk_err
+        SIGNAL user_rx_size_out(10:0)
+        SIGNAL GMII_TX_EN
+        SIGNAL GMII_TX_ER
+        SIGNAL GTX_CLK
+        SIGNAL user_tx_data_in(7:0)
+        SIGNAL user_tx_size_in(10:0)
+        SIGNAL user_addrs(7:0)
+        SIGNAL GMII_RXD(7:0)
+        SIGNAL GMII_RX_CLK
+        SIGNAL user_test_mode
+        SIGNAL user_trigger
+        SIGNAL user_busy
+        SIGNAL user_rx_valid_out
+        SIGNAL user_tx_enable_out
+        SIGNAL user_rx_data_out(7:0)
+        SIGNAL txd_sig(7:0)
+        SIGNAL GMII_TXD(7:0)
+        SIGNAL crc_err
+        SIGNAL crc_out(7:0)
+        SIGNAL reset
+        SIGNAL GMII_RX_DV
+        SIGNAL GMII_RX_ER
+        SIGNAL rx_data(7:0)
+        SIGNAL rx_er
+        SIGNAL rx_dv
+        PORT Output user_rx_size_out(10:0)
+        PORT Output GMII_TX_EN
+        PORT Output GMII_TX_ER
+        PORT Output GTX_CLK
+        PORT Input user_tx_data_in(7:0)
+        PORT Input user_tx_size_in(10:0)
+        PORT Input user_addrs(7:0)
+        PORT Input GMII_RXD(7:0)
+        PORT Input GMII_RX_CLK
+        PORT Input user_test_mode
+        PORT Input user_trigger
+        PORT Output user_busy
+        PORT Output user_rx_valid_out
+        PORT Output user_tx_enable_out
+        PORT Output user_rx_data_out(7:0)
+        PORT Output GMII_TXD(7:0)
+        PORT Output crc_err
+        PORT Input reset
+        PORT Input GMII_RX_DV
+        PORT Input GMII_RX_ER
+        BEGIN BLOCKDEF DIG_GEC
+            TIMESTAMP 2009 3 17 18 38 14
+            LINE N 656 384 720 384 
+            LINE N 656 448 720 448 
+            LINE N 656 512 720 512 
+            LINE N 656 256 720 256 
+            LINE N 656 320 720 320 
+            LINE N 656 192 720 192 
+            LINE N 64 -192 0 -192 
+            LINE N 64 -128 0 -128 
+            LINE N 64 -784 0 -784 
+            LINE N 64 -672 0 -672 
+            LINE N 64 -608 0 -608 
+            LINE N 64 -544 0 -544 
+            RECTANGLE N 0 -492 64 -468 
+            LINE N 64 -480 0 -480 
+            RECTANGLE N 656 52 720 76 
+            LINE N 656 64 720 64 
+            RECTANGLE N 656 116 720 140 
+            LINE N 656 128 720 128 
+            LINE N 656 -672 720 -672 
+            LINE N 656 -608 720 -608 
+            LINE N 656 -544 720 -544 
+            RECTANGLE N 656 -492 720 -468 
+            LINE N 656 -480 720 -480 
+            LINE N 656 -192 720 -192 
+            LINE N 656 -128 720 -128 
+            LINE N 656 -64 720 -64 
+            RECTANGLE N 0 -76 64 -52 
+            LINE N 64 -64 0 -64 
+            RECTANGLE N 0 116 64 140 
+            LINE N 64 128 0 128 
+            RECTANGLE N 0 52 64 76 
+            LINE N 64 64 0 64 
+            RECTANGLE N 64 -944 656 556 
+        END BLOCKDEF
+        BEGIN BLOCKDEF CRC_splice
+            TIMESTAMP 2007 12 4 22 53 2
+            RECTANGLE N 64 -192 320 0 
+            LINE N 64 -160 0 -160 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 320 -172 384 -148 
+            LINE N 320 -160 384 -160 
+        END BLOCKDEF
+        BEGIN BLOCKDEF CRC_gen
+            TIMESTAMP 2007 12 4 22 48 38
+            RECTANGLE N 64 -384 464 0 
+            LINE N 64 -352 0 -352 
+            LINE N 64 -288 0 -288 
+            LINE N 64 -224 0 -224 
+            LINE N 64 -160 0 -160 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            LINE N 464 -352 528 -352 
+            RECTANGLE N 464 -44 528 -20 
+            LINE N 464 -32 528 -32 
+        END BLOCKDEF
+        BEGIN BLOCKDEF CRC_chk
+            TIMESTAMP 2007 12 4 20 42 42
+            RECTANGLE N 64 -384 320 0 
+            LINE N 64 -352 0 -352 
+            LINE N 64 -288 0 -288 
+            LINE N 64 -224 0 -224 
+            LINE N 64 -160 0 -160 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            LINE N 320 -352 384 -352 
+        END BLOCKDEF
+        BEGIN BLOCKDEF RX_IN_LATCH
+            TIMESTAMP 2009 3 18 21 15 33
+            RECTANGLE N 64 -256 320 0 
+            LINE N 64 -224 0 -224 
+            LINE N 64 -160 0 -160 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 320 -44 384 -20 
+            LINE N 320 -32 384 -32 
+            LINE N 320 -160 384 -160 
+            LINE N 320 -96 384 -96 
+        END BLOCKDEF
+        BEGIN BLOCK XLXI_249 DIG_GEC
+            PIN GMII_RX_CLK GMII_RX_CLK
+            PIN GMII_RX_DV rx_dv
+            PIN GMII_RX_ER rx_er
+            PIN reset reset
+            PIN test_mode user_test_mode
+            PIN trigger user_trigger
+            PIN GMII_RXD(7:0) rx_data(7:0)
+            PIN user_addrs(7:0) user_addrs(7:0)
+            PIN user_tx_data_in(7:0) user_tx_data_in(7:0)
+            PIN user_tx_size_in(10:0) user_tx_size_in(10:0)
+            PIN GMII_GTX_CLK GTX_CLK
+            PIN GMII_TX_EN GMII_TX_EN
+            PIN GMII_TX_ER GMII_TX_ER
+            PIN busy user_busy
+            PIN crc_chk_en crc_chk_en
+            PIN crc_chk_err crc_chk_err
+            PIN crc_chk_init crc_init
+            PIN crc_gen_en crc_gen_en
+            PIN crc_gen_init crc_gen_init
+            PIN crc_gen_rd crc_gen_rd
+            PIN en_tx_data user_tx_enable_out
+            PIN udp_data_valid_out user_rx_valid_out
+            PIN GMII_TXD(7:0) txd_sig(7:0)
+            PIN udp_data_count(10:0) user_rx_size_out(10:0)
+            PIN user_rx_data_out(7:0) user_rx_data_out(7:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_248 CRC_splice
+            PIN rd crc_gen_rd
+            PIN data(7:0) txd_sig(7:0)
+            PIN crc(7:0) crc_out(7:0)
+            PIN dataout(7:0) GMII_TXD(7:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_226 CRC_chk
+            PIN Reset reset
+            PIN Clk GMII_RX_CLK
+            PIN CRC_init crc_init
+            PIN CRC_en crc_chk_en
+            PIN CRC_chk_en crc_chk_err
+            PIN CRC_data(7:0) rx_data(7:0)
+            PIN CRC_err crc_err
+        END BLOCK
+        BEGIN BLOCK XLXI_238 CRC_gen
+            PIN Reset reset
+            PIN Clk GMII_RX_CLK
+            PIN Init crc_gen_init
+            PIN Data_en crc_gen_en
+            PIN CRC_rd crc_gen_rd
+            PIN Frame_data(7:0) txd_sig(7:0)
+            PIN CRC_end
+            PIN CRC_out(7:0) crc_out(7:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_251 RX_IN_LATCH
+            PIN clk GMII_RX_CLK
+            PIN dv GMII_RX_DV
+            PIN er GMII_RX_ER
+            PIN d(7:0) GMII_RXD(7:0)
+            PIN do(7:0) rx_data(7:0)
+            PIN dvo rx_dv
+            PIN ero rx_er
+        END BLOCK
+    END NETLIST
+    BEGIN SHEET 1 7040 5440
+        BEGIN INSTANCE XLXI_249 3040 3056 R0
+        END INSTANCE
+        BEGIN BRANCH crc_gen_en
+            WIRE 3760 3440 4032 3440
+            BEGIN DISPLAY 4032 3440 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_gen_rd
+            WIRE 3760 3568 4032 3568
+            BEGIN DISPLAY 4032 3568 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_gen_init
+            WIRE 3760 3504 4032 3504
+            BEGIN DISPLAY 4032 3504 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_chk_en
+            WIRE 3760 3248 4032 3248
+            BEGIN DISPLAY 4032 3248 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_init
+            WIRE 3760 3376 4032 3376
+            BEGIN DISPLAY 4032 3376 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_chk_err
+            WIRE 3760 3312 4032 3312
+            BEGIN DISPLAY 4032 3312 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH user_rx_size_out(10:0)
+            WIRE 3760 3120 4496 3120
+        END BRANCH
+        BEGIN BRANCH GMII_TX_EN
+            WIRE 3760 2448 4464 2448
+        END BRANCH
+        BEGIN BRANCH GMII_TX_ER
+            WIRE 3760 2512 4464 2512
+        END BRANCH
+        BEGIN BRANCH GTX_CLK
+            WIRE 3760 2384 4464 2384
+        END BRANCH
+        BEGIN BRANCH user_tx_data_in(7:0)
+            WIRE 2032 3184 3040 3184
+        END BRANCH
+        BEGIN BRANCH user_tx_size_in(10:0)
+            WIRE 2032 3120 3040 3120
+        END BRANCH
+        BEGIN BRANCH user_addrs(7:0)
+            WIRE 2032 2992 3040 2992
+        END BRANCH
+        BEGIN BRANCH user_test_mode
+            WIRE 2032 2864 3040 2864
+        END BRANCH
+        BEGIN BRANCH user_trigger
+            WIRE 2032 2928 3040 2928
+        END BRANCH
+        BEGIN BRANCH reset
+            WIRE 1808 2272 2864 2272
+            WIRE 2864 2272 3040 2272
+            BEGIN DISPLAY 2864 2272 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH user_busy
+            WIRE 3760 2864 4496 2864
+        END BRANCH
+        BEGIN BRANCH user_rx_valid_out
+            WIRE 3760 2992 4496 2992
+        END BRANCH
+        BEGIN BRANCH user_tx_enable_out
+            WIRE 3760 2928 4496 2928
+        END BRANCH
+        BEGIN BRANCH user_rx_data_out(7:0)
+            WIRE 3760 3184 4496 3184
+        END BRANCH
+        BEGIN BRANCH txd_sig(7:0)
+            WIRE 3760 2576 4096 2576
+            BEGIN DISPLAY 4096 2576 ATTR Name
+                ALIGNMENT SOFT-LEFT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_248 3968 1936 R0
+        END INSTANCE
+        BEGIN BRANCH txd_sig(7:0)
+            WIRE 3712 1840 3968 1840
+            BEGIN DISPLAY 3712 1840 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_gen_rd
+            WIRE 3712 1776 3968 1776
+            BEGIN DISPLAY 3712 1776 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH GMII_TXD(7:0)
+            WIRE 4352 1776 4656 1776
+        END BRANCH
+        BEGIN BRANCH crc_chk_en
+            WIRE 3632 4064 3904 4064
+            BEGIN DISPLAY 3632 4064 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_chk_err
+            WIRE 3632 4128 3904 4128
+            BEGIN DISPLAY 3632 4128 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_init
+            WIRE 3632 4000 3904 4000
+            BEGIN DISPLAY 3632 4000 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_data(7:0)
+            WIRE 3536 4192 3904 4192
+            BEGIN DISPLAY 3536 4192 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH GMII_RX_CLK
+            WIRE 3632 3936 3904 3936
+            BEGIN DISPLAY 3632 3936 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH reset
+            WIRE 3632 3872 3904 3872
+            BEGIN DISPLAY 3632 3872 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_err
+            WIRE 4288 3872 4496 3872
+        END BRANCH
+        BEGIN INSTANCE XLXI_226 3904 4224 R0
+        END INSTANCE
+        BEGIN BRANCH crc_out(7:0)
+            WIRE 3200 1904 3360 1904
+            WIRE 3360 1904 3968 1904
+            BEGIN DISPLAY 3360 1904 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH txd_sig(7:0)
+            WIRE 2416 1904 2672 1904
+            BEGIN DISPLAY 2416 1904 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH GMII_RX_CLK
+            WIRE 2400 1648 2672 1648
+            BEGIN DISPLAY 2400 1648 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_gen_en
+            WIRE 2416 1776 2672 1776
+            BEGIN DISPLAY 2416 1776 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_gen_rd
+            WIRE 2416 1840 2672 1840
+            BEGIN DISPLAY 2416 1840 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH crc_gen_init
+            WIRE 2416 1712 2672 1712
+            BEGIN DISPLAY 2416 1712 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH reset
+            WIRE 2400 1584 2672 1584
+            BEGIN DISPLAY 2400 1584 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_238 2672 1936 R0
+        END INSTANCE
+        IOMARKER 4496 2864 user_busy R0 28
+        IOMARKER 4496 2992 user_rx_valid_out R0 28
+        IOMARKER 4496 2928 user_tx_enable_out R0 28
+        IOMARKER 4496 3120 user_rx_size_out(10:0) R0 28
+        IOMARKER 4496 3184 user_rx_data_out(7:0) R0 28
+        IOMARKER 4656 1776 GMII_TXD(7:0) R0 28
+        IOMARKER 4496 3872 crc_err R0 28
+        IOMARKER 2032 2928 user_trigger R180 28
+        IOMARKER 2032 2864 user_test_mode R180 28
+        IOMARKER 2032 2992 user_addrs(7:0) R180 28
+        IOMARKER 2032 3120 user_tx_size_in(10:0) R180 28
+        IOMARKER 2032 3184 user_tx_data_in(7:0) R180 28
+        IOMARKER 4464 2384 GTX_CLK R0 28
+        IOMARKER 4464 2448 GMII_TX_EN R0 28
+        IOMARKER 4464 2512 GMII_TX_ER R0 28
+        BEGIN BRANCH GMII_RXD(7:0)
+            WIRE 1792 2576 2064 2576
+        END BRANCH
+        BEGIN BRANCH GMII_RX_DV
+            WIRE 1792 2448 2064 2448
+        END BRANCH
+        BEGIN BRANCH GMII_RX_ER
+            WIRE 1792 2512 2064 2512
+        END BRANCH
+        BEGIN BRANCH GMII_RX_CLK
+            WIRE 1792 2384 2064 2384
+        END BRANCH
+        BEGIN INSTANCE XLXI_251 2064 2608 R0
+        END INSTANCE
+        IOMARKER 1792 2384 GMII_RX_CLK R180 28
+        IOMARKER 1792 2448 GMII_RX_DV R180 28
+        IOMARKER 1792 2512 GMII_RX_ER R180 28
+        IOMARKER 1792 2576 GMII_RXD(7:0) R180 28
+        BEGIN BRANCH rx_data(7:0)
+            WIRE 2448 2576 2736 2576
+            WIRE 2736 2576 3040 2576
+            BEGIN DISPLAY 2736 2576 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_er
+            WIRE 2448 2512 2640 2512
+            WIRE 2640 2512 3040 2512
+            BEGIN DISPLAY 2640 2512 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH rx_dv
+            WIRE 2448 2448 2656 2448
+            WIRE 2656 2448 3040 2448
+            BEGIN DISPLAY 2656 2448 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH GMII_RX_CLK
+            WIRE 2864 2384 3040 2384
+            BEGIN DISPLAY 2864 2384 ATTR Name
+                ALIGNMENT SOFT-RIGHT
+            END DISPLAY
+        END BRANCH
+        IOMARKER 1808 2272 reset R180 28
+    END SHEET
+END SCHEMATIC

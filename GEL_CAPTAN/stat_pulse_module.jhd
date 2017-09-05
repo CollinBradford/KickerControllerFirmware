@@ -1,0 +1,3 @@
+MODULE stat_pulse_module
+	SUBMODULE stat_pulse
+		INSTANCE XLXI_1

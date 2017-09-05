@@ -1,0 +1,220 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Oct 28 11:47:03 2016
+# Process ID: 7560
+# Log file: D:/cbradford/FiFoFix/GEL_CAPTAN/planAhead_run_1/planAhead.log
+# Journal file: D:/cbradford/FiFoFix/GEL_CAPTAN/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/cbradford/FiFoFix/GEL_CAPTAN/pa.fromNcd.tcl
+# create_project -name dig_mac -dir "D:/cbradford/FiFoFix/GEL_CAPTAN/planAhead_run_1" -part xc4vlx25ff668-10
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL_cs.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/cbradford/FiFoFix/GEL_CAPTAN} {../ipcore_dir} {ipcore_dir} }
+# add_files [list {../ipcore_dir/ADDR_FIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {../ipcore_dir/DATA_FIFO_0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {../ipcore_dir/INFO_FIFO_0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ADC_FIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ethernetFIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ethernet_FIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_adc.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "TOP_LEVEL.ucf" [current_fileset -constrset]
+Adding file 'D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf' to fileset 'constrs_1'
+# add_files [list {TOP_LEVEL.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc4vlx25ff668-10
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design TOP_LEVEL_cs.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SRL
+   16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_SRL16.U_GAND_SR
+   L16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_SRL16.U_GAND_SR
+   L16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_G
+   ANDX_SRL16/sel<158 : 0> on block ila_pro_0 is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_pro is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_req_chk_sum_sig_15_add0000_lut<15 :
+   0> on block icmp_ping_checksum_calc is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_udp_data_valid_sig_cmp_gt0000_lut<4 : 0> on block decipherer is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_zero_fill_count_not0000<10 : 0> on
+   block create_packet is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_tx_data_count_addsub0000_cy<8 : 3>
+   on block tx_seq_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_qw_count_addsub0000_cy<6 : 3> on
+   block tx_seq_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_mem_loc_count_reg_addsub0000_cy<5 :
+   2> on block ram_comm_dec is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_q_w_count_addsub0000_cy<5 : 3> on
+   block rx_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_q_w_counter_addsub0000_cy<5 : 2> on
+   block rx_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ots_dout<63 : 0> on block
+   ethernet_interface is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file TOP_LEVEL_cs.edif ...
+ngc2edif: Total memory usage is 98648 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/dig_mac.data/cache/TOP_LEVEL_cs_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/dig_mac.data/cache/TOP_LEVEL_cs_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn]
+INFO: [Device 21-21] Reading bus macro file C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/pr_bus_macros.xml
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ff668/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ff668/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/virtex4lx-10.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/virtex4lx-10.lib.
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6291' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL_cs.ngc:186013]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6291' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL_cs.ngc:186015]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6330' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL_cs.ngc:186021]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6330' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL_cs.ngc:186023]
+Parsing UCF File [D:/cbradford/FiFoFix/ipcore_dir/ADDR_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/FiFoFix/ipcore_dir/ADDR_FIFO.ncf]
+Parsing UCF File [D:/cbradford/FiFoFix/ipcore_dir/DATA_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/FiFoFix/ipcore_dir/DATA_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/FiFoFix/ipcore_dir/INFO_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/FiFoFix/ipcore_dir/INFO_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/FiFoFix/GEL_CAPTAN/ipcore_dir/ADC_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/FiFoFix/GEL_CAPTAN/ipcore_dir/ADC_FIFO.ncf]
+Parsing UCF File [D:/cbradford/FiFoFix/GEL_CAPTAN/ipcore_dir/ethernet_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/FiFoFix/GEL_CAPTAN/ipcore_dir/ethernet_FIFO.ncf]
+Parsing UCF File [D:/cbradford/FiFoFix/GEL_CAPTAN/.Xil/PlanAhead-7560-RIVIERA/ngc2edif/TOP_LEVEL_cs.xncf]
+Finished Parsing UCF File [D:/cbradford/FiFoFix/GEL_CAPTAN/.Xil/PlanAhead-7560-RIVIERA/ngc2edif/TOP_LEVEL_cs.xncf]
+Parsing UCF File [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_00DP_00S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:285]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_00DP_00S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:286]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_00DN_01S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:287]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_00DN_01S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:288]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_01DP_02S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:289]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_01DP_02S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:290]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_01DN_03S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:291]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_01DN_03S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:292]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_02DP_04S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:293]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_02DP_04S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:294]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_02DN_05S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:295]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_02DN_05S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:296]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_03DP_06S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:297]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_03DP_06S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:298]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_03DN_07S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:299]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_03DN_07S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:300]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_04DP_08S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:301]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_04DP_08S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:302]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_04DN_09S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:303]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_04DN_09S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:304]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_05DP_10S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:305]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_05DP_10S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:306]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_05DN_11S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:307]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_05DN_11S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:308]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_06DP_12S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:309]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_06DP_12S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:310]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_06DN_13S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:311]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_06DN_13S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:312]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_07DP_14S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:313]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_07DP_14S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:314]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_07DN_15S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:315]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_07DN_15S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:316]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_08DP_16S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:317]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_08DP_16S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:318]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_08DN_17S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:319]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_08DN_17S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:320]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_09DP_18S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:321]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_09DP_18S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:322]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_09DN_19S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:323]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_09DN_19S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:324]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_10DP_20S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:325]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_10DP_20S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:326]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_10DN_21S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:327]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_10DN_21S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:328]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_11DP_22S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:329]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_11DP_22S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:330]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_11DN_23S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:331]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_11DN_23S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:332]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_12DP_24S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:333]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_12DP_24S' [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf:334]
+INFO: [Common 17-14] Message 'Constraints 18-11' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+Finished Parsing UCF File [D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 6d8b1f97
+link_design: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 658.699 ; gain = 195.086
+# read_xdl -file "D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ncd"
+Release 14.7 - xdl P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '4vlx25.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "TOP_LEVEL" is an NCD, version 3.2, device xc4vlx25, package ff668, speed -10
+This design is using the default stepping level (major silicon revision) for this device (1). Unless your design is targeted at devices of this stepping level, it is recommended that you explicitly specify the stepping level of the parts you will be using.
+This will allow the tools to take advantage of any available performance and functional enhancements for this device. The latest stepping level for this device is '2'. Additional information on "stepping level" is available at support.xilinx.com.
+Successfully converted design 'D:\cbradford\FiFoFix\GEL_CAPTAN\TOP_LEVEL.ncd' to 'D:\cbradford\FiFoFix\GEL_CAPTAN\TOP_LEVEL.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.ncd
+INFO: [Designutils 20-671] Placed 9836 instances
+read_xdl: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 661.676 ; gain = 2.977
+# if {[catch {read_twx -name results_1 -file "D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"D:/cbradford/FiFoFix/GEL_CAPTAN/TOP_LEVEL.twx\": $eInfo"
+# }
+report_clock_interaction -significant_digits 3 -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [#UNDEF]  Finished parsing spd file virtex4lx/4vlx25 .
+INFO: [Timing 38-45] Going to infer timing constraints.
+WARNING: [Constraints 18-467] The TNM/TNM_NET will not trace through clock modifying cells like MMCMs since it is not referenced exclusively by a single PERIOD constraint [D:/cbradford/FiFoFix/GEL_CAPTAN/.Xil/PlanAhead-7560-RIVIERA/ngc2edif/TOP_LEVEL_cs.xncf:5]
+WARNING: [Constraints 18-467] The TNM/TNM_NET will not trace through clock modifying cells like MMCMs since it is not referenced exclusively by a single PERIOD constraint [D:/cbradford/FiFoFix/GEL_CAPTAN/.Xil/PlanAhead-7560-RIVIERA/ngc2edif/TOP_LEVEL_cs.xncf:3]
+WARNING: [Constraints 18-467] The TNM/TNM_NET will not trace through clock modifying cells like MMCMs since it is not referenced exclusively by a single PERIOD constraint [D:/cbradford/FiFoFix/GEL_CAPTAN/.Xil/PlanAhead-7560-RIVIERA/ngc2edif/TOP_LEVEL_cs.xncf:1]
+INFO: [Timing 38-33] Done inferring timing constraints.
+INFO: [Timing 38-36] Done setting wire delays.
+INFO: [Timing 38-85] Total timing graph edges = 96697.
+INFO: [Timing 38-86] Total timing graph wire edges = 36285.
+INFO: [Timing 38-87] Total zero delay edges = 6027.
+INFO: [Timing 38-84] Total non-zero delay edges = 30177.
+INFO: [Dlyest 22-12] Total pin-pairs supplied = 36204 . 
+INFO: [Dlyest 22-11] Total data-paths obtained = 9209 . 
+INFO: [Dlyest 22-13] P2P = 29658, P2B = 0, P2NB = 2781, B2B = 0, B2NB = 0, NB2NB = 1 . 
+report_clock_interaction: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 771.293 ; gain = 48.625
+ERROR: [PlanAhead 12-106] *** Exception: java.lang.NullPointerException (See D:/cbradford/FiFoFix/GEL_CAPTAN\planAhead_pid7560.debug)
+ERROR: [PlanAhead 12-106] *** Exception: java.lang.NullPointerException (See D:/cbradford/FiFoFix/GEL_CAPTAN\planAhead_pid7560.debug)

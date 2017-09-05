@@ -1,0 +1,12 @@
+vhdtdtfi -lib work fadc_params_package.vhd -lib work FADC_READ_CTRL.vhd -prj dig_mac -o FADC_READ_CTRL.spl -module FADC_READ_CTRL -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 FADC_READ_CTRL.spl C:/Captan/FastADC/FAST_ADC_FW_01/FAST_ADC_FW_/GEL_CAPTAN/FADC_READ_CTRL.sym 
+vhdtdtfi -lib work fadc_params_package.vhd -lib work FADC_READ_CTRL.vhd -prj dig_mac -o FADC_READ_CTRL.spl -module FADC_READ_CTRL -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 FADC_READ_CTRL.spl C:/Captan/FastADC/FAST_ADC_FW_01/FAST_ADC_FW_/GEL_CAPTAN/FADC_READ_CTRL.sym 
+vhdtdtfi -lib work fadc_params_package.vhd -lib work FADC_READ_CTRL.vhd -prj dig_mac -o FADC_READ_CTRL.spl -module FADC_READ_CTRL -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 FADC_READ_CTRL.spl C:/Captan/FastADC/FAST_ADC_FW_01/FAST_ADC_FW_/GEL_CAPTAN/FADC_READ_CTRL.sym 
+vhdtdtfi -lib work fadc_params_package.vhd -lib work FADC_READ_CTRL.vhd -prj dig_mac -o FADC_READ_CTRL.spl -module FADC_READ_CTRL -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 FADC_READ_CTRL.spl C:/Captan/FastADC/FAST_ADC_FW_01/FAST_ADC_FW_/GEL_CAPTAN/FADC_READ_CTRL.sym 
+vhdtdtfi -lib work fadc_params_package.vhd -lib work FADC_READ_CTRL.vhd -prj dig_mac -o FADC_READ_CTRL.spl -module FADC_READ_CTRL -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 FADC_READ_CTRL.spl C:/Captan/FastADC/FAST_ADC_FW_01/FAST_ADC_FW_/GEL_CAPTAN/FADC_READ_CTRL.sym 
+vhdtdtfi -lib work fadc_params_package.vhd -lib work FADC_READ_CTRL.vhd -prj dig_mac -o FADC_READ_CTRL.spl -module FADC_READ_CTRL -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 FADC_READ_CTRL.spl C:/Captan/FastADC/FAST_ADC_FW_01/FAST_ADC_FW_/GEL_CAPTAN/FADC_READ_CTRL.sym 

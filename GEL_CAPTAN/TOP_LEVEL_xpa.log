@@ -1,0 +1,26 @@
+Creating log file
+D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\TOP_LEVEL_xpa.log.
+Loading device for application Rf_Device from file '4vlx25.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\.
+   "TOP_LEVEL" is an NCD, version 3.2, device xc4vlx25, package ff668, speed -10
+This design is using the default stepping level (major silicon revision) for
+this device (1). Unless your design is targeted at devices of this stepping
+level, it is recommended that you explicitly specify the stepping level of the
+parts you will be using. This will allow the tools to take advantage of any
+available performance and functional enhancements for this device. The latest
+stepping level for this device is '2'. Additional information on "stepping
+level" is available at support.xilinx.com.
+
+INFO:Power:1693 - 
+   --------------------------------------------------------------
+                         The power estimate will be calculated using PRODUCTION
+   data.
+   --------------------------------------------------------------
+
+Design load 20% completeFound an unknown type LOWCAPIOB_PAD
+Found an unknown type LOWCAPIOB_PADOUTUSED
+Design load 25% completeDesign load 30% completeDesign load 60% completeWARNING:Power:1087 - Can't change frequency of net CLK_187_5 to 187.50Mhz
+WARNING:Power:1087 - Can't change frequency of net CLK_375 to 375.00Mhz
+WARNING:Power:1087 - Can't change frequency of net XLXN_15130 to 200.00Mhz
+Design load 95% completeDesign load 100% completeRunning Vector-less Activity Propagation
+......

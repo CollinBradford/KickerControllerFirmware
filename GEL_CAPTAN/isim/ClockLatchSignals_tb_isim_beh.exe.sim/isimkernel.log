@@ -1,0 +1,10 @@
+Command line:
+   ClockLatchSignals_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55498
+
+Fri Sep 30 11:39:58 2016
+
+
+ Elaboration Time: 0.1092 sec

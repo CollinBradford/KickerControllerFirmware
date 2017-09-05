@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator K.34
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o "C:/Documents and Settings/aprosser/Desktop/dig_mac_GEL-CAPTAN-J1_3/dig-mac_GEL_V02/GEL_CAPTAN//GEL_PROM" -u 0 "C:/Documents and Settings/aprosser/Desktop/dig_mac_GEL-CAPTAN-J1_3/dig-mac_GEL_V02/GEL_CAPTAN/top_level.bit" -x xcf32p 
+
+PROM C:/Documents and Settings/aprosser/Desktop/dig_mac_GEL-CAPTAN-J1_3/dig-mac_GEL_V02/GEL_CAPTAN//GEL_PROM.prm map: Thu Jul 24 11:33:45 2008
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          4096K
+PROM start    0000:0000
+PROM end      003f:ffff
+PROM checksum 310ec8ec
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    000e:ea4f     Jul 23 15:25:49 2008 C:/Documents and Settings/aprosser/Desktop/dig_mac_GEL-CAPTAN-J1_3/dig-mac_GEL_V02/GEL_CAPTAN/top_level.bit

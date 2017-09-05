@@ -1,0 +1,11 @@
+[Inputs]
+clk
+rd_en
+srst
+wr_en
+=din[63:0]=
+[Outputs]
+empty
+full
+=dout[63:0]=
+[BiDir]

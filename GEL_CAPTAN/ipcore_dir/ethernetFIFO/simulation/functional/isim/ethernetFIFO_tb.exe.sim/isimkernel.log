@@ -1,0 +1,28 @@
+Command line:
+   ethernetFIFO_tb.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61602
+
+Wed Jul 06 14:07:37 2016
+
+
+ Elaboration Time: 0.078001 sec
+
+ Current Memory Usage: 1481.35 Meg
+
+ Total Signals          : 852
+ Total Nets             : 2973
+ Total Signal Drivers   : 346
+ Total Blocks           : 113
+ Total Primitive Blocks : 62
+ Total Processes        : 184
+ Total Traceable Variables  : 482
+ Total Scalar Nets and Variables : 4702
+
+ Total Simulation Time: 0.093601 sec
+
+ Current Memory Usage: 1481.35 Meg
+
+Wed Jul 06 14:07:54 2016
+

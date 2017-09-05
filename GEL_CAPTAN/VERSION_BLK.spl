@@ -1,0 +1,4 @@
+[Inputs]
+[Outputs]
+=version[7:0]=
+[BiDir]
