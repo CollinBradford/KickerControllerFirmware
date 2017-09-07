@@ -38,11 +38,14 @@ entity PeakFinder is
 			  data_in : in  STD_LOGIC_VECTOR (63 downto 0);
 			  signal_threshold : in STD_LOGIC_VECTOR(7 downto 0);
 			  user_sample_width : in STD_LOGIC_VECTOR(15 downto 0);
+			  manual : in STD_LOGIC;
+			  force_trig : in STD_LOGIC;
            data_out : out STD_LOGIC_VECTOR (63 downto 0);
 			  addr_out : out STD_LOGIC_VECTOR (9 downto 0);
            out_enable : out  STD_LOGIC;
 			  trigger_address : out STD_LOGIC_VECTOR(9 downto 0);
-			  new_trigger : out STD_LOGIC);
+			  new_trigger : out STD_LOGIC;
+			  clear_manual_trig : out STD_LOGIC);
 end PeakFinder;
 
 architecture Behavioral of PeakFinder is
@@ -61,6 +64,7 @@ architecture Behavioral of PeakFinder is
 	signal triggered : std_logic;--Means that a signal is over the threshold.  Sync with clk.
 	signal userSampleWidth : unsigned(15 downto 0);
 	signal samplesSinceTrig : unsigned(15 downto 0);
+	signal clearManualTrigSig : std_logic;
 begin
 	sample_one <= unsigned(data_in(15 downto 8));
 	sample_two <= unsigned(data_in(7 downto 0));
@@ -75,6 +79,7 @@ begin
 	userSampleWidth <= unsigned(user_sample_width);
 	new_trigger <= new_trigger_sig;
 	addr_out <= std_logic_vector(ramAddress);
+	clear_manual_trig <= clearManualTrigSig;
 	
 	process(clk)
 	
@@ -103,40 +108,94 @@ begin
 			
 				ramAddress <= ramAddress + 1;
 				
-				if(triggered = '0') then--no reason to test the incoming signals if we are already triggered.  This will just screw up the new trigger signal.
-				
-					if (sample_one > threshold or sample_two > threshold or sample_three > threshold or sample_four > threshold
-							or sample_five > threshold or sample_six > threshold or sample_seven > threshold or sample_eight > threshold) then--controlls start of trigger.  
-						triggered <= '1';
-						new_trigger_sig <= '1';
-						trigger_address <= std_logic_vector(ramAddress);
+				if(manual = '0') then --As long as we are in trigger mode and NOT manual mode
+					
+					if(triggered = '0') then--no reason to test the incoming signals if we are already triggered.  This will just screw up the new trigger signal.
+					
+						if (sample_one > threshold or sample_two > threshold or sample_three > threshold or sample_four > threshold
+								or sample_five > threshold or sample_six > threshold or sample_seven > threshold or sample_eight > threshold
+								or force_trig = '1') then--controlls start of trigger.  
+							triggered <= '1';
+							new_trigger_sig <= '1';
+							trigger_address <= std_logic_vector(ramAddress);
+							clearManualTrigSig <= '1';
+						end if;
+						
 					end if;
 					
-				end if;
-				
-				if(samplesSinceTrig >= userSampleWidth and triggered = '1')then--Our sample count matches the user request.  
+					if(samplesSinceTrig >= userSampleWidth and triggered = '1')then--Our sample count matches the user request.  
+						
+						if (sample_one > threshold or sample_two > threshold or sample_three > threshold or sample_four > threshold
+								or sample_five > threshold or sample_six > threshold or sample_seven > threshold or sample_eight > threshold
+								or force_trig = '1') then--Only disable the sample if we aren't about to trigger again.  If we are about to trigger again, then set the new trigger signal and start over.  
+							triggered <= '1';
+							new_trigger_sig <= '1';
+							trigger_address <= std_logic_vector(ramAddress);
+							clearManualTrigSig <= '1';
+							samplesSinceTrig <= "0000000000000000";
+						else
+							triggered <= '0';
+							samplesSinceTrig <= "0000000000000000";
+						end if;
 					
-					if (sample_one > threshold or sample_two > threshold or sample_three > threshold or sample_four > threshold
-							or sample_five > threshold or sample_six > threshold or sample_seven > threshold or sample_eight > threshold) then--Only disable the sample if we aren't about to trigger again.  If we are about to trigger again, then set the new trigger signal and start over.  
-						triggered <= '1';
-						new_trigger_sig <= '1';
-						trigger_address <= std_logic_vector(ramAddress);
-						samplesSinceTrig <= "0000000000000000";
 					else
-						triggered <= '0';
-						samplesSinceTrig <= "0000000000000000";
-					end if;
-				
-				else
-				
-					if(triggered = '1')then --We took another sample.  Increase the sample count
-						samplesSinceTrig <= samplesSinceTrig + 1;
+					
+						if(triggered = '1')then --We took another sample.  Increase the sample count
+							samplesSinceTrig <= samplesSinceTrig + 1;
+						end if;
+						
 					end if;
 					
-				end if;
+					if(new_trigger_sig = '1') then
+						new_trigger_sig <= '0';
+					end if;
+					
+					if(clearManualTrigSig = '1') then
+						clearManualTrigSig <= '0';
+					end if;
 				
-				if(new_trigger_sig = '1') then
-					new_trigger_sig <= '0';
+				else --We are in trigger mode
+					
+					if(triggered = '0') then--no reason to test the incoming signals if we are already triggered.  This will just screw up the new trigger signal.
+					
+						if (force_trig = '1') then--controlls start of trigger.  
+							triggered <= '1';
+							new_trigger_sig <= '1';
+							trigger_address <= std_logic_vector(ramAddress);
+							clearManualTrigSig <= '1';
+						end if;
+						
+					end if;
+					
+					if(samplesSinceTrig >= userSampleWidth and triggered = '1')then--Our sample count matches the user request.  
+						
+						if (force_trig = '1') then--Only disable the sample if we aren't about to trigger again.  If we are about to trigger again, then set the new trigger signal and start over.  
+							triggered <= '1';
+							new_trigger_sig <= '1';
+							trigger_address <= std_logic_vector(ramAddress);
+							clearManualTrigSig <= '1';
+							samplesSinceTrig <= "0000000000000000";
+						else
+							triggered <= '0';
+							samplesSinceTrig <= "0000000000000000";
+						end if;
+					
+					else
+					
+						if(triggered = '1')then --We took another sample.  Increase the sample count
+							samplesSinceTrig <= samplesSinceTrig + 1;
+						end if;
+						
+					end if;
+					
+					if(new_trigger_sig = '1') then
+						new_trigger_sig <= '0';
+					end if;
+					
+					if(clearManualTrigSig = '1') then
+						clearManualTrigSig <= '0';
+					end if;
+					
 				end if;
 				
 			end if;
@@ -146,6 +205,7 @@ begin
 			triggered <= '0';
 			new_trigger_sig <= '0';
 			ramAddress <= (others => '0');
+			clearManualTrigSig <= '0'; --Needed to clear the FD on reset
 		end if;
 	end process;
 end Behavioral;

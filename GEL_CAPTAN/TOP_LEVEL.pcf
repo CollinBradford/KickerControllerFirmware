@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Sep 07 15:24:34 2017
+// Written by: Map P.20131013 on Thu Sep 07 17:46:18 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -355,9 +355,10 @@ PIN
         PINNAME CLKA;
 TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6016" BEL "XLXI_6025" BEL "XLXI_6033" BEL "XLXI_6186" BEL
-        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_3405" BEL "XLXI_6185/trig" BEL
-        "XLXI_6185/trig_in" BEL "XLXI_6185/trig_old" BEL "XLXI_6185/cnt_sig_0"
-        BEL "XLXI_6185/cnt_sig_1" BEL "XLXI_6185/cnt_sig_2" BEL
+        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_6396" BEL "XLXI_6398" BEL
+        "XLXI_3405" BEL "XLXI_6185/trig" BEL "XLXI_6185/trig_in" BEL
+        "XLXI_6185/trig_old" BEL "XLXI_6185/cnt_sig_0" BEL
+        "XLXI_6185/cnt_sig_1" BEL "XLXI_6185/cnt_sig_2" BEL
         "XLXI_6185/cnt_sig_3" BEL "XLXI_6185/cnt_sig_4" BEL
         "XLXI_6185/cnt_sig_5" BEL "XLXI_6185/cnt_sig_6" BEL
         "XLXI_6185/cnt_sig_7" BEL "XLXI_6185/cnt_sig_8" BEL
@@ -397,23 +398,23 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6349/ramAddress_4" BEL "XLXI_6349/ramAddress_5" BEL
         "XLXI_6349/ramAddress_6" BEL "XLXI_6349/ramAddress_7" BEL
         "XLXI_6349/ramAddress_8" BEL "XLXI_6349/ramAddress_9" BEL
-        "XLXI_6349/new_trigger_sig" BEL "XLXI_6349/triggered" BEL
-        "XLXI_6349/trigger_address_0" BEL "XLXI_6349/trigger_address_1" BEL
-        "XLXI_6349/trigger_address_2" BEL "XLXI_6349/trigger_address_3" BEL
-        "XLXI_6349/trigger_address_4" BEL "XLXI_6349/trigger_address_5" BEL
-        "XLXI_6349/trigger_address_6" BEL "XLXI_6349/trigger_address_7" BEL
-        "XLXI_6349/trigger_address_8" BEL "XLXI_6349/trigger_address_9" BEL
-        "XLXI_6227/internal_eth_dout_4" BEL "XLXI_6227/internal_reset" BEL
-        "XLXI_6227/internal_eth_dout_5" BEL "XLXI_6227/internal_eth_dout_10"
-        BEL "XLXI_6227/internal_eth_dout_8" BEL
-        "XLXI_6227/internal_eth_dout_12" BEL "XLXI_6227/internal_eth_dout_14"
-        BEL "XLXI_6227/internal_eth_dout_20" BEL
-        "XLXI_6227/internal_eth_dout_21" BEL "XLXI_6227/internal_eth_dout_16"
-        BEL "XLXI_6227/internal_eth_dout_22" BEL
-        "XLXI_6227/internal_eth_dout_17" BEL "XLXI_6227/internal_eth_dout_23"
-        BEL "XLXI_6227/internal_eth_dout_18" BEL
-        "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0" BEL
-        "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
+        "XLXI_6349/clearManualTrigSig" BEL "XLXI_6349/new_trigger_sig" BEL
+        "XLXI_6349/triggered" BEL "XLXI_6349/trigger_address_0" BEL
+        "XLXI_6349/trigger_address_1" BEL "XLXI_6349/trigger_address_2" BEL
+        "XLXI_6349/trigger_address_3" BEL "XLXI_6349/trigger_address_4" BEL
+        "XLXI_6349/trigger_address_5" BEL "XLXI_6349/trigger_address_6" BEL
+        "XLXI_6349/trigger_address_7" BEL "XLXI_6349/trigger_address_8" BEL
+        "XLXI_6349/trigger_address_9" BEL "XLXI_6227/internal_eth_dout_4" BEL
+        "XLXI_6227/internal_reset" BEL "XLXI_6227/internal_eth_dout_5" BEL
+        "XLXI_6227/internal_eth_dout_10" BEL "XLXI_6227/internal_eth_dout_8"
+        BEL "XLXI_6227/internal_eth_dout_12" BEL
+        "XLXI_6227/internal_eth_dout_14" BEL "XLXI_6227/internal_eth_dout_20"
+        BEL "XLXI_6227/internal_eth_dout_21" BEL
+        "XLXI_6227/internal_eth_dout_16" BEL "XLXI_6227/internal_eth_dout_22"
+        BEL "XLXI_6227/internal_eth_dout_17" BEL
+        "XLXI_6227/internal_eth_dout_23" BEL "XLXI_6227/internal_eth_dout_18"
+        BEL "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0"
+        BEL "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
         "XLXI_6227/user_addr_byte_3" BEL "XLXI_6227/user_addr_byte_4" BEL
         "XLXI_6227/user_addr_byte_5" BEL "XLXI_6227/user_addr_byte_6" BEL
         "XLXI_6227/user_addr_byte_7" BEL "XLXI_6227/internal_eth_dout_40" BEL
@@ -866,32 +867,7 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd3" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd4" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wren" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_protocol_err_flag" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_2" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_data_fifo_rden_sig" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd2" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_rden_sig" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_50" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_49" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_48" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_47" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_46" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_45" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_44" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_43" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_42" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_41" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_40" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_39" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_38" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_37" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_36" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_35" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_1" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_2" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_3" BEL
@@ -920,7 +896,32 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_26" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_27" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_28" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_35" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_36" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_37" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_38" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_39" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_40" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_41" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_42" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_43" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_44" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_45" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_46" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_47" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_protocol_err_flag" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_2" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_data_fifo_rden_sig" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd2" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_rden_sig" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_50" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_49" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_48" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_29" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_30" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_31" BEL
@@ -930,12 +931,16 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_55" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_56" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_57" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_59" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_58" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_10_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_9_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_59" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_60" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_61" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_8_1" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_62" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_63" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0_1" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_0" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_1" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_3" BEL
@@ -3329,7 +3334,7 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd6"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd2_1"
+        "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd6_1"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/src_mac_47"
         BEL
@@ -3905,6 +3910,14 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6"
         BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd3_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd2_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd1_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/four_bit_mode_1"
+        BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_valid"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_0"
@@ -4013,11 +4026,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_1.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_1.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_2"
         BEL
@@ -4037,11 +4050,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_2"
         BEL
@@ -4049,11 +4062,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_2"
         BEL
@@ -4061,11 +4074,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_2"
         BEL
@@ -4073,11 +4086,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_2"
         BEL
@@ -4085,11 +4098,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_2"
         BEL
@@ -4494,6 +4507,9 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[223].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[224].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[225].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[226].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[227].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[228].U_TQ" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/F_NO_TCMC.U_FDR" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
         BEL
@@ -4507,6 +4523,12 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/I_MC_NO.U_NO_MC_REG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[228].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[227].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[226].I_SRLT_NE_0.FF"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.FF"
         BEL
@@ -4962,6 +4984,12 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.I_OREG.U_OREG"
         BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[228].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[227].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[226].U_TREG"
+        BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[225].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[224].U_TREG"
@@ -5413,6 +5441,12 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[228].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[227].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[226].U_IREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[225].U_IREG"
         BEL
@@ -6500,6 +6534,12 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[224].I_SRLT_NE_0.DLY9/SRL16E"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[226].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[227].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[228].I_SRLT_NE_0.DLY9/SRL16E"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
@@ -6572,9 +6612,10 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP_pins<30>";
 TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6016" BEL "XLXI_6025" BEL "XLXI_6033" BEL "XLXI_6186" BEL
-        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_3405" BEL "XLXI_6185/trig" BEL
-        "XLXI_6185/trig_in" BEL "XLXI_6185/trig_old" BEL "XLXI_6185/cnt_sig_0"
-        BEL "XLXI_6185/cnt_sig_1" BEL "XLXI_6185/cnt_sig_2" BEL
+        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_6396" BEL "XLXI_6398" BEL
+        "XLXI_3405" BEL "XLXI_6185/trig" BEL "XLXI_6185/trig_in" BEL
+        "XLXI_6185/trig_old" BEL "XLXI_6185/cnt_sig_0" BEL
+        "XLXI_6185/cnt_sig_1" BEL "XLXI_6185/cnt_sig_2" BEL
         "XLXI_6185/cnt_sig_3" BEL "XLXI_6185/cnt_sig_4" BEL
         "XLXI_6185/cnt_sig_5" BEL "XLXI_6185/cnt_sig_6" BEL
         "XLXI_6185/cnt_sig_7" BEL "XLXI_6185/cnt_sig_8" BEL
@@ -6614,23 +6655,23 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6349/ramAddress_4" BEL "XLXI_6349/ramAddress_5" BEL
         "XLXI_6349/ramAddress_6" BEL "XLXI_6349/ramAddress_7" BEL
         "XLXI_6349/ramAddress_8" BEL "XLXI_6349/ramAddress_9" BEL
-        "XLXI_6349/new_trigger_sig" BEL "XLXI_6349/triggered" BEL
-        "XLXI_6349/trigger_address_0" BEL "XLXI_6349/trigger_address_1" BEL
-        "XLXI_6349/trigger_address_2" BEL "XLXI_6349/trigger_address_3" BEL
-        "XLXI_6349/trigger_address_4" BEL "XLXI_6349/trigger_address_5" BEL
-        "XLXI_6349/trigger_address_6" BEL "XLXI_6349/trigger_address_7" BEL
-        "XLXI_6349/trigger_address_8" BEL "XLXI_6349/trigger_address_9" BEL
-        "XLXI_6227/internal_eth_dout_4" BEL "XLXI_6227/internal_reset" BEL
-        "XLXI_6227/internal_eth_dout_5" BEL "XLXI_6227/internal_eth_dout_10"
-        BEL "XLXI_6227/internal_eth_dout_8" BEL
-        "XLXI_6227/internal_eth_dout_12" BEL "XLXI_6227/internal_eth_dout_14"
-        BEL "XLXI_6227/internal_eth_dout_20" BEL
-        "XLXI_6227/internal_eth_dout_21" BEL "XLXI_6227/internal_eth_dout_16"
-        BEL "XLXI_6227/internal_eth_dout_22" BEL
-        "XLXI_6227/internal_eth_dout_17" BEL "XLXI_6227/internal_eth_dout_23"
-        BEL "XLXI_6227/internal_eth_dout_18" BEL
-        "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0" BEL
-        "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
+        "XLXI_6349/clearManualTrigSig" BEL "XLXI_6349/new_trigger_sig" BEL
+        "XLXI_6349/triggered" BEL "XLXI_6349/trigger_address_0" BEL
+        "XLXI_6349/trigger_address_1" BEL "XLXI_6349/trigger_address_2" BEL
+        "XLXI_6349/trigger_address_3" BEL "XLXI_6349/trigger_address_4" BEL
+        "XLXI_6349/trigger_address_5" BEL "XLXI_6349/trigger_address_6" BEL
+        "XLXI_6349/trigger_address_7" BEL "XLXI_6349/trigger_address_8" BEL
+        "XLXI_6349/trigger_address_9" BEL "XLXI_6227/internal_eth_dout_4" BEL
+        "XLXI_6227/internal_reset" BEL "XLXI_6227/internal_eth_dout_5" BEL
+        "XLXI_6227/internal_eth_dout_10" BEL "XLXI_6227/internal_eth_dout_8"
+        BEL "XLXI_6227/internal_eth_dout_12" BEL
+        "XLXI_6227/internal_eth_dout_14" BEL "XLXI_6227/internal_eth_dout_20"
+        BEL "XLXI_6227/internal_eth_dout_21" BEL
+        "XLXI_6227/internal_eth_dout_16" BEL "XLXI_6227/internal_eth_dout_22"
+        BEL "XLXI_6227/internal_eth_dout_17" BEL
+        "XLXI_6227/internal_eth_dout_23" BEL "XLXI_6227/internal_eth_dout_18"
+        BEL "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0"
+        BEL "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
         "XLXI_6227/user_addr_byte_3" BEL "XLXI_6227/user_addr_byte_4" BEL
         "XLXI_6227/user_addr_byte_5" BEL "XLXI_6227/user_addr_byte_6" BEL
         "XLXI_6227/user_addr_byte_7" BEL "XLXI_6227/internal_eth_dout_40" BEL
@@ -7083,32 +7124,7 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd3" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd4" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wren" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_protocol_err_flag" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_2" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_data_fifo_rden_sig" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd2" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_rden_sig" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_50" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_49" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_48" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_47" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_46" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_45" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_44" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_43" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_42" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_41" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_40" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_39" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_38" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_37" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_36" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_35" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_1" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_2" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_3" BEL
@@ -7137,7 +7153,32 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_26" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_27" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_28" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_35" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_36" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_37" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_38" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_39" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_40" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_41" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_42" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_43" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_44" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_45" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_46" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_47" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_protocol_err_flag" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_2" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_data_fifo_rden_sig" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd2" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_rden_sig" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_50" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_49" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_48" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_29" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_30" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_31" BEL
@@ -7147,12 +7188,16 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_55" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_56" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_57" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_59" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_58" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_10_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_9_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_59" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_60" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_61" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_8_1" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_62" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_63" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0_1" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_0" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_1" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_3" BEL
@@ -9546,7 +9591,7 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd6"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd2_1"
+        "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd6_1"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/src_mac_47"
         BEL
@@ -10122,6 +10167,14 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6"
         BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd3_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd2_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd1_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/four_bit_mode_1"
+        BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_valid"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_0"
@@ -10230,11 +10283,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_1.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_1.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_2"
         BEL
@@ -10254,11 +10307,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_2"
         BEL
@@ -10266,11 +10319,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_2"
         BEL
@@ -10278,11 +10331,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_2"
         BEL
@@ -10290,11 +10343,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_2"
         BEL
@@ -10302,11 +10355,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_2"
         BEL
@@ -10711,6 +10764,9 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[223].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[224].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[225].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[226].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[227].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[228].U_TQ" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/F_NO_TCMC.U_FDR" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
         BEL
@@ -10724,6 +10780,12 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/I_MC_NO.U_NO_MC_REG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[228].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[227].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[226].I_SRLT_NE_0.FF"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.FF"
         BEL
@@ -11179,6 +11241,12 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.I_OREG.U_OREG"
         BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[228].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[227].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[226].U_TREG"
+        BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[225].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[224].U_TREG"
@@ -11630,6 +11698,12 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[228].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[227].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[226].U_IREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[225].U_IREG"
         BEL
@@ -12717,6 +12791,12 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[224].I_SRLT_NE_0.DLY9/SRL16E"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[226].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[227].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[228].I_SRLT_NE_0.DLY9/SRL16E"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
@@ -12791,49 +12871,50 @@ PIN XLXI_3410_pins<3> = BEL "XLXI_3410" PINNAME CLKIN;
 PIN XLXI_5949_pins<3> = BEL "XLXI_5949" PINNAME CLKIN;
 TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6016" BEL "XLXI_6025" BEL "XLXI_6033" BEL "XLXI_6186" BEL
-        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_3405" PIN "XLXI_3410_pins<3>"
-        PIN "XLXI_5949_pins<3>" BEL "XLXI_6185/trig" BEL "XLXI_6185/trig_in"
-        BEL "XLXI_6185/trig_old" BEL "XLXI_6185/cnt_sig_0" BEL
-        "XLXI_6185/cnt_sig_1" BEL "XLXI_6185/cnt_sig_2" BEL
-        "XLXI_6185/cnt_sig_3" BEL "XLXI_6185/cnt_sig_4" BEL
-        "XLXI_6185/cnt_sig_5" BEL "XLXI_6185/cnt_sig_6" BEL
-        "XLXI_6185/cnt_sig_7" BEL "XLXI_6185/cnt_sig_8" BEL
-        "XLXI_6185/cnt_sig_9" BEL "XLXI_6185/cnt_sig_10" BEL
-        "XLXI_6185/cnt_sig_11" BEL "XLXI_6185/cnt_sig_12" BEL
-        "XLXI_6185/cnt_sig_13" BEL "XLXI_6185/cnt_sig_14" BEL
-        "XLXI_6185/cnt_sig_15" BEL "XLXI_6185/cnt_sig_16" BEL
-        "XLXI_6185/cnt_sig_17" BEL "XLXI_6185/cnt_sig_18" BEL
-        "XLXI_6185/cnt_sig_19" BEL "XLXI_6185/cnt_sig_20" BEL
-        "XLXI_6185/cnt_sig_21" BEL "XLXI_6185/cnt_sig_22" BEL
-        "XLXI_6185/cnt_sig_23" BEL "XLXI_6185/cnt_sig_24" BEL
-        "XLXI_6185/cnt_sig_25" BEL "XLXI_6185/cnt_sig_26" BEL
-        "XLXI_6185/cnt_sig_27" BEL "XLXI_6185/cnt_sig_28" BEL
-        "XLXI_6185/cnt_sig_29" BEL "XLXI_6185/cnt_sig_30" BEL
-        "XLXI_6185/cnt_sig_31" BEL "XLXI_6253/b_data_we" BEL "XLXI_6253/armed"
-        BEL "XLXI_6253/sendUDP" BEL "XLXI_6253/startAddr_0" BEL
-        "XLXI_6253/startAddr_1" BEL "XLXI_6253/startAddr_2" BEL
-        "XLXI_6253/startAddr_3" BEL "XLXI_6253/startAddr_4" BEL
-        "XLXI_6253/startAddr_5" BEL "XLXI_6253/startAddr_6" BEL
-        "XLXI_6253/startAddr_7" BEL "XLXI_6253/startAddr_8" BEL
-        "XLXI_6253/startAddr_9" BEL "XLXI_6253/endAddr_0" BEL
-        "XLXI_6253/endAddr_1" BEL "XLXI_6253/endAddr_2" BEL
-        "XLXI_6253/endAddr_3" BEL "XLXI_6253/endAddr_4" BEL
-        "XLXI_6253/endAddr_5" BEL "XLXI_6253/endAddr_6" BEL
-        "XLXI_6253/endAddr_7" BEL "XLXI_6253/endAddr_8" BEL
-        "XLXI_6253/endAddr_9" BEL "XLXI_6349/samplesSinceTrig_0" BEL
-        "XLXI_6349/samplesSinceTrig_1" BEL "XLXI_6349/samplesSinceTrig_2" BEL
-        "XLXI_6349/samplesSinceTrig_3" BEL "XLXI_6349/samplesSinceTrig_4" BEL
-        "XLXI_6349/samplesSinceTrig_5" BEL "XLXI_6349/samplesSinceTrig_6" BEL
-        "XLXI_6349/samplesSinceTrig_7" BEL "XLXI_6349/samplesSinceTrig_8" BEL
-        "XLXI_6349/samplesSinceTrig_9" BEL "XLXI_6349/samplesSinceTrig_10" BEL
-        "XLXI_6349/samplesSinceTrig_11" BEL "XLXI_6349/samplesSinceTrig_12"
-        BEL "XLXI_6349/samplesSinceTrig_13" BEL
-        "XLXI_6349/samplesSinceTrig_14" BEL "XLXI_6349/samplesSinceTrig_15"
-        BEL "XLXI_6349/ramAddress_0" BEL "XLXI_6349/ramAddress_1" BEL
-        "XLXI_6349/ramAddress_2" BEL "XLXI_6349/ramAddress_3" BEL
-        "XLXI_6349/ramAddress_4" BEL "XLXI_6349/ramAddress_5" BEL
-        "XLXI_6349/ramAddress_6" BEL "XLXI_6349/ramAddress_7" BEL
-        "XLXI_6349/ramAddress_8" BEL "XLXI_6349/ramAddress_9" BEL
+        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_6396" BEL "XLXI_6398" BEL
+        "XLXI_3405" PIN "XLXI_3410_pins<3>" PIN "XLXI_5949_pins<3>" BEL
+        "XLXI_6185/trig" BEL "XLXI_6185/trig_in" BEL "XLXI_6185/trig_old" BEL
+        "XLXI_6185/cnt_sig_0" BEL "XLXI_6185/cnt_sig_1" BEL
+        "XLXI_6185/cnt_sig_2" BEL "XLXI_6185/cnt_sig_3" BEL
+        "XLXI_6185/cnt_sig_4" BEL "XLXI_6185/cnt_sig_5" BEL
+        "XLXI_6185/cnt_sig_6" BEL "XLXI_6185/cnt_sig_7" BEL
+        "XLXI_6185/cnt_sig_8" BEL "XLXI_6185/cnt_sig_9" BEL
+        "XLXI_6185/cnt_sig_10" BEL "XLXI_6185/cnt_sig_11" BEL
+        "XLXI_6185/cnt_sig_12" BEL "XLXI_6185/cnt_sig_13" BEL
+        "XLXI_6185/cnt_sig_14" BEL "XLXI_6185/cnt_sig_15" BEL
+        "XLXI_6185/cnt_sig_16" BEL "XLXI_6185/cnt_sig_17" BEL
+        "XLXI_6185/cnt_sig_18" BEL "XLXI_6185/cnt_sig_19" BEL
+        "XLXI_6185/cnt_sig_20" BEL "XLXI_6185/cnt_sig_21" BEL
+        "XLXI_6185/cnt_sig_22" BEL "XLXI_6185/cnt_sig_23" BEL
+        "XLXI_6185/cnt_sig_24" BEL "XLXI_6185/cnt_sig_25" BEL
+        "XLXI_6185/cnt_sig_26" BEL "XLXI_6185/cnt_sig_27" BEL
+        "XLXI_6185/cnt_sig_28" BEL "XLXI_6185/cnt_sig_29" BEL
+        "XLXI_6185/cnt_sig_30" BEL "XLXI_6185/cnt_sig_31" BEL
+        "XLXI_6253/b_data_we" BEL "XLXI_6253/armed" BEL "XLXI_6253/sendUDP"
+        BEL "XLXI_6253/startAddr_0" BEL "XLXI_6253/startAddr_1" BEL
+        "XLXI_6253/startAddr_2" BEL "XLXI_6253/startAddr_3" BEL
+        "XLXI_6253/startAddr_4" BEL "XLXI_6253/startAddr_5" BEL
+        "XLXI_6253/startAddr_6" BEL "XLXI_6253/startAddr_7" BEL
+        "XLXI_6253/startAddr_8" BEL "XLXI_6253/startAddr_9" BEL
+        "XLXI_6253/endAddr_0" BEL "XLXI_6253/endAddr_1" BEL
+        "XLXI_6253/endAddr_2" BEL "XLXI_6253/endAddr_3" BEL
+        "XLXI_6253/endAddr_4" BEL "XLXI_6253/endAddr_5" BEL
+        "XLXI_6253/endAddr_6" BEL "XLXI_6253/endAddr_7" BEL
+        "XLXI_6253/endAddr_8" BEL "XLXI_6253/endAddr_9" BEL
+        "XLXI_6349/samplesSinceTrig_0" BEL "XLXI_6349/samplesSinceTrig_1" BEL
+        "XLXI_6349/samplesSinceTrig_2" BEL "XLXI_6349/samplesSinceTrig_3" BEL
+        "XLXI_6349/samplesSinceTrig_4" BEL "XLXI_6349/samplesSinceTrig_5" BEL
+        "XLXI_6349/samplesSinceTrig_6" BEL "XLXI_6349/samplesSinceTrig_7" BEL
+        "XLXI_6349/samplesSinceTrig_8" BEL "XLXI_6349/samplesSinceTrig_9" BEL
+        "XLXI_6349/samplesSinceTrig_10" BEL "XLXI_6349/samplesSinceTrig_11"
+        BEL "XLXI_6349/samplesSinceTrig_12" BEL
+        "XLXI_6349/samplesSinceTrig_13" BEL "XLXI_6349/samplesSinceTrig_14"
+        BEL "XLXI_6349/samplesSinceTrig_15" BEL "XLXI_6349/ramAddress_0" BEL
+        "XLXI_6349/ramAddress_1" BEL "XLXI_6349/ramAddress_2" BEL
+        "XLXI_6349/ramAddress_3" BEL "XLXI_6349/ramAddress_4" BEL
+        "XLXI_6349/ramAddress_5" BEL "XLXI_6349/ramAddress_6" BEL
+        "XLXI_6349/ramAddress_7" BEL "XLXI_6349/ramAddress_8" BEL
+        "XLXI_6349/ramAddress_9" BEL "XLXI_6349/clearManualTrigSig" BEL
         "XLXI_6349/new_trigger_sig" BEL "XLXI_6349/triggered" BEL
         "XLXI_6349/trigger_address_0" BEL "XLXI_6349/trigger_address_1" BEL
         "XLXI_6349/trigger_address_2" BEL "XLXI_6349/trigger_address_3" BEL
@@ -13303,32 +13384,7 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd3" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd4" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wren" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_protocol_err_flag" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_2" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_data_fifo_rden_sig" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd2" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_rden_sig" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_50" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_49" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_48" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_47" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_46" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_45" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_44" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_43" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_42" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_41" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_40" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_39" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_38" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_37" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_36" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_35" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_1" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_2" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_3" BEL
@@ -13357,7 +13413,32 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_26" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_27" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_28" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_35" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_36" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_37" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_38" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_39" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_40" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_41" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_42" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_43" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_44" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_45" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_46" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_47" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_protocol_err_flag" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_2" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_data_fifo_rden_sig" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd2" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_rden_sig" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_50" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_49" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_48" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_29" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_30" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_31" BEL
@@ -13367,12 +13448,16 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_55" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_56" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_57" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_59" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_58" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_10_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_9_1" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_59" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_60" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_61" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_8_1" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_62" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_63" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0_1" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_0" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_1" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_3" BEL
@@ -15766,7 +15851,7 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd6"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd2_1"
+        "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd6_1"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/src_mac_47"
         BEL
@@ -16342,6 +16427,14 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6"
         BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd3_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd2_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd1_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/four_bit_mode_1"
+        BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_valid"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_0"
@@ -16450,11 +16543,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_1.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_1.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_0_2"
         BEL
@@ -16474,11 +16567,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_2"
         BEL
@@ -16486,11 +16579,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_2"
         BEL
@@ -16498,11 +16591,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_2"
         BEL
@@ -16510,11 +16603,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_2"
         BEL
@@ -16522,11 +16615,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_2"
         BEL
@@ -16932,6 +17025,9 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[223].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[224].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[225].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[226].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[227].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[228].U_TQ" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/F_NO_TCMC.U_FDR" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
         BEL
@@ -16945,6 +17041,12 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/I_MC_NO.U_NO_MC_REG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[228].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[227].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[226].I_SRLT_NE_0.FF"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.FF"
         BEL
@@ -17400,6 +17502,12 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.I_OREG.U_OREG"
         BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[228].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[227].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[226].U_TREG"
+        BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[225].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[224].U_TREG"
@@ -17851,6 +17959,12 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[228].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[227].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[226].U_IREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[225].U_IREG"
         BEL
@@ -18938,6 +19052,12 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[224].I_SRLT_NE_0.DLY9/SRL16E"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[226].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[227].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[228].I_SRLT_NE_0.DLY9/SRL16E"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
@@ -19498,6 +19618,14 @@ TIMEGRP J_CLK = BEL "U_icon_pro/U0/U_ICON/U_STAT/U_TDO" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[56].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[56].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[56].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[56].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[55].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
         BEL
@@ -20140,11 +20268,11 @@ TIMEGRP J_CLK = BEL "U_icon_pro/U0/U_ICON/U_STAT/U_TDO" BEL
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SRL16/I_TW_GTE8.F_TW[0].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
         BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SRL16/I_TW_GTE8.F_TW[0].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/cfg_data_vec<15>.SLICEM_GMC15_BLACKBOX"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SRL16/I_TW_GTE8.F_TW[0].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
         BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SRL16/I_TW_GTE8.F_TW[0].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/cfg_data_vec<15>.SLICEM_FMC15_BLACKBOX"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SRL16/I_TWMOD8_NE0.I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
         BEL

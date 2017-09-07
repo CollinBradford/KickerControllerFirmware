@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/07/2017 15:14:35
+-- /___/   /\     Timestamp : 09/07/2017 17:36:32
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -644,6 +644,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal b_enable                 : std_logic;
    signal b_end_packet             : std_logic;
    signal b_force_packet           : std_logic;
+   signal clear_manual_trig        : std_logic;
    signal clk_latch_signals        : std_logic_vector (7 downto 0);
    signal CLK_MUX                  : std_logic;
    signal CLK_187_5                : std_logic;
@@ -678,11 +679,14 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal fadc_trigger             : std_logic;
    signal fadc_waddr_rise          : std_logic_vector (9 downto 0);
    signal fadc_wctrl_done          : std_logic;
+   signal force_trig               : std_logic;
    signal GLOBAL_RESET_MAP         : std_logic;
    signal GMII_RXD_0_sig           : std_logic_vector (7 downto 0);
    signal GMII_RX_DV_0_sig         : std_logic;
    signal GMII_RX_ER_0_sig         : std_logic;
    signal GTX_CLK_0_sig            : std_logic;
+   signal manual_mode              : std_logic;
+   signal MANUAL_TRIG_MAP          : std_logic;
    signal MASTER_CLK               : std_logic;
    signal new_trigger              : std_logic;
    signal peak_finder_data_out     : std_logic_vector (63 downto 0);
@@ -1076,11 +1080,14 @@ architecture BEHAVIORAL of TOP_LEVEL is
    component PeakFinder
       port ( clk               : in    std_logic; 
              reset             : in    std_logic; 
+             manual            : in    std_logic; 
+             force_trig        : in    std_logic; 
              data_in           : in    std_logic_vector (63 downto 0); 
              signal_threshold  : in    std_logic_vector (7 downto 0); 
              user_sample_width : in    std_logic_vector (15 downto 0); 
              out_enable        : out   std_logic; 
              new_trigger       : out   std_logic; 
+             clear_manual_trig : out   std_logic; 
              data_out          : out   std_logic_vector (63 downto 0); 
              addr_out          : out   std_logic_vector (9 downto 0); 
              trigger_address   : out   std_logic_vector (9 downto 0));
@@ -1093,6 +1100,16 @@ architecture BEHAVIORAL of TOP_LEVEL is
              clka  : in    std_logic; 
              douta : out   std_logic_vector (63 downto 0));
    end component;
+   
+   component FDCE
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             D   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
    attribute CLKIN_PERIOD of XLXI_3410 : label is "8.0";
@@ -1206,7 +1223,7 @@ begin
                 D3=>FADC_DELAY_MAP,
                 D4=>TRIG_MAP,
                 D5=>TRIG_ATTRIBUTES_MAP,
-                D6=>open,
+                D6=>MANUAL_TRIG_MAP,
                 D7=>GLOBAL_RESET_MAP,
                 D8=>open,
                 D9=>open,
@@ -1912,10 +1929,13 @@ begin
    XLXI_6349 : PeakFinder
       port map (clk=>MASTER_CLK,
                 data_in(63 downto 0)=>fadc_fifo_data_out(63 downto 0),
+                force_trig=>force_trig,
+                manual=>manual_mode,
                 reset=>reset,
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
                 user_sample_width(15 downto 0)=>user_sample_size(15 downto 0),
                 addr_out(9 downto 0)=>ram_addr(9 downto 0),
+                clear_manual_trig=>clear_manual_trig,
                 data_out(63 downto 0)=>peak_finder_data_out(63 downto 0),
                 new_trigger=>new_trigger,
                 out_enable=>ram_en,
@@ -1934,6 +1954,20 @@ begin
                 D(15 downto 0)=>rx_data(39 downto 24),
                 R=>reset,
                 Q(15 downto 0)=>user_pretrig_sample_size(15 downto 0));
+   
+   XLXI_6396 : FDCE
+      port map (C=>MASTER_CLK,
+                CE=>MANUAL_TRIG_MAP,
+                CLR=>clear_manual_trig,
+                D=>rx_data(0),
+                Q=>force_trig);
+   
+   XLXI_6398 : FDRE
+      port map (C=>MASTER_CLK,
+                CE=>TRIG_ATTRIBUTES_MAP,
+                D=>rx_data(40),
+                R=>reset,
+                Q=>manual_mode);
    
 end BEHAVIORAL;
 

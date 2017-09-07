@@ -258,6 +258,12 @@
         <signal name="peak_finder_data_out(63:0)" />
         <signal name="ram_addr(9:0)" />
         <signal name="trigger_addr(9:0)" />
+        <signal name="clear_manual_trig" />
+        <signal name="force_trig" />
+        <signal name="rx_data(0:0)" />
+        <signal name="rx_data(40:40)" />
+        <signal name="manual_mode" />
+        <signal name="MANUAL_TRIG_MAP" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -656,7 +662,10 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="PeakFinder">
-            <timestamp>2017-9-7T20:11:46</timestamp>
+            <timestamp>2017-9-7T22:5:45</timestamp>
+            <line x2="0" y1="480" y2="480" x1="64" />
+            <line x2="0" y1="544" y2="544" x1="64" />
+            <line x2="528" y1="480" y2="480" x1="464" />
             <rect width="64" x="0" y="276" height="24" />
             <line x2="0" y1="288" y2="288" x1="64" />
             <line x2="528" y1="288" y2="288" x1="464" />
@@ -673,7 +682,7 @@
             <line x2="528" y1="-288" y2="-288" x1="464" />
             <rect width="64" x="464" y="-44" height="24" />
             <line x2="528" y1="-32" y2="-32" x1="464" />
-            <rect width="400" x="64" y="-320" height="832" />
+            <rect width="400" x="64" y="-320" height="960" />
         </blockdef>
         <blockdef name="data_send">
             <timestamp>2017-9-7T20:14:19</timestamp>
@@ -732,6 +741,19 @@
             <line x2="32" y1="208" y2="208" style="linewidth:W" x1="0" />
             <line x2="32" y1="272" y2="272" x1="0" />
             <line x2="544" y1="80" y2="80" style="linewidth:W" x1="576" />
+        </blockdef>
+        <blockdef name="fdce">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="64" y1="-256" y2="-256" x1="0" />
+            <line x2="320" y1="-256" y2="-256" x1="384" />
+            <line x2="80" y1="-112" y2="-128" x1="64" />
+            <line x2="64" y1="-128" y2="-144" x1="80" />
+            <line x2="192" y1="-64" y2="-32" x1="192" />
+            <line x2="64" y1="-32" y2="-32" x1="192" />
+            <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
@@ -846,7 +868,7 @@
             <blockpin signalname="FADC_DELAY_MAP" name="D3" />
             <blockpin signalname="TRIG_MAP" name="D4" />
             <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="D5" />
-            <blockpin name="D6" />
+            <blockpin signalname="MANUAL_TRIG_MAP" name="D6" />
             <blockpin signalname="GLOBAL_RESET_MAP" name="D7" />
             <blockpin name="D8" />
             <blockpin name="D9" />
@@ -1744,18 +1766,6 @@
             <blockpin signalname="XLXN_15531" name="empty" />
             <blockpin signalname="XLXN_15532" name="valid" />
         </block>
-        <block symbolname="PeakFinder" name="XLXI_6349">
-            <blockpin signalname="MASTER_CLK" name="clk" />
-            <blockpin signalname="reset" name="reset" />
-            <blockpin signalname="fadc_fifo_data_out(63:0)" name="data_in(63:0)" />
-            <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
-            <blockpin signalname="user_sample_size(15:0)" name="user_sample_width(15:0)" />
-            <blockpin signalname="ram_en" name="out_enable" />
-            <blockpin signalname="new_trigger" name="new_trigger" />
-            <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
-            <blockpin signalname="ram_addr(9:0)" name="addr_out(9:0)" />
-            <blockpin signalname="trigger_addr(9:0)" name="trigger_address(9:0)" />
-        </block>
         <block symbolname="data_send" name="XLXI_6253">
             <blockpin signalname="reset" name="rst" />
             <blockpin signalname="MASTER_CLK" name="clk" />
@@ -1775,6 +1785,35 @@
             <blockpin signalname="rx_data(39:24)" name="D(15:0)" />
             <blockpin signalname="reset" name="R" />
             <blockpin signalname="user_pretrig_sample_size(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fdce" name="XLXI_6396">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="MANUAL_TRIG_MAP" name="CE" />
+            <blockpin signalname="clear_manual_trig" name="CLR" />
+            <blockpin signalname="rx_data(0:0)" name="D" />
+            <blockpin signalname="force_trig" name="Q" />
+        </block>
+        <block symbolname="fdre" name="XLXI_6398">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="CE" />
+            <blockpin signalname="rx_data(40:40)" name="D" />
+            <blockpin signalname="reset" name="R" />
+            <blockpin signalname="manual_mode" name="Q" />
+        </block>
+        <block symbolname="PeakFinder" name="XLXI_6349">
+            <blockpin signalname="MASTER_CLK" name="clk" />
+            <blockpin signalname="reset" name="reset" />
+            <blockpin signalname="manual_mode" name="manual" />
+            <blockpin signalname="force_trig" name="force_trig" />
+            <blockpin signalname="fadc_fifo_data_out(63:0)" name="data_in(63:0)" />
+            <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
+            <blockpin signalname="user_sample_size(15:0)" name="user_sample_width(15:0)" />
+            <blockpin signalname="ram_en" name="out_enable" />
+            <blockpin signalname="new_trigger" name="new_trigger" />
+            <blockpin signalname="clear_manual_trig" name="clear_manual_trig" />
+            <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
+            <blockpin signalname="ram_addr(9:0)" name="addr_out(9:0)" />
+            <blockpin signalname="trigger_addr(9:0)" name="trigger_address(9:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -1961,6 +2000,10 @@
         <branch name="b_force_packet">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="1312" type="branch" />
             <wire x2="1264" y1="1312" y2="1312" x1="1040" />
+        </branch>
+        <branch name="MANUAL_TRIG_MAP">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4672" y="3168" type="branch" />
+            <wire x2="4672" y1="3168" y2="3168" x1="4512" />
         </branch>
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">
@@ -2220,32 +2263,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2000" y="880" type="branch" />
             <wire x2="2064" y1="880" y2="880" x1="2000" />
         </branch>
-        <instance x="2176" y="1984" name="XLXI_6349" orien="R0">
-        </instance>
-        <branch name="ram_en">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="1696" type="branch" />
-            <wire x2="2720" y1="1696" y2="1696" x1="2704" />
-        </branch>
-        <branch name="peak_finder_data_out(63:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="1952" type="branch" />
-            <wire x2="2720" y1="1952" y2="1952" x1="2704" />
-        </branch>
-        <branch name="threshold(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="1952" type="branch" />
-            <wire x2="2176" y1="1952" y2="1952" x1="2160" />
-        </branch>
-        <branch name="fadc_fifo_data_out(63:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="1888" type="branch" />
-            <wire x2="2176" y1="1888" y2="1888" x1="2160" />
-        </branch>
-        <branch name="reset">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="1760" type="branch" />
-            <wire x2="2176" y1="1760" y2="1760" x1="2160" />
-        </branch>
-        <branch name="MASTER_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="1696" type="branch" />
-            <wire x2="2176" y1="1696" y2="1696" x1="2160" />
-        </branch>
         <instance x="3616" y="912" name="XLXI_6380" orien="R0">
         </instance>
         <instance x="5088" y="1696" name="XLXI_6253" orien="R0">
@@ -2273,22 +2290,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="1344" type="branch" />
             <wire x2="5056" y1="1344" y2="1344" x1="5040" />
             <wire x2="5088" y1="1344" y2="1344" x1="5056" />
-        </branch>
-        <branch name="user_sample_size(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="2272" type="branch" />
-            <wire x2="2176" y1="2272" y2="2272" x1="2160" />
-        </branch>
-        <branch name="new_trigger">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2272" type="branch" />
-            <wire x2="2720" y1="2272" y2="2272" x1="2704" />
-        </branch>
-        <branch name="ram_addr(9:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2336" type="branch" />
-            <wire x2="2720" y1="2336" y2="2336" x1="2704" />
-        </branch>
-        <branch name="trigger_addr(9:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2400" type="branch" />
-            <wire x2="2720" y1="2400" y2="2400" x1="2704" />
         </branch>
         <branch name="ram_addr(9:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3600" y="992" type="branch" />
@@ -2354,6 +2355,102 @@
         <branch name="user_pretrig_sample_size(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1936" y="5168" type="branch" />
             <wire x2="1936" y1="5168" y2="5168" x1="1920" />
+        </branch>
+        <instance x="2448" y="4992" name="XLXI_6396" orien="R0" />
+        <branch name="rx_data(0:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="4736" type="branch" />
+            <wire x2="2448" y1="4736" y2="4736" x1="2432" />
+        </branch>
+        <branch name="MANUAL_TRIG_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="4800" type="branch" />
+            <wire x2="2448" y1="4800" y2="4800" x1="2432" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="4864" type="branch" />
+            <wire x2="2448" y1="4864" y2="4864" x1="2432" />
+        </branch>
+        <branch name="clear_manual_trig">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="4960" type="branch" />
+            <wire x2="2448" y1="4960" y2="4960" x1="2432" />
+        </branch>
+        <branch name="force_trig">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2848" y="4736" type="branch" />
+            <wire x2="2848" y1="4736" y2="4736" x1="2832" />
+        </branch>
+        <instance x="1552" y="5024" name="XLXI_6398" orien="R0" />
+        <branch name="rx_data(40:40)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="4768" type="branch" />
+            <wire x2="1552" y1="4768" y2="4768" x1="1536" />
+        </branch>
+        <branch name="TRIG_ATTRIBUTES_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="4832" type="branch" />
+            <wire x2="1552" y1="4832" y2="4832" x1="1536" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="4896" type="branch" />
+            <wire x2="1552" y1="4896" y2="4896" x1="1536" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="4992" type="branch" />
+            <wire x2="1552" y1="4992" y2="4992" x1="1536" />
+        </branch>
+        <branch name="manual_mode">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1952" y="4768" type="branch" />
+            <wire x2="1952" y1="4768" y2="4768" x1="1936" />
+        </branch>
+        <instance x="2336" y="1952" name="XLXI_6349" orien="R0">
+        </instance>
+        <branch name="ram_en">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="1664" type="branch" />
+            <wire x2="2880" y1="1664" y2="1664" x1="2864" />
+        </branch>
+        <branch name="peak_finder_data_out(63:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="1920" type="branch" />
+            <wire x2="2880" y1="1920" y2="1920" x1="2864" />
+        </branch>
+        <branch name="threshold(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1920" type="branch" />
+            <wire x2="2336" y1="1920" y2="1920" x1="2320" />
+        </branch>
+        <branch name="fadc_fifo_data_out(63:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1856" type="branch" />
+            <wire x2="2336" y1="1856" y2="1856" x1="2320" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1728" type="branch" />
+            <wire x2="2336" y1="1728" y2="1728" x1="2320" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1664" type="branch" />
+            <wire x2="2336" y1="1664" y2="1664" x1="2320" />
+        </branch>
+        <branch name="user_sample_size(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2240" type="branch" />
+            <wire x2="2336" y1="2240" y2="2240" x1="2320" />
+        </branch>
+        <branch name="new_trigger">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="2240" type="branch" />
+            <wire x2="2880" y1="2240" y2="2240" x1="2864" />
+        </branch>
+        <branch name="ram_addr(9:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="2304" type="branch" />
+            <wire x2="2880" y1="2304" y2="2304" x1="2864" />
+        </branch>
+        <branch name="trigger_addr(9:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="2368" type="branch" />
+            <wire x2="2880" y1="2368" y2="2368" x1="2864" />
+        </branch>
+        <branch name="clear_manual_trig">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="2432" type="branch" />
+            <wire x2="2880" y1="2432" y2="2432" x1="2864" />
+        </branch>
+        <branch name="force_trig">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2496" type="branch" />
+            <wire x2="2336" y1="2496" y2="2496" x1="2320" />
+        </branch>
+        <branch name="manual_mode">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2432" type="branch" />
+            <wire x2="2336" y1="2432" y2="2432" x1="2320" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
