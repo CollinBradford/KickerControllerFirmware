@@ -110,8 +110,6 @@ begin
 						triggered <= '1';
 						new_trigger_sig <= '1';
 						trigger_address <= std_logic_vector(ramAddress);
-					else
-						triggered <= '0';
 					end if;
 					
 				end if;

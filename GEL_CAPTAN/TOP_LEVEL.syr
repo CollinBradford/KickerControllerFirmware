@@ -188,11 +188,16 @@ Entity <peakfinder> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd" in Library work.
 Architecture ethernetram_a of Entity ethernetram is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
-Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
-Architecture behavioral of Entity top_level is up to date.
+Entity <fd16re_mxilinx_top_level> compiled.
+Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <fd8re_mxilinx_top_level> compiled.
+Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_top_level> compiled.
+Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <d4_16e_mxilinx_top_level> compiled.
+Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <top_level> compiled.
+Entity <top_level> (Architecture <behavioral>) compiled.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -305,15 +310,15 @@ Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1199: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1199: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1199: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1199: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1199: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1199: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1199: Unconnected output port 'D6' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1199: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1199: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1198: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1198: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1198: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1198: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1198: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1198: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1198: Unconnected output port 'D6' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1198: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1198: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
@@ -453,7 +458,7 @@ WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vh
     Set user-defined property "DRIVE =  12" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  FAST" for instance <XLXI_5999> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1473: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1472: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_6004_1" for instance <XLXI_6004> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6016> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6025> in unit <TOP_LEVEL>.
@@ -590,8 +595,8 @@ WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vh
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6247_6" for instance <XLXI_6247> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6251_5" for instance <XLXI_6251> in unit <TOP_LEVEL>.
-WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1896: Instantiating black box module <ADC_FIFO>.
-WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1926: Instantiating black box module <EthernetRAM>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1895: Instantiating black box module <ADC_FIFO>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1925: Instantiating black box module <EthernetRAM>.
     Set user-defined property "HU_SET =  XLXI_6394_7" for instance <XLXI_6394> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
@@ -874,27 +879,27 @@ Synthesizing Unit <PeakFinder>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd".
     Found 11-bit register for signal <trigger_address>.
     Found 1-bit register for signal <new_trigger_sig>.
-    Found 16-bit comparator greatequal for signal <new_trigger_sig$cmp_ge0000> created at line 119.
-    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0000> created at line 121.
-    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0001> created at line 121.
-    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0002> created at line 121.
-    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0003> created at line 121.
-    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0004> created at line 121.
-    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0005> created at line 121.
-    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0006> created at line 121.
-    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0007> created at line 121.
-    Found 16-bit comparator less for signal <new_trigger_sig$cmp_lt0000> created at line 119.
+    Found 16-bit comparator greatequal for signal <new_trigger_sig$cmp_ge0000> created at line 117.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0000> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0001> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0002> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0003> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0004> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0005> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0006> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0007> created at line 119.
+    Found 16-bit comparator less for signal <new_trigger_sig$cmp_lt0000> created at line 117.
     Found 11-bit up counter for signal <ramAddress>.
     Found 16-bit up counter for signal <samplesSinceTrig>.
     Found 1-bit register for signal <triggered>.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0000> created at line 108.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0001> created at line 108.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0002> created at line 108.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0003> created at line 108.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0004> created at line 108.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0005> created at line 108.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0006> created at line 108.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0007> created at line 108.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0000> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0001> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0002> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0003> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0004> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0005> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0006> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0007> created at line 119.
     Summary:
 	inferred   2 Counter(s).
 	inferred  13 D-type flip-flop(s).
@@ -1638,7 +1643,6 @@ WARNING:Xst:653 - Signal <trig_debug<63:32>> is used but never assigned. This so
 WARNING:Xst:646 - Signal <rx_data<63:40>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<31:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <read_size> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
 WARNING:Xst:653 - Signal <ram_address> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000.
 WARNING:Xst:646 - Signal <pulse> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <psi_status<55:13>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000.
@@ -2468,29 +2472,28 @@ Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 31.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
@@ -2498,49 +2501,49 @@ INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
@@ -2548,35 +2551,26 @@ INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd2 has been replicated 1 time(s)
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd3 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd4 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd5 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd6 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd1 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd2 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd3 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/four_bit_mode has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -2595,8 +2589,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1610
- Flip-Flops                                            : 1610
+# Registers                                            : 1600
+ Flip-Flops                                            : 1600
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2627,7 +2621,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5895
+# BELS                             : 5935
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2639,31 +2633,31 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 177
 #      LUT1                        : 222
-#      LUT2                        : 494
-#      LUT2_D                      : 36
-#      LUT2_L                      : 10
-#      LUT3                        : 1101
-#      LUT3_D                      : 28
-#      LUT3_L                      : 71
-#      LUT4                        : 1827
-#      LUT4_D                      : 75
-#      LUT4_L                      : 318
+#      LUT2                        : 499
+#      LUT2_D                      : 41
+#      LUT2_L                      : 26
+#      LUT3                        : 1125
+#      LUT3_D                      : 27
+#      LUT3_L                      : 77
+#      LUT4                        : 1795
+#      LUT4_D                      : 107
+#      LUT4_L                      : 314
 #      MUXCY                       : 835
-#      MUXF5                       : 148
+#      MUXF5                       : 137
 #      MUXF6                       : 40
 #      OR2                         : 3
 #      VCC                         : 26
 #      XOR2                        : 2
 #      XORCY                       : 424
-# FlipFlops/Latches                : 2212
-#      FD                          : 129
+# FlipFlops/Latches                : 2202
+#      FD                          : 201
 #      FDC                         : 58
 #      FDCE                        : 96
-#      FDE                         : 527
+#      FDE                         : 455
 #      FDP                         : 18
 #      FDPE                        : 6
-#      FDR                         : 156
-#      FDRE                        : 1090
+#      FDR                         : 157
+#      FDRE                        : 1079
 #      FDRS                        : 19
 #      FDRSE                       : 1
 #      FDS                         : 16
@@ -2694,10 +2688,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3022  out of  10752    28%  
- Number of Slice Flip Flops:           2212  out of  21504    10%  
- Number of 4 input LUTs:               4767  out of  21504    22%  
-    Number used as logic:              4359
+ Number of Slices:                     3033  out of  10752    28%  
+ Number of Slice Flip Flops:           2202  out of  21504    10%  
+ Number of 4 input LUTs:               4818  out of  21504    22%  
+    Number used as logic:              4410
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2728,7 +2722,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2362  |
+GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2352  |
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0                                                                                                                    | 69    |
 XLXI_6380/N1                       | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 8     |
 SECONDARY_CLK                      | IBUFG                                                                                                                             | 18    |
@@ -2754,8 +2748,8 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 7.604ns (Maximum Frequency: 131.513MHz)
-   Minimum input arrival time before clock: 6.919ns
+   Minimum period: 7.864ns (Maximum Frequency: 127.156MHz)
+   Minimum input arrival time before clock: 6.606ns
    Maximum output required time after clock: 6.311ns
    Maximum combinational path delay: 5.299ns
 
@@ -2808,7 +2802,7 @@ Offset:              0.742ns (Levels of Logic = 0)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
   Clock period: 7.604ns (frequency: 131.513MHz)
-  Total number of paths / destination ports: 2005 / 1713
+  Total number of paths / destination ports: 1974 / 1704
 -------------------------------------------------------------------------
 Offset:              7.604ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
@@ -2858,16 +2852,16 @@ Offset:              2.913ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 7.469ns (frequency: 133.885MHz)
-  Total number of paths / destination ports: 106486 / 6770
+  Clock period: 7.864ns (frequency: 127.156MHz)
+  Total number of paths / destination ports: 107318 / 6677
 -------------------------------------------------------------------------
-Delay:               7.469ns (Levels of Logic = 10)
+Delay:               7.864ns (Levels of Logic = 11)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
-  Destination:       XLXI_6227/tx_ctrl_dest_addr_0 (FF)
+  Destination:       XLXI_6227/tx_data_dest_port_0 (FF)
   Source Clock:      GEL_RXCLK rising
   Destination Clock: GEL_RXCLK rising
 
-  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 to XLXI_6227/tx_ctrl_dest_addr_0
+  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 to XLXI_6227/tx_data_dest_port_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -2880,13 +2874,14 @@ Delay:               7.469ns (Levels of Logic = 10)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<3> (ots_user_mask_cmp_eq00001_wg_cy<3>)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<4> (ots_user_mask_cmp_eq00001_wg_cy<4>)
      MUXCY:CI->O           1   0.370   0.523  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
-     LUT3_D:I2->O         98   0.195   1.349  ots_user_mask_cmp_eq00001_wg_cy<7>1 (ots_user_mask_cmp_eq00001_wg_cy<7>)
-     LUT3:I2->O          102   0.195   1.365  tx_data_dest_mac_or00031 (tx_data_dest_mac_or0003)
-     LUT4:I3->O           32   0.195   0.928  tx_ctrl_dest_addr_not0001 (tx_ctrl_dest_addr_not0001)
-     FDE:CE                    0.540          tx_ctrl_dest_addr_0
+     LUT3_D:I2->O         90   0.195   1.318  ots_user_mask_cmp_eq00001_wg_cy<7>1 (ots_user_mask_cmp_eq00001_wg_cy<7>)
+     LUT3:I2->O          113   0.195   1.408  tx_data_dest_mac_or00031 (tx_data_dest_mac_or0003)
+     LUT3:I2->O            1   0.195   0.523  tx_data_dest_addr_and00021 (tx_data_dest_addr_and0002)
+     LUT4:I3->O           16   0.195   0.593  tx_data_dest_port_not0001 (tx_data_dest_port_not0001)
+     FDE:CE                    0.540          tx_data_dest_port_0
     ----------------------------------------
-    Total                      7.469ns (2.549ns logic, 4.920ns route)
-                                       (34.1% logic, 65.9% route)
+    Total                      7.864ns (2.744ns logic, 5.120ns route)
+                                       (34.9% logic, 65.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
@@ -2963,36 +2958,35 @@ Offset:              1.555ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GEL_RXCLK'
-  Total number of paths / destination ports: 1017 / 354
+  Total number of paths / destination ports: 919 / 350
 -------------------------------------------------------------------------
-Offset:              6.919ns (Levels of Logic = 12)
-  Source:            BUSC_17DP_34S (PAD)
-  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7 (FF)
+Offset:              6.606ns (Levels of Logic = 11)
+  Source:            BUSC_19DN_39S (PAD)
+  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_2 (FF)
   Destination Clock: GEL_RXCLK rising
 
-  Data Path: BUSC_17DP_34S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7
+  Data Path: BUSC_19DN_39S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             7   0.965   0.744  XLXI_4220 (GMII_RXD_0_sig<1>)
+     IBUF:I->O             5   0.965   0.711  XLXI_4217 (GMII_RXD_0_sig<4>)
      begin scope: 'XLXI_6227'
      begin scope: 'ec_wrapper'
      begin scope: 'xgmii'
      end scope: 'xgmii'
      begin scope: 'ethernet_controller'
      begin scope: 'DecipherBlock'
-     LUT3:I0->O            1   0.195   0.741  Sreg0_FSM_FFd7-In11_SW0_SW0 (N851)
-     LUT4_D:I0->O          1   0.195   0.523  Sreg0_FSM_FFd7-In11 (N179)
-     LUT3:I2->O            1   0.195   0.741  Sreg0_FSM_FFd7-In271 (Sreg0_FSM_FFd7-In271)
-     LUT4:I0->O            2   0.195   0.758  Sreg0_FSM_FFd7-In2751 (N132)
-     LUT4:I0->O            1   0.195   0.000  Sreg0_FSM_FFd7-In55_SW0_G (N184)
-     MUXF5:I1->O           1   0.374   0.523  Sreg0_FSM_FFd7-In55_SW0 (N741)
-     LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In173 (Sreg0_FSM_FFd7-In173)
-     LUT4:I3->O            2   0.195   0.000  Sreg0_FSM_FFd7-In4311 (Sreg0_FSM_FFd7-In)
-     FDRE:D                    0.022          Sreg0_FSM_FFd7
+     LUT3:I0->O            1   0.195   0.741  is_arp_sig_mux0000112_SW0 (N971)
+     LUT4_D:I0->O          2   0.195   0.705  Sreg0_FSM_FFd6-In215 (N182)
+     LUT4:I1->O           18   0.195   0.756  Sreg0_cmp_eq000332 (Sreg0_cmp_eq0003)
+     LUT3:I2->O            1   0.195   0.000  udp_countdown_4_mux00002_G (N128)
+     MUXF5:I1->O           2   0.374   0.602  udp_countdown_4_mux00002 (N24)
+     LUT3:I1->O            6   0.195   0.560  udp_countdown_4_mux000031 (N63)
+     LUT4:I3->O            1   0.195   0.000  udp_countdown_7_mux000014 (udp_countdown_7_mux0000)
+     FDRE:D                    0.022          udp_countdown_7
     ----------------------------------------
-    Total                      6.919ns (2.726ns logic, 4.193ns route)
-                                       (39.4% logic, 60.6% route)
+    Total                      6.606ns (2.531ns logic, 4.075ns route)
+                                       (38.3% logic, 61.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GEL_RXCLK'
@@ -3057,14 +3051,14 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 69.00 secs
-Total CPU time to Xst completion: 69.00 secs
+Total REAL time to Xst completion: 68.00 secs
+Total CPU time to Xst completion: 67.87 secs
  
 --> 
 
-Total memory usage is 718912 kilobytes
+Total memory usage is 634240 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  312 (   0 filtered)
+Number of warnings :  311 (   0 filtered)
 Number of infos    :  127 (   0 filtered)
 

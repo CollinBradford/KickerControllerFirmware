@@ -226,7 +226,6 @@
         <signal name="XLXN_15150" />
         <signal name="threshold(7:0)" />
         <signal name="TRIG_ATTRIBUTES_MAP" />
-        <signal name="read_size(15:0)" />
         <signal name="pulse" />
         <signal name="rx_data(23:8)" />
         <signal name="rx_data(7:0)" />
@@ -1753,7 +1752,7 @@
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
             <blockpin signalname="ram_en" name="out_enable" />
             <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
-            <blockpin signalname="read_size(15:0)" name="user_sample_width(15:0)" />
+            <blockpin signalname="user_sample_size(15:0)" name="user_sample_width(15:0)" />
             <blockpin signalname="new_trigger" name="new_trigger" />
             <blockpin signalname="ram_addr(10:0)" name="addr_out(10:0)" />
             <blockpin signalname="trigger_addr(10:0)" name="trigger_address(10:0)" />
@@ -2276,7 +2275,7 @@
             <wire x2="5056" y1="1344" y2="1344" x1="5040" />
             <wire x2="5088" y1="1344" y2="1344" x1="5056" />
         </branch>
-        <branch name="read_size(15:0)">
+        <branch name="user_sample_size(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="2272" type="branch" />
             <wire x2="2176" y1="2272" y2="2272" x1="2160" />
         </branch>

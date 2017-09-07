@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/07/2017 10:59:36
+-- /___/   /\     Timestamp : 09/07/2017 11:56:43
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -694,7 +694,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal ram_addr                 : std_logic_vector (10 downto 0);
    signal ram_address              : std_logic_vector (10 downto 0);
    signal ram_en                   : std_logic;
-   signal read_size                : std_logic_vector (15 downto 0);
    signal reset                    : std_logic;
    signal rx_addr                  : std_logic_vector (31 downto 0);
    signal rx_data                  : std_logic_vector (63 downto 0);
@@ -1916,7 +1915,7 @@ begin
                 data_in(63 downto 0)=>fadc_fifo_data_out(63 downto 0),
                 reset=>reset,
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
-                user_sample_width(15 downto 0)=>read_size(15 downto 0),
+                user_sample_width(15 downto 0)=>user_sample_size(15 downto 0),
                 addr_out(10 downto 0)=>ram_addr(10 downto 0),
                 data_out(63 downto 0)=>peak_finder_data_out(63 downto 0),
                 new_trigger=>new_trigger,
