@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Thu Sep 07 13:10:28 2017">
+  <application stringID="Xst" timeStamp="Thu Sep 07 14:04:03 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -64,7 +64,7 @@
       <item DEFAULT="1" label="-opt_level" stringID="XST_OPTLEVEL" value="1"/>
       <item DEFAULT="NO" label="-power" stringID="XST_POWER" value="NO"/>
       <item DEFAULT="NO" label="-iuc" stringID="XST_IUC" value="NO"/>
-      <item DEFAULT="NO" label="-keep_hierarchy" stringID="XST_KEEPHIERARCHY" value="Soft"/>
+      <item DEFAULT="NO" label="-keep_hierarchy" stringID="XST_KEEPHIERARCHY" value="Yes"/>
       <item DEFAULT="as_optimized" label="-netlist_hierarchy" stringID="XST_NETLISTHIERARCHY" value="As_Optimized"/>
       <item DEFAULT="NO" label="-rtlview" stringID="XST_RTLVIEW" value="Yes"/>
       <item DEFAULT="ALLCLOCKNETS" label="-glob_opt" stringID="XST_GLOBOPT" value="AllClockNets"/>
@@ -204,7 +204,7 @@
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="TOP_LEVEL"/>
         <item stringID="XST_OUTPUT_FORMAT" value="NGC"/>
         <item stringID="XST_OPTIMIZATION_GOAL" value="Speed"/>
-        <item stringID="XST_KEEP_HIERARCHY" value="Soft"/>
+        <item stringID="XST_KEEP_HIERARCHY" value="Yes"/>
       </section>
       <section stringID="XST_DESIGN_STATISTICS">
         <item stringID="XST_IOS" value="81"/>
@@ -215,9 +215,9 @@
           <item dataType="int" stringID="XST_AND2B1" value="4"/>
           <item dataType="int" stringID="XST_BUF" value="5"/>
           <item dataType="int" stringID="XST_GND" value="28"/>
-          <item dataType="int" stringID="XST_INV" value="177"/>
+          <item dataType="int" stringID="XST_INV" value="178"/>
           <item dataType="int" stringID="XST_LUT1" value="222"/>
-          <item dataType="int" stringID="XST_LUT2" value="494"/>
+          <item dataType="int" stringID="XST_LUT2" value="493"/>
           <item dataType="int" stringID="XST_LUT2D" value="40"/>
           <item dataType="int" stringID="XST_LUT2L" value="28"/>
           <item dataType="int" stringID="XST_LUT3" value="1123"/>
@@ -267,7 +267,7 @@
     </section>
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="4vlx25ff668-10"/>
-      <item AVAILABLE="10752" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="3037"/>
+      <item AVAILABLE="10752" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="3036"/>
       <item AVAILABLE="21504" dataType="int" label="Number of Slice Flip Flops" stringID="XST_NUMBER_OF_SLICE_FLIP_FLOPS" value="2204"/>
       <item AVAILABLE="21504" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="4825"/>
       <item dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="4417"/>

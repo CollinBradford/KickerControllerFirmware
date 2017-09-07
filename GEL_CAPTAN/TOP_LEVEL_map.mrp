@@ -9,28 +9,28 @@ Target Device  : xc4vlx25
 Target Package : ff668
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Thu Sep 07 13:43:38 2017
+Mapped Date    : Thu Sep 07 14:08:07 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   59
+Number of warnings:   53
 Logic Utilization:
-  Total Number Slice Registers:       2,706 out of  21,504   12%
-    Number used as Flip Flops:        2,705
+  Total Number Slice Registers:       2,783 out of  21,504   12%
+    Number used as Flip Flops:        2,782
     Number used as Latches:               1
-  Number of 4 input LUTs:             4,965 out of  21,504   23%
+  Number of 4 input LUTs:             5,026 out of  21,504   23%
 Logic Distribution:
-  Number of occupied Slices:          3,631 out of  10,752   33%
-    Number of Slices containing only related logic:   3,631 out of   3,631 100%
-    Number of Slices containing unrelated logic:          0 out of   3,631   0%
+  Number of occupied Slices:          3,830 out of  10,752   35%
+    Number of Slices containing only related logic:   3,830 out of   3,830 100%
+    Number of Slices containing unrelated logic:          0 out of   3,830   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       5,238 out of  21,504   24%
-    Number used as logic:             4,384
-    Number used as a route-thru:        273
+  Total Number of 4 input LUTs:       5,311 out of  21,504   24%
+    Number used as logic:             4,413
+    Number used as a route-thru:        285
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
-    Number used as Shift registers:     197
+    Number used as Shift registers:     229
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -38,8 +38,8 @@ Logic Distribution:
   Number of bonded IOBs:                 79 out of     448   17%
   Number of BUFG/BUFGCTRLs:              11 out of      32   34%
     Number used as BUFGs:                11
-  Number of FIFO16/RAMB16s:              37 out of      72   51%
-    Number used as RAMB16s:              37
+  Number of FIFO16/RAMB16s:              43 out of      72   59%
+    Number used as RAMB16s:              43
   Number of DCM_ADVs:                     5 out of       8   62%
   Number of BSCAN_VIRTEX4s:               1 out of       4   25%
   Number of IDELAYCTRLs:                  1 out of      16    6%
@@ -47,9 +47,9 @@ Logic Distribution:
   Number of RPM macros:           12
 Average Fanout of Non-Clock Nets:                3.48
 
-Peak Memory Usage:  605 MB
-Total REAL time to MAP completion:  52 secs 
-Total CPU time to MAP completion:   50 secs 
+Peak Memory Usage:  626 MB
+Total REAL time to MAP completion:  55 secs 
+Total CPU time to MAP completion:   53 secs 
 
 Table of Contents
 -----------------
@@ -72,6 +72,15 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:MapLib:328 - Block XLXI_6136 is not a recognized logical block. The
+   mapper will continue to process the design but there may be design problems
+   if this block does not get trimmed.
+WARNING:MapLib:328 - Block XLXI_6124 is not a recognized logical block. The
+   mapper will continue to process the design but there may be design problems
+   if this block does not get trimmed.
+WARNING:MapLib:328 - Block XLXI_6227/ec_wrapper/xgmii is not a recognized
+   logical block. The mapper will continue to process the design but there may
+   be design problems if this block does not get trimmed.
 WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
    "XLXI_5952" (output signal=CLK_187_5) has a mix of clock and non-clock loads.
    The non-clock loads are:
@@ -80,19 +89,32 @@ WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
    "XLXI_5993" (output signal=CLK_375) has a mix of clock and non-clock loads.
    The non-clock loads are:
    Pin I2 of XLXI_6004/I_36_8
+WARNING:Pack:266 - The function generator
+   XLXI_6227/ec_wrapper/ethernet_controller/UdpLengthMux/ip_tx_length<9>1 failed
+   to merge with F5 multiplexer
+   XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Msub_length_count_
+   sub0000_xor<9>1_f5.  Two or more symbols belong to different KEEP_HIERARCHY
+   boundaries and can not be merged into the same component.  The design will
+   exhibit suboptimal timing.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6>> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<5>> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<4>> is incomplete. The signal
-   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<35>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>>
+   is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D15> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D9> is incomplete. The signal does not drive any load pins in the
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D6> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D10> is incomplete. The signal does not drive any load pins in the
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D8> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D9> is incomplete. The signal does not drive any load pins in the
    design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D11> is incomplete. The signal does not drive any load pins in the
    design.
@@ -102,111 +124,77 @@ WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The sign
    design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/full> is incomplete. The signal does
-   not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
-   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> is incomplete.
+   The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss
-   .rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.r
-   sts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
-   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/empty> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_data_fifo_empty> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/RX_DATA_FIFO/empty> is incomplete. The signal does
-   not drive any load pins in the design.
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<30>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
-   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<17>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<15>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<16>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<18>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<35>> is incomplete. The signal does not drive any load pins in
-   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<12>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The signal does not drive any load pins in the
+   design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<21>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<22>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<23>> is incomplete. The signal does not drive any load pins in
    the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<24>> is incomplete. The signal does not drive any load pins in
+   the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<25>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<26>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<27>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<11>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6004/O> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
-   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss
-   .wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<28>> is incomplete. The signal does not drive any load pins in
-   the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<29>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<31>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <XLXI_6004/O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<28>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<32>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<27>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<24>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<10>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<26>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<34>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<16>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<15>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<7>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<33>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<10>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<17>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.w
-   sts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<12>> is incomplete. The signal does not drive any load pins in the
+WARNING:PhysDesignRules:367 - The signal <icon_control0<31>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<32>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D10> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D8> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D6> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> is incomplete.
-   The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>>
-   is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1> is incomplete.
    The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_5338/GLOBAL_LOGIC1> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<5>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<4>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_data_fifo_empty> is incomplete. The signal does
+   not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
@@ -225,6 +213,171 @@ INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
    maximum frequency performance. If the DCM input clock might stop or if the
    DCM reset might be asserted for an extended time, then use of the dcm_standby
    macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
 INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
    0.000 to 85.000 Celsius)
 INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
@@ -237,9 +390,9 @@ INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance w
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  30 block(s) removed
- 129 block(s) optimized away
-   1 signal(s) removed
+  41 block(s) removed
+ 151 block(s) optimized away
+  51 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -288,14 +441,132 @@ Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B"
 Loadless block "XLXI_6009" (CKBUF) removed.
 Loadless block "XLXI_6202" (CKBUF) removed.
  The signal "XLXN_15092" is loadless and has been removed.
+The signal "XLXI_6227/internal_din<0>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<48>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<49>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<50>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<51>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<52>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<53>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<54>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<55>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<56>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<57>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<58>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<59>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<60>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<61>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<62>" is sourceless and has been removed.
+The signal "XLXI_6227/rx_data<63>" is sourceless and has been removed.
+The signal "XLXI_6227/self_port<0>" is sourceless and has been removed.
+The signal "XLXI_6227/user_tx_size_in<0>" is sourceless and has been removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<0>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<10>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<11>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<12>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<13>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<14>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<15>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<1>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<2>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<3>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<4>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<5>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<6>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<7>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<8>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/udp_fwd_port<9>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<0>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<10>" is sourceless and has
+been removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<1>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<2>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<3>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<4>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<5>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<6>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<7>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<8>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/user_rx_size_out<9>" is sourceless and has been
+removed.
+The signal "XLXI_6227/ec_wrapper/ethernet_controller/arp_tx_er" is sourceless
+and has been removed.
+The signal "XLXI_6227/ec_wrapper/ethernet_controller/udp_tx_er" is sourceless
+and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "XLXN_15518" is unused and has been removed.
+The signal "tx_data<34>" is unused and has been removed.
+Unused block
+"XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empt
+y_i" (FF) removed.
 Unused block "XLXI_6227/data_manager_blk/RX_DATA_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/RX_DATA_FIFO/VCC" (ONE) removed.
 Unused block "XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/VCC" (ONE) removed.
+Unused block
+"XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/
+grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/
+grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/g
+rf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/g
+rf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf
+/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf
+/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empt
+y_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
+_i" (FF) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/VCC" (ONE) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/VCC" (ONE) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/
+grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/
+grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i" (FF) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_DATA_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_DATA_FIFO/VCC" (ONE) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/GND" (ZERO) removed.
@@ -309,6 +580,12 @@ LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
    optimized to 0
 GND 		U_ila_pro_0/XST_GND
 VCC 		U_ila_pro_0/XST_VCC
+GND 		XLXI_6338
+GND 		XLXI_6341/XST_GND
+VCC 		XLXI_6341/XST_VCC
+VCC 		XLXI_6346
+GND 		XLXI_6380/XST_GND
+VCC 		XLXI_6380/XST_VCC
 GND 		XLXI_4359/XST_GND
 VCC 		XLXI_4359/XST_VCC
 GND 		XLXI_5338/XST_GND
@@ -318,12 +595,6 @@ GND 		XLXI_6227/XST_GND
 VCC 		XLXI_6227/XST_VCC
 GND 		XLXI_6227/burst_traffic_controller_blk/XST_GND
 VCC 		XLXI_6227/burst_traffic_controller_blk/XST_VCC
-GND 		XLXI_6227/data_manager_blk/GEC_RX_CTRL/XST_GND
-VCC 		XLXI_6227/data_manager_blk/GEC_RX_CTRL/XST_VCC
-GND 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_GND
-VCC 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_VCC
-GND 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_GND
-VCC 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_VCC
 GND 		XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND
 VCC 		XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_VCC
 GND 		XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_GND
@@ -336,6 +607,12 @@ GND 		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND
 VCC 		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_VCC
 GND 		XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND
 VCC 		XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/GEC_RX_CTRL/XST_GND
+VCC 		XLXI_6227/data_manager_blk/GEC_RX_CTRL/XST_VCC
+GND 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_GND
+VCC 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_VCC
+GND 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_GND
+VCC 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_VCC
 GND 		XLXI_6227/data_manager_blk/burst_controller_sm/XST_GND
 GND 		XLXI_6227/ec_wrapper/crcSplice/XST_GND
 VCC 		XLXI_6227/ec_wrapper/ethernet_controller/AddressContainer/XST_VCC
@@ -355,14 +632,8 @@ GND 		XLXI_6227/reset_mgr/XST_GND
 VCC 		XLXI_6227/reset_mgr/XST_VCC
 GND 		XLXI_6253/XST_GND
 VCC 		XLXI_6253/XST_VCC
-GND 		XLXI_6338
-GND 		XLXI_6341/XST_GND
-VCC 		XLXI_6341/XST_VCC
-VCC 		XLXI_6346
 GND 		XLXI_6349/XST_GND
 VCC 		XLXI_6349/XST_VCC
-GND 		XLXI_6380/XST_GND
-VCC 		XLXI_6380/XST_VCC
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

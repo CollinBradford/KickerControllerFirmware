@@ -164,10 +164,10 @@
 <msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">STATE_VECTOR</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd</arg>&quot; line <arg fmt="%d" index="2">70</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">startAddr</arg>&gt; has a width of <arg fmt="%d" index="4">11</arg> bits but assigned expression is <arg fmt="%d" index="5">16</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd</arg>&quot; line <arg fmt="%d" index="2">69</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">startAddr</arg>&gt; has a width of <arg fmt="%d" index="4">11</arg> bits but assigned expression is <arg fmt="%d" index="5">16</arg>-bit wide.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd</arg>&quot; line <arg fmt="%d" index="2">71</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">endAddr</arg>&gt; has a width of <arg fmt="%d" index="4">11</arg> bits but assigned expression is <arg fmt="%d" index="5">16</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd</arg>&quot; line <arg fmt="%d" index="2">70</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">endAddr</arg>&gt; has a width of <arg fmt="%d" index="4">11</arg> bits but assigned expression is <arg fmt="%d" index="5">16</arg>-bit wide.
 </msg>
 
 <msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd</arg>&quot; line <arg fmt="%d" index="2">59</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:

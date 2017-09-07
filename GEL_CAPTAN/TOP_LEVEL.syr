@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -84,7 +84,7 @@ Equivalent register Removal        : YES
 Optimization Goal                  : Speed
 Optimization Effort                : 1
 Power Reduction                    : NO
-Keep Hierarchy                     : Soft
+Keep Hierarchy                     : Yes
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
@@ -768,8 +768,8 @@ Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <beha
 Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
 
 Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
-WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 70: Width mismatch. <startAddr> has a width of 11 bits but assigned expression is 16-bit wide.
-WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 71: Width mismatch. <endAddr> has a width of 11 bits but assigned expression is 16-bit wide.
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 69: Width mismatch. <startAddr> has a width of 11 bits but assigned expression is 16-bit wide.
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 70: Width mismatch. <endAddr> has a width of 11 bits but assigned expression is 16-bit wide.
 Entity <data_send> analyzed. Unit <data_send> generated.
 
 Analyzing Entity <ClockLatchSignals> in library <work> (Architecture <behavioral>).
@@ -842,10 +842,10 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 1-bit register for signal <b_data_we>.
     Found 1-bit register for signal <armed>.
     Found 11-bit register for signal <endAddr>.
-    Found 11-bit adder for signal <endAddr$add0000> created at line 71.
+    Found 11-bit adder for signal <endAddr$add0000> created at line 70.
     Found 1-bit register for signal <sendUDP>.
     Found 11-bit register for signal <startAddr>.
-    Found 11-bit subtractor for signal <startAddr$sub0000> created at line 70.
+    Found 11-bit subtractor for signal <startAddr$sub0000> created at line 69.
     Summary:
 	inferred  25 D-type flip-flop(s).
 	inferred   2 Adder/Subtractor(s).
@@ -2609,7 +2609,7 @@ RTL Top Level Output File Name     : TOP_LEVEL.ngr
 Top Level Output File Name         : TOP_LEVEL
 Output Format                      : NGC
 Optimization Goal                  : Speed
-Keep Hierarchy                     : Soft
+Keep Hierarchy                     : Yes
 
 Design Statistics
 # IOs                              : 81
@@ -2625,9 +2625,9 @@ Cell Usage :
 #      AND5B4                      : 1
 #      BUF                         : 5
 #      GND                         : 28
-#      INV                         : 177
+#      INV                         : 178
 #      LUT1                        : 222
-#      LUT2                        : 494
+#      LUT2                        : 493
 #      LUT2_D                      : 40
 #      LUT2_L                      : 28
 #      LUT3                        : 1123
@@ -2682,7 +2682,7 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3037  out of  10752    28%  
+ Number of Slices:                     3036  out of  10752    28%  
  Number of Slice Flip Flops:           2204  out of  21504    10%  
  Number of 4 input LUTs:               4825  out of  21504    22%  
     Number used as logic:              4417
@@ -2847,7 +2847,7 @@ Offset:              2.748ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.243ns (frequency: 138.061MHz)
-  Total number of paths / destination ports: 107232 / 6680
+  Total number of paths / destination ports: 107210 / 6658
 -------------------------------------------------------------------------
 Delay:               7.243ns (Levels of Logic = 12)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3048,12 +3048,12 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 68.00 secs
-Total CPU time to Xst completion: 67.65 secs
+Total REAL time to Xst completion: 67.00 secs
+Total CPU time to Xst completion: 67.10 secs
  
 --> 
 
-Total memory usage is 662016 kilobytes
+Total memory usage is 662080 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  310 (   0 filtered)

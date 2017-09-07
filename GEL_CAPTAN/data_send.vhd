@@ -66,9 +66,10 @@ begin
 		if(rising_edge(clk)) then
 			if(rst = '0') then
 				
+				startAddr <= triggerAddressUns - userPretrigSamplesUns;
+				endAddr <= triggerAddressUns + userSampleSizeUns;
+				
 				if(new_trigger = '1') then
-					startAddr <= triggerAddressUns - userPretrigSamplesUns;
-					endAddr <= triggerAddressUns + userSampleSizeUns;
 					armed <= '1';
 				end if;
 				
