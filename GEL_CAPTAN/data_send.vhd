@@ -81,6 +81,7 @@ begin
 				if(reading = '1' and ramAddrUns = endAddr) then --Ends read cycle when buffer reaches the end point. 
 					b_data_we <= '0';
 					reading <= '0';
+					sendUDP <= '1';
 				end if;
 				
 				if(sendUDP = '1') then
