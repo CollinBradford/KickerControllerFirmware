@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/07/2017 11:56:43
+-- /___/   /\     Timestamp : 09/07/2017 15:14:35
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -691,8 +691,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal PHY_TXER_sig             : std_logic;
    signal psi_status               : std_logic_vector (63 downto 0);
    signal pulse                    : std_logic;
-   signal ram_addr                 : std_logic_vector (10 downto 0);
-   signal ram_address              : std_logic_vector (10 downto 0);
+   signal ram_addr                 : std_logic_vector (9 downto 0);
    signal ram_en                   : std_logic;
    signal reset                    : std_logic;
    signal rx_addr                  : std_logic_vector (31 downto 0);
@@ -704,7 +703,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal scin_3                   : std_logic;
    signal threshold                : std_logic_vector (7 downto 0);
    signal trigger                  : std_logic;
-   signal trigger_addr             : std_logic_vector (10 downto 0);
+   signal trigger_addr             : std_logic_vector (9 downto 0);
    signal TRIG_ATTRIBUTES_MAP      : std_logic;
    signal trig_debug               : std_logic_vector (63 downto 0);
    signal TRIG_MAP                 : std_logic;
@@ -1039,15 +1038,15 @@ architecture BEHAVIORAL of TOP_LEVEL is
    component data_send
       port ( rst                      : in    std_logic; 
              clk                      : in    std_logic; 
-             b_data_we                : out   std_logic; 
-             b_force_packet           : out   std_logic; 
-             b_data                   : out   std_logic_vector (63 downto 0); 
              new_trigger              : in    std_logic; 
              data_in                  : in    std_logic_vector (63 downto 0); 
-             trigger_addr             : in    std_logic_vector (10 downto 0); 
-             ram_addr                 : in    std_logic_vector (10 downto 0); 
+             trigger_addr             : in    std_logic_vector (9 downto 0); 
+             ram_addr                 : in    std_logic_vector (9 downto 0); 
              user_sample_size         : in    std_logic_vector (15 downto 0); 
-             user_pretrig_sample_size : in    std_logic_vector (15 downto 0));
+             user_pretrig_sample_size : in    std_logic_vector (15 downto 0); 
+             b_data_we                : out   std_logic; 
+             b_force_packet           : out   std_logic; 
+             b_data                   : out   std_logic_vector (63 downto 0));
    end component;
    
    component ClockLatchSignals
@@ -1079,16 +1078,16 @@ architecture BEHAVIORAL of TOP_LEVEL is
              reset             : in    std_logic; 
              data_in           : in    std_logic_vector (63 downto 0); 
              signal_threshold  : in    std_logic_vector (7 downto 0); 
-             out_enable        : out   std_logic; 
-             data_out          : out   std_logic_vector (63 downto 0); 
              user_sample_width : in    std_logic_vector (15 downto 0); 
+             out_enable        : out   std_logic; 
              new_trigger       : out   std_logic; 
-             addr_out          : out   std_logic_vector (10 downto 0); 
-             trigger_address   : out   std_logic_vector (10 downto 0));
+             data_out          : out   std_logic_vector (63 downto 0); 
+             addr_out          : out   std_logic_vector (9 downto 0); 
+             trigger_address   : out   std_logic_vector (9 downto 0));
    end component;
    
    component EthernetRAM
-      port ( addra : in    std_logic_vector (10 downto 0); 
+      port ( addra : in    std_logic_vector (9 downto 0); 
              dina  : in    std_logic_vector (63 downto 0); 
              wea   : in    std_logic_vector (0 downto 0); 
              clka  : in    std_logic; 
@@ -1874,9 +1873,9 @@ begin
       port map (clk=>MASTER_CLK,
                 data_in(63 downto 0)=>data_send_in(63 downto 0),
                 new_trigger=>new_trigger,
-                ram_addr(10 downto 0)=>ram_addr(10 downto 0),
+                ram_addr(9 downto 0)=>ram_addr(9 downto 0),
                 rst=>reset,
-                trigger_addr(10 downto 0)=>trigger_addr(10 downto 0),
+                trigger_addr(9 downto 0)=>trigger_addr(9 downto 0),
                 user_pretrig_sample_size(15 downto 
             0)=>user_pretrig_sample_size(15 downto 0),
                 user_sample_size(15 downto 0)=>user_sample_size(15 downto 0),
@@ -1916,14 +1915,14 @@ begin
                 reset=>reset,
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
                 user_sample_width(15 downto 0)=>user_sample_size(15 downto 0),
-                addr_out(10 downto 0)=>ram_addr(10 downto 0),
+                addr_out(9 downto 0)=>ram_addr(9 downto 0),
                 data_out(63 downto 0)=>peak_finder_data_out(63 downto 0),
                 new_trigger=>new_trigger,
                 out_enable=>ram_en,
-                trigger_address(10 downto 0)=>trigger_addr(10 downto 0));
+                trigger_address(9 downto 0)=>trigger_addr(9 downto 0));
    
    XLXI_6380 : EthernetRAM
-      port map (addra(10 downto 0)=>ram_address(10 downto 0),
+      port map (addra(9 downto 0)=>ram_addr(9 downto 0),
                 clka=>MASTER_CLK,
                 dina(63 downto 0)=>peak_finder_data_out(63 downto 0),
                 wea(0)=>ram_en,

@@ -39,9 +39,9 @@ entity PeakFinder is
 			  signal_threshold : in STD_LOGIC_VECTOR(7 downto 0);
 			  user_sample_width : in STD_LOGIC_VECTOR(15 downto 0);
            data_out : out STD_LOGIC_VECTOR (63 downto 0);
-			  addr_out : out STD_LOGIC_VECTOR (10 downto 0);
+			  addr_out : out STD_LOGIC_VECTOR (9 downto 0);
            out_enable : out  STD_LOGIC;
-			  trigger_address : out STD_LOGIC_VECTOR(10 downto 0);
+			  trigger_address : out STD_LOGIC_VECTOR(9 downto 0);
 			  new_trigger : out STD_LOGIC);
 end PeakFinder;
 
@@ -56,7 +56,7 @@ architecture Behavioral of PeakFinder is
 	signal sample_eight : unsigned(7 downto 0);
 	
 	signal threshold : unsigned( 7 downto 0 );
-	signal ramAddress : unsigned(10 downto 0);
+	signal ramAddress : unsigned(9 downto 0);
 	signal new_trigger_sig : std_logic;
 	signal triggered : std_logic;--Means that a signal is over the threshold.  Sync with clk.
 	signal userSampleWidth : unsigned(15 downto 0);

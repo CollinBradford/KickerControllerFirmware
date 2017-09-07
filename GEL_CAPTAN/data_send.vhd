@@ -30,8 +30,8 @@ entity data_send is
            data_in : in  STD_LOGIC_VECTOR (63 downto 0);
 			  --trigger signals
 			  new_trigger : in STD_LOGIC;
-			  trigger_addr : in STD_LOGIC_VECTOR (10 downto 0);
-			  ram_addr : in STD_LOGIC_VECTOR (10 downto 0);
+			  trigger_addr : in STD_LOGIC_VECTOR (9 downto 0);
+			  ram_addr : in STD_LOGIC_VECTOR (9 downto 0);
 			  --user sample sizes
 			  user_sample_size : in STD_LOGIC_VECTOR (15 downto 0);
 			  user_pretrig_sample_size : in STD_LOGIC_VECTOR (15 downto 0);
@@ -43,12 +43,12 @@ end data_send;
 
 architecture Behavioral of data_send is
 
-signal startAddr : unsigned(10 downto 0);
-signal endAddr : unsigned(10 downto 0);
+signal startAddr : unsigned(9 downto 0);
+signal endAddr : unsigned(9 downto 0);
 signal userSampleSizeUns : unsigned(15 downto 0);
 signal userPretrigSamplesUns : unsigned(15 downto 0);
-signal triggerAddressUns : unsigned(10 downto 0);
-signal ramAddrUns : unsigned(10 downto 0);
+signal triggerAddressUns : unsigned(9 downto 0);
+signal ramAddrUns : unsigned(9 downto 0);
 signal armed : std_logic;
 signal reading : std_logic;
 signal sendUDP : std_logic;

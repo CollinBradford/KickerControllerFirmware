@@ -8,6 +8,6 @@ reset
 out_enable
 new_trigger
 =data_out[63:0]=
-=addr_out[10:0]=
-=trigger_address[10:0]=
+=addr_out[9:0]=
+=trigger_address[9:0]=
 [BiDir]

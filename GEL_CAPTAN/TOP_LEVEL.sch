@@ -251,14 +251,13 @@
         <signal name="fadc_data_in(15:0)" />
         <signal name="fadc_fifo_data_out(15:0)" />
         <signal name="new_trigger" />
-        <signal name="trigger_addr(10:0)" />
-        <signal name="ram_address(10:0)" />
         <signal name="data_send_in(63:0)" />
-        <signal name="ram_addr(10:0)" />
         <signal name="user_sample_size(15:0)" />
         <signal name="rx_data(39:24)" />
         <signal name="user_pretrig_sample_size(15:0)" />
         <signal name="peak_finder_data_out(63:0)" />
+        <signal name="ram_addr(9:0)" />
+        <signal name="trigger_addr(9:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -657,7 +656,7 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="PeakFinder">
-            <timestamp>2017-9-5T20:42:56</timestamp>
+            <timestamp>2017-9-7T20:11:46</timestamp>
             <rect width="64" x="0" y="276" height="24" />
             <line x2="0" y1="288" y2="288" x1="64" />
             <line x2="528" y1="288" y2="288" x1="464" />
@@ -677,7 +676,7 @@
             <rect width="400" x="64" y="-320" height="832" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2017-9-7T15:41:4</timestamp>
+            <timestamp>2017-9-7T20:14:19</timestamp>
             <line x2="0" y1="160" y2="160" x1="64" />
             <rect width="64" x="0" y="212" height="24" />
             <line x2="0" y1="224" y2="224" x1="64" />
@@ -726,7 +725,7 @@
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
         <blockdef name="EthernetRAM">
-            <timestamp>2017-9-5T19:52:23</timestamp>
+            <timestamp>2017-9-7T20:9:38</timestamp>
             <rect width="512" x="32" y="32" height="1344" />
             <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
             <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
@@ -1721,7 +1720,7 @@
             <blockpin signalname="CLK_MUX" name="O" />
         </block>
         <block symbolname="EthernetRAM" name="XLXI_6380">
-            <blockpin signalname="ram_address(10:0)" name="addra(10:0)" />
+            <blockpin signalname="ram_addr(9:0)" name="addra(9:0)" />
             <blockpin signalname="peak_finder_data_out(63:0)" name="dina(63:0)" />
             <blockpin signalname="ram_en" name="wea(0:0)" />
             <blockpin signalname="MASTER_CLK" name="clka" />
@@ -1750,25 +1749,25 @@
             <blockpin signalname="reset" name="reset" />
             <blockpin signalname="fadc_fifo_data_out(63:0)" name="data_in(63:0)" />
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
-            <blockpin signalname="ram_en" name="out_enable" />
-            <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
             <blockpin signalname="user_sample_size(15:0)" name="user_sample_width(15:0)" />
+            <blockpin signalname="ram_en" name="out_enable" />
             <blockpin signalname="new_trigger" name="new_trigger" />
-            <blockpin signalname="ram_addr(10:0)" name="addr_out(10:0)" />
-            <blockpin signalname="trigger_addr(10:0)" name="trigger_address(10:0)" />
+            <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
+            <blockpin signalname="ram_addr(9:0)" name="addr_out(9:0)" />
+            <blockpin signalname="trigger_addr(9:0)" name="trigger_address(9:0)" />
         </block>
         <block symbolname="data_send" name="XLXI_6253">
             <blockpin signalname="reset" name="rst" />
             <blockpin signalname="MASTER_CLK" name="clk" />
+            <blockpin signalname="new_trigger" name="new_trigger" />
+            <blockpin signalname="data_send_in(63:0)" name="data_in(63:0)" />
+            <blockpin signalname="trigger_addr(9:0)" name="trigger_addr(9:0)" />
+            <blockpin signalname="ram_addr(9:0)" name="ram_addr(9:0)" />
+            <blockpin signalname="user_sample_size(15:0)" name="user_sample_size(15:0)" />
+            <blockpin signalname="user_pretrig_sample_size(15:0)" name="user_pretrig_sample_size(15:0)" />
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="b_force_packet" name="b_force_packet" />
             <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
-            <blockpin signalname="new_trigger" name="new_trigger" />
-            <blockpin signalname="data_send_in(63:0)" name="data_in(63:0)" />
-            <blockpin signalname="trigger_addr(10:0)" name="trigger_addr(10:0)" />
-            <blockpin signalname="ram_addr(10:0)" name="ram_addr(10:0)" />
-            <blockpin signalname="user_sample_size(15:0)" name="user_sample_size(15:0)" />
-            <blockpin signalname="user_pretrig_sample_size(15:0)" name="user_pretrig_sample_size(15:0)" />
         </block>
         <block symbolname="fd16re" name="XLXI_6394">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -2283,15 +2282,15 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2272" type="branch" />
             <wire x2="2720" y1="2272" y2="2272" x1="2704" />
         </branch>
-        <branch name="ram_addr(10:0)">
+        <branch name="ram_addr(9:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2336" type="branch" />
             <wire x2="2720" y1="2336" y2="2336" x1="2704" />
         </branch>
-        <branch name="trigger_addr(10:0)">
+        <branch name="trigger_addr(9:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2400" type="branch" />
             <wire x2="2720" y1="2400" y2="2400" x1="2704" />
         </branch>
-        <branch name="ram_address(10:0)">
+        <branch name="ram_addr(9:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3600" y="992" type="branch" />
             <wire x2="3616" y1="992" y2="992" x1="3600" />
         </branch>
@@ -2319,11 +2318,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="1920" type="branch" />
             <wire x2="5088" y1="1920" y2="1920" x1="5072" />
         </branch>
-        <branch name="trigger_addr(10:0)">
+        <branch name="trigger_addr(9:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="1984" type="branch" />
             <wire x2="5088" y1="1984" y2="1984" x1="5072" />
         </branch>
-        <branch name="ram_addr(10:0)">
+        <branch name="ram_addr(9:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2048" type="branch" />
             <wire x2="5088" y1="2048" y2="2048" x1="5072" />
         </branch>

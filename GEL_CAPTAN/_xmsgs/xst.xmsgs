@@ -5,40 +5,40 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1198</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D10</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1197</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D10</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1198</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D11</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1197</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D11</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1198</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D12</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1197</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D12</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1198</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D13</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1197</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D13</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1198</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D14</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1197</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D14</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1198</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D15</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1197</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D15</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1198</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D6</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1197</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D6</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1198</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D8</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1197</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D8</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1198</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D9</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1197</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D9</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1472</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">O</arg>&apos; of component &apos;<arg fmt="%s" index="4">M2_1_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1471</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">O</arg>&apos; of component &apos;<arg fmt="%s" index="4">M2_1_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1895</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ADC_FIFO</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1894</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ADC_FIFO</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1925</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">EthernetRAM</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1924</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">EthernetRAM</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">146</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">udp_fwd_port</arg>&apos; of component &apos;<arg fmt="%s" index="4">ethernet_controller_wrapper</arg>&apos;.
@@ -164,10 +164,10 @@
 <msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">STATE_VECTOR</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd</arg>&quot; line <arg fmt="%d" index="2">72</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">startAddr</arg>&gt; has a width of <arg fmt="%d" index="4">11</arg> bits but assigned expression is <arg fmt="%d" index="5">16</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd</arg>&quot; line <arg fmt="%d" index="2">72</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">startAddr</arg>&gt; has a width of <arg fmt="%d" index="4">10</arg> bits but assigned expression is <arg fmt="%d" index="5">16</arg>-bit wide.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd</arg>&quot; line <arg fmt="%d" index="2">73</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">endAddr</arg>&gt; has a width of <arg fmt="%d" index="4">11</arg> bits but assigned expression is <arg fmt="%d" index="5">16</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd</arg>&quot; line <arg fmt="%d" index="2">73</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">endAddr</arg>&gt; has a width of <arg fmt="%d" index="4">10</arg> bits but assigned expression is <arg fmt="%d" index="5">16</arg>-bit wide.
 </msg>
 
 <msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd</arg>&quot; line <arg fmt="%d" index="2">59</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
@@ -187,10 +187,10 @@
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">internal_eth_dout_50$mux0008</arg>&gt; in unit &lt;<arg fmt="%s" index="2">ethernet_interface</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">userSampleSizeUns&lt;15:11&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">userSampleSizeUns&lt;15:10&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">userPretrigSamplesUns&lt;15:11&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">userPretrigSamplesUns&lt;15:10&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">burstWrEn</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -326,9 +326,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rx_addr&lt;7:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ram_address</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">pulse</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.

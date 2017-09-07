@@ -3,8 +3,8 @@ rst
 clk
 new_trigger
 =data_in[63:0]=
-=trigger_addr[10:0]=
-=ram_addr[10:0]=
+=trigger_addr[9:0]=
+=ram_addr[9:0]=
 =user_sample_size[15:0]=
 =user_pretrig_sample_size[15:0]=
 [Outputs]
