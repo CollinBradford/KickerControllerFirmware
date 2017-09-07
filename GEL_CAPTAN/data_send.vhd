@@ -23,12 +23,19 @@ use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity data_send is
-    Port ( rst : in  STD_LOGIC;
+    Port ( --default signals
+			  rst : in  STD_LOGIC;
            clk : in  STD_LOGIC;
-           din : in  STD_LOGIC_VECTOR (64 downto 0);
-           empty : in  STD_LOGIC;
-           b_enable : in  STD_LOGIC;
-           delay_time : in  STD_LOGIC_VECTOR(7 downto 0);
+			  --data signals
+           data_in : in  STD_LOGIC_VECTOR (63 downto 0);
+			  --trigger signals
+			  new_trigger : in STD_LOGIC;
+			  trigger_addr : in STD_LOGIC_VECTOR (9 downto 0);
+			  ram_addr : in STD_LOGIC_VECTOR (9 downto 0);
+			  --user sample sizes
+			  user_sample_size : in STD_LOGIC_VECTOR (15 downto 0);
+			  user_pretrig_sample_size : in STD_LOGIC_VECTOR (15 downto 0);
+			  --burst data control signals
            b_data : out  STD_LOGIC_VECTOR (63 downto 0);
            b_data_we : out  STD_LOGIC;
 			  b_force_packet : out STD_LOGIC);
@@ -36,67 +43,68 @@ end data_send;
 
 architecture Behavioral of data_send is
 
-signal count_delay : unsigned(7 downto 0);
-signal delay_time_u : unsigned(7 downto 0);
-signal new_peak : std_logic;
-signal state_new_peak : std_logic;
-signal b_force_packet_sig : std_logic;
-signal b_data_we_sig : std_logic;
-signal state_new_peak_over : std_logic;
+signal startAddr : unsigned(9 downto 0);
+signal endAddr : unsigned(9 downto 0);
+signal userSampleSizeUns : unsigned(15 downto 0);
+signal userPretrigSamplesUns : unsigned(15 downto 0);
+signal triggerAddressUns : unsigned(9 downto 0);
+signal ramAddrUns : unsigned(9 downto 0);
+signal armed : std_logic;
+signal reading : std_logic;
+signal sendUDP : std_logic;
+signal burstWrEn : std_logic;
+
 
 begin
 
-	delay_time_u <= unsigned(delay_time);
-	new_peak <= din(64);
-	b_force_packet <= b_force_packet_sig;
-	b_data_we <= b_data_we_sig;
-	
-	process(clk, b_enable) begin
+	b_force_packet <=  sendUDP;
+	triggerAddressUns <= unsigned(trigger_addr);
+	userSampleSizeUns <= unsigned(user_sample_size);
+	userPretrigSamplesUns <= unsigned(user_pretrig_sample_size);
+	ramAddrUns <= unsigned(ram_addr);
+
+	process(clk) begin
 		if(rising_edge(clk)) then
 			if(rst = '0') then
-			
-				if(empty = '0' and (new_peak = '0' or state_new_peak_over = '1')) then  --middle of normal read operation
-					state_new_peak <= '0';
-					b_data_we_sig <= '0';
-					count_delay <= count_delay + 1;
-					state_new_peak_over <= '0';--NOTE: I did have this in the next if statement, but I think moving it here will be fine and will allow for packets that are only 64 bits long.  
-					if(count_delay >= delay_time_u) then
-						count_delay <= (others => '0');
-						b_data_we_sig <= '1';
-					end if;
+				
+				if(new_trigger = '1') then
+					armed <= '1';
+					startAddr <= triggerAddressUns - userPretrigSamplesUns;
+					endAddr <= triggerAddressUns + userSampleSizeUns;
 				end if;
 				
-				if(empty = '0' and state_new_peak = '0' and new_peak = '1' and state_new_peak_over = '0') then --start of new_peak
-					b_force_packet_sig <= '1';
-					state_new_peak <= '1';
+				if(armed = '1' and ramAddrUns = startAddr) then --Begins read cycle when buffer reaches starting point.  
+					b_data_we <= '1';
+					reading <= '1';
+					armed <= '0';
 				end if;
 				
-				if(empty = '0' and state_new_peak = '1' and new_peak = '1' and b_data_we_sig = '0') then --turn off new_peak signal and start read opperation to clear new_peak and state_new_peak
-					b_data_we_sig <= '1';
-					b_force_packet_sig <= '0';
-					state_new_peak <= '0';
-					state_new_peak_over <= '1';
+				if(reading = '1' and ramAddrUns = endAddr) then --Ends read cycle when buffer reaches the end point. 
+					b_data_we <= '0';
+					reading <= '0';
+					sendUDP <= '1';
+				end if;
+				
+				if(sendUDP = '1') then
+					sendUDP <= '0';
 				end if;
 				
 			else--reset code here
-				state_new_peak <= '1';
-				count_delay <= (others => '0');
-				b_force_packet_sig <= '0';
-				b_data_we_sig <= '0';
-				state_new_peak_over <= '0';
+				armed <= '0';
+				sendUDP <= '0';
 			end if;
 		end if;
 	end process;
 	
 	--b_data <= din;
-	b_data(7 downto 0) <= din(63 downto 56);
-	b_data(15 downto 8) <= din(55 downto 48);
-	b_data(23 downto 16) <= din(47 downto 40);
-	b_data(31 downto 24) <= din(39 downto 32);
-	b_data(39 downto 32) <= din(31 downto 24);
-	b_data(47 downto 40) <= din(23 downto 16);
-	b_data(55 downto 48) <= din(15 downto 8);
-	b_data(63 downto 56) <= din(7 downto 0);
+	b_data(7 downto 0) <= data_in(63 downto 56);
+	b_data(15 downto 8) <= data_in(55 downto 48);
+	b_data(23 downto 16) <= data_in(47 downto 40);
+	b_data(31 downto 24) <= data_in(39 downto 32);
+	b_data(39 downto 32) <= data_in(31 downto 24);
+	b_data(47 downto 40) <= data_in(23 downto 16);
+	b_data(55 downto 48) <= data_in(15 downto 8);
+	b_data(63 downto 56) <= data_in(7 downto 0);
 	--This makes the data come out right for some reason.  Better to organize it here than on the coputer where it will take 
 	--valuable clocks.  
 	

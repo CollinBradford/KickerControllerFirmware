@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -84,7 +84,7 @@ Equivalent register Removal        : YES
 Optimization Goal                  : Speed
 Optimization Effort                : 1
 Power Reduction                    : NO
-Keep Hierarchy                     : Soft
+Keep Hierarchy                     : Yes
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
@@ -110,104 +110,94 @@ Cores Search Directories           : {"../ipcore_dir" "ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/params_package.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/params_package.vhd" in Library work.
 Architecture params_package of Entity params_package is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/address_container.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/address_container.vhd" in Library work.
 Architecture arch of Entity address_container is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/arp_reply.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/arp_reply.vhd" in Library work.
 Architecture arp_reply_arch of Entity arp_reply is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/or33.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/or33.vhd" in Library work.
 Architecture or33_arch of Entity or33 is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ip_checksum_calc.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ip_checksum_calc.vhd" in Library work.
 Architecture arch of Entity ip_checksum_calc is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/create_packet.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/create_packet.vhd" in Library work.
 Architecture create_packet_arch of Entity create_packet is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/dataout_mux.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/dataout_mux.vhd" in Library work.
 Architecture dataout_mux_arch of Entity dataout_mux is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/decipherer.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/decipherer.vhd" in Library work.
 Architecture decipherer_arch of Entity decipherer is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/filter_data_out.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/filter_data_out.vhd" in Library work.
 Architecture filter_data_out_arch of Entity filter_data_out is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/icmp_ping_checksum_calc.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/icmp_ping_checksum_calc.vhd" in Library work.
 Architecture icmp_ping_checksum_calc_arch of Entity icmp_ping_checksum_calc is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/icmp_ping_shift_reg.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/icmp_ping_shift_reg.vhd" in Library work.
 Architecture arch of Entity icmp_ping_shift_reg is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/udp_data_splicer.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/udp_data_splicer.vhd" in Library work.
 Architecture udp_data_splicer_arch of Entity udp_data_splicer is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/user_addrs_mux.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/user_addrs_mux.vhd" in Library work.
 Architecture user_addrs_mux_arch of Entity user_addrs_mux is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/ipcore_dir/DATA_FIFO_0.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.vhd" in Library work.
 Architecture data_fifo_0_a of Entity data_fifo_0 is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/ipcore_dir/INFO_FIFO_0.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.vhd" in Library work.
 Architecture info_fifo_0_a of Entity info_fifo_0 is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/ipcore_dir/ADDR_FIFO.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.vhd" in Library work.
 Architecture addr_fifo_a of Entity addr_fifo is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/burst_controller_sm.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/burst_controller_sm.vhd" in Library work.
 Architecture burst_controller_sm_arch of Entity burst_controller_sm is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/rx_ctl.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/rx_ctl.vhd" in Library work.
 Architecture arch of Entity rx_ctl is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ram_comm_dec.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ram_comm_dec.vhd" in Library work.
 Architecture arch of Entity ram_comm_dec is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/tx_seq_ctl.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/tx_seq_ctl.vhd" in Library work.
 Architecture arch of Entity tx_seq_ctl is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ethernet_controller.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller.vhd" in Library work.
 Architecture arch of Entity ethernet_controller is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/xmii_handler.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/xmii_handler.vhd" in Library work.
 Architecture arch of Entity mii_100_1000_handler is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/crc_splice.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/crc_splice.vhd" in Library work.
 Architecture arch of Entity crc_splice is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ethernet_controller_wrapper.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller_wrapper.vhd" in Library work.
 Architecture arch of Entity ethernet_controller_wrapper is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" in Library work.
 Architecture behavioral of Entity data_manager is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/burst_traffic_controller.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/burst_traffic_controller.vhd" in Library work.
 Architecture burst_traffic_controller_arch of Entity burst_traffic_controller is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/reset_mgr.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/reset_mgr.vhd" in Library work.
 Architecture behavioral of Entity reset_mgr is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse.vhd" in Library work.
-Architecture behavioral of Entity stat_pulse is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/VERSION_BLK.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/VERSION_BLK.vhd" in Library work.
 Architecture behavioral of Entity version_blk is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/MUX64_8.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/MUX64_8.vhd" in Library work.
 Architecture behavioral of Entity mux64_8 is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/buffer_10bit.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/buffer_10bit.vhd" in Library work.
 Architecture behavioral of Entity buffer_10bit is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
 Architecture behavioral of Entity trigger_recv_blk is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ethernet_interface.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" in Library work.
 Architecture behavioral of Entity ethernet_interface is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/Pulser.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/Pulser.vhd" in Library work.
 Architecture behavioral of Entity pulser is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/ethernet_FIFO.vhd" in Library work.
-Architecture ethernet_fifo_a of Entity ethernet_fifo is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/data_send.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" in Library work.
 Architecture behavioral of Entity data_send is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
 Architecture behavioral of Entity clocklatchsignals is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
 Architecture adc_fifo_a of Entity adc_fifo is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/PeakFinder.vhd" in Library work.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" in Library work.
 Architecture behavioral of Entity peakfinder is up to date.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Entity <ild_mxilinx_top_level> compiled.
-Entity <ild_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <stat_pulse_module_muser_top_level> compiled.
-Entity <stat_pulse_module_muser_top_level> (Architecture <behavioral>) compiled.
-Entity <fd16ce_mxilinx_top_level> compiled.
-Entity <fd16ce_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <fd8re_mxilinx_top_level> compiled.
-Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd" in Library work.
+Entity <ethernetram> compiled.
+Entity <ethernetram> (Architecture <ethernetram_a>) compiled.
+Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
 Entity <fd16re_mxilinx_top_level> compiled.
 Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <fd8re_mxilinx_top_level> compiled.
+Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
 Entity <m2_1_mxilinx_top_level> compiled.
 Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
 Entity <d4_16e_mxilinx_top_level> compiled.
 Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
 Entity <top_level> compiled.
 Entity <top_level> (Architecture <behavioral>) compiled.
-Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse_module.vhf" in Library work.
-Architecture behavioral of Entity ild_mxilinx_stat_pulse_module is up to date.
-Architecture behavioral of Entity stat_pulse_module is up to date.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -247,10 +237,6 @@ Analyzing hierarchy for entity <ClockLatchSignals> in library <work> (architectu
 
 Analyzing hierarchy for entity <PeakFinder> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD16CE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <stat_pulse_module_MUSER_TOP_LEVEL> in library <work> (architecture <behavioral>).
-
 Analyzing hierarchy for entity <ethernet_controller_wrapper> in library <work> (architecture <arch>).
 
 Analyzing hierarchy for entity <data_manager> in library <work> (architecture <BEHAVIORAL>).
@@ -258,11 +244,6 @@ Analyzing hierarchy for entity <data_manager> in library <work> (architecture <B
 Analyzing hierarchy for entity <burst_traffic_controller> in library <work> (architecture <burst_traffic_controller_arch>).
 
 Analyzing hierarchy for entity <reset_mgr> in library <work> (architecture <Behavioral>).
-
-Analyzing hierarchy for entity <stat_pulse> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <ILD_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>) with generics.
-	INIT = '0'
 
 Analyzing hierarchy for entity <ethernet_controller> in library <work> (architecture <arch>).
 
@@ -329,16 +310,16 @@ Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1557: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1557: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1557: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1557: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1557: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1557: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1557: Unconnected output port 'D6' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1557: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1557: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-    Set user-defined property "HU_SET =  XLXI_3432_2" for instance <XLXI_3432> in unit <TOP_LEVEL>.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1197: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1197: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1197: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1197: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1197: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1197: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1197: Unconnected output port 'D6' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1197: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1197: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+    Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4177> in unit <TOP_LEVEL>.
@@ -477,8 +458,8 @@ WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1
     Set user-defined property "DRIVE =  12" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  FAST" for instance <XLXI_5999> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1831: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
-    Set user-defined property "HU_SET =  XLXI_6004_3" for instance <XLXI_6004> in unit <TOP_LEVEL>.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1471: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
+    Set user-defined property "HU_SET =  XLXI_6004_1" for instance <XLXI_6004> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6016> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6025> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6033> in unit <TOP_LEVEL>.
@@ -486,9 +467,9 @@ WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1
     Set user-defined property "DRIVE =  12" for instance <XLXI_6041> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6041> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  FAST" for instance <XLXI_6041> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6051_4" for instance <XLXI_6051> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6056_5" for instance <XLXI_6056> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6057_6" for instance <XLXI_6057> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6051_2" for instance <XLXI_6051> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6056_3" for instance <XLXI_6056> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6057_4" for instance <XLXI_6057> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6074> in unit <TOP_LEVEL>.
     Set user-defined property "DIFF_TERM =  TRUE" for instance <XLXI_6074> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6074> in unit <TOP_LEVEL>.
@@ -612,29 +593,11 @@ WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1
     Set user-defined property "DRIVE =  12" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6236> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6247_8" for instance <XLXI_6247> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2225: Unconnected output port 'full' of component 'ethernet_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2225: Instantiating black box module <ethernet_FIFO>.
-    Set user-defined property "HU_SET =  XLXI_6251_7" for instance <XLXI_6251> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6329_9" for instance <XLXI_6329> in unit <TOP_LEVEL>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6339> in unit <TOP_LEVEL>.
-    Set user-defined property "DRIVE =  12" for instance <XLXI_6339> in unit <TOP_LEVEL>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6339> in unit <TOP_LEVEL>.
-    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6339> in unit <TOP_LEVEL>.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2275: Instantiating black box module <ADC_FIFO>.
-    Set user-defined property "HU_SET =  XLXI_6355_10" for instance <XLXI_6355> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6356_11" for instance <XLXI_6356> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6357_12" for instance <XLXI_6357> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6358_13" for instance <XLXI_6358> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6359_14" for instance <XLXI_6359> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6360_15" for instance <XLXI_6360> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6361_16" for instance <XLXI_6361> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6362_17" for instance <XLXI_6362> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6363_18" for instance <XLXI_6363> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6364_19" for instance <XLXI_6364> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6365_20" for instance <XLXI_6365> in unit <TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_6366_21" for instance <XLXI_6366> in unit <TOP_LEVEL>.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2411: Instantiating black box module <MUX16_2>.
+    Set user-defined property "HU_SET =  XLXI_6247_6" for instance <XLXI_6247> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6251_5" for instance <XLXI_6251> in unit <TOP_LEVEL>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1894: Instantiating black box module <ADC_FIFO>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1924: Instantiating black box module <EthernetRAM>.
+    Set user-defined property "HU_SET =  XLXI_6394_7" for instance <XLXI_6394> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
 Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
@@ -675,20 +638,20 @@ Analyzing Entity <trigger_recv_blk> in library <work> (Architecture <behavioral>
 Entity <trigger_recv_blk> analyzed. Unit <trigger_recv_blk> generated.
 
 Analyzing Entity <ethernet_interface> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/ethernet_interface.vhd" line 146: Unconnected output port 'udp_fwd_port' of component 'ethernet_controller_wrapper'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" line 146: Unconnected output port 'udp_fwd_port' of component 'ethernet_controller_wrapper'.
 Entity <ethernet_interface> analyzed. Unit <ethernet_interface> generated.
 
 Analyzing Entity <ethernet_controller_wrapper> in library <work> (Architecture <arch>).
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/ethernet_controller_wrapper.vhd" line 212: Unconnected output port 'CRC_end' of component 'crc_gen'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/ethernet_controller_wrapper.vhd" line 243: Unconnected output port 'CRC_end' of component 'crc_gen'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/ethernet_controller_wrapper.vhd" line 243: Unconnected output port 'CRC_out' of component 'crc_gen'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller_wrapper.vhd" line 212: Unconnected output port 'CRC_end' of component 'crc_gen'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller_wrapper.vhd" line 243: Unconnected output port 'CRC_end' of component 'crc_gen'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller_wrapper.vhd" line 243: Unconnected output port 'CRC_out' of component 'crc_gen'.
 Entity <ethernet_controller_wrapper> analyzed. Unit <ethernet_controller_wrapper> generated.
 
 Analyzing Entity <ethernet_controller> in library <work> (Architecture <arch>).
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/ethernet_controller.vhd" line 435: Unconnected output port 'arp_search_ip' of component 'decipherer'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/ethernet_controller.vhd" line 435: Unconnected output port 'dest_mac' of component 'decipherer'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/ethernet_controller.vhd" line 435: Unconnected output port 'is_idle' of component 'decipherer'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/ethernet_controller.vhd" line 435: Unconnected output port 'is_udp' of component 'decipherer'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller.vhd" line 435: Unconnected output port 'arp_search_ip' of component 'decipherer'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller.vhd" line 435: Unconnected output port 'dest_mac' of component 'decipherer'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller.vhd" line 435: Unconnected output port 'is_idle' of component 'decipherer'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller.vhd" line 435: Unconnected output port 'is_udp' of component 'decipherer'.
 Entity <ethernet_controller> analyzed. Unit <ethernet_controller> generated.
 
 Analyzing Entity <address_container> in library <work> (Architecture <arch>).
@@ -754,24 +717,24 @@ Analyzing Entity <crc_splice> in library <work> (Architecture <arch>).
 Entity <crc_splice> analyzed. Unit <crc_splice> generated.
 
 Analyzing Entity <data_manager> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 331: Instantiating black box module <DATA_FIFO_0>.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 341: Instantiating black box module <INFO_FIFO_0>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 351: Unconnected output port 'empty' of component 'ADDR_FIFO'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 351: Unconnected output port 'full' of component 'ADDR_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 351: Instantiating black box module <ADDR_FIFO>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 362: Unconnected output port 'empty' of component 'ADDR_FIFO'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 362: Unconnected output port 'full' of component 'ADDR_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 362: Instantiating black box module <ADDR_FIFO>.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 373: Instantiating black box module <DATA_FIFO_0>.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 383: Instantiating black box module <INFO_FIFO_0>.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 393: Instantiating black box module <DATA_FIFO_0>.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 403: Instantiating black box module <INFO_FIFO_0>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 413: Unconnected output port 'empty' of component 'ADDR_FIFO'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 413: Unconnected output port 'full' of component 'ADDR_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 413: Instantiating black box module <ADDR_FIFO>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 424: Unconnected output port 'empty' of component 'ADDR_FIFO'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 424: Unconnected output port 'full' of component 'ADDR_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" line 424: Instantiating black box module <ADDR_FIFO>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 331: Instantiating black box module <DATA_FIFO_0>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 341: Instantiating black box module <INFO_FIFO_0>.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 351: Unconnected output port 'empty' of component 'ADDR_FIFO'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 351: Unconnected output port 'full' of component 'ADDR_FIFO'.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 351: Instantiating black box module <ADDR_FIFO>.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 362: Unconnected output port 'empty' of component 'ADDR_FIFO'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 362: Unconnected output port 'full' of component 'ADDR_FIFO'.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 362: Instantiating black box module <ADDR_FIFO>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 373: Instantiating black box module <DATA_FIFO_0>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 383: Instantiating black box module <INFO_FIFO_0>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 393: Instantiating black box module <DATA_FIFO_0>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 403: Instantiating black box module <INFO_FIFO_0>.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 413: Unconnected output port 'empty' of component 'ADDR_FIFO'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 413: Unconnected output port 'full' of component 'ADDR_FIFO'.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 413: Instantiating black box module <ADDR_FIFO>.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 424: Unconnected output port 'empty' of component 'ADDR_FIFO'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 424: Unconnected output port 'full' of component 'ADDR_FIFO'.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd" line 424: Instantiating black box module <ADDR_FIFO>.
 Entity <data_manager> analyzed. Unit <data_manager> generated.
 
 Analyzing Entity <burst_controller_sm> in library <work> (Architecture <burst_controller_sm_arch>).
@@ -810,52 +773,19 @@ Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <beha
 Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
 
 Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 72: Width mismatch. <startAddr> has a width of 10 bits but assigned expression is 16-bit wide.
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 73: Width mismatch. <endAddr> has a width of 10 bits but assigned expression is 16-bit wide.
 Entity <data_send> analyzed. Unit <data_send> generated.
 
 Analyzing Entity <ClockLatchSignals> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ClockLatchSignals.vhd" line 59: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd" line 59: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>, <triggered>, <done>, <delay>, <clock_place>
 Entity <ClockLatchSignals> analyzed. Unit <ClockLatchSignals> generated.
 
 Analyzing Entity <PeakFinder> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/PeakFinder.vhd" line 67: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" line 79: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <data_in>, <reset>
 Entity <PeakFinder> analyzed. Unit <PeakFinder> generated.
-
-Analyzing Entity <FD16CE_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
-    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_TOP_LEVEL>.
-Entity <FD16CE_MXILINX_TOP_LEVEL> analyzed. Unit <FD16CE_MXILINX_TOP_LEVEL> generated.
-
-Analyzing Entity <stat_pulse_module_MUSER_TOP_LEVEL> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_2_0" for instance <XLXI_2> in unit <stat_pulse_module_MUSER_TOP_LEVEL>.
-    Set user-defined property "HU_SET =  XLXI_3_1" for instance <XLXI_3> in unit <stat_pulse_module_MUSER_TOP_LEVEL>.
-Entity <stat_pulse_module_MUSER_TOP_LEVEL> analyzed. Unit <stat_pulse_module_MUSER_TOP_LEVEL> generated.
-
-Analyzing Entity <stat_pulse> in library <work> (Architecture <behavioral>).
-Entity <stat_pulse> analyzed. Unit <stat_pulse> generated.
-
-Analyzing generic Entity <ILD_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
-	INIT = '0'
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_23> in unit <ILD_MXILINX_TOP_LEVEL>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_23> in unit <ILD_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_36_24> in unit <ILD_MXILINX_TOP_LEVEL>.
-    Set user-defined property "IOB =  TRUE" for instance <I_36_24> in unit <ILD_MXILINX_TOP_LEVEL>.
-Entity <ILD_MXILINX_TOP_LEVEL> analyzed. Unit <ILD_MXILINX_TOP_LEVEL> generated.
 
 
 =========================================================================
@@ -869,12 +799,12 @@ INFO:Xst:2679 - Register <internal_dout_50$mux0008> in unit <ethernet_interface>
 INFO:Xst:2679 - Register <internal_eth_dout_50$mux0008> in unit <ethernet_interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
 
 Synthesizing Unit <VERSION_BLK>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/VERSION_BLK.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/VERSION_BLK.vhd".
 Unit <VERSION_BLK> synthesized.
 
 
 Synthesizing Unit <MUX64_8>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/MUX64_8.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/MUX64_8.vhd".
     Found 64-bit 8-to-1 multiplexer for signal <muxout>.
     Summary:
 	inferred  64 Multiplexer(s).
@@ -882,12 +812,12 @@ Unit <MUX64_8> synthesized.
 
 
 Synthesizing Unit <buffer_10bit>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/buffer_10bit.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/buffer_10bit.vhd".
 Unit <buffer_10bit> synthesized.
 
 
 Synthesizing Unit <trigger_recv_blk>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/trigger_recv_blk.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/trigger_recv_blk.vhd".
     Found 1-bit register for signal <trig>.
     Found 32-bit up counter for signal <cnt_sig>.
     Found 1-bit register for signal <trig_in>.
@@ -899,7 +829,7 @@ Unit <trigger_recv_blk> synthesized.
 
 
 Synthesizing Unit <Pulser>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/Pulser.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/Pulser.vhd".
     Found 8-bit up counter for signal <temp>.
     Summary:
 	inferred   1 Counter(s).
@@ -907,23 +837,31 @@ Unit <Pulser> synthesized.
 
 
 Synthesizing Unit <data_send>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/data_send.vhd".
-WARNING:Xst:647 - Input <b_enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <b_data_we_sig>.
-    Found 8-bit comparator greatequal for signal <b_data_we_sig$cmp_ge0000> created at line 63.
-    Found 1-bit register for signal <b_force_packet_sig>.
-    Found 8-bit up counter for signal <count_delay>.
-    Found 1-bit register for signal <state_new_peak>.
-    Found 1-bit register for signal <state_new_peak_over>.
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd".
+WARNING:Xst:646 - Signal <userSampleSizeUns<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <userPretrigSamplesUns<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <reading> equivalent to <b_data_we> has been removed
+    Found 1-bit register for signal <b_data_we>.
+    Found 1-bit register for signal <armed>.
+    Found 10-bit comparator equal for signal <armed$cmp_eq0000> created at line 76.
+    Found 10-bit comparator equal for signal <b_data_we$cmp_eq0000> created at line 82.
+    Found 10-bit comparator not equal for signal <b_data_we$cmp_ne0000> created at line 76.
+    Found 10-bit comparator not equal for signal <b_data_we$cmp_ne0001> created at line 82.
+    Found 10-bit register for signal <endAddr>.
+    Found 10-bit adder for signal <endAddr$add0000> created at line 73.
+    Found 1-bit register for signal <sendUDP>.
+    Found 10-bit register for signal <startAddr>.
+    Found 10-bit subtractor for signal <startAddr$sub0000> created at line 72.
     Summary:
-	inferred   1 Counter(s).
-	inferred   4 D-type flip-flop(s).
-	inferred   1 Comparator(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
 Unit <data_send> synthesized.
 
 
 Synthesizing Unit <ClockLatchSignals>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ClockLatchSignals.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 8-bit latch for signal <signals>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 3-bit latch for signal <clock_place>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -941,38 +879,39 @@ Unit <ClockLatchSignals> synthesized.
 
 
 Synthesizing Unit <PeakFinder>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/PeakFinder.vhd".
-    Found 1-bit register for signal <new_trigger>.
-    Found 8-bit comparator lessequal for signal <new_trigger$cmp_le0000> created at line 106.
-    Found 8-bit comparator lessequal for signal <new_trigger$cmp_le0001> created at line 106.
-    Found 8-bit comparator lessequal for signal <new_trigger$cmp_le0002> created at line 106.
-    Found 8-bit comparator lessequal for signal <new_trigger$cmp_le0003> created at line 106.
-    Found 8-bit comparator lessequal for signal <new_trigger$cmp_le0004> created at line 106.
-    Found 8-bit comparator lessequal for signal <new_trigger$cmp_le0005> created at line 106.
-    Found 8-bit comparator lessequal for signal <new_trigger$cmp_le0006> created at line 106.
-    Found 8-bit comparator lessequal for signal <new_trigger$cmp_le0007> created at line 106.
-    Found 16-bit comparator less for signal <new_trigger$cmp_lt0000> created at line 104.
-    Found 1-bit register for signal <out_en_sig>.
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd".
+    Found 10-bit register for signal <trigger_address>.
+    Found 1-bit register for signal <new_trigger_sig>.
+    Found 16-bit comparator greatequal for signal <new_trigger_sig$cmp_ge0000> created at line 117.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0000> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0001> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0002> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0003> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0004> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0005> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0006> created at line 119.
+    Found 8-bit comparator lessequal for signal <new_trigger_sig$cmp_le0007> created at line 119.
+    Found 16-bit comparator less for signal <new_trigger_sig$cmp_lt0000> created at line 117.
+    Found 10-bit up counter for signal <ramAddress>.
     Found 16-bit up counter for signal <samplesSinceTrig>.
-    Found 16-bit comparator greatequal for signal <samplesSinceTrig$cmp_ge0000> created at line 104.
     Found 1-bit register for signal <triggered>.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0000> created at line 93.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0001> created at line 93.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0002> created at line 93.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0003> created at line 93.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0004> created at line 93.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0005> created at line 93.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0006> created at line 93.
-    Found 8-bit comparator greater for signal <triggered$cmp_gt0007> created at line 93.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0000> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0001> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0002> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0003> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0004> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0005> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0006> created at line 119.
+    Found 8-bit comparator greater for signal <triggered$cmp_gt0007> created at line 119.
     Summary:
-	inferred   1 Counter(s).
-	inferred   3 D-type flip-flop(s).
+	inferred   2 Counter(s).
+	inferred  12 D-type flip-flop(s).
 	inferred  18 Comparator(s).
 Unit <PeakFinder> synthesized.
 
 
 Synthesizing Unit <burst_traffic_controller>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/burst_traffic_controller.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/burst_traffic_controller.vhd".
     Found 1-bit register for signal <BURST_END_PACKET>.
     Found 34-bit comparator less for signal <BURST_END_PACKET$cmp_lt0000> created at line 66.
     Found 34-bit up counter for signal <clocks_since_send>.
@@ -990,7 +929,7 @@ Unit <burst_traffic_controller> synthesized.
 
 
 Synthesizing Unit <reset_mgr>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/reset_mgr.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/reset_mgr.vhd".
     Found 1-bit register for signal <reset>.
     Found 16-bit up counter for signal <cnt>.
     Found 16-bit comparator less for signal <cnt$cmp_lt0000> created at line 46.
@@ -1003,7 +942,7 @@ Unit <reset_mgr> synthesized.
 
 
 Synthesizing Unit <MII_100_1000_handler>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/xmii_handler.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/xmii_handler.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <MII_100_1000_handler> synthesized.
@@ -1135,7 +1074,7 @@ Unit <crc_gen> synthesized.
 
 
 Synthesizing Unit <crc_splice>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/crc_splice.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/crc_splice.vhd".
     Found 1-bit register for signal <tx_en>.
     Found 8-bit register for signal <txd>.
     Found 1-bit register for signal <tx_er>.
@@ -1147,7 +1086,7 @@ Unit <crc_splice> synthesized.
 
 
 Synthesizing Unit <address_container>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/address_container.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/address_container.vhd".
     Found 1-bit register for signal <set_data_dest_strobe>.
     Found 1-bit register for signal <protocol_ping_strobe>.
     Found 1-bit register for signal <set_ctrl_dest_strobe>.
@@ -1158,7 +1097,7 @@ Unit <address_container> synthesized.
 
 
 Synthesizing Unit <arp_reply>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/arp_reply.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/arp_reply.vhd".
 WARNING:Xst:1780 - Signal <old_trig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_0> for signal <Sreg0>.
     -----------------------------------------------------------------------
@@ -1194,12 +1133,12 @@ Unit <arp_reply> synthesized.
 
 
 Synthesizing Unit <or33>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/or33.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/or33.vhd".
 Unit <or33> synthesized.
 
 
 Synthesizing Unit <ip_checksum_calc>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/ip_checksum_calc.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/ip_checksum_calc.vhd".
     Found 17-bit register for signal <add_sig>.
     Found 4-bit comparator greater for signal <add_sig$cmp_gt0000> created at line 104.
     Found 17-bit register for signal <cs_sig>.
@@ -1217,7 +1156,7 @@ Unit <ip_checksum_calc> synthesized.
 
 
 Synthesizing Unit <create_packet>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/create_packet.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/create_packet.vhd".
     Found finite state machine <FSM_1> for signal <Sreg0>.
     -----------------------------------------------------------------------
     | States             | 76                                             |
@@ -1272,12 +1211,12 @@ Unit <create_packet> synthesized.
 
 
 Synthesizing Unit <dataout_mux>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/dataout_mux.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/dataout_mux.vhd".
 Unit <dataout_mux> synthesized.
 
 
 Synthesizing Unit <decipherer>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/decipherer.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/decipherer.vhd".
 WARNING:Xst:1780 - Signal <udp_dest_ip_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_2> for signal <Sreg0>.
     -----------------------------------------------------------------------
@@ -1353,7 +1292,7 @@ Unit <decipherer> synthesized.
 
 
 Synthesizing Unit <filter_data_out>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/filter_data_out.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/filter_data_out.vhd".
     Found 1-bit register for signal <out_data_valid>.
     Found 8-bit register for signal <out_data>.
     Summary:
@@ -1362,7 +1301,7 @@ Unit <filter_data_out> synthesized.
 
 
 Synthesizing Unit <icmp_ping_checksum_calc>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/icmp_ping_checksum_calc.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/icmp_ping_checksum_calc.vhd".
 WARNING:Xst:647 - Input <trigger> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found finite state machine <FSM_3> for signal <Sreg0>.
     -----------------------------------------------------------------------
@@ -1391,7 +1330,7 @@ Unit <icmp_ping_checksum_calc> synthesized.
 
 
 Synthesizing Unit <icmp_ping_shift_reg>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/icmp_ping_shift_reg.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/icmp_ping_shift_reg.vhd".
     Found 8-bit register for signal <din_latch>.
     Found 352-bit register for signal <shReg>.
 INFO:Xst:738 - HDL ADVISOR - 352 flip-flops were inferred for signal <shReg>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
@@ -1401,7 +1340,7 @@ Unit <icmp_ping_shift_reg> synthesized.
 
 
 Synthesizing Unit <udp_data_splicer>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/udp_data_splicer.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/udp_data_splicer.vhd".
     Found 1-bit register for signal <delay_sel_user>.
     Found 8-bit register for signal <latched_user_data>.
     Summary:
@@ -1410,12 +1349,12 @@ Unit <udp_data_splicer> synthesized.
 
 
 Synthesizing Unit <user_addrs_mux>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/user_addrs_mux.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/user_addrs_mux.vhd".
 Unit <user_addrs_mux> synthesized.
 
 
 Synthesizing Unit <burst_controller_sm>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/burst_controller_sm.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/burst_controller_sm.vhd".
     Register <tx_info_we> equivalent to <reset_packet_size> has been removed
     Found finite state machine <FSM_4> for signal <Sreg0>.
     -----------------------------------------------------------------------
@@ -1449,7 +1388,7 @@ Unit <burst_controller_sm> synthesized.
 
 
 Synthesizing Unit <rx_ctl>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/rx_ctl.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/rx_ctl.vhd".
     Register <info_fifo_wr_data<0>> equivalent to <com_code> has been removed
     Found finite state machine <FSM_5> for signal <Sreg0>.
     -----------------------------------------------------------------------
@@ -1489,7 +1428,7 @@ Unit <rx_ctl> synthesized.
 
 
 Synthesizing Unit <ram_comm_dec>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/ram_comm_dec.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/ram_comm_dec.vhd".
 WARNING:Xst:647 - Input <rx_info_fifo_rd_data<6:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <tx_info_fifo_full> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Register <tx_info_fifo_wr_data<6>> equivalent to <crc_err> has been removed
@@ -1547,7 +1486,7 @@ Unit <ram_comm_dec> synthesized.
 
 
 Synthesizing Unit <tx_seq_ctl>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/tx_seq_ctl.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/tx_seq_ctl.vhd".
 WARNING:Xst:647 - Input <data_fifo_empty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found finite state machine <FSM_7> for signal <Sreg0>.
     -----------------------------------------------------------------------
@@ -1591,50 +1530,28 @@ WARNING:Xst:647 - Input <data_fifo_empty> is never used. This port will be prese
 Unit <tx_seq_ctl> synthesized.
 
 
-Synthesizing Unit <stat_pulse>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/stat_pulse.vhd".
-    Register <ethernet_fifo_overflow_lat_res> equivalent to <adc_fifo_overflow_lat_res> has been removed
-    Register <reset_lat> equivalent to <adc_fifo_overflow_lat_res> has been removed
-    Register <stat_ethernet_fifo_in_en> equivalent to <new_stat_sig> has been removed
-    Found 1-bit register for signal <adc_fifo_overflow_lat_res>.
-    Found 1-bit register for signal <new_stat_sig>.
-    Found 1-bit register for signal <sendReady>.
-    Found 1-bit register for signal <stat_sent>.
-    Found 20-bit up counter for signal <timer>.
-    Found 32-bit up counter for signal <triggers>.
-    Summary:
-	inferred   2 Counter(s).
-	inferred   4 D-type flip-flop(s).
-Unit <stat_pulse> synthesized.
-
-
 Synthesizing Unit <D4_16E_MXILINX_TOP_LEVEL>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf".
 Unit <D4_16E_MXILINX_TOP_LEVEL> synthesized.
 
 
 Synthesizing Unit <M2_1_MXILINX_TOP_LEVEL>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf".
 Unit <M2_1_MXILINX_TOP_LEVEL> synthesized.
 
 
 Synthesizing Unit <FD16RE_MXILINX_TOP_LEVEL>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf".
 Unit <FD16RE_MXILINX_TOP_LEVEL> synthesized.
 
 
 Synthesizing Unit <FD8RE_MXILINX_TOP_LEVEL>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf".
 Unit <FD8RE_MXILINX_TOP_LEVEL> synthesized.
 
 
-Synthesizing Unit <FD16CE_MXILINX_TOP_LEVEL>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf".
-Unit <FD16CE_MXILINX_TOP_LEVEL> synthesized.
-
-
 Synthesizing Unit <data_manager>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/data_manager.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd".
 WARNING:Xst:1780 - Signal <tx_data_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <tx_ctrl_fifo_rden> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <tx_ctrl_fifo_full> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1652,23 +1569,13 @@ Unit <data_manager> synthesized.
 
 
 Synthesizing Unit <ethernet_controller>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/ethernet_controller.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller.vhd".
 WARNING:Xst:647 - Input <self_port> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <ethernet_controller> synthesized.
 
 
-Synthesizing Unit <ILD_MXILINX_TOP_LEVEL>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf".
-Unit <ILD_MXILINX_TOP_LEVEL> synthesized.
-
-
-Synthesizing Unit <stat_pulse_module_MUSER_TOP_LEVEL>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf".
-Unit <stat_pulse_module_MUSER_TOP_LEVEL> synthesized.
-
-
 Synthesizing Unit <ethernet_controller_wrapper>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/ethernet_controller_wrapper.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/ethernet_controller_wrapper.vhd".
 WARNING:Xst:1780 - Signal <GMII_RXD_sig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 2-bit down counter for signal <tmp_cnt>.
     Found 1-bit register for signal <tmp_rd_sig>.
@@ -1679,7 +1586,7 @@ Unit <ethernet_controller_wrapper> synthesized.
 
 
 Synthesizing Unit <ethernet_interface>.
-    Related source file is "D:/cbradford/PulsePerPackage/oei/ethernet_interface.vhd".
+    Related source file is "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd".
 WARNING:Xst:646 - Signal <user_tx_rden> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <user_rx_size_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <user_addr> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
@@ -1734,10 +1641,9 @@ Unit <ethernet_interface> synthesized.
 
 
 Synthesizing Unit <TOP_LEVEL>.
-    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf".
+    Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf".
 WARNING:Xst:653 - Signal <trig_debug<63:32>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
-WARNING:Xst:646 - Signal <stat_ethernet_data_out<63:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <rx_data<63:32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rx_data<63:40>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<31:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <pulse> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1757,21 +1663,18 @@ WARNING:Xst:653 - Signal <fadc_debug<23:22>> is used but never assigned. This so
 WARNING:Xst:653 - Signal <fadc_debug<11:10>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:1780 - Signal <fadc_data_in<31:16>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <fadc_ctrl_data<13:12>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <ethernet_fifo_d_in<63:16>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000000000000000000000000000.
 WARNING:Xst:646 - Signal <clk_latch_signals> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <b_end_packet> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <b_enable> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <adc_fifo_overflow> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <XLXN_15532> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <XLXN_15531> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <XLXN_15524> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <XLXI_6358_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_5338_in7_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in6_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in5_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in4_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
-WARNING:Xst:646 - Signal <PeakFinder_dout_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <PeakFinder_dout_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <PeakFinder_dout_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <GLOBAL_RESET_MAP> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <FADC_DCLK_INV> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <CLK_MUX> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1783,7 +1686,9 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 27
+# Adders/Subtractors                                   : 29
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
  16-bit adder                                          : 2
@@ -1794,19 +1699,20 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 2
-# Counters                                             : 16
+# Counters                                             : 14
+ 10-bit up counter                                     : 1
  16-bit up counter                                     : 2
  2-bit down counter                                    : 1
- 20-bit up counter                                     : 1
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
  34-bit up counter                                     : 1
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
- 8-bit up counter                                      : 3
-# Registers                                            : 698
- 1-bit register                                        : 609
+ 8-bit up counter                                      : 2
+# Registers                                            : 695
+ 1-bit register                                        : 603
+ 10-bit register                                       : 3
  11-bit register                                       : 8
  16-bit register                                       : 6
  17-bit register                                       : 1
@@ -1823,7 +1729,9 @@ Macro Statistics
  3-bit latch                                           : 1
  4-bit latch                                           : 1
  8-bit latch                                           : 1
-# Comparators                                          : 40
+# Comparators                                          : 43
+ 10-bit comparator equal                               : 2
+ 10-bit comparator not equal                           : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
  16-bit comparator greatequal                          : 1
@@ -1841,7 +1749,6 @@ Macro Statistics
  6-bit comparator less                                 : 1
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
- 8-bit comparator greatequal                           : 1
  8-bit comparator greater                              : 9
  8-bit comparator lessequal                            : 8
  9-bit comparator greatequal                           : 1
@@ -2198,13 +2105,13 @@ Optimizing FSM <XLXI_6227/ec_wrapper/ethernet_controller/ArpReplyBlock/Sreg0/FSM
  arpresponse_arp_payload_tip7   | 0100110
  arpresponse_arp_payload_tip8   | 0100010
 --------------------------------------------
-Reading core <ipcore_dir/ethernet_FIFO.ngc>.
 Reading core <ipcore_dir/ADC_FIFO.ngc>.
+Reading core <ipcore_dir/EthernetRAM.ngc>.
 Reading core <DATA_FIFO_0.ngc>.
 Reading core <INFO_FIFO_0.ngc>.
 Reading core <../ipcore_dir/ADDR_FIFO.ngc>.
-Loading core <ethernet_FIFO> for timing and area information for instance <XLXI_6248>.
 Loading core <ADC_FIFO> for timing and area information for instance <XLXI_6341>.
+Loading core <EthernetRAM> for timing and area information for instance <XLXI_6380>.
 Loading core <DATA_FIFO_0> for timing and area information for instance <RX_DATA_FIFO>.
 Loading core <INFO_FIFO_0> for timing and area information for instance <RX_DATA_INFO_FIFO>.
 Loading core <ADDR_FIFO> for timing and area information for instance <RX_SRC_ADDR_FIFO>.
@@ -2252,7 +2159,9 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 8
-# Adders/Subtractors                                   : 27
+# Adders/Subtractors                                   : 29
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
  16-bit adder                                          : 2
@@ -2263,25 +2172,27 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 2
-# Counters                                             : 16
+# Counters                                             : 14
+ 10-bit up counter                                     : 1
  16-bit up counter                                     : 2
  2-bit down counter                                    : 1
- 20-bit up counter                                     : 1
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
  34-bit up counter                                     : 1
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
- 8-bit up counter                                      : 3
-# Registers                                            : 2114
- Flip-Flops                                            : 2114
+ 8-bit up counter                                      : 2
+# Registers                                            : 1954
+ Flip-Flops                                            : 1954
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
  4-bit latch                                           : 1
  8-bit latch                                           : 1
-# Comparators                                          : 40
+# Comparators                                          : 43
+ 10-bit comparator equal                               : 2
+ 10-bit comparator not equal                           : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
  16-bit comparator greatequal                          : 1
@@ -2299,7 +2210,6 @@ Macro Statistics
  6-bit comparator less                                 : 1
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
- 8-bit comparator greatequal                           : 1
  8-bit comparator greater                              : 9
  8-bit comparator lessequal                            : 8
  9-bit comparator greatequal                           : 1
@@ -2411,8 +2321,6 @@ Optimizing unit <ram_comm_dec> ...
 
 Optimizing unit <tx_seq_ctl> ...
 
-Optimizing unit <stat_pulse> ...
-
 Optimizing unit <D4_16E_MXILINX_TOP_LEVEL> ...
 
 Optimizing unit <M2_1_MXILINX_TOP_LEVEL> ...
@@ -2421,17 +2329,11 @@ Optimizing unit <FD16RE_MXILINX_TOP_LEVEL> ...
 
 Optimizing unit <FD8RE_MXILINX_TOP_LEVEL> ...
 
-Optimizing unit <FD16CE_MXILINX_TOP_LEVEL> ...
-
-Optimizing unit <ILD_MXILINX_TOP_LEVEL> ...
-
 Optimizing unit <ClockLatchSignals> ...
 
 Optimizing unit <data_manager> ...
 
 Optimizing unit <ethernet_controller> ...
-
-Optimizing unit <stat_pulse_module_MUSER_TOP_LEVEL> ...
 
 Optimizing unit <ethernet_controller_wrapper> ...
 
@@ -2441,38 +2343,6 @@ WARNING:Xst:1290 - Hierarchical block <XLXI_6231> is unconnected in block <TOP_L
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6331> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
-WARNING:Xst:2677 - Node <triggers_0> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_1> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_2> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_3> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_4> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_5> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_6> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_7> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_8> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_9> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_10> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_11> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_12> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_13> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_14> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_15> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_16> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_17> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_18> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_19> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_20> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_21> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_22> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_23> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_24> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_25> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_26> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_27> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_28> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_29> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_30> of sequential type is unconnected in block <XLXI_1>.
-WARNING:Xst:2677 - Node <triggers_31> of sequential type is unconnected in block <XLXI_1>.
 WARNING:Xst:2677 - Node <ram_wdata_48> of sequential type is unconnected in block <RAM_COMM_DEC>.
 WARNING:Xst:2677 - Node <ram_wdata_49> of sequential type is unconnected in block <RAM_COMM_DEC>.
 WARNING:Xst:2677 - Node <ram_wdata_50> of sequential type is unconnected in block <RAM_COMM_DEC>.
@@ -2609,11 +2479,7 @@ WARNING:Xst:2677 - Node <udp_data_count_10> of sequential type is unconnected in
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 33.
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <XLXI_6248> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 31.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
@@ -2627,3 +2493,585 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
+FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <ICMPPingShiftRegBlock> :
+	Found 44-bit shift register for signal <shReg_43_0>.
+	Found 44-bit shift register for signal <shReg_43_1>.
+	Found 44-bit shift register for signal <shReg_43_2>.
+	Found 44-bit shift register for signal <shReg_43_3>.
+	Found 44-bit shift register for signal <shReg_43_4>.
+	Found 44-bit shift register for signal <shReg_43_5>.
+	Found 44-bit shift register for signal <shReg_43_6>.
+	Found 44-bit shift register for signal <shReg_43_7>.
+Unit <ICMPPingShiftRegBlock> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1598
+ Flip-Flops                                            : 1598
+# Shift Registers                                      : 8
+ 44-bit shift register                                 : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TOP_LEVEL.ngr
+Top Level Output File Name         : TOP_LEVEL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+
+Design Statistics
+# IOs                              : 81
+
+Cell Usage :
+# BELS                             : 5890
+#      AND2                        : 5
+#      AND2B1                      : 4
+#      AND5                        : 1
+#      AND5B1                      : 4
+#      AND5B2                      : 6
+#      AND5B3                      : 4
+#      AND5B4                      : 1
+#      BUF                         : 5
+#      GND                         : 28
+#      INV                         : 177
+#      LUT1                        : 221
+#      LUT2                        : 509
+#      LUT2_D                      : 41
+#      LUT2_L                      : 24
+#      LUT3                        : 1059
+#      LUT3_D                      : 25
+#      LUT3_L                      : 85
+#      LUT4                        : 1827
+#      LUT4_D                      : 78
+#      LUT4_L                      : 313
+#      MUXCY                       : 844
+#      MUXF5                       : 137
+#      MUXF6                       : 40
+#      OR2                         : 3
+#      VCC                         : 26
+#      XOR2                        : 2
+#      XORCY                       : 421
+# FlipFlops/Latches                : 2200
+#      FD                          : 129
+#      FDC                         : 58
+#      FDCE                        : 96
+#      FDE                         : 525
+#      FDP                         : 18
+#      FDPE                        : 6
+#      FDR                         : 156
+#      FDRE                        : 1080
+#      FDRS                        : 19
+#      FDRSE                       : 1
+#      FDS                         : 16
+#      FDSE                        : 96
+# RAMS                             : 207
+#      RAM16X1D                    : 192
+#      RAMB16                      : 15
+# Shift Registers                  : 24
+#      SRL16E                      : 8
+#      SRLC16E                     : 16
+# Clock Buffers                    : 12
+#      BUFG                        : 12
+# IO Buffers                       : 60
+#      IBUF                        : 10
+#      IBUFDS                      : 20
+#      IBUFG                       : 2
+#      IBUFGDS                     : 1
+#      OBUF                        : 27
+# DCM_ADVs                         : 5
+#      DCM_ADV                     : 5
+# Others                           : 2
+#      IDELAY                      : 1
+#      IDELAYCTRL                  : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vlx25ff668-10 
+
+ Number of Slices:                     3013  out of  10752    28%  
+ Number of Slice Flip Flops:           2200  out of  21504    10%  
+ Number of 4 input LUTs:               4767  out of  21504    22%  
+    Number used as logic:              4359
+    Number used as Shift registers:      24
+    Number used as RAMs:                384
+ Number of IOs:                          81
+ Number of bonded IOBs:                  81  out of    448    18%  
+ Number of FIFO16/RAMB16s:               15  out of     72    20%  
+    Number used as RAMB16s:              15
+ Number of GCLKs:                        12  out of     32    37%  
+ Number of DCM_ADVs:                      5  out of      8    62%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2346  |
+BUSBHS_02DP_04S                    | XLXI_6199:CLK0                                                                                                                    | 69    |
+XLXI_6380/N1                       | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 4     |
+SECONDARY_CLK                      | IBUFG                                                                                                                             | 18    |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                      | Buffer(FF name)                                                                                                                   | Load  |
+--------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND:G)          | NONE(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                       | 40    |
+XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_GND:G)          | NONE(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                       | 40    |
+XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND:G)          | NONE(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                       | 40    |
+XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_GND:G)| NONE(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                  | 22    |
+XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_GND:G)| NONE(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                  | 22    |
+XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND:G)| NONE(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                  | 22    |
+XLXI_6341/N0(XLXI_6341/XST_GND:G)                                                                                   | NONE(XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0)                                 | 18    |
+XLXI_6380/N1(XLXI_6380/XST_GND:G)                                                                                   | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 16    |
+--------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 7.600ns (Maximum Frequency: 131.581MHz)
+   Minimum input arrival time before clock: 6.893ns
+   Maximum output required time after clock: 6.307ns
+   Maximum combinational path delay: 5.299ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
+  Clock period: 0.742ns (frequency: 1347.800MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.742ns (Levels of Logic = 0)
+  Source:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_0 (FF)
+  Destination:       XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0 (FF)
+  Source Clock:      GEL_RXCLK rising
+  Destination Clock: BUSBHS_02DP_04S rising
+
+  Data Path: XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_0 to XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.360   0.360  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_0 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<0>)
+     FD:D                      0.022          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0
+    ----------------------------------------
+    Total                      0.742ns (0.382ns logic, 0.360ns route)
+                                       (51.5% logic, 48.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
+  Clock period: 0.742ns (frequency: 1347.800MHz)
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.742ns (Levels of Logic = 0)
+  Source:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0 (FF)
+  Destination:       XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0 (FF)
+  Source Clock:      BUSBHS_02DP_04S rising
+  Destination Clock: GEL_RXCLK rising
+
+  Data Path: XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0 to XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.360   0.360  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<0>)
+     FD:D                      0.022          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0
+    ----------------------------------------
+    Total                      0.742ns (0.382ns logic, 0.360ns route)
+                                       (51.5% logic, 48.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
+  Clock period: 7.600ns (frequency: 131.581MHz)
+  Total number of paths / destination ports: 1979 / 1701
+-------------------------------------------------------------------------
+Offset:              7.600ns (Levels of Logic = 5)
+  Source:            XLXI_6227/reset_mgr/reset (FF)
+  Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
+  Source Clock:      SECONDARY_CLK rising
+  Destination Clock: GEL_RXCLK rising
+
+  Data Path: XLXI_6227/reset_mgr/reset to XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q            120   0.360   1.272  reset (reset)
+     end scope: 'reset_mgr'
+     BUF:I->O            471   0.358   2.807  reset_mgr_reset_1 (reset_mgr_reset_1)
+     begin scope: 'data_manager_blk'
+     LUT2:I1->O           38   0.195   1.279  tx_ctrl_fifo_reset_sig1 (tx_ctrl_fifo_reset_sig)
+     begin scope: 'TX_CTRL_FIFO'
+     begin scope: 'BU2'
+     LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
+     FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
+    ----------------------------------------
+    Total                      7.600ns (1.648ns logic, 5.952ns route)
+                                       (21.7% logic, 78.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
+  Clock period: 2.913ns (frequency: 343.253MHz)
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              2.913ns (Levels of Logic = 2)
+  Source:            XLXI_6227/internal_reset (FF)
+  Destination:       XLXI_6227/reset_mgr/cnt_0 (FF)
+  Source Clock:      GEL_RXCLK rising
+  Destination Clock: SECONDARY_CLK rising
+
+  Data Path: XLXI_6227/internal_reset to XLXI_6227/reset_mgr/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.360   0.703  internal_reset (internal_reset)
+     begin scope: 'reset_mgr'
+     LUT3:I0->O           16   0.195   0.593  cnt_and00001 (cnt_and0000)
+     FDRE:R                    1.062          cnt_0
+    ----------------------------------------
+    Total                      2.913ns (1.617ns logic, 1.296ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
+  Clock period: 7.231ns (frequency: 138.284MHz)
+  Total number of paths / destination ports: 107178 / 6786
+-------------------------------------------------------------------------
+Delay:               7.231ns (Levels of Logic = 12)
+  Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
+  Destination:       XLXI_6227/tx_data_dest_port_0 (FF)
+  Source Clock:      GEL_RXCLK rising
+  Destination Clock: GEL_RXCLK rising
+
+  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 to XLXI_6227/tx_data_dest_port_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.360   0.756  ram_addr_sig_53 (ram_addr_sig_53)
+     end scope: 'RAM_COMM_DEC'
+     end scope: 'data_manager_blk'
+     LUT4:I0->O            1   0.195   0.000  ots_user_mask_cmp_eq00001_wg_lut<1> (ots_user_mask_cmp_eq00001_wg_lut<1>)
+     MUXCY:S->O            1   0.366   0.000  ots_user_mask_cmp_eq00001_wg_cy<1> (ots_user_mask_cmp_eq00001_wg_cy<1>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<2> (ots_user_mask_cmp_eq00001_wg_cy<2>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<3> (ots_user_mask_cmp_eq00001_wg_cy<3>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<4> (ots_user_mask_cmp_eq00001_wg_cy<4>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<6> (ots_user_mask_cmp_eq00001_wg_cy<6>)
+     MUXCY:CI->O          97   0.370   1.345  ots_user_mask_cmp_eq00001_wg_cy<7> (ots_user_mask_cmp_eq00001_wg_cy<7>)
+     LUT3:I2->O          105   0.195   1.376  tx_data_dest_mac_or00031 (tx_data_dest_mac_or0003)
+     LUT3:I2->O            1   0.195   0.523  tx_data_dest_addr_and00021 (tx_data_dest_addr_and0002)
+     LUT4:I3->O           16   0.195   0.593  tx_data_dest_port_not0001 (tx_data_dest_port_not0001)
+     FDE:CE                    0.540          tx_data_dest_port_0
+    ----------------------------------------
+    Total                      7.231ns (2.638ns logic, 4.593ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
+  Clock period: 2.940ns (frequency: 340.177MHz)
+  Total number of paths / destination ports: 273 / 119
+-------------------------------------------------------------------------
+Delay:               2.940ns (Levels of Logic = 6)
+  Source:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 (FF)
+  Destination:       XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (FF)
+  Source Clock:      BUSBHS_02DP_04S rising
+  Destination Clock: BUSBHS_02DP_04S rising
+
+  Data Path: XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 to XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.360   0.758  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin<1>)
+     LUT4:I0->O            1   0.195   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/v1_1_and00001 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/v1<1>)
+     MUXCY:S->O            1   0.366   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[1].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/carrynet<1>)
+     MUXCY:CI->O           1   0.044   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[2].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/carrynet<2>)
+     MUXCY:CI->O           1   0.044   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[3].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/carrynet<3>)
+     MUXCY:CI->O           1   0.369   0.585  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[4].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/comp1)
+     LUT3:I1->O            2   0.195   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_or00001 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_mux0000)
+     FD:D                      0.022          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
+    ----------------------------------------
+    Total                      2.940ns (1.596ns logic, 1.343ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
+  Clock period: 4.543ns (frequency: 220.095MHz)
+  Total number of paths / destination ports: 615 / 49
+-------------------------------------------------------------------------
+Delay:               4.543ns (Levels of Logic = 5)
+  Source:            XLXI_6227/reset_mgr/cnt_7 (FF)
+  Destination:       XLXI_6227/reset_mgr/cnt_0 (FF)
+  Source Clock:      SECONDARY_CLK rising
+  Destination Clock: SECONDARY_CLK rising
+
+  Data Path: XLXI_6227/reset_mgr/cnt_7 to XLXI_6227/reset_mgr/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.360   0.758  cnt_7 (cnt_7)
+     LUT4:I0->O            1   0.195   0.000  Mcompar_cnt_cmp_lt0000_lut<3> (Mcompar_cnt_cmp_lt0000_lut<3>)
+     MUXCY:S->O            1   0.366   0.000  Mcompar_cnt_cmp_lt0000_cy<3> (Mcompar_cnt_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_cnt_cmp_lt0000_cy<4> (Mcompar_cnt_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           3   0.369   0.600  Mcompar_cnt_cmp_lt0000_cy<5> (Mcompar_cnt_cmp_lt0000_cy<5>)
+     LUT3:I1->O           16   0.195   0.593  cnt_and00001 (cnt_and0000)
+     FDRE:R                    1.062          cnt_0
+    ----------------------------------------
+    Total                      4.543ns (2.592ns logic, 1.951ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BUSBHS_02DP_04S'
+  Total number of paths / destination ports: 32 / 16
+-------------------------------------------------------------------------
+Offset:              1.555ns (Levels of Logic = 2)
+  Source:            BUSB_00DP_00S (PAD)
+  Destination:       XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination Clock: BUSBHS_02DP_04S rising
+
+  Data Path: BUSB_00DP_00S to XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           1   0.965   0.360  XLXI_6074 (fadc_data_in<7>)
+     begin scope: 'XLXI_6341'
+     RAMB16:DIA7               0.230          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    ----------------------------------------
+    Total                      1.555ns (1.195ns logic, 0.360ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GEL_RXCLK'
+  Total number of paths / destination ports: 918 / 350
+-------------------------------------------------------------------------
+Offset:              6.893ns (Levels of Logic = 13)
+  Source:            BUSC_19DN_39S (PAD)
+  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6 (FF)
+  Destination Clock: GEL_RXCLK rising
+
+  Data Path: BUSC_19DN_39S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.965   0.711  XLXI_4217 (GMII_RXD_0_sig<4>)
+     begin scope: 'XLXI_6227'
+     begin scope: 'ec_wrapper'
+     begin scope: 'xgmii'
+     end scope: 'xgmii'
+     begin scope: 'ethernet_controller'
+     begin scope: 'DecipherBlock'
+     LUT3:I0->O            1   0.195   0.741  is_arp_sig_mux0000112_SW0 (N951)
+     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In215 (N288)
+     LUT3:I2->O            2   0.195   0.540  Sreg0_cmp_eq0002_SW2 (N68)
+     LUT4:I3->O            3   0.195   0.538  Sreg0_cmp_eq0002 (Sreg0_cmp_eq0002)
+     LUT2:I1->O            1   0.195   0.523  Sreg0_FSM_FFd6-In227_SW0 (N159)
+     LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In227 (Sreg0_FSM_FFd6-In227)
+     LUT4:I3->O            1   0.195   0.585  Sreg0_FSM_FFd6-In242 (Sreg0_FSM_FFd6-In242)
+     LUT4:I2->O            1   0.195   0.000  Sreg0_FSM_FFd6-In271_F (N255)
+     MUXF5:I0->O           1   0.382   0.000  Sreg0_FSM_FFd6-In271 (Sreg0_FSM_FFd6-In)
+     FDRE:D                    0.022          Sreg0_FSM_FFd6
+    ----------------------------------------
+    Total                      6.893ns (2.929ns logic, 3.964ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GEL_RXCLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.694ns (Levels of Logic = 2)
+  Source:            XLXI_6185/trig (FF)
+  Destination:       INTERNAL_08DN_17S (PAD)
+  Source Clock:      GEL_RXCLK rising
+
+  Data Path: XLXI_6185/trig to INTERNAL_08DN_17S
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.360   0.377  trig (trig)
+     end scope: 'XLXI_6185'
+     OBUF:I->O                 3.957          XLXI_6146 (INTERNAL_08DN_17S)
+    ----------------------------------------
+    Total                      4.694ns (4.317ns logic, 0.377ns route)
+                                       (92.0% logic, 8.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.307ns (Levels of Logic = 3)
+  Source:            XLXI_6227/reset_mgr/reset (FF)
+  Destination:       BUSC_21DN_43S (PAD)
+  Source Clock:      SECONDARY_CLK rising
+
+  Data Path: XLXI_6227/reset_mgr/reset to BUSC_21DN_43S
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q            120   0.360   1.272  reset (reset)
+     end scope: 'reset_mgr'
+     end scope: 'XLXI_6227'
+     INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
+     OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
+    ----------------------------------------
+    Total                      6.307ns (4.675ns logic, 1.632ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Delay:               5.299ns (Levels of Logic = 2)
+  Source:            BUSA_30DP_60S (PAD)
+  Destination:       INTERNAL_08DP_16S (PAD)
+
+  Data Path: BUSA_30DP_60S to INTERNAL_08DP_16S
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           2   0.965   0.377  XLXI_6140 (scin_0)
+     OBUF:I->O                 3.957          XLXI_6144 (INTERNAL_08DP_16S)
+    ----------------------------------------
+    Total                      5.299ns (4.922ns logic, 0.377ns route)
+                                       (92.9% logic, 7.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 69.00 secs
+Total CPU time to Xst completion: 68.28 secs
+ 
+--> 
+
+Total memory usage is 719552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  307 (   0 filtered)
+Number of infos    :  126 (   0 filtered)
+

@@ -5,12 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="NgdBuild" num="889" delta="old" >Pad net &apos;<arg fmt="%s" index="1">adc_fifo_overflow</arg>&apos; is not connected to an external port in this design.  A new port &apos;<arg fmt="%s" index="2">adc_fifo_overflow</arg>&apos; has been added and is connected to this signal.
-</msg>
-
-<msg type="info" file="NgdBuild" num="889" delta="old" >Pad net &apos;<arg fmt="%s" index="1">ethernet_fifo_overflow</arg>&apos; is not connected to an external port in this design.  A new port &apos;<arg fmt="%s" index="2">ethernet_fifo_overflow</arg>&apos; has been added and is connected to this signal.
-</msg>
-
 <msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;BUSA_00DP_00S&quot;LOC = D10;&gt; [TOP_LEVEL.ucf(285)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">BUSA_00DP_00S</arg>&quot; not found.  Please verify that:
 1. The specified design element actually exists in the original design.
 2. The specified object is spelled correctly in the constraint source file.
@@ -457,38 +451,6 @@
 </msg>
 
 <msg type="warning" file="NgdBuild" num="1212" delta="old" >User specified non-default attribute value (<arg fmt="%s" index="1">5.33333333</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">XLXI_6199</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">5 ns.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.
-</msg>
-
-<msg type="error" file="NgdBuild" num="604" delta="new" ><arg fmt="%s" index="1">logical</arg> block &apos;<arg fmt="%s" index="2">XLXI_6378</arg>&apos; with type &apos;<arg fmt="%s" index="3">MUX16_2</arg>&apos; could not be resolved. A pin name misspelling can cause this, a missing edif or ngc file, case mismatch between the block name and the edif or ngc file name, or the misspelling of a type name. Symbol &apos;<arg fmt="%s" index="4">MUX16_2</arg>&apos; is not supported in target &apos;<arg fmt="%s" index="5">virtex4</arg>&apos;.
-</msg>
-
-<msg type="error" file="NgdBuild" num="604" delta="new" ><arg fmt="%s" index="1">logical</arg> block &apos;<arg fmt="%s" index="2">XLXI_6379</arg>&apos; with type &apos;<arg fmt="%s" index="3">MUX16_2</arg>&apos; could not be resolved. A pin name misspelling can cause this, a missing edif or ngc file, case mismatch between the block name and the edif or ngc file name, or the misspelling of a type name. Symbol &apos;<arg fmt="%s" index="4">MUX16_2</arg>&apos; is not supported in target &apos;<arg fmt="%s" index="5">virtex4</arg>&apos;.
-</msg>
-
-<msg type="error" file="NgdBuild" num="604" delta="new" ><arg fmt="%s" index="1">logical</arg> block &apos;<arg fmt="%s" index="2">XLXI_6380</arg>&apos; with type &apos;<arg fmt="%s" index="3">MUX16_2</arg>&apos; could not be resolved. A pin name misspelling can cause this, a missing edif or ngc file, case mismatch between the block name and the edif or ngc file name, or the misspelling of a type name. Symbol &apos;<arg fmt="%s" index="4">MUX16_2</arg>&apos; is not supported in target &apos;<arg fmt="%s" index="5">virtex4</arg>&apos;.
-</msg>
-
-<msg type="error" file="NgdBuild" num="604" delta="new" ><arg fmt="%s" index="1">logical</arg> block &apos;<arg fmt="%s" index="2">XLXI_6381</arg>&apos; with type &apos;<arg fmt="%s" index="3">MUX16_2</arg>&apos; could not be resolved. A pin name misspelling can cause this, a missing edif or ngc file, case mismatch between the block name and the edif or ngc file name, or the misspelling of a type name. Symbol &apos;<arg fmt="%s" index="4">MUX16_2</arg>&apos; is not supported in target &apos;<arg fmt="%s" index="5">virtex4</arg>&apos;.
-</msg>
-
-<msg type="error" file="NgdBuild" num="455" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">adc_fifo_overflow</arg>&apos; has multiple driver(s)<arg fmt="%s" index="3">:
-  pin PAD on block adc_fifo_overflow with type PAD,
-  pin Q on block XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i with type FD</arg>
-</msg>
-
-<msg type="error" file="NgdBuild" num="924" delta="old" ><arg fmt="%s" index="1">input</arg> pad net &apos;<arg fmt="%s" index="2">adc_fifo_overflow</arg>&apos; is driving non-buffer primitives<arg fmt="%s" index="3">:
-  pin Q on block XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i with type FD,
-  pin D on block U_ila_pro_0/U0/I_TQ0.G_TW[222].U_TQ with type FDP</arg>
-</msg>
-
-<msg type="error" file="NgdBuild" num="455" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet_fifo_overflow</arg>&apos; has multiple driver(s)<arg fmt="%s" index="3">:
-  pin PAD on block ethernet_fifo_overflow with type PAD,
-  pin Q on block XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i with type FD</arg>
-</msg>
-
-<msg type="error" file="NgdBuild" num="924" delta="old" ><arg fmt="%s" index="1">input</arg> pad net &apos;<arg fmt="%s" index="2">ethernet_fifo_overflow</arg>&apos; is driving non-buffer primitives<arg fmt="%s" index="3">:
-  pin Q on block XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i with type FD,
-  pin D on block U_ila_pro_0/U0/I_TQ0.G_TW[174].U_TQ with type FDP</arg>
 </msg>
 
 <msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">XLXI_6227/rx_data&lt;48&gt;</arg>&apos; has no driver

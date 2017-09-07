@@ -1,19 +1,21 @@
 Release 14.7 ngcbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: ngcbuild.exe -dd D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo -sd
-../ipcore_dir -sd ipcore_dir -p xc4vlx25-ff668-10 -i
-D:\cbradford\PulsePerPackage\GEL_CAPTAN\TOP_LEVEL.ngc
-D:\cbradford\PulsePerPackage\GEL_CAPTAN\TOP_LEVEL_cs.ngc
+Command Line: ngcbuild.exe -dd
+D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo -sd ../ipcore_dir -sd
+ipcore_dir -p xc4vlx25-ff668-10 -i
+D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\TOP_LEVEL.ngc
+D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\TOP_LEVEL_cs.ngc
 
-Reading NGO file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.ngc" ...
+Reading NGO file
+"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc" ...
 Loading design module
-"D:/cbradford/PulsePerPackage/GEL_CAPTAN/DATA_FIFO_0.ngc"...
+"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/DATA_FIFO_0.ngc"...
 Loading design module
-"D:/cbradford/PulsePerPackage/GEL_CAPTAN/INFO_FIFO_0.ngc"...
+"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/INFO_FIFO_0.ngc"...
 Loading design module "../ipcore_dir/ADDR_FIFO.ngc"...
-Loading design module "ipcore_dir/ethernet_FIFO.ngc"...
 Loading design module "ipcore_dir/ADC_FIFO.ngc"...
+Loading design module "ipcore_dir/EthernetRAM.ngc"...
 
 Partition Implementation Status
 -------------------------------
@@ -26,11 +28,12 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 199164 kilobytes
+Total memory usage is 198328 kilobytes
 
-Writing NGC file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL_cs.ngc" ...
-Total REAL time to NGCBUILD completion:  3 sec
-Total CPU time to NGCBUILD completion:   3 sec
+Writing NGC file
+"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL_cs.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
 
 Writing NGCBUILD log file
-"D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL_cs.blc"...
+"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL_cs.blc"...
