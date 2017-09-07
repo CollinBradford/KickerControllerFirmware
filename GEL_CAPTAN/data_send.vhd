@@ -61,16 +61,16 @@ begin
 	triggerAddressUns <= unsigned(trigger_addr);
 	userSampleSizeUns <= unsigned(user_sample_size);
 	userPretrigSamplesUns <= unsigned(user_pretrig_sample_size);
+	ramAddrUns <= unsigned(ram_addr);
 
 	process(clk) begin
 		if(rising_edge(clk)) then
 			if(rst = '0') then
 				
-				startAddr <= triggerAddressUns - userPretrigSamplesUns;
-				endAddr <= triggerAddressUns + userSampleSizeUns;
-				
 				if(new_trigger = '1') then
 					armed <= '1';
+					startAddr <= triggerAddressUns - userPretrigSamplesUns;
+					endAddr <= triggerAddressUns + userSampleSizeUns;
 				end if;
 				
 				if(armed = '1' and ramAddrUns = startAddr) then --Begins read cycle when buffer reaches starting point.  
