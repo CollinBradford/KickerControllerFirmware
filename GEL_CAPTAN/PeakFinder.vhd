@@ -57,7 +57,6 @@ architecture Behavioral of PeakFinder is
 	
 	signal threshold : unsigned( 7 downto 0 );
 	signal ramAddress : unsigned(10 downto 0);
-	signal out_en_sig : std_logic;
 	signal new_trigger_sig : std_logic;
 	signal triggered : std_logic;--Means that a signal is over the threshold.  Sync with clk.
 	signal userSampleWidth : unsigned(15 downto 0);
@@ -74,7 +73,6 @@ begin
 	
 	threshold <= unsigned(signal_threshold);
 	userSampleWidth <= unsigned(user_sample_width);
-	out_enable <= out_en_sig;
 	new_trigger <= new_trigger_sig;
 	addr_out <= std_logic_vector(ramAddress);
 	

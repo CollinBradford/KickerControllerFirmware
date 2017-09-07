@@ -1,11 +1,11 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Jul 27 11:31:40 2017
+Thu Sep 07 11:23:41 2017
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 119 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 56 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    XLXI_3432/D10
@@ -14,7 +14,9 @@ WARNING:ParHelpers:361 - There are 119 loadless signals in this design. This des
    XLXI_3432/D13
    XLXI_3432/D14
    XLXI_3432/D15
+   XLXI_3432/D6
    XLXI_3432/D7
+   XLXI_3432/D8
    XLXI_3432/D9
    XLXI_6004/O
    XLXI_6051/Q<12>
@@ -35,76 +37,11 @@ WARNING:ParHelpers:361 - There are 119 loadless signals in this design. This des
    XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6>
    XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full
    XLXI_6227/data_manager_blk/tx_data_fifo_empty
-   XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_i
-   XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
-   XLXI_6296/Q<0>
-   XLXI_6296/Q<10>
-   XLXI_6296/Q<11>
-   XLXI_6296/Q<12>
-   XLXI_6296/Q<13>
-   XLXI_6296/Q<14>
-   XLXI_6296/Q<15>
-   XLXI_6296/Q<1>
-   XLXI_6296/Q<2>
-   XLXI_6296/Q<3>
-   XLXI_6296/Q<4>
-   XLXI_6296/Q<5>
-   XLXI_6296/Q<6>
-   XLXI_6296/Q<7>
-   XLXI_6296/Q<8>
-   XLXI_6296/Q<9>
-   XLXI_6297/Q<0>
-   XLXI_6297/Q<10>
-   XLXI_6297/Q<11>
-   XLXI_6297/Q<12>
-   XLXI_6297/Q<13>
-   XLXI_6297/Q<14>
-   XLXI_6297/Q<15>
-   XLXI_6297/Q<1>
-   XLXI_6297/Q<2>
-   XLXI_6297/Q<3>
-   XLXI_6297/Q<4>
-   XLXI_6297/Q<5>
-   XLXI_6297/Q<6>
-   XLXI_6297/Q<7>
-   XLXI_6297/Q<8>
-   XLXI_6297/Q<9>
-   XLXI_6298/Q<0>
-   XLXI_6298/Q<10>
-   XLXI_6298/Q<11>
-   XLXI_6298/Q<12>
-   XLXI_6298/Q<13>
-   XLXI_6298/Q<14>
-   XLXI_6298/Q<15>
-   XLXI_6298/Q<1>
-   XLXI_6298/Q<2>
-   XLXI_6298/Q<3>
-   XLXI_6298/Q<4>
-   XLXI_6298/Q<5>
-   XLXI_6298/Q<6>
-   XLXI_6298/Q<7>
-   XLXI_6298/Q<8>
-   XLXI_6298/Q<9>
-   XLXI_6299/Q<0>
-   XLXI_6299/Q<10>
-   XLXI_6299/Q<11>
-   XLXI_6299/Q<12>
-   XLXI_6299/Q<13>
-   XLXI_6299/Q<14>
-   XLXI_6299/Q<15>
-   XLXI_6299/Q<1>
-   XLXI_6299/Q<2>
-   XLXI_6299/Q<3>
-   XLXI_6299/Q<4>
-   XLXI_6299/Q<5>
-   XLXI_6299/Q<6>
-   XLXI_6299/Q<7>
-   XLXI_6299/Q<8>
-   XLXI_6299/Q<9>
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
+   XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i
    icon_control0<10>
    icon_control0<11>
    icon_control0<15>

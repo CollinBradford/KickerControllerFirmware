@@ -234,8 +234,6 @@
         <signal name="U10_1" />
         <signal name="U10_2" />
         <signal name="U10_3" />
-        <signal name="rx_data(31:24)" />
-        <signal name="data_send_delay_time(7:0)" />
         <signal name="fadc_data_in(9)" />
         <signal name="fadc_data_in(10)" />
         <signal name="fadc_data_in(15)" />
@@ -253,13 +251,15 @@
         <signal name="XLXN_15524" />
         <signal name="fadc_data_in(15:0)" />
         <signal name="fadc_fifo_data_out(15:0)" />
-        <signal name="peak_finder_data_out" />
-        <signal name="ethernet_fifo_empty" />
-        <signal name="ethernet_fifo_dout(64:0)" />
         <signal name="new_trigger" />
-        <signal name="trigger_address" />
-        <signal name="ram_address" />
-        <signal name="XLXN_15732(63:0)" />
+        <signal name="trigger_addr(10:0)" />
+        <signal name="ram_address(10:0)" />
+        <signal name="data_send_in(63:0)" />
+        <signal name="ram_addr(10:0)" />
+        <signal name="user_sample_size(15:0)" />
+        <signal name="rx_data(39:24)" />
+        <signal name="user_pretrig_sample_size(15:0)" />
+        <signal name="peak_finder_data_out(63:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -678,20 +678,25 @@
             <rect width="400" x="64" y="-320" height="832" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2017-4-28T21:15:36</timestamp>
+            <timestamp>2017-9-7T15:41:4</timestamp>
+            <line x2="0" y1="160" y2="160" x1="64" />
+            <rect width="64" x="0" y="212" height="24" />
+            <line x2="0" y1="224" y2="224" x1="64" />
+            <rect width="64" x="0" y="276" height="24" />
+            <line x2="0" y1="288" y2="288" x1="64" />
+            <rect width="64" x="0" y="340" height="24" />
+            <line x2="0" y1="352" y2="352" x1="64" />
+            <rect width="64" x="0" y="404" height="24" />
+            <line x2="0" y1="416" y2="416" x1="64" />
+            <rect width="64" x="0" y="468" height="24" />
+            <line x2="0" y1="480" y2="480" x1="64" />
             <line x2="384" y1="96" y2="96" x1="320" />
-            <rect width="64" x="0" y="20" height="24" />
-            <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-352" y2="-352" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-384" height="512" />
+            <rect width="256" x="64" y="-384" height="896" />
         </blockdef>
         <blockdef name="ClockLatchSignals">
             <timestamp>2016-9-30T16:49:33</timestamp>
@@ -1683,7 +1688,7 @@
             <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="CE" />
             <blockpin signalname="rx_data(23:8)" name="D(15:0)" />
             <blockpin signalname="reset" name="R" />
-            <blockpin signalname="read_size(15:0)" name="Q(15:0)" />
+            <blockpin signalname="user_sample_size(15:0)" name="Q(15:0)" />
         </block>
         <block symbolname="fd8re" name="XLXI_6247">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -1704,13 +1709,6 @@
             <blockpin signalname="FADC_DCLK" name="I" />
             <blockpin signalname="U10_3" name="O" />
         </block>
-        <block symbolname="fd8re" name="XLXI_6329">
-            <blockpin signalname="MASTER_CLK" name="C" />
-            <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="CE" />
-            <blockpin signalname="rx_data(31:24)" name="D(7:0)" />
-            <blockpin signalname="reset" name="R" />
-            <blockpin signalname="data_send_delay_time(7:0)" name="Q(7:0)" />
-        </block>
         <block symbolname="ClockLatchSignals" name="XLXI_6331">
             <blockpin signalname="clock_5mhz" name="clk" />
             <blockpin signalname="XLXN_15518" name="rst" />
@@ -1724,11 +1722,11 @@
             <blockpin signalname="CLK_MUX" name="O" />
         </block>
         <block symbolname="EthernetRAM" name="XLXI_6380">
-            <blockpin signalname="ram_address" name="addra(10:0)" />
-            <blockpin signalname="peak_finder_data_out" name="dina(63:0)" />
+            <blockpin signalname="ram_address(10:0)" name="addra(10:0)" />
+            <blockpin signalname="peak_finder_data_out(63:0)" name="dina(63:0)" />
             <blockpin signalname="ram_en" name="wea(0:0)" />
             <blockpin signalname="MASTER_CLK" name="clka" />
-            <blockpin signalname="XLXN_15732(63:0)" name="douta(63:0)" />
+            <blockpin signalname="data_send_in(63:0)" name="douta(63:0)" />
         </block>
         <block symbolname="vcc" name="XLXI_6346">
             <blockpin signalname="XLXN_15529" name="P" />
@@ -1754,22 +1752,31 @@
             <blockpin signalname="fadc_fifo_data_out(63:0)" name="data_in(63:0)" />
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
             <blockpin signalname="ram_en" name="out_enable" />
-            <blockpin signalname="peak_finder_data_out" name="data_out(63:0)" />
+            <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
             <blockpin signalname="read_size(15:0)" name="user_sample_width(15:0)" />
             <blockpin signalname="new_trigger" name="new_trigger" />
-            <blockpin signalname="ram_address" name="addr_out(10:0)" />
-            <blockpin signalname="trigger_address" name="trigger_address(10:0)" />
+            <blockpin signalname="ram_addr(10:0)" name="addr_out(10:0)" />
+            <blockpin signalname="trigger_addr(10:0)" name="trigger_address(10:0)" />
         </block>
         <block symbolname="data_send" name="XLXI_6253">
             <blockpin signalname="reset" name="rst" />
             <blockpin signalname="MASTER_CLK" name="clk" />
-            <blockpin signalname="ethernet_fifo_empty" name="empty" />
-            <blockpin signalname="b_enable" name="b_enable" />
-            <blockpin signalname="ethernet_fifo_dout(64:0)" name="din(64:0)" />
-            <blockpin signalname="data_send_delay_time(7:0)" name="delay_time(7:0)" />
             <blockpin signalname="b_data_we" name="b_data_we" />
-            <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
             <blockpin signalname="b_force_packet" name="b_force_packet" />
+            <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
+            <blockpin signalname="new_trigger" name="new_trigger" />
+            <blockpin signalname="data_send_in(63:0)" name="data_in(63:0)" />
+            <blockpin signalname="trigger_addr(10:0)" name="trigger_addr(10:0)" />
+            <blockpin signalname="ram_addr(10:0)" name="ram_addr(10:0)" />
+            <blockpin signalname="user_sample_size(15:0)" name="user_sample_size(15:0)" />
+            <blockpin signalname="user_pretrig_sample_size(15:0)" name="user_pretrig_sample_size(15:0)" />
+        </block>
+        <block symbolname="fd16re" name="XLXI_6394">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="CE" />
+            <blockpin signalname="rx_data(39:24)" name="D(15:0)" />
+            <blockpin signalname="reset" name="R" />
+            <blockpin signalname="user_pretrig_sample_size(15:0)" name="Q(15:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2096,7 +2103,7 @@
             <wire x2="416" y1="4864" y2="4864" x1="352" />
         </branch>
         <instance x="416" y="5440" name="XLXI_6251" orien="R0" />
-        <branch name="read_size(15:0)">
+        <branch name="user_sample_size(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="864" y="5184" type="branch" />
             <wire x2="864" y1="5184" y2="5184" x1="800" />
         </branch>
@@ -2162,27 +2169,6 @@
         <iomarker fontsize="28" x="1232" y="208" name="U10_3" orien="R0" />
         <rect width="1416" x="20" y="16" height="268" />
         <text x="1252" y="312">For Debugging</text>
-        <instance x="1536" y="5024" name="XLXI_6329" orien="R0" />
-        <branch name="rx_data(31:24)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1504" y="4768" type="branch" />
-            <wire x2="1536" y1="4768" y2="4768" x1="1504" />
-        </branch>
-        <branch name="TRIG_ATTRIBUTES_MAP">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1504" y="4832" type="branch" />
-            <wire x2="1536" y1="4832" y2="4832" x1="1504" />
-        </branch>
-        <branch name="MASTER_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1504" y="4896" type="branch" />
-            <wire x2="1536" y1="4896" y2="4896" x1="1504" />
-        </branch>
-        <branch name="reset">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1504" y="4992" type="branch" />
-            <wire x2="1536" y1="4992" y2="4992" x1="1504" />
-        </branch>
-        <branch name="data_send_delay_time(7:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1952" y="4768" type="branch" />
-            <wire x2="1952" y1="4768" y2="4768" x1="1920" />
-        </branch>
         <instance x="1664" y="1008" name="XLXI_6346" orien="R0" />
         <instance x="384" y="896" name="XLXI_6342" orien="R0" />
         <instance x="784" y="544" name="XLXI_6341" orien="R0">
@@ -2242,7 +2228,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="1696" type="branch" />
             <wire x2="2720" y1="1696" y2="1696" x1="2704" />
         </branch>
-        <branch name="peak_finder_data_out">
+        <branch name="peak_finder_data_out(63:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="1952" type="branch" />
             <wire x2="2720" y1="1952" y2="1952" x1="2704" />
         </branch>
@@ -2270,24 +2256,10 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5488" y="1792" type="branch" />
             <wire x2="5488" y1="1792" y2="1792" x1="5472" />
         </branch>
-        <branch name="data_send_delay_time(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5008" y="1728" type="branch" />
-            <wire x2="5056" y1="1728" y2="1728" x1="5008" />
-            <wire x2="5088" y1="1728" y2="1728" x1="5056" />
-        </branch>
-        <branch name="ethernet_fifo_empty">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="1472" type="branch" />
-            <wire x2="5088" y1="1472" y2="1472" x1="5072" />
-        </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="1408" type="branch" />
             <wire x2="5056" y1="1408" y2="1408" x1="5040" />
             <wire x2="5088" y1="1408" y2="1408" x1="5056" />
-        </branch>
-        <branch name="ethernet_fifo_dout(64:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="1664" type="branch" />
-            <wire x2="5056" y1="1664" y2="1664" x1="5040" />
-            <wire x2="5088" y1="1664" y2="1664" x1="5056" />
         </branch>
         <branch name="b_data_we">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5504" y="1344" type="branch" />
@@ -2298,11 +2270,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5520" y="1664" type="branch" />
             <wire x2="5504" y1="1664" y2="1664" x1="5472" />
             <wire x2="5520" y1="1664" y2="1664" x1="5504" />
-        </branch>
-        <branch name="b_enable">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5024" y="1536" type="branch" />
-            <wire x2="5040" y1="1536" y2="1536" x1="5024" />
-            <wire x2="5088" y1="1536" y2="1536" x1="5040" />
         </branch>
         <branch name="reset">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="1344" type="branch" />
@@ -2317,15 +2284,15 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2272" type="branch" />
             <wire x2="2720" y1="2272" y2="2272" x1="2704" />
         </branch>
-        <branch name="ram_address">
+        <branch name="ram_addr(10:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2336" type="branch" />
             <wire x2="2720" y1="2336" y2="2336" x1="2704" />
         </branch>
-        <branch name="trigger_address">
+        <branch name="trigger_addr(10:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2400" type="branch" />
             <wire x2="2720" y1="2400" y2="2400" x1="2704" />
         </branch>
-        <branch name="ram_address">
+        <branch name="ram_address(10:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3600" y="992" type="branch" />
             <wire x2="3616" y1="992" y2="992" x1="3600" />
         </branch>
@@ -2333,7 +2300,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3600" y="1120" type="branch" />
             <wire x2="3616" y1="1120" y2="1120" x1="3600" />
         </branch>
-        <branch name="peak_finder_data_out">
+        <branch name="peak_finder_data_out(63:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3600" y="1024" type="branch" />
             <wire x2="3616" y1="1024" y2="1024" x1="3600" />
         </branch>
@@ -2341,8 +2308,54 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3600" y="1184" type="branch" />
             <wire x2="3616" y1="1184" y2="1184" x1="3600" />
         </branch>
-        <branch name="XLXN_15732(63:0)">
+        <branch name="data_send_in(63:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4208" y="992" type="branch" />
             <wire x2="4208" y1="992" y2="992" x1="4192" />
+        </branch>
+        <branch name="new_trigger">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="1856" type="branch" />
+            <wire x2="5088" y1="1856" y2="1856" x1="5072" />
+        </branch>
+        <branch name="data_send_in(63:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="1920" type="branch" />
+            <wire x2="5088" y1="1920" y2="1920" x1="5072" />
+        </branch>
+        <branch name="trigger_addr(10:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="1984" type="branch" />
+            <wire x2="5088" y1="1984" y2="1984" x1="5072" />
+        </branch>
+        <branch name="ram_addr(10:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2048" type="branch" />
+            <wire x2="5088" y1="2048" y2="2048" x1="5072" />
+        </branch>
+        <branch name="user_sample_size(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2112" type="branch" />
+            <wire x2="5088" y1="2112" y2="2112" x1="5072" />
+        </branch>
+        <branch name="user_pretrig_sample_size(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2176" type="branch" />
+            <wire x2="5088" y1="2176" y2="2176" x1="5072" />
+        </branch>
+        <instance x="1536" y="5424" name="XLXI_6394" orien="R0" />
+        <branch name="rx_data(39:24)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1520" y="5168" type="branch" />
+            <wire x2="1536" y1="5168" y2="5168" x1="1520" />
+        </branch>
+        <branch name="TRIG_ATTRIBUTES_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1520" y="5232" type="branch" />
+            <wire x2="1536" y1="5232" y2="5232" x1="1520" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1520" y="5296" type="branch" />
+            <wire x2="1536" y1="5296" y2="5296" x1="1520" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1520" y="5392" type="branch" />
+            <wire x2="1536" y1="5392" y2="5392" x1="1520" />
+        </branch>
+        <branch name="user_pretrig_sample_size(15:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1936" y="5168" type="branch" />
+            <wire x2="1936" y1="5168" y2="5168" x1="1920" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
