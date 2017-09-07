@@ -239,25 +239,22 @@
 <msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">tmpCompData&lt;2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;17:12&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;18:13&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;11&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;12&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;9:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;10:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">din_dly1&lt;17:15&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">din_dly1&lt;18:15&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">comp&lt;17:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">comp&lt;18:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">cfg_data&lt;17:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">DOPB&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">cfg_data&lt;18:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic_1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -383,7 +380,7 @@
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">localDOB</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">localADDRB&lt;14:11&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">localADDRB&lt;14:12&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">localADDRA&lt;14&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -629,31 +626,58 @@
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ATC_CLKIN</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[0].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[0].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[1].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[1].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[2].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[2].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[3].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[3].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[4].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[4].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[5].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[5].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[6].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[6].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[7].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[7].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[8].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[8].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[9].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[10].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[11].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[12].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[13].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[14].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[15].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[16].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">G_BRAM[17].U_BRAM/ram_rt1_s1_s4_if.ram_rt1_s1_s4_i</arg> in unit <arg fmt="%s" index="2">ila_bram_flat</arg> of type <arg fmt="%s" index="3">RAMB16_S1_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

@@ -1,5 +1,5 @@
 #ChipScope Core Inserter Project File Version 3.0
-#Thu Sep 07 13:15:18 CDT 2017
+#Thu Sep 07 13:40:33 CDT 2017
 Project.device.designInputFile=D\:\\cbradford\\KickerControllerFirmware\\GEL_CAPTAN\\TOP_LEVEL_cs.ngc
 Project.device.designOutputFile=D\:\\cbradford\\KickerControllerFirmware\\GEL_CAPTAN\\TOP_LEVEL_cs.ngc
 Project.device.deviceFamily=12
@@ -98,13 +98,13 @@ Project.unit<0>.dataChannel<64>=ram_addr<8>
 Project.unit<0>.dataChannel<65>=ram_addr<9>
 Project.unit<0>.dataChannel<66>=ram_addr<10>
 Project.unit<0>.dataChannel<67>=b_data_we
-Project.unit<0>.dataChannel<68>=XLXI_6253 b_force_packet
+Project.unit<0>.dataChannel<68>=b_force_packet
 Project.unit<0>.dataChannel<69>=XLXI_6253 armed
 Project.unit<0>.dataChannel<6>=threshold<2>
 Project.unit<0>.dataChannel<7>=threshold<3>
 Project.unit<0>.dataChannel<8>=threshold<4>
 Project.unit<0>.dataChannel<9>=threshold<5>
-Project.unit<0>.dataDepth=2048
+Project.unit<0>.dataDepth=4096
 Project.unit<0>.dataEqualsTrigger=true
 Project.unit<0>.dataPortWidth=70
 Project.unit<0>.enableGaps=false
