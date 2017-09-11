@@ -1,5 +1,5 @@
 The following files were generated for 'icon_pro' in directory
-D:\cbradford\PulsePerPackage\GEL_CAPTAN\_ngo\cs_icon_pro\
+D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\_ngo\cs_icon_pro\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.

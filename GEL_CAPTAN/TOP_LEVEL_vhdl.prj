@@ -30,7 +30,6 @@ vhdl work "D:\cbradford\KickerControllerFirmware\oei\burst_traffic_controller.vh
 vhdl work "D:\cbradford\KickerControllerFirmware\oei\ethernet_interface.vhd"
 vhdl work "D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\VERSION_BLK.vhd"
 vhdl work "D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\trigger_recv_blk.vhd"
-vhdl work "D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\Pulser.vhd"
 vhdl work "D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\PeakFinder.vhd"
 vhdl work "D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\MUX64_8.vhd"
 vhdl work "D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\data_send.vhd"
