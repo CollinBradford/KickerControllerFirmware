@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-RIVIERA::  Mon Sep 11 13:41:44 2017
+RIVIERA::  Mon Sep 11 14:43:37 2017
 
 par -w -intstyle ise -ol high -t 1 TOP_LEVEL_map.ncd TOP_LEVEL.ncd
 TOP_LEVEL.pcf 
@@ -41,9 +41,9 @@ Device Utilization Summary:
       Number of LOCed LOWCAPIOBs             2 out of 2     100%
 
    Number of OLOGICs                         1 out of 448     1%
-   Number of RAMB16s                        46 out of 72     63%
-   Number of Slices                       4392 out of 10752  40%
-      Number of SLICEMs                    512 out of 5376    9%
+   Number of RAMB16s                        47 out of 72     65%
+   Number of Slices                       4433 out of 10752  41%
+      Number of SLICEMs                    534 out of 5376    9%
 
 
 
@@ -59,11 +59,9 @@ WARNING:Par:288 - The signal
 WARNING:Par:288 - The signal
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i has no load.  PAR
    will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<30> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal XLXI_6051/Q<13> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<22> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<28> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal XLXI_6004/O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal XLXI_6051/Q<12> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<23> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<25> has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal icon_control0<35> has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>
@@ -74,34 +72,36 @@ WARNING:Par:288 - The signal XLXI_3432/D7 has no load.  PAR will not attempt to 
 WARNING:Par:288 - The signal XLXI_3432/D9 has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal XLXI_3432/D10 has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal XLXI_3432/D11 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal XLXI_3432/D12 has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal XLXI_3432/D13 has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal XLXI_3432/D14 has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<17> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<24> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<15> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<27> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<33> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<7> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<16> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<34> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<21> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<29> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<23> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<18> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<11> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<25> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<32> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<31> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<10> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal XLXI_3432/D12 has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal icon_control0<26> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal XLXI_6051/Q<12> has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal
-   XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>
-   has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1 has no load.  PAR
    will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<28> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<29> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<21> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<24> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<10> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<7> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<11> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<33> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<15> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<26> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<27> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<31> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<34> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<17> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<18> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<32> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<16> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal XLXI_6004/O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<22> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal icon_control0<30> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal XLXI_6051/Q<13> has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6> has no load.  PAR will not attempt to
    route this signal.
 WARNING:Par:288 - The signal XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<5> has no load.  PAR will not attempt to
@@ -115,23 +115,23 @@ WARNING:Par:288 - The signal XLXI_6227/data_manager_blk/tx_data_fifo_empty has n
 Starting Router
 
 
-Phase  1  : 30548 unrouted;      REAL time: 12 secs 
+Phase  1  : 30825 unrouted;      REAL time: 12 secs 
 
-Phase  2  : 24978 unrouted;      REAL time: 12 secs 
+Phase  2  : 25102 unrouted;      REAL time: 12 secs 
 
-Phase  3  : 8387 unrouted;      REAL time: 15 secs 
+Phase  3  : 8434 unrouted;      REAL time: 15 secs 
 
-Phase  4  : 8381 unrouted; (Setup:0, Hold:937, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  4  : 8445 unrouted; (Setup:0, Hold:9973, Component Switching Limit:0)     REAL time: 18 secs 
 
 Updating file: TOP_LEVEL.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:937, Component Switching Limit:0)     REAL time: 23 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:12598, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:937, Component Switching Limit:0)     REAL time: 23 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:12598, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:937, Component Switching Limit:0)     REAL time: 23 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:12598, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:937, Component Switching Limit:0)     REAL time: 23 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:12598, Component Switching Limit:0)     REAL time: 23 secs 
 
 Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 
@@ -155,20 +155,20 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|       GTX_CLK_0_sig | BUFGCTRL_X0Y0| No   | 2730 |  0.328     |  2.738      |
+|       GTX_CLK_0_sig | BUFGCTRL_X0Y0| No   | 2825 |  0.287     |  2.739      |
 +---------------------+--------------+------+------+------------+-------------+
-|           FADC_DCLK | BUFGCTRL_X0Y5| No   |   51 |  0.088     |  2.641      |
+|    icon_control0<0> |BUFGCTRL_X0Y27| No   |  189 |  0.254     |  2.659      |
 +---------------------+--------------+------+------+------------+-------------+
-|    icon_control0<0> |BUFGCTRL_X0Y27| No   |  187 |  0.197     |  2.636      |
+|           FADC_DCLK | BUFGCTRL_X0Y5| No   |   56 |  0.140     |  2.707      |
 +---------------------+--------------+------+------+------------+-------------+
 |          XLXN_15064 | BUFGCTRL_X0Y1| No   |    1 |  0.000     |  2.495      |
 +---------------------+--------------+------+------+------------+-------------+
-|          clock_5mhz |         Local|      |   10 |  1.011     |  2.657      |
+|          clock_5mhz |         Local|      |   10 |  1.670     |  2.576      |
 +---------------------+--------------+------+------+------------+-------------+
-|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.484      |
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.891      |
 +---------------------+--------------+------+------+------------+-------------+
 |U_icon_pro/U0/iUPDAT |              |      |      |            |             |
-|               E_OUT |         Local|      |    1 |  0.000     |  1.435      |
+|               E_OUT |         Local|      |    1 |  0.000     |  0.584      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -190,14 +190,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_GEL_RXCLK = PERIOD TIMEGRP "GEL_RXCLK" | SETUP       |     0.120ns|     7.880ns|       0|           0
-   8 ns HIGH 50%                            | HOLD        |     0.336ns|            |       0|           0
+  TS_GEL_RXCLK = PERIOD TIMEGRP "GEL_RXCLK" | SETUP       |     0.143ns|     7.857ns|       0|           0
+   8 ns HIGH 50%                            | HOLD        |     0.322ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_XLXN_12781 = PERIOD TIMEGRP "XLXN_1278 | MINPERIOD   |     0.167ns|     2.499ns|       0|           0
   1" TS_XLXN_12669 / 2 HIGH 50%             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_XLXN_15087_0 = PERIOD TIMEGRP "XLXN_15 | SETUP       |     1.084ns|     3.916ns|       0|           0
-  087_0" TS_BUSBHS_02DP_04S HIGH 50%        | HOLD        |     0.529ns|            |       0|           0
+  TS_XLXN_15087_0 = PERIOD TIMEGRP "XLXN_15 | SETUP       |     1.092ns|     3.908ns|       0|           0
+  087_0" TS_BUSBHS_02DP_04S HIGH 50%        | HOLD        |     0.507ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_XLXN_12669 = PERIOD TIMEGRP "XLXN_1266 | MINLOWPULSE |     1.332ns|     4.000ns|       0|           0
   9" TS_GEL_RXCLK / 1.5 HIGH 50%            |             |            |            |        |            
@@ -211,32 +211,32 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_XLXN_15087 = PERIOD TIMEGRP "XLXN_1508 | MINPERIOD   |     2.500ns|     2.500ns|       0|           0
   7" TS_BUSBHS_02DN_05S HIGH 50%            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.403ns|     2.597ns|       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.582ns|     3.418ns|       0|           0
    TO TIMEGRP "J_CLK" 15 ns                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.032ns|     0.968ns|       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.051ns|     0.949ns|       0|           0
    TO TIMEGRP "U_CLK" 15 ns                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    21.382ns|     8.618ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.498ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    21.444ns|     8.556ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.480ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_SECONDARY_CLK = PERIOD TIMEGRP "SECOND | SETUP       |   193.107ns|     6.893ns|       0|           0
-  ARY_CLK" 200 ns HIGH 50%                  | HOLD        |     0.787ns|            |       0|           0
+  TS_SECONDARY_CLK = PERIOD TIMEGRP "SECOND | SETUP       |   194.278ns|     5.722ns|       0|           0
+  ARY_CLK" 200 ns HIGH 50%                  | HOLD        |     0.796ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     3.815ns|     N/A|           0
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     4.525ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     8.436ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     8.525ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     4.592ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     4.774ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
   TS_XLXN_12257 = PERIOD TIMEGRP "XLXN_1225 | N/A         |         N/A|         N/A|     N/A|         N/A
   7" TS_GEL_RXCLK / 1.6 HIGH 50%            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.166ns|     N/A|           0
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.852ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -250,7 +250,7 @@ Derived Constraints for TS_GEL_RXCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GEL_RXCLK                   |      8.000ns|      7.880ns|      7.497ns|            0|            0|       110082|            0|
+|TS_GEL_RXCLK                   |      8.000ns|      7.857ns|      7.497ns|            0|            0|       110195|            0|
 | TS_XLXN_12257                 |      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_XLXN_12669                 |      5.333ns|      4.000ns|      4.998ns|            0|            0|            0|            0|
 |  TS_XLXN_12781                |      2.667ns|      2.499ns|          N/A|            0|            0|            0|            0|
@@ -272,8 +272,8 @@ Derived Constraints for TS_BUSBHS_02DP_04S
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_BUSBHS_02DP_04S             |      5.000ns|      3.600ns|      3.916ns|            0|            0|            0|          273|
-| TS_XLXN_15087_0               |      5.000ns|      3.916ns|          N/A|            0|            0|          273|            0|
+|TS_BUSBHS_02DP_04S             |      5.000ns|      3.600ns|      3.908ns|            0|            0|            0|          273|
+| TS_XLXN_15087_0               |      5.000ns|      3.908ns|          N/A|            0|            0|          273|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -293,7 +293,7 @@ WARNING:Par:283 - There are 44 loadless signals in this design. This design will
 Total REAL time to PAR completion: 26 secs 
 Total CPU time to PAR completion: 24 secs 
 
-Peak Memory Usage:  564 MB
+Peak Memory Usage:  563 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
