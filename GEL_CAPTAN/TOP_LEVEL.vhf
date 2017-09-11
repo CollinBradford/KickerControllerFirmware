@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/11/2017 11:53:14
+-- /___/   /\     Timestamp : 09/11/2017 13:32:12
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -715,6 +715,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal trig_reset               : std_logic;
    signal trig_scin0_sel           : std_logic;
    signal tx_data                  : std_logic_vector (63 downto 0);
+   signal user_positive_delay      : std_logic_vector (15 downto 0);
    signal user_pretrig_sample_size : std_logic_vector (15 downto 0);
    signal user_sample_size         : std_logic_vector (15 downto 0);
    signal XLXN_12220               : std_logic;
@@ -1046,7 +1047,8 @@ architecture BEHAVIORAL of TOP_LEVEL is
              user_pretrig_sample_size : in    std_logic_vector (15 downto 0); 
              b_data_we                : out   std_logic; 
              b_force_packet           : out   std_logic; 
-             b_data                   : out   std_logic_vector (63 downto 0));
+             b_data                   : out   std_logic_vector (63 downto 0); 
+             user_positive_delay      : in    std_logic_vector (15 downto 0));
    end component;
    
    component ClockLatchSignals
@@ -1168,6 +1170,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute HU_SET of XLXI_6247 : label is "XLXI_6247_6";
    attribute HU_SET of XLXI_6251 : label is "XLXI_6251_5";
    attribute HU_SET of XLXI_6394 : label is "XLXI_6394_7";
+   attribute HU_SET of XLXI_6410 : label is "XLXI_6410_8";
 begin
    XLXI_3405 : IDELAY
    -- synopsys translate_off
@@ -1879,6 +1882,8 @@ begin
                 ram_addr(9 downto 0)=>ram_addr(9 downto 0),
                 rst=>reset,
                 trigger_addr(9 downto 0)=>trigger_addr(9 downto 0),
+                user_positive_delay(15 downto 0)=>user_positive_delay(15 downto 
+            0),
                 user_pretrig_sample_size(15 downto 
             0)=>user_pretrig_sample_size(15 downto 0),
                 user_sample_size(15 downto 0)=>user_sample_size(15 downto 0),
@@ -1951,7 +1956,7 @@ begin
    XLXI_6398 : FDRE
       port map (C=>MASTER_CLK,
                 CE=>TRIG_ATTRIBUTES_MAP,
-                D=>rx_data(40),
+                D=>rx_data(56),
                 R=>reset,
                 Q=>manual_mode);
    
@@ -1974,6 +1979,13 @@ begin
    XLXI_6409 : IBUF
       port map (I=>U10_1,
                 O=>ext_trig);
+   
+   XLXI_6410 : FD16RE_MXILINX_TOP_LEVEL
+      port map (C=>MASTER_CLK,
+                CE=>TRIG_ATTRIBUTES_MAP,
+                D(15 downto 0)=>rx_data(55 downto 40),
+                R=>reset,
+                Q(15 downto 0)=>user_positive_delay(15 downto 0));
    
 end BEHAVIORAL;
 

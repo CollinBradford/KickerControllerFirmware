@@ -35,6 +35,7 @@ entity data_send is
 			  --user sample sizes
 			  user_sample_size : in STD_LOGIC_VECTOR (15 downto 0);
 			  user_pretrig_sample_size : in STD_LOGIC_VECTOR (15 downto 0);
+			  user_positive_delay : in STD_LOGIC_VECTOR(15 downto 0);
 			  --burst data control signals
            b_data : out  STD_LOGIC_VECTOR (63 downto 0);
            b_data_we : out  STD_LOGIC;
@@ -47,6 +48,7 @@ signal startAddr : unsigned(9 downto 0);
 signal endAddr : unsigned(9 downto 0);
 signal userSampleSizeUns : unsigned(15 downto 0);
 signal userPretrigSamplesUns : unsigned(15 downto 0);
+signal userPositiveDelayUns : unsigned(15 downto 0);
 signal triggerAddressUns : unsigned(9 downto 0);
 signal ramAddrUns : unsigned(9 downto 0);
 signal armed : std_logic;
@@ -61,6 +63,7 @@ begin
 	triggerAddressUns <= unsigned(trigger_addr);
 	userSampleSizeUns <= unsigned(user_sample_size);
 	userPretrigSamplesUns <= unsigned(user_pretrig_sample_size);
+	userPositiveDelayUns <= unsigned(user_positive_delay);
 	ramAddrUns <= unsigned(ram_addr);
 
 	process(clk) begin
@@ -69,8 +72,8 @@ begin
 				
 				if(new_trigger = '1') then
 					armed <= '1';
-					startAddr <= triggerAddressUns - userPretrigSamplesUns;
-					endAddr <= triggerAddressUns + userSampleSizeUns;
+					startAddr <= triggerAddressUns - userPretrigSamplesUns + userPositiveDelayUns;
+					endAddr <= triggerAddressUns + userSampleSizeUns + userPositiveDelayUns;
 				end if;
 				
 				if(armed = '1' and ramAddrUns = startAddr) then --Begins read cycle when buffer reaches starting point.  
