@@ -22,10 +22,14 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="dig_mac.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ClockLatchSignals.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DATA_FIFO_0.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="INFO_FIFO_0.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PeakFinder.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PeakFinder.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PeakFinder.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PeakFinder.xst"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PsudoCounter.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="TOP_LEVEL.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="TOP_LEVEL.cmd_log"/>
@@ -128,7 +132,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TOP_LEVEL.lso"/>
       <outfile xil_pn:name="TOP_LEVEL.ngc"/>
@@ -151,6 +157,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="TOP_LEVEL.bld"/>
       <outfile xil_pn:name="TOP_LEVEL.ngd"/>
       <outfile xil_pn:name="TOP_LEVEL_cs.blc"/>
@@ -163,6 +170,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TOP_LEVEL.pcf"/>
       <outfile xil_pn:name="TOP_LEVEL_map.map"/>
       <outfile xil_pn:name="TOP_LEVEL_map.mrp"/>
@@ -177,6 +187,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="TOP_LEVEL.ncd"/>
       <outfile xil_pn:name="TOP_LEVEL.pad"/>
       <outfile xil_pn:name="TOP_LEVEL.par"/>
@@ -192,6 +203,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="TOP_LEVEL.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="top_level.bgn"/>
@@ -203,6 +215,7 @@
     <transform xil_pn:end_ts="1505149280" xil_pn:in_ck="3669397227787089027" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="5723116666012076955" xil_pn:start_ts="1505149266">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="TOP_LEVEL.twr"/>
       <outfile xil_pn:name="TOP_LEVEL.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

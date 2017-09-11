@@ -1,6 +1,6 @@
 AR trigger_recv_blk behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/trigger_recv_blk.vhd sub00/vhpl61 1505148892
 AR ethernetram ethernetram_a D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd sub00/vhpl73 1505148904
-AR peakfinder behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd sub00/vhpl71 1505148902
+AR peakfinder behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd sub00/vhpl71 1505153854
 EN address_container NULL D:/cbradford/KickerControllerFirmware/oei/address_container.vhd sub00/vhpl02 1505148833
 AR m2_1_mxilinx_top_level behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl79 1505148910
 EN ethernet_controller NULL D:/cbradford/KickerControllerFirmware/oei/ethernet_controller.vhd sub00/vhpl40 1505148871
@@ -13,8 +13,8 @@ EN reset_mgr NULL D:/cbradford/KickerControllerFirmware/oei/reset_mgr.vhd sub00/
 AR ram_comm_dec arch D:/cbradford/KickerControllerFirmware/oei/ram_comm_dec.vhd sub00/vhpl37 1505148868
 EN ethernetram NULL D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd sub00/vhpl72 1505148903
 EN ip_checksum_calc NULL D:/cbradford/KickerControllerFirmware/oei/ip_checksum_calc.vhd sub00/vhpl08 1505148839
-EN data_manager NULL D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd sub00/vhpl48 1505148879
 EN fd8re_mxilinx_top_level NULL D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl76 1505148907
+EN data_manager NULL D:/cbradford/KickerControllerFirmware/oei/data_manager.vhd sub00/vhpl48 1505148879
 EN burst_controller_sm NULL D:/cbradford/KickerControllerFirmware/oei/burst_controller_sm.vhd sub00/vhpl32 1505148863
 AR buffer_10bit behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/buffer_10bit.vhd sub00/vhpl59 1505148890
 EN dataout_mux NULL D:/cbradford/KickerControllerFirmware/oei/dataout_mux.vhd sub00/vhpl12 1505148843
@@ -23,9 +23,9 @@ AR version_blk behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/VERSI
 EN data_fifo_0 NULL D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.vhd sub00/vhpl26 1505148857
 AR udp_data_splicer udp_data_splicer_arch D:/cbradford/KickerControllerFirmware/oei/udp_data_splicer.vhd sub00/vhpl23 1505148854
 AR address_container arch D:/cbradford/KickerControllerFirmware/oei/address_container.vhd sub00/vhpl03 1505148834
-AR top_level behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl83 1505148914
-EN or33 NULL D:/cbradford/KickerControllerFirmware/oei/or33.vhd sub00/vhpl06 1505148837
 AR mux64_8 behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/MUX64_8.vhd sub00/vhpl57 1505148888
+EN or33 NULL D:/cbradford/KickerControllerFirmware/oei/or33.vhd sub00/vhpl06 1505148837
+AR top_level behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl83 1505148914
 EN d4_16e_mxilinx_top_level NULL D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl80 1505148911
 EN adc_fifo NULL D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd sub00/vhpl68 1505148899
 AR tx_seq_ctl arch D:/cbradford/KickerControllerFirmware/oei/tx_seq_ctl.vhd sub00/vhpl39 1505148870
@@ -35,8 +35,8 @@ AR clocklatchsignals behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN
 AR decipherer decipherer_arch D:/cbradford/KickerControllerFirmware/oei/decipherer.vhd sub00/vhpl15 1505148846
 EN ram_comm_dec NULL D:/cbradford/KickerControllerFirmware/oei/ram_comm_dec.vhd sub00/vhpl36 1505148867
 EN tx_seq_ctl NULL D:/cbradford/KickerControllerFirmware/oei/tx_seq_ctl.vhd sub00/vhpl38 1505148869
-AR ethernet_controller_wrapper arch D:/cbradford/KickerControllerFirmware/oei/ethernet_controller_wrapper.vhd sub00/vhpl47 1505148878
 AR adc_fifo adc_fifo_a D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd sub00/vhpl69 1505148900
+AR ethernet_controller_wrapper arch D:/cbradford/KickerControllerFirmware/oei/ethernet_controller_wrapper.vhd sub00/vhpl47 1505148878
 EN rx_ctl NULL D:/cbradford/KickerControllerFirmware/oei/rx_ctl.vhd sub00/vhpl34 1505148865
 AR filter_data_out filter_data_out_arch D:/cbradford/KickerControllerFirmware/oei/filter_data_out.vhd sub00/vhpl17 1505148848
 MO crc_gen NULL ../oei/crc_gen.v vlg21/crc__gen.bin 1505148832
@@ -44,7 +44,7 @@ AR info_fifo_0 info_fifo_0_a D:/cbradford/KickerControllerFirmware/ipcore_dir/IN
 EN version_blk NULL D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/VERSION_BLK.vhd sub00/vhpl54 1505148885
 AR data_send behavioral D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd sub00/vhpl65 1505148896
 AR rx_ctl arch D:/cbradford/KickerControllerFirmware/oei/rx_ctl.vhd sub00/vhpl35 1505148866
-EN peakfinder NULL D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd sub00/vhpl70 1505148901
+EN peakfinder NULL D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd sub00/vhpl70 1505153853
 AR data_fifo_0 data_fifo_0_a D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.vhd sub00/vhpl27 1505148858
 AR ip_checksum_calc arch D:/cbradford/KickerControllerFirmware/oei/ip_checksum_calc.vhd sub00/vhpl09 1505148840
 EN create_packet NULL D:/cbradford/KickerControllerFirmware/oei/create_packet.vhd sub00/vhpl10 1505148841

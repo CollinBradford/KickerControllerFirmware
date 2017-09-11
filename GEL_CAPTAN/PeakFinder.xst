@@ -1,0 +1,5 @@
+set -tmpdir "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/xst/projnav.tmp"
+set -xsthdpdir "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/xst"
+elaborate
+-ifn PeakFinder.prj
+-ifmt mixed
