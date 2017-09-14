@@ -551,13 +551,6 @@ WARNING:NgdBuild:1212 - User specified non-default attribute value (5.33333333)
    will use the non-default attribute value.  This could result in incorrect
    uncertainty calculated for DCM output clocks.
 Checking expanded design ...
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<57>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<58>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<59>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<60>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<61>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<62>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<63>' has no driver
 WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<0>' has no
    driver
 WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<10>' has
@@ -622,9 +615,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  70
+  Number of warnings:  63
 
-Total memory usage is 273420 kilobytes
+Total memory usage is 280072 kilobytes
 
 Writing NGD file "TOP_LEVEL.ngd" ...
 Total REAL time to NGDBUILD completion:  11 sec
