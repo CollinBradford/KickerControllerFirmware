@@ -82,6 +82,7 @@ architecture Behavioral of PeakFinder is
 	signal trigger_active : std_logic;
 	--each trigger attribute gets it's own signal
 	signal threshTrigEn : std_logic; --Threshold Mode is enabled
+	signal threshHigh : std_logic; --Treshold will trigger if the signal is above the threshold
 	signal manualTrigEn : std_logic; --Manual Mode is enabled
 	signal extTrigEn : std_logic; --External Trig Mode is enabled
 	signal extTrigRising : std_logic; --Trigger on the rising edge of the external trigger

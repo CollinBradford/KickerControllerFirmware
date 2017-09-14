@@ -175,8 +175,7 @@ Architecture behavioral of Entity trigger_recv_blk is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" in Library work.
 Architecture behavioral of Entity ethernet_interface is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" in Library work.
-Entity <data_send> compiled.
-Entity <data_send> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity data_send is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
 Architecture behavioral of Entity clocklatchsignals is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
@@ -186,11 +185,16 @@ Architecture behavioral of Entity peakfinder is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd" in Library work.
 Architecture ethernetram_a of Entity ethernetram is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
-Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
-Architecture behavioral of Entity top_level is up to date.
+Entity <fd8re_mxilinx_top_level> compiled.
+Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <fd16re_mxilinx_top_level> compiled.
+Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_top_level> compiled.
+Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <d4_16e_mxilinx_top_level> compiled.
+Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <top_level> compiled.
+Entity <top_level> (Architecture <behavioral>) compiled.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -301,14 +305,14 @@ Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1220: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1220: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1220: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1220: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1220: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1220: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1220: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1220: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1215: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1215: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1215: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1215: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1215: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1215: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1215: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1215: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
@@ -448,7 +452,7 @@ WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vh
     Set user-defined property "DRIVE =  12" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  FAST" for instance <XLXI_5999> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1494: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1489: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_6004_1" for instance <XLXI_6004> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6016> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6025> in unit <TOP_LEVEL>.
@@ -573,11 +577,10 @@ WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vh
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6229> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6247_6" for instance <XLXI_6247> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6251_5" for instance <XLXI_6251> in unit <TOP_LEVEL>.
-WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1902: Instantiating black box module <ADC_FIFO>.
-WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1935: Instantiating black box module <EthernetRAM>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1897: Instantiating black box module <ADC_FIFO>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1933: Instantiating black box module <EthernetRAM>.
     Set user-defined property "HU_SET =  XLXI_6394_7" for instance <XLXI_6394> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6396> in unit <TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <XLXI_6398> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6404> in unit <TOP_LEVEL>.
     Set user-defined property "DRIVE =  12" for instance <XLXI_6404> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6404> in unit <TOP_LEVEL>.
@@ -587,6 +590,7 @@ WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.v
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6409> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6409> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6410_8" for instance <XLXI_6410> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6414_9" for instance <XLXI_6414> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
 Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
@@ -759,8 +763,8 @@ Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <beha
 Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
 
 Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
-WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 75: Width mismatch. <startAddr> has a width of 10 bits but assigned expression is 16-bit wide.
-WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 76: Width mismatch. <endAddr> has a width of 10 bits but assigned expression is 16-bit wide.
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 100: Width mismatch. <startAddr> has a width of 10 bits but assigned expression is 16-bit wide.
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 101: Width mismatch. <endAddr> has a width of 10 bits but assigned expression is 16-bit wide.
 Entity <data_send> analyzed. Unit <data_send> generated.
 
 Analyzing Entity <ClockLatchSignals> in library <work> (Architecture <behavioral>).
@@ -769,7 +773,8 @@ WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSi
 Entity <ClockLatchSignals> analyzed. Unit <ClockLatchSignals> generated.
 
 Analyzing Entity <PeakFinder> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" line 85: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" line 104: Width mismatch. <combinedSampleDelay> has a width of 17 bits but assigned expression is 16-bit wide.
+WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" line 114: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <data_in>, <reset>
 Entity <PeakFinder> analyzed. Unit <PeakFinder> generated.
 
@@ -816,27 +821,32 @@ Unit <trigger_recv_blk> synthesized.
 
 Synthesizing Unit <data_send>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd".
-WARNING:Xst:646 - Signal <userSampleSizeUns<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <userPretrigSamplesUns<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <userPositiveDelayUns<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <headerOut<63:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <headerOut<15:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <headerFinished> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Register <reading> equivalent to <b_data_we> has been removed
+    Found 64-bit register for signal <b_data>.
     Found 1-bit register for signal <b_data_we>.
     Found 1-bit register for signal <armed>.
-    Found 10-bit comparator equal for signal <armed$cmp_eq0000> created at line 79.
-    Found 10-bit comparator equal for signal <b_data_we$cmp_eq0000> created at line 85.
-    Found 10-bit comparator not equal for signal <b_data_we$cmp_ne0000> created at line 79.
-    Found 10-bit comparator not equal for signal <b_data_we$cmp_ne0001> created at line 85.
+    Found 10-bit comparator equal for signal <armed$cmp_eq0000> created at line 104.
+    Found 10-bit comparator equal for signal <b_data_we$cmp_eq0000> created at line 115.
+    Found 10-bit comparator not equal for signal <b_data_we$cmp_ne0000> created at line 104.
+    Found 10-bit comparator not equal for signal <b_data_we$cmp_ne0001> created at line 115.
     Found 10-bit register for signal <endAddr>.
-    Found 10-bit adder for signal <endAddr$add0000> created at line 76.
-    Found 10-bit adder for signal <endAddr$addsub0000> created at line 76.
+    Found 10-bit adder for signal <endAddr$add0000> created at line 101.
+    Found 10-bit adder for signal <endAddr$addsub0000> created at line 101.
     Found 1-bit register for signal <sendUDP>.
     Found 10-bit register for signal <startAddr>.
-    Found 10-bit adder for signal <startAddr$addsub0000> created at line 75.
-    Found 10-bit subtractor for signal <startAddr$sub0000> created at line 75.
+    Found 10-bit adder for signal <startAddr$addsub0000> created at line 100.
+    Found 10-bit subtractor for signal <startAddr$addsub0001> created at line 100.
+    Found 10-bit subtractor for signal <startAddr$sub0000> created at line 100.
+    Found 32-bit up counter for signal <triggerCount>.
     Summary:
-	inferred  23 D-type flip-flop(s).
-	inferred   4 Adder/Subtractor(s).
+	inferred   1 Counter(s).
+	inferred  87 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
 	inferred   4 Comparator(s).
 Unit <data_send> synthesized.
 
@@ -861,27 +871,40 @@ Unit <ClockLatchSignals> synthesized.
 
 Synthesizing Unit <PeakFinder>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd".
+WARNING:Xst:647 - Input <trig_types<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 10-bit register for signal <trigger_address>.
     Found 1-bit register for signal <clearManualTrigSig>.
+    Found 16-bit adder for signal <combinedSampleDelay$add0000> created at line 104.
+    Found 1-bit register for signal <extTrigLatched>.
+    Found 1-bit register for signal <lastExtTrigState>.
     Found 1-bit register for signal <new_trigger_sig>.
-    Found 16-bit comparator greatequal for signal <new_trigger_sig$cmp_ge0000> created at line 139.
-    Found 16-bit comparator less for signal <new_trigger_sig$cmp_lt0000> created at line 139.
+    Found 17-bit comparator greatequal for signal <new_trigger_sig$cmp_ge0000> created at line 189.
+    Found 17-bit comparator less for signal <new_trigger_sig$cmp_lt0000> created at line 189.
     Found 10-bit up counter for signal <ramAddress>.
-    Found 16-bit up counter for signal <samplesSinceTrig>.
+    Found 17-bit up counter for signal <samplesSinceTrig>.
     Found 1-bit register for signal <trigger_active>.
-    Found 8-bit comparator greater for signal <trigger_active$cmp_gt0000> created at line 113.
-    Found 8-bit comparator greater for signal <trigger_active$cmp_gt0001> created at line 113.
-    Found 8-bit comparator greater for signal <trigger_active$cmp_gt0002> created at line 113.
-    Found 8-bit comparator greater for signal <trigger_active$cmp_gt0003> created at line 113.
-    Found 8-bit comparator greater for signal <trigger_active$cmp_gt0004> created at line 113.
-    Found 8-bit comparator greater for signal <trigger_active$cmp_gt0005> created at line 113.
-    Found 8-bit comparator greater for signal <trigger_active$cmp_gt0006> created at line 113.
-    Found 8-bit comparator greater for signal <trigger_active$cmp_gt0007> created at line 113.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0000> created at line 155.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0001> created at line 155.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0002> created at line 155.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0003> created at line 155.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0004> created at line 155.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0005> created at line 155.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0006> created at line 155.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0007> created at line 155.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0000> created at line 148.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0001> created at line 148.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0002> created at line 148.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0003> created at line 148.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0004> created at line 148.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0005> created at line 148.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0006> created at line 148.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0007> created at line 148.
     Found 1-bit register for signal <triggered>.
     Summary:
 	inferred   2 Counter(s).
-	inferred  14 D-type flip-flop(s).
-	inferred  10 Comparator(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 Comparator(s).
 Unit <PeakFinder> synthesized.
 
 
@@ -1618,7 +1641,6 @@ Unit <ethernet_interface> synthesized.
 Synthesizing Unit <TOP_LEVEL>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf".
 WARNING:Xst:653 - Signal <trig_debug<63:32>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
-WARNING:Xst:646 - Signal <rx_data<63:57>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<31:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <psi_status<55:13>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000.
@@ -1660,12 +1682,12 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 31
+# Adders/Subtractors                                   : 33
  10-bit adder                                          : 3
- 10-bit subtractor                                     : 1
+ 10-bit subtractor                                     : 2
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
- 16-bit adder                                          : 2
+ 16-bit adder                                          : 3
  16-bit subtractor                                     : 5
  17-bit adder                                          : 2
  3-bit adder                                           : 2
@@ -1675,7 +1697,8 @@ Macro Statistics
  8-bit subtractor                                      : 2
 # Counters                                             : 13
  10-bit up counter                                     : 1
- 16-bit up counter                                     : 2
+ 16-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
  2-bit down counter                                    : 1
  3-bit up counter                                      : 1
  32-bit up counter                                     : 1
@@ -1684,8 +1707,8 @@ Macro Statistics
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 1
-# Registers                                            : 697
- 1-bit register                                        : 605
+# Registers                                            : 700
+ 1-bit register                                        : 607
  10-bit register                                       : 3
  11-bit register                                       : 8
  16-bit register                                       : 6
@@ -1696,22 +1719,23 @@ Macro Statistics
  4-bit register                                        : 1
  40-bit register                                       : 1
  48-bit register                                       : 2
- 64-bit register                                       : 4
+ 64-bit register                                       : 5
  8-bit register                                        : 59
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
  4-bit latch                                           : 1
  8-bit latch                                           : 1
-# Comparators                                          : 35
+# Comparators                                          : 43
  10-bit comparator equal                               : 2
  10-bit comparator not equal                           : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator greatequal                          : 1
- 16-bit comparator less                                : 2
+ 16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
+ 17-bit comparator greatequal                          : 1
  17-bit comparator greater                             : 1
+ 17-bit comparator less                                : 1
  32-bit comparator equal                               : 1
  34-bit comparator greatequal                          : 1
  34-bit comparator less                                : 1
@@ -1723,7 +1747,9 @@ Macro Statistics
  6-bit comparator less                                 : 1
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
- 8-bit comparator greater                              : 9
+ 8-bit comparator greatequal                           : 8
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 8
  9-bit comparator greatequal                           : 1
 # Multiplexers                                         : 7
  32-bit 4-to-1 multiplexer                             : 4
@@ -2099,21 +2125,78 @@ WARNING:Xst:1290 - Hierarchical block <genDbgCRC[0].crcGenDebug> is unconnected 
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6331> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
-WARNING:Xst:1293 - FF/Latch <add_sig_16> has a constant value of 0 in block <ChecksumCalcBlock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <test_data_0> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <test_data_1> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <test_data_2> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <test_data_3> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <test_data_7> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <tx_er> (without init value) has a constant value of 0 in block <crcSplice>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_45> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_44> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_43> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_42> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_41> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_40> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_39> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_38> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_37> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_36> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_35> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_34> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_33> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_32> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_31> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_30> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_29> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_28> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_63> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_62> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_61> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_60> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_59> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_58> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_57> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_56> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_55> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_54> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_53> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_52> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_51> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_50> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_49> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_48> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_47> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_46> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_9> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_8> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_7> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_6> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_5> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_4> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_3> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_2> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_1> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <internal_eth_dout_48> (without init value) has a constant value of 0 in block <XLXI_6227>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <ram_wdata_57> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_58> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_59> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_60> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_61> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_62> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_63> of sequential type is unconnected in block <RAM_COMM_DEC>.
+WARNING:Xst:1710 - FF/Latch <tx_er> (without init value) has a constant value of 0 in block <crcSplice>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <test_data_7> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <test_data_3> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <test_data_2> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <test_data_1> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <test_data_0> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <add_sig_16> has a constant value of 0 in block <ChecksumCalcBlock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_27> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_26> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_25> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_24> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_23> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_22> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_21> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_20> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_19> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_18> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_17> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_16> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_15> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_14> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_13> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_12> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_11> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_data_10> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_6> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
@@ -2121,12 +2204,12 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 8
-# Adders/Subtractors                                   : 31
+# Adders/Subtractors                                   : 33
  10-bit adder                                          : 3
- 10-bit subtractor                                     : 1
+ 10-bit subtractor                                     : 2
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
- 16-bit adder                                          : 2
+ 16-bit adder                                          : 3
  16-bit subtractor                                     : 5
  17-bit adder                                          : 2
  3-bit adder                                           : 2
@@ -2136,7 +2219,8 @@ Macro Statistics
  8-bit subtractor                                      : 2
 # Counters                                             : 13
  10-bit up counter                                     : 1
- 16-bit up counter                                     : 2
+ 16-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
  2-bit down counter                                    : 1
  3-bit up counter                                      : 1
  32-bit up counter                                     : 1
@@ -2145,22 +2229,23 @@ Macro Statistics
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 1
-# Registers                                            : 1974
- Flip-Flops                                            : 1974
+# Registers                                            : 2047
+ Flip-Flops                                            : 2047
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
  4-bit latch                                           : 1
  8-bit latch                                           : 1
-# Comparators                                          : 35
+# Comparators                                          : 43
  10-bit comparator equal                               : 2
  10-bit comparator not equal                           : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator greatequal                          : 1
- 16-bit comparator less                                : 2
+ 16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
+ 17-bit comparator greatequal                          : 1
  17-bit comparator greater                             : 1
+ 17-bit comparator less                                : 1
  32-bit comparator equal                               : 1
  34-bit comparator greatequal                          : 1
  34-bit comparator less                                : 1
@@ -2172,7 +2257,9 @@ Macro Statistics
  6-bit comparator less                                 : 1
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
- 8-bit comparator greater                              : 9
+ 8-bit comparator greatequal                           : 8
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 8
  9-bit comparator greatequal                           : 1
 # Multiplexers                                         : 7
  32-bit 4-to-1 multiplexer                             : 4
@@ -2192,6 +2279,70 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1989 - Unit <TOP_LEVEL>: instances <XLXI_6124>, <XLXI_6126> of unit <buffer_10bit> are equivalent, second instance is removed
+WARNING:Xst:1710 - FF/Latch <b_data_32> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_33> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_34> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_35> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_36> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_37> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_38> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_39> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_40> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_41> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_42> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_43> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_44> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_45> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_46> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_47> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_48> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_49> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_50> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_51> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_52> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_53> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_54> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_55> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_56> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_57> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_58> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_59> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_60> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_61> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_62> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_63> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_0> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_1> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_2> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_3> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_4> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_5> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_6> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_7> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_8> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_9> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_10> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_11> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_12> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_13> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_14> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_15> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_16> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_17> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_18> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_19> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_20> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_21> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_22> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_23> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_24> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_25> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_26> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_27> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_28> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_29> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_30> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_data_31> (without init value) has a constant value of 0 in block <data_send>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <add_sig_16> has a constant value of 0 in block <ip_checksum_calc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_1> (without init value) has a constant value of 0 in block <create_packet>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_data_2> (without init value) has a constant value of 0 in block <create_packet>. This FF/Latch will be trimmed during the optimization process.
@@ -2200,828 +2351,84 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_data_6> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_data_7> (without init value) has a constant value of 0 in block <create_packet>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_0> (without init value) has a constant value of 0 in block <create_packet>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <internal_eth_dout_48> (without init value) has a constant value of 0 in block <ethernet_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <tx_data_count_0> (without init value) has a constant value of 0 in block <tx_seq_ctl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <user_tx_size_in_0> (without init value) has a constant value of 0 in block <tx_seq_ctl>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:1901 - Instance XLXI_3410 in unit TOP_LEVEL of type DCM_BASE has been replaced by DCM_ADV
-INFO:Xst:1901 - Instance XLXI_5949 in unit TOP_LEVEL of type DCM_BASE has been replaced by DCM_ADV
-INFO:Xst:1901 - Instance XLXI_5953 in unit TOP_LEVEL of type DCM_BASE has been replaced by DCM_ADV
-INFO:Xst:1901 - Instance XLXI_5963 in unit TOP_LEVEL of type DCM_BASE has been replaced by DCM_ADV
-INFO:Xst:1901 - Instance XLXI_6199 in unit TOP_LEVEL of type DCM_BASE has been replaced by DCM_ADV
-INFO:Xst:2261 - The FF/Latch <UDP_length_0> in Unit <create_packet> is equivalent to the following FF/Latch, which will be removed : <IP_length_0> 
-INFO:Xst:2261 - The FF/Latch <UDP_length_1> in Unit <create_packet> is equivalent to the following FF/Latch, which will be removed : <IP_length_1> 
 
-Optimizing unit <TOP_LEVEL> ...
-
-Optimizing unit <VERSION_BLK> ...
-
-Optimizing unit <buffer_10bit> ...
-
-Optimizing unit <MII_100_1000_handler> ...
-
-Optimizing unit <or33> ...
-
-Optimizing unit <dataout_mux> ...
-
-Optimizing unit <user_addrs_mux> ...
-
-Optimizing unit <MUX64_8> ...
-
-Optimizing unit <trigger_recv_blk> ...
-
-Optimizing unit <data_send> ...
-
-Optimizing unit <PeakFinder> ...
-
-Optimizing unit <burst_traffic_controller> ...
-
-Optimizing unit <reset_mgr> ...
-
-Optimizing unit <crc_chk> ...
-
-Optimizing unit <crc_gen> ...
-
-Optimizing unit <crc_splice> ...
-
-Optimizing unit <address_container> ...
-
-Optimizing unit <arp_reply> ...
-
-Optimizing unit <ip_checksum_calc> ...
-
-Optimizing unit <create_packet> ...
-
-Optimizing unit <decipherer> ...
-WARNING:Xst:1710 - FF/Latch <udp_zeros_5> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_6> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_7> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_8> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_9> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_10> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <udp_zeros_5> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_6> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_7> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_8> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_9> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_zeros_10> (without init value) has a constant value of 0 in block <decipherer>. This FF/Latch will be trimmed during the optimization process.
-
-Optimizing unit <filter_data_out> ...
-
-Optimizing unit <icmp_ping_checksum_calc> ...
-
-Optimizing unit <icmp_ping_shift_reg> ...
-
-Optimizing unit <udp_data_splicer> ...
-
-Optimizing unit <burst_controller_sm> ...
-
-Optimizing unit <rx_ctl> ...
-
-Optimizing unit <ram_comm_dec> ...
-
-Optimizing unit <tx_seq_ctl> ...
-
-Optimizing unit <D4_16E_MXILINX_TOP_LEVEL> ...
-
-Optimizing unit <M2_1_MXILINX_TOP_LEVEL> ...
-
-Optimizing unit <FD16RE_MXILINX_TOP_LEVEL> ...
-
-Optimizing unit <FD8RE_MXILINX_TOP_LEVEL> ...
-
-Optimizing unit <ClockLatchSignals> ...
-
-Optimizing unit <data_manager> ...
-
-Optimizing unit <ethernet_controller> ...
-
-Optimizing unit <ethernet_controller_wrapper> ...
-
-Optimizing unit <ethernet_interface> ...
-WARNING:Xst:1710 - FF/Latch <tx_er> (without init value) has a constant value of 0 in block <crcSplice>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1290 - Hierarchical block <XLXI_6331> is unconnected in block <TOP_LEVEL>.
-   It will be removed from the design.
-WARNING:Xst:2677 - Node <ram_wdata_57> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_58> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_59> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_60> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_61> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_62> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <ram_wdata_63> of sequential type is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:2677 - Node <tmp_rd_sig> of sequential type is unconnected in block <ec_wrapper>.
-WARNING:Xst:2677 - Node <tmp_cnt_0> of sequential type is unconnected in block <ec_wrapper>.
-WARNING:Xst:2677 - Node <tmp_cnt_1> of sequential type is unconnected in block <ec_wrapper>.
-WARNING:Xst:1290 - Hierarchical block <genDbgCRC[0].crcGenDebug> is unconnected in block <ec_wrapper>.
-   It will be removed from the design.
-WARNING:Xst:2677 - Node <Counter_0> of sequential type is unconnected in block <crcGen>.
-WARNING:Xst:2677 - Node <Counter_1> of sequential type is unconnected in block <crcGen>.
-WARNING:Xst:2677 - Node <Counter_2> of sequential type is unconnected in block <crcGen>.
-WARNING:Xst:2677 - Node <Counter_3> of sequential type is unconnected in block <crcGen>.
-WARNING:Xst:2677 - Node <dest_mac_46> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_47> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_0> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_1> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_3> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_2> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_4> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_5> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_6> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_0> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_7> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_1> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_2> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_8> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_9> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_3> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_4> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_5> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_6> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_7> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_8> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_9> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_10> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_11> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_12> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_13> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_14> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_20> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_15> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_16> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_21> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_17> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_22> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_23> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_18> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_24> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_19> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_30> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_25> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_26> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_31> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_27> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_28> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_0> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <arp_search_ip_29> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_1> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_2> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_3> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_4> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_5> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_6> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_7> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_8> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_9> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_10> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_11> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_10> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_12> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_11> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_13> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_12> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_14> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_13> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_15> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_20> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_14> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_dest_port_15> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_21> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_16> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_22> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_17> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_18> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_23> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_19> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_24> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_25> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_30> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_31> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_26> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_27> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_32> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_33> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_28> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_29> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_34> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_40> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_35> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_36> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_41> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_37> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_42> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_43> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_38> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_44> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_39> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <dest_mac_45> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <is_idle> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_0> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_1> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_2> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_3> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_4> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_5> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_6> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_7> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_8> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_9> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:2677 - Node <udp_data_count_10> of sequential type is unconnected in block <DecipherBlock>.
-
-Mapping all equations...
-Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 31.
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <RX_SRC_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_ADDR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd2 has been replicated 1 time(s)
-
-Final Macro Processing ...
-
-Processing Unit <ICMPPingShiftRegBlock> :
-	Found 44-bit shift register for signal <shReg_43_0>.
-	Found 44-bit shift register for signal <shReg_43_1>.
-	Found 44-bit shift register for signal <shReg_43_2>.
-	Found 44-bit shift register for signal <shReg_43_3>.
-	Found 44-bit shift register for signal <shReg_43_4>.
-	Found 44-bit shift register for signal <shReg_43_5>.
-	Found 44-bit shift register for signal <shReg_43_6>.
-	Found 44-bit shift register for signal <shReg_43_7>.
-Unit <ICMPPingShiftRegBlock> processed.
-
-=========================================================================
-Final Register Report
-
-Macro Statistics
-# Registers                                            : 1627
- Flip-Flops                                            : 1627
-# Shift Registers                                      : 8
- 44-bit shift register                                 : 8
-
-=========================================================================
-
-=========================================================================
-*                           Partition Report                            *
-=========================================================================
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-=========================================================================
-*                            Final Report                               *
-=========================================================================
-Final Results
-RTL Top Level Output File Name     : TOP_LEVEL.ngr
-Top Level Output File Name         : TOP_LEVEL
-Output Format                      : NGC
-Optimization Goal                  : Speed
-Keep Hierarchy                     : Yes
-
-Design Statistics
-# IOs                              : 81
-
-Cell Usage :
-# BELS                             : 5919
-#      AND2                        : 5
-#      AND2B1                      : 4
-#      AND5                        : 1
-#      AND5B1                      : 4
-#      AND5B2                      : 6
-#      AND5B3                      : 4
-#      AND5B4                      : 1
-#      BUF                         : 5
-#      GND                         : 28
-#      INV                         : 180
-#      LUT1                        : 221
-#      LUT2                        : 515
-#      LUT2_D                      : 37
-#      LUT2_L                      : 26
-#      LUT3                        : 1086
-#      LUT3_D                      : 27
-#      LUT3_L                      : 73
-#      LUT4                        : 1827
-#      LUT4_D                      : 77
-#      LUT4_L                      : 300
-#      MUXCY                       : 853
-#      MUXF5                       : 136
-#      MUXF6                       : 40
-#      OR2                         : 4
-#      VCC                         : 26
-#      XOR2                        : 2
-#      XORCY                       : 431
-# FlipFlops/Latches                : 2229
-#      FD                          : 119
-#      FDC                         : 58
-#      FDCE                        : 97
-#      FDE                         : 536
-#      FDP                         : 18
-#      FDPE                        : 6
-#      FDR                         : 154
-#      FDRE                        : 1109
-#      FDRS                        : 19
-#      FDRSE                       : 1
-#      FDS                         : 16
-#      FDSE                        : 96
-# RAMS                             : 207
-#      RAM16X1D                    : 192
-#      RAMB16                      : 15
-# Shift Registers                  : 24
-#      SRL16E                      : 8
-#      SRLC16E                     : 16
-# Clock Buffers                    : 12
-#      BUFG                        : 12
-# IO Buffers                       : 60
-#      IBUF                        : 12
-#      IBUFDS                      : 20
-#      IBUFG                       : 2
-#      IBUFGDS                     : 1
-#      OBUF                        : 25
-# DCM_ADVs                         : 5
-#      DCM_ADV                     : 5
-# Others                           : 2
-#      IDELAY                      : 1
-#      IDELAYCTRL                  : 1
-=========================================================================
-
-Device utilization summary:
----------------------------
-
-Selected Device : 4vlx25ff668-10 
-
- Number of Slices:                     3037  out of  10752    28%  
- Number of Slice Flip Flops:           2229  out of  21504    10%  
- Number of 4 input LUTs:               4777  out of  21504    22%  
-    Number used as logic:              4369
-    Number used as Shift registers:      24
-    Number used as RAMs:                384
- Number of IOs:                          81
- Number of bonded IOBs:                  81  out of    448    18%  
- Number of FIFO16/RAMB16s:               15  out of     72    20%  
-    Number used as RAMB16s:              15
- Number of GCLKs:                        12  out of     32    37%  
- Number of DCM_ADVs:                      5  out of      8    62%  
-
----------------------------
-Partition Resource Summary:
----------------------------
-
-  No Partitions were found in this design.
-
----------------------------
-
-
-=========================================================================
-TIMING REPORT
-
-NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
-      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
-      GENERATED AFTER PLACE-and-ROUTE.
-
-Clock Information:
-------------------
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2375  |
-BUSBHS_02DP_04S                    | XLXI_6199:CLK0                                                                                                                    | 69    |
-XLXI_6380/N1                       | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 4     |
-SECONDARY_CLK                      | IBUFG                                                                                                                             | 18    |
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
-
-Asynchronous Control Signals Information:
-----------------------------------------
---------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-Control Signal                                                                                                      | Buffer(FF name)                                                                                                                   | Load  |
---------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND:G)          | NONE(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                       | 40    |
-XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_GND:G)          | NONE(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                       | 40    |
-XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND:G)          | NONE(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                       | 40    |
-XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_GND:G)| NONE(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                  | 22    |
-XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_GND:G)| NONE(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                  | 22    |
-XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND:G)| NONE(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                  | 22    |
-XLXI_6341/N0(XLXI_6341/XST_GND:G)                                                                                   | NONE(XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0)                                 | 18    |
-XLXI_6380/N1(XLXI_6380/XST_GND:G)                                                                                   | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 16    |
-XLXI_6349/clearManualTrigSig(XLXI_6349/clearManualTrigSig:Q)                                                        | NONE(XLXI_6396)                                                                                                                   | 1     |
---------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-
-Timing Summary:
----------------
-Speed Grade: -10
-
-   Minimum period: 7.674ns (Maximum Frequency: 130.307MHz)
-   Minimum input arrival time before clock: 6.278ns
-   Maximum output required time after clock: 6.346ns
-   Maximum combinational path delay: 5.299ns
-
-Timing Detail:
---------------
-All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 0.742ns (frequency: 1347.800MHz)
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              0.742ns (Levels of Logic = 0)
-  Source:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_0 (FF)
-  Destination:       XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0 (FF)
-  Source Clock:      GEL_RXCLK rising
-  Destination Clock: BUSBHS_02DP_04S rising
-
-  Data Path: XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_0 to XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.360   0.360  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_0 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<0>)
-     FD:D                      0.022          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0
-    ----------------------------------------
-    Total                      0.742ns (0.382ns logic, 0.360ns route)
-                                       (51.5% logic, 48.5% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
-  Clock period: 0.742ns (frequency: 1347.800MHz)
-  Total number of paths / destination ports: 10 / 10
--------------------------------------------------------------------------
-Offset:              0.742ns (Levels of Logic = 0)
-  Source:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0 (FF)
-  Destination:       XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0 (FF)
-  Source Clock:      BUSBHS_02DP_04S rising
-  Destination Clock: GEL_RXCLK rising
-
-  Data Path: XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0 to XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              1   0.360   0.360  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<0>)
-     FD:D                      0.022          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0
-    ----------------------------------------
-    Total                      0.742ns (0.382ns logic, 0.360ns route)
-                                       (51.5% logic, 48.5% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 7.674ns (frequency: 130.307MHz)
-  Total number of paths / destination ports: 2007 / 1729
--------------------------------------------------------------------------
-Offset:              7.674ns (Levels of Logic = 5)
-  Source:            XLXI_6227/reset_mgr/reset (FF)
-  Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
-  Source Clock:      SECONDARY_CLK rising
-  Destination Clock: GEL_RXCLK rising
-
-  Data Path: XLXI_6227/reset_mgr/reset to XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDS:C->Q            130   0.360   1.311  reset (reset)
-     end scope: 'reset_mgr'
-     BUF:I->O            480   0.358   2.842  reset_mgr_reset_1 (reset_mgr_reset_1)
-     begin scope: 'data_manager_blk'
-     LUT2:I1->O           38   0.195   1.279  tx_ctrl_fifo_reset_sig1 (tx_ctrl_fifo_reset_sig)
-     begin scope: 'TX_CTRL_FIFO'
-     begin scope: 'BU2'
-     LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
-     FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
-    ----------------------------------------
-    Total                      7.674ns (1.648ns logic, 6.026ns route)
-                                       (21.5% logic, 78.5% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 2.913ns (frequency: 343.253MHz)
-  Total number of paths / destination ports: 18 / 18
--------------------------------------------------------------------------
-Offset:              2.913ns (Levels of Logic = 2)
-  Source:            XLXI_6227/internal_reset (FF)
-  Destination:       XLXI_6227/reset_mgr/cnt_0 (FF)
-  Source Clock:      GEL_RXCLK rising
-  Destination Clock: SECONDARY_CLK rising
-
-  Data Path: XLXI_6227/internal_reset to XLXI_6227/reset_mgr/cnt_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               3   0.360   0.703  internal_reset (internal_reset)
-     begin scope: 'reset_mgr'
-     LUT3:I0->O           16   0.195   0.593  cnt_and00001 (cnt_and0000)
-     FDRE:R                    1.062          cnt_0
-    ----------------------------------------
-    Total                      2.913ns (1.617ns logic, 1.296ns route)
-                                       (55.5% logic, 44.5% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 7.271ns (frequency: 137.537MHz)
-  Total number of paths / destination ports: 107022 / 6855
--------------------------------------------------------------------------
-Delay:               7.271ns (Levels of Logic = 14)
-  Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
-  Destination:       XLXI_6398 (FF)
-  Source Clock:      GEL_RXCLK rising
-  Destination Clock: GEL_RXCLK rising
-
-  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 to XLXI_6398
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              3   0.360   0.756  ram_addr_sig_53 (ram_addr_sig_53)
-     end scope: 'RAM_COMM_DEC'
-     end scope: 'data_manager_blk'
-     LUT4:I0->O            1   0.195   0.000  ots_user_mask_cmp_eq00001_wg_lut<1> (ots_user_mask_cmp_eq00001_wg_lut<1>)
-     MUXCY:S->O            1   0.366   0.000  ots_user_mask_cmp_eq00001_wg_cy<1> (ots_user_mask_cmp_eq00001_wg_cy<1>)
-     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<2> (ots_user_mask_cmp_eq00001_wg_cy<2>)
-     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<3> (ots_user_mask_cmp_eq00001_wg_cy<3>)
-     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<4> (ots_user_mask_cmp_eq00001_wg_cy<4>)
-     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
-     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<6> (ots_user_mask_cmp_eq00001_wg_cy<6>)
-     MUXCY:CI->O          97   0.370   1.345  ots_user_mask_cmp_eq00001_wg_cy<7> (ots_user_mask_cmp_eq00001_wg_cy<7>)
-     LUT3:I2->O            1   0.195   0.688  rx_wren1 (rx_wren)
-     end scope: 'XLXI_6227'
-     AND2B1:I1->O         16   0.195   0.818  XLXI_4697 (XLXN_12617)
-     begin scope: 'XLXI_3432'
-     AND5B2:I2->O         57   0.195   1.026  I_36_63 (D5)
-     end scope: 'XLXI_3432'
-     FDRE:CE                   0.540          XLXI_6398
-    ----------------------------------------
-    Total                      7.271ns (2.638ns logic, 4.633ns route)
-                                       (36.3% logic, 63.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
-  Clock period: 2.940ns (frequency: 340.177MHz)
-  Total number of paths / destination ports: 273 / 119
--------------------------------------------------------------------------
-Delay:               2.940ns (Levels of Logic = 6)
-  Source:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 (FF)
-  Destination:       XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (FF)
-  Source Clock:      BUSBHS_02DP_04S rising
-  Destination Clock: BUSBHS_02DP_04S rising
-
-  Data Path: XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 to XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.360   0.758  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin<1>)
-     LUT4:I0->O            1   0.195   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/v1_1_and00001 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/v1<1>)
-     MUXCY:S->O            1   0.366   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[1].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/carrynet<1>)
-     MUXCY:CI->O           1   0.044   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[2].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/carrynet<2>)
-     MUXCY:CI->O           1   0.044   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[3].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/carrynet<3>)
-     MUXCY:CI->O           1   0.369   0.585  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[4].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/comp1)
-     LUT3:I1->O            2   0.195   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_or00001 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_mux0000)
-     FD:D                      0.022          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
-    ----------------------------------------
-    Total                      2.940ns (1.596ns logic, 1.343ns route)
-                                       (54.3% logic, 45.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 4.543ns (frequency: 220.095MHz)
-  Total number of paths / destination ports: 615 / 49
--------------------------------------------------------------------------
-Delay:               4.543ns (Levels of Logic = 5)
-  Source:            XLXI_6227/reset_mgr/cnt_7 (FF)
-  Destination:       XLXI_6227/reset_mgr/cnt_0 (FF)
-  Source Clock:      SECONDARY_CLK rising
-  Destination Clock: SECONDARY_CLK rising
-
-  Data Path: XLXI_6227/reset_mgr/cnt_7 to XLXI_6227/reset_mgr/cnt_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDRE:C->Q             2   0.360   0.758  cnt_7 (cnt_7)
-     LUT4:I0->O            1   0.195   0.000  Mcompar_cnt_cmp_lt0000_lut<3> (Mcompar_cnt_cmp_lt0000_lut<3>)
-     MUXCY:S->O            1   0.366   0.000  Mcompar_cnt_cmp_lt0000_cy<3> (Mcompar_cnt_cmp_lt0000_cy<3>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_cnt_cmp_lt0000_cy<4> (Mcompar_cnt_cmp_lt0000_cy<4>)
-     MUXCY:CI->O           3   0.369   0.600  Mcompar_cnt_cmp_lt0000_cy<5> (Mcompar_cnt_cmp_lt0000_cy<5>)
-     LUT3:I1->O           16   0.195   0.593  cnt_and00001 (cnt_and0000)
-     FDRE:R                    1.062          cnt_0
-    ----------------------------------------
-    Total                      4.543ns (2.592ns logic, 1.951ns route)
-                                       (57.0% logic, 43.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'BUSBHS_02DP_04S'
-  Total number of paths / destination ports: 32 / 16
--------------------------------------------------------------------------
-Offset:              1.555ns (Levels of Logic = 2)
-  Source:            BUSB_00DP_00S (PAD)
-  Destination:       XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
-  Destination Clock: BUSBHS_02DP_04S rising
-
-  Data Path: BUSB_00DP_00S to XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUFDS:I->O           1   0.965   0.360  XLXI_6074 (fadc_data_in<7>)
-     begin scope: 'XLXI_6341'
-     RAMB16:DIA7               0.230          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
-    ----------------------------------------
-    Total                      1.555ns (1.195ns logic, 0.360ns route)
-                                       (76.9% logic, 23.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GEL_RXCLK'
-  Total number of paths / destination ports: 922 / 351
--------------------------------------------------------------------------
-Offset:              6.278ns (Levels of Logic = 11)
-  Source:            BUSC_17DP_34S (PAD)
-  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7 (FF)
-  Destination Clock: GEL_RXCLK rising
-
-  Data Path: BUSC_17DP_34S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             7   0.965   0.744  XLXI_4220 (GMII_RXD_0_sig<1>)
-     begin scope: 'XLXI_6227'
-     begin scope: 'ec_wrapper'
-     begin scope: 'xgmii'
-     end scope: 'xgmii'
-     begin scope: 'ethernet_controller'
-     begin scope: 'DecipherBlock'
-     LUT3:I0->O            1   0.195   0.741  Sreg0_FSM_FFd7-In11_SW0_SW0 (N103)
-     LUT4_D:I0->O          1   0.195   0.523  Sreg0_FSM_FFd7-In11 (N179)
-     LUT3:I2->O            2   0.195   0.377  Sreg0_FSM_FFd7-In271 (Sreg0_FSM_FFd7-In271)
-     MUXF5:S->O            1   0.527   0.523  Sreg0_FSM_FFd7-In2751_SW0 (N92)
-     LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In55 (Sreg0_FSM_FFd7-In55)
-     LUT4:I3->O            1   0.195   0.523  Sreg0_FSM_FFd7-In173 (Sreg0_FSM_FFd7-In173)
-     LUT4:I3->O            1   0.195   0.000  Sreg0_FSM_FFd7-In4311 (Sreg0_FSM_FFd7-In)
-     FDRE:D                    0.022          Sreg0_FSM_FFd7
-    ----------------------------------------
-    Total                      6.278ns (2.684ns logic, 3.594ns route)
-                                       (42.8% logic, 57.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GEL_RXCLK'
-  Total number of paths / destination ports: 12 / 12
--------------------------------------------------------------------------
-Offset:              4.694ns (Levels of Logic = 2)
-  Source:            XLXI_6185/trig (FF)
-  Destination:       INTERNAL_08DN_17S (PAD)
-  Source Clock:      GEL_RXCLK rising
-
-  Data Path: XLXI_6185/trig to INTERNAL_08DN_17S
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              2   0.360   0.377  trig (trig)
-     end scope: 'XLXI_6185'
-     OBUF:I->O                 3.957          XLXI_6146 (INTERNAL_08DN_17S)
-    ----------------------------------------
-    Total                      4.694ns (4.317ns logic, 0.377ns route)
-                                       (92.0% logic, 8.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              6.346ns (Levels of Logic = 3)
-  Source:            XLXI_6227/reset_mgr/reset (FF)
-  Destination:       BUSC_21DN_43S (PAD)
-  Source Clock:      SECONDARY_CLK rising
-
-  Data Path: XLXI_6227/reset_mgr/reset to BUSC_21DN_43S
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDS:C->Q            130   0.360   1.311  reset (reset)
-     end scope: 'reset_mgr'
-     end scope: 'XLXI_6227'
-     INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
-     OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
-    ----------------------------------------
-    Total                      6.346ns (4.675ns logic, 1.671ns route)
-                                       (73.7% logic, 26.3% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Delay:               5.299ns (Levels of Logic = 2)
-  Source:            BUSA_30DP_60S (PAD)
-  Destination:       INTERNAL_08DP_16S (PAD)
-
-  Data Path: BUSA_30DP_60S to INTERNAL_08DP_16S
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUFDS:I->O           2   0.965   0.377  XLXI_6140 (scin_0)
-     OBUF:I->O                 3.957          XLXI_6144 (INTERNAL_08DP_16S)
-    ----------------------------------------
-    Total                      5.299ns (4.922ns logic, 0.377ns route)
-                                       (92.9% logic, 7.1% route)
-
-=========================================================================
-
-
-Total REAL time to Xst completion: 64.00 secs
-Total CPU time to Xst completion: 63.72 secs
+ERROR:Xst:528 - Multi-source in Unit <data_send> on signal <data_in<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output port RAMB16:DOA0 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA9 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA15 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA6 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA13 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA4 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA11 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA2 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA3 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA4 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA8 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA9 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA10 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA11 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA12 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA12 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA13 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA14 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA15 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOPA1 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA0 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA1 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA5 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA6 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA7 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOPA0 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA8 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA9 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA10 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA14 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA15 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOPA1 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA0 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA1 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA2 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA3 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA7 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOPA0 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA8 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA9 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA10 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA11 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA12 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOPA1 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA0 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA1 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA2 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA3 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA4 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA5 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOPA0 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA8 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA10 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA11 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA12 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA13 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA14 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA1 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA2 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA3 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA4 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA5 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA6 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Output port RAMB16:DOA7 of instance <XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP>
+   Signal <XLXI_6253/N0> in Unit <data_send> is assigned to GND
+
+
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 28.15 secs
  
 --> 
 
-Total memory usage is 662592 kilobytes
+Total memory usage is 680256 kilobytes
 
-Number of errors   :    0 (   0 filtered)
-Number of warnings :  286 (   0 filtered)
-Number of infos    :  126 (   0 filtered)
+Number of errors   :    1 (   0 filtered)
+Number of warnings :  270 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
 

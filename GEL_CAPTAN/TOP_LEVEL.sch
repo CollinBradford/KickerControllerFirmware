@@ -685,7 +685,7 @@
             <rect width="400" x="64" y="-320" height="1216" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2017-9-11T18:25:24</timestamp>
+            <timestamp>2017-9-14T19:53:31</timestamp>
             <rect width="64" x="0" y="532" height="24" />
             <line x2="0" y1="544" y2="544" x1="64" />
             <line x2="0" y1="160" y2="160" x1="64" />
@@ -1760,10 +1760,10 @@
             <blockpin signalname="ram_addr(9:0)" name="ram_addr(9:0)" />
             <blockpin signalname="user_sample_size(15:0)" name="user_sample_size(15:0)" />
             <blockpin signalname="user_pretrig_sample_size(15:0)" name="user_pretrig_sample_size(15:0)" />
+            <blockpin signalname="user_positive_delay(15:0)" name="user_positive_delay(15:0)" />
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="b_force_packet" name="b_force_packet" />
             <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
-            <blockpin signalname="user_positive_delay(15:0)" name="user_positive_delay(15:0)" />
         </block>
         <block symbolname="fd16re" name="XLXI_6394">
             <blockpin signalname="MASTER_CLK" name="C" />
