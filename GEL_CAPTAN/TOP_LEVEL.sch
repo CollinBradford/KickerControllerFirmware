@@ -264,10 +264,7 @@
         <signal name="U10_2" />
         <signal name="user_positive_delay(15:0)" />
         <signal name="rx_data(55:40)" />
-        <signal name="XLXN_15801" />
-        <signal name="lat_ext_trig" />
         <signal name="trig_types(7:0)" />
-        <signal name="ext_lat_trig" />
         <signal name="rx_data(63:56)" />
         <signal name="rx_data(0:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
@@ -758,13 +755,6 @@
             <line x2="64" y1="-128" y2="-144" x1="80" />
             <line x2="192" y1="-64" y2="-32" x1="192" />
             <line x2="64" y1="-32" y2="-32" x1="192" />
-            <rect width="256" x="64" y="-320" height="256" />
-        </blockdef>
-        <blockdef name="ild">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="320" y1="-256" y2="-256" x1="384" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="64" y1="-256" y2="-256" x1="0" />
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
@@ -1795,7 +1785,7 @@
             <blockpin signalname="ram_addr(9:0)" name="addr_out(9:0)" />
             <blockpin signalname="trigger_addr(9:0)" name="trigger_address(9:0)" />
             <blockpin signalname="manual_force_trig" name="manual_force_trig" />
-            <blockpin signalname="ext_lat_trig" name="ext_trig" />
+            <blockpin signalname="ext_trig" name="ext_trig" />
             <blockpin signalname="user_positive_delay(15:0)" name="user_positive_delay(15:0)" />
             <blockpin signalname="trig_types(7:0)" name="trig_types(7:0)" />
         </block>
@@ -1820,14 +1810,6 @@
             <blockpin signalname="rx_data(55:40)" name="D(15:0)" />
             <blockpin signalname="reset" name="R" />
             <blockpin signalname="user_positive_delay(15:0)" name="Q(15:0)" />
-        </block>
-        <block symbolname="ild" name="XLXI_6411">
-            <blockpin signalname="ext_trig" name="D" />
-            <blockpin signalname="XLXN_15801" name="G" />
-            <blockpin signalname="lat_ext_trig" name="Q" />
-        </block>
-        <block symbolname="vcc" name="XLXI_6412">
-            <blockpin signalname="XLXN_15801" name="P" />
         </block>
         <block symbolname="fd8re" name="XLXI_6414">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -2441,27 +2423,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2656" y="5376" type="branch" />
             <wire x2="2672" y1="5376" y2="5376" x1="2656" />
         </branch>
-        <instance x="2112" y="512" name="XLXI_6411" orien="R0" />
-        <instance x="1728" y="448" name="XLXI_6412" orien="R0" />
-        <branch name="XLXN_15801">
-            <wire x2="1792" y1="448" y2="512" x1="1792" />
-            <wire x2="1888" y1="512" y2="512" x1="1792" />
-            <wire x2="1888" y1="384" y2="512" x1="1888" />
-            <wire x2="2112" y1="384" y2="384" x1="1888" />
-        </branch>
-        <branch name="ext_trig">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="256" type="branch" />
-            <wire x2="2112" y1="256" y2="256" x1="2096" />
-        </branch>
-        <branch name="lat_ext_trig">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2512" y="256" type="branch" />
-            <wire x2="2512" y1="256" y2="256" x1="2496" />
-        </branch>
         <branch name="manual_force_trig">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2560" type="branch" />
             <wire x2="2336" y1="2560" y2="2560" x1="2320" />
         </branch>
-        <branch name="ext_lat_trig">
+        <branch name="ext_trig">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2624" type="branch" />
             <wire x2="2336" y1="2624" y2="2624" x1="2320" />
         </branch>

@@ -75,6 +75,7 @@ architecture Behavioral of PeakFinder is
 	signal combinedSampleDelay : unsigned(16 downto 0);
 	signal samplesSinceTrig : unsigned(16 downto 0);
 	signal clearManualTrigSig : std_logic;
+	signal extTrigLatched : std_logic;
 	--internal flags
 	signal new_trigger_sig : std_logic;
 	signal triggered : std_logic;--Means that a signal is over the threshold.  Sync with clk.
@@ -133,7 +134,8 @@ begin
 			if(rising_edge(clk)) then--rising edge of clk and reset is low
 				
 				ramAddress <= ramAddress + 1;
-				lastExtTrigState <= ext_trig;
+				lastExtTrigState <= extTrigLatched;
+				extTrigLatched <= ext_trig;
 				--These are the tests for each trigger state.  There is at least one if statement per trigger mode that is enabled when the 
 				--respective trigger mode is enabled.  If the trigger mode is active and the trigger state is also active, it enables the trigger_active
 				--signal and performs any resets that may be requred from the trigger.  
@@ -163,11 +165,11 @@ begin
 				--if external trigger mode is enabled 
 				if(extTrigEn = '1') then
 					--if we are triggering on the rising edge of the trigger and it actually is the rising edge
-					if(extTrigRising = '1' and lastExtTrigState = '0' and ext_trig = '1') then
+					if(extTrigRising = '1' and lastExtTrigState = '0' and extTrigLatched = '1') then
 						trigger_active <= '1';
 					end if;
 					--if we are triggering on the falling edge of the trigger and it actually is the falling edge
-					if(extTrigRising = '0' and lastExtTrigState = '1' and ext_trig = '0') then
+					if(extTrigRising = '0' and lastExtTrigState = '1' and extTrigLatched = '0') then
 						trigger_active <= '1';
 					end if;
 				end if;
