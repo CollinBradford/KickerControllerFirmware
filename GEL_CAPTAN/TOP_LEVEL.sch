@@ -254,10 +254,6 @@
         <signal name="ram_addr(9:0)" />
         <signal name="trigger_addr(9:0)" />
         <signal name="clear_manual_trig" />
-        <signal name="force_trig" />
-        <signal name="rx_data(0:0)" />
-        <signal name="rx_data(56:56)" />
-        <signal name="manual_mode" />
         <signal name="MANUAL_TRIG_MAP" />
         <signal name="U10_3" />
         <signal name="U10_1" />
@@ -268,6 +264,12 @@
         <signal name="U10_2" />
         <signal name="user_positive_delay(15:0)" />
         <signal name="rx_data(55:40)" />
+        <signal name="XLXN_15801" />
+        <signal name="lat_ext_trig" />
+        <signal name="trig_types(7:0)" />
+        <signal name="ext_lat_trig" />
+        <signal name="rx_data(63:56)" />
+        <signal name="rx_data(0:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -659,9 +661,13 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="PeakFinder">
-            <timestamp>2017-9-7T22:5:45</timestamp>
-            <line x2="0" y1="480" y2="480" x1="64" />
-            <line x2="0" y1="544" y2="544" x1="64" />
+            <timestamp>2017-9-14T16:4:5</timestamp>
+            <line x2="0" y1="608" y2="608" x1="64" />
+            <line x2="0" y1="672" y2="672" x1="64" />
+            <rect width="64" x="0" y="724" height="24" />
+            <line x2="0" y1="736" y2="736" x1="64" />
+            <rect width="64" x="0" y="788" height="24" />
+            <line x2="0" y1="800" y2="800" x1="64" />
             <line x2="528" y1="480" y2="480" x1="464" />
             <rect width="64" x="0" y="276" height="24" />
             <line x2="0" y1="288" y2="288" x1="64" />
@@ -679,7 +685,7 @@
             <line x2="528" y1="-288" y2="-288" x1="464" />
             <rect width="64" x="464" y="-44" height="24" />
             <line x2="528" y1="-32" y2="-32" x1="464" />
-            <rect width="400" x="64" y="-320" height="960" />
+            <rect width="400" x="64" y="-320" height="1216" />
         </blockdef>
         <blockdef name="data_send">
             <timestamp>2017-9-11T18:25:24</timestamp>
@@ -754,16 +760,12 @@
             <line x2="64" y1="-32" y2="-32" x1="192" />
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
-        <blockdef name="or2">
+        <blockdef name="ild">
             <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="320" y1="-256" y2="-256" x1="384" />
             <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="192" y1="-96" y2="-96" x1="256" />
-            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
-            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
-            <line x2="48" y1="-144" y2="-144" x1="112" />
-            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
-            <line x2="48" y1="-48" y2="-48" x1="112" />
+            <line x2="64" y1="-256" y2="-256" x1="0" />
+            <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
@@ -1780,25 +1782,9 @@
             <blockpin signalname="reset" name="R" />
             <blockpin signalname="user_pretrig_sample_size(15:0)" name="Q(15:0)" />
         </block>
-        <block symbolname="fdce" name="XLXI_6396">
-            <blockpin signalname="MASTER_CLK" name="C" />
-            <blockpin signalname="MANUAL_TRIG_MAP" name="CE" />
-            <blockpin signalname="clear_manual_trig" name="CLR" />
-            <blockpin signalname="rx_data(0:0)" name="D" />
-            <blockpin signalname="manual_force_trig" name="Q" />
-        </block>
-        <block symbolname="fdre" name="XLXI_6398">
-            <blockpin signalname="MASTER_CLK" name="C" />
-            <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="CE" />
-            <blockpin signalname="rx_data(56:56)" name="D" />
-            <blockpin signalname="reset" name="R" />
-            <blockpin signalname="manual_mode" name="Q" />
-        </block>
         <block symbolname="PeakFinder" name="XLXI_6349">
             <blockpin signalname="MASTER_CLK" name="clk" />
             <blockpin signalname="reset" name="reset" />
-            <blockpin signalname="manual_mode" name="manual" />
-            <blockpin signalname="force_trig" name="force_trig" />
             <blockpin signalname="fadc_fifo_data_out(63:0)" name="data_in(63:0)" />
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
             <blockpin signalname="user_sample_size(15:0)" name="user_sample_width(15:0)" />
@@ -1808,15 +1794,14 @@
             <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
             <blockpin signalname="ram_addr(9:0)" name="addr_out(9:0)" />
             <blockpin signalname="trigger_addr(9:0)" name="trigger_address(9:0)" />
+            <blockpin signalname="manual_force_trig" name="manual_force_trig" />
+            <blockpin signalname="ext_lat_trig" name="ext_trig" />
+            <blockpin signalname="user_positive_delay(15:0)" name="user_positive_delay(15:0)" />
+            <blockpin signalname="trig_types(7:0)" name="trig_types(7:0)" />
         </block>
         <block symbolname="obuf" name="XLXI_6404">
             <blockpin signalname="XLXN_15794" name="I" />
             <blockpin signalname="U10_3" name="O" />
-        </block>
-        <block symbolname="or2" name="XLXI_6405">
-            <blockpin signalname="manual_force_trig" name="I0" />
-            <blockpin signalname="ext_trig" name="I1" />
-            <blockpin signalname="force_trig" name="O" />
         </block>
         <block symbolname="gnd" name="XLXI_6406">
             <blockpin signalname="XLXN_15794" name="G" />
@@ -1835,6 +1820,28 @@
             <blockpin signalname="rx_data(55:40)" name="D(15:0)" />
             <blockpin signalname="reset" name="R" />
             <blockpin signalname="user_positive_delay(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="ild" name="XLXI_6411">
+            <blockpin signalname="ext_trig" name="D" />
+            <blockpin signalname="XLXN_15801" name="G" />
+            <blockpin signalname="lat_ext_trig" name="Q" />
+        </block>
+        <block symbolname="vcc" name="XLXI_6412">
+            <blockpin signalname="XLXN_15801" name="P" />
+        </block>
+        <block symbolname="fd8re" name="XLXI_6414">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="CE" />
+            <blockpin signalname="rx_data(63:56)" name="D(7:0)" />
+            <blockpin signalname="reset" name="R" />
+            <blockpin signalname="trig_types(7:0)" name="Q(7:0)" />
+        </block>
+        <block symbolname="fdce" name="XLXI_6396">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="MANUAL_TRIG_MAP" name="CE" />
+            <blockpin signalname="clear_manual_trig" name="CLR" />
+            <blockpin signalname="rx_data(0:0)" name="D" />
+            <blockpin signalname="manual_force_trig" name="Q" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2332,48 +2339,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1936" y="5168" type="branch" />
             <wire x2="1936" y1="5168" y2="5168" x1="1920" />
         </branch>
-        <instance x="2448" y="4992" name="XLXI_6396" orien="R0" />
-        <branch name="rx_data(0:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="4736" type="branch" />
-            <wire x2="2448" y1="4736" y2="4736" x1="2432" />
-        </branch>
-        <branch name="MANUAL_TRIG_MAP">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="4800" type="branch" />
-            <wire x2="2448" y1="4800" y2="4800" x1="2432" />
-        </branch>
-        <branch name="MASTER_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="4864" type="branch" />
-            <wire x2="2448" y1="4864" y2="4864" x1="2432" />
-        </branch>
-        <branch name="clear_manual_trig">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="4960" type="branch" />
-            <wire x2="2448" y1="4960" y2="4960" x1="2432" />
-        </branch>
-        <branch name="manual_force_trig">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2848" y="4736" type="branch" />
-            <wire x2="2848" y1="4736" y2="4736" x1="2832" />
-        </branch>
-        <instance x="1552" y="5024" name="XLXI_6398" orien="R0" />
-        <branch name="rx_data(56:56)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="4768" type="branch" />
-            <wire x2="1552" y1="4768" y2="4768" x1="1536" />
-        </branch>
-        <branch name="TRIG_ATTRIBUTES_MAP">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="4832" type="branch" />
-            <wire x2="1552" y1="4832" y2="4832" x1="1536" />
-        </branch>
-        <branch name="MASTER_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="4896" type="branch" />
-            <wire x2="1552" y1="4896" y2="4896" x1="1536" />
-        </branch>
-        <branch name="reset">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="4992" type="branch" />
-            <wire x2="1552" y1="4992" y2="4992" x1="1536" />
-        </branch>
-        <branch name="manual_mode">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1952" y="4768" type="branch" />
-            <wire x2="1952" y1="4768" y2="4768" x1="1936" />
-        </branch>
         <instance x="2336" y="1952" name="XLXI_6349" orien="R0">
         </instance>
         <branch name="ram_en">
@@ -2420,14 +2385,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="2432" type="branch" />
             <wire x2="2880" y1="2432" y2="2432" x1="2864" />
         </branch>
-        <branch name="force_trig">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2496" type="branch" />
-            <wire x2="2336" y1="2496" y2="2496" x1="2320" />
-        </branch>
-        <branch name="manual_mode">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2432" type="branch" />
-            <wire x2="2336" y1="2432" y2="2432" x1="2320" />
-        </branch>
         <branch name="U10_3">
             <wire x2="1216" y1="208" y2="208" x1="1200" />
             <wire x2="1328" y1="208" y2="208" x1="1216" />
@@ -2437,19 +2394,6 @@
             <wire x2="1328" y1="80" y2="80" x1="1264" />
         </branch>
         <instance x="976" y="240" name="XLXI_6404" orien="R0" />
-        <instance x="1984" y="2768" name="XLXI_6405" orien="R0" />
-        <branch name="ext_trig">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1968" y="2640" type="branch" />
-            <wire x2="1984" y1="2640" y2="2640" x1="1968" />
-        </branch>
-        <branch name="manual_force_trig">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1968" y="2704" type="branch" />
-            <wire x2="1984" y1="2704" y2="2704" x1="1968" />
-        </branch>
-        <branch name="force_trig">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2256" y="2672" type="branch" />
-            <wire x2="2256" y1="2672" y2="2672" x1="2240" />
-        </branch>
         <branch name="ext_trig">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="960" y="80" type="branch" />
             <wire x2="976" y1="80" y2="80" x1="960" />
@@ -2497,6 +2441,80 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2656" y="5376" type="branch" />
             <wire x2="2672" y1="5376" y2="5376" x1="2656" />
         </branch>
+        <instance x="2112" y="512" name="XLXI_6411" orien="R0" />
+        <instance x="1728" y="448" name="XLXI_6412" orien="R0" />
+        <branch name="XLXN_15801">
+            <wire x2="1792" y1="448" y2="512" x1="1792" />
+            <wire x2="1888" y1="512" y2="512" x1="1792" />
+            <wire x2="1888" y1="384" y2="512" x1="1888" />
+            <wire x2="2112" y1="384" y2="384" x1="1888" />
+        </branch>
+        <branch name="ext_trig">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="256" type="branch" />
+            <wire x2="2112" y1="256" y2="256" x1="2096" />
+        </branch>
+        <branch name="lat_ext_trig">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2512" y="256" type="branch" />
+            <wire x2="2512" y1="256" y2="256" x1="2496" />
+        </branch>
+        <branch name="manual_force_trig">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2560" type="branch" />
+            <wire x2="2336" y1="2560" y2="2560" x1="2320" />
+        </branch>
+        <branch name="ext_lat_trig">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2624" type="branch" />
+            <wire x2="2336" y1="2624" y2="2624" x1="2320" />
+        </branch>
+        <branch name="user_positive_delay(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2688" type="branch" />
+            <wire x2="2336" y1="2688" y2="2688" x1="2320" />
+        </branch>
+        <branch name="trig_types(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2752" type="branch" />
+            <wire x2="2336" y1="2752" y2="2752" x1="2320" />
+        </branch>
+        <instance x="1616" y="5024" name="XLXI_6414" orien="R0" />
+        <branch name="trig_types(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="4768" type="branch" />
+            <wire x2="2016" y1="4768" y2="4768" x1="2000" />
+        </branch>
+        <branch name="rx_data(63:56)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1600" y="4768" type="branch" />
+            <wire x2="1616" y1="4768" y2="4768" x1="1600" />
+        </branch>
+        <branch name="TRIG_ATTRIBUTES_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1600" y="4832" type="branch" />
+            <wire x2="1616" y1="4832" y2="4832" x1="1600" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1600" y="4896" type="branch" />
+            <wire x2="1616" y1="4896" y2="4896" x1="1600" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1600" y="4992" type="branch" />
+            <wire x2="1616" y1="4992" y2="4992" x1="1600" />
+        </branch>
+        <branch name="rx_data(0:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2608" y="4720" type="branch" />
+            <wire x2="2624" y1="4720" y2="4720" x1="2608" />
+        </branch>
+        <branch name="MANUAL_TRIG_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2608" y="4784" type="branch" />
+            <wire x2="2624" y1="4784" y2="4784" x1="2608" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2608" y="4848" type="branch" />
+            <wire x2="2624" y1="4848" y2="4848" x1="2608" />
+        </branch>
+        <branch name="clear_manual_trig">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2608" y="4944" type="branch" />
+            <wire x2="2624" y1="4944" y2="4944" x1="2608" />
+        </branch>
+        <branch name="manual_force_trig">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3024" y="4720" type="branch" />
+            <wire x2="3024" y1="4720" y2="4720" x1="3008" />
+        </branch>
+        <instance x="2624" y="4976" name="XLXI_6396" orien="R0" />
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <instance x="1328" y="704" name="XLXI_5951" orien="R0" />

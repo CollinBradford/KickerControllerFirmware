@@ -72,7 +72,7 @@ begin
 				
 				if(new_trigger = '1') then
 					armed <= '1';
-					startAddr <= triggerAddressUns - userPretrigSamplesUns + userPositiveDelayUns;
+					startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns;
 					endAddr <= triggerAddressUns + userSampleSizeUns + userPositiveDelayUns;
 				end if;
 				

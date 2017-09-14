@@ -33,22 +33,32 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity PeakFinder is
-    Port ( clk : in STD_LOGIC;
+    Port ( --default signals
+			  clk : in STD_LOGIC;
 			  reset : in STD_LOGIC;
+			  --data signals
 			  data_in : in  STD_LOGIC_VECTOR (63 downto 0);
-			  signal_threshold : in STD_LOGIC_VECTOR(7 downto 0);
+			  --sample size and width information
 			  user_sample_width : in STD_LOGIC_VECTOR(15 downto 0);
-			  manual : in STD_LOGIC;
-			  force_trig : in STD_LOGIC;
+			  user_positive_delay : in STD_LOGIC_VECTOR(15 downto 0);
+			  --trigger types and attributes
+			  trig_types : in STD_LOGIC_VECTOR (7 downto 0);
+			  signal_threshold : in STD_LOGIC_VECTOR(7 downto 0);
+			  manual_force_trig : in STD_LOGIC;
+			  ext_trig : in STD_LOGIC;
+			  --data_out
            data_out : out STD_LOGIC_VECTOR (63 downto 0);
+			  --address information
 			  addr_out : out STD_LOGIC_VECTOR (9 downto 0);
-           out_enable : out  STD_LOGIC;
 			  trigger_address : out STD_LOGIC_VECTOR(9 downto 0);
-			  new_trigger : out STD_LOGIC;
+           new_trigger : out STD_LOGIC;
+			  out_enable : out  STD_LOGIC;
+			  --clear the manual trigger flip-flop
 			  clear_manual_trig : out STD_LOGIC);
 end PeakFinder;
 
 architecture Behavioral of PeakFinder is
+	--each individual sample gets it's own signal
 	signal sample_one : unsigned(7 downto 0);
 	signal sample_two : unsigned(7 downto 0);
 	signal sample_three : unsigned(7 downto 0);
@@ -57,16 +67,26 @@ architecture Behavioral of PeakFinder is
 	signal sample_six : unsigned(7 downto 0);
 	signal sample_seven : unsigned(7 downto 0);
 	signal sample_eight : unsigned(7 downto 0);
-	
+	--repeating signals 
 	signal threshold : unsigned( 7 downto 0 );
 	signal ramAddress : unsigned(9 downto 0);
+	signal userSampleWidth : unsigned(15 downto 0);
+	signal userPositiveDelay : unsigned(15 downto 0);
+	signal combinedSampleDelay : unsigned(16 downto 0);
+	signal samplesSinceTrig : unsigned(16 downto 0);
+	signal clearManualTrigSig : std_logic;
+	--internal flags
 	signal new_trigger_sig : std_logic;
 	signal triggered : std_logic;--Means that a signal is over the threshold.  Sync with clk.
-	signal userSampleWidth : unsigned(15 downto 0);
-	signal samplesSinceTrig : unsigned(15 downto 0);
-	signal clearManualTrigSig : std_logic;
 	signal trigger_active : std_logic;
+	--each trigger attribute gets it's own signal
+	signal threshTrigEn : std_logic; --Threshold Mode is enabled
+	signal manualTrigEn : std_logic; --Manual Mode is enabled
+	signal extTrigEn : std_logic; --External Trig Mode is enabled
+	signal extTrigRising : std_logic; --Trigger on the rising edge of the external trigger
+	signal lastExtTrigState : std_logic; --The last state of the external trigger
 begin
+	--assign the samples
 	sample_one <= unsigned(data_in(15 downto 8));
 	sample_two <= unsigned(data_in(7 downto 0));
 	sample_three <= unsigned(data_in(31 downto 24));
@@ -75,16 +95,21 @@ begin
 	sample_six <= unsigned(data_in(39 downto 32));
 	sample_seven <= unsigned(data_in(63 downto 56));
 	sample_eight <= unsigned(data_in(55 downto 48));
-	
+	--assign repeating signals
 	threshold <= unsigned(signal_threshold);
 	userSampleWidth <= unsigned(user_sample_width);
+	userPositiveDelay <= unsigned(user_positive_delay);
+	combinedSampleDelay <= userSampleWidth + userPositiveDelay;
 	new_trigger <= new_trigger_sig;
 	addr_out <= std_logic_vector(ramAddress);
 	clear_manual_trig <= clearManualTrigSig;
-	
-	process(clk)
-	
-	begin
+	--assign trigger attribute signals
+	threshTrigEn <= trig_types(0);
+	threshHigh <= trig_types(1);
+	manualTrigEn <= trig_types(2);
+	extTrigEn <= trig_types(3);
+	extTrigRising <= trig_types(4);
+	process(clk) begin
 		
 		data_out(7 downto 0) <= data_in(15 downto 8);
 		data_out(15 downto 8) <= data_in(7 downto 0);
@@ -106,61 +131,78 @@ begin
 		if(reset = '0') then--reset is low
 		
 			if(rising_edge(clk)) then--rising edge of clk and reset is low
-			
-				ramAddress <= ramAddress + 1;
 				
-				if(manual = '0') then --trigger mode NOT manual mode
-					if(sample_one > threshold or sample_two > threshold or sample_three > threshold or sample_four > threshold
-								or sample_five > threshold or sample_six > threshold or sample_seven > threshold or sample_eight > threshold
-								or force_trig = '1') then
-						trigger_active <= '1';
-					else
-						trigger_active <= '0';
+				ramAddress <= ramAddress + 1;
+				lastExtTrigState <= ext_trig;
+				--These are the tests for each trigger state.  There is at least one if statement per trigger mode that is enabled when the 
+				--respective trigger mode is enabled.  If the trigger mode is active and the trigger state is also active, it enables the trigger_active
+				--signal and performs any resets that may be requred from the trigger.  
+				--
+				--if threshold mode is enabled and we have passed the threshold
+				if(threshTrigEn = '1') then
+					--if we trigger when the signal rises above the trigger line
+					if(threshHigh = '1') then
+						if(sample_one > threshold or sample_two > threshold or sample_three > threshold or sample_four > threshold
+							or sample_five > threshold or sample_six > threshold or sample_seven > threshold or sample_eight > threshold) then
+							trigger_active <= '1';
+						end if;
 					end if;
-				else
-					if(force_trig = '1') then
-						trigger_active <= '1';
-					else
-						trigger_active <= '0';
+					--if we trigger when the signal falls below the trigger line
+					if(threshHigh = '0') then
+						if(sample_one < threshold or sample_two < threshold or sample_three < threshold or sample_four < threshold
+							or sample_five < threshold or sample_six < threshold or sample_seven < threshold or sample_eight < threshold) then
+							trigger_active <= '1';
+						end if;
 					end if;
 				end if;
-				
-				if(triggered = '0') then--no reason to test the incoming signals if we are already triggered.  This will just screw up the new trigger signal.
-				
+				--if manual trigger mode is enabled and we have a trigger
+				if(manualTrigEn = '1' and manual_force_trig = '1') then
+					trigger_active <= '1';
+					clearManualTrigSig <= '1';
+				end if;
+				--if external trigger mode is enabled 
+				if(extTrigEn = '1') then
+					--if we are triggering on the rising edge of the trigger and it actually is the rising edge
+					if(extTrigRising = '1' and lastExtTrigState = '0' and ext_trig = '1') then
+						trigger_active <= '1';
+					end if;
+					--if we are triggering on the falling edge of the trigger and it actually is the falling edge
+					if(extTrigRising = '0' and lastExtTrigState = '1' and ext_trig = '0') then
+						trigger_active <= '1';
+					end if;
+				end if;
+				--Begin code for when we are triggered.  
+				--
+				--if we are not currently triggered, check for a trigger
+				if(triggered = '0') then
 					if (trigger_active = '1') then--controlls start of trigger.  
 						triggered <= '1';
 						new_trigger_sig <= '1';
 						trigger_address <= std_logic_vector(ramAddress);
-						clearManualTrigSig <= '1';
+						trigger_active <= '0';
 					end if;
-					
 				end if;
-				
-				if(samplesSinceTrig >= userSampleWidth and triggered = '1')then--Our sample count matches the user request.  
-					
-					if (trigger_active = '1') then--Only disable the sample if we aren't about to trigger again.  If we are about to trigger again, then set the new trigger signal and start over.  
+				--if our sample count matches the read size plus the delay, then end the trigger.  Otherwise, add one to our delay counter
+				if(samplesSinceTrig >= combinedSampleDelay and triggered = '1')then
+					samplesSinceTrig <= "00000000000000000";
+					--check for another trigger
+					if (trigger_active = '1') then
 						triggered <= '1';
 						new_trigger_sig <= '1';
 						trigger_address <= std_logic_vector(ramAddress);
-						clearManualTrigSig <= '1';
-						samplesSinceTrig <= "0000000000000000";
+						trigger_active <= '0';
 					else
 						triggered <= '0';
-						samplesSinceTrig <= "0000000000000000";
 					end if;
-				
 				else
-				
 					if(triggered = '1')then --We took another sample.  Increase the sample count
 						samplesSinceTrig <= samplesSinceTrig + 1;
 					end if;
-					
 				end if;
-				
+				--these signals need to be pulsed for one clock only.
 				if(new_trigger_sig = '1') then
 					new_trigger_sig <= '0';
 				end if;
-				
 				if(clearManualTrigSig = '1') then
 					clearManualTrigSig <= '0';
 				end if;
