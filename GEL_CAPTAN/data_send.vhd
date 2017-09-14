@@ -39,6 +39,11 @@ entity data_send is
 			  user_sample_size : in STD_LOGIC_VECTOR (15 downto 0);
 			  user_pretrig_sample_size : in STD_LOGIC_VECTOR (15 downto 0);
 			  user_positive_delay : in STD_LOGIC_VECTOR(15 downto 0);
+			  --header/footer signals
+			  debug_signals : in STD_LOGIC_VECTOR(7 downto 0);
+			  zero_crossing_count : in STD_LOGIC_VECTOR(7 downto 0);
+			  missed_triggers : in STD_LOGIC_VECTOR(7 downto 0);
+			  signal_ID : in STD_LOGIC_VECTOR(3 downto 0);
 			  --burst data control signals
            b_data : out  STD_LOGIC_VECTOR (63 downto 0);
            b_data_we : out  STD_LOGIC;
@@ -61,9 +66,11 @@ signal headerFinished : std_logic;
 signal reading : std_logic;
 signal sendUDP : std_logic;
 signal burstWrEn : std_logic;
+signal headerTwoStart : std_logic;
 --outgoing data signals 
 signal dataOut : std_logic_vector(63 downto 0);
-signal headerOut : std_logic_vector(63 downto 0);
+signal headerOneOut : std_logic_vector(63 downto 0);
+signal headerTwoOut : std_logic_vector(63 downto 0);
 --header signals
 signal triggerCount : unsigned(31 downto 0); --Keeps a count of the number of triggers
 signal sampleSize : unsigned(15 downto 0); --Number of samles for this read (in clocks meaning that 1 clock = 4 samples)
@@ -85,9 +92,14 @@ begin
 	dataOut(47 downto 40) <= data_in(23 downto 16);
 	dataOut(55 downto 48) <= data_in(15 downto 8);
 	dataOut(63 downto 56) <= data_in(7 downto 0);
-	--header signal assignments
-	headerOut(63 downto 32) <= std_logic_vector(triggerCount(31 downto 0));
-	headerOut(31 downto 16) <= std_logic_vector(sampleSize(15 downto 0));
+	--header one signal assignments
+	headerOneOut(63 downto 32) <= std_logic_vector(triggerCount(31 downto 0));
+	headerOneOut(31 downto 16) <= std_logic_vector(sampleSize(15 downto 0));
+	headerOneOut(15 downto 8) <= debug_signals(7 downto 0);
+	headerOneOut(7 downto 0) <= zero_crossing_count(7 downto 0);
+	--header two signal assignments
+	headerTwoOut(7 downto 0) <= missed_triggers(7 downto 0);
+	headerTwoOut(63 downto 60) <= signal_ID(3 downto 0);
 	
 	process(clk) begin
 		if(rising_edge(clk)) then
@@ -97,17 +109,23 @@ begin
 					armed <= '1';
 					triggerCount <= triggerCount + 1;
 					sampleSize <= userSampleSizeUns + userPretrigSamplesUns;
-					startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns - 2;--This last number accounts for any delay in the firmware.  There must be at least -1 clock allowed for placement of the header information.  Currently, another clock is requried by the peak_finder moduel for a total of -2.
+					startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns - 3;--This last number accounts for any delay in the firmware.  There must be at least -2 clocks allowed for placement of the header information.  Currently, another clock is requried by the peak_finder moduel for a total of -2.
 					endAddr <= triggerAddressUns + userSampleSizeUns + userPositiveDelayUns;
 				end if;
-				--once we reach the start address for the readout, send the header
+				--once we reach the start address for the readout, send header one
 				if(armed = '1' and ramAddrUns = startAddr) then --Begins read cycle when buffer reaches starting point.  
 					b_data_we <= '1';
-					reading <= '1';
+					headerTwoStart <= '1';
 					armed <= '0';
-					b_data <= headerOut;
+					b_data <= headerOneOut;
 				end if;
-				--start reading (starts after header)
+				--send header two
+				if(headerTwoStart <= '1') then
+					headerTwoStart <= '0';
+					b_data <= headerTwoOut;
+					reading <= '1';
+				end if;
+				--start reading (starts after headers are sent)
 				if(reading <= '1') then
 					b_data <= dataOut;
 				end if;

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/14/2017 15:22:08
+-- /___/   /\     Timestamp : 09/14/2017 16:37:03
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -656,6 +656,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal dcm_reset_0              : std_logic;
    signal dcm_reset_1              : std_logic;
    signal dcm_reset_2              : std_logic;
+   signal debug_signals            : std_logic_vector (7 downto 0);
    signal ext_trig                 : std_logic;
    signal FADC_CAL                 : std_logic;
    signal fadc_clk_in_reset        : std_logic;
@@ -747,6 +748,9 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15532               : std_logic;
    signal XLXN_15533               : std_logic;
    signal XLXN_15794               : std_logic;
+   signal XLXN_15826               : std_logic_vector (7 downto 0);
+   signal XLXN_15827               : std_logic_vector (7 downto 0);
+   signal XLXN_15828               : std_logic_vector (3 downto 0);
    signal XLXI_5338_in3_openSignal : std_logic_vector (63 downto 0);
    signal XLXI_5338_in4_openSignal : std_logic_vector (63 downto 0);
    signal XLXI_5338_in5_openSignal : std_logic_vector (63 downto 0);
@@ -1047,7 +1051,11 @@ architecture BEHAVIORAL of TOP_LEVEL is
              user_positive_delay      : in    std_logic_vector (15 downto 0); 
              b_data_we                : out   std_logic; 
              b_force_packet           : out   std_logic; 
-             b_data                   : out   std_logic_vector (63 downto 0));
+             b_data                   : out   std_logic_vector (63 downto 0); 
+             debug_signals            : in    std_logic_vector (7 downto 0); 
+             zero_crossing_count      : in    std_logic_vector (7 downto 0); 
+             missed_triggers          : in    std_logic_vector (7 downto 0); 
+             signal_ID                : in    std_logic_vector (3 downto 0));
    end component;
    
    component ClockLatchSignals
@@ -1181,7 +1189,7 @@ begin
    XLXI_3406 : IDELAYCTRL
       port map (REFCLK=>XLXN_15064,
                 RST=>reset,
-                RDY=>open);
+                RDY=>debug_signals(4));
    
    XLXI_3409 : AND2
       port map (I0=>rx_data(4),
@@ -1390,7 +1398,7 @@ begin
                 CLK90=>open,
                 CLK180=>open,
                 CLK270=>open,
-                LOCKED=>psi_status(0));
+                LOCKED=>debug_signals(0));
    
    XLXI_5950 : BUFG
       port map (I=>XLXN_12660,
@@ -1425,7 +1433,7 @@ begin
                 CLK90=>open,
                 CLK180=>open,
                 CLK270=>open,
-                LOCKED=>psi_status(4));
+                LOCKED=>debug_signals(1));
    
    XLXI_5954 : BUFG
       port map (I=>XLXN_12671,
@@ -1456,7 +1464,7 @@ begin
                 CLK90=>XLXN_12783,
                 CLK180=>XLXN_12930,
                 CLK270=>XLXN_12931,
-                LOCKED=>psi_status(8));
+                LOCKED=>debug_signals(2));
    
    XLXI_5964 : BUFG
       port map (I=>XLXN_12697,
@@ -1807,7 +1815,7 @@ begin
                 CLK90=>open,
                 CLK180=>XLXN_15092,
                 CLK270=>open,
-                LOCKED=>psi_status(12));
+                LOCKED=>debug_signals(3));
    
    XLXI_6200 : BUFG
       port map (I=>XLXN_15087,
@@ -1873,15 +1881,19 @@ begin
    XLXI_6253 : data_send
       port map (clk=>MASTER_CLK,
                 data_in(63 downto 0)=>data_send_in(63 downto 0),
+                debug_signals(7 downto 0)=>debug_signals(7 downto 0),
+                missed_triggers(7 downto 0)=>XLXN_15827(7 downto 0),
                 new_trigger=>new_trigger,
                 ram_addr(9 downto 0)=>ram_addr(9 downto 0),
                 rst=>reset,
+                signal_ID(3 downto 0)=>XLXN_15828(3 downto 0),
                 trigger_addr(9 downto 0)=>trigger_addr(9 downto 0),
                 user_positive_delay(15 downto 0)=>user_positive_delay(15 downto 
             0),
                 user_pretrig_sample_size(15 downto 
             0)=>user_pretrig_sample_size(15 downto 0),
                 user_sample_size(15 downto 0)=>user_sample_size(15 downto 0),
+                zero_crossing_count(7 downto 0)=>XLXN_15826(7 downto 0),
                 b_data(63 downto 0)=>b_data(63 downto 0),
                 b_data_we=>b_data_we,
                 b_force_packet=>b_force_packet);

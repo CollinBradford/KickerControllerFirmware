@@ -82,8 +82,8 @@
         <signal name="XLXN_12672" />
         <signal name="dcm_reset_1" />
         <signal name="rx_data(4)" />
-        <signal name="psi_status(0)" />
-        <signal name="psi_status(4)" />
+        <signal name="debug_signals(0)" />
+        <signal name="debug_signals(1)" />
         <signal name="dcm_reset_2" />
         <signal name="rx_data(8)" />
         <signal name="BUSBHS_03DP_06S" />
@@ -91,7 +91,7 @@
         <signal name="XLXN_12781" />
         <signal name="CLK_375" />
         <signal name="XLXN_12697" />
-        <signal name="psi_status(8)" />
+        <signal name="debug_signals(2)" />
         <signal name="XLXN_12783" />
         <signal name="CLK_MUX" />
         <signal name="FADC_CLK_N" />
@@ -207,7 +207,7 @@
         <signal name="BUSDD_00DP_00S" />
         <signal name="XLXN_15077" />
         <signal name="XLXN_15087" />
-        <signal name="psi_status(12)" />
+        <signal name="debug_signals(3)" />
         <signal name="XLXN_15092" />
         <signal name="fadc_data_del_ce" />
         <signal name="fadc_data_del_rst" />
@@ -267,6 +267,11 @@
         <signal name="trig_types(7:0)" />
         <signal name="rx_data(63:56)" />
         <signal name="rx_data(0:0)" />
+        <signal name="debug_signals(4)" />
+        <signal name="debug_signals(7:0)" />
+        <signal name="XLXN_15826(7:0)" />
+        <signal name="XLXN_15827(7:0)" />
+        <signal name="XLXN_15828(3:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -685,7 +690,15 @@
             <rect width="400" x="64" y="-320" height="1216" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2017-9-14T19:53:31</timestamp>
+            <timestamp>2017-9-14T21:31:48</timestamp>
+            <rect width="64" x="0" y="596" height="24" />
+            <line x2="0" y1="608" y2="608" x1="64" />
+            <rect width="64" x="0" y="660" height="24" />
+            <line x2="0" y1="672" y2="672" x1="64" />
+            <rect width="64" x="0" y="724" height="24" />
+            <line x2="0" y1="736" y2="736" x1="64" />
+            <rect width="64" x="0" y="788" height="24" />
+            <line x2="0" y1="800" y2="800" x1="64" />
             <rect width="64" x="0" y="532" height="24" />
             <line x2="0" y1="544" y2="544" x1="64" />
             <line x2="0" y1="160" y2="160" x1="64" />
@@ -705,7 +718,7 @@
             <line x2="384" y1="-352" y2="-352" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-384" height="960" />
+            <rect width="256" x="64" y="-384" height="1216" />
         </blockdef>
         <blockdef name="ClockLatchSignals">
             <timestamp>2016-9-30T16:49:33</timestamp>
@@ -933,7 +946,7 @@
             <blockpin name="CLKDV" />
             <blockpin signalname="XLXN_12669" name="CLKFX" />
             <blockpin name="CLKFX180" />
-            <blockpin signalname="psi_status(0)" name="LOCKED" />
+            <blockpin signalname="debug_signals(0)" name="LOCKED" />
         </block>
         <block symbolname="bufg" name="XLXI_5950">
             <blockpin signalname="XLXN_12660" name="I" />
@@ -977,7 +990,7 @@
             <blockpin name="CLKDV" />
             <blockpin name="CLKFX" />
             <blockpin name="CLKFX180" />
-            <blockpin signalname="psi_status(4)" name="LOCKED" />
+            <blockpin signalname="debug_signals(1)" name="LOCKED" />
         </block>
         <block symbolname="bufg" name="XLXI_5954">
             <blockpin signalname="XLXN_12671" name="I" />
@@ -1067,7 +1080,7 @@
             <blockpin name="CLKDV" />
             <blockpin name="CLKFX" />
             <blockpin name="CLKFX180" />
-            <blockpin signalname="psi_status(8)" name="LOCKED" />
+            <blockpin signalname="debug_signals(2)" name="LOCKED" />
         </block>
         <block symbolname="bufg" name="XLXI_5964">
             <blockpin signalname="XLXN_12697" name="I" />
@@ -1202,7 +1215,7 @@
         <block symbolname="idelayctrl" name="XLXI_3406">
             <blockpin signalname="XLXN_15064" name="REFCLK" />
             <blockpin signalname="reset" name="RST" />
-            <blockpin name="RDY" />
+            <blockpin signalname="debug_signals(4)" name="RDY" />
         </block>
         <block symbolname="bufg" name="XLXI_4529">
             <blockpin signalname="XLXN_12257" name="I" />
@@ -1622,7 +1635,7 @@
             <blockpin name="CLKDV" />
             <blockpin name="CLKFX" />
             <blockpin name="CLKFX180" />
-            <blockpin signalname="psi_status(12)" name="LOCKED" />
+            <blockpin signalname="debug_signals(3)" name="LOCKED" />
         </block>
         <block symbolname="bufg" name="XLXI_6200">
             <blockpin signalname="XLXN_15087" name="I" />
@@ -1764,6 +1777,10 @@
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="b_force_packet" name="b_force_packet" />
             <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
+            <blockpin signalname="debug_signals(7:0)" name="debug_signals(7:0)" />
+            <blockpin signalname="XLXN_15826(7:0)" name="zero_crossing_count(7:0)" />
+            <blockpin signalname="XLXN_15827(7:0)" name="missed_triggers(7:0)" />
+            <blockpin signalname="XLXN_15828(3:0)" name="signal_ID(3:0)" />
         </block>
         <block symbolname="fd16re" name="XLXI_6394">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -2481,6 +2498,19 @@
             <wire x2="3024" y1="4720" y2="4720" x1="3008" />
         </branch>
         <instance x="2624" y="4976" name="XLXI_6396" orien="R0" />
+        <branch name="debug_signals(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2304" type="branch" />
+            <wire x2="5088" y1="2304" y2="2304" x1="5072" />
+        </branch>
+        <branch name="XLXN_15826(7:0)">
+            <wire x2="5088" y1="2368" y2="2368" x1="5072" />
+        </branch>
+        <branch name="XLXN_15827(7:0)">
+            <wire x2="5088" y1="2432" y2="2432" x1="5072" />
+        </branch>
+        <branch name="XLXN_15828(3:0)">
+            <wire x2="5088" y1="2496" y2="2496" x1="5072" />
+        </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <instance x="1328" y="704" name="XLXI_5951" orien="R0" />
@@ -2559,11 +2589,11 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1184" y="912" type="branch" />
             <wire x2="1328" y1="912" y2="912" x1="1184" />
         </branch>
-        <branch name="psi_status(0)">
+        <branch name="debug_signals(0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3216" y="752" type="branch" />
             <wire x2="3216" y1="752" y2="752" x1="3136" />
         </branch>
-        <branch name="psi_status(4)">
+        <branch name="debug_signals(1)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="4064" y="976" type="branch" />
             <wire x2="4064" y1="976" y2="976" x1="3968" />
         </branch>
@@ -2598,7 +2628,7 @@
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DCM_PERFORMANCE_MODE" x="0" y="64" type="instance" />
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="CLKIN_PERIOD" x="0" y="96" type="instance" />
         </instance>
-        <branch name="psi_status(8)">
+        <branch name="debug_signals(2)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="4448" y="2272" type="branch" />
             <wire x2="4448" y1="2272" y2="2272" x1="4352" />
         </branch>
@@ -2736,7 +2766,7 @@
             <wire x2="5360" y1="2736" y2="2736" x1="5328" />
             <wire x2="5408" y1="2736" y2="2736" x1="5360" />
         </branch>
-        <branch name="psi_status(12)">
+        <branch name="debug_signals(3)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5168" y="3024" type="branch" />
             <wire x2="5168" y1="3024" y2="3024" x1="5072" />
         </branch>
@@ -2901,6 +2931,10 @@
             <wire x2="4896" y1="816" y2="816" x1="4816" />
         </branch>
         <text x="3440" y="1604">This logic used to allow the user to select a different clock to work with, but I disabled this feature becasue I don't see how one can dynamically double the clock speed and keep everythign working at the same time. </text>
+        <branch name="debug_signals(4)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2368" y="4912" type="branch" />
+            <wire x2="2368" y1="4912" y2="4912" x1="2352" />
+        </branch>
     </sheet>
     <sheet sheetnum="5" width="7040" height="5440">
         <branch name="GMII_RX_ER_0_sig">
