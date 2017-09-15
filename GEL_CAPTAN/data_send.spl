@@ -10,7 +10,6 @@ new_trigger
 =user_positive_delay[15:0]=
 =debug_signals[7:0]=
 =zero_crossing_count[7:0]=
-=missed_triggers[7:0]=
 =signal_ID[3:0]=
 [Outputs]
 b_data_we

@@ -42,7 +42,6 @@ entity data_send is
 			  --header/footer signals
 			  debug_signals : in STD_LOGIC_VECTOR(7 downto 0);
 			  zero_crossing_count : in STD_LOGIC_VECTOR(7 downto 0);
-			  missed_triggers : in STD_LOGIC_VECTOR(7 downto 0);
 			  signal_ID : in STD_LOGIC_VECTOR(3 downto 0);
 			  --burst data control signals
            b_data : out  STD_LOGIC_VECTOR (63 downto 0);
@@ -67,11 +66,13 @@ signal reading : std_logic;
 signal sendUDP : std_logic;
 signal burstWrEn : std_logic;
 signal headerTwoStart : std_logic;
+signal busy : std_logic;
 --outgoing data signals 
 signal dataOut : std_logic_vector(63 downto 0);
 signal headerOneOut : std_logic_vector(63 downto 0);
 signal headerTwoOut : std_logic_vector(63 downto 0);
 --header signals
+signal missedTriggerCount : unsigned(7 downto 0);
 signal triggerCount : unsigned(31 downto 0); --Keeps a count of the number of triggers
 signal sampleSize : unsigned(15 downto 0); --Number of samles for this read (in clocks meaning that 1 clock = 4 samples)
 
@@ -98,7 +99,7 @@ begin
 	headerOneOut(15 downto 8) <= debug_signals(7 downto 0);
 	headerOneOut(7 downto 0) <= zero_crossing_count(7 downto 0);
 	--header two signal assignments
-	headerTwoOut(7 downto 0) <= missed_triggers(7 downto 0);
+	headerTwoOut(7 downto 0) <= std_logic_vector(missedTriggerCount(7 downto 0));
 	headerTwoOut(63 downto 60) <= signal_ID(3 downto 0);
 	
 	process(clk) begin
@@ -106,11 +107,17 @@ begin
 			if(rst = '0') then
 				--latch the address data as soon as we recieve a trigger event
 				if(new_trigger = '1') then
-					armed <= '1';
-					triggerCount <= triggerCount + 1;
-					sampleSize <= userSampleSizeUns + userPretrigSamplesUns;
-					startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns - 3;--This last number accounts for any delay in the firmware.  There must be at least -2 clocks allowed for placement of the header information.  Currently, another clock is requried by the peak_finder moduel for a total of -2.
-					endAddr <= triggerAddressUns + userSampleSizeUns + userPositiveDelayUns;
+					--only latch the new trigger if we don't already have one.  
+					if(busy = '0') then
+						armed <= '1';
+						triggerCount <= triggerCount + 1;
+						sampleSize <= userSampleSizeUns + userPretrigSamplesUns;
+						startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns - 3;--This last number accounts for any delay in the firmware.  There must be at least -2 clocks allowed for placement of the header information.  Currently, another clock is requried by the peak_finder moduel for a total of -2.
+						endAddr <= triggerAddressUns + userSampleSizeUns + userPositiveDelayUns;
+					--If we get a trigger that we can't take care of because we are busy, incriment the missed trigger count.  
+					else
+						missedTriggerCount <= missedTriggerCount + 1;
+					end if;
 				end if;
 				--once we reach the start address for the readout, send header one
 				if(armed = '1' and ramAddrUns = startAddr) then --Begins read cycle when buffer reaches starting point.  
@@ -143,6 +150,8 @@ begin
 				armed <= '0';
 				sendUDP <= '0';
 				triggerCount <= (others => '0');
+				busy <= '0';
+				missedTriggerCount <= (others => '0');
 			end if;
 		end if;
 	end process;

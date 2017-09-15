@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/14/2017 16:37:03
+-- /___/   /\     Timestamp : 09/15/2017 13:20:22
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -749,7 +749,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15533               : std_logic;
    signal XLXN_15794               : std_logic;
    signal XLXN_15826               : std_logic_vector (7 downto 0);
-   signal XLXN_15827               : std_logic_vector (7 downto 0);
    signal XLXN_15828               : std_logic_vector (3 downto 0);
    signal XLXI_5338_in3_openSignal : std_logic_vector (63 downto 0);
    signal XLXI_5338_in4_openSignal : std_logic_vector (63 downto 0);
@@ -1049,13 +1048,12 @@ architecture BEHAVIORAL of TOP_LEVEL is
              user_sample_size         : in    std_logic_vector (15 downto 0); 
              user_pretrig_sample_size : in    std_logic_vector (15 downto 0); 
              user_positive_delay      : in    std_logic_vector (15 downto 0); 
-             b_data_we                : out   std_logic; 
-             b_force_packet           : out   std_logic; 
-             b_data                   : out   std_logic_vector (63 downto 0); 
              debug_signals            : in    std_logic_vector (7 downto 0); 
              zero_crossing_count      : in    std_logic_vector (7 downto 0); 
-             missed_triggers          : in    std_logic_vector (7 downto 0); 
-             signal_ID                : in    std_logic_vector (3 downto 0));
+             signal_ID                : in    std_logic_vector (3 downto 0); 
+             b_data_we                : out   std_logic; 
+             b_force_packet           : out   std_logic; 
+             b_data                   : out   std_logic_vector (63 downto 0));
    end component;
    
    component ClockLatchSignals
@@ -1083,21 +1081,19 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
    component PeakFinder
-      port ( clk                 : in    std_logic; 
-             reset               : in    std_logic; 
-             data_in             : in    std_logic_vector (63 downto 0); 
-             signal_threshold    : in    std_logic_vector (7 downto 0); 
-             user_sample_width   : in    std_logic_vector (15 downto 0); 
-             out_enable          : out   std_logic; 
-             new_trigger         : out   std_logic; 
-             clear_manual_trig   : out   std_logic; 
-             data_out            : out   std_logic_vector (63 downto 0); 
-             addr_out            : out   std_logic_vector (9 downto 0); 
-             trigger_address     : out   std_logic_vector (9 downto 0); 
-             manual_force_trig   : in    std_logic; 
-             ext_trig            : in    std_logic; 
-             user_positive_delay : in    std_logic_vector (15 downto 0); 
-             trig_types          : in    std_logic_vector (7 downto 0));
+      port ( clk               : in    std_logic; 
+             reset             : in    std_logic; 
+             manual_force_trig : in    std_logic; 
+             ext_trig          : in    std_logic; 
+             data_in           : in    std_logic_vector (63 downto 0); 
+             trig_types        : in    std_logic_vector (7 downto 0); 
+             signal_threshold  : in    std_logic_vector (7 downto 0); 
+             new_trigger       : out   std_logic; 
+             out_enable        : out   std_logic; 
+             clear_manual_trig : out   std_logic; 
+             data_out          : out   std_logic_vector (63 downto 0); 
+             addr_out          : out   std_logic_vector (9 downto 0); 
+             trigger_address   : out   std_logic_vector (9 downto 0));
    end component;
    
    component EthernetRAM
@@ -1882,7 +1878,6 @@ begin
       port map (clk=>MASTER_CLK,
                 data_in(63 downto 0)=>data_send_in(63 downto 0),
                 debug_signals(7 downto 0)=>debug_signals(7 downto 0),
-                missed_triggers(7 downto 0)=>XLXN_15827(7 downto 0),
                 new_trigger=>new_trigger,
                 ram_addr(9 downto 0)=>ram_addr(9 downto 0),
                 rst=>reset,
@@ -1932,9 +1927,6 @@ begin
                 reset=>reset,
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
                 trig_types(7 downto 0)=>trig_types(7 downto 0),
-                user_positive_delay(15 downto 0)=>user_positive_delay(15 downto 
-            0),
-                user_sample_width(15 downto 0)=>user_sample_size(15 downto 0),
                 addr_out(9 downto 0)=>ram_addr(9 downto 0),
                 clear_manual_trig=>clear_manual_trig,
                 data_out(63 downto 0)=>peak_finder_data_out(63 downto 0),

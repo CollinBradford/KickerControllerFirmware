@@ -237,11 +237,9 @@
         <signal name="b_force_packet" />
         <signal name="adc_fifo_overflow" />
         <signal name="fadc_fifo_data_out(63:0)" />
-        <signal name="XLXN_15694" />
         <signal name="XLXN_15533" />
         <signal name="XLXN_15532" />
         <signal name="XLXN_15531" />
-        <signal name="XLXN_15698" />
         <signal name="XLXN_15529" />
         <signal name="XLXN_15524" />
         <signal name="fadc_data_in(15:0)" />
@@ -259,7 +257,6 @@
         <signal name="U10_1" />
         <signal name="manual_force_trig" />
         <signal name="ext_trig" />
-        <signal name="XLXN_15793" />
         <signal name="XLXN_15794" />
         <signal name="U10_2" />
         <signal name="user_positive_delay(15:0)" />
@@ -270,7 +267,6 @@
         <signal name="debug_signals(4)" />
         <signal name="debug_signals(7:0)" />
         <signal name="XLXN_15826(7:0)" />
-        <signal name="XLXN_15827(7:0)" />
         <signal name="XLXN_15828(3:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
@@ -663,16 +659,12 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="PeakFinder">
-            <timestamp>2017-9-14T16:4:5</timestamp>
+            <timestamp>2017-9-15T15:53:27</timestamp>
             <line x2="0" y1="608" y2="608" x1="64" />
             <line x2="0" y1="672" y2="672" x1="64" />
-            <rect width="64" x="0" y="724" height="24" />
-            <line x2="0" y1="736" y2="736" x1="64" />
             <rect width="64" x="0" y="788" height="24" />
             <line x2="0" y1="800" y2="800" x1="64" />
             <line x2="528" y1="480" y2="480" x1="464" />
-            <rect width="64" x="0" y="276" height="24" />
-            <line x2="0" y1="288" y2="288" x1="64" />
             <line x2="528" y1="288" y2="288" x1="464" />
             <rect width="64" x="464" y="340" height="24" />
             <line x2="528" y1="352" y2="352" x1="464" />
@@ -690,13 +682,11 @@
             <rect width="400" x="64" y="-320" height="1216" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2017-9-14T21:31:48</timestamp>
+            <timestamp>2017-9-15T15:54:48</timestamp>
             <rect width="64" x="0" y="596" height="24" />
             <line x2="0" y1="608" y2="608" x1="64" />
             <rect width="64" x="0" y="660" height="24" />
             <line x2="0" y1="672" y2="672" x1="64" />
-            <rect width="64" x="0" y="724" height="24" />
-            <line x2="0" y1="736" y2="736" x1="64" />
             <rect width="64" x="0" y="788" height="24" />
             <line x2="0" y1="800" y2="800" x1="64" />
             <rect width="64" x="0" y="532" height="24" />
@@ -1774,13 +1764,12 @@
             <blockpin signalname="user_sample_size(15:0)" name="user_sample_size(15:0)" />
             <blockpin signalname="user_pretrig_sample_size(15:0)" name="user_pretrig_sample_size(15:0)" />
             <blockpin signalname="user_positive_delay(15:0)" name="user_positive_delay(15:0)" />
+            <blockpin signalname="debug_signals(7:0)" name="debug_signals(7:0)" />
+            <blockpin signalname="XLXN_15826(7:0)" name="zero_crossing_count(7:0)" />
+            <blockpin signalname="XLXN_15828(3:0)" name="signal_ID(3:0)" />
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="b_force_packet" name="b_force_packet" />
             <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
-            <blockpin signalname="debug_signals(7:0)" name="debug_signals(7:0)" />
-            <blockpin signalname="XLXN_15826(7:0)" name="zero_crossing_count(7:0)" />
-            <blockpin signalname="XLXN_15827(7:0)" name="missed_triggers(7:0)" />
-            <blockpin signalname="XLXN_15828(3:0)" name="signal_ID(3:0)" />
         </block>
         <block symbolname="fd16re" name="XLXI_6394">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -1792,19 +1781,17 @@
         <block symbolname="PeakFinder" name="XLXI_6349">
             <blockpin signalname="MASTER_CLK" name="clk" />
             <blockpin signalname="reset" name="reset" />
+            <blockpin signalname="manual_force_trig" name="manual_force_trig" />
+            <blockpin signalname="ext_trig" name="ext_trig" />
             <blockpin signalname="fadc_fifo_data_out(63:0)" name="data_in(63:0)" />
+            <blockpin signalname="trig_types(7:0)" name="trig_types(7:0)" />
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
-            <blockpin signalname="user_sample_size(15:0)" name="user_sample_width(15:0)" />
-            <blockpin signalname="ram_en" name="out_enable" />
             <blockpin signalname="new_trigger" name="new_trigger" />
+            <blockpin signalname="ram_en" name="out_enable" />
             <blockpin signalname="clear_manual_trig" name="clear_manual_trig" />
             <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
             <blockpin signalname="ram_addr(9:0)" name="addr_out(9:0)" />
             <blockpin signalname="trigger_addr(9:0)" name="trigger_address(9:0)" />
-            <blockpin signalname="manual_force_trig" name="manual_force_trig" />
-            <blockpin signalname="ext_trig" name="ext_trig" />
-            <blockpin signalname="user_positive_delay(15:0)" name="user_positive_delay(15:0)" />
-            <blockpin signalname="trig_types(7:0)" name="trig_types(7:0)" />
         </block>
         <block symbolname="obuf" name="XLXI_6404">
             <blockpin signalname="XLXN_15794" name="I" />
@@ -2364,10 +2351,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1664" type="branch" />
             <wire x2="2336" y1="1664" y2="1664" x1="2320" />
         </branch>
-        <branch name="user_sample_size(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2240" type="branch" />
-            <wire x2="2336" y1="2240" y2="2240" x1="2320" />
-        </branch>
         <branch name="new_trigger">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="2240" type="branch" />
             <wire x2="2880" y1="2240" y2="2240" x1="2864" />
@@ -2448,10 +2431,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2624" type="branch" />
             <wire x2="2336" y1="2624" y2="2624" x1="2320" />
         </branch>
-        <branch name="user_positive_delay(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2688" type="branch" />
-            <wire x2="2336" y1="2688" y2="2688" x1="2320" />
-        </branch>
         <branch name="trig_types(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2752" type="branch" />
             <wire x2="2336" y1="2752" y2="2752" x1="2320" />
@@ -2504,9 +2483,6 @@
         </branch>
         <branch name="XLXN_15826(7:0)">
             <wire x2="5088" y1="2368" y2="2368" x1="5072" />
-        </branch>
-        <branch name="XLXN_15827(7:0)">
-            <wire x2="5088" y1="2432" y2="2432" x1="5072" />
         </branch>
         <branch name="XLXN_15828(3:0)">
             <wire x2="5088" y1="2496" y2="2496" x1="5072" />
