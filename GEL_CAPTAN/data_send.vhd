@@ -103,8 +103,8 @@ begin
 	headerTwoOut(63 downto 60) <= signal_ID(3 downto 0);
 	
 	process(clk) begin
-		if(rising_edge(clk)) then
-			if(rst = '0') then
+		if(rst = '0') then
+			if(rising_edge(clk)) then
 				--latch the address data as soon as we recieve a trigger event
 				if(new_trigger = '1') then
 					--only latch the new trigger if we don't already have one.  
@@ -146,13 +146,13 @@ begin
 				if(sendUDP = '1') then
 					sendUDP <= '0';
 				end if;
-			else--reset code here
-				armed <= '0';
-				sendUDP <= '0';
-				triggerCount <= (others => '0');
-				busy <= '0';
-				missedTriggerCount <= (others => '0');
 			end if;
+		else--reset code here
+			armed <= '0';
+			sendUDP <= '0';
+			triggerCount <= (others => '0');
+			busy <= '0';
+			missedTriggerCount <= (others => '0');
 		end if;
 	end process;
 end Behavioral;
