@@ -10,7 +10,7 @@ Target Device  : xc4vlx25
 Target Package : ff668
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Fri Sep 15 16:32:03 2017
+Mapped Date    : Fri Sep 15 17:00:53 2017
 
 Mapping design into LUTs...
 WARNING:MapLib:328 - Block XLXI_6136 is not a recognized logical block. The
@@ -33,11 +33,11 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 16 secs 
+Total REAL time at the beginning of Placer: 17 secs 
 Total CPU  time at the beginning of Placer: 14 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:a7dee13d) REAL time: 17 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:a7dee13d) REAL time: 18 secs 
 
 Phase 2.7  Design Feasibility Check
 Phase 2.7  Design Feasibility Check (Checksum:a7dee13d) REAL time: 18 secs 
@@ -404,7 +404,7 @@ Phase 11.18  Placement Optimization
 Phase 11.18  Placement Optimization (Checksum:15e88fe3) REAL time: 50 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:15e88fe3) REAL time: 50 secs 
+Phase 12.5  Local Placement Optimization (Checksum:15e88fe3) REAL time: 51 secs 
 
 Phase 13.34  Placement Validation
 Phase 13.34  Placement Validation (Checksum:15e88fe3) REAL time: 51 secs 
@@ -559,7 +559,7 @@ Logic Distribution:
   Number of RPM macros:           12
 Average Fanout of Non-Clock Nets:                3.39
 
-Peak Memory Usage:  630 MB
+Peak Memory Usage:  633 MB
 Total REAL time to MAP completion:  56 secs 
 Total CPU time to MAP completion:   54 secs 
 
