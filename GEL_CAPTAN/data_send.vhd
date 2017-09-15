@@ -112,7 +112,7 @@ begin
 						armed <= '1';
 						triggerCount <= triggerCount + 1;
 						sampleSize <= userSampleSizeUns + userPretrigSamplesUns;
-						startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns - 3;--This last number accounts for any delay in the firmware.  There must be at least -2 clocks allowed for placement of the header information.  Currently, another clock is requried by the peak_finder moduel for a total of -2.
+						startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns;--This last number accounts for any delay in the firmware.  There must be at least -2 clocks allowed for placement of the header information.  Currently, another clock is requried by the peak_finder moduel for a total of -2.
 						endAddr <= triggerAddressUns + userSampleSizeUns + userPositiveDelayUns;
 					--If we get a trigger that we can't take care of because we are busy, incriment the missed trigger count.  
 					else

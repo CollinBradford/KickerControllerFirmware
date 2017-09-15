@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -194,7 +194,7 @@ Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
 Entity <d4_16e_mxilinx_top_level> compiled.
 Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
 Entity <top_level> compiled.
-Entity <top_level> (Architecture <behavioral>) compiled.
+Entity <TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -206,7 +206,7 @@ Analysis of file <"TOP_LEVEL.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
 Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
@@ -286,7 +286,7 @@ Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
     Set user-defined property "IOBDELAY_TYPE =  VARIABLE" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "IOBDELAY_VALUE =  0" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "CLKDV_DIVIDE =  2.0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
@@ -844,13 +844,12 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 1-bit register for signal <sendUDP>.
     Found 10-bit register for signal <startAddr>.
     Found 10-bit adder for signal <startAddr$addsub0000> created at line 115.
-    Found 10-bit subtractor for signal <startAddr$addsub0001> created at line 115.
     Found 10-bit subtractor for signal <startAddr$sub0000> created at line 115.
     Found 32-bit up counter for signal <triggerCount>.
     Summary:
 	inferred   1 Counter(s).
 	inferred  88 D-type flip-flop(s).
-	inferred   5 Adder/Subtractor(s).
+	inferred   4 Adder/Subtractor(s).
 	inferred   4 Comparator(s).
 Unit <data_send> synthesized.
 
@@ -1698,9 +1697,9 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 32
+# Adders/Subtractors                                   : 31
  10-bit adder                                          : 3
- 10-bit subtractor                                     : 2
+ 10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
  16-bit adder                                          : 2
@@ -2154,9 +2153,9 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 8
-# Adders/Subtractors                                   : 32
+# Adders/Subtractors                                   : 31
  10-bit adder                                          : 3
- 10-bit subtractor                                     : 2
+ 10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
  16-bit adder                                          : 2
@@ -2610,7 +2609,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5890
+# BELS                             : 5874
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2620,17 +2619,17 @@ Cell Usage :
 #      AND5B4                      : 1
 #      BUF                         : 5
 #      GND                         : 28
-#      INV                         : 183
+#      INV                         : 182
 #      LUT1                        : 205
-#      LUT2                        : 602
+#      LUT2                        : 601
 #      LUT2_D                      : 32
 #      LUT2_L                      : 32
-#      LUT3                        : 1029
-#      LUT3_D                      : 31
-#      LUT3_L                      : 73
-#      LUT4                        : 1848
+#      LUT3                        : 1027
+#      LUT3_D                      : 29
+#      LUT3_L                      : 72
+#      LUT4                        : 1840
 #      LUT4_D                      : 89
-#      LUT4_L                      : 245
+#      LUT4_L                      : 244
 #      MUXCY                       : 860
 #      MUXF5                       : 136
 #      MUXF6                       : 40
@@ -2677,10 +2676,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3045  out of  10752    28%  
+ Number of Slices:                     3036  out of  10752    28%  
  Number of Slice Flip Flops:           2243  out of  21504    10%  
- Number of 4 input LUTs:               4777  out of  21504    22%  
-    Number used as logic:              4369
+ Number of 4 input LUTs:               4761  out of  21504    22%  
+    Number used as logic:              4353
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2843,7 +2842,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 104437 / 6943
+  Total number of paths / destination ports: 100656 / 6943
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3046,11 +3045,11 @@ Delay:               5.299ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 63.00 secs
-Total CPU time to Xst completion: 63.27 secs
+Total CPU time to Xst completion: 63.44 secs
  
 --> 
 
-Total memory usage is 662592 kilobytes
+Total memory usage is 662720 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  278 (   0 filtered)
