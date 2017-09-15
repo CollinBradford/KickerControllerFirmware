@@ -61,7 +61,6 @@ signal triggerAddressUns : unsigned(9 downto 0);
 signal ramAddrUns : unsigned(9 downto 0);
 --internal flags
 signal armed : std_logic;
-signal headerFinished : std_logic;
 signal reading : std_logic;
 signal sendUDP : std_logic;
 signal burstWrEn : std_logic;
@@ -150,6 +149,8 @@ begin
 		else--reset code here
 			armed <= '0';
 			sendUDP <= '0';
+			reading <= '0';
+			headerTwoStart <= '0';
 			triggerCount <= (others => '0');
 			busy <= '0';
 			missedTriggerCount <= (others => '0');
