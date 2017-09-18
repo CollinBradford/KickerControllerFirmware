@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -763,7 +763,6 @@ WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.v
 WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 115: Width mismatch. <endAddr> has a width of 10 bits but assigned expression is 16-bit wide.
 WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 104: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
-INFO:Xst:2679 - Register <headerTwoStart> in unit <data_send> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <busy> in unit <data_send> has a constant value of 0 during circuit operation. The register is replaced by logic.
 Entity <data_send> analyzed. Unit <data_send> generated.
 
@@ -821,20 +820,22 @@ Unit <trigger_recv_blk> synthesized.
 Synthesizing Unit <data_send>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd".
 WARNING:Xst:646 - Signal <userPositiveDelayUns<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <headerTwoStart> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <headerTwoOut<59:8>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000.
-WARNING:Xst:646 - Signal <headerOneOut> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 64-bit register for signal <b_data>.
     Found 1-bit register for signal <b_data_we>.
     Found 1-bit register for signal <armed>.
     Found 10-bit comparator equal for signal <armed$cmp_eq0000> created at line 122.
+    Found 64-bit 4-to-1 multiplexer for signal <b_data$mux0000>.
     Found 10-bit register for signal <endAddr>.
     Found 10-bit adder for signal <endAddr$add0000> created at line 115.
     Found 10-bit adder for signal <endAddr$addsub0000> created at line 115.
+    Found 1-bit register for signal <headerTwoStart>.
     Found 8-bit register for signal <missedTriggerCount>.
     Found 1-bit register for signal <reading>.
     Found 10-bit comparator equal for signal <reading$cmp_eq0000> created at line 139.
+    Found 16-bit register for signal <sampleSize>.
+    Found 16-bit adder for signal <sampleSize$add0000> created at line 113.
     Found 1-bit register for signal <sendUDP>.
     Found 10-bit register for signal <startAddr>.
     Found 10-bit adder for signal <startAddr$addsub0000> created at line 114.
@@ -842,9 +843,10 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 32-bit up counter for signal <triggerCount>.
     Summary:
 	inferred   1 Counter(s).
-	inferred  96 D-type flip-flop(s).
-	inferred   4 Adder/Subtractor(s).
+	inferred 113 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
 	inferred   2 Comparator(s).
+	inferred  64 Multiplexer(s).
 Unit <data_send> synthesized.
 
 
@@ -1691,12 +1693,12 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 31
+# Adders/Subtractors                                   : 32
  10-bit adder                                          : 3
  10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
- 16-bit adder                                          : 2
+ 16-bit adder                                          : 3
  16-bit subtractor                                     : 5
  17-bit adder                                          : 2
  3-bit adder                                           : 2
@@ -1704,22 +1706,22 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 2
-# Counters                                             : 12
+# Counters                                             : 13
  10-bit up counter                                     : 1
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
  34-bit up counter                                     : 1
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 1
-# Registers                                            : 702
- 1-bit register                                        : 608
+# Registers                                            : 704
+ 1-bit register                                        : 609
  10-bit register                                       : 3
  11-bit register                                       : 8
- 16-bit register                                       : 6
+ 16-bit register                                       : 7
  17-bit register                                       : 1
  24-bit register                                       : 1
  3-bit register                                        : 1
@@ -1757,9 +1759,10 @@ Macro Statistics
  8-bit comparator less                                 : 8
  8-bit comparator lessequal                            : 8
  9-bit comparator greatequal                           : 1
-# Multiplexers                                         : 7
+# Multiplexers                                         : 8
  32-bit 4-to-1 multiplexer                             : 4
  48-bit 4-to-1 multiplexer                             : 2
+ 64-bit 4-to-1 multiplexer                             : 1
  64-bit 8-to-1 multiplexer                             : 1
 # Decoders                                             : 1
  1-of-8 decoder                                        : 1
@@ -2149,12 +2152,12 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 8
-# Adders/Subtractors                                   : 31
+# Adders/Subtractors                                   : 32
  10-bit adder                                          : 3
  10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
- 16-bit adder                                          : 2
+ 16-bit adder                                          : 3
  16-bit subtractor                                     : 5
  17-bit adder                                          : 2
  3-bit adder                                           : 2
@@ -2162,19 +2165,19 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 2
-# Counters                                             : 12
+# Counters                                             : 13
  10-bit up counter                                     : 1
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
  34-bit up counter                                     : 1
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 1
-# Registers                                            : 2048
- Flip-Flops                                            : 2048
+# Registers                                            : 2065
+ Flip-Flops                                            : 2065
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
@@ -2203,9 +2206,10 @@ Macro Statistics
  8-bit comparator less                                 : 8
  8-bit comparator lessequal                            : 8
  9-bit comparator greatequal                           : 1
-# Multiplexers                                         : 7
+# Multiplexers                                         : 8
  32-bit 4-to-1 multiplexer                             : 4
  48-bit 4-to-1 multiplexer                             : 2
+ 64-bit 4-to-1 multiplexer                             : 1
  64-bit 8-to-1 multiplexer                             : 1
 # Decoders                                             : 1
  1-of-8 decoder                                        : 1
@@ -2571,8 +2575,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1692
- Flip-Flops                                            : 1692
+# Registers                                            : 1741
+ Flip-Flops                                            : 1741
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2603,7 +2607,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5947
+# BELS                             : 6092
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2613,33 +2617,33 @@ Cell Usage :
 #      AND5B4                      : 1
 #      BUF                         : 5
 #      GND                         : 28
-#      INV                         : 183
-#      LUT1                        : 205
-#      LUT2                        : 658
-#      LUT2_D                      : 31
+#      INV                         : 184
+#      LUT1                        : 236
+#      LUT2                        : 623
+#      LUT2_D                      : 29
 #      LUT2_L                      : 38
-#      LUT3                        : 1011
-#      LUT3_D                      : 32
-#      LUT3_L                      : 70
-#      LUT4                        : 1861
-#      LUT4_D                      : 91
-#      LUT4_L                      : 237
-#      MUXCY                       : 860
+#      LUT3                        : 1019
+#      LUT3_D                      : 29
+#      LUT3_L                      : 67
+#      LUT4                        : 1930
+#      LUT4_D                      : 88
+#      LUT4_L                      : 225
+#      MUXCY                       : 906
 #      MUXF5                       : 145
 #      MUXF6                       : 40
 #      OR2                         : 3
 #      VCC                         : 25
 #      XOR2                        : 2
-#      XORCY                       : 397
-# FlipFlops/Latches                : 2242
+#      XORCY                       : 445
+# FlipFlops/Latches                : 2291
 #      FD                          : 91
 #      FDC                         : 54
 #      FDCE                        : 97
-#      FDE                         : 581
+#      FDE                         : 597
 #      FDP                         : 18
 #      FDPE                        : 6
-#      FDR                         : 97
-#      FDRE                        : 1105
+#      FDR                         : 96
+#      FDRE                        : 1139
 #      FDRS                        : 80
 #      FDRSE                       : 1
 #      FDS                         : 16
@@ -2670,10 +2674,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3042  out of  10752    28%  
- Number of Slice Flip Flops:           2242  out of  21504    10%  
- Number of 4 input LUTs:               4825  out of  21504    22%  
-    Number used as logic:              4417
+ Number of Slices:                     3067  out of  10752    28%  
+ Number of Slice Flip Flops:           2291  out of  21504    10%  
+ Number of 4 input LUTs:               4876  out of  21504    22%  
+    Number used as logic:              4468
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2704,7 +2708,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2416  |
+GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2465  |
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0                                                                                                                    | 41    |
 XLXI_6380/N1                       | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 4     |
 SECONDARY_CLK                      | IBUFG                                                                                                                             | 18    |
@@ -2731,9 +2735,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 7.682ns (Maximum Frequency: 130.174MHz)
+   Minimum period: 7.811ns (Maximum Frequency: 128.024MHz)
    Minimum input arrival time before clock: 6.925ns
-   Maximum output required time after clock: 6.322ns
+   Maximum output required time after clock: 6.452ns
    Maximum combinational path delay: 5.299ns
 
 Timing Detail:
@@ -2784,10 +2788,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 7.682ns (frequency: 130.174MHz)
-  Total number of paths / destination ports: 2064 / 1794
+  Clock period: 7.811ns (frequency: 128.024MHz)
+  Total number of paths / destination ports: 2113 / 1843
 -------------------------------------------------------------------------
-Offset:              7.682ns (Levels of Logic = 5)
+Offset:              7.811ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2797,7 +2801,7 @@ Offset:              7.682ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            124   0.360   1.288  reset (reset)
+     FDS:C->Q            157   0.360   1.417  reset (reset)
      end scope: 'reset_mgr'
      BUF:I->O            488   0.358   2.874  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
@@ -2807,8 +2811,8 @@ Offset:              7.682ns (Levels of Logic = 5)
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      7.682ns (1.648ns logic, 6.034ns route)
-                                       (21.5% logic, 78.5% route)
+    Total                      7.811ns (1.648ns logic, 6.163ns route)
+                                       (21.1% logic, 78.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
@@ -2836,7 +2840,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 95619 / 6940
+  Total number of paths / destination ports: 98205 / 7103
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -2999,7 +3003,7 @@ Offset:              4.694ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.322ns (Levels of Logic = 3)
+Offset:              6.452ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3008,14 +3012,14 @@ Offset:              6.322ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            124   0.360   1.288  reset (reset)
+     FDS:C->Q            157   0.360   1.417  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.322ns (4.675ns logic, 1.647ns route)
-                                       (73.9% logic, 26.1% route)
+    Total                      6.452ns (4.675ns logic, 1.777ns route)
+                                       (72.5% logic, 27.5% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -3038,14 +3042,14 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 64.00 secs
-Total CPU time to Xst completion: 63.88 secs
+Total REAL time to Xst completion: 69.00 secs
+Total CPU time to Xst completion: 69.31 secs
  
 --> 
 
-Total memory usage is 662208 kilobytes
+Total memory usage is 633664 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  278 (   0 filtered)
-Number of infos    :  129 (   0 filtered)
+Number of warnings :  276 (   0 filtered)
+Number of infos    :  128 (   0 filtered)
 

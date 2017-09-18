@@ -126,7 +126,7 @@ begin
 					b_data <= headerOneOut;
 				end if;
 				--send header two
-				if(headerTwoStart <= '1') then
+				if(headerTwoStart = '1') then
 					headerTwoStart <= '0';
 					b_data <= headerTwoOut;
 					reading <= '1';
