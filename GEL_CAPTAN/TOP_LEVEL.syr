@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -820,7 +820,6 @@ Synthesizing Unit <data_send>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd".
 WARNING:Xst:653 - Signal <headerTwoOut<59:8>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000.
 WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Register <timing> equivalent to <busy> has been removed
     Found 64-bit register for signal <b_data>.
     Found 1-bit register for signal <b_data_we>.
     Found 1-bit register for signal <armed>.
@@ -828,6 +827,7 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 10-bit comparator equal for signal <armed$cmp_eq0001> created at line 136.
     Found 64-bit 4-to-1 multiplexer for signal <b_data$mux0000>.
     Found 1-bit register for signal <busy>.
+    Found 10-bit comparator equal for signal <busy$cmp_eq0000> created at line 153.
     Found 10-bit register for signal <endAddr>.
     Found 10-bit adder for signal <endAddr$add0000> created at line 120.
     Found 10-bit adder for signal <endAddr$addsub0000> created at line 120.
@@ -836,17 +836,17 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 16-bit register for signal <positiveDelayTimer>.
     Found 16-bit adder for signal <positiveDelayTimer$addsub0000> created at line 132.
     Found 1-bit register for signal <reading>.
-    Found 10-bit comparator equal for signal <reading$cmp_eq0000> created at line 153.
     Found 16-bit register for signal <sampleSize>.
     Found 16-bit adder for signal <sampleSize$add0000> created at line 118.
     Found 1-bit register for signal <sendUDP>.
     Found 10-bit register for signal <startAddr>.
     Found 10-bit adder for signal <startAddr$addsub0000> created at line 119.
     Found 10-bit subtractor for signal <startAddr$sub0000> created at line 119.
+    Found 1-bit register for signal <timing>.
     Found 32-bit up counter for signal <triggerCount>.
     Summary:
 	inferred   2 Counter(s).
-	inferred 122 D-type flip-flop(s).
+	inferred 123 D-type flip-flop(s).
 	inferred   6 Adder/Subtractor(s).
 	inferred   3 Comparator(s).
 	inferred  64 Multiplexer(s).
@@ -1720,8 +1720,8 @@ Macro Statistics
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 2
-# Registers                                            : 705
- 1-bit register                                        : 610
+# Registers                                            : 706
+ 1-bit register                                        : 611
  10-bit register                                       : 3
  11-bit register                                       : 8
  16-bit register                                       : 8
@@ -2177,8 +2177,8 @@ Macro Statistics
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 2
-# Registers                                            : 2082
- Flip-Flops                                            : 2082
+# Registers                                            : 2083
+ Flip-Flops                                            : 2083
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
@@ -2577,8 +2577,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1766
- Flip-Flops                                            : 1766
+# Registers                                            : 1767
+ Flip-Flops                                            : 1767
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2609,7 +2609,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 6197
+# BELS                             : 6199
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2621,15 +2621,15 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 186
 #      LUT1                        : 258
-#      LUT2                        : 619
+#      LUT2                        : 620
 #      LUT2_D                      : 27
 #      LUT2_L                      : 37
-#      LUT3                        : 1037
+#      LUT3                        : 1036
 #      LUT3_D                      : 29
 #      LUT3_L                      : 66
-#      LUT4                        : 1966
+#      LUT4                        : 1969
 #      LUT4_D                      : 85
-#      LUT4_L                      : 209
+#      LUT4_L                      : 208
 #      MUXCY                       : 936
 #      MUXF5                       : 145
 #      MUXF6                       : 40
@@ -2637,7 +2637,7 @@ Cell Usage :
 #      VCC                         : 25
 #      XOR2                        : 2
 #      XORCY                       : 469
-# FlipFlops/Latches                : 2316
+# FlipFlops/Latches                : 2317
 #      FD                          : 91
 #      FDC                         : 54
 #      FDCE                        : 97
@@ -2645,7 +2645,7 @@ Cell Usage :
 #      FDP                         : 18
 #      FDPE                        : 6
 #      FDR                         : 96
-#      FDRE                        : 1164
+#      FDRE                        : 1165
 #      FDRS                        : 80
 #      FDRSE                       : 1
 #      FDS                         : 16
@@ -2676,10 +2676,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3093  out of  10752    28%  
- Number of Slice Flip Flops:           2316  out of  21504    10%  
- Number of 4 input LUTs:               4927  out of  21504    22%  
-    Number used as logic:              4519
+ Number of Slices:                     3094  out of  10752    28%  
+ Number of Slice Flip Flops:           2317  out of  21504    10%  
+ Number of 4 input LUTs:               4929  out of  21504    22%  
+    Number used as logic:              4521
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2710,7 +2710,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2490  |
+GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2491  |
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0                                                                                                                    | 41    |
 XLXI_6380/N1                       | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 4     |
 SECONDARY_CLK                      | IBUFG                                                                                                                             | 18    |
@@ -2737,9 +2737,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 7.909ns (Maximum Frequency: 126.442MHz)
+   Minimum period: 7.913ns (Maximum Frequency: 126.379MHz)
    Minimum input arrival time before clock: 6.925ns
-   Maximum output required time after clock: 6.549ns
+   Maximum output required time after clock: 6.553ns
    Maximum combinational path delay: 5.299ns
 
 Timing Detail:
@@ -2790,10 +2790,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 7.909ns (frequency: 126.442MHz)
-  Total number of paths / destination ports: 2138 / 1868
+  Clock period: 7.913ns (frequency: 126.379MHz)
+  Total number of paths / destination ports: 2139 / 1869
 -------------------------------------------------------------------------
-Offset:              7.909ns (Levels of Logic = 5)
+Offset:              7.913ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2803,7 +2803,7 @@ Offset:              7.909ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            182   0.360   1.514  reset (reset)
+     FDS:C->Q            183   0.360   1.518  reset (reset)
      end scope: 'reset_mgr'
      BUF:I->O            488   0.358   2.874  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
@@ -2813,7 +2813,7 @@ Offset:              7.909ns (Levels of Logic = 5)
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      7.909ns (1.648ns logic, 6.261ns route)
+    Total                      7.913ns (1.648ns logic, 6.265ns route)
                                        (20.8% logic, 79.2% route)
 
 =========================================================================
@@ -2842,7 +2842,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 99583 / 7152
+  Total number of paths / destination ports: 99643 / 7154
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3005,7 +3005,7 @@ Offset:              4.694ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.549ns (Levels of Logic = 3)
+Offset:              6.553ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3014,14 +3014,14 @@ Offset:              6.549ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            182   0.360   1.514  reset (reset)
+     FDS:C->Q            183   0.360   1.518  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.549ns (4.675ns logic, 1.874ns route)
-                                       (71.4% logic, 28.6% route)
+    Total                      6.553ns (4.675ns logic, 1.878ns route)
+                                       (71.3% logic, 28.7% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -3045,11 +3045,11 @@ Delay:               5.299ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 64.00 secs
-Total CPU time to Xst completion: 64.41 secs
+Total CPU time to Xst completion: 64.46 secs
  
 --> 
 
-Total memory usage is 663488 kilobytes
+Total memory usage is 664128 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  273 (   0 filtered)

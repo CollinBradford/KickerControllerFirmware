@@ -154,6 +154,7 @@ begin
 					b_data_we <= '0';
 					reading <= '0';
 					sendUDP <= '1';
+					busy <= '0';
 				end if;
 				--pulsed signals
 				if(sendUDP = '1') then
