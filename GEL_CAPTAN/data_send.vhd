@@ -132,7 +132,7 @@ begin
 					reading <= '1';
 				end if;
 				--start reading (starts after headers are sent)
-				if(reading <= '1') then
+				if(reading = '1') then
 					b_data <= dataOut;
 				end if;
 				--once we reach the end address

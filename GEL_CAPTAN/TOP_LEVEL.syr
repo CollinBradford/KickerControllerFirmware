@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -175,14 +175,14 @@ Architecture behavioral of Entity trigger_recv_blk is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" in Library work.
 Architecture behavioral of Entity ethernet_interface is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" in Library work.
-Architecture behavioral of Entity data_send is up to date.
+Entity <data_send> compiled.
+Entity <data_send> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
 Architecture behavioral of Entity clocklatchsignals is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
 Architecture adc_fifo_a of Entity adc_fifo is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" in Library work.
-Entity <peakfinder> compiled.
-Entity <peakfinder> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity peakfinder is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd" in Library work.
 Architecture ethernetram_a of Entity ethernetram is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
@@ -822,9 +822,7 @@ Synthesizing Unit <data_send>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd".
 WARNING:Xst:646 - Signal <userPositiveDelayUns<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <headerTwoStart> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <headerTwoOut<63:60>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <headerTwoOut<59:8>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <headerTwoOut<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <headerTwoOut<59:8>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000.
 WARNING:Xst:646 - Signal <headerOneOut> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 64-bit register for signal <b_data>.
@@ -834,6 +832,7 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 10-bit register for signal <endAddr>.
     Found 10-bit adder for signal <endAddr$add0000> created at line 115.
     Found 10-bit adder for signal <endAddr$addsub0000> created at line 115.
+    Found 8-bit register for signal <missedTriggerCount>.
     Found 1-bit register for signal <reading>.
     Found 10-bit comparator equal for signal <reading$cmp_eq0000> created at line 139.
     Found 1-bit register for signal <sendUDP>.
@@ -843,7 +842,7 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 32-bit up counter for signal <triggerCount>.
     Summary:
 	inferred   1 Counter(s).
-	inferred  88 D-type flip-flop(s).
+	inferred  96 D-type flip-flop(s).
 	inferred   4 Adder/Subtractor(s).
 	inferred   2 Comparator(s).
 Unit <data_send> synthesized.
@@ -1716,7 +1715,7 @@ Macro Statistics
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 1
-# Registers                                            : 701
+# Registers                                            : 702
  1-bit register                                        : 608
  10-bit register                                       : 3
  11-bit register                                       : 8
@@ -1729,7 +1728,7 @@ Macro Statistics
  40-bit register                                       : 1
  48-bit register                                       : 2
  64-bit register                                       : 5
- 8-bit register                                        : 59
+ 8-bit register                                        : 60
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
@@ -2132,6 +2131,7 @@ WARNING:Xst:1290 - Hierarchical block <genDbgCRC[0].crcGenDebug> is unconnected 
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6331> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <missedTriggerCount_0> in Unit <XLXI_6253> is equivalent to the following 7 FFs/Latches, which will be removed : <missedTriggerCount_1> <missedTriggerCount_2> <missedTriggerCount_3> <missedTriggerCount_4> <missedTriggerCount_5> <missedTriggerCount_6> <missedTriggerCount_7> 
 WARNING:Xst:1293 - FF/Latch <add_sig_16> has a constant value of 0 in block <ChecksumCalcBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_0> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_1> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
@@ -2140,7 +2140,9 @@ WARNING:Xst:1710 - FF/Latch <test_data_3> (without init value) has a constant va
 WARNING:Xst:1710 - FF/Latch <test_data_7> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <tx_er> (without init value) has a constant value of 0 in block <crcSplice>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <internal_eth_dout_48> (without init value) has a constant value of 0 in block <XLXI_6227>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <missedTriggerCount_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_6> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <missedTriggerCount<7:0>> (without init value) have a constant value of 0 in block <data_send>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -2601,7 +2603,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5883
+# BELS                             : 5947
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2613,7 +2615,7 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 183
 #      LUT1                        : 205
-#      LUT2                        : 594
+#      LUT2                        : 658
 #      LUT2_D                      : 31
 #      LUT2_L                      : 38
 #      LUT3                        : 1011
@@ -2668,10 +2670,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3037  out of  10752    28%  
+ Number of Slices:                     3042  out of  10752    28%  
  Number of Slice Flip Flops:           2242  out of  21504    10%  
- Number of 4 input LUTs:               4761  out of  21504    22%  
-    Number used as logic:              4353
+ Number of 4 input LUTs:               4825  out of  21504    22%  
+    Number used as logic:              4417
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2834,7 +2836,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 95555 / 6940
+  Total number of paths / destination ports: 95619 / 6940
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3037,13 +3039,13 @@ Delay:               5.299ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 64.00 secs
-Total CPU time to Xst completion: 63.40 secs
+Total CPU time to Xst completion: 63.88 secs
  
 --> 
 
-Total memory usage is 633536 kilobytes
+Total memory usage is 662208 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  278 (   0 filtered)
-Number of infos    :  128 (   0 filtered)
+Number of infos    :  129 (   0 filtered)
 
