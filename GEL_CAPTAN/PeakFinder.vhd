@@ -201,6 +201,7 @@ begin
 			ramAddress <= (others => '0');
 			clearManualTrigSig <= '0'; --Needed to clear the FD on reset
 			lastThreshTrigState <= '0';
+			trigger_active <= '0';
 		end if;
 	end process;
 end Behavioral;

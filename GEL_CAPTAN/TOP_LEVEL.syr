@@ -181,20 +181,16 @@ Architecture behavioral of Entity clocklatchsignals is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
 Architecture adc_fifo_a of Entity adc_fifo is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" in Library work.
-Architecture behavioral of Entity peakfinder is up to date.
+Entity <peakfinder> compiled.
+Entity <peakfinder> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd" in Library work.
 Architecture ethernetram_a of Entity ethernetram is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Entity <fd8re_mxilinx_top_level> compiled.
-Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <fd16re_mxilinx_top_level> compiled.
-Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <m2_1_mxilinx_top_level> compiled.
-Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <d4_16e_mxilinx_top_level> compiled.
-Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <top_level> compiled.
-Entity <TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
+Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
+Architecture behavioral of Entity top_level is up to date.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -206,7 +202,7 @@ Analysis of file <"TOP_LEVEL.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
@@ -286,7 +282,7 @@ Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "IOBDELAY_TYPE =  VARIABLE" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "IOBDELAY_VALUE =  0" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "CLKDV_DIVIDE =  2.0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
@@ -2605,7 +2601,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5884
+# BELS                             : 5883
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2617,30 +2613,30 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 183
 #      LUT1                        : 205
-#      LUT2                        : 595
-#      LUT2_D                      : 32
-#      LUT2_L                      : 37
-#      LUT3                        : 1021
-#      LUT3_D                      : 31
-#      LUT3_L                      : 69
-#      LUT4                        : 1850
-#      LUT4_D                      : 92
-#      LUT4_L                      : 238
+#      LUT2                        : 594
+#      LUT2_D                      : 31
+#      LUT2_L                      : 38
+#      LUT3                        : 1011
+#      LUT3_D                      : 32
+#      LUT3_L                      : 70
+#      LUT4                        : 1861
+#      LUT4_D                      : 91
+#      LUT4_L                      : 237
 #      MUXCY                       : 860
-#      MUXF5                       : 146
+#      MUXF5                       : 145
 #      MUXF6                       : 40
 #      OR2                         : 3
 #      VCC                         : 25
 #      XOR2                        : 2
 #      XORCY                       : 397
 # FlipFlops/Latches                : 2242
-#      FD                          : 92
+#      FD                          : 91
 #      FDC                         : 54
 #      FDCE                        : 97
 #      FDE                         : 581
 #      FDP                         : 18
 #      FDPE                        : 6
-#      FDR                         : 96
+#      FDR                         : 97
 #      FDRE                        : 1105
 #      FDRS                        : 80
 #      FDRSE                       : 1
@@ -2672,7 +2668,7 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3035  out of  10752    28%  
+ Number of Slices:                     3037  out of  10752    28%  
  Number of Slice Flip Flops:           2242  out of  21504    10%  
  Number of 4 input LUTs:               4761  out of  21504    22%  
     Number used as logic:              4353
@@ -2733,9 +2729,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 7.686ns (Maximum Frequency: 130.108MHz)
+   Minimum period: 7.682ns (Maximum Frequency: 130.174MHz)
    Minimum input arrival time before clock: 6.925ns
-   Maximum output required time after clock: 6.326ns
+   Maximum output required time after clock: 6.322ns
    Maximum combinational path delay: 5.299ns
 
 Timing Detail:
@@ -2786,10 +2782,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 7.686ns (frequency: 130.108MHz)
-  Total number of paths / destination ports: 2065 / 1794
+  Clock period: 7.682ns (frequency: 130.174MHz)
+  Total number of paths / destination ports: 2064 / 1794
 -------------------------------------------------------------------------
-Offset:              7.686ns (Levels of Logic = 5)
+Offset:              7.682ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2799,7 +2795,7 @@ Offset:              7.686ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            125   0.360   1.291  reset (reset)
+     FDS:C->Q            124   0.360   1.288  reset (reset)
      end scope: 'reset_mgr'
      BUF:I->O            488   0.358   2.874  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
@@ -2809,8 +2805,8 @@ Offset:              7.686ns (Levels of Logic = 5)
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      7.686ns (1.648ns logic, 6.038ns route)
-                                       (21.4% logic, 78.6% route)
+    Total                      7.682ns (1.648ns logic, 6.034ns route)
+                                       (21.5% logic, 78.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
@@ -2838,7 +2834,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 95532 / 6940
+  Total number of paths / destination ports: 95555 / 6940
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -2963,14 +2959,14 @@ Offset:              6.925ns (Levels of Logic = 13)
      end scope: 'xgmii'
      begin scope: 'ethernet_controller'
      begin scope: 'DecipherBlock'
-     LUT3:I0->O            1   0.195   0.741  Sreg0_FSM_FFd7-In11_SW0_SW0 (N741)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N240)
+     LUT3:I0->O            1   0.195   0.741  Sreg0_FSM_FFd7-In11_SW0_SW0 (N721)
+     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N231)
      LUT3:I2->O            2   0.195   0.758  Sreg0_cmp_eq0001_SW2 (N70)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N237)
+     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N228)
      LUT2:I1->O            1   0.195   0.523  Sreg0_FSM_FFd6-In219 (Sreg0_FSM_FFd6-In219)
      LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In227 (Sreg0_FSM_FFd6-In227)
      LUT4:I3->O            1   0.195   0.741  Sreg0_FSM_FFd6-In242 (Sreg0_FSM_FFd6-In242)
-     LUT4:I0->O            1   0.195   0.000  Sreg0_FSM_FFd6-In271_F (N2041)
+     LUT4:I0->O            1   0.195   0.000  Sreg0_FSM_FFd6-In271_F (N196)
      MUXF5:I0->O           1   0.382   0.000  Sreg0_FSM_FFd6-In271 (Sreg0_FSM_FFd6-In)
      FDRE:D                    0.022          Sreg0_FSM_FFd6
     ----------------------------------------
@@ -3001,7 +2997,7 @@ Offset:              4.694ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.326ns (Levels of Logic = 3)
+Offset:              6.322ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3010,13 +3006,13 @@ Offset:              6.326ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            125   0.360   1.291  reset (reset)
+     FDS:C->Q            124   0.360   1.288  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.326ns (4.675ns logic, 1.651ns route)
+    Total                      6.322ns (4.675ns logic, 1.647ns route)
                                        (73.9% logic, 26.1% route)
 
 =========================================================================
@@ -3040,12 +3036,12 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 63.00 secs
-Total CPU time to Xst completion: 63.48 secs
+Total REAL time to Xst completion: 64.00 secs
+Total CPU time to Xst completion: 63.40 secs
  
 --> 
 
-Total memory usage is 633984 kilobytes
+Total memory usage is 633536 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  278 (   0 filtered)
