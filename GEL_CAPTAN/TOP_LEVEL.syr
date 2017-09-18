@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -759,11 +759,10 @@ Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <beha
 Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
 
 Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
-WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 114: Width mismatch. <startAddr> has a width of 10 bits but assigned expression is 16-bit wide.
-WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 115: Width mismatch. <endAddr> has a width of 10 bits but assigned expression is 16-bit wide.
-WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 104: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 119: Width mismatch. <startAddr> has a width of 10 bits but assigned expression is 16-bit wide.
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 120: Width mismatch. <endAddr> has a width of 10 bits but assigned expression is 16-bit wide.
+WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 107: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
-INFO:Xst:2679 - Register <busy> in unit <data_send> has a constant value of 0 during circuit operation. The register is replaced by logic.
 Entity <data_send> analyzed. Unit <data_send> generated.
 
 Analyzing Entity <ClockLatchSignals> in library <work> (Architecture <behavioral>).
@@ -819,33 +818,37 @@ Unit <trigger_recv_blk> synthesized.
 
 Synthesizing Unit <data_send>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd".
-WARNING:Xst:646 - Signal <userPositiveDelayUns<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <headerTwoOut<59:8>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000.
 WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <timing> equivalent to <busy> has been removed
     Found 64-bit register for signal <b_data>.
     Found 1-bit register for signal <b_data_we>.
     Found 1-bit register for signal <armed>.
-    Found 10-bit comparator equal for signal <armed$cmp_eq0000> created at line 122.
+    Found 16-bit comparator equal for signal <armed$cmp_eq0000> created at line 127.
+    Found 10-bit comparator equal for signal <armed$cmp_eq0001> created at line 136.
     Found 64-bit 4-to-1 multiplexer for signal <b_data$mux0000>.
+    Found 1-bit register for signal <busy>.
     Found 10-bit register for signal <endAddr>.
-    Found 10-bit adder for signal <endAddr$add0000> created at line 115.
-    Found 10-bit adder for signal <endAddr$addsub0000> created at line 115.
+    Found 10-bit adder for signal <endAddr$add0000> created at line 120.
+    Found 10-bit adder for signal <endAddr$addsub0000> created at line 120.
     Found 1-bit register for signal <headerTwoStart>.
-    Found 8-bit register for signal <missedTriggerCount>.
+    Found 8-bit up counter for signal <missedTriggerCount>.
+    Found 16-bit register for signal <positiveDelayTimer>.
+    Found 16-bit adder for signal <positiveDelayTimer$addsub0000> created at line 132.
     Found 1-bit register for signal <reading>.
-    Found 10-bit comparator equal for signal <reading$cmp_eq0000> created at line 139.
+    Found 10-bit comparator equal for signal <reading$cmp_eq0000> created at line 153.
     Found 16-bit register for signal <sampleSize>.
-    Found 16-bit adder for signal <sampleSize$add0000> created at line 113.
+    Found 16-bit adder for signal <sampleSize$add0000> created at line 118.
     Found 1-bit register for signal <sendUDP>.
     Found 10-bit register for signal <startAddr>.
-    Found 10-bit adder for signal <startAddr$addsub0000> created at line 114.
-    Found 10-bit subtractor for signal <startAddr$sub0000> created at line 114.
+    Found 10-bit adder for signal <startAddr$addsub0000> created at line 119.
+    Found 10-bit subtractor for signal <startAddr$sub0000> created at line 119.
     Found 32-bit up counter for signal <triggerCount>.
     Summary:
-	inferred   1 Counter(s).
-	inferred 113 D-type flip-flop(s).
-	inferred   5 Adder/Subtractor(s).
-	inferred   2 Comparator(s).
+	inferred   2 Counter(s).
+	inferred 122 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
 	inferred  64 Multiplexer(s).
 Unit <data_send> synthesized.
 
@@ -1693,12 +1696,12 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 32
+# Adders/Subtractors                                   : 33
  10-bit adder                                          : 3
  10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
- 16-bit adder                                          : 3
+ 16-bit adder                                          : 4
  16-bit subtractor                                     : 5
  17-bit adder                                          : 2
  3-bit adder                                           : 2
@@ -1706,7 +1709,7 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 2
-# Counters                                             : 13
+# Counters                                             : 14
  10-bit up counter                                     : 1
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
@@ -1716,12 +1719,12 @@ Macro Statistics
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
- 8-bit up counter                                      : 1
-# Registers                                            : 704
- 1-bit register                                        : 609
+ 8-bit up counter                                      : 2
+# Registers                                            : 705
+ 1-bit register                                        : 610
  10-bit register                                       : 3
  11-bit register                                       : 8
- 16-bit register                                       : 7
+ 16-bit register                                       : 8
  17-bit register                                       : 1
  24-bit register                                       : 1
  3-bit register                                        : 1
@@ -1730,16 +1733,17 @@ Macro Statistics
  40-bit register                                       : 1
  48-bit register                                       : 2
  64-bit register                                       : 5
- 8-bit register                                        : 60
+ 8-bit register                                        : 59
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
  4-bit latch                                           : 1
  8-bit latch                                           : 1
-# Comparators                                          : 55
+# Comparators                                          : 56
  10-bit comparator equal                               : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
+ 16-bit comparator equal                               : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
  17-bit comparator greater                             : 1
@@ -2134,7 +2138,6 @@ WARNING:Xst:1290 - Hierarchical block <genDbgCRC[0].crcGenDebug> is unconnected 
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6331> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
-INFO:Xst:2261 - The FF/Latch <missedTriggerCount_0> in Unit <XLXI_6253> is equivalent to the following 7 FFs/Latches, which will be removed : <missedTriggerCount_1> <missedTriggerCount_2> <missedTriggerCount_3> <missedTriggerCount_4> <missedTriggerCount_5> <missedTriggerCount_6> <missedTriggerCount_7> 
 WARNING:Xst:1293 - FF/Latch <add_sig_16> has a constant value of 0 in block <ChecksumCalcBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_0> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_1> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
@@ -2143,21 +2146,19 @@ WARNING:Xst:1710 - FF/Latch <test_data_3> (without init value) has a constant va
 WARNING:Xst:1710 - FF/Latch <test_data_7> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <tx_er> (without init value) has a constant value of 0 in block <crcSplice>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <internal_eth_dout_48> (without init value) has a constant value of 0 in block <XLXI_6227>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <missedTriggerCount_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_6> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2404 -  FFs/Latches <missedTriggerCount<7:0>> (without init value) have a constant value of 0 in block <data_send>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 8
-# Adders/Subtractors                                   : 32
+# Adders/Subtractors                                   : 33
  10-bit adder                                          : 3
  10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
- 16-bit adder                                          : 3
+ 16-bit adder                                          : 4
  16-bit subtractor                                     : 5
  17-bit adder                                          : 2
  3-bit adder                                           : 2
@@ -2165,7 +2166,7 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 2
-# Counters                                             : 13
+# Counters                                             : 14
  10-bit up counter                                     : 1
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
@@ -2175,18 +2176,19 @@ Macro Statistics
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
- 8-bit up counter                                      : 1
-# Registers                                            : 2065
- Flip-Flops                                            : 2065
+ 8-bit up counter                                      : 2
+# Registers                                            : 2082
+ Flip-Flops                                            : 2082
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
  4-bit latch                                           : 1
  8-bit latch                                           : 1
-# Comparators                                          : 55
+# Comparators                                          : 56
  10-bit comparator equal                               : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
+ 16-bit comparator equal                               : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
  17-bit comparator greater                             : 1
@@ -2455,7 +2457,7 @@ WARNING:Xst:1290 - Hierarchical block <XLXI_6124> is unconnected in block <TOP_L
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 31.
+Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 32.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
@@ -2575,8 +2577,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1741
- Flip-Flops                                            : 1741
+# Registers                                            : 1766
+ Flip-Flops                                            : 1766
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2607,7 +2609,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 6092
+# BELS                             : 6197
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2617,25 +2619,25 @@ Cell Usage :
 #      AND5B4                      : 1
 #      BUF                         : 5
 #      GND                         : 28
-#      INV                         : 184
-#      LUT1                        : 236
-#      LUT2                        : 623
-#      LUT2_D                      : 29
-#      LUT2_L                      : 38
-#      LUT3                        : 1019
+#      INV                         : 186
+#      LUT1                        : 258
+#      LUT2                        : 619
+#      LUT2_D                      : 27
+#      LUT2_L                      : 37
+#      LUT3                        : 1037
 #      LUT3_D                      : 29
-#      LUT3_L                      : 67
-#      LUT4                        : 1930
-#      LUT4_D                      : 88
-#      LUT4_L                      : 225
-#      MUXCY                       : 906
+#      LUT3_L                      : 66
+#      LUT4                        : 1966
+#      LUT4_D                      : 85
+#      LUT4_L                      : 209
+#      MUXCY                       : 936
 #      MUXF5                       : 145
 #      MUXF6                       : 40
 #      OR2                         : 3
 #      VCC                         : 25
 #      XOR2                        : 2
-#      XORCY                       : 445
-# FlipFlops/Latches                : 2291
+#      XORCY                       : 469
+# FlipFlops/Latches                : 2316
 #      FD                          : 91
 #      FDC                         : 54
 #      FDCE                        : 97
@@ -2643,7 +2645,7 @@ Cell Usage :
 #      FDP                         : 18
 #      FDPE                        : 6
 #      FDR                         : 96
-#      FDRE                        : 1139
+#      FDRE                        : 1164
 #      FDRS                        : 80
 #      FDRSE                       : 1
 #      FDS                         : 16
@@ -2674,10 +2676,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3067  out of  10752    28%  
- Number of Slice Flip Flops:           2291  out of  21504    10%  
- Number of 4 input LUTs:               4876  out of  21504    22%  
-    Number used as logic:              4468
+ Number of Slices:                     3093  out of  10752    28%  
+ Number of Slice Flip Flops:           2316  out of  21504    10%  
+ Number of 4 input LUTs:               4927  out of  21504    22%  
+    Number used as logic:              4519
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2708,7 +2710,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2465  |
+GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2490  |
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0                                                                                                                    | 41    |
 XLXI_6380/N1                       | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 4     |
 SECONDARY_CLK                      | IBUFG                                                                                                                             | 18    |
@@ -2735,9 +2737,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 7.811ns (Maximum Frequency: 128.024MHz)
+   Minimum period: 7.909ns (Maximum Frequency: 126.442MHz)
    Minimum input arrival time before clock: 6.925ns
-   Maximum output required time after clock: 6.452ns
+   Maximum output required time after clock: 6.549ns
    Maximum combinational path delay: 5.299ns
 
 Timing Detail:
@@ -2788,10 +2790,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 7.811ns (frequency: 128.024MHz)
-  Total number of paths / destination ports: 2113 / 1843
+  Clock period: 7.909ns (frequency: 126.442MHz)
+  Total number of paths / destination ports: 2138 / 1868
 -------------------------------------------------------------------------
-Offset:              7.811ns (Levels of Logic = 5)
+Offset:              7.909ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2801,7 +2803,7 @@ Offset:              7.811ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            157   0.360   1.417  reset (reset)
+     FDS:C->Q            182   0.360   1.514  reset (reset)
      end scope: 'reset_mgr'
      BUF:I->O            488   0.358   2.874  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
@@ -2811,8 +2813,8 @@ Offset:              7.811ns (Levels of Logic = 5)
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      7.811ns (1.648ns logic, 6.163ns route)
-                                       (21.1% logic, 78.9% route)
+    Total                      7.909ns (1.648ns logic, 6.261ns route)
+                                       (20.8% logic, 79.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
@@ -2840,7 +2842,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 98205 / 7103
+  Total number of paths / destination ports: 99583 / 7152
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -2966,9 +2968,9 @@ Offset:              6.925ns (Levels of Logic = 13)
      begin scope: 'ethernet_controller'
      begin scope: 'DecipherBlock'
      LUT3:I0->O            1   0.195   0.741  Sreg0_FSM_FFd7-In11_SW0_SW0 (N721)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N231)
+     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N229)
      LUT3:I2->O            2   0.195   0.758  Sreg0_cmp_eq0001_SW2 (N70)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N228)
+     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N226)
      LUT2:I1->O            1   0.195   0.523  Sreg0_FSM_FFd6-In219 (Sreg0_FSM_FFd6-In219)
      LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In227 (Sreg0_FSM_FFd6-In227)
      LUT4:I3->O            1   0.195   0.741  Sreg0_FSM_FFd6-In242 (Sreg0_FSM_FFd6-In242)
@@ -3003,7 +3005,7 @@ Offset:              4.694ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.452ns (Levels of Logic = 3)
+Offset:              6.549ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3012,14 +3014,14 @@ Offset:              6.452ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            157   0.360   1.417  reset (reset)
+     FDS:C->Q            182   0.360   1.514  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.452ns (4.675ns logic, 1.777ns route)
-                                       (72.5% logic, 27.5% route)
+    Total                      6.549ns (4.675ns logic, 1.874ns route)
+                                       (71.4% logic, 28.6% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -3042,14 +3044,14 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 69.00 secs
-Total CPU time to Xst completion: 69.31 secs
+Total REAL time to Xst completion: 64.00 secs
+Total CPU time to Xst completion: 64.41 secs
  
 --> 
 
-Total memory usage is 633664 kilobytes
+Total memory usage is 663488 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  276 (   0 filtered)
-Number of infos    :  128 (   0 filtered)
+Number of warnings :  273 (   0 filtered)
+Number of infos    :  126 (   0 filtered)
 

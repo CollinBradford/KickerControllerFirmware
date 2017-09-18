@@ -59,6 +59,9 @@ signal userPretrigSamplesUns : unsigned(15 downto 0);
 signal userPositiveDelayUns : unsigned(15 downto 0);
 signal triggerAddressUns : unsigned(9 downto 0);
 signal ramAddrUns : unsigned(9 downto 0);
+--positive delay signals
+signal positiveDelayTimer : unsigned(15 downto 0);
+signal timing : std_logic;
 --internal flags
 signal armed : std_logic;
 signal reading : std_logic;
@@ -108,7 +111,9 @@ begin
 				if(new_trigger = '1') then
 					--only latch the new trigger if we don't already have one.  
 					if(busy = '0') then
-						armed <= '1';
+						busy <= '1';
+						timing <= '1';
+						positiveDelayTimer <= (others => '0');
 						triggerCount <= triggerCount + 1;
 						sampleSize <= userSampleSizeUns + userPretrigSamplesUns;
 						startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns;--This last number accounts for any delay in the firmware.  There must be at least -2 clocks allowed for placement of the header information.  Currently, another clock is requried by the peak_finder moduel for a total of -2.
@@ -116,6 +121,15 @@ begin
 					--If we get a trigger that we can't take care of because we are busy, incriment the missed trigger count.  
 					else
 						missedTriggerCount <= missedTriggerCount + 1;
+					end if;
+				end if;
+				--If we are triggered and the timing is finished, activate the armed flag.  
+				if(timing = '1' and positiveDelayTimer = userPositiveDelayUns) then
+					armed <= '1';
+				else
+					--if we aren't finished timing, but are still timing, then increase the positiveDelayTimer.  
+					if(timing = '1') then
+						positiveDelayTimer <= positiveDelayTimer + 1;
 					end if;
 				end if;
 				--once we reach the start address for the readout, send header one
@@ -154,6 +168,8 @@ begin
 			triggerCount <= (others => '0');
 			busy <= '0';
 			missedTriggerCount <= (others => '0');
+			timing <= '0';
+			positiveDelayTimer <= (others => '0');
 		end if;
 	end process;
 end Behavioral;
