@@ -124,7 +124,7 @@ begin
 					end if;
 				end if;
 				--If we are triggered and the timing is finished, activate the armed flag.  
-				if(timing = '1' and positiveDelayTimer = userPositiveDelayUns) then
+				if(timing = '1' and positiveDelayTimer >= userPositiveDelayUns) then
 					armed <= '1';
 				else
 					--if we aren't finished timing, but are still timing, then increase the positiveDelayTimer.  

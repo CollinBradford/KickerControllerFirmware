@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -175,8 +175,7 @@ Architecture behavioral of Entity trigger_recv_blk is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" in Library work.
 Architecture behavioral of Entity ethernet_interface is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" in Library work.
-Entity <data_send> compiled.
-Entity <data_send> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity data_send is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
 Architecture behavioral of Entity clocklatchsignals is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
@@ -823,8 +822,8 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 64-bit register for signal <b_data>.
     Found 1-bit register for signal <b_data_we>.
     Found 1-bit register for signal <armed>.
-    Found 16-bit comparator equal for signal <armed$cmp_eq0000> created at line 127.
-    Found 10-bit comparator equal for signal <armed$cmp_eq0001> created at line 136.
+    Found 10-bit comparator equal for signal <armed$cmp_eq0000> created at line 136.
+    Found 16-bit comparator greatequal for signal <armed$cmp_ge0000> created at line 127.
     Found 64-bit 4-to-1 multiplexer for signal <b_data$mux0000>.
     Found 1-bit register for signal <busy>.
     Found 10-bit comparator equal for signal <busy$cmp_eq0000> created at line 153.
@@ -1743,7 +1742,7 @@ Macro Statistics
  10-bit comparator equal                               : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator equal                               : 1
+ 16-bit comparator greatequal                          : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
  17-bit comparator greater                             : 1
@@ -2188,7 +2187,7 @@ Macro Statistics
  10-bit comparator equal                               : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator equal                               : 1
+ 16-bit comparator greatequal                          : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
  17-bit comparator greater                             : 1
@@ -2609,7 +2608,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 6199
+# BELS                             : 6215
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2621,16 +2620,16 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 186
 #      LUT1                        : 258
-#      LUT2                        : 620
+#      LUT2                        : 636
 #      LUT2_D                      : 27
 #      LUT2_L                      : 37
 #      LUT3                        : 1036
 #      LUT3_D                      : 29
 #      LUT3_L                      : 66
-#      LUT4                        : 1969
+#      LUT4                        : 1961
 #      LUT4_D                      : 85
 #      LUT4_L                      : 208
-#      MUXCY                       : 936
+#      MUXCY                       : 944
 #      MUXF5                       : 145
 #      MUXF6                       : 40
 #      OR2                         : 3
@@ -2676,10 +2675,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3094  out of  10752    28%  
+ Number of Slices:                     3098  out of  10752    28%  
  Number of Slice Flip Flops:           2317  out of  21504    10%  
- Number of 4 input LUTs:               4929  out of  21504    22%  
-    Number used as logic:              4521
+ Number of 4 input LUTs:               4937  out of  21504    22%  
+    Number used as logic:              4529
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2842,7 +2841,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 99643 / 7154
+  Total number of paths / destination ports: 100171 / 7154
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3045,11 +3044,11 @@ Delay:               5.299ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 64.00 secs
-Total CPU time to Xst completion: 64.46 secs
+Total CPU time to Xst completion: 64.21 secs
  
 --> 
 
-Total memory usage is 664128 kilobytes
+Total memory usage is 663488 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  273 (   0 filtered)
