@@ -1,11 +1,11 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Sep 07 15:25:05 2017
+Mon Sep 18 14:13:06 2017
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 45 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 47 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    XLXI_3432/D10
@@ -14,7 +14,6 @@ WARNING:ParHelpers:361 - There are 45 loadless signals in this design. This desi
    XLXI_3432/D13
    XLXI_3432/D14
    XLXI_3432/D15
-   XLXI_3432/D6
    XLXI_3432/D7
    XLXI_3432/D8
    XLXI_3432/D9
@@ -53,5 +52,8 @@ WARNING:ParHelpers:361 - There are 45 loadless signals in this design. This desi
    icon_control0<34>
    icon_control0<35>
    icon_control0<7>
+   trig_types<5>
+   trig_types<6>
+   trig_types<7>
 
 

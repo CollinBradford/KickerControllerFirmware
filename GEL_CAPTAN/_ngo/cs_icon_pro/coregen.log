@@ -27,27 +27,27 @@ Generating ISE project...
 XCO file found: icon_pro.xco
 XMDF file found: icon_pro_xmdf.tcl
 Adding
-D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_pro.ngc
--view all -origin_type created
+D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_p
+ro.ngc -view all -origin_type created
 Checking file
-"D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_pro.ngc"
-for project device match ...
+"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_
+pro.ngc" for project device match ...
 File
-"D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_pro.ngc"
-device information matches project device.
+"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_
+pro.ngc" device information matches project device.
 Adding
-D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_pro.ucf
--view all -origin_type created
+D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_p
+ro.ucf -view all -origin_type created
 Adding
-D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_pro.vhd
--view all -origin_type created
+D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_p
+ro.vhd -view all -origin_type created
 INFO:HDLCompiler:1061 - Parsing VHDL file
-   "D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_pro.vh
-   d" into library work
+   "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/ic
+   on_pro.vhd" into library work
 INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
 Adding
-D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_pro.vho
--view all -origin_type imported
+D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/icon_p
+ro.vho -view all -origin_type imported
 INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
    Please set the new top explicitly by running the "project set top" command.
    To re-calculate the new top automatically, set the "Auto Implementation Top"

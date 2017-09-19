@@ -5,109 +5,109 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL1</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL1</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL2</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL2</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL3</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL3</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL4</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL4</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL5</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL5</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL6</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL6</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL7</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL7</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL8</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL8</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL9</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL9</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL10</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL10</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL11</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL11</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL12</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL12</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL13</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL13</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL14</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">CONTROL14</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TDI_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TDI_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TDO_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TDO_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RESET_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RESET_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">SHIFT_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">SHIFT_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">UPDATE_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">UPDATE_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CAPTURE_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CAPTURE_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">SEL_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">SEL_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DRCK_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DRCK_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TAP_TDO_O</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TAP_TDO_O</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TAP_TDO_OE_O</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TAP_TDO_OE_O</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TDI_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TDI_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TDO_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TDO_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">RESET_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">RESET_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">SHIFT_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">SHIFT_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">UPDATE_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">UPDATE_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CAPTURE_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CAPTURE_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">SEL_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">SEL_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">DRCK_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">DRCK_IN</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TAP_TDI_IPAD</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TAP_TDI_IPAD</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TAP_TMS_IPAD</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TAP_TMS_IPAD</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TAP_TCK_IPAD</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/_ngo/cs_icon_pro/tmp/_cg/_bbx/icon_pro.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TAP_TCK_IPAD</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_icon</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic_0</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.

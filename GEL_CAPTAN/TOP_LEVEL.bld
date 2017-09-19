@@ -551,22 +551,6 @@ WARNING:NgdBuild:1212 - User specified non-default attribute value (5.33333333)
    will use the non-default attribute value.  This could result in incorrect
    uncertainty calculated for DCM output clocks.
 Checking expanded design ...
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<48>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<49>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<50>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<51>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<52>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<53>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<54>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<55>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<56>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<57>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<58>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<59>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<60>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<61>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<62>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<63>' has no driver
 WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<0>' has no
    driver
 WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<10>' has
@@ -631,12 +615,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  79
+  Number of warnings:  63
 
-Total memory usage is 279124 kilobytes
+Total memory usage is 277000 kilobytes
 
 Writing NGD file "TOP_LEVEL.ngd" ...
-Total REAL time to NGDBUILD completion:  11 sec
-Total CPU time to NGDBUILD completion:   11 sec
+Total REAL time to NGDBUILD completion:  10 sec
+Total CPU time to NGDBUILD completion:   10 sec
 
 Writing NGDBUILD log file "TOP_LEVEL.bld"...
