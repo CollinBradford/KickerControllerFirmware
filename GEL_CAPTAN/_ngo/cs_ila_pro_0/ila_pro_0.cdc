@@ -1,6 +1,6 @@
 #ChipScope Core Generator Project File Version 3.0
-#Thu Sep 07 15:23:16 Central Daylight Time 2017
-SignalExport.bus<0000>.channelList=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225
+#Fri Sep 22 14:53:35 Central Daylight Time 2017
+SignalExport.bus<0000>.channelList=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194
 SignalExport.bus<0000>.name=TRIG0
 SignalExport.bus<0000>.offset=0.0
 SignalExport.bus<0000>.precision=0
@@ -203,40 +203,9 @@ SignalExport.triggerChannel<0000><0191>=TRIG0[191]
 SignalExport.triggerChannel<0000><0192>=TRIG0[192]
 SignalExport.triggerChannel<0000><0193>=TRIG0[193]
 SignalExport.triggerChannel<0000><0194>=TRIG0[194]
-SignalExport.triggerChannel<0000><0195>=TRIG0[195]
-SignalExport.triggerChannel<0000><0196>=TRIG0[196]
-SignalExport.triggerChannel<0000><0197>=TRIG0[197]
-SignalExport.triggerChannel<0000><0198>=TRIG0[198]
-SignalExport.triggerChannel<0000><0199>=TRIG0[199]
-SignalExport.triggerChannel<0000><0200>=TRIG0[200]
-SignalExport.triggerChannel<0000><0201>=TRIG0[201]
-SignalExport.triggerChannel<0000><0202>=TRIG0[202]
-SignalExport.triggerChannel<0000><0203>=TRIG0[203]
-SignalExport.triggerChannel<0000><0204>=TRIG0[204]
-SignalExport.triggerChannel<0000><0205>=TRIG0[205]
-SignalExport.triggerChannel<0000><0206>=TRIG0[206]
-SignalExport.triggerChannel<0000><0207>=TRIG0[207]
-SignalExport.triggerChannel<0000><0208>=TRIG0[208]
-SignalExport.triggerChannel<0000><0209>=TRIG0[209]
-SignalExport.triggerChannel<0000><0210>=TRIG0[210]
-SignalExport.triggerChannel<0000><0211>=TRIG0[211]
-SignalExport.triggerChannel<0000><0212>=TRIG0[212]
-SignalExport.triggerChannel<0000><0213>=TRIG0[213]
-SignalExport.triggerChannel<0000><0214>=TRIG0[214]
-SignalExport.triggerChannel<0000><0215>=TRIG0[215]
-SignalExport.triggerChannel<0000><0216>=TRIG0[216]
-SignalExport.triggerChannel<0000><0217>=TRIG0[217]
-SignalExport.triggerChannel<0000><0218>=TRIG0[218]
-SignalExport.triggerChannel<0000><0219>=TRIG0[219]
-SignalExport.triggerChannel<0000><0220>=TRIG0[220]
-SignalExport.triggerChannel<0000><0221>=TRIG0[221]
-SignalExport.triggerChannel<0000><0222>=TRIG0[222]
-SignalExport.triggerChannel<0000><0223>=TRIG0[223]
-SignalExport.triggerChannel<0000><0224>=TRIG0[224]
-SignalExport.triggerChannel<0000><0225>=TRIG0[225]
 SignalExport.triggerPort<0000>.name=TRIG0
 SignalExport.triggerPortCount=1
 SignalExport.triggerPortIsData<0000>=true
-SignalExport.triggerPortWidth<0000>=226
+SignalExport.triggerPortWidth<0000>=195
 SignalExport.type=ila
 

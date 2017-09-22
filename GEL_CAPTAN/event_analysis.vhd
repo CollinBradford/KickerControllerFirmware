@@ -51,6 +51,7 @@ entity event_analysis is
 			  --clear and force veto signals
 			  clear_veto : in STD_LOGIC;
 			  force_veto : in STD_LOGIC;
+			  veto_en : in STD_LOGIC;
 			  --outgoing data signals
            data_out : out  STD_LOGIC_VECTOR (63 downto 0);
            data_out_we : out  STD_LOGIC;
@@ -195,7 +196,7 @@ begin
 					sendFooter <= '1';
 					data_out <= footer_in;--we need one clock to figure out if we need to veto.  The header signals coming from anything else in the firmware applciation can be sent at this time.  
 					--Check if we will veto the signal and take approperate action
-					if(zeroCrossCount > userZeroCrossVetoThresh) then
+					if(zeroCrossCount > userZeroCrossVetoThresh and veto_en = '1') then
 						vetoed <= '1';
 					end if;
 				end if;

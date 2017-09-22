@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Sep 07 15:24:34 2017
+// Written by: Map P.20131013 on Fri Sep 22 15:17:09 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -72,7 +72,6 @@ COMP "BUSC_19DN_39S" LOCATE = SITE "Y26" LEVEL 1;
 COMP "BUSC_27DP_54S" LOCATE = SITE "AC23" LEVEL 1;
 COMP "BUSC_19DP_38S" LOCATE = SITE "Y25" LEVEL 1;
 COMP "U10_1" LOCATE = SITE "N19" LEVEL 1;
-COMP "U10_2" LOCATE = SITE "M8" LEVEL 1;
 COMP "U10_3" LOCATE = SITE "L8" LEVEL 1;
 COMP "INTERNAL_08DN_17S" LOCATE = SITE "N24" LEVEL 1;
 COMP "INTERNAL_08DP_16S" LOCATE = SITE "N25" LEVEL 1;
@@ -264,26 +263,6 @@ PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[24].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
         PINNAME CLKB;
 PIN
-        U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[25].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>
-        = BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[25].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
-        PINNAME CLKB;
-PIN
-        U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[26].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>
-        = BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[26].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
-        PINNAME CLKB;
-PIN
-        U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[27].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>
-        = BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[27].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
-        PINNAME CLKB;
-PIN
-        U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[28].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>
-        = BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[28].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
-        PINNAME CLKB;
-PIN
         U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>
         = BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
@@ -355,7 +334,8 @@ PIN
         PINNAME CLKA;
 TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6016" BEL "XLXI_6025" BEL "XLXI_6033" BEL "XLXI_6186" BEL
-        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_3405" BEL "XLXI_6185/trig" BEL
+        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_6421" BEL "XLXI_6422" BEL
+        "XLXI_6423" BEL "XLXI_3405" BEL "XLXI_6185/trig" BEL
         "XLXI_6185/trig_in" BEL "XLXI_6185/trig_old" BEL "XLXI_6185/cnt_sig_0"
         BEL "XLXI_6185/cnt_sig_1" BEL "XLXI_6185/cnt_sig_2" BEL
         "XLXI_6185/cnt_sig_3" BEL "XLXI_6185/cnt_sig_4" BEL
@@ -372,23 +352,97 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6185/cnt_sig_25" BEL "XLXI_6185/cnt_sig_26" BEL
         "XLXI_6185/cnt_sig_27" BEL "XLXI_6185/cnt_sig_28" BEL
         "XLXI_6185/cnt_sig_29" BEL "XLXI_6185/cnt_sig_30" BEL
-        "XLXI_6185/cnt_sig_31" BEL "XLXI_6253/b_data_we" BEL "XLXI_6253/armed"
-        BEL "XLXI_6253/sendUDP" BEL "XLXI_6253/startAddr_0" BEL
-        "XLXI_6253/startAddr_1" BEL "XLXI_6253/startAddr_2" BEL
-        "XLXI_6253/startAddr_3" BEL "XLXI_6253/startAddr_4" BEL
-        "XLXI_6253/startAddr_5" BEL "XLXI_6253/startAddr_6" BEL
-        "XLXI_6253/startAddr_7" BEL "XLXI_6253/startAddr_8" BEL
-        "XLXI_6253/startAddr_9" BEL "XLXI_6253/endAddr_0" BEL
-        "XLXI_6253/endAddr_1" BEL "XLXI_6253/endAddr_2" BEL
-        "XLXI_6253/endAddr_3" BEL "XLXI_6253/endAddr_4" BEL
-        "XLXI_6253/endAddr_5" BEL "XLXI_6253/endAddr_6" BEL
-        "XLXI_6253/endAddr_7" BEL "XLXI_6253/endAddr_8" BEL
-        "XLXI_6253/endAddr_9" BEL "XLXI_6349/samplesSinceTrig_0" BEL
-        "XLXI_6349/samplesSinceTrig_1" BEL "XLXI_6349/samplesSinceTrig_2" BEL
-        "XLXI_6349/samplesSinceTrig_3" BEL "XLXI_6349/samplesSinceTrig_4" BEL
-        "XLXI_6349/samplesSinceTrig_5" BEL "XLXI_6349/samplesSinceTrig_6" BEL
-        "XLXI_6349/samplesSinceTrig_7" BEL "XLXI_6349/samplesSinceTrig_8" BEL
-        "XLXI_6349/samplesSinceTrig_9" BEL "XLXI_6349/samplesSinceTrig_10" BEL
+        "XLXI_6185/cnt_sig_31" BEL "XLXI_6253/timing" BEL "XLXI_6253/armed"
+        BEL "XLXI_6253/positiveDelayTimer_0" BEL
+        "XLXI_6253/positiveDelayTimer_1" BEL "XLXI_6253/positiveDelayTimer_2"
+        BEL "XLXI_6253/positiveDelayTimer_3" BEL
+        "XLXI_6253/positiveDelayTimer_4" BEL "XLXI_6253/positiveDelayTimer_5"
+        BEL "XLXI_6253/positiveDelayTimer_6" BEL
+        "XLXI_6253/positiveDelayTimer_7" BEL "XLXI_6253/positiveDelayTimer_8"
+        BEL "XLXI_6253/positiveDelayTimer_9" BEL
+        "XLXI_6253/positiveDelayTimer_10" BEL
+        "XLXI_6253/positiveDelayTimer_11" BEL
+        "XLXI_6253/positiveDelayTimer_12" BEL
+        "XLXI_6253/positiveDelayTimer_13" BEL
+        "XLXI_6253/positiveDelayTimer_14" BEL
+        "XLXI_6253/positiveDelayTimer_15" BEL "XLXI_6253/busy" BEL
+        "XLXI_6253/reading" BEL "XLXI_6253/headerTwoStart" BEL
+        "XLXI_6253/sampleSize_0" BEL "XLXI_6253/sampleSize_1" BEL
+        "XLXI_6253/sampleSize_2" BEL "XLXI_6253/sampleSize_3" BEL
+        "XLXI_6253/sampleSize_4" BEL "XLXI_6253/sampleSize_5" BEL
+        "XLXI_6253/sampleSize_6" BEL "XLXI_6253/sampleSize_7" BEL
+        "XLXI_6253/sampleSize_8" BEL "XLXI_6253/sampleSize_9" BEL
+        "XLXI_6253/sampleSize_10" BEL "XLXI_6253/sampleSize_11" BEL
+        "XLXI_6253/sampleSize_12" BEL "XLXI_6253/sampleSize_13" BEL
+        "XLXI_6253/sampleSize_14" BEL "XLXI_6253/sampleSize_15" BEL
+        "XLXI_6253/endAddr_0" BEL "XLXI_6253/endAddr_1" BEL
+        "XLXI_6253/endAddr_2" BEL "XLXI_6253/endAddr_3" BEL
+        "XLXI_6253/endAddr_4" BEL "XLXI_6253/endAddr_5" BEL
+        "XLXI_6253/endAddr_6" BEL "XLXI_6253/endAddr_7" BEL
+        "XLXI_6253/endAddr_8" BEL "XLXI_6253/endAddr_9" BEL
+        "XLXI_6253/startAddr_0" BEL "XLXI_6253/startAddr_1" BEL
+        "XLXI_6253/startAddr_2" BEL "XLXI_6253/startAddr_3" BEL
+        "XLXI_6253/startAddr_4" BEL "XLXI_6253/startAddr_5" BEL
+        "XLXI_6253/startAddr_6" BEL "XLXI_6253/startAddr_7" BEL
+        "XLXI_6253/startAddr_8" BEL "XLXI_6253/startAddr_9" BEL
+        "XLXI_6253/b_data_0" BEL "XLXI_6253/b_data_1" BEL "XLXI_6253/b_data_2"
+        BEL "XLXI_6253/b_data_3" BEL "XLXI_6253/b_data_4" BEL
+        "XLXI_6253/b_data_5" BEL "XLXI_6253/b_data_6" BEL "XLXI_6253/b_data_7"
+        BEL "XLXI_6253/b_data_8" BEL "XLXI_6253/b_data_9" BEL
+        "XLXI_6253/b_data_10" BEL "XLXI_6253/b_data_11" BEL
+        "XLXI_6253/b_data_12" BEL "XLXI_6253/b_data_13" BEL
+        "XLXI_6253/b_data_14" BEL "XLXI_6253/b_data_15" BEL
+        "XLXI_6253/b_data_16" BEL "XLXI_6253/b_data_17" BEL
+        "XLXI_6253/b_data_18" BEL "XLXI_6253/b_data_19" BEL
+        "XLXI_6253/b_data_20" BEL "XLXI_6253/b_data_21" BEL
+        "XLXI_6253/b_data_22" BEL "XLXI_6253/b_data_23" BEL
+        "XLXI_6253/b_data_24" BEL "XLXI_6253/b_data_25" BEL
+        "XLXI_6253/b_data_26" BEL "XLXI_6253/b_data_27" BEL
+        "XLXI_6253/b_data_28" BEL "XLXI_6253/b_data_29" BEL
+        "XLXI_6253/b_data_30" BEL "XLXI_6253/b_data_31" BEL
+        "XLXI_6253/b_data_32" BEL "XLXI_6253/b_data_33" BEL
+        "XLXI_6253/b_data_34" BEL "XLXI_6253/b_data_35" BEL
+        "XLXI_6253/b_data_36" BEL "XLXI_6253/b_data_37" BEL
+        "XLXI_6253/b_data_38" BEL "XLXI_6253/b_data_39" BEL
+        "XLXI_6253/b_data_40" BEL "XLXI_6253/b_data_41" BEL
+        "XLXI_6253/b_data_42" BEL "XLXI_6253/b_data_43" BEL
+        "XLXI_6253/b_data_44" BEL "XLXI_6253/b_data_45" BEL
+        "XLXI_6253/b_data_46" BEL "XLXI_6253/b_data_47" BEL
+        "XLXI_6253/b_data_48" BEL "XLXI_6253/b_data_49" BEL
+        "XLXI_6253/b_data_50" BEL "XLXI_6253/b_data_51" BEL
+        "XLXI_6253/b_data_52" BEL "XLXI_6253/b_data_53" BEL
+        "XLXI_6253/b_data_54" BEL "XLXI_6253/b_data_55" BEL
+        "XLXI_6253/b_data_56" BEL "XLXI_6253/b_data_57" BEL
+        "XLXI_6253/b_data_58" BEL "XLXI_6253/b_data_59" BEL
+        "XLXI_6253/b_data_60" BEL "XLXI_6253/b_data_61" BEL
+        "XLXI_6253/b_data_62" BEL "XLXI_6253/b_data_63" BEL
+        "XLXI_6253/triggerCount_0" BEL "XLXI_6253/triggerCount_1" BEL
+        "XLXI_6253/triggerCount_2" BEL "XLXI_6253/triggerCount_3" BEL
+        "XLXI_6253/triggerCount_4" BEL "XLXI_6253/triggerCount_5" BEL
+        "XLXI_6253/triggerCount_6" BEL "XLXI_6253/triggerCount_7" BEL
+        "XLXI_6253/triggerCount_8" BEL "XLXI_6253/triggerCount_9" BEL
+        "XLXI_6253/triggerCount_10" BEL "XLXI_6253/triggerCount_11" BEL
+        "XLXI_6253/triggerCount_12" BEL "XLXI_6253/triggerCount_13" BEL
+        "XLXI_6253/triggerCount_14" BEL "XLXI_6253/triggerCount_15" BEL
+        "XLXI_6253/triggerCount_16" BEL "XLXI_6253/triggerCount_17" BEL
+        "XLXI_6253/triggerCount_18" BEL "XLXI_6253/triggerCount_19" BEL
+        "XLXI_6253/triggerCount_20" BEL "XLXI_6253/triggerCount_21" BEL
+        "XLXI_6253/triggerCount_22" BEL "XLXI_6253/triggerCount_23" BEL
+        "XLXI_6253/triggerCount_24" BEL "XLXI_6253/triggerCount_25" BEL
+        "XLXI_6253/triggerCount_26" BEL "XLXI_6253/triggerCount_27" BEL
+        "XLXI_6253/triggerCount_28" BEL "XLXI_6253/triggerCount_29" BEL
+        "XLXI_6253/triggerCount_30" BEL "XLXI_6253/triggerCount_31" BEL
+        "XLXI_6253/missedTriggerCount_0" BEL "XLXI_6253/missedTriggerCount_1"
+        BEL "XLXI_6253/missedTriggerCount_2" BEL
+        "XLXI_6253/missedTriggerCount_3" BEL "XLXI_6253/missedTriggerCount_4"
+        BEL "XLXI_6253/missedTriggerCount_5" BEL
+        "XLXI_6253/missedTriggerCount_6" BEL "XLXI_6253/missedTriggerCount_7"
+        BEL "XLXI_6349/samplesSinceTrig_0" BEL "XLXI_6349/samplesSinceTrig_1"
+        BEL "XLXI_6349/samplesSinceTrig_2" BEL "XLXI_6349/samplesSinceTrig_3"
+        BEL "XLXI_6349/samplesSinceTrig_4" BEL "XLXI_6349/samplesSinceTrig_5"
+        BEL "XLXI_6349/samplesSinceTrig_6" BEL "XLXI_6349/samplesSinceTrig_7"
+        BEL "XLXI_6349/samplesSinceTrig_8" BEL "XLXI_6349/samplesSinceTrig_9"
+        BEL "XLXI_6349/samplesSinceTrig_10" BEL
         "XLXI_6349/samplesSinceTrig_11" BEL "XLXI_6349/samplesSinceTrig_12"
         BEL "XLXI_6349/samplesSinceTrig_13" BEL
         "XLXI_6349/samplesSinceTrig_14" BEL "XLXI_6349/samplesSinceTrig_15"
@@ -403,17 +457,25 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6349/trigger_address_4" BEL "XLXI_6349/trigger_address_5" BEL
         "XLXI_6349/trigger_address_6" BEL "XLXI_6349/trigger_address_7" BEL
         "XLXI_6349/trigger_address_8" BEL "XLXI_6349/trigger_address_9" BEL
-        "XLXI_6227/internal_eth_dout_4" BEL "XLXI_6227/internal_reset" BEL
-        "XLXI_6227/internal_eth_dout_5" BEL "XLXI_6227/internal_eth_dout_10"
-        BEL "XLXI_6227/internal_eth_dout_8" BEL
-        "XLXI_6227/internal_eth_dout_12" BEL "XLXI_6227/internal_eth_dout_14"
-        BEL "XLXI_6227/internal_eth_dout_20" BEL
-        "XLXI_6227/internal_eth_dout_21" BEL "XLXI_6227/internal_eth_dout_16"
-        BEL "XLXI_6227/internal_eth_dout_22" BEL
-        "XLXI_6227/internal_eth_dout_17" BEL "XLXI_6227/internal_eth_dout_23"
-        BEL "XLXI_6227/internal_eth_dout_18" BEL
-        "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0" BEL
-        "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
+        "XLXI_6415/vetoed" BEL "XLXI_6415/zeroCrossCount_0" BEL
+        "XLXI_6415/zeroCrossCount_1" BEL "XLXI_6415/zeroCrossCount_2" BEL
+        "XLXI_6415/zeroCrossCount_3" BEL "XLXI_6415/zeroCrossCount_4" BEL
+        "XLXI_6415/zeroCrossCount_5" BEL "XLXI_6415/zeroCrossCount_6" BEL
+        "XLXI_6415/zeroCrossCount_7" BEL "XLXI_6415/data_out_0" BEL
+        "XLXI_6415/data_out_1" BEL "XLXI_6415/data_out_2" BEL
+        "XLXI_6415/data_out_3" BEL "XLXI_6415/data_out_4" BEL
+        "XLXI_6415/data_out_5" BEL "XLXI_6415/data_out_6" BEL
+        "XLXI_6415/data_out_7" BEL "XLXI_6227/internal_eth_dout_4" BEL
+        "XLXI_6227/internal_reset" BEL "XLXI_6227/internal_eth_dout_5" BEL
+        "XLXI_6227/internal_eth_dout_10" BEL "XLXI_6227/internal_eth_dout_8"
+        BEL "XLXI_6227/internal_eth_dout_12" BEL
+        "XLXI_6227/internal_eth_dout_14" BEL "XLXI_6227/internal_eth_dout_20"
+        BEL "XLXI_6227/internal_eth_dout_21" BEL
+        "XLXI_6227/internal_eth_dout_16" BEL "XLXI_6227/internal_eth_dout_22"
+        BEL "XLXI_6227/internal_eth_dout_17" BEL
+        "XLXI_6227/internal_eth_dout_23" BEL "XLXI_6227/internal_eth_dout_18"
+        BEL "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0"
+        BEL "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
         "XLXI_6227/user_addr_byte_3" BEL "XLXI_6227/user_addr_byte_4" BEL
         "XLXI_6227/user_addr_byte_5" BEL "XLXI_6227/user_addr_byte_6" BEL
         "XLXI_6227/user_addr_byte_7" BEL "XLXI_6227/internal_eth_dout_40" BEL
@@ -582,80 +644,12 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/tx_data_dest_addr_27" BEL "XLXI_6227/tx_data_dest_addr_28"
         BEL "XLXI_6227/tx_data_dest_addr_29" BEL
         "XLXI_6227/tx_data_dest_addr_30" BEL "XLXI_6227/tx_data_dest_addr_31"
-        BEL "XLXI_6227/burst_traffic_controller_blk/force_packet_old" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_0" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_1" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_2" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_3" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_4" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_5" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_6" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_7" BEL
-        "XLXI_6227/burst_traffic_controller_blk/BURST_END_PACKET" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_0" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_1" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_2" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_3" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_4" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_5" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_6" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_7" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_8" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_9" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_10" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_11" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_12" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_13" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_14" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_15" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_16" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_17" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_18" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_19" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_20" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_21" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_22" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_23" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_24" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_25" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_26" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_27" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_28" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_29" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_30" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_31" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_32" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_33" BEL
+        BEL "XLXI_6227/burst_traffic_controller_blk/BURST_END_PACKET" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/reset_packet_size" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_0" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_1" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_0"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_1"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_2"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_3"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_4"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_5"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_6"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_7"
-        BEL "XLXI_6227/data_manager_blk/burst_controller_sm/b_end_packet_old"
-        BEL "XLXI_6227/data_manager_blk/burst_controller_sm/just_reset" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_enable_sig" BEL
+        "XLXI_6227/data_manager_blk/burst_controller_sm/b_end_packet_old" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/first_packet_sig" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_11" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_10" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_12" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_13" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_14" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_15" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_8" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_9" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/Sreg0_FSM_FFd1" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/Sreg0_FSM_FFd2" BEL
         "XLXI_6227/data_manager_blk/GEC_RX_CTRL/com_code" BEL
@@ -854,6 +848,22 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_45" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_46" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_47" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_48" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_49" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_50" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_51" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_52" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_53" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_54" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_55" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_56" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_57" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_58" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_59" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_60" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_61" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_62" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_63" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_4" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_5" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_7" BEL
@@ -1187,6 +1197,8 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i"
+        BEL
+        "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i"
         BEL
@@ -1534,9 +1546,13 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -1874,9 +1890,13 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -2087,6 +2107,10 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i"
         BEL
@@ -2434,9 +2458,13 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -2774,9 +2802,13 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -4037,11 +4069,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_2"
         BEL
@@ -4049,11 +4081,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_2"
         BEL
@@ -4061,11 +4093,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_2"
         BEL
@@ -4073,11 +4105,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_2"
         BEL
@@ -4085,11 +4117,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_2"
         BEL
@@ -4097,11 +4129,11 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<7>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<7>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_2"
         BEL
@@ -4140,23 +4172,39 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/internal_eth_dout_31" BEL "XLXI_6227/internal_eth_dout_26"
         BEL "XLXI_6227/internal_eth_dout_27" BEL
         "XLXI_6227/internal_eth_dout_28" BEL "XLXI_6227/internal_eth_dout_29"
-        BEL "BUSC_26DN_53S" BEL "XLXI_6394/I_Q15" BEL "XLXI_6394/I_Q14" BEL
-        "XLXI_6394/I_Q13" BEL "XLXI_6394/I_Q12" BEL "XLXI_6394/I_Q11" BEL
-        "XLXI_6394/I_Q10" BEL "XLXI_6394/I_Q9" BEL "XLXI_6394/I_Q8" BEL
-        "XLXI_6394/I_Q7" BEL "XLXI_6394/I_Q6" BEL "XLXI_6394/I_Q5" BEL
-        "XLXI_6394/I_Q4" BEL "XLXI_6394/I_Q3" BEL "XLXI_6394/I_Q2" BEL
-        "XLXI_6394/I_Q1" BEL "XLXI_6394/I_Q0" BEL "XLXI_6251/I_Q15" BEL
-        "XLXI_6251/I_Q14" BEL "XLXI_6251/I_Q13" BEL "XLXI_6251/I_Q12" BEL
-        "XLXI_6251/I_Q11" BEL "XLXI_6251/I_Q10" BEL "XLXI_6251/I_Q9" BEL
-        "XLXI_6251/I_Q8" BEL "XLXI_6251/I_Q7" BEL "XLXI_6251/I_Q6" BEL
-        "XLXI_6251/I_Q5" BEL "XLXI_6251/I_Q4" BEL "XLXI_6251/I_Q3" BEL
-        "XLXI_6251/I_Q2" BEL "XLXI_6251/I_Q1" BEL "XLXI_6251/I_Q0" BEL
-        "XLXI_6051/I_Q15" BEL "XLXI_6051/I_Q14" BEL "XLXI_6051/I_Q13" BEL
-        "XLXI_6051/I_Q12" BEL "XLXI_6051/I_Q11" BEL "XLXI_6051/I_Q10" BEL
-        "XLXI_6051/I_Q9" BEL "XLXI_6051/I_Q8" BEL "XLXI_6051/I_Q7" BEL
-        "XLXI_6051/I_Q6" BEL "XLXI_6051/I_Q5" BEL "XLXI_6051/I_Q4" BEL
-        "XLXI_6051/I_Q3" BEL "XLXI_6051/I_Q2" BEL "XLXI_6051/I_Q1" BEL
-        "XLXI_6051/I_Q0" BEL "XLXI_6247/I_Q7" BEL "XLXI_6247/I_Q6" BEL
+        BEL "BUSC_26DN_53S" BEL "XLXI_6410/I_Q15" BEL "XLXI_6410/I_Q14" BEL
+        "XLXI_6410/I_Q13" BEL "XLXI_6410/I_Q12" BEL "XLXI_6410/I_Q11" BEL
+        "XLXI_6410/I_Q10" BEL "XLXI_6410/I_Q9" BEL "XLXI_6410/I_Q8" BEL
+        "XLXI_6410/I_Q7" BEL "XLXI_6410/I_Q6" BEL "XLXI_6410/I_Q5" BEL
+        "XLXI_6410/I_Q4" BEL "XLXI_6410/I_Q3" BEL "XLXI_6410/I_Q2" BEL
+        "XLXI_6410/I_Q1" BEL "XLXI_6410/I_Q0" BEL "XLXI_6394/I_Q15" BEL
+        "XLXI_6394/I_Q14" BEL "XLXI_6394/I_Q13" BEL "XLXI_6394/I_Q12" BEL
+        "XLXI_6394/I_Q11" BEL "XLXI_6394/I_Q10" BEL "XLXI_6394/I_Q9" BEL
+        "XLXI_6394/I_Q8" BEL "XLXI_6394/I_Q7" BEL "XLXI_6394/I_Q6" BEL
+        "XLXI_6394/I_Q5" BEL "XLXI_6394/I_Q4" BEL "XLXI_6394/I_Q3" BEL
+        "XLXI_6394/I_Q2" BEL "XLXI_6394/I_Q1" BEL "XLXI_6394/I_Q0" BEL
+        "XLXI_6251/I_Q15" BEL "XLXI_6251/I_Q14" BEL "XLXI_6251/I_Q13" BEL
+        "XLXI_6251/I_Q12" BEL "XLXI_6251/I_Q11" BEL "XLXI_6251/I_Q10" BEL
+        "XLXI_6251/I_Q9" BEL "XLXI_6251/I_Q8" BEL "XLXI_6251/I_Q7" BEL
+        "XLXI_6251/I_Q6" BEL "XLXI_6251/I_Q5" BEL "XLXI_6251/I_Q4" BEL
+        "XLXI_6251/I_Q3" BEL "XLXI_6251/I_Q2" BEL "XLXI_6251/I_Q1" BEL
+        "XLXI_6251/I_Q0" BEL "XLXI_6051/I_Q15" BEL "XLXI_6051/I_Q14" BEL
+        "XLXI_6051/I_Q13" BEL "XLXI_6051/I_Q12" BEL "XLXI_6051/I_Q11" BEL
+        "XLXI_6051/I_Q10" BEL "XLXI_6051/I_Q9" BEL "XLXI_6051/I_Q8" BEL
+        "XLXI_6051/I_Q7" BEL "XLXI_6051/I_Q6" BEL "XLXI_6051/I_Q5" BEL
+        "XLXI_6051/I_Q4" BEL "XLXI_6051/I_Q3" BEL "XLXI_6051/I_Q2" BEL
+        "XLXI_6051/I_Q1" BEL "XLXI_6051/I_Q0" BEL "XLXI_6420/I_Q7" BEL
+        "XLXI_6420/I_Q6" BEL "XLXI_6420/I_Q5" BEL "XLXI_6420/I_Q4" BEL
+        "XLXI_6420/I_Q3" BEL "XLXI_6420/I_Q2" BEL "XLXI_6420/I_Q1" BEL
+        "XLXI_6420/I_Q0" BEL "XLXI_6419/I_Q7" BEL "XLXI_6419/I_Q6" BEL
+        "XLXI_6419/I_Q5" BEL "XLXI_6419/I_Q4" BEL "XLXI_6419/I_Q3" BEL
+        "XLXI_6419/I_Q2" BEL "XLXI_6419/I_Q1" BEL "XLXI_6419/I_Q0" BEL
+        "XLXI_6418/I_Q7" BEL "XLXI_6418/I_Q6" BEL "XLXI_6418/I_Q5" BEL
+        "XLXI_6418/I_Q4" BEL "XLXI_6418/I_Q3" BEL "XLXI_6418/I_Q2" BEL
+        "XLXI_6418/I_Q1" BEL "XLXI_6418/I_Q0" BEL "XLXI_6414/I_Q7" BEL
+        "XLXI_6414/I_Q6" BEL "XLXI_6414/I_Q5" BEL "XLXI_6414/I_Q4" BEL
+        "XLXI_6414/I_Q3" BEL "XLXI_6414/I_Q2" BEL "XLXI_6414/I_Q1" BEL
+        "XLXI_6414/I_Q0" BEL "XLXI_6247/I_Q7" BEL "XLXI_6247/I_Q6" BEL
         "XLXI_6247/I_Q5" BEL "XLXI_6247/I_Q4" BEL "XLXI_6247/I_Q3" BEL
         "XLXI_6247/I_Q2" BEL "XLXI_6247/I_Q1" BEL "XLXI_6247/I_Q0" BEL
         "XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1"
@@ -4463,37 +4511,6 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[192].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[193].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[194].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[195].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[196].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[197].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[198].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[199].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[200].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[201].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[202].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[203].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[204].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[205].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[206].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[207].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[208].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[209].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[210].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[211].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[212].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[213].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[214].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[215].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[216].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[217].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[218].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[219].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[220].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[221].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[222].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[223].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[224].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[225].U_TQ" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/F_NO_TCMC.U_FDR" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
         BEL
@@ -4507,68 +4524,6 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/I_MC_NO.U_NO_MC_REG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[224].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[223].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[222].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[221].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[220].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[219].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[218].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[217].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[216].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[215].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[214].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[213].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[212].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[211].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[210].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[209].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[208].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[207].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[206].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[205].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[204].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[203].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[202].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[201].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[200].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[199].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[198].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[197].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[196].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[195].I_SRLT_NE_0.FF"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[194].I_SRLT_NE_0.FF"
         BEL
@@ -4962,68 +4917,6 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.I_OREG.U_OREG"
         BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[225].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[224].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[223].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[222].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[221].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[220].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[219].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[218].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[217].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[216].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[215].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[214].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[213].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[212].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[211].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[210].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[209].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[208].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[207].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[206].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[205].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[204].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[203].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[202].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[201].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[200].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[199].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[198].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[197].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[196].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[195].U_TREG"
-        BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[194].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[193].U_TREG"
@@ -5413,68 +5306,6 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[225].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[224].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[223].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[222].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[221].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[220].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[219].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[218].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[217].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[216].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[215].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[214].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[213].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[212].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[211].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[210].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[209].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[208].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[207].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[206].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[205].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[204].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[203].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[202].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[201].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[200].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[199].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[198].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[197].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[196].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[195].U_IREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[194].U_IREG"
         BEL
@@ -6438,68 +6269,6 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[193].I_SRLT_NE_0.DLY9/SRL16E"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[194].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[195].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[196].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[197].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[198].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[199].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[200].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[201].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[202].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[203].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[204].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[205].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[206].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[207].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[208].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[209].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[210].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[211].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[212].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[213].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[214].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[215].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[216].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[217].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[218].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[219].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[220].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[221].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[222].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[223].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[224].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.DLY9/SRL16E"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
@@ -6534,14 +6303,6 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[23].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[24].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[25].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[26].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[27].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[28].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
@@ -6572,7 +6333,8 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP_pins<30>";
 TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6016" BEL "XLXI_6025" BEL "XLXI_6033" BEL "XLXI_6186" BEL
-        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_3405" BEL "XLXI_6185/trig" BEL
+        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_6421" BEL "XLXI_6422" BEL
+        "XLXI_6423" BEL "XLXI_3405" BEL "XLXI_6185/trig" BEL
         "XLXI_6185/trig_in" BEL "XLXI_6185/trig_old" BEL "XLXI_6185/cnt_sig_0"
         BEL "XLXI_6185/cnt_sig_1" BEL "XLXI_6185/cnt_sig_2" BEL
         "XLXI_6185/cnt_sig_3" BEL "XLXI_6185/cnt_sig_4" BEL
@@ -6589,23 +6351,97 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6185/cnt_sig_25" BEL "XLXI_6185/cnt_sig_26" BEL
         "XLXI_6185/cnt_sig_27" BEL "XLXI_6185/cnt_sig_28" BEL
         "XLXI_6185/cnt_sig_29" BEL "XLXI_6185/cnt_sig_30" BEL
-        "XLXI_6185/cnt_sig_31" BEL "XLXI_6253/b_data_we" BEL "XLXI_6253/armed"
-        BEL "XLXI_6253/sendUDP" BEL "XLXI_6253/startAddr_0" BEL
-        "XLXI_6253/startAddr_1" BEL "XLXI_6253/startAddr_2" BEL
-        "XLXI_6253/startAddr_3" BEL "XLXI_6253/startAddr_4" BEL
-        "XLXI_6253/startAddr_5" BEL "XLXI_6253/startAddr_6" BEL
-        "XLXI_6253/startAddr_7" BEL "XLXI_6253/startAddr_8" BEL
-        "XLXI_6253/startAddr_9" BEL "XLXI_6253/endAddr_0" BEL
-        "XLXI_6253/endAddr_1" BEL "XLXI_6253/endAddr_2" BEL
-        "XLXI_6253/endAddr_3" BEL "XLXI_6253/endAddr_4" BEL
-        "XLXI_6253/endAddr_5" BEL "XLXI_6253/endAddr_6" BEL
-        "XLXI_6253/endAddr_7" BEL "XLXI_6253/endAddr_8" BEL
-        "XLXI_6253/endAddr_9" BEL "XLXI_6349/samplesSinceTrig_0" BEL
-        "XLXI_6349/samplesSinceTrig_1" BEL "XLXI_6349/samplesSinceTrig_2" BEL
-        "XLXI_6349/samplesSinceTrig_3" BEL "XLXI_6349/samplesSinceTrig_4" BEL
-        "XLXI_6349/samplesSinceTrig_5" BEL "XLXI_6349/samplesSinceTrig_6" BEL
-        "XLXI_6349/samplesSinceTrig_7" BEL "XLXI_6349/samplesSinceTrig_8" BEL
-        "XLXI_6349/samplesSinceTrig_9" BEL "XLXI_6349/samplesSinceTrig_10" BEL
+        "XLXI_6185/cnt_sig_31" BEL "XLXI_6253/timing" BEL "XLXI_6253/armed"
+        BEL "XLXI_6253/positiveDelayTimer_0" BEL
+        "XLXI_6253/positiveDelayTimer_1" BEL "XLXI_6253/positiveDelayTimer_2"
+        BEL "XLXI_6253/positiveDelayTimer_3" BEL
+        "XLXI_6253/positiveDelayTimer_4" BEL "XLXI_6253/positiveDelayTimer_5"
+        BEL "XLXI_6253/positiveDelayTimer_6" BEL
+        "XLXI_6253/positiveDelayTimer_7" BEL "XLXI_6253/positiveDelayTimer_8"
+        BEL "XLXI_6253/positiveDelayTimer_9" BEL
+        "XLXI_6253/positiveDelayTimer_10" BEL
+        "XLXI_6253/positiveDelayTimer_11" BEL
+        "XLXI_6253/positiveDelayTimer_12" BEL
+        "XLXI_6253/positiveDelayTimer_13" BEL
+        "XLXI_6253/positiveDelayTimer_14" BEL
+        "XLXI_6253/positiveDelayTimer_15" BEL "XLXI_6253/busy" BEL
+        "XLXI_6253/reading" BEL "XLXI_6253/headerTwoStart" BEL
+        "XLXI_6253/sampleSize_0" BEL "XLXI_6253/sampleSize_1" BEL
+        "XLXI_6253/sampleSize_2" BEL "XLXI_6253/sampleSize_3" BEL
+        "XLXI_6253/sampleSize_4" BEL "XLXI_6253/sampleSize_5" BEL
+        "XLXI_6253/sampleSize_6" BEL "XLXI_6253/sampleSize_7" BEL
+        "XLXI_6253/sampleSize_8" BEL "XLXI_6253/sampleSize_9" BEL
+        "XLXI_6253/sampleSize_10" BEL "XLXI_6253/sampleSize_11" BEL
+        "XLXI_6253/sampleSize_12" BEL "XLXI_6253/sampleSize_13" BEL
+        "XLXI_6253/sampleSize_14" BEL "XLXI_6253/sampleSize_15" BEL
+        "XLXI_6253/endAddr_0" BEL "XLXI_6253/endAddr_1" BEL
+        "XLXI_6253/endAddr_2" BEL "XLXI_6253/endAddr_3" BEL
+        "XLXI_6253/endAddr_4" BEL "XLXI_6253/endAddr_5" BEL
+        "XLXI_6253/endAddr_6" BEL "XLXI_6253/endAddr_7" BEL
+        "XLXI_6253/endAddr_8" BEL "XLXI_6253/endAddr_9" BEL
+        "XLXI_6253/startAddr_0" BEL "XLXI_6253/startAddr_1" BEL
+        "XLXI_6253/startAddr_2" BEL "XLXI_6253/startAddr_3" BEL
+        "XLXI_6253/startAddr_4" BEL "XLXI_6253/startAddr_5" BEL
+        "XLXI_6253/startAddr_6" BEL "XLXI_6253/startAddr_7" BEL
+        "XLXI_6253/startAddr_8" BEL "XLXI_6253/startAddr_9" BEL
+        "XLXI_6253/b_data_0" BEL "XLXI_6253/b_data_1" BEL "XLXI_6253/b_data_2"
+        BEL "XLXI_6253/b_data_3" BEL "XLXI_6253/b_data_4" BEL
+        "XLXI_6253/b_data_5" BEL "XLXI_6253/b_data_6" BEL "XLXI_6253/b_data_7"
+        BEL "XLXI_6253/b_data_8" BEL "XLXI_6253/b_data_9" BEL
+        "XLXI_6253/b_data_10" BEL "XLXI_6253/b_data_11" BEL
+        "XLXI_6253/b_data_12" BEL "XLXI_6253/b_data_13" BEL
+        "XLXI_6253/b_data_14" BEL "XLXI_6253/b_data_15" BEL
+        "XLXI_6253/b_data_16" BEL "XLXI_6253/b_data_17" BEL
+        "XLXI_6253/b_data_18" BEL "XLXI_6253/b_data_19" BEL
+        "XLXI_6253/b_data_20" BEL "XLXI_6253/b_data_21" BEL
+        "XLXI_6253/b_data_22" BEL "XLXI_6253/b_data_23" BEL
+        "XLXI_6253/b_data_24" BEL "XLXI_6253/b_data_25" BEL
+        "XLXI_6253/b_data_26" BEL "XLXI_6253/b_data_27" BEL
+        "XLXI_6253/b_data_28" BEL "XLXI_6253/b_data_29" BEL
+        "XLXI_6253/b_data_30" BEL "XLXI_6253/b_data_31" BEL
+        "XLXI_6253/b_data_32" BEL "XLXI_6253/b_data_33" BEL
+        "XLXI_6253/b_data_34" BEL "XLXI_6253/b_data_35" BEL
+        "XLXI_6253/b_data_36" BEL "XLXI_6253/b_data_37" BEL
+        "XLXI_6253/b_data_38" BEL "XLXI_6253/b_data_39" BEL
+        "XLXI_6253/b_data_40" BEL "XLXI_6253/b_data_41" BEL
+        "XLXI_6253/b_data_42" BEL "XLXI_6253/b_data_43" BEL
+        "XLXI_6253/b_data_44" BEL "XLXI_6253/b_data_45" BEL
+        "XLXI_6253/b_data_46" BEL "XLXI_6253/b_data_47" BEL
+        "XLXI_6253/b_data_48" BEL "XLXI_6253/b_data_49" BEL
+        "XLXI_6253/b_data_50" BEL "XLXI_6253/b_data_51" BEL
+        "XLXI_6253/b_data_52" BEL "XLXI_6253/b_data_53" BEL
+        "XLXI_6253/b_data_54" BEL "XLXI_6253/b_data_55" BEL
+        "XLXI_6253/b_data_56" BEL "XLXI_6253/b_data_57" BEL
+        "XLXI_6253/b_data_58" BEL "XLXI_6253/b_data_59" BEL
+        "XLXI_6253/b_data_60" BEL "XLXI_6253/b_data_61" BEL
+        "XLXI_6253/b_data_62" BEL "XLXI_6253/b_data_63" BEL
+        "XLXI_6253/triggerCount_0" BEL "XLXI_6253/triggerCount_1" BEL
+        "XLXI_6253/triggerCount_2" BEL "XLXI_6253/triggerCount_3" BEL
+        "XLXI_6253/triggerCount_4" BEL "XLXI_6253/triggerCount_5" BEL
+        "XLXI_6253/triggerCount_6" BEL "XLXI_6253/triggerCount_7" BEL
+        "XLXI_6253/triggerCount_8" BEL "XLXI_6253/triggerCount_9" BEL
+        "XLXI_6253/triggerCount_10" BEL "XLXI_6253/triggerCount_11" BEL
+        "XLXI_6253/triggerCount_12" BEL "XLXI_6253/triggerCount_13" BEL
+        "XLXI_6253/triggerCount_14" BEL "XLXI_6253/triggerCount_15" BEL
+        "XLXI_6253/triggerCount_16" BEL "XLXI_6253/triggerCount_17" BEL
+        "XLXI_6253/triggerCount_18" BEL "XLXI_6253/triggerCount_19" BEL
+        "XLXI_6253/triggerCount_20" BEL "XLXI_6253/triggerCount_21" BEL
+        "XLXI_6253/triggerCount_22" BEL "XLXI_6253/triggerCount_23" BEL
+        "XLXI_6253/triggerCount_24" BEL "XLXI_6253/triggerCount_25" BEL
+        "XLXI_6253/triggerCount_26" BEL "XLXI_6253/triggerCount_27" BEL
+        "XLXI_6253/triggerCount_28" BEL "XLXI_6253/triggerCount_29" BEL
+        "XLXI_6253/triggerCount_30" BEL "XLXI_6253/triggerCount_31" BEL
+        "XLXI_6253/missedTriggerCount_0" BEL "XLXI_6253/missedTriggerCount_1"
+        BEL "XLXI_6253/missedTriggerCount_2" BEL
+        "XLXI_6253/missedTriggerCount_3" BEL "XLXI_6253/missedTriggerCount_4"
+        BEL "XLXI_6253/missedTriggerCount_5" BEL
+        "XLXI_6253/missedTriggerCount_6" BEL "XLXI_6253/missedTriggerCount_7"
+        BEL "XLXI_6349/samplesSinceTrig_0" BEL "XLXI_6349/samplesSinceTrig_1"
+        BEL "XLXI_6349/samplesSinceTrig_2" BEL "XLXI_6349/samplesSinceTrig_3"
+        BEL "XLXI_6349/samplesSinceTrig_4" BEL "XLXI_6349/samplesSinceTrig_5"
+        BEL "XLXI_6349/samplesSinceTrig_6" BEL "XLXI_6349/samplesSinceTrig_7"
+        BEL "XLXI_6349/samplesSinceTrig_8" BEL "XLXI_6349/samplesSinceTrig_9"
+        BEL "XLXI_6349/samplesSinceTrig_10" BEL
         "XLXI_6349/samplesSinceTrig_11" BEL "XLXI_6349/samplesSinceTrig_12"
         BEL "XLXI_6349/samplesSinceTrig_13" BEL
         "XLXI_6349/samplesSinceTrig_14" BEL "XLXI_6349/samplesSinceTrig_15"
@@ -6620,17 +6456,25 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6349/trigger_address_4" BEL "XLXI_6349/trigger_address_5" BEL
         "XLXI_6349/trigger_address_6" BEL "XLXI_6349/trigger_address_7" BEL
         "XLXI_6349/trigger_address_8" BEL "XLXI_6349/trigger_address_9" BEL
-        "XLXI_6227/internal_eth_dout_4" BEL "XLXI_6227/internal_reset" BEL
-        "XLXI_6227/internal_eth_dout_5" BEL "XLXI_6227/internal_eth_dout_10"
-        BEL "XLXI_6227/internal_eth_dout_8" BEL
-        "XLXI_6227/internal_eth_dout_12" BEL "XLXI_6227/internal_eth_dout_14"
-        BEL "XLXI_6227/internal_eth_dout_20" BEL
-        "XLXI_6227/internal_eth_dout_21" BEL "XLXI_6227/internal_eth_dout_16"
-        BEL "XLXI_6227/internal_eth_dout_22" BEL
-        "XLXI_6227/internal_eth_dout_17" BEL "XLXI_6227/internal_eth_dout_23"
-        BEL "XLXI_6227/internal_eth_dout_18" BEL
-        "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0" BEL
-        "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
+        "XLXI_6415/vetoed" BEL "XLXI_6415/zeroCrossCount_0" BEL
+        "XLXI_6415/zeroCrossCount_1" BEL "XLXI_6415/zeroCrossCount_2" BEL
+        "XLXI_6415/zeroCrossCount_3" BEL "XLXI_6415/zeroCrossCount_4" BEL
+        "XLXI_6415/zeroCrossCount_5" BEL "XLXI_6415/zeroCrossCount_6" BEL
+        "XLXI_6415/zeroCrossCount_7" BEL "XLXI_6415/data_out_0" BEL
+        "XLXI_6415/data_out_1" BEL "XLXI_6415/data_out_2" BEL
+        "XLXI_6415/data_out_3" BEL "XLXI_6415/data_out_4" BEL
+        "XLXI_6415/data_out_5" BEL "XLXI_6415/data_out_6" BEL
+        "XLXI_6415/data_out_7" BEL "XLXI_6227/internal_eth_dout_4" BEL
+        "XLXI_6227/internal_reset" BEL "XLXI_6227/internal_eth_dout_5" BEL
+        "XLXI_6227/internal_eth_dout_10" BEL "XLXI_6227/internal_eth_dout_8"
+        BEL "XLXI_6227/internal_eth_dout_12" BEL
+        "XLXI_6227/internal_eth_dout_14" BEL "XLXI_6227/internal_eth_dout_20"
+        BEL "XLXI_6227/internal_eth_dout_21" BEL
+        "XLXI_6227/internal_eth_dout_16" BEL "XLXI_6227/internal_eth_dout_22"
+        BEL "XLXI_6227/internal_eth_dout_17" BEL
+        "XLXI_6227/internal_eth_dout_23" BEL "XLXI_6227/internal_eth_dout_18"
+        BEL "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0"
+        BEL "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
         "XLXI_6227/user_addr_byte_3" BEL "XLXI_6227/user_addr_byte_4" BEL
         "XLXI_6227/user_addr_byte_5" BEL "XLXI_6227/user_addr_byte_6" BEL
         "XLXI_6227/user_addr_byte_7" BEL "XLXI_6227/internal_eth_dout_40" BEL
@@ -6799,80 +6643,12 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/tx_data_dest_addr_27" BEL "XLXI_6227/tx_data_dest_addr_28"
         BEL "XLXI_6227/tx_data_dest_addr_29" BEL
         "XLXI_6227/tx_data_dest_addr_30" BEL "XLXI_6227/tx_data_dest_addr_31"
-        BEL "XLXI_6227/burst_traffic_controller_blk/force_packet_old" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_0" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_1" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_2" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_3" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_4" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_5" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_6" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_7" BEL
-        "XLXI_6227/burst_traffic_controller_blk/BURST_END_PACKET" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_0" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_1" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_2" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_3" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_4" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_5" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_6" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_7" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_8" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_9" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_10" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_11" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_12" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_13" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_14" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_15" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_16" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_17" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_18" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_19" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_20" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_21" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_22" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_23" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_24" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_25" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_26" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_27" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_28" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_29" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_30" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_31" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_32" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_33" BEL
+        BEL "XLXI_6227/burst_traffic_controller_blk/BURST_END_PACKET" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/reset_packet_size" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_0" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_1" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_0"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_1"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_2"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_3"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_4"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_5"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_6"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_7"
-        BEL "XLXI_6227/data_manager_blk/burst_controller_sm/b_end_packet_old"
-        BEL "XLXI_6227/data_manager_blk/burst_controller_sm/just_reset" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_enable_sig" BEL
+        "XLXI_6227/data_manager_blk/burst_controller_sm/b_end_packet_old" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/first_packet_sig" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_11" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_10" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_12" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_13" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_14" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_15" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_8" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_9" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/Sreg0_FSM_FFd1" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/Sreg0_FSM_FFd2" BEL
         "XLXI_6227/data_manager_blk/GEC_RX_CTRL/com_code" BEL
@@ -7071,6 +6847,22 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_45" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_46" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_47" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_48" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_49" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_50" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_51" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_52" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_53" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_54" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_55" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_56" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_57" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_58" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_59" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_60" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_61" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_62" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_63" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_4" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_5" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_7" BEL
@@ -7404,6 +7196,8 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i"
+        BEL
+        "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i"
         BEL
@@ -7751,9 +7545,13 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -8091,9 +7889,13 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -8304,6 +8106,10 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i"
         BEL
@@ -8651,9 +8457,13 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -8991,9 +8801,13 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -10254,11 +10068,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_2"
         BEL
@@ -10266,11 +10080,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_2"
         BEL
@@ -10278,11 +10092,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_2"
         BEL
@@ -10290,11 +10104,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_2"
         BEL
@@ -10302,11 +10116,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_2"
         BEL
@@ -10314,11 +10128,11 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<7>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<7>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_2"
         BEL
@@ -10357,23 +10171,39 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/internal_eth_dout_31" BEL "XLXI_6227/internal_eth_dout_26"
         BEL "XLXI_6227/internal_eth_dout_27" BEL
         "XLXI_6227/internal_eth_dout_28" BEL "XLXI_6227/internal_eth_dout_29"
-        BEL "BUSC_26DN_53S" BEL "XLXI_6394/I_Q15" BEL "XLXI_6394/I_Q14" BEL
-        "XLXI_6394/I_Q13" BEL "XLXI_6394/I_Q12" BEL "XLXI_6394/I_Q11" BEL
-        "XLXI_6394/I_Q10" BEL "XLXI_6394/I_Q9" BEL "XLXI_6394/I_Q8" BEL
-        "XLXI_6394/I_Q7" BEL "XLXI_6394/I_Q6" BEL "XLXI_6394/I_Q5" BEL
-        "XLXI_6394/I_Q4" BEL "XLXI_6394/I_Q3" BEL "XLXI_6394/I_Q2" BEL
-        "XLXI_6394/I_Q1" BEL "XLXI_6394/I_Q0" BEL "XLXI_6251/I_Q15" BEL
-        "XLXI_6251/I_Q14" BEL "XLXI_6251/I_Q13" BEL "XLXI_6251/I_Q12" BEL
-        "XLXI_6251/I_Q11" BEL "XLXI_6251/I_Q10" BEL "XLXI_6251/I_Q9" BEL
-        "XLXI_6251/I_Q8" BEL "XLXI_6251/I_Q7" BEL "XLXI_6251/I_Q6" BEL
-        "XLXI_6251/I_Q5" BEL "XLXI_6251/I_Q4" BEL "XLXI_6251/I_Q3" BEL
-        "XLXI_6251/I_Q2" BEL "XLXI_6251/I_Q1" BEL "XLXI_6251/I_Q0" BEL
-        "XLXI_6051/I_Q15" BEL "XLXI_6051/I_Q14" BEL "XLXI_6051/I_Q13" BEL
-        "XLXI_6051/I_Q12" BEL "XLXI_6051/I_Q11" BEL "XLXI_6051/I_Q10" BEL
-        "XLXI_6051/I_Q9" BEL "XLXI_6051/I_Q8" BEL "XLXI_6051/I_Q7" BEL
-        "XLXI_6051/I_Q6" BEL "XLXI_6051/I_Q5" BEL "XLXI_6051/I_Q4" BEL
-        "XLXI_6051/I_Q3" BEL "XLXI_6051/I_Q2" BEL "XLXI_6051/I_Q1" BEL
-        "XLXI_6051/I_Q0" BEL "XLXI_6247/I_Q7" BEL "XLXI_6247/I_Q6" BEL
+        BEL "BUSC_26DN_53S" BEL "XLXI_6410/I_Q15" BEL "XLXI_6410/I_Q14" BEL
+        "XLXI_6410/I_Q13" BEL "XLXI_6410/I_Q12" BEL "XLXI_6410/I_Q11" BEL
+        "XLXI_6410/I_Q10" BEL "XLXI_6410/I_Q9" BEL "XLXI_6410/I_Q8" BEL
+        "XLXI_6410/I_Q7" BEL "XLXI_6410/I_Q6" BEL "XLXI_6410/I_Q5" BEL
+        "XLXI_6410/I_Q4" BEL "XLXI_6410/I_Q3" BEL "XLXI_6410/I_Q2" BEL
+        "XLXI_6410/I_Q1" BEL "XLXI_6410/I_Q0" BEL "XLXI_6394/I_Q15" BEL
+        "XLXI_6394/I_Q14" BEL "XLXI_6394/I_Q13" BEL "XLXI_6394/I_Q12" BEL
+        "XLXI_6394/I_Q11" BEL "XLXI_6394/I_Q10" BEL "XLXI_6394/I_Q9" BEL
+        "XLXI_6394/I_Q8" BEL "XLXI_6394/I_Q7" BEL "XLXI_6394/I_Q6" BEL
+        "XLXI_6394/I_Q5" BEL "XLXI_6394/I_Q4" BEL "XLXI_6394/I_Q3" BEL
+        "XLXI_6394/I_Q2" BEL "XLXI_6394/I_Q1" BEL "XLXI_6394/I_Q0" BEL
+        "XLXI_6251/I_Q15" BEL "XLXI_6251/I_Q14" BEL "XLXI_6251/I_Q13" BEL
+        "XLXI_6251/I_Q12" BEL "XLXI_6251/I_Q11" BEL "XLXI_6251/I_Q10" BEL
+        "XLXI_6251/I_Q9" BEL "XLXI_6251/I_Q8" BEL "XLXI_6251/I_Q7" BEL
+        "XLXI_6251/I_Q6" BEL "XLXI_6251/I_Q5" BEL "XLXI_6251/I_Q4" BEL
+        "XLXI_6251/I_Q3" BEL "XLXI_6251/I_Q2" BEL "XLXI_6251/I_Q1" BEL
+        "XLXI_6251/I_Q0" BEL "XLXI_6051/I_Q15" BEL "XLXI_6051/I_Q14" BEL
+        "XLXI_6051/I_Q13" BEL "XLXI_6051/I_Q12" BEL "XLXI_6051/I_Q11" BEL
+        "XLXI_6051/I_Q10" BEL "XLXI_6051/I_Q9" BEL "XLXI_6051/I_Q8" BEL
+        "XLXI_6051/I_Q7" BEL "XLXI_6051/I_Q6" BEL "XLXI_6051/I_Q5" BEL
+        "XLXI_6051/I_Q4" BEL "XLXI_6051/I_Q3" BEL "XLXI_6051/I_Q2" BEL
+        "XLXI_6051/I_Q1" BEL "XLXI_6051/I_Q0" BEL "XLXI_6420/I_Q7" BEL
+        "XLXI_6420/I_Q6" BEL "XLXI_6420/I_Q5" BEL "XLXI_6420/I_Q4" BEL
+        "XLXI_6420/I_Q3" BEL "XLXI_6420/I_Q2" BEL "XLXI_6420/I_Q1" BEL
+        "XLXI_6420/I_Q0" BEL "XLXI_6419/I_Q7" BEL "XLXI_6419/I_Q6" BEL
+        "XLXI_6419/I_Q5" BEL "XLXI_6419/I_Q4" BEL "XLXI_6419/I_Q3" BEL
+        "XLXI_6419/I_Q2" BEL "XLXI_6419/I_Q1" BEL "XLXI_6419/I_Q0" BEL
+        "XLXI_6418/I_Q7" BEL "XLXI_6418/I_Q6" BEL "XLXI_6418/I_Q5" BEL
+        "XLXI_6418/I_Q4" BEL "XLXI_6418/I_Q3" BEL "XLXI_6418/I_Q2" BEL
+        "XLXI_6418/I_Q1" BEL "XLXI_6418/I_Q0" BEL "XLXI_6414/I_Q7" BEL
+        "XLXI_6414/I_Q6" BEL "XLXI_6414/I_Q5" BEL "XLXI_6414/I_Q4" BEL
+        "XLXI_6414/I_Q3" BEL "XLXI_6414/I_Q2" BEL "XLXI_6414/I_Q1" BEL
+        "XLXI_6414/I_Q0" BEL "XLXI_6247/I_Q7" BEL "XLXI_6247/I_Q6" BEL
         "XLXI_6247/I_Q5" BEL "XLXI_6247/I_Q4" BEL "XLXI_6247/I_Q3" BEL
         "XLXI_6247/I_Q2" BEL "XLXI_6247/I_Q1" BEL "XLXI_6247/I_Q0" BEL
         "XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1"
@@ -10680,37 +10510,6 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[192].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[193].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[194].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[195].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[196].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[197].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[198].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[199].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[200].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[201].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[202].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[203].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[204].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[205].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[206].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[207].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[208].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[209].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[210].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[211].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[212].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[213].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[214].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[215].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[216].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[217].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[218].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[219].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[220].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[221].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[222].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[223].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[224].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[225].U_TQ" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/F_NO_TCMC.U_FDR" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
         BEL
@@ -10724,68 +10523,6 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/I_MC_NO.U_NO_MC_REG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[224].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[223].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[222].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[221].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[220].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[219].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[218].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[217].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[216].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[215].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[214].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[213].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[212].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[211].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[210].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[209].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[208].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[207].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[206].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[205].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[204].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[203].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[202].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[201].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[200].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[199].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[198].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[197].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[196].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[195].I_SRLT_NE_0.FF"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[194].I_SRLT_NE_0.FF"
         BEL
@@ -11179,68 +10916,6 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.I_OREG.U_OREG"
         BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[225].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[224].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[223].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[222].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[221].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[220].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[219].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[218].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[217].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[216].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[215].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[214].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[213].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[212].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[211].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[210].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[209].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[208].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[207].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[206].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[205].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[204].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[203].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[202].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[201].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[200].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[199].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[198].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[197].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[196].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[195].U_TREG"
-        BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[194].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[193].U_TREG"
@@ -11630,68 +11305,6 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[225].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[224].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[223].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[222].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[221].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[220].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[219].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[218].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[217].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[216].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[215].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[214].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[213].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[212].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[211].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[210].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[209].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[208].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[207].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[206].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[205].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[204].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[203].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[202].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[201].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[200].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[199].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[198].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[197].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[196].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[195].U_IREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[194].U_IREG"
         BEL
@@ -12655,68 +12268,6 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[193].I_SRLT_NE_0.DLY9/SRL16E"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[194].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[195].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[196].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[197].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[198].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[199].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[200].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[201].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[202].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[203].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[204].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[205].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[206].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[207].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[208].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[209].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[210].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[211].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[212].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[213].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[214].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[215].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[216].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[217].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[218].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[219].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[220].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[221].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[222].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[223].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[224].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.DLY9/SRL16E"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
@@ -12751,14 +12302,6 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[23].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[24].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[25].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[26].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[27].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[28].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
@@ -12791,9 +12334,10 @@ PIN XLXI_3410_pins<3> = BEL "XLXI_3410" PINNAME CLKIN;
 PIN XLXI_5949_pins<3> = BEL "XLXI_5949" PINNAME CLKIN;
 TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6016" BEL "XLXI_6025" BEL "XLXI_6033" BEL "XLXI_6186" BEL
-        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_3405" PIN "XLXI_3410_pins<3>"
-        PIN "XLXI_5949_pins<3>" BEL "XLXI_6185/trig" BEL "XLXI_6185/trig_in"
-        BEL "XLXI_6185/trig_old" BEL "XLXI_6185/cnt_sig_0" BEL
+        "XLXI_6188" BEL "XLXI_6226" BEL "XLXI_6421" BEL "XLXI_6422" BEL
+        "XLXI_6423" BEL "XLXI_3405" PIN "XLXI_3410_pins<3>" PIN
+        "XLXI_5949_pins<3>" BEL "XLXI_6185/trig" BEL "XLXI_6185/trig_in" BEL
+        "XLXI_6185/trig_old" BEL "XLXI_6185/cnt_sig_0" BEL
         "XLXI_6185/cnt_sig_1" BEL "XLXI_6185/cnt_sig_2" BEL
         "XLXI_6185/cnt_sig_3" BEL "XLXI_6185/cnt_sig_4" BEL
         "XLXI_6185/cnt_sig_5" BEL "XLXI_6185/cnt_sig_6" BEL
@@ -12809,23 +12353,97 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6185/cnt_sig_25" BEL "XLXI_6185/cnt_sig_26" BEL
         "XLXI_6185/cnt_sig_27" BEL "XLXI_6185/cnt_sig_28" BEL
         "XLXI_6185/cnt_sig_29" BEL "XLXI_6185/cnt_sig_30" BEL
-        "XLXI_6185/cnt_sig_31" BEL "XLXI_6253/b_data_we" BEL "XLXI_6253/armed"
-        BEL "XLXI_6253/sendUDP" BEL "XLXI_6253/startAddr_0" BEL
-        "XLXI_6253/startAddr_1" BEL "XLXI_6253/startAddr_2" BEL
-        "XLXI_6253/startAddr_3" BEL "XLXI_6253/startAddr_4" BEL
-        "XLXI_6253/startAddr_5" BEL "XLXI_6253/startAddr_6" BEL
-        "XLXI_6253/startAddr_7" BEL "XLXI_6253/startAddr_8" BEL
-        "XLXI_6253/startAddr_9" BEL "XLXI_6253/endAddr_0" BEL
-        "XLXI_6253/endAddr_1" BEL "XLXI_6253/endAddr_2" BEL
-        "XLXI_6253/endAddr_3" BEL "XLXI_6253/endAddr_4" BEL
-        "XLXI_6253/endAddr_5" BEL "XLXI_6253/endAddr_6" BEL
-        "XLXI_6253/endAddr_7" BEL "XLXI_6253/endAddr_8" BEL
-        "XLXI_6253/endAddr_9" BEL "XLXI_6349/samplesSinceTrig_0" BEL
-        "XLXI_6349/samplesSinceTrig_1" BEL "XLXI_6349/samplesSinceTrig_2" BEL
-        "XLXI_6349/samplesSinceTrig_3" BEL "XLXI_6349/samplesSinceTrig_4" BEL
-        "XLXI_6349/samplesSinceTrig_5" BEL "XLXI_6349/samplesSinceTrig_6" BEL
-        "XLXI_6349/samplesSinceTrig_7" BEL "XLXI_6349/samplesSinceTrig_8" BEL
-        "XLXI_6349/samplesSinceTrig_9" BEL "XLXI_6349/samplesSinceTrig_10" BEL
+        "XLXI_6185/cnt_sig_31" BEL "XLXI_6253/timing" BEL "XLXI_6253/armed"
+        BEL "XLXI_6253/positiveDelayTimer_0" BEL
+        "XLXI_6253/positiveDelayTimer_1" BEL "XLXI_6253/positiveDelayTimer_2"
+        BEL "XLXI_6253/positiveDelayTimer_3" BEL
+        "XLXI_6253/positiveDelayTimer_4" BEL "XLXI_6253/positiveDelayTimer_5"
+        BEL "XLXI_6253/positiveDelayTimer_6" BEL
+        "XLXI_6253/positiveDelayTimer_7" BEL "XLXI_6253/positiveDelayTimer_8"
+        BEL "XLXI_6253/positiveDelayTimer_9" BEL
+        "XLXI_6253/positiveDelayTimer_10" BEL
+        "XLXI_6253/positiveDelayTimer_11" BEL
+        "XLXI_6253/positiveDelayTimer_12" BEL
+        "XLXI_6253/positiveDelayTimer_13" BEL
+        "XLXI_6253/positiveDelayTimer_14" BEL
+        "XLXI_6253/positiveDelayTimer_15" BEL "XLXI_6253/busy" BEL
+        "XLXI_6253/reading" BEL "XLXI_6253/headerTwoStart" BEL
+        "XLXI_6253/sampleSize_0" BEL "XLXI_6253/sampleSize_1" BEL
+        "XLXI_6253/sampleSize_2" BEL "XLXI_6253/sampleSize_3" BEL
+        "XLXI_6253/sampleSize_4" BEL "XLXI_6253/sampleSize_5" BEL
+        "XLXI_6253/sampleSize_6" BEL "XLXI_6253/sampleSize_7" BEL
+        "XLXI_6253/sampleSize_8" BEL "XLXI_6253/sampleSize_9" BEL
+        "XLXI_6253/sampleSize_10" BEL "XLXI_6253/sampleSize_11" BEL
+        "XLXI_6253/sampleSize_12" BEL "XLXI_6253/sampleSize_13" BEL
+        "XLXI_6253/sampleSize_14" BEL "XLXI_6253/sampleSize_15" BEL
+        "XLXI_6253/endAddr_0" BEL "XLXI_6253/endAddr_1" BEL
+        "XLXI_6253/endAddr_2" BEL "XLXI_6253/endAddr_3" BEL
+        "XLXI_6253/endAddr_4" BEL "XLXI_6253/endAddr_5" BEL
+        "XLXI_6253/endAddr_6" BEL "XLXI_6253/endAddr_7" BEL
+        "XLXI_6253/endAddr_8" BEL "XLXI_6253/endAddr_9" BEL
+        "XLXI_6253/startAddr_0" BEL "XLXI_6253/startAddr_1" BEL
+        "XLXI_6253/startAddr_2" BEL "XLXI_6253/startAddr_3" BEL
+        "XLXI_6253/startAddr_4" BEL "XLXI_6253/startAddr_5" BEL
+        "XLXI_6253/startAddr_6" BEL "XLXI_6253/startAddr_7" BEL
+        "XLXI_6253/startAddr_8" BEL "XLXI_6253/startAddr_9" BEL
+        "XLXI_6253/b_data_0" BEL "XLXI_6253/b_data_1" BEL "XLXI_6253/b_data_2"
+        BEL "XLXI_6253/b_data_3" BEL "XLXI_6253/b_data_4" BEL
+        "XLXI_6253/b_data_5" BEL "XLXI_6253/b_data_6" BEL "XLXI_6253/b_data_7"
+        BEL "XLXI_6253/b_data_8" BEL "XLXI_6253/b_data_9" BEL
+        "XLXI_6253/b_data_10" BEL "XLXI_6253/b_data_11" BEL
+        "XLXI_6253/b_data_12" BEL "XLXI_6253/b_data_13" BEL
+        "XLXI_6253/b_data_14" BEL "XLXI_6253/b_data_15" BEL
+        "XLXI_6253/b_data_16" BEL "XLXI_6253/b_data_17" BEL
+        "XLXI_6253/b_data_18" BEL "XLXI_6253/b_data_19" BEL
+        "XLXI_6253/b_data_20" BEL "XLXI_6253/b_data_21" BEL
+        "XLXI_6253/b_data_22" BEL "XLXI_6253/b_data_23" BEL
+        "XLXI_6253/b_data_24" BEL "XLXI_6253/b_data_25" BEL
+        "XLXI_6253/b_data_26" BEL "XLXI_6253/b_data_27" BEL
+        "XLXI_6253/b_data_28" BEL "XLXI_6253/b_data_29" BEL
+        "XLXI_6253/b_data_30" BEL "XLXI_6253/b_data_31" BEL
+        "XLXI_6253/b_data_32" BEL "XLXI_6253/b_data_33" BEL
+        "XLXI_6253/b_data_34" BEL "XLXI_6253/b_data_35" BEL
+        "XLXI_6253/b_data_36" BEL "XLXI_6253/b_data_37" BEL
+        "XLXI_6253/b_data_38" BEL "XLXI_6253/b_data_39" BEL
+        "XLXI_6253/b_data_40" BEL "XLXI_6253/b_data_41" BEL
+        "XLXI_6253/b_data_42" BEL "XLXI_6253/b_data_43" BEL
+        "XLXI_6253/b_data_44" BEL "XLXI_6253/b_data_45" BEL
+        "XLXI_6253/b_data_46" BEL "XLXI_6253/b_data_47" BEL
+        "XLXI_6253/b_data_48" BEL "XLXI_6253/b_data_49" BEL
+        "XLXI_6253/b_data_50" BEL "XLXI_6253/b_data_51" BEL
+        "XLXI_6253/b_data_52" BEL "XLXI_6253/b_data_53" BEL
+        "XLXI_6253/b_data_54" BEL "XLXI_6253/b_data_55" BEL
+        "XLXI_6253/b_data_56" BEL "XLXI_6253/b_data_57" BEL
+        "XLXI_6253/b_data_58" BEL "XLXI_6253/b_data_59" BEL
+        "XLXI_6253/b_data_60" BEL "XLXI_6253/b_data_61" BEL
+        "XLXI_6253/b_data_62" BEL "XLXI_6253/b_data_63" BEL
+        "XLXI_6253/triggerCount_0" BEL "XLXI_6253/triggerCount_1" BEL
+        "XLXI_6253/triggerCount_2" BEL "XLXI_6253/triggerCount_3" BEL
+        "XLXI_6253/triggerCount_4" BEL "XLXI_6253/triggerCount_5" BEL
+        "XLXI_6253/triggerCount_6" BEL "XLXI_6253/triggerCount_7" BEL
+        "XLXI_6253/triggerCount_8" BEL "XLXI_6253/triggerCount_9" BEL
+        "XLXI_6253/triggerCount_10" BEL "XLXI_6253/triggerCount_11" BEL
+        "XLXI_6253/triggerCount_12" BEL "XLXI_6253/triggerCount_13" BEL
+        "XLXI_6253/triggerCount_14" BEL "XLXI_6253/triggerCount_15" BEL
+        "XLXI_6253/triggerCount_16" BEL "XLXI_6253/triggerCount_17" BEL
+        "XLXI_6253/triggerCount_18" BEL "XLXI_6253/triggerCount_19" BEL
+        "XLXI_6253/triggerCount_20" BEL "XLXI_6253/triggerCount_21" BEL
+        "XLXI_6253/triggerCount_22" BEL "XLXI_6253/triggerCount_23" BEL
+        "XLXI_6253/triggerCount_24" BEL "XLXI_6253/triggerCount_25" BEL
+        "XLXI_6253/triggerCount_26" BEL "XLXI_6253/triggerCount_27" BEL
+        "XLXI_6253/triggerCount_28" BEL "XLXI_6253/triggerCount_29" BEL
+        "XLXI_6253/triggerCount_30" BEL "XLXI_6253/triggerCount_31" BEL
+        "XLXI_6253/missedTriggerCount_0" BEL "XLXI_6253/missedTriggerCount_1"
+        BEL "XLXI_6253/missedTriggerCount_2" BEL
+        "XLXI_6253/missedTriggerCount_3" BEL "XLXI_6253/missedTriggerCount_4"
+        BEL "XLXI_6253/missedTriggerCount_5" BEL
+        "XLXI_6253/missedTriggerCount_6" BEL "XLXI_6253/missedTriggerCount_7"
+        BEL "XLXI_6349/samplesSinceTrig_0" BEL "XLXI_6349/samplesSinceTrig_1"
+        BEL "XLXI_6349/samplesSinceTrig_2" BEL "XLXI_6349/samplesSinceTrig_3"
+        BEL "XLXI_6349/samplesSinceTrig_4" BEL "XLXI_6349/samplesSinceTrig_5"
+        BEL "XLXI_6349/samplesSinceTrig_6" BEL "XLXI_6349/samplesSinceTrig_7"
+        BEL "XLXI_6349/samplesSinceTrig_8" BEL "XLXI_6349/samplesSinceTrig_9"
+        BEL "XLXI_6349/samplesSinceTrig_10" BEL
         "XLXI_6349/samplesSinceTrig_11" BEL "XLXI_6349/samplesSinceTrig_12"
         BEL "XLXI_6349/samplesSinceTrig_13" BEL
         "XLXI_6349/samplesSinceTrig_14" BEL "XLXI_6349/samplesSinceTrig_15"
@@ -12840,17 +12458,25 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6349/trigger_address_4" BEL "XLXI_6349/trigger_address_5" BEL
         "XLXI_6349/trigger_address_6" BEL "XLXI_6349/trigger_address_7" BEL
         "XLXI_6349/trigger_address_8" BEL "XLXI_6349/trigger_address_9" BEL
-        "XLXI_6227/internal_eth_dout_4" BEL "XLXI_6227/internal_reset" BEL
-        "XLXI_6227/internal_eth_dout_5" BEL "XLXI_6227/internal_eth_dout_10"
-        BEL "XLXI_6227/internal_eth_dout_8" BEL
-        "XLXI_6227/internal_eth_dout_12" BEL "XLXI_6227/internal_eth_dout_14"
-        BEL "XLXI_6227/internal_eth_dout_20" BEL
-        "XLXI_6227/internal_eth_dout_21" BEL "XLXI_6227/internal_eth_dout_16"
-        BEL "XLXI_6227/internal_eth_dout_22" BEL
-        "XLXI_6227/internal_eth_dout_17" BEL "XLXI_6227/internal_eth_dout_23"
-        BEL "XLXI_6227/internal_eth_dout_18" BEL
-        "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0" BEL
-        "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
+        "XLXI_6415/vetoed" BEL "XLXI_6415/zeroCrossCount_0" BEL
+        "XLXI_6415/zeroCrossCount_1" BEL "XLXI_6415/zeroCrossCount_2" BEL
+        "XLXI_6415/zeroCrossCount_3" BEL "XLXI_6415/zeroCrossCount_4" BEL
+        "XLXI_6415/zeroCrossCount_5" BEL "XLXI_6415/zeroCrossCount_6" BEL
+        "XLXI_6415/zeroCrossCount_7" BEL "XLXI_6415/data_out_0" BEL
+        "XLXI_6415/data_out_1" BEL "XLXI_6415/data_out_2" BEL
+        "XLXI_6415/data_out_3" BEL "XLXI_6415/data_out_4" BEL
+        "XLXI_6415/data_out_5" BEL "XLXI_6415/data_out_6" BEL
+        "XLXI_6415/data_out_7" BEL "XLXI_6227/internal_eth_dout_4" BEL
+        "XLXI_6227/internal_reset" BEL "XLXI_6227/internal_eth_dout_5" BEL
+        "XLXI_6227/internal_eth_dout_10" BEL "XLXI_6227/internal_eth_dout_8"
+        BEL "XLXI_6227/internal_eth_dout_12" BEL
+        "XLXI_6227/internal_eth_dout_14" BEL "XLXI_6227/internal_eth_dout_20"
+        BEL "XLXI_6227/internal_eth_dout_21" BEL
+        "XLXI_6227/internal_eth_dout_16" BEL "XLXI_6227/internal_eth_dout_22"
+        BEL "XLXI_6227/internal_eth_dout_17" BEL
+        "XLXI_6227/internal_eth_dout_23" BEL "XLXI_6227/internal_eth_dout_18"
+        BEL "XLXI_6227/internal_eth_dout_19" BEL "XLXI_6227/user_addr_byte_0"
+        BEL "XLXI_6227/user_addr_byte_1" BEL "XLXI_6227/user_addr_byte_2" BEL
         "XLXI_6227/user_addr_byte_3" BEL "XLXI_6227/user_addr_byte_4" BEL
         "XLXI_6227/user_addr_byte_5" BEL "XLXI_6227/user_addr_byte_6" BEL
         "XLXI_6227/user_addr_byte_7" BEL "XLXI_6227/internal_eth_dout_40" BEL
@@ -13019,80 +12645,12 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/tx_data_dest_addr_27" BEL "XLXI_6227/tx_data_dest_addr_28"
         BEL "XLXI_6227/tx_data_dest_addr_29" BEL
         "XLXI_6227/tx_data_dest_addr_30" BEL "XLXI_6227/tx_data_dest_addr_31"
-        BEL "XLXI_6227/burst_traffic_controller_blk/force_packet_old" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_0" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_1" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_2" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_3" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_4" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_5" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_6" BEL
-        "XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_7" BEL
-        "XLXI_6227/burst_traffic_controller_blk/BURST_END_PACKET" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_0" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_1" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_2" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_3" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_4" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_5" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_6" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_7" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_8" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_9" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_10" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_11" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_12" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_13" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_14" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_15" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_16" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_17" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_18" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_19" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_20" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_21" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_22" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_23" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_24" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_25" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_26" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_27" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_28" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_29" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_30" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_31" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_32" BEL
-        "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_33" BEL
+        BEL "XLXI_6227/burst_traffic_controller_blk/BURST_END_PACKET" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/reset_packet_size" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_0" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_1" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_0"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_1"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_2"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_3"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_4"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_5"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_6"
-        BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_7"
-        BEL "XLXI_6227/data_manager_blk/burst_controller_sm/b_end_packet_old"
-        BEL "XLXI_6227/data_manager_blk/burst_controller_sm/just_reset" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/b_enable_sig" BEL
+        "XLXI_6227/data_manager_blk/burst_controller_sm/b_end_packet_old" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/first_packet_sig" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_11" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_10" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_12" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_13" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_14" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_15" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_8" BEL
-        "XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_9" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/Sreg0_FSM_FFd1" BEL
         "XLXI_6227/data_manager_blk/burst_controller_sm/Sreg0_FSM_FFd2" BEL
         "XLXI_6227/data_manager_blk/GEC_RX_CTRL/com_code" BEL
@@ -13291,6 +12849,22 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_45" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_46" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_47" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_48" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_49" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_50" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_51" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_52" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_53" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_54" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_55" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_56" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_57" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_58" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_59" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_60" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_61" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_62" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_63" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_4" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_5" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/tx_info_fifo_wr_data_7" BEL
@@ -13624,6 +13198,8 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i"
+        BEL
+        "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i"
         BEL
@@ -13971,9 +13547,13 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -14311,9 +13891,13 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -14524,6 +14108,10 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i"
         BEL
@@ -14871,9 +14459,13 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -15211,9 +14803,13 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47.SLICEM_G"
         BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i"
+        BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i"
         BEL
         "XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
         BEL
@@ -16474,11 +16070,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<2>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<0>.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_2_2"
         BEL
@@ -16486,11 +16082,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<3>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_2"
         BEL
@@ -16498,11 +16094,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_2"
         BEL
@@ -16510,11 +16106,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<1>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_5_2"
         BEL
@@ -16522,11 +16118,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<5>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_6_2"
         BEL
@@ -16534,11 +16130,11 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<7>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<7>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_7_2"
         BEL
@@ -16577,23 +16173,39 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/internal_eth_dout_31" BEL "XLXI_6227/internal_eth_dout_26"
         BEL "XLXI_6227/internal_eth_dout_27" BEL
         "XLXI_6227/internal_eth_dout_28" BEL "XLXI_6227/internal_eth_dout_29"
-        BEL "MASTER_CLK_BUFG" BEL "BUSC_26DN_53S" BEL "XLXI_6394/I_Q15" BEL
-        "XLXI_6394/I_Q14" BEL "XLXI_6394/I_Q13" BEL "XLXI_6394/I_Q12" BEL
-        "XLXI_6394/I_Q11" BEL "XLXI_6394/I_Q10" BEL "XLXI_6394/I_Q9" BEL
-        "XLXI_6394/I_Q8" BEL "XLXI_6394/I_Q7" BEL "XLXI_6394/I_Q6" BEL
-        "XLXI_6394/I_Q5" BEL "XLXI_6394/I_Q4" BEL "XLXI_6394/I_Q3" BEL
-        "XLXI_6394/I_Q2" BEL "XLXI_6394/I_Q1" BEL "XLXI_6394/I_Q0" BEL
-        "XLXI_6251/I_Q15" BEL "XLXI_6251/I_Q14" BEL "XLXI_6251/I_Q13" BEL
-        "XLXI_6251/I_Q12" BEL "XLXI_6251/I_Q11" BEL "XLXI_6251/I_Q10" BEL
-        "XLXI_6251/I_Q9" BEL "XLXI_6251/I_Q8" BEL "XLXI_6251/I_Q7" BEL
-        "XLXI_6251/I_Q6" BEL "XLXI_6251/I_Q5" BEL "XLXI_6251/I_Q4" BEL
-        "XLXI_6251/I_Q3" BEL "XLXI_6251/I_Q2" BEL "XLXI_6251/I_Q1" BEL
-        "XLXI_6251/I_Q0" BEL "XLXI_6051/I_Q15" BEL "XLXI_6051/I_Q14" BEL
-        "XLXI_6051/I_Q13" BEL "XLXI_6051/I_Q12" BEL "XLXI_6051/I_Q11" BEL
-        "XLXI_6051/I_Q10" BEL "XLXI_6051/I_Q9" BEL "XLXI_6051/I_Q8" BEL
-        "XLXI_6051/I_Q7" BEL "XLXI_6051/I_Q6" BEL "XLXI_6051/I_Q5" BEL
-        "XLXI_6051/I_Q4" BEL "XLXI_6051/I_Q3" BEL "XLXI_6051/I_Q2" BEL
-        "XLXI_6051/I_Q1" BEL "XLXI_6051/I_Q0" BEL "XLXI_6247/I_Q7" BEL
+        BEL "MASTER_CLK_BUFG" BEL "BUSC_26DN_53S" BEL "XLXI_6410/I_Q15" BEL
+        "XLXI_6410/I_Q14" BEL "XLXI_6410/I_Q13" BEL "XLXI_6410/I_Q12" BEL
+        "XLXI_6410/I_Q11" BEL "XLXI_6410/I_Q10" BEL "XLXI_6410/I_Q9" BEL
+        "XLXI_6410/I_Q8" BEL "XLXI_6410/I_Q7" BEL "XLXI_6410/I_Q6" BEL
+        "XLXI_6410/I_Q5" BEL "XLXI_6410/I_Q4" BEL "XLXI_6410/I_Q3" BEL
+        "XLXI_6410/I_Q2" BEL "XLXI_6410/I_Q1" BEL "XLXI_6410/I_Q0" BEL
+        "XLXI_6394/I_Q15" BEL "XLXI_6394/I_Q14" BEL "XLXI_6394/I_Q13" BEL
+        "XLXI_6394/I_Q12" BEL "XLXI_6394/I_Q11" BEL "XLXI_6394/I_Q10" BEL
+        "XLXI_6394/I_Q9" BEL "XLXI_6394/I_Q8" BEL "XLXI_6394/I_Q7" BEL
+        "XLXI_6394/I_Q6" BEL "XLXI_6394/I_Q5" BEL "XLXI_6394/I_Q4" BEL
+        "XLXI_6394/I_Q3" BEL "XLXI_6394/I_Q2" BEL "XLXI_6394/I_Q1" BEL
+        "XLXI_6394/I_Q0" BEL "XLXI_6251/I_Q15" BEL "XLXI_6251/I_Q14" BEL
+        "XLXI_6251/I_Q13" BEL "XLXI_6251/I_Q12" BEL "XLXI_6251/I_Q11" BEL
+        "XLXI_6251/I_Q10" BEL "XLXI_6251/I_Q9" BEL "XLXI_6251/I_Q8" BEL
+        "XLXI_6251/I_Q7" BEL "XLXI_6251/I_Q6" BEL "XLXI_6251/I_Q5" BEL
+        "XLXI_6251/I_Q4" BEL "XLXI_6251/I_Q3" BEL "XLXI_6251/I_Q2" BEL
+        "XLXI_6251/I_Q1" BEL "XLXI_6251/I_Q0" BEL "XLXI_6051/I_Q15" BEL
+        "XLXI_6051/I_Q14" BEL "XLXI_6051/I_Q13" BEL "XLXI_6051/I_Q12" BEL
+        "XLXI_6051/I_Q11" BEL "XLXI_6051/I_Q10" BEL "XLXI_6051/I_Q9" BEL
+        "XLXI_6051/I_Q8" BEL "XLXI_6051/I_Q7" BEL "XLXI_6051/I_Q6" BEL
+        "XLXI_6051/I_Q5" BEL "XLXI_6051/I_Q4" BEL "XLXI_6051/I_Q3" BEL
+        "XLXI_6051/I_Q2" BEL "XLXI_6051/I_Q1" BEL "XLXI_6051/I_Q0" BEL
+        "XLXI_6420/I_Q7" BEL "XLXI_6420/I_Q6" BEL "XLXI_6420/I_Q5" BEL
+        "XLXI_6420/I_Q4" BEL "XLXI_6420/I_Q3" BEL "XLXI_6420/I_Q2" BEL
+        "XLXI_6420/I_Q1" BEL "XLXI_6420/I_Q0" BEL "XLXI_6419/I_Q7" BEL
+        "XLXI_6419/I_Q6" BEL "XLXI_6419/I_Q5" BEL "XLXI_6419/I_Q4" BEL
+        "XLXI_6419/I_Q3" BEL "XLXI_6419/I_Q2" BEL "XLXI_6419/I_Q1" BEL
+        "XLXI_6419/I_Q0" BEL "XLXI_6418/I_Q7" BEL "XLXI_6418/I_Q6" BEL
+        "XLXI_6418/I_Q5" BEL "XLXI_6418/I_Q4" BEL "XLXI_6418/I_Q3" BEL
+        "XLXI_6418/I_Q2" BEL "XLXI_6418/I_Q1" BEL "XLXI_6418/I_Q0" BEL
+        "XLXI_6414/I_Q7" BEL "XLXI_6414/I_Q6" BEL "XLXI_6414/I_Q5" BEL
+        "XLXI_6414/I_Q4" BEL "XLXI_6414/I_Q3" BEL "XLXI_6414/I_Q2" BEL
+        "XLXI_6414/I_Q1" BEL "XLXI_6414/I_Q0" BEL "XLXI_6247/I_Q7" BEL
         "XLXI_6247/I_Q6" BEL "XLXI_6247/I_Q5" BEL "XLXI_6247/I_Q4" BEL
         "XLXI_6247/I_Q3" BEL "XLXI_6247/I_Q2" BEL "XLXI_6247/I_Q1" BEL
         "XLXI_6247/I_Q0" BEL
@@ -16901,37 +16513,6 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[192].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[193].U_TQ" BEL
         "U_ila_pro_0/U0/I_TQ0.G_TW[194].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[195].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[196].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[197].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[198].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[199].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[200].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[201].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[202].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[203].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[204].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[205].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[206].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[207].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[208].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[209].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[210].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[211].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[212].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[213].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[214].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[215].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[216].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[217].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[218].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[219].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[220].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[221].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[222].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[223].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[224].U_TQ" BEL
-        "U_ila_pro_0/U0/I_TQ0.G_TW[225].U_TQ" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/F_NO_TCMC.U_FDR" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
         BEL
@@ -16945,68 +16526,6 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/I_MC_NO.U_NO_MC_REG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[224].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[223].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[222].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[221].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[220].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[219].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[218].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[217].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[216].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[215].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[214].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[213].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[212].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[211].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[210].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[209].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[208].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[207].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[206].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[205].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[204].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[203].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[202].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[201].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[200].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[199].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[198].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[197].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[196].I_SRLT_NE_0.FF"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[195].I_SRLT_NE_0.FF"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[194].I_SRLT_NE_0.FF"
         BEL
@@ -17400,68 +16919,6 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.I_OREG.U_OREG"
         BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[225].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[224].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[223].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[222].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[221].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[220].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[219].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[218].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[217].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[216].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[215].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[214].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[213].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[212].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[211].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[210].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[209].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[208].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[207].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[206].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[205].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[204].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[203].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[202].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[201].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[200].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[199].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[198].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[197].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[196].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[195].U_TREG"
-        BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[194].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[193].U_TREG"
@@ -17851,68 +17308,6 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[225].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[224].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[223].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[222].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[221].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[220].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[219].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[218].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[217].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[216].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[215].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[214].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[213].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[212].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[211].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[210].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[209].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[208].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[207].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[206].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[205].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[204].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[203].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[202].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[201].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[200].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[199].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[198].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[197].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[196].U_IREG"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[195].U_IREG"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[194].U_IREG"
         BEL
@@ -18876,68 +18271,6 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[193].I_SRLT_NE_0.DLY9/SRL16E"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[194].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[195].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[196].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[197].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[198].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[199].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[200].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[201].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[202].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[203].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[204].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[205].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[206].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[207].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[208].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[209].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[210].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[211].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[212].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[213].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[214].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[215].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[216].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[217].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[218].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[219].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[220].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[221].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[222].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[223].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[224].I_SRLT_NE_0.DLY9/SRL16E"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[225].I_SRLT_NE_0.DLY9/SRL16E"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
@@ -18973,14 +18306,6 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[24].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[25].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[26].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[27].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[28].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
-        PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[3].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<26>"
@@ -19010,9 +18335,9 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP_pins<30>";
 TIMEGRP XLXN_12257 = BEL "XLXI_4529" BEL "XLXI_3406_MapLib_replicate0";
 PIN XLXI_5953_pins<3> = BEL "XLXI_5953" PINNAME CLKIN;
-TIMEGRP XLXN_12669 = BEL "XLXI_5952" PIN "XLXI_5953_pins<3>" BEL "U10_1";
+TIMEGRP XLXN_12669 = BEL "XLXI_5952" PIN "XLXI_5953_pins<3>";
 PIN XLXI_5963_pins<5> = BEL "XLXI_5963" PINNAME CLKIN;
-TIMEGRP XLXN_12781 = BEL "XLXI_5993" PIN "XLXI_5963_pins<5>" BEL "U10_2";
+TIMEGRP XLXN_12781 = BEL "XLXI_5993" PIN "XLXI_5963_pins<5>";
 PIN XLXI_6199_pins<2> = BEL "XLXI_6199" PINNAME CLKIN;
 TIMEGRP BUSBHS_02DN_05S = BEL "XLXI_6040" PIN "XLXI_6199_pins<2>";
 TIMEGRP BUSBHS_02DP_04S = BEL "XLXI_6040" PIN "XLXI_6199_pins<2>";
@@ -19026,7 +18351,7 @@ PIN
         = BEL
         "XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP"
         PINNAME CLKA;
-TIMEGRP XLXN_15087 = BEL "XLXI_6200" BEL "U10_3" BEL
+TIMEGRP XLXN_15087 = BEL "XLXI_6200" BEL
         "XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0"
         BEL
         "XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1"
@@ -19164,7 +18489,7 @@ TIMEGRP XLXN_15087 = BEL "XLXI_6200" BEL "U10_3" BEL
         "XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP_pins<30>"
         PIN
         "XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP_pins<30>";
-TIMEGRP XLXN_15087_0 = BEL "XLXI_6200" BEL "U10_3" BEL
+TIMEGRP XLXN_15087_0 = BEL "XLXI_6200" BEL
         "XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0"
         BEL
         "XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1"
@@ -19398,26 +18723,6 @@ PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[24].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
         PINNAME CLKA;
 PIN
-        U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[25].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>
-        = BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[25].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
-        PINNAME CLKA;
-PIN
-        U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[26].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>
-        = BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[26].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
-        PINNAME CLKA;
-PIN
-        U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[27].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>
-        = BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[27].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
-        PINNAME CLKA;
-PIN
-        U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[28].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>
-        = BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[28].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
-        PINNAME CLKA;
-PIN
         U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>
         = BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i"
@@ -19498,70 +18803,6 @@ TIMEGRP J_CLK = BEL "U_icon_pro/U0/U_ICON/U_STAT/U_TDO" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TWMOD4_NE0.I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[55].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[55].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[55].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[55].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[54].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[54].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[54].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[54].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[53].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[53].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[53].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[53].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[52].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[52].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[52].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[52].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[51].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[51].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[51].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[51].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[50].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[50].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[50].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[50].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[49].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[49].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[49].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[49].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[48].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[48].I_YES_RPM.U_MUXH/O.SLICEM_FMC15_BLACKBOX"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[48].I_YES_RPM.I_SRLT_EQ_2.U_SRLH"
-        BEL
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[48].I_YES_RPM.U_MUXH/O.SLICEM_GMC15_BLACKBOX"
         BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[47].I_YES_RPM.I_SRLT_EQ_2.U_SRLL"
         BEL
@@ -20329,14 +19570,6 @@ TIMEGRP J_CLK = BEL "U_icon_pro/U0/U_ICON/U_STAT/U_TDO" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[23].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[24].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[25].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[26].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[27].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>"
-        PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[28].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>"
         PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s8_if.ram_rt1_s1_s8_i_pins<25>"
         PIN
