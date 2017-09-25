@@ -1,11 +1,11 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Sep 25 14:57:02 2017
+Mon Sep 25 16:17:59 2017
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 62 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 43 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    XLXI_3432/D10
@@ -19,17 +19,6 @@ WARNING:ParHelpers:361 - There are 62 loadless signals in this design. This desi
    XLXI_6004/O
    XLXI_6051/Q<12>
    XLXI_6051/Q<13>
-   XLXI_6227/data_manager_blk/RX_DATA_FIFO/empty
-   XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i
-   XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
-   XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i
-   XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
-   XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i
-   XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
-   XLXI_6227/data_manager_blk/TX_CTRL_FIFO/empty
-   XLXI_6227/data_manager_blk/TX_CTRL_FIFO/full
-   XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i
-   XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
    XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<4>
    XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<5>
    XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6>
@@ -40,14 +29,6 @@ WARNING:ParHelpers:361 - There are 62 loadless signals in this design. This desi
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i
-   XLXI_6414/Q<0>
-   XLXI_6414/Q<1>
-   XLXI_6414/Q<2>
-   XLXI_6414/Q<3>
-   XLXI_6414/Q<4>
-   XLXI_6414/Q<5>
-   XLXI_6414/Q<6>
-   XLXI_6414/Q<7>
    icon_control0<10>
    icon_control0<11>
    icon_control0<15>

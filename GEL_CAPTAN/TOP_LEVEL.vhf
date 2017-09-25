@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/22/2017 15:12:38
+-- /___/   /\     Timestamp : 09/25/2017 16:05:12
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -702,179 +702,139 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute SLEW                  : string ;
    attribute DRIVE                 : string ;
    attribute DIFF_TERM             : string ;
-   signal adc_fifo_overflow                      : std_logic;
-   signal b_data                                 : std_logic_vector (63 downto 
-         0);
-   signal b_data_we                              : std_logic;
-   signal b_enable                               : std_logic;
-   signal b_end_packet                           : std_logic;
-   signal b_force_packet                         : std_logic;
-   signal clear_manual_trig                      : std_logic;
-   signal clk_latch_signals                      : std_logic_vector (7 downto 
-         0);
-   signal CLK_MUX                                : std_logic;
-   signal CLK_187_5                              : std_logic;
-   signal CLK_375                                : std_logic;
-   signal clock_5mhz                             : std_logic;
-   signal data_send_in                           : std_logic_vector (63 downto 
-         0);
-   signal dcm_mux_sel                            : std_logic;
-   signal DCM_RESET_MAP                          : std_logic;
-   signal dcm_reset_0                            : std_logic;
-   signal dcm_reset_1                            : std_logic;
-   signal dcm_reset_2                            : std_logic;
-   signal debug_signals                          : std_logic_vector (7 downto 
-         0);
-   signal event_data                             : std_logic_vector (63 downto 
-         0);
-   signal event_data_end                         : std_logic;
-   signal event_data_we                          : std_logic;
-   signal EVENT_MAP                              : std_logic;
-   signal ext_trig                               : std_logic;
-   signal FADC_CAL                               : std_logic;
-   signal fadc_clk_in_reset                      : std_logic;
-   signal FADC_CLK_N                             : std_logic;
-   signal FADC_CLK_P                             : std_logic;
-   signal fadc_ctrl_data                         : std_logic_vector (15 downto 
-         0);
-   signal FADC_CTRL_MAP                          : std_logic;
-   signal fadc_data_del_ce                       : std_logic;
-   signal fadc_data_del_rst                      : std_logic;
-   signal fadc_data_in                           : std_logic_vector (31 downto 
-         0);
-   signal FADC_DCLK                              : std_logic;
-   signal fadc_dclk_in                           : std_logic;
-   signal FADC_DCLK_INV                          : std_logic;
-   signal fadc_debug                             : std_logic_vector (63 downto 
-         0);
-   signal FADC_DELAY_MAP                         : std_logic;
-   signal fadc_done                              : std_logic;
-   signal fadc_fifo_data_out                     : std_logic_vector (63 downto 
-         0);
-   signal FADC_MAP                               : std_logic;
-   signal fadc_raddr                             : std_logic_vector (9 downto 
-         0);
-   signal fadc_rdy_for_trigger                   : std_logic;
-   signal FADC_RST                               : std_logic;
-   signal fadc_trigger                           : std_logic;
-   signal fadc_waddr_rise                        : std_logic_vector (9 downto 
-         0);
-   signal fadc_wctrl_done                        : std_logic;
-   signal GLOBAL_RESET_MAP                       : std_logic;
-   signal GMII_RXD_0_sig                         : std_logic_vector (7 downto 
-         0);
-   signal GMII_RX_DV_0_sig                       : std_logic;
-   signal GMII_RX_ER_0_sig                       : std_logic;
-   signal GTX_CLK_0_sig                          : std_logic;
-   signal manual_force_trig                      : std_logic;
-   signal MANUAL_TRIG_MAP                        : std_logic;
-   signal MASTER_CLK                             : std_logic;
-   signal new_trigger                            : std_logic;
-   signal peak_finder_data_out                   : std_logic_vector (63 downto 
-         0);
-   signal PHY_TXD_sig                            : std_logic_vector (7 downto 
-         0);
-   signal PHY_TXEN_sig                           : std_logic;
-   signal PHY_TXER_sig                           : std_logic;
-   signal psi_status                             : std_logic_vector (63 downto 
-         0);
-   signal ram_addr                               : std_logic_vector (9 downto 
-         0);
-   signal ram_en                                 : std_logic;
-   signal reset                                  : std_logic;
-   signal reset_clear_veto                       : std_logic;
-   signal reset_force_veto                       : std_logic;
-   signal rx_addr                                : std_logic_vector (31 downto 
-         0);
-   signal rx_data                                : std_logic_vector (63 downto 
-         0);
-   signal rx_wren                                : std_logic;
-   signal scin_0                                 : std_logic;
-   signal scin_1                                 : std_logic;
-   signal scin_2                                 : std_logic;
-   signal scin_3                                 : std_logic;
-   signal threshold                              : std_logic_vector (7 downto 
-         0);
-   signal trigger                                : std_logic;
-   signal trigger_addr                           : std_logic_vector (9 downto 
-         0);
-   signal trigger_out                            : std_logic;
-   signal TRIG_ATTRIBUTES_MAP                    : std_logic;
-   signal trig_debug                             : std_logic_vector (63 downto 
-         0);
-   signal TRIG_MAP                               : std_logic;
-   signal trig_reset                             : std_logic;
-   signal trig_scin0_sel                         : std_logic;
-   signal trig_types                             : std_logic_vector (7 downto 
-         0);
-   signal tx_data                                : std_logic_vector (63 downto 
-         0);
-   signal user_positive_delay                    : std_logic_vector (15 downto 
-         0);
-   signal user_pretrig_sample_size               : std_logic_vector (15 downto 
-         0);
-   signal user_sample_size                       : std_logic_vector (15 downto 
-         0);
-   signal veto                                   : std_logic;
-   signal veto_clear                             : std_logic;
-   signal veto_enabled                           : std_logic;
-   signal veto_force                             : std_logic;
-   signal XLXN_12220                             : std_logic;
-   signal XLXN_12229                             : std_logic;
-   signal XLXN_12257                             : std_logic;
-   signal XLXN_12617                             : std_logic;
-   signal XLXN_12660                             : std_logic;
-   signal XLXN_12661                             : std_logic;
-   signal XLXN_12669                             : std_logic;
-   signal XLXN_12671                             : std_logic;
-   signal XLXN_12672                             : std_logic;
-   signal XLXN_12697                             : std_logic;
-   signal XLXN_12781                             : std_logic;
-   signal XLXN_12783                             : std_logic;
-   signal XLXN_12923                             : std_logic;
-   signal XLXN_12930                             : std_logic;
-   signal XLXN_12931                             : std_logic;
-   signal XLXN_15064                             : std_logic;
-   signal XLXN_15075                             : std_logic;
-   signal XLXN_15077                             : std_logic;
-   signal XLXN_15087                             : std_logic;
-   signal XLXN_15092                             : std_logic;
-   signal XLXN_15130                             : std_logic;
-   signal XLXN_15140                             : std_logic;
-   signal XLXN_15150                             : std_logic;
-   signal XLXN_15518                             : std_logic;
-   signal XLXN_15524                             : std_logic;
-   signal XLXN_15529                             : std_logic;
-   signal XLXN_15531                             : std_logic;
-   signal XLXN_15532                             : std_logic;
-   signal XLXN_15533                             : std_logic;
-   signal XLXN_15874                             : std_logic_vector (63 downto 
-         0);
-   signal XLXN_15958                             : std_logic;
-   signal zero_cross_count                       : std_logic_vector (7 downto 
-         0);
-   signal zero_cross_thresh_high                 : std_logic_vector (7 downto 
-         0);
-   signal zero_cross_thresh_low                  : std_logic_vector (7 downto 
-         0);
-   signal zero_cross_veto_thresh                 : std_logic_vector (7 downto 
-         0);
-   signal XLXI_5338_in3_openSignal               : std_logic_vector (63 downto 
-         0);
-   signal XLXI_5338_in4_openSignal               : std_logic_vector (63 downto 
-         0);
-   signal XLXI_5338_in5_openSignal               : std_logic_vector (63 downto 
-         0);
-   signal XLXI_5338_in6_openSignal               : std_logic_vector (63 downto 
-         0);
-   signal XLXI_5338_in7_openSignal               : std_logic_vector (63 downto 
-         0);
-   signal XLXI_6253_header_openSignal            : std_logic_vector (59 downto 
-         0);
-   signal XLXI_6253_signal_ID_openSignal         : std_logic_vector (3 downto 
-         0);
-   signal XLXI_6349_user_sample_width_openSignal : std_logic_vector (15 downto 
-         0);
+   signal adc_fifo_overflow              : std_logic;
+   signal b_data                         : std_logic_vector (63 downto 0);
+   signal b_data_we                      : std_logic;
+   signal b_enable                       : std_logic;
+   signal b_end_packet                   : std_logic;
+   signal b_force_packet                 : std_logic;
+   signal clear_manual_trig              : std_logic;
+   signal clk_latch_signals              : std_logic_vector (7 downto 0);
+   signal CLK_MUX                        : std_logic;
+   signal CLK_187_5                      : std_logic;
+   signal CLK_375                        : std_logic;
+   signal clock_5mhz                     : std_logic;
+   signal data_send_in                   : std_logic_vector (63 downto 0);
+   signal dcm_mux_sel                    : std_logic;
+   signal DCM_RESET_MAP                  : std_logic;
+   signal dcm_reset_0                    : std_logic;
+   signal dcm_reset_1                    : std_logic;
+   signal dcm_reset_2                    : std_logic;
+   signal debug_signals                  : std_logic_vector (7 downto 0);
+   signal event_data                     : std_logic_vector (63 downto 0);
+   signal event_data_end                 : std_logic;
+   signal event_data_we                  : std_logic;
+   signal EVENT_MAP                      : std_logic;
+   signal ext_trig                       : std_logic;
+   signal FADC_CAL                       : std_logic;
+   signal fadc_clk_in_reset              : std_logic;
+   signal FADC_CLK_N                     : std_logic;
+   signal FADC_CLK_P                     : std_logic;
+   signal fadc_ctrl_data                 : std_logic_vector (15 downto 0);
+   signal FADC_CTRL_MAP                  : std_logic;
+   signal fadc_data_del_ce               : std_logic;
+   signal fadc_data_del_rst              : std_logic;
+   signal fadc_data_in                   : std_logic_vector (31 downto 0);
+   signal FADC_DCLK                      : std_logic;
+   signal fadc_dclk_in                   : std_logic;
+   signal FADC_DCLK_INV                  : std_logic;
+   signal fadc_debug                     : std_logic_vector (63 downto 0);
+   signal FADC_DELAY_MAP                 : std_logic;
+   signal fadc_done                      : std_logic;
+   signal fadc_fifo_data_out             : std_logic_vector (63 downto 0);
+   signal FADC_MAP                       : std_logic;
+   signal fadc_raddr                     : std_logic_vector (9 downto 0);
+   signal fadc_rdy_for_trigger           : std_logic;
+   signal FADC_RST                       : std_logic;
+   signal fadc_trigger                   : std_logic;
+   signal fadc_waddr_rise                : std_logic_vector (9 downto 0);
+   signal fadc_wctrl_done                : std_logic;
+   signal GLOBAL_RESET_MAP               : std_logic;
+   signal GMII_RXD_0_sig                 : std_logic_vector (7 downto 0);
+   signal GMII_RX_DV_0_sig               : std_logic;
+   signal GMII_RX_ER_0_sig               : std_logic;
+   signal GTX_CLK_0_sig                  : std_logic;
+   signal manual_force_trig              : std_logic;
+   signal MANUAL_TRIG_MAP                : std_logic;
+   signal MASTER_CLK                     : std_logic;
+   signal new_trigger                    : std_logic;
+   signal peak_finder_data_out           : std_logic_vector (63 downto 0);
+   signal PHY_TXD_sig                    : std_logic_vector (7 downto 0);
+   signal PHY_TXEN_sig                   : std_logic;
+   signal PHY_TXER_sig                   : std_logic;
+   signal psi_status                     : std_logic_vector (63 downto 0);
+   signal ram_addr                       : std_logic_vector (9 downto 0);
+   signal ram_en                         : std_logic;
+   signal reset                          : std_logic;
+   signal reset_clear_veto               : std_logic;
+   signal reset_force_veto               : std_logic;
+   signal rx_addr                        : std_logic_vector (31 downto 0);
+   signal rx_data                        : std_logic_vector (63 downto 0);
+   signal rx_wren                        : std_logic;
+   signal scin_0                         : std_logic;
+   signal scin_1                         : std_logic;
+   signal scin_2                         : std_logic;
+   signal scin_3                         : std_logic;
+   signal threshold                      : std_logic_vector (7 downto 0);
+   signal trigger                        : std_logic;
+   signal trigger_addr                   : std_logic_vector (9 downto 0);
+   signal trigger_out                    : std_logic;
+   signal TRIG_ATTRIBUTES_MAP            : std_logic;
+   signal trig_debug                     : std_logic_vector (63 downto 0);
+   signal TRIG_MAP                       : std_logic;
+   signal trig_reset                     : std_logic;
+   signal trig_scin0_sel                 : std_logic;
+   signal trig_types                     : std_logic_vector (7 downto 0);
+   signal tx_data                        : std_logic_vector (63 downto 0);
+   signal user_positive_delay            : std_logic_vector (15 downto 0);
+   signal user_pretrig_sample_size       : std_logic_vector (15 downto 0);
+   signal user_sample_size               : std_logic_vector (15 downto 0);
+   signal veto                           : std_logic;
+   signal veto_clear                     : std_logic;
+   signal veto_enabled                   : std_logic;
+   signal veto_force                     : std_logic;
+   signal XLXN_12220                     : std_logic;
+   signal XLXN_12229                     : std_logic;
+   signal XLXN_12257                     : std_logic;
+   signal XLXN_12617                     : std_logic;
+   signal XLXN_12660                     : std_logic;
+   signal XLXN_12661                     : std_logic;
+   signal XLXN_12669                     : std_logic;
+   signal XLXN_12671                     : std_logic;
+   signal XLXN_12672                     : std_logic;
+   signal XLXN_12697                     : std_logic;
+   signal XLXN_12781                     : std_logic;
+   signal XLXN_12783                     : std_logic;
+   signal XLXN_12923                     : std_logic;
+   signal XLXN_12930                     : std_logic;
+   signal XLXN_12931                     : std_logic;
+   signal XLXN_15064                     : std_logic;
+   signal XLXN_15075                     : std_logic;
+   signal XLXN_15077                     : std_logic;
+   signal XLXN_15087                     : std_logic;
+   signal XLXN_15092                     : std_logic;
+   signal XLXN_15130                     : std_logic;
+   signal XLXN_15140                     : std_logic;
+   signal XLXN_15150                     : std_logic;
+   signal XLXN_15518                     : std_logic;
+   signal XLXN_15524                     : std_logic;
+   signal XLXN_15529                     : std_logic;
+   signal XLXN_15531                     : std_logic;
+   signal XLXN_15532                     : std_logic;
+   signal XLXN_15533                     : std_logic;
+   signal XLXN_15874                     : std_logic_vector (63 downto 0);
+   signal XLXN_15958                     : std_logic;
+   signal zero_cross_count               : std_logic_vector (7 downto 0);
+   signal zero_cross_thresh_high         : std_logic_vector (7 downto 0);
+   signal zero_cross_thresh_low          : std_logic_vector (7 downto 0);
+   signal zero_cross_veto_thresh         : std_logic_vector (7 downto 0);
+   signal XLXI_5338_in3_openSignal       : std_logic_vector (63 downto 0);
+   signal XLXI_5338_in4_openSignal       : std_logic_vector (63 downto 0);
+   signal XLXI_5338_in5_openSignal       : std_logic_vector (63 downto 0);
+   signal XLXI_5338_in6_openSignal       : std_logic_vector (63 downto 0);
+   signal XLXI_5338_in7_openSignal       : std_logic_vector (63 downto 0);
+   signal XLXI_6253_header_openSignal    : std_logic_vector (59 downto 0);
+   signal XLXI_6253_signal_ID_openSignal : std_logic_vector (3 downto 0);
    component IDELAY
       -- synopsys translate_off
       generic( IOBDELAY_VALUE : integer :=  0;
@@ -1205,12 +1165,15 @@ architecture BEHAVIORAL of TOP_LEVEL is
              reset             : in    std_logic; 
              data_in           : in    std_logic_vector (63 downto 0); 
              signal_threshold  : in    std_logic_vector (7 downto 0); 
-             user_sample_width : in    std_logic_vector (15 downto 0); 
-             out_enable        : out   std_logic; 
              new_trigger       : out   std_logic; 
+             out_enable        : out   std_logic; 
              data_out          : out   std_logic_vector (63 downto 0); 
              addr_out          : out   std_logic_vector (9 downto 0); 
-             trigger_address   : out   std_logic_vector (9 downto 0));
+             trigger_address   : out   std_logic_vector (9 downto 0); 
+             manual_force_trig : in    std_logic; 
+             ext_trig          : in    std_logic; 
+             trig_types        : in    std_logic_vector (7 downto 0); 
+             clear_manual_trig : out   std_logic);
    end component;
    
    component EthernetRAM
@@ -2071,11 +2034,13 @@ begin
    XLXI_6349 : PeakFinder
       port map (clk=>MASTER_CLK,
                 data_in(63 downto 0)=>fadc_fifo_data_out(63 downto 0),
+                ext_trig=>ext_trig,
+                manual_force_trig=>manual_force_trig,
                 reset=>reset,
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
-                user_sample_width(15 downto 
-            0)=>XLXI_6349_user_sample_width_openSignal(15 downto 0),
+                trig_types(7 downto 0)=>trig_types(7 downto 0),
                 addr_out(9 downto 0)=>ram_addr(9 downto 0),
+                clear_manual_trig=>clear_manual_trig,
                 data_out(63 downto 0)=>peak_finder_data_out(63 downto 0),
                 new_trigger=>new_trigger,
                 out_enable=>ram_en,
