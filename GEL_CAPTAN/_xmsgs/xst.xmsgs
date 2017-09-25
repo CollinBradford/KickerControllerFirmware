@@ -179,35 +179,7 @@
 <arg fmt="%s" index="3">&lt;data_in&gt;, &lt;reset&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.vhd</arg>&quot; line <arg fmt="%d" index="2">120</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;reset&gt;</arg>
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">headerDelayTwo</arg>&gt; in unit &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">analysisRunning</arg>&gt; in unit &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">prepareEnd</arg>&gt; in unit &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">sendFooter</arg>&gt; in unit &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
 <msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">finish</arg>&gt; in unit &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">data_out_we</arg>&gt; in unit &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">busy</arg>&gt; in unit &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">resetClearVeto</arg>&gt; in unit &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">resetForceVeto</arg>&gt; in unit &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
 <msg type="warning" file="Xst" num="3052" delta="new" >You have requested that asynchronous control signals of sequential elements be treated as if they were synchronous. Please review the details of this switch in chapter Design Constraints of the XST User Guide. This feature allows you to better explore the possibilities offered by the Xilinx solution without having to rewrite the descriptions of sequential elements. However, be well aware that the synthesis result, while providing you with a good way to assess final device usage and design performance, is not functionally equivalent to your HDL description. As a result, you will not be able to validate your design by comparison of pre-synthesis and post-synthesis simulation results. Please also note that in general we strongly recommend synchronous flip-flop initialization.
@@ -243,28 +215,10 @@
 <msg type="info" file="Xst" num="2371" delta="new" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">footer_in</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">data_in_end</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">sendFooter</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">prepareEnd</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">internalFooter&lt;63:8&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">headerDelayTwo</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">finish</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">analysisRunning</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -494,18 +448,6 @@ It will be removed from the design.
 It will be removed from the design.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">burst_controller_sm</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;b_packet_qw_size_1&gt; &lt;b_packet_qw_size_2&gt; &lt;b_packet_qw_size_3&gt; &lt;b_packet_qw_size_4&gt; &lt;b_packet_qw_size_5&gt; &lt;b_packet_qw_size_6&gt; &lt;b_packet_qw_size_7&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">tx_info_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">burst_controller_sm</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tx_info_11&gt; &lt;tx_info_12&gt; &lt;tx_info_13&gt; &lt;tx_info_14&gt; &lt;tx_info_15&gt; &lt;tx_info_8&gt; &lt;tx_info_9&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;writes_in_curr_burst_1&gt; &lt;writes_in_curr_burst_2&gt; &lt;writes_in_curr_burst_3&gt; &lt;writes_in_curr_burst_4&gt; &lt;writes_in_curr_burst_5&gt; &lt;writes_in_curr_burst_6&gt; &lt;writes_in_curr_burst_7&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">data_out_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_6415</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">55 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;data_out_9&gt; &lt;data_out_10&gt; &lt;data_out_11&gt; &lt;data_out_12&gt; &lt;data_out_13&gt; &lt;data_out_14&gt; &lt;data_out_15&gt; &lt;data_out_16&gt; &lt;data_out_17&gt; &lt;data_out_18&gt; &lt;data_out_19&gt; &lt;data_out_20&gt; &lt;data_out_21&gt; &lt;data_out_22&gt; &lt;data_out_23&gt; &lt;data_out_24&gt; &lt;data_out_25&gt; &lt;data_out_26&gt; &lt;data_out_27&gt; &lt;data_out_28&gt; &lt;data_out_29&gt; &lt;data_out_30&gt; &lt;data_out_31&gt; &lt;data_out_32&gt; &lt;data_out_33&gt; &lt;data_out_34&gt; &lt;data_out_35&gt; &lt;data_out_36&gt; &lt;data_out_37&gt; &lt;data_out_38&gt; &lt;data_out_39&gt; &lt;data_out_40&gt; &lt;data_out_41&gt; &lt;data_out_42&gt; &lt;data_out_43&gt; &lt;data_out_44&gt; &lt;data_out_45&gt; &lt;data_out_46&gt; &lt;data_out_47&gt; &lt;data_out_48&gt; &lt;data_out_49&gt; &lt;data_out_50&gt; &lt;data_out_51&gt; &lt;data_out_52&gt; &lt;data_out_53&gt; &lt;data_out_54&gt; &lt;data_out_55&gt; &lt;data_out_56&gt; &lt;data_out_57&gt; &lt;data_out_58&gt; &lt;data_out_59&gt; &lt;data_out_60&gt; &lt;data_out_61&gt; &lt;data_out_62&gt; &lt;data_out_63&gt; </arg>
-</msg>
-
 <msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">add_sig_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChecksumCalcBlock</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -527,37 +469,10 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">tx_er</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">crcSplice</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">just_reset</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_traffic_controller_blk</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">internal_eth_dout_48</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_6227</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_out_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_6415</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_info_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">test_data_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CreatePacketBlock</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">b_enable_sig</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_controller_sm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">force_packet_old</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">dataOutEnd</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_6415</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">data_out</arg>&lt;<arg fmt="%d" index="2">63</arg>:<arg fmt="%d" index="3">8</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">event_analysis</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">TOP_LEVEL</arg>&gt;: instances &lt;<arg fmt="%s" index="2">XLXI_6124</arg>&gt;, &lt;<arg fmt="%s" index="3">XLXI_6126</arg>&gt; of unit &lt;<arg fmt="%s" index="4">buffer_10bit</arg>&gt; are equivalent, second instance is removed
@@ -614,30 +529,6 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">UDP_length_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">create_packet</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IP_length_1&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">lastSigLow</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">lastSigHigh</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">lastSigLow</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">lastSigHigh</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">lastSigLow</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">lastSigHigh</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">lastSigLow</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">lastSigHigh</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">event_analysis</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">udp_zeros_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">decipherer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -675,81 +566,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">tx_er</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">crcSplice</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">just_reset</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_packet_qw_size_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_traffic_controller_blk</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_traffic_controller_blk</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_traffic_controller_blk</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_traffic_controller_blk</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_traffic_controller_blk</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_traffic_controller_blk</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_traffic_controller_blk</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_info_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_info_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_info_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_info_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_info_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_info_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_info_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sendUDP</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_6253</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">b_data_we</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_6253</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_6331</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">TOP_LEVEL</arg>&gt;.
@@ -1105,127 +921,10 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">udp_data_count_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DecipherBlock</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">writes_in_curr_burst_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_traffic_controller_blk</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">tx_info_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">burst_controller_sm</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_6124</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">TOP_LEVEL</arg>&gt;.
 It will be removed from the design.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">b_enable_sig</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_controller_sm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">dataOutEnd</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_6415</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">force_packet_old</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clocks_since_send_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">burst_traffic_controller_blk</arg>&gt;.
-</msg>
-
 <msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_6341</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
 </msg>
 
@@ -1524,6 +1223,15 @@ It will be removed from the design.
 </msg>
 
 <msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TX_CTRL_MAC_FIFO</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ram_addr_sig_10_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RAM_COMM_DEC</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ram_addr_sig_9_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RAM_COMM_DEC</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ram_addr_sig_8_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RAM_COMM_DEC</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

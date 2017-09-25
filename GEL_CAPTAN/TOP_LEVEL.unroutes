@@ -1,15 +1,11 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Sep 22 15:17:40 2017
+Mon Sep 25 14:00:14 2017
 
 All signals are completely routed.
 
-WARNING:ParHelpers:362 - There are 1 sourceless signals in this design. This design will not pass the DRC check run by
-   Bitgen.
-
-   b_force_packet
-WARNING:ParHelpers:361 - There are 64 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 40 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    XLXI_3432/D10
@@ -39,8 +35,6 @@ WARNING:ParHelpers:361 - There are 64 loadless signals in this design. This desi
    XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6>
    XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full
    XLXI_6227/data_manager_blk/tx_data_fifo_empty
-   XLXI_6227/data_manager_blk/tx_data_fifo_full
-   XLXI_6227/data_manager_blk/tx_data_info_fifo_full
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1
@@ -54,27 +48,5 @@ WARNING:ParHelpers:361 - There are 64 loadless signals in this design. This desi
    XLXI_6414/Q<5>
    XLXI_6414/Q<6>
    XLXI_6414/Q<7>
-   icon_control0<10>
-   icon_control0<11>
-   icon_control0<15>
-   icon_control0<16>
-   icon_control0<17>
-   icon_control0<18>
-   icon_control0<21>
-   icon_control0<22>
-   icon_control0<23>
-   icon_control0<24>
-   icon_control0<25>
-   icon_control0<26>
-   icon_control0<27>
-   icon_control0<28>
-   icon_control0<29>
-   icon_control0<30>
-   icon_control0<31>
-   icon_control0<32>
-   icon_control0<33>
-   icon_control0<34>
-   icon_control0<35>
-   icon_control0<7>
 
 

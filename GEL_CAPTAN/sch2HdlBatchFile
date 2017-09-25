@@ -1,1 +1,0 @@
-sch2hdl,-sympath,D:/cbradford/KickerControllerFirmware/ipcore_dir,-sympath,D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir,-intstyle,ise,-family,virtex4,-flat,-suppress,-vhdl,D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf,-w,D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.sch

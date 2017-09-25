@@ -3,10 +3,17 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -sd ../ipcore_dir -sd ipcore_dir -aul -nt timestamp -uc
-TOP_LEVEL.ucf -p xc4vlx25-ff668-10 TOP_LEVEL_cs.ngc TOP_LEVEL.ngd
+TOP_LEVEL.ucf -p xc4vlx25-ff668-10 TOP_LEVEL.ngc TOP_LEVEL.ngd
 
 Reading NGO file
-"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL_cs.ngc" ...
+"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc" ...
+Loading design module
+"D:\cbradford\KickerControllerFirmware\GEL_CAPTAN/DATA_FIFO_0.ngc"...
+Loading design module
+"D:\cbradford\KickerControllerFirmware\GEL_CAPTAN/INFO_FIFO_0.ngc"...
+Loading design module "../ipcore_dir/ADDR_FIFO.ngc"...
+Loading design module "ipcore_dir/ADC_FIFO.ngc"...
+Loading design module "ipcore_dir/EthernetRAM.ngc"...
 Gathering constraint information from source properties...
 Done.
 INFO:NgdBuild:889 - Pad net 'XLXI_6435/O<0>' is not connected to an external
@@ -576,10 +583,6 @@ WARNING:NgdBuild:1212 - User specified non-default attribute value (5.33333333)
    uncertainty calculated for DCM output clocks.
 Checking expanded design ...
 WARNING:NgdBuild:440 - FF primitive 'XLXI_6396' has unconnected output pin
-WARNING:NgdBuild:452 - logical net 'b_force_packet' has no driver
-WARNING:NgdBuild:452 - logical net 'event_data_end' has no driver
-WARNING:NgdBuild:452 - logical net 'event_data_we' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_6227/b_enable' has no driver
 WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<0>' has no
    driver
 WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<10>' has
@@ -644,12 +647,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  68
+  Number of warnings:  64
 
-Total memory usage is 275464 kilobytes
+Total memory usage is 227068 kilobytes
 
 Writing NGD file "TOP_LEVEL.ngd" ...
-Total REAL time to NGDBUILD completion:  11 sec
-Total CPU time to NGDBUILD completion:   11 sec
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   8 sec
 
 Writing NGDBUILD log file "TOP_LEVEL.bld"...

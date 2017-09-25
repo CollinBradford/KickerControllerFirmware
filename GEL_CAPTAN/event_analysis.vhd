@@ -119,43 +119,46 @@ begin
 	
 	process(clk) begin
 		--check for reset condition
-		if(reset = '0') then
-			--rising edge events
-			if(rising_edge(clk)) then
-				--when we receive a new signal
+		if(rising_edge(clk)) then
+		
+			--Reset pulsed signals
+			headerDelayOne <= '0';
+			headerDelayTwo <= '0';
+			prepareEnd <= '0';
+			sendFooter <= '0';
+			data_out_we <= '0';
+			dataOutEnd <= '0';
+			resetClearVeto <= '0';
+			resetForceVeto <= '0';
+			
+		
+			if(reset = '1') then
+				busy <= '0';
+			else
+			
+				if(data_in_we = '1') then
+					data_out_we <= '1';
+					data_out <= data_in;
+				elsif(prepareEnd = '1') then				
+					data_out_we <= '1';
+					data_out <= footer_in;--we need one clock to figure out if we need to veto.  The header signals coming from anything else in the firmware applciation can be sent at this time.  					
+				elsif(sendFooter = '1') then			
+					data_out_we <= '1';
+					data_out <= internalFooter;
+				end if;
+				
+				
+				
 				if(data_in_we = '1' and busy = '0') then
 					busy <= '1';
-					data_out <= data_in;
-					data_out_we <= '1';
 					headerDelayOne <= '1';
-				end if;
-				--delay for second header
-				if(headerDelayOne = '1') then
-					data_out <= data_in;
-					headerDelayTwo <= '1';
-					headerDelayOne <= '0';
-				end if;
-				--We have actual data! start the analysis process
-				if(headerDelayTwo <= '1') then
-					headerDelayTwo <= '0';
+				elsif(headerDelayOne = '1') then 
+					headerDelayTwo <= '1'; --delay for second header				
 					analysisRunning <= '1';
-					data_out <= data_in;
-					--Check if any samples are above the threshold
-					if(sampleOne > userZeroCrossThreshHigh or sampleTwo > userZeroCrossThreshHigh or sampleThree > userZeroCrossThreshHigh or sampleFour > userZeroCrossThreshHigh
-						or sampleFive > userZeroCrossThreshHigh or sampleSix > userZeroCrossThreshHigh or sampleSeven > userZeroCrossThreshHigh or sampleEight > userZeroCrossThreshHigh) then
-						lastSigHigh <=  '1';
-						zeroCrossCount <= zeroCrossCount + 1;
-					end if;
-					--Check if any samples are below the threshold
-					if(sampleOne < userZeroCrossThreshLow or sampleTwo < userZeroCrossThreshLow or sampleThree < userZeroCrossThreshLow or sampleFour < userZeroCrossThreshLow or sampleFive < userZeroCrossThreshLow
-						or sampleSix < userZeroCrossThreshLow or sampleSeven < userZeroCrossThreshLow or sampleEight < userZeroCrossThreshLow) then
-						lastSigLow <= '0';
-						zeroCrossCount <= zeroCrossCount + 1;
-					end if;
-				end if;
-				--Regular analysis code
-				if(analysisRunning <= '1') then
-					data_out <= data_in;
+					lastSigHigh <= '0';
+					lastSigLow <= '0';
+				elsif(analysisRunning = '1') then --We have actual data! start the analysis process	
+				
 					--If last time was not high and this time is, incriment the counter
 					if(lastSigHigh = '0') then
 						if(sampleOne > userZeroCrossThreshHigh or sampleTwo > userZeroCrossThreshHigh or sampleThree > userZeroCrossThreshHigh or sampleFour > userZeroCrossThreshHigh
@@ -172,6 +175,7 @@ begin
 							zeroCrossCount <= zeroCrossCount + 1; 
 						end if;
 					end if;
+					
 					--Reset the high signal if we are no longer above threshold
 					if(lastSigHigh = '1' and sampleOne < userZeroCrossThreshHigh and sampleTwo < userZeroCrossThreshHigh and sampleThree < userZeroCrossThreshHigh and sampleFour < userZeroCrossThreshHigh
 						and sampleFive < userZeroCrossThreshHigh and sampleSix < userZeroCrossThreshHigh and sampleSeven < userZeroCrossThreshHigh and sampleEight < userZeroCrossThreshHigh) then
@@ -182,62 +186,167 @@ begin
 						and sampleSix > userZeroCrossThreshLow and sampleSeven > userZeroCrossThreshLow and sampleEight > userZeroCrossThreshLow) then
 						lastSigLow <= '0';
 					end if;
+					
 				end if;
+				
+				
+				
 				--detect the end of the packet and prepare for it.  
 				if(data_in_end = '1') then
 					--The data currently on the pins is still valid and needs to be compared.  We won't give the final 
 					--count until the event is actually over.  
 					prepareEnd <= '1';
-				end if;
-				--end the analysis and see if we need to veto.   
-				if(prepareEnd <= '1') then 
+				elsif(prepareEnd = '1') then  --end the analysis and see if we need to veto.  
 					analysisRunning <= '0';
-					prepareEnd <= '0';
 					sendFooter <= '1';
-					data_out <= footer_in;--we need one clock to figure out if we need to veto.  The header signals coming from anything else in the firmware applciation can be sent at this time.  
+					
 					--Check if we will veto the signal and take approperate action
 					if(zeroCrossCount > userZeroCrossVetoThresh and veto_en = '1') then
 						vetoed <= '1';
 					end if;
-				end if;
-				--send the footer
-				if(sendFooter <= '1') then
+				elsif(sendFooter = '1') then --send the footer
 					data_out <= internalFooter;
-					finish <= '1';
-				end if;
-				--Turn off the data_out_we signal and pulse data_out_end
-				if(finish <= '1') then
-					data_out_we <= '0';
+					finish <= '1';				
+				elsif(finish = '1') then			 --Turn off the data_out_we signal and pulse data_out_end		
 					dataOutEnd <= '1';
 					busy <= '0';
 				end if;
 				
+				
+				---user controlled signals:
+				
 				--Clear veto signal
-				if(clear_veto = '1') then
+				if(force_veto = '1') then --Force veto signal
+					vetoed <= '1';
+					resetForceVeto <= '1';
+				elsif(clear_veto = '1') then
 					vetoed <= '0';
 					resetClearVeto <= '1';
 				end if;
-				--Force veto signal
-				if(force_veto = '1') then
-					vetoed <= '1';
-					resetForceVeto <= '1';
-				end if;
+								 
 				
-				--Reset pulsed signals
-				if(dataOutEnd = '1') then
-					dataOutEnd <= '0';
-				end if;
-				if(resetClearVeto <= '1') then
-					resetClearVeto <= '0';
-				end if;
-				if(resetForceVeto <= '1') then
-					resetForceVeto <= '0';
-				end if;
-			--end rising_edge events
+				
+				
 			end if;
-		--reset code
-		else
-			busy <= '0';
+
+				
+--			--rising edge events
+--			if(reset = '0') then
+--				--when we receive a new signal
+--				if(data_in_we = '1' and busy = '0') then
+--					busy <= '1';
+--					data_out <= data_in;
+--					data_out_we <= '1';
+--					headerDelayOne <= '1';
+--				end if;
+--				--delay for second header
+--				if(headerDelayOne = '1') then
+--					data_out <= data_in;
+--					headerDelayTwo <= '1';
+--					headerDelayOne <= '0';
+--				end if;
+--				--We have actual data! start the analysis process
+--				if(headerDelayTwo <= '1') then
+--					headerDelayTwo <= '0';
+--					analysisRunning <= '1';
+--					data_out <= data_in;
+--					--Check if any samples are above the threshold
+--					if(sampleOne > userZeroCrossThreshHigh or sampleTwo > userZeroCrossThreshHigh or sampleThree > userZeroCrossThreshHigh or sampleFour > userZeroCrossThreshHigh
+--						or sampleFive > userZeroCrossThreshHigh or sampleSix > userZeroCrossThreshHigh or sampleSeven > userZeroCrossThreshHigh or sampleEight > userZeroCrossThreshHigh) then
+--						lastSigHigh <=  '1';
+--						zeroCrossCount <= zeroCrossCount + 1;
+--					end if;
+--					--Check if any samples are below the threshold
+--					if(sampleOne < userZeroCrossThreshLow or sampleTwo < userZeroCrossThreshLow or sampleThree < userZeroCrossThreshLow or sampleFour < userZeroCrossThreshLow or sampleFive < userZeroCrossThreshLow
+--						or sampleSix < userZeroCrossThreshLow or sampleSeven < userZeroCrossThreshLow or sampleEight < userZeroCrossThreshLow) then
+--						lastSigLow <= '0';
+--						zeroCrossCount <= zeroCrossCount + 1;
+--					end if;
+--				end if;
+--				--Regular analysis code
+--				if(analysisRunning <= '1') then
+--					data_out <= data_in;
+--					--If last time was not high and this time is, incriment the counter
+--					if(lastSigHigh = '0') then
+--						if(sampleOne > userZeroCrossThreshHigh or sampleTwo > userZeroCrossThreshHigh or sampleThree > userZeroCrossThreshHigh or sampleFour > userZeroCrossThreshHigh
+--							or sampleFive > userZeroCrossThreshHigh or sampleSix > userZeroCrossThreshHigh or sampleSeven > userZeroCrossThreshHigh or sampleEight > userZeroCrossThreshHigh) then
+--							lastSigHigh <= '1';
+--							zeroCrossCount <= zeroCrossCount + 1;
+--						end if;
+--					end if;
+--					--If the last signal set was not low and this time is low, incriment the counter
+--					if(lastSigLow = '0') then
+--						if(sampleOne < userZeroCrossThreshLow or sampleTwo < userZeroCrossThreshLow or sampleThree < userZeroCrossThreshLow or sampleFour < userZeroCrossThreshLow or sampleFive < userZeroCrossThreshLow
+--							or sampleSix < userZeroCrossThreshLow or sampleSeven < userZeroCrossThreshLow or sampleEight < userZeroCrossThreshLow) then
+--							lastSigLow <= '1';
+--							zeroCrossCount <= zeroCrossCount + 1; 
+--						end if;
+--					end if;
+--					--Reset the high signal if we are no longer above threshold
+--					if(lastSigHigh = '1' and sampleOne < userZeroCrossThreshHigh and sampleTwo < userZeroCrossThreshHigh and sampleThree < userZeroCrossThreshHigh and sampleFour < userZeroCrossThreshHigh
+--						and sampleFive < userZeroCrossThreshHigh and sampleSix < userZeroCrossThreshHigh and sampleSeven < userZeroCrossThreshHigh and sampleEight < userZeroCrossThreshHigh) then
+--						lastSigHigh <= '0';
+--					end if;
+--					--Reset the Low signal if we are no longer below threshold
+--					if(lastSigLow = '1' and sampleOne > userZeroCrossThreshLow and sampleTwo > userZeroCrossThreshLow and sampleThree > userZeroCrossThreshLow and sampleFour > userZeroCrossThreshLow and sampleFive > userZeroCrossThreshLow
+--						and sampleSix > userZeroCrossThreshLow and sampleSeven > userZeroCrossThreshLow and sampleEight > userZeroCrossThreshLow) then
+--						lastSigLow <= '0';
+--					end if;
+--				end if;
+--				--detect the end of the packet and prepare for it.  
+--				if(data_in_end = '1') then
+--					--The data currently on the pins is still valid and needs to be compared.  We won't give the final 
+--					--count until the event is actually over.  
+--					prepareEnd <= '1';
+--				end if;
+--				--end the analysis and see if we need to veto.   
+--				if(prepareEnd <= '1') then 
+--					analysisRunning <= '0';
+--					prepareEnd <= '0';
+--					sendFooter <= '1';
+--					data_out <= footer_in;--we need one clock to figure out if we need to veto.  The header signals coming from anything else in the firmware applciation can be sent at this time.  
+--					--Check if we will veto the signal and take approperate action
+--					if(zeroCrossCount > userZeroCrossVetoThresh and veto_en = '1') then
+--						vetoed <= '1';
+--					end if;
+--				end if;
+--				--send the footer
+--				if(sendFooter <= '1') then
+--					data_out <= internalFooter;
+--					finish <= '1';
+--				end if;
+--				--Turn off the data_out_we signal and pulse data_out_end
+--				if(finish <= '1') then
+--					data_out_we <= '0';
+--					dataOutEnd <= '1';
+--					busy <= '0';
+--				end if;
+--				
+--				--Clear veto signal
+--				if(clear_veto = '1') then
+--					vetoed <= '0';
+--					resetClearVeto <= '1';
+--				end if;
+--				--Force veto signal
+--				if(force_veto = '1') then
+--					vetoed <= '1';
+--					resetForceVeto <= '1';
+--				end if;
+--				
+--				--Reset pulsed signals
+--				if(dataOutEnd = '1') then
+--					dataOutEnd <= '0';
+--				end if;
+--				if(resetClearVeto <= '1') then
+--					resetClearVeto <= '0';
+--				end if;
+--				if(resetForceVeto <= '1') then
+--					resetForceVeto <= '0';
+--				end if;
+--				--reset code
+--			else
+--				busy <= '0';
+--			end if;
 		end if;
 	end process;
 end Behavioral;
