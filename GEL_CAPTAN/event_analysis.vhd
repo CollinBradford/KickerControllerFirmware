@@ -130,6 +130,7 @@ begin
 			dataOutEnd <= '0';
 			resetClearVeto <= '0';
 			resetForceVeto <= '0';
+			finish <= '0';
 			
 		
 			if(reset = '1') then
