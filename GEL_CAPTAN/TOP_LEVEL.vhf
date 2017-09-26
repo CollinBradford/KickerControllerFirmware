@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/25/2017 16:05:12
+-- /___/   /\     Timestamp : 09/26/2017 14:54:25
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -702,7 +702,9 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute SLEW                  : string ;
    attribute DRIVE                 : string ;
    attribute DIFF_TERM             : string ;
+   signal adc_fifo_empty                 : std_logic;
    signal adc_fifo_overflow              : std_logic;
+   signal adc_fifo_valid                 : std_logic;
    signal b_data                         : std_logic_vector (63 downto 0);
    signal b_data_we                      : std_logic;
    signal b_enable                       : std_logic;
@@ -819,8 +821,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15518                     : std_logic;
    signal XLXN_15524                     : std_logic;
    signal XLXN_15529                     : std_logic;
-   signal XLXN_15531                     : std_logic;
-   signal XLXN_15532                     : std_logic;
    signal XLXN_15533                     : std_logic;
    signal XLXN_15874                     : std_logic_vector (63 downto 0);
    signal XLXN_15958                     : std_logic;
@@ -2020,10 +2020,10 @@ begin
                 wr_clk=>FADC_DCLK,
                 wr_en=>XLXN_15533,
                 dout(63 downto 0)=>fadc_fifo_data_out(63 downto 0),
-                empty=>XLXN_15531,
+                empty=>adc_fifo_empty,
                 full=>XLXN_15524,
                 overflow=>adc_fifo_overflow,
-                valid=>XLXN_15532);
+                valid=>adc_fifo_valid);
    
    XLXI_6342 : VCC
       port map (P=>XLXN_15533);
@@ -2170,6 +2170,14 @@ begin
    
    XLXI_6435 : OBUF8_MXILINX_TOP_LEVEL
       port map (I(7 downto 0)=>zero_cross_count(7 downto 0),
+                O=>open);
+   
+   XLXI_6436 : OBUF
+      port map (I=>adc_fifo_empty,
+                O=>open);
+   
+   XLXI_6437 : OBUF
+      port map (I=>adc_fifo_valid,
                 O=>open);
    
 end BEHAVIORAL;

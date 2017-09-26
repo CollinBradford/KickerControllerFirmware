@@ -113,9 +113,6 @@ begin
 		data_out(47 downto 40) <= data_in(47 downto 40);
 		data_out(55 downto 48) <= data_in(55 downto 48);
 		data_out(63 downto 56) <= data_in(63 downto 56);
-		--I switched the signals because they weren't coming through right.  They were backwards.  
-		--there is probably a good explination for this somewhere, but for now I am just going to work around it with this.  
-		--data_out <= data_in;
 		
 		out_enable <= '1'; --We are constantly recording to the ram loop buffer.  
 		

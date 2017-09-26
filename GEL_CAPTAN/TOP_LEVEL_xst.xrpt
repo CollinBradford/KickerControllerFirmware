@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Tue Sep 26 13:42:40 2017">
+  <application stringID="Xst" timeStamp="Tue Sep 26 14:58:57 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -219,35 +219,35 @@
         <item stringID="XST_IOS" value="81"/>
       </section>
       <section stringID="XST_CELL_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="6996">
+        <item dataType="int" stringID="XST_BELS" value="6917">
           <item dataType="int" stringID="XST_AND2" value="6"/>
           <item dataType="int" stringID="XST_AND2B1" value="4"/>
           <item dataType="int" stringID="XST_BUF" value="5"/>
           <item dataType="int" stringID="XST_GND" value="29"/>
           <item dataType="int" stringID="XST_INV" value="188"/>
-          <item dataType="int" stringID="XST_LUT1" value="282"/>
-          <item dataType="int" stringID="XST_LUT2" value="911"/>
+          <item dataType="int" stringID="XST_LUT1" value="266"/>
+          <item dataType="int" stringID="XST_LUT2" value="899"/>
           <item dataType="int" stringID="XST_LUT2D" value="28"/>
           <item dataType="int" stringID="XST_LUT2L" value="46"/>
           <item dataType="int" stringID="XST_LUT3" value="1088"/>
-          <item dataType="int" stringID="XST_LUT3D" value="29"/>
-          <item dataType="int" stringID="XST_LUT3L" value="53"/>
-          <item dataType="int" stringID="XST_LUT4" value="2061"/>
+          <item dataType="int" stringID="XST_LUT3D" value="30"/>
+          <item dataType="int" stringID="XST_LUT3L" value="54"/>
+          <item dataType="int" stringID="XST_LUT4" value="2054"/>
           <item dataType="int" stringID="XST_LUT4D" value="82"/>
-          <item dataType="int" stringID="XST_LUT4L" value="213"/>
-          <item dataType="int" stringID="XST_MUXCY" value="1226"/>
+          <item dataType="int" stringID="XST_LUT4L" value="212"/>
+          <item dataType="int" stringID="XST_MUXCY" value="1200"/>
           <item dataType="int" stringID="XST_MUXF5" value="162"/>
           <item dataType="int" stringID="XST_MUXF6" value="48"/>
           <item dataType="int" stringID="XST_OR2" value="3"/>
-          <item dataType="int" stringID="XST_VCC" value="27"/>
+          <item dataType="int" stringID="XST_VCC" value="26"/>
           <item dataType="int" stringID="XST_XOR2" value="2"/>
-          <item dataType="int" stringID="XST_XORCY" value="487"/>
+          <item dataType="int" stringID="XST_XORCY" value="469"/>
         </item>
-        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="2482">
-          <item dataType="int" stringID="XST_FD" value="119"/>
-          <item dataType="int" stringID="XST_FDC" value="58"/>
+        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="2430">
+          <item dataType="int" stringID="XST_FD" value="91"/>
+          <item dataType="int" stringID="XST_FDC" value="54"/>
           <item dataType="int" stringID="XST_FDCE" value="99"/>
-          <item dataType="int" stringID="XST_FDE" value="685"/>
+          <item dataType="int" stringID="XST_FDE" value="665"/>
           <item dataType="int" stringID="XST_FDP" value="18"/>
           <item dataType="int" stringID="XST_FDPE" value="6"/>
           <item dataType="int" stringID="XST_FDR" value="111"/>
@@ -266,20 +266,20 @@
         <item dataType="int" stringID="XST_CLOCK_BUFFERS" value="12">
           <item dataType="int" label="-bufg" stringID="XST_BUFG" value="12"/>
         </item>
-        <item dataType="int" stringID="XST_IO_BUFFERS" value="68">
+        <item dataType="int" stringID="XST_IO_BUFFERS" value="70">
           <item dataType="int" stringID="XST_IBUF" value="12"/>
           <item dataType="int" stringID="XST_IBUFG" value="2"/>
-          <item dataType="int" stringID="XST_OBUF" value="33"/>
+          <item dataType="int" stringID="XST_OBUF" value="35"/>
         </item>
         <item dataType="int" stringID="XST_OTHERS" value="2"></item>
       </section>
     </section>
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="4vlx25ff668-10"/>
-      <item AVAILABLE="10752" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="3364"/>
-      <item AVAILABLE="21504" dataType="int" label="Number of Slice Flip Flops" stringID="XST_NUMBER_OF_SLICE_FLIP_FLOPS" value="2482"/>
-      <item AVAILABLE="21504" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="5389"/>
-      <item dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="4981"/>
+      <item AVAILABLE="10752" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="3332"/>
+      <item AVAILABLE="21504" dataType="int" label="Number of Slice Flip Flops" stringID="XST_NUMBER_OF_SLICE_FLIP_FLOPS" value="2430"/>
+      <item AVAILABLE="21504" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="5355"/>
+      <item dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="4947"/>
       <item dataType="int" label="Number used as Shift registers" stringID="XST_NUMBER_USED_AS_SHIFT_REGISTERS" value="24"/>
       <item dataType="int" stringID="XST_NUMBER_USED_AS_RAMS" value="384"/>
       <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="81"/>
@@ -292,7 +292,7 @@
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="275"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="273"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="126"/>
     </section>
   </application>

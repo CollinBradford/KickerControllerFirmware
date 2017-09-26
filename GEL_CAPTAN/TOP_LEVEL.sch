@@ -238,8 +238,7 @@
         <signal name="adc_fifo_overflow" />
         <signal name="fadc_fifo_data_out(63:0)" />
         <signal name="XLXN_15533" />
-        <signal name="XLXN_15532" />
-        <signal name="XLXN_15531" />
+        <signal name="adc_fifo_empty" />
         <signal name="XLXN_15529" />
         <signal name="XLXN_15524" />
         <signal name="fadc_data_in(15:0)" />
@@ -287,6 +286,7 @@
         <signal name="zero_cross_thresh_low(7:0)" />
         <signal name="zero_cross_veto_thresh(7:0)" />
         <signal name="zero_cross_count(7:0)" />
+        <signal name="adc_fifo_valid" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -738,7 +738,7 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
         <blockdef name="ADC_FIFO">
-            <timestamp>2017-9-14T19:2:13</timestamp>
+            <timestamp>2017-9-26T19:44:45</timestamp>
             <rect width="768" x="32" y="32" height="4032" />
             <line x2="32" y1="208" y2="208" x1="0" />
             <line x2="32" y1="240" y2="240" style="linewidth:W" x1="0" />
@@ -1810,8 +1810,8 @@
             <blockpin signalname="MASTER_CLK" name="rd_clk" />
             <blockpin signalname="fadc_fifo_data_out(63:0)" name="dout(63:0)" />
             <blockpin signalname="XLXN_15529" name="rd_en" />
-            <blockpin signalname="XLXN_15531" name="empty" />
-            <blockpin signalname="XLXN_15532" name="valid" />
+            <blockpin signalname="adc_fifo_empty" name="empty" />
+            <blockpin signalname="adc_fifo_valid" name="valid" />
         </block>
         <block symbolname="fd16re" name="XLXI_6394">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -1960,6 +1960,14 @@
         <block symbolname="obuf8" name="XLXI_6435">
             <blockpin signalname="zero_cross_count(7:0)" name="I(7:0)" />
             <blockpin name="O(7:0)" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6436">
+            <blockpin signalname="adc_fifo_empty" name="I" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6437">
+            <blockpin signalname="adc_fifo_valid" name="I" />
+            <blockpin name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2333,11 +2341,15 @@
             <wire x2="784" y1="816" y2="816" x1="752" />
             <wire x2="752" y1="816" y2="912" x1="752" />
         </branch>
-        <branch name="XLXN_15532">
+        <branch name="adc_fifo_valid">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1648" y="1136" type="branch" />
             <wire x2="1632" y1="1136" y2="1136" x1="1616" />
+            <wire x2="1648" y1="1136" y2="1136" x1="1632" />
         </branch>
-        <branch name="XLXN_15531">
+        <branch name="adc_fifo_empty">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1648" y="1040" type="branch" />
             <wire x2="1632" y1="1040" y2="1040" x1="1616" />
+            <wire x2="1648" y1="1040" y2="1040" x1="1632" />
         </branch>
         <branch name="XLXN_15529">
             <wire x2="1632" y1="848" y2="848" x1="1616" />
@@ -2843,6 +2855,16 @@
         <branch name="trig_types(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2560" type="branch" />
             <wire x2="2336" y1="2560" y2="2560" x1="2320" />
+        </branch>
+        <instance x="1968" y="1104" name="XLXI_6436" orien="R0" />
+        <instance x="2000" y="1216" name="XLXI_6437" orien="R0" />
+        <branch name="adc_fifo_empty">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1952" y="1072" type="branch" />
+            <wire x2="1968" y1="1072" y2="1072" x1="1952" />
+        </branch>
+        <branch name="adc_fifo_valid">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1984" y="1184" type="branch" />
+            <wire x2="2000" y1="1184" y2="1184" x1="1984" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">

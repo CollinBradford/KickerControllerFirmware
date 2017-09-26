@@ -22,3 +22,6 @@ map -intstyle ise -p xc4vlx25-ff668-10 -timing -logic_opt on -ol std -t 1 -regis
 par -w -intstyle ise -ol high -t 1 TOP_LEVEL_map.ncd TOP_LEVEL.ncd TOP_LEVEL.pcf 
 trce -intstyle ise -e 3 -s 10 -n 3 -fastpaths -xml TOP_LEVEL.twx TOP_LEVEL.ncd -o TOP_LEVEL.twr TOP_LEVEL.pcf -ucf TOP_LEVEL.ucf 
 bitgen -intstyle ise -f TOP_LEVEL.ut TOP_LEVEL.ncd 
+xst -intstyle ise -ifn "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.xst" -ofn "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.syr" 
+xst -intstyle ise -ifn "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.xst" -ofn "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.syr" 
+xst -intstyle ise -ifn "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.xst" -ofn "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.syr" 
