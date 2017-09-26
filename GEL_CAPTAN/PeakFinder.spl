@@ -1,0 +1,17 @@
+[Inputs]
+clk
+reset
+clock_enable
+manual_force_trig
+ext_trig
+=data_in[63:0]=
+=trig_types[7:0]=
+=signal_threshold[7:0]=
+[Outputs]
+new_trigger
+out_enable
+clear_manual_trig
+=data_out[63:0]=
+=addr_out[9:0]=
+=trigger_address[9:0]=
+[BiDir]

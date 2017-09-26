@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/26/2017 14:54:25
+-- /___/   /\     Timestamp : 09/26/2017 16:10:16
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -704,7 +704,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute DIFF_TERM             : string ;
    signal adc_fifo_empty                 : std_logic;
    signal adc_fifo_overflow              : std_logic;
-   signal adc_fifo_valid                 : std_logic;
    signal b_data                         : std_logic_vector (63 downto 0);
    signal b_data_we                      : std_logic;
    signal b_enable                       : std_logic;
@@ -715,6 +714,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal CLK_MUX                        : std_logic;
    signal CLK_187_5                      : std_logic;
    signal CLK_375                        : std_logic;
+   signal clock_enable                   : std_logic;
    signal clock_5mhz                     : std_logic;
    signal data_send_in                   : std_logic_vector (63 downto 0);
    signal dcm_mux_sel                    : std_logic;
@@ -725,6 +725,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal debug_signals                  : std_logic_vector (7 downto 0);
    signal event_data                     : std_logic_vector (63 downto 0);
    signal event_data_end                 : std_logic;
+   signal event_data_out_we              : std_logic;
    signal event_data_we                  : std_logic;
    signal EVENT_MAP                      : std_logic;
    signal ext_trig                       : std_logic;
@@ -1127,13 +1128,14 @@ architecture BEHAVIORAL of TOP_LEVEL is
              ram_addr                 : in    std_logic_vector (9 downto 0); 
              user_sample_size         : in    std_logic_vector (15 downto 0); 
              user_pretrig_sample_size : in    std_logic_vector (15 downto 0); 
-             b_data_we                : out   std_logic; 
-             b_force_packet           : out   std_logic; 
-             b_data                   : out   std_logic_vector (63 downto 0); 
              user_positive_delay      : in    std_logic_vector (15 downto 0); 
              debug_signals            : in    std_logic_vector (7 downto 0); 
              signal_ID                : in    std_logic_vector (3 downto 0); 
-             header                   : in    std_logic_vector (59 downto 0));
+             header                   : in    std_logic_vector (59 downto 0); 
+             b_data_we                : out   std_logic; 
+             b_force_packet           : out   std_logic; 
+             b_data                   : out   std_logic_vector (63 downto 0); 
+             clock_enable             : in    std_logic);
    end component;
    
    component ClockLatchSignals
@@ -1163,17 +1165,18 @@ architecture BEHAVIORAL of TOP_LEVEL is
    component PeakFinder
       port ( clk               : in    std_logic; 
              reset             : in    std_logic; 
+             manual_force_trig : in    std_logic; 
+             ext_trig          : in    std_logic; 
              data_in           : in    std_logic_vector (63 downto 0); 
+             trig_types        : in    std_logic_vector (7 downto 0); 
              signal_threshold  : in    std_logic_vector (7 downto 0); 
              new_trigger       : out   std_logic; 
              out_enable        : out   std_logic; 
+             clear_manual_trig : out   std_logic; 
              data_out          : out   std_logic_vector (63 downto 0); 
              addr_out          : out   std_logic_vector (9 downto 0); 
              trigger_address   : out   std_logic_vector (9 downto 0); 
-             manual_force_trig : in    std_logic; 
-             ext_trig          : in    std_logic; 
-             trig_types        : in    std_logic_vector (7 downto 0); 
-             clear_manual_trig : out   std_logic);
+             clock_enable      : in    std_logic);
    end component;
    
    component EthernetRAM
@@ -1201,6 +1204,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
              data_in_end            : in    std_logic; 
              clear_veto             : in    std_logic; 
              force_veto             : in    std_logic; 
+             veto_en                : in    std_logic; 
              data_in                : in    std_logic_vector (63 downto 0); 
              footer_in              : in    std_logic_vector (63 downto 0); 
              zero_cross_thresh_high : in    std_logic_vector (7 downto 0); 
@@ -1213,7 +1217,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
              reset_force_veto       : out   std_logic; 
              data_out               : out   std_logic_vector (63 downto 0); 
              zero_cross_count       : out   std_logic_vector (7 downto 0); 
-             veto_en                : in    std_logic);
+             clock_enable           : in    std_logic);
    end component;
    
    component OBUF8_MXILINX_TOP_LEVEL
@@ -1987,6 +1991,7 @@ begin
    
    XLXI_6253 : data_send
       port map (clk=>MASTER_CLK,
+                clock_enable=>clock_enable,
                 data_in(63 downto 0)=>data_send_in(63 downto 0),
                 debug_signals(7 downto 0)=>debug_signals(7 downto 0),
                 header(59 downto 0)=>XLXI_6253_header_openSignal(59 downto 0),
@@ -2023,7 +2028,7 @@ begin
                 empty=>adc_fifo_empty,
                 full=>XLXN_15524,
                 overflow=>adc_fifo_overflow,
-                valid=>adc_fifo_valid);
+                valid=>clock_enable);
    
    XLXI_6342 : VCC
       port map (P=>XLXN_15533);
@@ -2033,6 +2038,7 @@ begin
    
    XLXI_6349 : PeakFinder
       port map (clk=>MASTER_CLK,
+                clock_enable=>clock_enable,
                 data_in(63 downto 0)=>fadc_fifo_data_out(63 downto 0),
                 ext_trig=>ext_trig,
                 manual_force_trig=>manual_force_trig,
@@ -2096,6 +2102,7 @@ begin
    XLXI_6415 : event_analysis
       port map (clear_veto=>veto_clear,
                 clk=>MASTER_CLK,
+                clock_enable=>clock_enable,
                 data_in(63 downto 0)=>event_data(63 downto 0),
                 data_in_end=>event_data_end,
                 data_in_we=>event_data_we,
@@ -2111,7 +2118,7 @@ begin
             downto 0),
                 data_out(63 downto 0)=>b_data(63 downto 0),
                 data_out_end=>b_force_packet,
-                data_out_we=>b_data_we,
+                data_out_we=>event_data_out_we,
                 reset_clear_veto=>reset_clear_veto,
                 reset_force_veto=>reset_force_veto,
                 veto=>veto,
@@ -2177,8 +2184,13 @@ begin
                 O=>open);
    
    XLXI_6437 : OBUF
-      port map (I=>adc_fifo_valid,
+      port map (I=>clock_enable,
                 O=>open);
+   
+   XLXI_6438 : AND2
+      port map (I0=>clock_enable,
+                I1=>event_data_out_we,
+                O=>b_data_we);
    
 end BEHAVIORAL;
 

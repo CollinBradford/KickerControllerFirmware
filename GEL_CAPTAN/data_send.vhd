@@ -29,6 +29,7 @@ entity data_send is
     Port ( --default signals
 			  rst : in  STD_LOGIC;
            clk : in  STD_LOGIC;
+			  clock_enable : in STD_LOGIC;
 			  --data signals
            data_in : in  STD_LOGIC_VECTOR (63 downto 0);
 			  --trigger signals
@@ -106,60 +107,62 @@ begin
 	
 	process(clk) begin
 		if(rst = '0') then
-			if(rising_edge(clk)) then
-				--latch the address data as soon as we recieve a trigger event
-				if(new_trigger = '1') then
-					--only latch the new trigger if we don't already have one.  
-					if(busy = '0') then
-						busy <= '1';
-						timing <= '1';
-						positiveDelayTimer <= (others => '0');
-						triggerCount <= triggerCount + 1;
-						sampleSize <= userSampleSizeUns + userPretrigSamplesUns;
-						startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns;--This last number accounts for any delay in the firmware.  There must be at least -2 clocks allowed for placement of the header information.  Currently, another clock is requried by the peak_finder moduel for a total of -2.
-						endAddr <= triggerAddressUns + userSampleSizeUns + userPositiveDelayUns;
-					--If we get a trigger that we can't take care of because we are busy, incriment the missed trigger count.  
+			if(clock_enable = '1') then
+				if(rising_edge(clk)) then
+					--latch the address data as soon as we recieve a trigger event
+					if(new_trigger = '1') then
+						--only latch the new trigger if we don't already have one.  
+						if(busy = '0') then
+							busy <= '1';
+							timing <= '1';
+							positiveDelayTimer <= (others => '0');
+							triggerCount <= triggerCount + 1;
+							sampleSize <= userSampleSizeUns + userPretrigSamplesUns;
+							startAddr <= triggerAddressUns + userPositiveDelayUns - userPretrigSamplesUns;--This last number accounts for any delay in the firmware.  There must be at least -2 clocks allowed for placement of the header information.  Currently, another clock is requried by the peak_finder moduel for a total of -2.
+							endAddr <= triggerAddressUns + userSampleSizeUns + userPositiveDelayUns;
+						--If we get a trigger that we can't take care of because we are busy, incriment the missed trigger count.  
+						else
+							missedTriggerCount <= missedTriggerCount + 1;
+						end if;
+					end if;
+					--If we are triggered and the timing is finished, activate the armed flag.  
+					if(timing = '1' and positiveDelayTimer = userPositiveDelayUns) then
+						armed <= '1';
+						timing <= '0';
 					else
-						missedTriggerCount <= missedTriggerCount + 1;
+						--if we aren't finished timing, but are still timing, then increase the positiveDelayTimer.  
+						if(timing = '1') then
+							positiveDelayTimer <= positiveDelayTimer + 1;
+						end if;
 					end if;
-				end if;
-				--If we are triggered and the timing is finished, activate the armed flag.  
-				if(timing = '1' and positiveDelayTimer = userPositiveDelayUns) then
-					armed <= '1';
-					timing <= '0';
-				else
-					--if we aren't finished timing, but are still timing, then increase the positiveDelayTimer.  
-					if(timing = '1') then
-						positiveDelayTimer <= positiveDelayTimer + 1;
+					--once we reach the start address for the readout, send header one
+					if(armed = '1' and ramAddrUns = startAddr) then --Begins read cycle when buffer reaches starting point.  
+						b_data_we <= '1';
+						headerTwoStart <= '1';
+						armed <= '0';
+						b_data <= headerOneOut;
 					end if;
-				end if;
-				--once we reach the start address for the readout, send header one
-				if(armed = '1' and ramAddrUns = startAddr) then --Begins read cycle when buffer reaches starting point.  
-					b_data_we <= '1';
-					headerTwoStart <= '1';
-					armed <= '0';
-					b_data <= headerOneOut;
-				end if;
-				--send header two
-				if(headerTwoStart = '1') then
-					headerTwoStart <= '0';
-					b_data <= headerTwoOut;
-					reading <= '1';
-				end if;
-				--start reading (starts after headers are sent)
-				if(reading = '1') then
-					b_data <= dataOut;
-				end if;
-				--once we reach the end address
-				if(reading = '1' and ramAddrUns = endAddr) then --Ends read cycle when buffer reaches the end point. 
-					b_data_we <= '0';
-					reading <= '0';
-					sendUDP <= '1';
-					busy <= '0';
-				end if;
-				--pulsed signals
-				if(sendUDP = '1') then
-					sendUDP <= '0';
+					--send header two
+					if(headerTwoStart = '1') then
+						headerTwoStart <= '0';
+						b_data <= headerTwoOut;
+						reading <= '1';
+					end if;
+					--start reading (starts after headers are sent)
+					if(reading = '1') then
+						b_data <= dataOut;
+					end if;
+					--once we reach the end address
+					if(reading = '1' and ramAddrUns = endAddr) then --Ends read cycle when buffer reaches the end point. 
+						b_data_we <= '0';
+						reading <= '0';
+						sendUDP <= '1';
+						busy <= '0';
+					end if;
+					--pulsed signals
+					if(sendUDP = '1') then
+						sendUDP <= '0';
+					end if;
 				end if;
 			end if;
 		else--reset code here

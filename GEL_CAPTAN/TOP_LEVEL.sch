@@ -286,7 +286,8 @@
         <signal name="zero_cross_thresh_low(7:0)" />
         <signal name="zero_cross_veto_thresh(7:0)" />
         <signal name="zero_cross_count(7:0)" />
-        <signal name="adc_fifo_valid" />
+        <signal name="clock_enable" />
+        <signal name="event_data_out_we" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -678,7 +679,8 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="PeakFinder">
-            <timestamp>2017-9-25T21:1:50</timestamp>
+            <timestamp>2017-9-26T20:48:42</timestamp>
+            <line x2="0" y1="672" y2="672" x1="64" />
             <line x2="0" y1="480" y2="480" x1="64" />
             <line x2="0" y1="544" y2="544" x1="64" />
             <rect width="64" x="0" y="596" height="24" />
@@ -698,10 +700,11 @@
             <line x2="528" y1="-288" y2="-288" x1="464" />
             <rect width="64" x="464" y="-44" height="24" />
             <line x2="528" y1="-32" y2="-32" x1="464" />
-            <rect width="400" x="64" y="-320" height="1024" />
+            <rect width="400" x="64" y="-320" height="1088" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2017-9-22T19:28:45</timestamp>
+            <timestamp>2017-9-26T20:51:42</timestamp>
+            <line x2="0" y1="800" y2="800" x1="64" />
             <rect width="64" x="0" y="532" height="24" />
             <line x2="0" y1="544" y2="544" x1="64" />
             <rect width="64" x="0" y="596" height="24" />
@@ -727,7 +730,7 @@
             <line x2="384" y1="-352" y2="-352" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-384" height="1152" />
+            <rect width="256" x="64" y="-384" height="1216" />
         </blockdef>
         <blockdef name="ClockLatchSignals">
             <timestamp>2016-9-30T16:49:33</timestamp>
@@ -780,7 +783,8 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="event_analysis">
-            <timestamp>2017-9-22T16:24:52</timestamp>
+            <timestamp>2017-9-26T21:4:46</timestamp>
+            <line x2="0" y1="480" y2="480" x1="64" />
             <line x2="0" y1="416" y2="416" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="96" y2="96" x1="64" />
@@ -807,7 +811,7 @@
             <line x2="656" y1="-160" y2="-160" x1="592" />
             <rect width="64" x="592" y="-44" height="24" />
             <line x2="656" y1="-32" y2="-32" x1="592" />
-            <rect width="528" x="64" y="-448" height="896" />
+            <rect width="528" x="64" y="-448" height="960" />
         </blockdef>
         <blockdef name="obuf8">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -1811,7 +1815,7 @@
             <blockpin signalname="fadc_fifo_data_out(63:0)" name="dout(63:0)" />
             <blockpin signalname="XLXN_15529" name="rd_en" />
             <blockpin signalname="adc_fifo_empty" name="empty" />
-            <blockpin signalname="adc_fifo_valid" name="valid" />
+            <blockpin signalname="clock_enable" name="valid" />
         </block>
         <block symbolname="fd16re" name="XLXI_6394">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -1823,17 +1827,18 @@
         <block symbolname="PeakFinder" name="XLXI_6349">
             <blockpin signalname="MASTER_CLK" name="clk" />
             <blockpin signalname="reset" name="reset" />
+            <blockpin signalname="manual_force_trig" name="manual_force_trig" />
+            <blockpin signalname="ext_trig" name="ext_trig" />
             <blockpin signalname="fadc_fifo_data_out(63:0)" name="data_in(63:0)" />
+            <blockpin signalname="trig_types(7:0)" name="trig_types(7:0)" />
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
             <blockpin signalname="new_trigger" name="new_trigger" />
             <blockpin signalname="ram_en" name="out_enable" />
+            <blockpin signalname="clear_manual_trig" name="clear_manual_trig" />
             <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
             <blockpin signalname="ram_addr(9:0)" name="addr_out(9:0)" />
             <blockpin signalname="trigger_addr(9:0)" name="trigger_address(9:0)" />
-            <blockpin signalname="manual_force_trig" name="manual_force_trig" />
-            <blockpin signalname="ext_trig" name="ext_trig" />
-            <blockpin signalname="trig_types(7:0)" name="trig_types(7:0)" />
-            <blockpin signalname="clear_manual_trig" name="clear_manual_trig" />
+            <blockpin signalname="clock_enable" name="clock_enable" />
         </block>
         <block symbolname="obuf" name="XLXI_6404">
             <blockpin signalname="trigger_out" name="I" />
@@ -1875,19 +1880,20 @@
             <blockpin signalname="event_data_end" name="data_in_end" />
             <blockpin signalname="veto_clear" name="clear_veto" />
             <blockpin signalname="veto_force" name="force_veto" />
+            <blockpin signalname="veto_enabled" name="veto_en" />
             <blockpin signalname="event_data(63:0)" name="data_in(63:0)" />
             <blockpin signalname="XLXN_15874(63:0)" name="footer_in(63:0)" />
             <blockpin signalname="zero_cross_thresh_high(7:0)" name="zero_cross_thresh_high(7:0)" />
             <blockpin signalname="zero_cross_thresh_low(7:0)" name="zero_cross_thresh_low(7:0)" />
             <blockpin signalname="zero_cross_veto_thresh(7:0)" name="zero_cross_veto_thresh(7:0)" />
-            <blockpin signalname="b_data_we" name="data_out_we" />
+            <blockpin signalname="event_data_out_we" name="data_out_we" />
             <blockpin signalname="b_force_packet" name="data_out_end" />
             <blockpin signalname="veto" name="veto" />
             <blockpin signalname="reset_clear_veto" name="reset_clear_veto" />
             <blockpin signalname="reset_force_veto" name="reset_force_veto" />
             <blockpin signalname="b_data(63:0)" name="data_out(63:0)" />
             <blockpin signalname="zero_cross_count(7:0)" name="zero_cross_count(7:0)" />
-            <blockpin signalname="veto_enabled" name="veto_en" />
+            <blockpin signalname="clock_enable" name="clock_enable" />
         </block>
         <block symbolname="data_send" name="XLXI_6253">
             <blockpin signalname="reset" name="rst" />
@@ -1898,13 +1904,14 @@
             <blockpin signalname="ram_addr(9:0)" name="ram_addr(9:0)" />
             <blockpin signalname="user_sample_size(15:0)" name="user_sample_size(15:0)" />
             <blockpin signalname="user_pretrig_sample_size(15:0)" name="user_pretrig_sample_size(15:0)" />
-            <blockpin signalname="event_data_we" name="b_data_we" />
-            <blockpin signalname="event_data_end" name="b_force_packet" />
-            <blockpin signalname="event_data(63:0)" name="b_data(63:0)" />
             <blockpin signalname="user_positive_delay(15:0)" name="user_positive_delay(15:0)" />
             <blockpin signalname="debug_signals(7:0)" name="debug_signals(7:0)" />
             <blockpin name="signal_ID(3:0)" />
             <blockpin name="header(59:0)" />
+            <blockpin signalname="event_data_we" name="b_data_we" />
+            <blockpin signalname="event_data_end" name="b_force_packet" />
+            <blockpin signalname="event_data(63:0)" name="b_data(63:0)" />
+            <blockpin signalname="clock_enable" name="clock_enable" />
         </block>
         <block symbolname="fd8re" name="XLXI_6418">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -1966,8 +1973,13 @@
             <blockpin name="O" />
         </block>
         <block symbolname="obuf" name="XLXI_6437">
-            <blockpin signalname="adc_fifo_valid" name="I" />
+            <blockpin signalname="clock_enable" name="I" />
             <blockpin name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_6438">
+            <blockpin signalname="clock_enable" name="I0" />
+            <blockpin signalname="event_data_out_we" name="I1" />
+            <blockpin signalname="b_data_we" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2341,13 +2353,12 @@
             <wire x2="784" y1="816" y2="816" x1="752" />
             <wire x2="752" y1="816" y2="912" x1="752" />
         </branch>
-        <branch name="adc_fifo_valid">
+        <branch name="clock_enable">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1648" y="1136" type="branch" />
             <wire x2="1632" y1="1136" y2="1136" x1="1616" />
             <wire x2="1648" y1="1136" y2="1136" x1="1632" />
         </branch>
         <branch name="adc_fifo_empty">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1648" y="1040" type="branch" />
             <wire x2="1632" y1="1040" y2="1040" x1="1616" />
             <wire x2="1648" y1="1040" y2="1040" x1="1632" />
         </branch>
@@ -2637,7 +2648,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1344" type="branch" />
             <wire x2="6560" y1="1344" y2="1344" x1="6544" />
         </branch>
-        <branch name="b_data_we">
+        <branch name="event_data_out_we">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1088" type="branch" />
             <wire x2="6560" y1="1088" y2="1088" x1="6544" />
         </branch>
@@ -2862,9 +2873,34 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1952" y="1072" type="branch" />
             <wire x2="1968" y1="1072" y2="1072" x1="1952" />
         </branch>
-        <branch name="adc_fifo_valid">
+        <branch name="clock_enable">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1984" y="1184" type="branch" />
             <wire x2="2000" y1="1184" y2="1184" x1="1984" />
+        </branch>
+        <branch name="clock_enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2624" type="branch" />
+            <wire x2="2336" y1="2624" y2="2624" x1="2320" />
+        </branch>
+        <branch name="clock_enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="2176" type="branch" />
+            <wire x2="4768" y1="2176" y2="2176" x1="4752" />
+        </branch>
+        <branch name="clock_enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1984" type="branch" />
+            <wire x2="5888" y1="1984" y2="1984" x1="5872" />
+        </branch>
+        <instance x="6368" y="864" name="XLXI_6438" orien="R0" />
+        <branch name="event_data_out_we">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6352" y="736" type="branch" />
+            <wire x2="6368" y1="736" y2="736" x1="6352" />
+        </branch>
+        <branch name="clock_enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6352" y="800" type="branch" />
+            <wire x2="6368" y1="800" y2="800" x1="6352" />
+        </branch>
+        <branch name="b_data_we">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6640" y="768" type="branch" />
+            <wire x2="6640" y1="768" y2="768" x1="6624" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">

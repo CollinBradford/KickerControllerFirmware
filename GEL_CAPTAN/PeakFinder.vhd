@@ -36,6 +36,7 @@ entity PeakFinder is
     Port ( --default signals
 			  clk : in STD_LOGIC;
 			  reset : in STD_LOGIC;
+			  clock_enable : in STD_LOGIC;
 			  --data signals
 			  data_in : in  STD_LOGIC_VECTOR (63 downto 0);
 			  --trigger types and attributes
@@ -114,81 +115,84 @@ begin
 		data_out(55 downto 48) <= data_in(55 downto 48);
 		data_out(63 downto 56) <= data_in(63 downto 56);
 		
-		out_enable <= '1'; --We are constantly recording to the ram loop buffer.  
+		out_enable <= clock_enable; --We are constantly recording to the ram loop buffer.  
 		
 		if(reset = '0') then--reset is low
 		
-			if(rising_edge(clk)) then--rising edge of clk and reset is low
-				
-				ramAddress <= ramAddress + 1;
-				lastExtTrigState <= extTrigLatched;
-				extTrigLatched <= ext_trig;
-				--These are the tests for each trigger state.  There is at least one if statement per trigger mode that is enabled when the 
-				--respective trigger mode is enabled.  If the trigger mode is active and the trigger state is also active, it enables the 
-				--trigger_active flag and performs any other checks and resets for each trigger.  
-				--
-				--if threshold mode is enabled
-				if(threshTrigEn = '1') then
-					--if we trigger when the signal rises above the trigger line
-					if(threshHigh = '1') then
-						if(sample_one > threshold or sample_two > threshold or sample_three > threshold or sample_four > threshold
-						or sample_five > threshold or sample_six > threshold or sample_seven > threshold or sample_eight > threshold) then
-							--if we aren't already triggered -- prevents triggering multiple times on the same event.  
-							if(lastThreshTrigState = '0') then
-								trigger_active <= '1';
-								lastThreshTrigState <= '1';
+			if(clock_enable = '1') then
+			
+				if(rising_edge(clk)) then--rising edge of clk and reset is low
+					
+					ramAddress <= ramAddress + 1;
+					lastExtTrigState <= extTrigLatched;
+					extTrigLatched <= ext_trig;
+					--These are the tests for each trigger state.  There is at least one if statement per trigger mode that is enabled when the 
+					--respective trigger mode is enabled.  If the trigger mode is active and the trigger state is also active, it enables the 
+					--trigger_active flag and performs any other checks and resets for each trigger.  
+					--
+					--if threshold mode is enabled
+					if(threshTrigEn = '1') then
+						--if we trigger when the signal rises above the trigger line
+						if(threshHigh = '1') then
+							if(sample_one > threshold or sample_two > threshold or sample_three > threshold or sample_four > threshold
+							or sample_five > threshold or sample_six > threshold or sample_seven > threshold or sample_eight > threshold) then
+								--if we aren't already triggered -- prevents triggering multiple times on the same event.  
+								if(lastThreshTrigState = '0') then
+									trigger_active <= '1';
+									lastThreshTrigState <= '1';
+								end if;
+							--reset the last thresh trigger state flag so that we can trigger on the next event.  
+							else
+								lastThreshTrigState <= '0';
 							end if;
-						--reset the last thresh trigger state flag so that we can trigger on the next event.  
-						else
-							lastThreshTrigState <= '0';
+						end if;
+						--if we trigger when the signal falls below the trigger line
+						if(threshHigh = '0') then
+							if(sample_one < threshold or sample_two < threshold or sample_three < threshold or sample_four < threshold
+							or sample_five < threshold or sample_six < threshold or sample_seven < threshold or sample_eight < threshold) then
+								--if we aren't already triggered -- prevents triggering multiple times on the same event.  
+								if(lastThreshTrigState = '0') then	
+									trigger_active <= '1';
+									lastThreshTrigState <= '1';
+								end if;
+							--reset the last thresh trigger state flag so that we can trigger on the next event.  
+							else
+								lastThreshTrigState <= '0';
+							end if;
 						end if;
 					end if;
-					--if we trigger when the signal falls below the trigger line
-					if(threshHigh = '0') then
-						if(sample_one < threshold or sample_two < threshold or sample_three < threshold or sample_four < threshold
-						or sample_five < threshold or sample_six < threshold or sample_seven < threshold or sample_eight < threshold) then
-							--if we aren't already triggered -- prevents triggering multiple times on the same event.  
-							if(lastThreshTrigState = '0') then	
-								trigger_active <= '1';
-								lastThreshTrigState <= '1';
-							end if;
-						--reset the last thresh trigger state flag so that we can trigger on the next event.  
-						else
-							lastThreshTrigState <= '0';
+					--if manual trigger mode is enabled and we have a trigger
+					if(manualTrigEn = '1' and manual_force_trig = '1') then
+						trigger_active <= '1';
+						clearManualTrigSig <= '1';
+					end if;
+					--if external trigger mode is enabled 
+					if(extTrigEn = '1') then
+						--if we are triggering on the rising edge of the trigger and it actually is the rising edge
+						if(extTrigRising = '1' and lastExtTrigState = '0' and extTrigLatched = '1') then
+							trigger_active <= '1';
+						end if;
+						--if we are triggering on the falling edge of the trigger and it actually is the falling edge
+						if(extTrigRising = '0' and lastExtTrigState = '1' and extTrigLatched = '0') then
+							trigger_active <= '1';
 						end if;
 					end if;
-				end if;
-				--if manual trigger mode is enabled and we have a trigger
-				if(manualTrigEn = '1' and manual_force_trig = '1') then
-					trigger_active <= '1';
-					clearManualTrigSig <= '1';
-				end if;
-				--if external trigger mode is enabled 
-				if(extTrigEn = '1') then
-					--if we are triggering on the rising edge of the trigger and it actually is the rising edge
-					if(extTrigRising = '1' and lastExtTrigState = '0' and extTrigLatched = '1') then
-						trigger_active <= '1';
+					--Code that needs to be run for each trigger
+					--
+					--Check for a trigger and run the code.  
+					if (trigger_active = '1') then  
+						triggered <= '1';
+						new_trigger_sig <= '1';
+						trigger_address <= std_logic_vector(ramAddress);
+						trigger_active <= '0';
 					end if;
-					--if we are triggering on the falling edge of the trigger and it actually is the falling edge
-					if(extTrigRising = '0' and lastExtTrigState = '1' and extTrigLatched = '0') then
-						trigger_active <= '1';
+					--these signals need to be pulsed for one clock only.
+					if(new_trigger_sig = '1') then
+						new_trigger_sig <= '0';
 					end if;
-				end if;
-				--Code that needs to be run for each trigger
-				--
-				--Check for a trigger and run the code.  
-				if (trigger_active = '1') then  
-					triggered <= '1';
-					new_trigger_sig <= '1';
-					trigger_address <= std_logic_vector(ramAddress);
-					trigger_active <= '0';
-				end if;
-				--these signals need to be pulsed for one clock only.
-				if(new_trigger_sig = '1') then
-					new_trigger_sig <= '0';
-				end if;
-				if(clearManualTrigSig = '1') then
-					clearManualTrigSig <= '0';
+					if(clearManualTrigSig = '1') then
+						clearManualTrigSig <= '0';
+					end if;
 				end if;
 			end if;
 		--reset is high
