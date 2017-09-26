@@ -210,6 +210,7 @@ begin
 					finish <= '1';				
 				elsif(finish = '1') then			 --Turn off the data_out_we signal and pulse data_out_end		
 					dataOutEnd <= '1';
+					zeroCrossCount <= (others => '0');
 					busy <= '0';
 				end if;
 				

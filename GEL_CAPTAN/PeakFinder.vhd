@@ -105,14 +105,14 @@ begin
 	
 	process(clk) begin
 		
-		data_out(7 downto 0) <= data_in(15 downto 8);
-		data_out(15 downto 8) <= data_in(7 downto 0);
-		data_out(23 downto 16) <= data_in(31 downto 24);
-		data_out(31 downto 24) <= data_in(23 downto 16);
-		data_out(39 downto 32) <= data_in(47 downto 40);
-		data_out(47 downto 40) <= data_in(39 downto 32);
-		data_out(55 downto 48) <= data_in(63 downto 56);
-		data_out(63 downto 56) <= data_in(55 downto 48);
+		data_out(7 downto 0) <= data_in(7 downto 0);
+		data_out(15 downto 8) <= data_in(15 downto 8);
+		data_out(23 downto 16) <= data_in(23 downto 16);
+		data_out(31 downto 24) <= data_in(31 downto 24);
+		data_out(39 downto 32) <= data_in(39 downto 32);
+		data_out(47 downto 40) <= data_in(47 downto 40);
+		data_out(55 downto 48) <= data_in(55 downto 48);
+		data_out(63 downto 56) <= data_in(63 downto 56);
 		--I switched the signals because they weren't coming through right.  They were backwards.  
 		--there is probably a good explination for this somewhere, but for now I am just going to work around it with this.  
 		--data_out <= data_in;

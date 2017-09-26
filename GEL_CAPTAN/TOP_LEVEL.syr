@@ -181,7 +181,8 @@ Architecture behavioral of Entity clocklatchsignals is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
 Architecture adc_fifo_a of Entity adc_fifo is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" in Library work.
-Architecture behavioral of Entity peakfinder is up to date.
+Entity <peakfinder> compiled.
+Entity <peakfinder> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd" in Library work.
 Architecture ethernetram_a of Entity ethernetram is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.vhd" in Library work.
@@ -1033,7 +1034,7 @@ WARNING:Xst:646 - Signal <headerDelayTwo> is assigned but never used. This uncon
     Found 1-bit register for signal <sendFooter>.
     Found 1-bit register for signal <vetoed>.
     Found 8-bit comparator lessequal for signal <vetoed$cmp_le0000> created at line 205.
-    Found 8-bit up counter for signal <zeroCrossCount>.
+    Found 8-bit register for signal <zeroCrossCount>.
     Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0000> created at line 165.
     Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0001> created at line 165.
     Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0002> created at line 165.
@@ -1042,10 +1043,9 @@ WARNING:Xst:646 - Signal <headerDelayTwo> is assigned but never used. This uncon
     Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0005> created at line 165.
     Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0006> created at line 165.
     Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0007> created at line 165.
-    Found 8-bit adder for signal <zeroCrossCount$mux0000> created at line 173.
+    Found 8-bit adder for signal <zeroCrossCount$mux0000>.
     Summary:
-	inferred   1 Counter(s).
-	inferred  77 D-type flip-flop(s).
+	inferred  85 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred  49 Comparator(s).
 	inferred  64 Multiplexer(s).
@@ -1845,7 +1845,7 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 5
  8-bit subtractor                                      : 2
-# Counters                                             : 15
+# Counters                                             : 14
  10-bit up counter                                     : 1
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
@@ -1855,8 +1855,8 @@ Macro Statistics
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
- 8-bit up counter                                      : 3
-# Registers                                            : 720
+ 8-bit up counter                                      : 2
+# Registers                                            : 721
  1-bit register                                        : 624
  10-bit register                                       : 3
  11-bit register                                       : 8
@@ -1869,7 +1869,7 @@ Macro Statistics
  40-bit register                                       : 1
  48-bit register                                       : 2
  64-bit register                                       : 6
- 8-bit register                                        : 59
+ 8-bit register                                        : 60
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
@@ -2302,7 +2302,7 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 5
  8-bit subtractor                                      : 2
-# Counters                                             : 15
+# Counters                                             : 14
  10-bit up counter                                     : 1
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
@@ -2312,9 +2312,9 @@ Macro Statistics
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
- 8-bit up counter                                      : 3
-# Registers                                            : 2187
- Flip-Flops                                            : 2187
+ 8-bit up counter                                      : 2
+# Registers                                            : 2195
+ Flip-Flops                                            : 2195
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
@@ -2750,7 +2750,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 7002
+# BELS                             : 6996
 #      AND2                        : 6
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2760,34 +2760,34 @@ Cell Usage :
 #      AND5B4                      : 1
 #      BUF                         : 5
 #      GND                         : 29
-#      INV                         : 187
+#      INV                         : 188
 #      LUT1                        : 282
-#      LUT2                        : 907
+#      LUT2                        : 911
 #      LUT2_D                      : 28
-#      LUT2_L                      : 38
-#      LUT3                        : 1092
-#      LUT3_D                      : 30
-#      LUT3_L                      : 54
-#      LUT4                        : 2060
-#      LUT4_D                      : 80
-#      LUT4_L                      : 215
-#      MUXCY                       : 1233
-#      MUXF5                       : 161
+#      LUT2_L                      : 46
+#      LUT3                        : 1088
+#      LUT3_D                      : 29
+#      LUT3_L                      : 53
+#      LUT4                        : 2061
+#      LUT4_D                      : 82
+#      LUT4_L                      : 213
+#      MUXCY                       : 1226
+#      MUXF5                       : 162
 #      MUXF6                       : 48
 #      OR2                         : 3
 #      VCC                         : 27
 #      XOR2                        : 2
-#      XORCY                       : 495
+#      XORCY                       : 487
 # FlipFlops/Latches                : 2482
 #      FD                          : 119
 #      FDC                         : 58
 #      FDCE                        : 99
-#      FDE                         : 693
+#      FDE                         : 685
 #      FDP                         : 18
 #      FDPE                        : 6
-#      FDR                         : 103
-#      FDRE                        : 1192
-#      FDRS                        : 81
+#      FDR                         : 111
+#      FDRE                        : 1200
+#      FDRS                        : 73
 #      FDRSE                       : 1
 #      FDS                         : 16
 #      FDSE                        : 96
@@ -2817,10 +2817,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3359  out of  10752    31%  
+ Number of Slices:                     3364  out of  10752    31%  
  Number of Slice Flip Flops:           2482  out of  21504    11%  
- Number of 4 input LUTs:               5381  out of  21504    25%  
-    Number used as logic:              4973
+ Number of 4 input LUTs:               5389  out of  21504    25%  
+    Number used as logic:              4981
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2880,9 +2880,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 8.061ns (Maximum Frequency: 124.050MHz)
+   Minimum period: 8.069ns (Maximum Frequency: 123.930MHz)
    Minimum input arrival time before clock: 6.925ns
-   Maximum output required time after clock: 6.702ns
+   Maximum output required time after clock: 6.710ns
    Maximum combinational path delay: 6.182ns
 
 Timing Detail:
@@ -2933,10 +2933,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 8.061ns (frequency: 124.050MHz)
-  Total number of paths / destination ports: 2250 / 1980
+  Clock period: 8.069ns (frequency: 123.930MHz)
+  Total number of paths / destination ports: 2258 / 1988
 -------------------------------------------------------------------------
-Offset:              8.061ns (Levels of Logic = 5)
+Offset:              8.069ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2946,7 +2946,7 @@ Offset:              8.061ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            221   0.360   1.667  reset (reset)
+     FDS:C->Q            223   0.360   1.675  reset (reset)
      end scope: 'reset_mgr'
      BUF:I->O            488   0.358   2.874  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
@@ -2956,7 +2956,7 @@ Offset:              8.061ns (Levels of Logic = 5)
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      8.061ns (1.648ns logic, 6.413ns route)
+    Total                      8.069ns (1.648ns logic, 6.421ns route)
                                        (20.4% logic, 79.6% route)
 
 =========================================================================
@@ -2985,7 +2985,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 106279 / 7409
+  Total number of paths / destination ports: 106187 / 7409
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3114,13 +3114,13 @@ Offset:              6.925ns (Levels of Logic = 13)
      begin scope: 'ethernet_controller'
      begin scope: 'DecipherBlock'
      LUT3:I0->O            1   0.195   0.741  Sreg0_FSM_FFd7-In11_SW0_SW0 (N741)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N233)
+     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N242)
      LUT3:I2->O            2   0.195   0.758  Sreg0_cmp_eq0001_SW2 (N70)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N230)
+     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N239)
      LUT2:I1->O            1   0.195   0.523  Sreg0_FSM_FFd6-In219 (Sreg0_FSM_FFd6-In219)
      LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In227 (Sreg0_FSM_FFd6-In227)
      LUT4:I3->O            1   0.195   0.741  Sreg0_FSM_FFd6-In242 (Sreg0_FSM_FFd6-In242)
-     LUT4:I0->O            1   0.195   0.000  Sreg0_FSM_FFd6-In271_F (N2001)
+     LUT4:I0->O            1   0.195   0.000  Sreg0_FSM_FFd6-In271_F (N206)
      MUXF5:I0->O           1   0.382   0.000  Sreg0_FSM_FFd6-In271 (Sreg0_FSM_FFd6-In)
      FDRE:D                    0.022          Sreg0_FSM_FFd6
     ----------------------------------------
@@ -3153,7 +3153,7 @@ Offset:              6.331ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.702ns (Levels of Logic = 3)
+Offset:              6.710ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3162,14 +3162,14 @@ Offset:              6.702ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            221   0.360   1.667  reset (reset)
+     FDS:C->Q            223   0.360   1.675  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.702ns (4.675ns logic, 2.027ns route)
-                                       (69.8% logic, 30.2% route)
+    Total                      6.710ns (4.675ns logic, 2.035ns route)
+                                       (69.7% logic, 30.3% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -3194,11 +3194,11 @@ Delay:               6.182ns (Levels of Logic = 3)
 
 
 Total REAL time to Xst completion: 71.00 secs
-Total CPU time to Xst completion: 71.04 secs
+Total CPU time to Xst completion: 71.75 secs
  
 --> 
 
-Total memory usage is 636672 kilobytes
+Total memory usage is 667520 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  275 (   0 filtered)
