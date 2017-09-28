@@ -121,8 +121,8 @@ architecture BEHAVIORAL of ethernet_interface is
 	signal self_addr				: std_logic_vector(23 downto 0) := x"C0A885";	 --192.168.133.X;x"C0A81E";	 --192.168.30.X; 
 	signal self_mac 				: std_logic_vector(39 downto 0) := x"008055EC00";                
 	signal self_port				: std_logic_vector(15 downto 0) := ETH_CONTROLLER_DEFAULT_PORT;							                
-	signal user_addr_byte			: std_logic_vector(7 downto 0)  := ETH_CONTROLLER_DEFAULT_ADDR;	
-	signal user_addr_sig			: std_logic_vector(7 downto 0)  := ETH_CONTROLLER_DEFAULT_ADDR;	
+	signal user_addr_byte			: std_logic_vector(7 downto 0) := user_addr; -- := ETH_CONTROLLER_DEFAULT_ADDR;	
+	signal user_addr_sig			: std_logic_vector(7 downto 0) := user_addr; -- := ETH_CONTROLLER_DEFAULT_ADDR;	
 	signal tx_data_dest_addr 		: std_logic_vector(31 downto 0);
 	signal tx_data_dest_mac 		: std_logic_vector(47 downto 0);
 	signal tx_data_dest_port 		: std_logic_vector(15 downto 0);
