@@ -70,6 +70,7 @@ architecture Behavioral of PeakFinder is
 	signal ramAddress : unsigned(9 downto 0);
 	signal clearManualTrigSig : std_logic;
 	signal extTrigLatched : std_logic;
+	signal extTrigTempLatched : std_logic;
 	--internal flags
 	signal new_trigger_sig : std_logic;
 	signal triggered : std_logic;--Means that a signal is over the threshold.  Sync with clk.
@@ -120,15 +121,24 @@ begin
 		if(reset = '0') then--reset is low
 		
 			if(rising_edge(clk)) then
+				
+				extTrigLatched <= ext_trig;
+				lastExtTrigState <= extTrigLatched;
 			
-				if(ext_trig = '1') then --We will reset the external trig later when we actually trigger on it.  
-					extTrigLatched <= '1';
+				if(extTrigEn = '1') then
+					--if we are triggering on the rising edge of the trigger and it actually is the rising edge
+					if(extTrigRising = '1' and lastExtTrigState = '0' and extTrigLatched = '1') then
+						trigger_active <= '1';
+					end if;
+					--if we are triggering on the falling edge of the trigger and it actually is the falling edge
+					if(extTrigRising = '0' and lastExtTrigState = '1' and extTrigLatched = '0') then
+						trigger_active <= '1';
+					end if;
 				end if;
 			
 				if(clock_enable = '1') then--rising edge of clk and reset is low
 					
 					ramAddress <= ramAddress + 1;
-					lastExtTrigState <= extTrigLatched;
 					
 					--These are the tests for each trigger state.  There is at least one if statement per trigger mode that is enabled when the 
 					--respective trigger mode is enabled.  If the trigger mode is active and the trigger state is also active, it enables the 
@@ -170,19 +180,6 @@ begin
 						trigger_active <= '1';
 						clearManualTrigSig <= '1';
 					end if;
-					--if external trigger mode is enabled 
-					if(extTrigEn = '1') then
-						--if we are triggering on the rising edge of the trigger and it actually is the rising edge
-						if(extTrigRising = '1' and lastExtTrigState = '0' and extTrigLatched = '1') then
-							trigger_active <= '1';
-							extTrigLatched <= '0';
-						end if;
-						--if we are triggering on the falling edge of the trigger and it actually is the falling edge
-						if(extTrigRising = '0' and lastExtTrigState = '1' and extTrigLatched = '0') then
-							trigger_active <= '1';
-							extTrigLatched <= '0';
-						end if;
-					end if;
 					--Code that needs to be run for each trigger
 					--
 					--Check for a trigger and run the code.  
@@ -208,7 +205,6 @@ begin
 			ramAddress <= (others => '0');
 			clearManualTrigSig <= '0'; --Needed to clear the FD on reset
 			lastThreshTrigState <= '0';
-			trigger_active <= '0';
 		end if;
 	end process;
 end Behavioral;

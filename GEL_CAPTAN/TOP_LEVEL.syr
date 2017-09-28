@@ -173,8 +173,7 @@ Architecture behavioral of Entity buffer_10bit is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
 Architecture behavioral of Entity trigger_recv_blk is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" in Library work.
-Entity <ethernet_interface> compiled.
-Entity <ethernet_interface> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity ethernet_interface is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" in Library work.
 Architecture behavioral of Entity data_send is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
@@ -182,7 +181,8 @@ Architecture behavioral of Entity clocklatchsignals is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
 Architecture adc_fifo_a of Entity adc_fifo is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" in Library work.
-Architecture behavioral of Entity peakfinder is up to date.
+Entity <peakfinder> compiled.
+Entity <peakfinder> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd" in Library work.
 Architecture ethernetram_a of Entity ethernetram is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.vhd" in Library work.
@@ -817,7 +817,7 @@ WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSi
 Entity <ClockLatchSignals> analyzed. Unit <ClockLatchSignals> generated.
 
 Analyzing Entity <PeakFinder> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" line 107: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd" line 108: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <data_in>, <clock_enable>, <reset>
 Entity <PeakFinder> analyzed. Unit <PeakFinder> generated.
 
@@ -961,46 +961,47 @@ Synthesizing Unit <PeakFinder>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/PeakFinder.vhd".
 WARNING:Xst:647 - Input <trig_types<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <triggered> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extTrigTempLatched> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 10-bit register for signal <trigger_address>.
     Found 1-bit register for signal <clearManualTrigSig>.
     Found 1-bit register for signal <extTrigLatched>.
     Found 1-bit register for signal <lastExtTrigState>.
     Found 1-bit register for signal <lastThreshTrigState>.
-    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0000> created at line 141.
-    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0001> created at line 141.
-    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0002> created at line 141.
-    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0003> created at line 141.
-    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0004> created at line 141.
-    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0005> created at line 141.
-    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0006> created at line 141.
-    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0007> created at line 141.
-    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0000> created at line 155.
-    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0001> created at line 155.
-    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0002> created at line 155.
-    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0003> created at line 155.
-    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0004> created at line 155.
-    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0005> created at line 155.
-    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0006> created at line 155.
-    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0007> created at line 155.
+    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0000> created at line 151.
+    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0001> created at line 151.
+    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0002> created at line 151.
+    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0003> created at line 151.
+    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0004> created at line 151.
+    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0005> created at line 151.
+    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0006> created at line 151.
+    Found 8-bit comparator greater for signal <lastThreshTrigState$cmp_gt0007> created at line 151.
+    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0000> created at line 165.
+    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0001> created at line 165.
+    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0002> created at line 165.
+    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0003> created at line 165.
+    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0004> created at line 165.
+    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0005> created at line 165.
+    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0006> created at line 165.
+    Found 8-bit comparator less for signal <lastThreshTrigState$cmp_lt0007> created at line 165.
     Found 1-bit register for signal <new_trigger_sig>.
     Found 10-bit up counter for signal <ramAddress>.
     Found 1-bit register for signal <trigger_active>.
-    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0000> created at line 155.
-    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0001> created at line 155.
-    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0002> created at line 155.
-    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0003> created at line 155.
-    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0004> created at line 155.
-    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0005> created at line 155.
-    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0006> created at line 155.
-    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0007> created at line 155.
-    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0000> created at line 141.
-    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0001> created at line 141.
-    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0002> created at line 141.
-    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0003> created at line 141.
-    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0004> created at line 141.
-    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0005> created at line 141.
-    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0006> created at line 141.
-    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0007> created at line 141.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0000> created at line 165.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0001> created at line 165.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0002> created at line 165.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0003> created at line 165.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0004> created at line 165.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0005> created at line 165.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0006> created at line 165.
+    Found 8-bit comparator greatequal for signal <trigger_active$cmp_ge0007> created at line 165.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0000> created at line 151.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0001> created at line 151.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0002> created at line 151.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0003> created at line 151.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0004> created at line 151.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0005> created at line 151.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0006> created at line 151.
+    Found 8-bit comparator lessequal for signal <trigger_active$cmp_le0007> created at line 151.
     Summary:
 	inferred   1 Counter(s).
 	inferred  16 D-type flip-flop(s).
@@ -2742,9 +2743,7 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0 has been replicated 1 time(s)
-FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_1 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -2763,8 +2762,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1881
- Flip-Flops                                            : 1881
+# Registers                                            : 1879
+ Flip-Flops                                            : 1879
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2795,7 +2794,7 @@ Design Statistics
 # IOs                              : 89
 
 Cell Usage :
-# BELS                             : 6916
+# BELS                             : 6883
 #      AND2                        : 7
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2805,36 +2804,36 @@ Cell Usage :
 #      AND5B4                      : 1
 #      BUF                         : 5
 #      GND                         : 28
-#      INV                         : 187
+#      INV                         : 188
 #      LUT1                        : 266
-#      LUT2                        : 905
-#      LUT2_D                      : 28
-#      LUT2_L                      : 37
-#      LUT3                        : 1093
-#      LUT3_D                      : 27
-#      LUT3_L                      : 60
-#      LUT4                        : 2048
-#      LUT4_D                      : 78
-#      LUT4_L                      : 228
-#      MUXCY                       : 1198
-#      MUXF5                       : 153
+#      LUT2                        : 848
+#      LUT2_D                      : 24
+#      LUT2_L                      : 20
+#      LUT3                        : 1137
+#      LUT3_D                      : 19
+#      LUT3_L                      : 53
+#      LUT4                        : 2099
+#      LUT4_D                      : 56
+#      LUT4_L                      : 204
+#      MUXCY                       : 1200
+#      MUXF5                       : 161
 #      MUXF6                       : 48
 #      OR2                         : 3
 #      VCC                         : 26
 #      XOR2                        : 2
 #      XORCY                       : 469
-# FlipFlops/Latches                : 2431
-#      FD                          : 91
+# FlipFlops/Latches                : 2429
+#      FD                          : 81
 #      FDC                         : 54
 #      FDCE                        : 99
 #      FDE                         : 671
 #      FDP                         : 18
 #      FDPE                        : 6
-#      FDR                         : 98
+#      FDR                         : 81
 #      FDRE                        : 1210
-#      FDRS                        : 71
+#      FDRS                        : 85
 #      FDRSE                       : 1
-#      FDS                         : 16
+#      FDS                         : 27
 #      FDSE                        : 96
 # RAMS                             : 207
 #      RAM16X1D                    : 192
@@ -2862,10 +2861,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3327  out of  10752    30%  
- Number of Slice Flip Flops:           2431  out of  21504    11%  
- Number of 4 input LUTs:               5365  out of  21504    24%  
-    Number used as logic:              4957
+ Number of Slices:                     3311  out of  10752    30%  
+ Number of Slice Flip Flops:           2429  out of  21504    11%  
+ Number of 4 input LUTs:               5322  out of  21504    24%  
+    Number used as logic:              4914
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          89
@@ -2896,7 +2895,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2605  |
+GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2603  |
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0                                                                                                                    | 41    |
 XLXI_6380/N1                       | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 4     |
 SECONDARY_CLK                      | IBUFG                                                                                                                             | 18    |
@@ -2925,9 +2924,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 8.069ns (Maximum Frequency: 123.930MHz)
-   Minimum input arrival time before clock: 6.527ns
-   Maximum output required time after clock: 6.706ns
+   Minimum period: 8.718ns (Maximum Frequency: 114.703MHz)
+   Minimum input arrival time before clock: 7.029ns
+   Maximum output required time after clock: 6.710ns
    Maximum combinational path delay: 6.182ns
 
 Timing Detail:
@@ -2978,10 +2977,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 8.069ns (frequency: 123.930MHz)
-  Total number of paths / destination ports: 2260 / 1989
+  Clock period: 8.718ns (frequency: 114.703MHz)
+  Total number of paths / destination ports: 2260 / 1987
 -------------------------------------------------------------------------
-Offset:              8.069ns (Levels of Logic = 5)
+Offset:              8.718ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2991,18 +2990,18 @@ Offset:              8.069ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            222   0.360   1.671  reset (reset)
+     FDS:C->Q            223   0.360   1.675  reset (reset)
      end scope: 'reset_mgr'
-     BUF:I->O            489   0.358   2.878  reset_mgr_reset_1 (reset_mgr_reset_1)
+     BUF:I->O            481   0.358   2.846  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
-     LUT2:I1->O           38   0.195   1.279  tx_ctrl_fifo_reset_sig1 (tx_ctrl_fifo_reset_sig)
+     LUT2:I1->O          211   0.195   1.956  tx_ctrl_fifo_reset_sig1 (tx_ctrl_fifo_reset_sig)
      begin scope: 'TX_CTRL_FIFO'
      begin scope: 'BU2'
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      8.069ns (1.648ns logic, 6.421ns route)
-                                       (20.4% logic, 79.6% route)
+    Total                      8.718ns (1.648ns logic, 7.070ns route)
+                                       (18.9% logic, 81.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
@@ -3029,20 +3028,20 @@ Offset:              2.748ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 7.860ns (frequency: 127.220MHz)
-  Total number of paths / destination ports: 110853 / 7408
+  Clock period: 7.302ns (frequency: 136.947MHz)
+  Total number of paths / destination ports: 111602 / 7428
 -------------------------------------------------------------------------
-Delay:               7.860ns (Levels of Logic = 11)
+Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 (FF)
-  Destination:       XLXI_6227/tx_data_dest_port_0 (FF)
+  Destination:       XLXI_6410/I_Q0 (FF)
   Source Clock:      GEL_RXCLK rising
   Destination Clock: GEL_RXCLK rising
 
-  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 to XLXI_6227/tx_data_dest_port_0
+  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 to XLXI_6410/I_Q0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.360   0.756  ram_addr_sig_54 (ram_addr_sig_54)
+     FDRS:C->Q             3   0.360   0.756  ram_addr_sig_54 (ram_addr_sig_54)
      end scope: 'RAM_COMM_DEC'
      end scope: 'data_manager_blk'
      LUT4:I0->O            1   0.195   0.000  ots_user_mask_cmp_eq00001_wg_lut<1> (ots_user_mask_cmp_eq00001_wg_lut<1>)
@@ -3050,15 +3049,20 @@ Delay:               7.860ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<2> (ots_user_mask_cmp_eq00001_wg_cy<2>)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<3> (ots_user_mask_cmp_eq00001_wg_cy<3>)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<4> (ots_user_mask_cmp_eq00001_wg_cy<4>)
-     MUXCY:CI->O           1   0.370   0.523  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
-     LUT3_D:I2->O         97   0.195   1.345  ots_user_mask_cmp_eq00001_wg_cy<7>1 (ots_user_mask_cmp_eq00001_wg_cy<7>)
-     LUT3:I2->O          105   0.195   1.376  tx_data_dest_mac_or00031 (tx_data_dest_mac_or0003)
-     LUT3:I2->O            1   0.195   0.523  tx_data_dest_addr_and00021 (tx_data_dest_addr_and0002)
-     LUT4:I3->O           16   0.195   0.593  tx_data_dest_port_not0001 (tx_data_dest_port_not0001)
-     FDE:CE                    0.540          tx_data_dest_port_0
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<6> (ots_user_mask_cmp_eq00001_wg_cy<6>)
+     MUXCY:CI->O          98   0.370   1.349  ots_user_mask_cmp_eq00001_wg_cy<7> (ots_user_mask_cmp_eq00001_wg_cy<7>)
+     LUT3:I2->O            1   0.195   0.688  rx_wren1 (rx_wren)
+     end scope: 'XLXI_6227'
+     AND2B1:I1->O         16   0.195   0.818  XLXI_4697 (XLXN_12617)
+     begin scope: 'XLXI_3432'
+     AND5B2:I2->O         64   0.195   1.053  I_36_63 (D5)
+     end scope: 'XLXI_3432'
+     begin scope: 'XLXI_6410'
+     FDRE:CE                   0.540          I_Q0
     ----------------------------------------
-    Total                      7.860ns (2.744ns logic, 5.116ns route)
-                                       (34.9% logic, 65.1% route)
+    Total                      7.302ns (2.638ns logic, 4.664ns route)
+                                       (36.1% logic, 63.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
@@ -3132,37 +3136,37 @@ Offset:              1.555ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GEL_RXCLK'
-  Total number of paths / destination ports: 927 / 352
+  Total number of paths / destination ports: 949 / 352
 -------------------------------------------------------------------------
-Offset:              6.527ns (Levels of Logic = 13)
-  Source:            BUSC_17DP_34S (PAD)
-  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6 (FF)
+Offset:              7.029ns (Levels of Logic = 13)
+  Source:            BUSC_19DN_39S (PAD)
+  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_2 (FF)
   Destination Clock: GEL_RXCLK rising
 
-  Data Path: BUSC_17DP_34S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6
+  Data Path: BUSC_19DN_39S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             7   0.965   0.744  XLXI_4220 (GMII_RXD_0_sig<1>)
+     IBUF:I->O             4   0.965   0.755  XLXI_4217 (GMII_RXD_0_sig<4>)
      begin scope: 'XLXI_6227'
      begin scope: 'ec_wrapper'
      begin scope: 'xgmii'
      end scope: 'xgmii'
      begin scope: 'ethernet_controller'
      begin scope: 'DecipherBlock'
-     LUT3:I0->O            1   0.195   0.741  Sreg0_FSM_FFd7-In11_SW0_SW0 (N811)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N250)
-     LUT3:I2->O            2   0.195   0.602  Sreg0_cmp_eq0001_SW2 (N70)
-     LUT4_D:I2->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N248)
-     LUT2:I1->O            1   0.195   0.523  Sreg0_FSM_FFd6-In219 (Sreg0_FSM_FFd6-In219)
-     LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In227 (Sreg0_FSM_FFd6-In227)
-     LUT4:I3->O            1   0.195   0.523  Sreg0_FSM_FFd6-In242 (Sreg0_FSM_FFd6-In242)
-     LUT3_L:I2->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In271_SW0 (N193)
-     LUT4:I3->O            1   0.195   0.000  Sreg0_FSM_FFd6-In271 (Sreg0_FSM_FFd6-In)
-     FDRE:D                    0.022          Sreg0_FSM_FFd6
+     LUT4_D:I0->LO         1   0.195   0.163  is_arp_sig_mux0000112 (N234)
+     LUT3:I2->O            3   0.195   0.600  Sreg0_FSM_FFd6-In215 (N182)
+     LUT4:I2->O            1   0.195   0.523  Sreg0_cmp_eq000332_SW0 (N148)
+     LUT4:I3->O           16   0.195   0.818  Sreg0_cmp_eq000332 (Sreg0_cmp_eq0003)
+     LUT4:I2->O            1   0.195   0.000  udp_countdown_4_mux00002_G (N189)
+     MUXF5:I1->O           2   0.374   0.540  udp_countdown_4_mux00002 (N24)
+     LUT3_D:I2->O          5   0.195   0.546  udp_countdown_4_mux000031 (N63)
+     LUT4_L:I3->LO         1   0.195   0.163  udp_countdown_2_mux000047_SW0 (N1081)
+     LUT4:I3->O            1   0.195   0.000  udp_countdown_2_mux000047 (udp_countdown_2_mux0000)
+     FDRE:D                    0.022          udp_countdown_2
     ----------------------------------------
-    Total                      6.527ns (2.742ns logic, 3.785ns route)
-                                       (42.0% logic, 58.0% route)
+    Total                      7.029ns (2.921ns logic, 4.108ns route)
+                                       (41.6% logic, 58.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GEL_RXCLK'
@@ -3190,7 +3194,7 @@ Offset:              6.331ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.706ns (Levels of Logic = 3)
+Offset:              6.710ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3199,13 +3203,13 @@ Offset:              6.706ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            222   0.360   1.671  reset (reset)
+     FDS:C->Q            223   0.360   1.675  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.706ns (4.675ns logic, 2.031ns route)
+    Total                      6.710ns (4.675ns logic, 2.035ns route)
                                        (69.7% logic, 30.3% route)
 
 =========================================================================
@@ -3230,14 +3234,14 @@ Delay:               6.182ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 74.00 secs
-Total CPU time to Xst completion: 73.58 secs
+Total REAL time to Xst completion: 72.00 secs
+Total CPU time to Xst completion: 71.94 secs
  
 --> 
 
-Total memory usage is 637312 kilobytes
+Total memory usage is 726080 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  280 (   0 filtered)
+Number of warnings :  281 (   0 filtered)
 Number of infos    :  126 (   0 filtered)
 
