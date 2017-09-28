@@ -2744,8 +2744,6 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
 FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0 has been replicated 1 time(s)
 FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_1 has been replicated 1 time(s)
-FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_2 has been replicated 1 time(s)
-FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_9 has been replicated 2 time(s)
 FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd2 has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -2765,8 +2763,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1884
- Flip-Flops                                            : 1884
+# Registers                                            : 1881
+ Flip-Flops                                            : 1881
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2809,32 +2807,32 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 187
 #      LUT1                        : 266
-#      LUT2                        : 899
+#      LUT2                        : 901
 #      LUT2_D                      : 30
-#      LUT2_L                      : 40
-#      LUT3                        : 1094
-#      LUT3_D                      : 26
-#      LUT3_L                      : 59
+#      LUT2_L                      : 38
+#      LUT3                        : 1093
+#      LUT3_D                      : 27
+#      LUT3_L                      : 58
 #      LUT4                        : 2052
-#      LUT4_D                      : 75
-#      LUT4_L                      : 228
-#      MUXCY                       : 1200
+#      LUT4_D                      : 80
+#      LUT4_L                      : 226
+#      MUXCY                       : 1198
 #      MUXF5                       : 152
 #      MUXF6                       : 48
 #      OR2                         : 3
 #      VCC                         : 26
 #      XOR2                        : 2
 #      XORCY                       : 469
-# FlipFlops/Latches                : 2434
+# FlipFlops/Latches                : 2431
 #      FD                          : 91
 #      FDC                         : 54
 #      FDCE                        : 99
 #      FDE                         : 671
 #      FDP                         : 18
 #      FDPE                        : 6
-#      FDR                         : 100
+#      FDR                         : 98
 #      FDRE                        : 1210
-#      FDRS                        : 72
+#      FDRS                        : 71
 #      FDRSE                       : 1
 #      FDS                         : 16
 #      FDSE                        : 96
@@ -2864,10 +2862,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3325  out of  10752    30%  
- Number of Slice Flip Flops:           2434  out of  21504    11%  
- Number of 4 input LUTs:               5364  out of  21504    24%  
-    Number used as logic:              4956
+ Number of Slices:                     3327  out of  10752    30%  
+ Number of Slice Flip Flops:           2431  out of  21504    11%  
+ Number of 4 input LUTs:               5366  out of  21504    24%  
+    Number used as logic:              4958
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          89
@@ -2898,7 +2896,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2608  |
+GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2605  |
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0                                                                                                                    | 41    |
 XLXI_6380/N1                       | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 4     |
 SECONDARY_CLK                      | IBUFG                                                                                                                             | 18    |
@@ -2927,7 +2925,7 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 8.077ns (Maximum Frequency: 123.810MHz)
+   Minimum period: 8.065ns (Maximum Frequency: 123.990MHz)
    Minimum input arrival time before clock: 6.527ns
    Maximum output required time after clock: 6.702ns
    Maximum combinational path delay: 6.182ns
@@ -2980,10 +2978,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 8.077ns (frequency: 123.810MHz)
-  Total number of paths / destination ports: 2263 / 1992
+  Clock period: 8.065ns (frequency: 123.990MHz)
+  Total number of paths / destination ports: 2260 / 1989
 -------------------------------------------------------------------------
-Offset:              8.077ns (Levels of Logic = 5)
+Offset:              8.065ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2995,7 +2993,7 @@ Offset:              8.077ns (Levels of Logic = 5)
     ----------------------------------------  ------------
      FDS:C->Q            221   0.360   1.667  reset (reset)
      end scope: 'reset_mgr'
-     BUF:I->O            492   0.358   2.889  reset_mgr_reset_1 (reset_mgr_reset_1)
+     BUF:I->O            489   0.358   2.878  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
      LUT2:I1->O           38   0.195   1.279  tx_ctrl_fifo_reset_sig1 (tx_ctrl_fifo_reset_sig)
      begin scope: 'TX_CTRL_FIFO'
@@ -3003,7 +3001,7 @@ Offset:              8.077ns (Levels of Logic = 5)
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      8.077ns (1.648ns logic, 6.429ns route)
+    Total                      8.065ns (1.648ns logic, 6.417ns route)
                                        (20.4% logic, 79.6% route)
 
 =========================================================================
@@ -3031,16 +3029,16 @@ Offset:              2.748ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 111051 / 7412
+  Clock period: 7.860ns (frequency: 127.220MHz)
+  Total number of paths / destination ports: 111105 / 7408
 -------------------------------------------------------------------------
-Delay:               7.302ns (Levels of Logic = 14)
+Delay:               7.860ns (Levels of Logic = 11)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 (FF)
-  Destination:       XLXI_6410/I_Q0 (FF)
+  Destination:       XLXI_6227/tx_data_dest_port_0 (FF)
   Source Clock:      GEL_RXCLK rising
   Destination Clock: GEL_RXCLK rising
 
-  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 to XLXI_6410/I_Q0
+  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 to XLXI_6227/tx_data_dest_port_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -3052,20 +3050,15 @@ Delay:               7.302ns (Levels of Logic = 14)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<2> (ots_user_mask_cmp_eq00001_wg_cy<2>)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<3> (ots_user_mask_cmp_eq00001_wg_cy<3>)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<4> (ots_user_mask_cmp_eq00001_wg_cy<4>)
-     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
-     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<6> (ots_user_mask_cmp_eq00001_wg_cy<6>)
-     MUXCY:CI->O          98   0.370   1.349  ots_user_mask_cmp_eq00001_wg_cy<7> (ots_user_mask_cmp_eq00001_wg_cy<7>)
-     LUT3:I2->O            1   0.195   0.688  rx_wren1 (rx_wren)
-     end scope: 'XLXI_6227'
-     AND2B1:I1->O         16   0.195   0.818  XLXI_4697 (XLXN_12617)
-     begin scope: 'XLXI_3432'
-     AND5B2:I2->O         64   0.195   1.053  I_36_63 (D5)
-     end scope: 'XLXI_3432'
-     begin scope: 'XLXI_6410'
-     FDRE:CE                   0.540          I_Q0
+     MUXCY:CI->O           1   0.370   0.523  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
+     LUT3_D:I2->O         97   0.195   1.345  ots_user_mask_cmp_eq00001_wg_cy<7>1 (ots_user_mask_cmp_eq00001_wg_cy<7>)
+     LUT3:I2->O          105   0.195   1.376  tx_data_dest_mac_or00031 (tx_data_dest_mac_or0003)
+     LUT3:I2->O            1   0.195   0.523  tx_data_dest_addr_and00021 (tx_data_dest_addr_and0002)
+     LUT4:I3->O           16   0.195   0.593  tx_data_dest_port_not0001 (tx_data_dest_port_not0001)
+     FDE:CE                    0.540          tx_data_dest_port_0
     ----------------------------------------
-    Total                      7.302ns (2.638ns logic, 4.664ns route)
-                                       (36.1% logic, 63.9% route)
+    Total                      7.860ns (2.744ns logic, 5.116ns route)
+                                       (34.9% logic, 65.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
@@ -3139,7 +3132,7 @@ Offset:              1.555ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GEL_RXCLK'
-  Total number of paths / destination ports: 927 / 352
+  Total number of paths / destination ports: 926 / 352
 -------------------------------------------------------------------------
 Offset:              6.527ns (Levels of Logic = 13)
   Source:            BUSC_17DP_34S (PAD)
@@ -3158,13 +3151,13 @@ Offset:              6.527ns (Levels of Logic = 13)
      begin scope: 'ethernet_controller'
      begin scope: 'DecipherBlock'
      LUT3:I0->O            1   0.195   0.741  Sreg0_FSM_FFd7-In11_SW0_SW0 (N811)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N252)
+     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N249)
      LUT3:I2->O            2   0.195   0.602  Sreg0_cmp_eq0001_SW2 (N70)
-     LUT4_D:I2->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N250)
+     LUT4_D:I2->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N247)
      LUT2:I1->O            1   0.195   0.523  Sreg0_FSM_FFd6-In219 (Sreg0_FSM_FFd6-In219)
      LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In227 (Sreg0_FSM_FFd6-In227)
      LUT4:I3->O            1   0.195   0.523  Sreg0_FSM_FFd6-In242 (Sreg0_FSM_FFd6-In242)
-     LUT3_L:I2->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In271_SW0 (N193)
+     LUT3_L:I2->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In271_SW0 (N195)
      LUT4:I3->O            1   0.195   0.000  Sreg0_FSM_FFd6-In271 (Sreg0_FSM_FFd6-In)
      FDRE:D                    0.022          Sreg0_FSM_FFd6
     ----------------------------------------
@@ -3238,11 +3231,11 @@ Delay:               6.182ns (Levels of Logic = 3)
 
 
 Total REAL time to Xst completion: 75.00 secs
-Total CPU time to Xst completion: 74.75 secs
+Total CPU time to Xst completion: 74.52 secs
  
 --> 
 
-Total memory usage is 726080 kilobytes
+Total memory usage is 725952 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  280 (   0 filtered)

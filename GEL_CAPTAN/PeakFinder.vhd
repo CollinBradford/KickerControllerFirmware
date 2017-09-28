@@ -119,9 +119,9 @@ begin
 		
 		if(reset = '0') then--reset is low
 		
-			if(rising_edge(clk)) then
+			if(clock_enable = '1') then
 			
-				if(clock_enable = '1') then--rising edge of clk and reset is low
+				if(rising_edge(clk)) then--rising edge of clk and the clock is enabled
 					
 					ramAddress <= ramAddress + 1;
 					lastExtTrigState <= extTrigLatched;

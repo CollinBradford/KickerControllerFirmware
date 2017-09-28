@@ -205,12 +205,12 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="442"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="38"/>
     </file>
-    <file xil_pn:name="PeakFinderTest.cdc" xil_pn:type="FILE_CDC">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
     <file xil_pn:name="ext_ip_addr_map.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="677"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="37"/>
+    </file>
+    <file xil_pn:name="DataRepititionDebug.cdc" xil_pn:type="FILE_CDC">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../ipcore_dir/ADDR_FIFO.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
@@ -582,7 +582,7 @@
   </properties>
 
   <bindings>
-    <binding xil_pn:location="/TOP_LEVEL" xil_pn:name="PeakFinderTest.cdc"/>
+    <binding xil_pn:location="/TOP_LEVEL" xil_pn:name="DataRepititionDebug.cdc"/>
   </bindings>
 
   <libraries/>
