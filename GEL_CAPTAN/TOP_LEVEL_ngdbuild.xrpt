@@ -5,15 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   <application stringID="NgdBuild" timeStamp="Thu Sep 28 16:52:04 2017">
-=======
-  <application stringID="NgdBuild" timeStamp="Tue Sep 26 16:34:04 2017">
->>>>>>> parent of b57ed19... Compiled
-=======
-  <application stringID="NgdBuild" timeStamp="Tue Sep 26 16:34:04 2017">
->>>>>>> parent of b57ed19... Compiled
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>

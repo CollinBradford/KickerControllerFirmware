@@ -1,13 +1,5 @@
 #ChipScope Core Inserter Project File Version 3.0
-<<<<<<< HEAD
-<<<<<<< HEAD
 #Thu Sep 28 15:41:05 CDT 2017
-=======
-#Tue Sep 26 16:30:29 CDT 2017
->>>>>>> parent of b57ed19... Compiled
-=======
-#Tue Sep 26 16:30:29 CDT 2017
->>>>>>> parent of b57ed19... Compiled
 Project.device.designInputFile=D\:\\cbradford\\KickerControllerFirmware\\GEL_CAPTAN\\TOP_LEVEL_cs.ngc
 Project.device.designOutputFile=D\:\\cbradford\\KickerControllerFirmware\\GEL_CAPTAN\\TOP_LEVEL_cs.ngc
 Project.device.deviceFamily=12
@@ -15,8 +7,6 @@ Project.device.enableRPMs=true
 Project.device.outputDirectory=D\:\\cbradford\\KickerControllerFirmware\\GEL_CAPTAN\\_ngo
 Project.device.useSRL16=true
 Project.filter.dimension=19
-<<<<<<< HEAD
-<<<<<<< HEAD
 Project.filter<0>=debug_signals*
 Project.filter<10>=trig*
 Project.filter<11>=ext_trig
@@ -36,29 +26,6 @@ Project.filter<6>=peak_finder_data_out
 Project.filter<7>=adc_fifo_data*
 Project.filter<8>=adc_fifo_data_out*
 Project.filter<9>=trigger_out
-=======
-=======
->>>>>>> parent of b57ed19... Compiled
-Project.filter<0>=clock_enable
-Project.filter<10>=trig_types
-Project.filter<11>=zero_cross_count*
-Project.filter<12>=zero_cross_count
-Project.filter<13>=veto
-Project.filter<14>=ext_out
-Project.filter<15>=veto_enabled
-Project.filter<16>=veto_force
-Project.filter<17>=veto_clear
-Project.filter<18>=zero_cross_veto_thresh*
-Project.filter<1>=peak_finder_data_out*
-Project.filter<2>=peak_finder_data_out
-Project.filter<3>=adc_fifo_data*
-Project.filter<4>=adc_fifo_data_out*
-Project.filter<5>=
-Project.filter<6>=trigger_out
-Project.filter<7>=trig*
-Project.filter<8>=ext_trig
-Project.filter<9>=trig_types*
->>>>>>> parent of b57ed19... Compiled
 Project.icon.boundaryScanChain=1
 Project.icon.enableExtTriggerIn=false
 Project.icon.enableExtTriggerOut=false
@@ -68,69 +35,69 @@ Project.unit.dimension=1
 Project.unit<0>.clockChannel=MASTER_CLK
 Project.unit<0>.clockEdge=Rising
 Project.unit<0>.dataChannel<0>=threshold<0>
-Project.unit<0>.dataChannel<100>=data_send_in<6>
-Project.unit<0>.dataChannel<101>=data_send_in<7>
-Project.unit<0>.dataChannel<102>=data_send_in<8>
-Project.unit<0>.dataChannel<103>=data_send_in<9>
-Project.unit<0>.dataChannel<104>=data_send_in<10>
-Project.unit<0>.dataChannel<105>=data_send_in<11>
-Project.unit<0>.dataChannel<106>=data_send_in<12>
-Project.unit<0>.dataChannel<107>=data_send_in<13>
-Project.unit<0>.dataChannel<108>=data_send_in<14>
-Project.unit<0>.dataChannel<109>=data_send_in<15>
+Project.unit<0>.dataChannel<100>=peak_finder_data_out<6>
+Project.unit<0>.dataChannel<101>=peak_finder_data_out<7>
+Project.unit<0>.dataChannel<102>=peak_finder_data_out<8>
+Project.unit<0>.dataChannel<103>=peak_finder_data_out<9>
+Project.unit<0>.dataChannel<104>=peak_finder_data_out<10>
+Project.unit<0>.dataChannel<105>=peak_finder_data_out<11>
+Project.unit<0>.dataChannel<106>=peak_finder_data_out<12>
+Project.unit<0>.dataChannel<107>=peak_finder_data_out<13>
+Project.unit<0>.dataChannel<108>=peak_finder_data_out<14>
+Project.unit<0>.dataChannel<109>=peak_finder_data_out<15>
 Project.unit<0>.dataChannel<10>=user_sample_size<2>
-Project.unit<0>.dataChannel<110>=data_send_in<16>
-Project.unit<0>.dataChannel<111>=data_send_in<17>
-Project.unit<0>.dataChannel<112>=data_send_in<18>
-Project.unit<0>.dataChannel<113>=data_send_in<19>
-Project.unit<0>.dataChannel<114>=data_send_in<20>
-Project.unit<0>.dataChannel<115>=data_send_in<21>
-Project.unit<0>.dataChannel<116>=data_send_in<22>
-Project.unit<0>.dataChannel<117>=data_send_in<23>
-Project.unit<0>.dataChannel<118>=data_send_in<24>
-Project.unit<0>.dataChannel<119>=data_send_in<25>
+Project.unit<0>.dataChannel<110>=peak_finder_data_out<16>
+Project.unit<0>.dataChannel<111>=peak_finder_data_out<17>
+Project.unit<0>.dataChannel<112>=peak_finder_data_out<18>
+Project.unit<0>.dataChannel<113>=peak_finder_data_out<19>
+Project.unit<0>.dataChannel<114>=peak_finder_data_out<20>
+Project.unit<0>.dataChannel<115>=peak_finder_data_out<21>
+Project.unit<0>.dataChannel<116>=peak_finder_data_out<22>
+Project.unit<0>.dataChannel<117>=peak_finder_data_out<23>
+Project.unit<0>.dataChannel<118>=peak_finder_data_out<24>
+Project.unit<0>.dataChannel<119>=peak_finder_data_out<25>
 Project.unit<0>.dataChannel<11>=user_sample_size<3>
-Project.unit<0>.dataChannel<120>=data_send_in<26>
-Project.unit<0>.dataChannel<121>=data_send_in<27>
-Project.unit<0>.dataChannel<122>=data_send_in<28>
-Project.unit<0>.dataChannel<123>=data_send_in<29>
-Project.unit<0>.dataChannel<124>=data_send_in<30>
-Project.unit<0>.dataChannel<125>=data_send_in<31>
-Project.unit<0>.dataChannel<126>=data_send_in<32>
-Project.unit<0>.dataChannel<127>=data_send_in<33>
-Project.unit<0>.dataChannel<128>=data_send_in<34>
-Project.unit<0>.dataChannel<129>=data_send_in<35>
+Project.unit<0>.dataChannel<120>=peak_finder_data_out<26>
+Project.unit<0>.dataChannel<121>=peak_finder_data_out<27>
+Project.unit<0>.dataChannel<122>=peak_finder_data_out<28>
+Project.unit<0>.dataChannel<123>=peak_finder_data_out<29>
+Project.unit<0>.dataChannel<124>=peak_finder_data_out<30>
+Project.unit<0>.dataChannel<125>=peak_finder_data_out<31>
+Project.unit<0>.dataChannel<126>=peak_finder_data_out<32>
+Project.unit<0>.dataChannel<127>=peak_finder_data_out<33>
+Project.unit<0>.dataChannel<128>=peak_finder_data_out<34>
+Project.unit<0>.dataChannel<129>=peak_finder_data_out<35>
 Project.unit<0>.dataChannel<12>=user_sample_size<4>
-Project.unit<0>.dataChannel<130>=data_send_in<36>
-Project.unit<0>.dataChannel<131>=data_send_in<37>
-Project.unit<0>.dataChannel<132>=data_send_in<38>
-Project.unit<0>.dataChannel<133>=data_send_in<39>
-Project.unit<0>.dataChannel<134>=data_send_in<40>
-Project.unit<0>.dataChannel<135>=data_send_in<41>
-Project.unit<0>.dataChannel<136>=data_send_in<42>
-Project.unit<0>.dataChannel<137>=data_send_in<43>
-Project.unit<0>.dataChannel<138>=data_send_in<44>
-Project.unit<0>.dataChannel<139>=data_send_in<45>
+Project.unit<0>.dataChannel<130>=peak_finder_data_out<36>
+Project.unit<0>.dataChannel<131>=peak_finder_data_out<37>
+Project.unit<0>.dataChannel<132>=peak_finder_data_out<38>
+Project.unit<0>.dataChannel<133>=peak_finder_data_out<39>
+Project.unit<0>.dataChannel<134>=peak_finder_data_out<40>
+Project.unit<0>.dataChannel<135>=peak_finder_data_out<41>
+Project.unit<0>.dataChannel<136>=peak_finder_data_out<42>
+Project.unit<0>.dataChannel<137>=peak_finder_data_out<43>
+Project.unit<0>.dataChannel<138>=peak_finder_data_out<44>
+Project.unit<0>.dataChannel<139>=peak_finder_data_out<45>
 Project.unit<0>.dataChannel<13>=user_sample_size<5>
-Project.unit<0>.dataChannel<140>=data_send_in<46>
-Project.unit<0>.dataChannel<141>=data_send_in<47>
-Project.unit<0>.dataChannel<142>=data_send_in<48>
-Project.unit<0>.dataChannel<143>=data_send_in<49>
-Project.unit<0>.dataChannel<144>=data_send_in<50>
-Project.unit<0>.dataChannel<145>=data_send_in<51>
-Project.unit<0>.dataChannel<146>=data_send_in<52>
-Project.unit<0>.dataChannel<147>=data_send_in<53>
-Project.unit<0>.dataChannel<148>=data_send_in<54>
-Project.unit<0>.dataChannel<149>=data_send_in<55>
+Project.unit<0>.dataChannel<140>=peak_finder_data_out<46>
+Project.unit<0>.dataChannel<141>=peak_finder_data_out<47>
+Project.unit<0>.dataChannel<142>=peak_finder_data_out<48>
+Project.unit<0>.dataChannel<143>=peak_finder_data_out<49>
+Project.unit<0>.dataChannel<144>=peak_finder_data_out<50>
+Project.unit<0>.dataChannel<145>=peak_finder_data_out<51>
+Project.unit<0>.dataChannel<146>=peak_finder_data_out<52>
+Project.unit<0>.dataChannel<147>=peak_finder_data_out<53>
+Project.unit<0>.dataChannel<148>=peak_finder_data_out<54>
+Project.unit<0>.dataChannel<149>=peak_finder_data_out<55>
 Project.unit<0>.dataChannel<14>=user_sample_size<6>
-Project.unit<0>.dataChannel<150>=data_send_in<56>
-Project.unit<0>.dataChannel<151>=data_send_in<57>
-Project.unit<0>.dataChannel<152>=data_send_in<58>
-Project.unit<0>.dataChannel<153>=data_send_in<59>
-Project.unit<0>.dataChannel<154>=data_send_in<60>
-Project.unit<0>.dataChannel<155>=data_send_in<61>
-Project.unit<0>.dataChannel<156>=data_send_in<62>
-Project.unit<0>.dataChannel<157>=data_send_in<63>
+Project.unit<0>.dataChannel<150>=peak_finder_data_out<56>
+Project.unit<0>.dataChannel<151>=peak_finder_data_out<57>
+Project.unit<0>.dataChannel<152>=peak_finder_data_out<58>
+Project.unit<0>.dataChannel<153>=peak_finder_data_out<59>
+Project.unit<0>.dataChannel<154>=peak_finder_data_out<60>
+Project.unit<0>.dataChannel<155>=peak_finder_data_out<61>
+Project.unit<0>.dataChannel<156>=peak_finder_data_out<62>
+Project.unit<0>.dataChannel<157>=peak_finder_data_out<63>
 Project.unit<0>.dataChannel<158>=zero_cross_thresh_high<0>
 Project.unit<0>.dataChannel<159>=zero_cross_thresh_high<1>
 Project.unit<0>.dataChannel<15>=user_sample_size<7>
@@ -184,14 +151,8 @@ Project.unit<0>.dataChannel<201>=trig_types<6>
 Project.unit<0>.dataChannel<202>=trig_types<7>
 Project.unit<0>.dataChannel<203>=ext_trig
 Project.unit<0>.dataChannel<204>=trigger_out
-<<<<<<< HEAD
-<<<<<<< HEAD
 Project.unit<0>.dataChannel<205>=clock_enable
 Project.unit<0>.dataChannel<206>=XLXI_6349 extTrigLatched
-=======
->>>>>>> parent of b57ed19... Compiled
-=======
->>>>>>> parent of b57ed19... Compiled
 Project.unit<0>.dataChannel<20>=user_sample_size<12>
 Project.unit<0>.dataChannel<21>=user_sample_size<13>
 Project.unit<0>.dataChannel<22>=user_sample_size<14>
@@ -273,12 +234,12 @@ Project.unit<0>.dataChannel<90>=XLXI_6253 ram_addr<6>
 Project.unit<0>.dataChannel<91>=XLXI_6253 ram_addr<7>
 Project.unit<0>.dataChannel<92>=XLXI_6253 ram_addr<8>
 Project.unit<0>.dataChannel<93>=XLXI_6253 ram_addr<9>
-Project.unit<0>.dataChannel<94>=data_send_in<0>
-Project.unit<0>.dataChannel<95>=data_send_in<1>
-Project.unit<0>.dataChannel<96>=data_send_in<2>
-Project.unit<0>.dataChannel<97>=data_send_in<3>
-Project.unit<0>.dataChannel<98>=data_send_in<4>
-Project.unit<0>.dataChannel<99>=data_send_in<5>
+Project.unit<0>.dataChannel<94>=peak_finder_data_out<0>
+Project.unit<0>.dataChannel<95>=peak_finder_data_out<1>
+Project.unit<0>.dataChannel<96>=peak_finder_data_out<2>
+Project.unit<0>.dataChannel<97>=peak_finder_data_out<3>
+Project.unit<0>.dataChannel<98>=peak_finder_data_out<4>
+Project.unit<0>.dataChannel<99>=peak_finder_data_out<5>
 Project.unit<0>.dataChannel<9>=user_sample_size<1>
 Project.unit<0>.dataDepth=2048
 Project.unit<0>.dataEqualsTrigger=true
@@ -406,30 +367,12 @@ Project.unit<0>.triggerChannel<0><202>=trig_types<7>
 Project.unit<0>.triggerChannel<0><203>=ext_trig
 Project.unit<0>.triggerChannel<0><204>=trigger_out
 Project.unit<0>.triggerChannel<0><205>=clock_enable
-<<<<<<< HEAD
-<<<<<<< HEAD
 Project.unit<0>.triggerChannel<0><206>=XLXI_6349 extTrigLatched
 Project.unit<0>.triggerChannel<0><207>=debug_signals<0>
 Project.unit<0>.triggerChannel<0><208>=debug_signals<1>
 Project.unit<0>.triggerChannel<0><209>=debug_signals<2>
 Project.unit<0>.triggerChannel<0><20>=user_sample_size<12>
 Project.unit<0>.triggerChannel<0><210>=debug_signals<3>
-=======
-Project.unit<0>.triggerChannel<0><206>=
-Project.unit<0>.triggerChannel<0><207>=
-Project.unit<0>.triggerChannel<0><208>=
-Project.unit<0>.triggerChannel<0><209>=
-Project.unit<0>.triggerChannel<0><20>=user_sample_size<12>
-Project.unit<0>.triggerChannel<0><210>=
->>>>>>> parent of b57ed19... Compiled
-=======
-Project.unit<0>.triggerChannel<0><206>=
-Project.unit<0>.triggerChannel<0><207>=
-Project.unit<0>.triggerChannel<0><208>=
-Project.unit<0>.triggerChannel<0><209>=
-Project.unit<0>.triggerChannel<0><20>=user_sample_size<12>
-Project.unit<0>.triggerChannel<0><210>=
->>>>>>> parent of b57ed19... Compiled
 Project.unit<0>.triggerChannel<0><211>=
 Project.unit<0>.triggerChannel<0><212>=
 Project.unit<0>.triggerChannel<0><213>=

@@ -5,8 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<<<<<<< HEAD
-<<<<<<< HEAD
 <msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">trig_types&lt;5&gt;</arg> has no load.
 </msg>
 
@@ -16,22 +14,6 @@ trig_types&lt;7&gt;,
 icon_control0&lt;10&gt;,
 icon_control0&lt;11&gt;,
 icon_control0&lt;15&gt;</arg>
-=======
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">icon_control0&lt;10&gt;</arg> has no load.
-</msg>
-
-=======
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">icon_control0&lt;10&gt;</arg> has no load.
-</msg>
-
->>>>>>> parent of b57ed19... Compiled
-<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">271</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">icon_control0&lt;11&gt;,
-icon_control0&lt;15&gt;,
-icon_control0&lt;21&gt;,
-icon_control0&lt;16&gt;,
-icon_control0&lt;22&gt;</arg>
->>>>>>> parent of b57ed19... Compiled
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 

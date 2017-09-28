@@ -10,15 +10,7 @@ Target Device  : xc4vlx25
 Target Package : ff668
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-<<<<<<< HEAD
-<<<<<<< HEAD
 Mapped Date    : Thu Sep 28 16:52:08 2017
-=======
-Mapped Date    : Tue Sep 26 16:34:07 2017
->>>>>>> parent of b57ed19... Compiled
-=======
-Mapped Date    : Tue Sep 26 16:34:07 2017
->>>>>>> parent of b57ed19... Compiled
 
 Mapping design into LUTs...
 WARNING:MapLib:328 - Block XLXI_6136 is not a recognized logical block. The
@@ -57,42 +49,20 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 18 secs 
+Total REAL time at the beginning of Placer: 19 secs 
 Total CPU  time at the beginning of Placer: 16 secs 
 
 Phase 1.1  Initial Placement Analysis
-<<<<<<< HEAD
-<<<<<<< HEAD
 Phase 1.1  Initial Placement Analysis (Checksum:10c7be84) REAL time: 20 secs 
-=======
-Phase 1.1  Initial Placement Analysis (Checksum:fdfe42f0) REAL time: 19 secs 
->>>>>>> parent of b57ed19... Compiled
-=======
-Phase 1.1  Initial Placement Analysis (Checksum:fdfe42f0) REAL time: 19 secs 
->>>>>>> parent of b57ed19... Compiled
 
 Phase 2.7  Design Feasibility Check
 INFO:Place:834 - Only a subset of IOs are locked. Out of 88 IOs, 80 are locked
    and 8 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Phase 2.7  Design Feasibility Check (Checksum:10c7be84) REAL time: 20 secs 
 
 Phase 3.31  Local Placement Optimization
 Phase 3.31  Local Placement Optimization (Checksum:57a600fe) REAL time: 20 secs 
-=======
-Phase 2.7  Design Feasibility Check (Checksum:fdfe42f0) REAL time: 19 secs 
-
-Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:795be167) REAL time: 19 secs 
->>>>>>> parent of b57ed19... Compiled
-=======
-Phase 2.7  Design Feasibility Check (Checksum:fdfe42f0) REAL time: 19 secs 
-
-Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:795be167) REAL time: 19 secs 
->>>>>>> parent of b57ed19... Compiled
 
 Phase 4.2  Initial Clock and IO Placement
 ....
@@ -425,8 +395,6 @@ maybe moved to adjacent clock-regions as long as the "number of clocks per regio
 ######################################################################################
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Phase 6.30  Global Clock Region Assignment (Checksum:3e105b3) REAL time: 31 secs 
 
 Phase 7.3  Local Placement Optimization
@@ -435,28 +403,12 @@ Phase 7.3  Local Placement Optimization (Checksum:3fd5bfac) REAL time: 31 secs
 
 Phase 8.5  Local Placement Optimization
 Phase 8.5  Local Placement Optimization (Checksum:3fd5bfac) REAL time: 31 secs 
-=======
-=======
->>>>>>> parent of b57ed19... Compiled
-Phase 6.30  Global Clock Region Assignment (Checksum:7ca7d246) REAL time: 30 secs 
-
-Phase 7.3  Local Placement Optimization
-.....
-Phase 7.3  Local Placement Optimization (Checksum:c5d737b8) REAL time: 30 secs 
-
-Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:c5d737b8) REAL time: 30 secs 
-<<<<<<< HEAD
->>>>>>> parent of b57ed19... Compiled
-=======
->>>>>>> parent of b57ed19... Compiled
 
 Phase 9.8  Global Placement
 ..............................
 .............................................................................................................................
 .........
 ................
-<<<<<<< HEAD
 ....
 ...........
 Phase 9.8  Global Placement (Checksum:f5d043c8) REAL time: 43 secs 
@@ -475,29 +427,6 @@ Phase 13.34  Placement Validation (Checksum:a36763df) REAL time: 58 secs
 
 Total REAL time to Placer completion: 59 secs 
 Total CPU  time to Placer completion: 56 secs 
-=======
-..
-..............
-Phase 9.8  Global Placement (Checksum:2344a151) REAL time: 42 secs 
-
-Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:2344a151) REAL time: 42 secs 
-
-Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:d0720294) REAL time: 56 secs 
-
-Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:d0720294) REAL time: 56 secs 
-
-Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:d0720294) REAL time: 56 secs 
-
-Total REAL time to Placer completion: 56 secs 
-Total CPU  time to Placer completion: 54 secs 
-<<<<<<< HEAD
->>>>>>> parent of b57ed19... Compiled
-=======
->>>>>>> parent of b57ed19... Compiled
 Running physical synthesis...
 
 Physical synthesis completed.
@@ -641,21 +570,9 @@ Logic Distribution:
   Number of RPM macros:           12
 Average Fanout of Non-Clock Nets:                3.32
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Peak Memory Usage:  647 MB
 Total REAL time to MAP completion:  1 mins 4 secs 
 Total CPU time to MAP completion:   1 mins 2 secs 
-=======
-Peak Memory Usage:  643 MB
-Total REAL time to MAP completion:  1 mins 2 secs 
-Total CPU time to MAP completion:   1 mins 
->>>>>>> parent of b57ed19... Compiled
-=======
-Peak Memory Usage:  643 MB
-Total REAL time to MAP completion:  1 mins 2 secs 
-Total CPU time to MAP completion:   1 mins 
->>>>>>> parent of b57ed19... Compiled
 
 Mapping completed.
 See MAP report file "TOP_LEVEL_map.mrp" for details.
