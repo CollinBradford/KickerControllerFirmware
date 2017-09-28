@@ -306,6 +306,7 @@
         <signal name="ext_ip_addr(0)" />
         <signal name="ext_ip_addr(7:0)" />
         <signal name="ip_addr(7:0)" />
+        <signal name="ip_addr1(7:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -652,7 +653,9 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="ethernet_interface">
-            <timestamp>2017-5-12T17:55:44</timestamp>
+            <timestamp>2017-9-28T18:56:55</timestamp>
+            <rect width="64" x="0" y="148" height="24" />
+            <line x2="0" y1="160" y2="160" x1="64" />
             <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-544" y2="-544" x1="64" />
@@ -678,7 +681,7 @@
             <line x2="464" y1="-96" y2="-96" x1="400" />
             <rect width="64" x="400" y="-44" height="24" />
             <line x2="464" y1="-32" y2="-32" x1="400" />
-            <rect width="336" x="64" y="-576" height="704" />
+            <rect width="336" x="64" y="-576" height="768" />
         </blockdef>
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -1770,6 +1773,7 @@
         </block>
         <block symbolname="ethernet_interface" name="XLXI_6227">
             <blockpin signalname="XLXN_15140" name="reset_in" />
+            <blockpin signalname="b_force_packet" name="b_force_packet" />
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="MASTER_CLK" name="MASTER_CLK" />
             <blockpin signalname="clock_5mhz" name="slow_clk" />
@@ -1787,7 +1791,7 @@
             <blockpin signalname="rx_addr(31:0)" name="rx_addr(31:0)" />
             <blockpin signalname="rx_data(63:0)" name="rx_data(63:0)" />
             <blockpin signalname="PHY_TXD_sig(7:0)" name="PHY_TXD(7:0)" />
-            <blockpin signalname="b_force_packet" name="b_force_packet" />
+            <blockpin signalname="ip_addr1(7:0)" name="user_addr(7:0)" />
         </block>
         <block symbolname="gnd" name="XLXI_6228">
             <blockpin signalname="XLXN_15140" name="G" />
@@ -2326,6 +2330,10 @@
         <branch name="ip_addr(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2048" y="1968" type="branch" />
             <wire x2="2048" y1="1968" y2="1968" x1="2032" />
+        </branch>
+        <branch name="ip_addr1(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1248" y="1376" type="branch" />
+            <wire x2="1264" y1="1376" y2="1376" x1="1248" />
         </branch>
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">

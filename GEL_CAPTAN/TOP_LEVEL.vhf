@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/28/2017 13:04:22
+-- /___/   /\     Timestamp : 09/28/2017 15:02:00
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -767,6 +767,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal GMII_RX_ER_0_sig               : std_logic;
    signal GTX_CLK_0_sig                  : std_logic;
    signal ip_addr                        : std_logic_vector (7 downto 0);
+   signal ip_addr1                       : std_logic_vector (7 downto 0);
    signal manual_force_trig              : std_logic;
    signal MANUAL_TRIG_MAP                : std_logic;
    signal MASTER_CLK                     : std_logic;
@@ -1095,6 +1096,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    
    component ethernet_interface
       port ( reset_in       : in    std_logic; 
+             b_force_packet : in    std_logic; 
              b_data_we      : in    std_logic; 
              MASTER_CLK     : in    std_logic; 
              slow_clk       : in    std_logic; 
@@ -1112,7 +1114,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
              rx_addr        : out   std_logic_vector (31 downto 0); 
              rx_data        : out   std_logic_vector (63 downto 0); 
              PHY_TXD        : out   std_logic_vector (7 downto 0); 
-             b_force_packet : in    std_logic);
+             user_addr      : in    std_logic_vector (7 downto 0));
    end component;
    
    component INV
@@ -1969,6 +1971,7 @@ begin
                 reset_in=>XLXN_15140,
                 slow_clk=>clock_5mhz,
                 tx_data(63 downto 0)=>tx_data(63 downto 0),
+                user_addr(7 downto 0)=>ip_addr1(7 downto 0),
                 b_enable=>b_enable,
                 PHY_TXD(7 downto 0)=>PHY_TXD_sig(7 downto 0),
                 PHY_TX_EN=>PHY_TXEN_sig,
