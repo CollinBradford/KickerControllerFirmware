@@ -1,0 +1,5 @@
+[Inputs]
+=ext_ip_addr[7:0]=
+[Outputs]
+=ip_addr_out[7:0]=
+[BiDir]

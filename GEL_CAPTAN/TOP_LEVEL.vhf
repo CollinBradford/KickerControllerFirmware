@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/26/2017 16:10:16
+-- /___/   /\     Timestamp : 09/28/2017 13:04:22
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -646,6 +646,14 @@ entity TOP_LEVEL is
           BUSC_20DP_40S     : in    std_logic; 
           BUSC_27DP_54S     : in    std_logic; 
           GEL_RXCLK         : in    std_logic; 
+          IP_MAC_0          : in    std_logic; 
+          IP_MAC_1          : in    std_logic; 
+          IP_MAC_2          : in    std_logic; 
+          IP_MAC_3          : in    std_logic; 
+          IP_MAC_4          : in    std_logic; 
+          IP_MAC_5          : in    std_logic; 
+          IP_MAC_6          : in    std_logic; 
+          IP_MAC_7          : in    std_logic; 
           SECONDARY_CLK     : in    std_logic; 
           U10_1             : in    std_logic; 
           U10_2             : in    std_logic; 
@@ -728,6 +736,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal event_data_out_we              : std_logic;
    signal event_data_we                  : std_logic;
    signal EVENT_MAP                      : std_logic;
+   signal ext_ip_addr                    : std_logic_vector (7 downto 0);
    signal ext_trig                       : std_logic;
    signal FADC_CAL                       : std_logic;
    signal fadc_clk_in_reset              : std_logic;
@@ -757,6 +766,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal GMII_RX_DV_0_sig               : std_logic;
    signal GMII_RX_ER_0_sig               : std_logic;
    signal GTX_CLK_0_sig                  : std_logic;
+   signal ip_addr                        : std_logic_vector (7 downto 0);
    signal manual_force_trig              : std_logic;
    signal MANUAL_TRIG_MAP                : std_logic;
    signal MASTER_CLK                     : std_logic;
@@ -1223,6 +1233,11 @@ architecture BEHAVIORAL of TOP_LEVEL is
    component OBUF8_MXILINX_TOP_LEVEL
       port ( I : in    std_logic_vector (7 downto 0); 
              O : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component ext_ip_addr_map
+      port ( ext_ip_addr : in    std_logic_vector (7 downto 0); 
+             ip_addr_out : out   std_logic_vector (7 downto 0));
    end component;
    
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
@@ -2191,6 +2206,42 @@ begin
       port map (I0=>clock_enable,
                 I1=>event_data_out_we,
                 O=>b_data_we);
+   
+   XLXI_6439 : IBUF
+      port map (I=>IP_MAC_0,
+                O=>ext_ip_addr(0));
+   
+   XLXI_6440 : IBUF
+      port map (I=>IP_MAC_1,
+                O=>ext_ip_addr(1));
+   
+   XLXI_6441 : IBUF
+      port map (I=>IP_MAC_2,
+                O=>ext_ip_addr(2));
+   
+   XLXI_6442 : IBUF
+      port map (I=>IP_MAC_3,
+                O=>ext_ip_addr(3));
+   
+   XLXI_6443 : IBUF
+      port map (I=>IP_MAC_4,
+                O=>ext_ip_addr(4));
+   
+   XLXI_6445 : IBUF
+      port map (I=>IP_MAC_5,
+                O=>ext_ip_addr(5));
+   
+   XLXI_6446 : IBUF
+      port map (I=>IP_MAC_6,
+                O=>ext_ip_addr(6));
+   
+   XLXI_6447 : IBUF
+      port map (I=>IP_MAC_7,
+                O=>ext_ip_addr(7));
+   
+   XLXI_6448 : ext_ip_addr_map
+      port map (ext_ip_addr(7 downto 0)=>ext_ip_addr(7 downto 0),
+                ip_addr_out(7 downto 0)=>ip_addr(7 downto 0));
    
 end BEHAVIORAL;
 

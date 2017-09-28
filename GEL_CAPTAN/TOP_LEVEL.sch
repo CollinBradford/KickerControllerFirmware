@@ -288,6 +288,24 @@
         <signal name="zero_cross_count(7:0)" />
         <signal name="clock_enable" />
         <signal name="event_data_out_we" />
+        <signal name="IP_MAC_0" />
+        <signal name="IP_MAC_1" />
+        <signal name="IP_MAC_2" />
+        <signal name="IP_MAC_3" />
+        <signal name="IP_MAC_4" />
+        <signal name="IP_MAC_5" />
+        <signal name="IP_MAC_6" />
+        <signal name="IP_MAC_7" />
+        <signal name="ext_ip_addr(7)" />
+        <signal name="ext_ip_addr(6)" />
+        <signal name="ext_ip_addr(5)" />
+        <signal name="ext_ip_addr(4)" />
+        <signal name="ext_ip_addr(3)" />
+        <signal name="ext_ip_addr(2)" />
+        <signal name="ext_ip_addr(1)" />
+        <signal name="ext_ip_addr(0)" />
+        <signal name="ext_ip_addr(7:0)" />
+        <signal name="ip_addr(7:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -369,6 +387,14 @@
         <port polarity="Output" name="U10_3" />
         <port polarity="Input" name="U10_1" />
         <port polarity="Input" name="U10_2" />
+        <port polarity="Input" name="IP_MAC_0" />
+        <port polarity="Input" name="IP_MAC_1" />
+        <port polarity="Input" name="IP_MAC_2" />
+        <port polarity="Input" name="IP_MAC_3" />
+        <port polarity="Input" name="IP_MAC_4" />
+        <port polarity="Input" name="IP_MAC_5" />
+        <port polarity="Input" name="IP_MAC_6" />
+        <port polarity="Input" name="IP_MAC_7" />
         <blockdef name="ibufg">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="0" y2="-64" x1="64" />
@@ -822,6 +848,14 @@
             <line x2="128" y1="-32" y2="-32" x1="224" />
             <rect width="64" x="0" y="-44" height="24" />
             <rect width="96" x="128" y="-44" height="24" />
+        </blockdef>
+        <blockdef name="ext_ip_addr_map">
+            <timestamp>2017-9-28T16:51:2</timestamp>
+            <rect width="352" x="64" y="-64" height="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="416" y="-44" height="24" />
+            <line x2="480" y1="-32" y2="-32" x1="416" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
@@ -1981,6 +2015,42 @@
             <blockpin signalname="event_data_out_we" name="I1" />
             <blockpin signalname="b_data_we" name="O" />
         </block>
+        <block symbolname="ibuf" name="XLXI_6439">
+            <blockpin signalname="IP_MAC_0" name="I" />
+            <blockpin signalname="ext_ip_addr(0)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6440">
+            <blockpin signalname="IP_MAC_1" name="I" />
+            <blockpin signalname="ext_ip_addr(1)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6441">
+            <blockpin signalname="IP_MAC_2" name="I" />
+            <blockpin signalname="ext_ip_addr(2)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6442">
+            <blockpin signalname="IP_MAC_3" name="I" />
+            <blockpin signalname="ext_ip_addr(3)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6443">
+            <blockpin signalname="IP_MAC_4" name="I" />
+            <blockpin signalname="ext_ip_addr(4)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6445">
+            <blockpin signalname="IP_MAC_5" name="I" />
+            <blockpin signalname="ext_ip_addr(5)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6446">
+            <blockpin signalname="IP_MAC_6" name="I" />
+            <blockpin signalname="ext_ip_addr(6)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6447">
+            <blockpin signalname="IP_MAC_7" name="I" />
+            <blockpin signalname="ext_ip_addr(7)" name="O" />
+        </block>
+        <block symbolname="ext_ip_addr_map" name="XLXI_6448">
+            <blockpin signalname="ext_ip_addr(7:0)" name="ext_ip_addr(7:0)" />
+            <blockpin signalname="ip_addr(7:0)" name="ip_addr_out(7:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <rect width="2260" x="424" y="276" height="1256" />
@@ -2174,6 +2244,88 @@
         <branch name="EVENT_MAP">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4528" y="3296" type="branch" />
             <wire x2="4528" y1="3296" y2="3296" x1="4512" />
+        </branch>
+        <instance x="688" y="1776" name="XLXI_6439" orien="R0" />
+        <instance x="688" y="1840" name="XLXI_6440" orien="R0" />
+        <instance x="688" y="1904" name="XLXI_6441" orien="R0" />
+        <instance x="688" y="1968" name="XLXI_6442" orien="R0" />
+        <instance x="688" y="2032" name="XLXI_6443" orien="R0" />
+        <instance x="688" y="2096" name="XLXI_6445" orien="R0" />
+        <instance x="688" y="2160" name="XLXI_6446" orien="R0" />
+        <instance x="688" y="2224" name="XLXI_6447" orien="R0" />
+        <branch name="IP_MAC_0">
+            <wire x2="688" y1="1744" y2="1744" x1="672" />
+        </branch>
+        <branch name="IP_MAC_1">
+            <wire x2="688" y1="1808" y2="1808" x1="672" />
+        </branch>
+        <branch name="IP_MAC_2">
+            <wire x2="688" y1="1872" y2="1872" x1="672" />
+        </branch>
+        <branch name="IP_MAC_3">
+            <wire x2="688" y1="1936" y2="1936" x1="672" />
+        </branch>
+        <branch name="IP_MAC_4">
+            <wire x2="688" y1="2000" y2="2000" x1="672" />
+        </branch>
+        <branch name="IP_MAC_5">
+            <wire x2="688" y1="2064" y2="2064" x1="672" />
+        </branch>
+        <branch name="IP_MAC_6">
+            <wire x2="688" y1="2128" y2="2128" x1="672" />
+        </branch>
+        <branch name="IP_MAC_7">
+            <wire x2="688" y1="2192" y2="2192" x1="672" />
+        </branch>
+        <branch name="ext_ip_addr(7)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="2192" type="branch" />
+            <wire x2="928" y1="2192" y2="2192" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(6)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="2128" type="branch" />
+            <wire x2="928" y1="2128" y2="2128" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(5)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="2064" type="branch" />
+            <wire x2="928" y1="2064" y2="2064" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(4)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="2000" type="branch" />
+            <wire x2="928" y1="2000" y2="2000" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(3)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="1936" type="branch" />
+            <wire x2="928" y1="1936" y2="1936" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(2)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="1872" type="branch" />
+            <wire x2="928" y1="1872" y2="1872" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(1)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="1808" type="branch" />
+            <wire x2="928" y1="1808" y2="1808" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="1744" type="branch" />
+            <wire x2="928" y1="1744" y2="1744" x1="912" />
+        </branch>
+        <iomarker fontsize="28" x="672" y="1744" name="IP_MAC_0" orien="R180" />
+        <iomarker fontsize="28" x="672" y="1808" name="IP_MAC_1" orien="R180" />
+        <iomarker fontsize="28" x="672" y="1872" name="IP_MAC_2" orien="R180" />
+        <iomarker fontsize="28" x="672" y="1936" name="IP_MAC_3" orien="R180" />
+        <iomarker fontsize="28" x="672" y="2000" name="IP_MAC_4" orien="R180" />
+        <iomarker fontsize="28" x="672" y="2064" name="IP_MAC_5" orien="R180" />
+        <iomarker fontsize="28" x="672" y="2128" name="IP_MAC_6" orien="R180" />
+        <iomarker fontsize="28" x="672" y="2192" name="IP_MAC_7" orien="R180" />
+        <instance x="1552" y="2000" name="XLXI_6448" orien="R0">
+        </instance>
+        <branch name="ext_ip_addr(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="1968" type="branch" />
+            <wire x2="1552" y1="1968" y2="1968" x1="1536" />
+        </branch>
+        <branch name="ip_addr(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2048" y="1968" type="branch" />
+            <wire x2="2048" y1="1968" y2="1968" x1="2032" />
         </branch>
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">

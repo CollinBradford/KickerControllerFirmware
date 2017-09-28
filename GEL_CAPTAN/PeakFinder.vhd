@@ -115,17 +115,21 @@ begin
 		data_out(55 downto 48) <= data_in(55 downto 48);
 		data_out(63 downto 56) <= data_in(63 downto 56);
 		
-		out_enable <= clock_enable; --We are constantly recording to the ram loop buffer.  
+		out_enable <= clock_enable; --We are constantly recording to the ram loop buffer.  clock_enable = '1'
 		
 		if(reset = '0') then--reset is low
 		
-			if(clock_enable = '1') then
+			if(rising_edge(clk)) then
 			
-				if(rising_edge(clk)) then--rising edge of clk and reset is low
+				if(ext_trig = '1') then --We will reset the external trig later when we actually trigger on it.  
+					extTrigLatched <= '1';
+				end if;
+			
+				if(clock_enable = '1') then--rising edge of clk and reset is low
 					
 					ramAddress <= ramAddress + 1;
 					lastExtTrigState <= extTrigLatched;
-					extTrigLatched <= ext_trig;
+					
 					--These are the tests for each trigger state.  There is at least one if statement per trigger mode that is enabled when the 
 					--respective trigger mode is enabled.  If the trigger mode is active and the trigger state is also active, it enables the 
 					--trigger_active flag and performs any other checks and resets for each trigger.  
@@ -171,10 +175,12 @@ begin
 						--if we are triggering on the rising edge of the trigger and it actually is the rising edge
 						if(extTrigRising = '1' and lastExtTrigState = '0' and extTrigLatched = '1') then
 							trigger_active <= '1';
+							extTrigLatched <= '0';
 						end if;
 						--if we are triggering on the falling edge of the trigger and it actually is the falling edge
 						if(extTrigRising = '0' and lastExtTrigState = '1' and extTrigLatched = '0') then
 							trigger_active <= '1';
+							extTrigLatched <= '0';
 						end if;
 					end if;
 					--Code that needs to be run for each trigger
