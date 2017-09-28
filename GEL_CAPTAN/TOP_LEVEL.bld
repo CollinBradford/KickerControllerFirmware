@@ -641,7 +641,11 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  63
 
+<<<<<<< HEAD
 Total memory usage is 281288 kilobytes
+=======
+Total memory usage is 280844 kilobytes
+>>>>>>> parent of b57ed19... Compiled
 
 Writing NGD file "TOP_LEVEL.ngd" ...
 Total REAL time to NGDBUILD completion:  11 sec

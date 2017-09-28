@@ -1,7 +1,11 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
+<<<<<<< HEAD
 RIVIERA::  Thu Sep 28 16:53:15 2017
+=======
+RIVIERA::  Tue Sep 26 16:35:12 2017
+>>>>>>> parent of b57ed19... Compiled
 
 par -w -intstyle ise -ol high -t 1 TOP_LEVEL_map.ncd TOP_LEVEL.ncd
 TOP_LEVEL.pcf 
@@ -51,7 +55,11 @@ Overall effort level (-ol):   High
 Router effort level (-rl):    High 
 
 Starting initial Timing Analysis.  REAL time: 11 secs 
+<<<<<<< HEAD
 Finished initial Timing Analysis.  REAL time: 12 secs 
+=======
+Finished initial Timing Analysis.  REAL time: 11 secs 
+>>>>>>> parent of b57ed19... Compiled
 
 WARNING:Par:288 - The signal icon_control0<22> has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal icon_control0<23> has no load.  PAR will not attempt to route this signal.
@@ -114,6 +122,7 @@ WARNING:Par:288 - The signal XLXI_6227/data_manager_blk/tx_data_fifo_empty has n
 Starting Router
 
 
+<<<<<<< HEAD
 Phase  1  : 31451 unrouted;      REAL time: 12 secs 
 
 Phase  2  : 26104 unrouted;      REAL time: 13 secs 
@@ -136,6 +145,30 @@ Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL 
 
 Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
 Total REAL time to Router completion: 26 secs 
+=======
+Phase  1  : 31553 unrouted;      REAL time: 12 secs 
+
+Phase  2  : 26298 unrouted;      REAL time: 12 secs 
+
+Phase  3  : 8768 unrouted;      REAL time: 15 secs 
+
+Phase  4  : 8773 unrouted; (Setup:0, Hold:21302, Component Switching Limit:0)     REAL time: 18 secs 
+
+Updating file: TOP_LEVEL.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:21296, Component Switching Limit:0)     REAL time: 23 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:21296, Component Switching Limit:0)     REAL time: 23 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:21296, Component Switching Limit:0)     REAL time: 23 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:21296, Component Switching Limit:0)     REAL time: 23 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
+Total REAL time to Router completion: 25 secs 
+>>>>>>> parent of b57ed19... Compiled
 Total CPU time to Router completion: 23 secs 
 
 Partition Implementation Status
@@ -289,10 +322,14 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 45 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 28 secs 
-Total CPU time to PAR completion: 26 secs 
+Total REAL time to PAR completion: 27 secs 
+Total CPU time to PAR completion: 25 secs 
 
+<<<<<<< HEAD
 Peak Memory Usage:  560 MB
+=======
+Peak Memory Usage:  565 MB
+>>>>>>> parent of b57ed19... Compiled
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -9,7 +9,11 @@ Target Device  : xc4vlx25
 Target Package : ff668
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
+<<<<<<< HEAD
 Mapped Date    : Thu Sep 28 16:52:08 2017
+=======
+Mapped Date    : Tue Sep 26 16:34:07 2017
+>>>>>>> parent of b57ed19... Compiled
 
 Design Summary
 --------------
@@ -47,9 +51,15 @@ Logic Distribution:
   Number of RPM macros:           12
 Average Fanout of Non-Clock Nets:                3.32
 
+<<<<<<< HEAD
 Peak Memory Usage:  647 MB
 Total REAL time to MAP completion:  1 mins 4 secs 
 Total CPU time to MAP completion:   1 mins 2 secs 
+=======
+Peak Memory Usage:  643 MB
+Total REAL time to MAP completion:  1 mins 2 secs 
+Total CPU time to MAP completion:   1 mins 
+>>>>>>> parent of b57ed19... Compiled
 
 Table of Contents
 -----------------
