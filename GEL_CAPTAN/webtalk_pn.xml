@@ -4,10 +4,17 @@
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
 <<<<<<< HEAD
+<<<<<<< HEAD
 <application name="pn" timeStamp="Thu Sep 28 16:53:14 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="2A3D0076B64446CBB070ACA150F163F3" type="project"/>
 <property name="ProjectIteration" value="83" type="project"/>
+=======
+<application name="pn" timeStamp="Tue Sep 26 16:35:11 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="2A3D0076B64446CBB070ACA150F163F3" type="project"/>
+<property name="ProjectIteration" value="75" type="project"/>
+>>>>>>> parent of b57ed19... Compiled
 =======
 <application name="pn" timeStamp="Tue Sep 26 16:35:11 2017">
 <section name="Project Information" visible="false">
@@ -35,7 +42,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_intProjectCreationTimestamp" value="2011-07-27T15:01:41" type="design"/>
 <property name="PROP_intWbtProjectID" value="2A3D0076B64446CBB070ACA150F163F3" type="design"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <property name="PROP_intWbtProjectIteration" value="83" type="process"/>
+=======
+<property name="PROP_intWbtProjectIteration" value="75" type="process"/>
+>>>>>>> parent of b57ed19... Compiled
 =======
 <property name="PROP_intWbtProjectIteration" value="75" type="process"/>
 >>>>>>> parent of b57ed19... Compiled

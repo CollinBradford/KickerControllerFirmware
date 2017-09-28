@@ -6,7 +6,11 @@
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   <application stringID="Map" timeStamp="Thu Sep 28 16:53:13 2017">
+=======
+  <application stringID="Map" timeStamp="Tue Sep 26 16:35:09 2017">
+>>>>>>> parent of b57ed19... Compiled
 =======
   <application stringID="Map" timeStamp="Tue Sep 26 16:35:09 2017">
 >>>>>>> parent of b57ed19... Compiled
@@ -81,15 +85,21 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="61"/>
         <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="662236"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="1 mins 4 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="1 mins 2 secs "/>
 =======
+=======
+>>>>>>> parent of b57ed19... Compiled
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="50"/>
         <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="658396"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="1 mins 2 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="1 mins "/>
+<<<<<<< HEAD
+>>>>>>> parent of b57ed19... Compiled
+=======
 >>>>>>> parent of b57ed19... Compiled
       </section>
       <section stringID="MAP_SLICE_REPORTING"/>

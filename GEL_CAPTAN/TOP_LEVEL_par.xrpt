@@ -6,7 +6,11 @@
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   <application stringID="par" timeStamp="Thu Sep 28 16:53:24 2017">
+=======
+  <application stringID="par" timeStamp="Tue Sep 26 16:35:20 2017">
+>>>>>>> parent of b57ed19... Compiled
 =======
   <application stringID="par" timeStamp="Tue Sep 26 16:35:20 2017">
 >>>>>>> parent of b57ed19... Compiled
@@ -79,7 +83,11 @@
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="26 secs "/>
+=======
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="25 secs "/>
+>>>>>>> parent of b57ed19... Compiled
 =======
         <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="25 secs "/>
 >>>>>>> parent of b57ed19... Compiled

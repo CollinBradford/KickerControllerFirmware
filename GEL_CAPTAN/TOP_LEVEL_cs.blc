@@ -29,7 +29,11 @@ NGCBUILD Design Results Summary:
   Number of warnings:   0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Total memory usage is 199544 kilobytes
+=======
+Total memory usage is 198968 kilobytes
+>>>>>>> parent of b57ed19... Compiled
 =======
 Total memory usage is 198968 kilobytes
 >>>>>>> parent of b57ed19... Compiled

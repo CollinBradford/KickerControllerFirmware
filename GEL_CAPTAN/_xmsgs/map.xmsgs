@@ -6,6 +6,7 @@
      users do not edit the contents of this file. -->
 <messages>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">trig_types&lt;5&gt;</arg> has no load.
 </msg>
 
@@ -19,6 +20,11 @@ icon_control0&lt;15&gt;</arg>
 <msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">icon_control0&lt;10&gt;</arg> has no load.
 </msg>
 
+=======
+<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">icon_control0&lt;10&gt;</arg> has no load.
+</msg>
+
+>>>>>>> parent of b57ed19... Compiled
 <msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">271</arg> more times for the following (max. 5 shown):
 <arg fmt="%s" index="3">icon_control0&lt;11&gt;,
 icon_control0&lt;15&gt;,

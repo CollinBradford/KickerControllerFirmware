@@ -5,6 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 <DeviceUsageSummary rev="30">
 <DesignStatistics TimeStamp="Thu Sep 28 16:54:31 2017"><group name="NetStatistics">
 <item name="NumNets_Active" rev="30">
@@ -2039,6 +2040,8 @@
 <item name="0" rev="30">
 <attrib name="value" value="189"/></item>
 =======
+=======
+>>>>>>> parent of b57ed19... Compiled
 <DeviceUsageSummary rev="14">
 <DesignStatistics TimeStamp="Tue Sep 26 16:36:28 2017"><group name="NetStatistics">
 <item name="NumNets_Active" rev="14">

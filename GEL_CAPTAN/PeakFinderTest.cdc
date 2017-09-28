@@ -1,6 +1,10 @@
 #ChipScope Core Inserter Project File Version 3.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Thu Sep 28 15:41:05 CDT 2017
+=======
+#Tue Sep 26 16:30:29 CDT 2017
+>>>>>>> parent of b57ed19... Compiled
 =======
 #Tue Sep 26 16:30:29 CDT 2017
 >>>>>>> parent of b57ed19... Compiled
@@ -11,6 +15,7 @@ Project.device.enableRPMs=true
 Project.device.outputDirectory=D\:\\cbradford\\KickerControllerFirmware\\GEL_CAPTAN\\_ngo
 Project.device.useSRL16=true
 Project.filter.dimension=19
+<<<<<<< HEAD
 <<<<<<< HEAD
 Project.filter<0>=debug_signals*
 Project.filter<10>=trig*
@@ -32,6 +37,8 @@ Project.filter<7>=adc_fifo_data*
 Project.filter<8>=adc_fifo_data_out*
 Project.filter<9>=trigger_out
 =======
+=======
+>>>>>>> parent of b57ed19... Compiled
 Project.filter<0>=clock_enable
 Project.filter<10>=trig_types
 Project.filter<11>=zero_cross_count*
@@ -178,8 +185,11 @@ Project.unit<0>.dataChannel<202>=trig_types<7>
 Project.unit<0>.dataChannel<203>=ext_trig
 Project.unit<0>.dataChannel<204>=trigger_out
 <<<<<<< HEAD
+<<<<<<< HEAD
 Project.unit<0>.dataChannel<205>=clock_enable
 Project.unit<0>.dataChannel<206>=XLXI_6349 extTrigLatched
+=======
+>>>>>>> parent of b57ed19... Compiled
 =======
 >>>>>>> parent of b57ed19... Compiled
 Project.unit<0>.dataChannel<20>=user_sample_size<12>
@@ -397,12 +407,21 @@ Project.unit<0>.triggerChannel<0><203>=ext_trig
 Project.unit<0>.triggerChannel<0><204>=trigger_out
 Project.unit<0>.triggerChannel<0><205>=clock_enable
 <<<<<<< HEAD
+<<<<<<< HEAD
 Project.unit<0>.triggerChannel<0><206>=XLXI_6349 extTrigLatched
 Project.unit<0>.triggerChannel<0><207>=debug_signals<0>
 Project.unit<0>.triggerChannel<0><208>=debug_signals<1>
 Project.unit<0>.triggerChannel<0><209>=debug_signals<2>
 Project.unit<0>.triggerChannel<0><20>=user_sample_size<12>
 Project.unit<0>.triggerChannel<0><210>=debug_signals<3>
+=======
+Project.unit<0>.triggerChannel<0><206>=
+Project.unit<0>.triggerChannel<0><207>=
+Project.unit<0>.triggerChannel<0><208>=
+Project.unit<0>.triggerChannel<0><209>=
+Project.unit<0>.triggerChannel<0><20>=user_sample_size<12>
+Project.unit<0>.triggerChannel<0><210>=
+>>>>>>> parent of b57ed19... Compiled
 =======
 Project.unit<0>.triggerChannel<0><206>=
 Project.unit<0>.triggerChannel<0><207>=
