@@ -21,3 +21,5 @@ select figure at 3553 1081 8 -branches -sn=3
 select figure at 3535 1107 8 -branches -sn=3
 select figure at 2962 1677 8 -branches -sn=3
 select figure at 1719 1169 8 -branches -sn=3
+select figure at 802 1890 8 -branches -sn=1
+select figure at 1294 1724 8 -branches -sn=1
