@@ -124,6 +124,8 @@ begin
 		if(rising_edge(clk)) then
 			
 			del_clk_en <= clock_enable;
+			data_out_we <= '0';
+
 			
 			if(del_clk_en = '1') then
 				--Reset pulsed signals
@@ -131,7 +133,7 @@ begin
 				headerDelayTwo <= '0';
 				prepareEnd <= '0';
 				sendFooter <= '0';
-				data_out_we <= '0';
+				--data_out_we <= '0';
 				dataOutEnd <= '0';
 				finish <= '0';
 			end if;

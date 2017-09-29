@@ -287,7 +287,6 @@
         <signal name="zero_cross_veto_thresh(7:0)" />
         <signal name="zero_cross_count(7:0)" />
         <signal name="clock_enable" />
-        <signal name="event_data_out_we" />
         <signal name="IP_MAC_0" />
         <signal name="IP_MAC_1" />
         <signal name="IP_MAC_2" />
@@ -1924,7 +1923,7 @@
             <blockpin signalname="zero_cross_thresh_high(7:0)" name="zero_cross_thresh_high(7:0)" />
             <blockpin signalname="zero_cross_thresh_low(7:0)" name="zero_cross_thresh_low(7:0)" />
             <blockpin signalname="zero_cross_veto_thresh(7:0)" name="zero_cross_veto_thresh(7:0)" />
-            <blockpin signalname="event_data_out_we" name="data_out_we" />
+            <blockpin signalname="b_data_we" name="data_out_we" />
             <blockpin signalname="b_force_packet" name="data_out_end" />
             <blockpin signalname="veto" name="veto" />
             <blockpin signalname="reset_clear_veto" name="reset_clear_veto" />
@@ -2013,11 +2012,6 @@
         <block symbolname="obuf" name="XLXI_6437">
             <blockpin signalname="clock_enable" name="I" />
             <blockpin name="O" />
-        </block>
-        <block symbolname="and2" name="XLXI_6438">
-            <blockpin signalname="clock_enable" name="I0" />
-            <blockpin signalname="event_data_out_we" name="I1" />
-            <blockpin signalname="b_data_we" name="O" />
         </block>
         <block symbolname="ibuf" name="XLXI_6439">
             <blockpin signalname="IP_MAC_0" name="I" />
@@ -2776,7 +2770,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1344" type="branch" />
             <wire x2="6560" y1="1344" y2="1344" x1="6544" />
         </branch>
-        <branch name="event_data_out_we">
+        <branch name="b_data_we">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1088" type="branch" />
             <wire x2="6560" y1="1088" y2="1088" x1="6544" />
         </branch>
@@ -3016,19 +3010,6 @@
         <branch name="ram_en">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1984" type="branch" />
             <wire x2="5888" y1="1984" y2="1984" x1="5872" />
-        </branch>
-        <instance x="6368" y="864" name="XLXI_6438" orien="R0" />
-        <branch name="event_data_out_we">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6352" y="736" type="branch" />
-            <wire x2="6368" y1="736" y2="736" x1="6352" />
-        </branch>
-        <branch name="clock_enable">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6352" y="800" type="branch" />
-            <wire x2="6368" y1="800" y2="800" x1="6352" />
-        </branch>
-        <branch name="b_data_we">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6640" y="768" type="branch" />
-            <wire x2="6640" y1="768" y2="768" x1="6624" />
         </branch>
         <branch name="XLXN_15529">
             <wire x2="1632" y1="848" y2="848" x1="1616" />

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/29/2017 13:46:51
+-- /___/   /\     Timestamp : 09/29/2017 14:46:15
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -733,7 +733,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal debug_signals                  : std_logic_vector (7 downto 0);
    signal event_data                     : std_logic_vector (63 downto 0);
    signal event_data_end                 : std_logic;
-   signal event_data_out_we              : std_logic;
    signal event_data_we                  : std_logic;
    signal EVENT_MAP                      : std_logic;
    signal ext_ip_addr                    : std_logic_vector (7 downto 0);
@@ -2136,7 +2135,7 @@ begin
             downto 0),
                 data_out(63 downto 0)=>b_data(63 downto 0),
                 data_out_end=>b_force_packet,
-                data_out_we=>event_data_out_we,
+                data_out_we=>b_data_we,
                 reset_clear_veto=>reset_clear_veto,
                 reset_force_veto=>reset_force_veto,
                 veto=>veto,
@@ -2204,11 +2203,6 @@ begin
    XLXI_6437 : OBUF
       port map (I=>clock_enable,
                 O=>open);
-   
-   XLXI_6438 : AND2
-      port map (I0=>clock_enable,
-                I1=>event_data_out_we,
-                O=>b_data_we);
    
    XLXI_6439 : IBUF
       port map (I=>IP_MAC_0,
