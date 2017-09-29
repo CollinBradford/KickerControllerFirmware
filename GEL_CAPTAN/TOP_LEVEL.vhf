@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/29/2017 13:16:11
+-- /___/   /\     Timestamp : 09/29/2017 13:31:20
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -778,6 +778,8 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal PHY_TXER_sig                   : std_logic;
    signal psi_status                     : std_logic_vector (63 downto 0);
    signal ram_addr                       : std_logic_vector (9 downto 0);
+   signal ram_delay_clk_en               : std_logic;
+   signal ram_delay_clock_en             : std_logic;
    signal ram_en                         : std_logic;
    signal reset                          : std_logic;
    signal reset_clear_veto               : std_logic;
@@ -1241,6 +1243,14 @@ architecture BEHAVIORAL of TOP_LEVEL is
       port ( ext_ip_addr : in    std_logic_vector (7 downto 0); 
              ip_addr_out : out   std_logic_vector (7 downto 0));
    end component;
+   
+   component FD
+      generic( INIT : bit :=  '0');
+      port ( C : in    std_logic; 
+             D : in    std_logic; 
+             Q : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FD : component is "BLACK_BOX";
    
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
    attribute CLKIN_PERIOD of XLXI_3410 : label is "8.0";
@@ -2009,7 +2019,7 @@ begin
    
    XLXI_6253 : data_send
       port map (clk=>MASTER_CLK,
-                clock_enable=>ram_en,
+                clock_enable=>ram_delay_clk_en,
                 data_in(63 downto 0)=>data_send_in(63 downto 0),
                 debug_signals(7 downto 0)=>debug_signals(7 downto 0),
                 header(59 downto 0)=>XLXI_6253_header_openSignal(59 downto 0),
@@ -2120,7 +2130,7 @@ begin
    XLXI_6415 : event_analysis
       port map (clear_veto=>veto_clear,
                 clk=>MASTER_CLK,
-                clock_enable=>ram_en,
+                clock_enable=>ram_delay_clk_en,
                 data_in(63 downto 0)=>event_data(63 downto 0),
                 data_in_end=>event_data_end,
                 data_in_we=>event_data_we,
@@ -2245,6 +2255,11 @@ begin
    XLXI_6448 : ext_ip_addr_map
       port map (ext_ip_addr(7 downto 0)=>ext_ip_addr(7 downto 0),
                 ip_addr_out(7 downto 0)=>ip_addr(7 downto 0));
+   
+   XLXI_6449 : FD
+      port map (C=>MASTER_CLK,
+                D=>ram_en,
+                Q=>ram_delay_clock_en);
    
 end BEHAVIORAL;
 

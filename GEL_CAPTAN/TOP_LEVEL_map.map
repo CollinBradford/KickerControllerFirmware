@@ -10,7 +10,7 @@ Target Device  : xc4vlx25
 Target Package : ff668
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Fri Sep 29 13:21:32 2017
+Mapped Date    : Fri Sep 29 13:37:33 2017
 
 Mapping design into LUTs...
 WARNING:MapLib:328 - Block XLXI_6136 is not a recognized logical block. The
@@ -49,31 +49,31 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 18 secs 
-Total CPU  time at the beginning of Placer: 16 secs 
+Total REAL time at the beginning of Placer: 14 secs 
+Total CPU  time at the beginning of Placer: 11 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:c8d763bc) REAL time: 19 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:86f71d3d) REAL time: 14 secs 
 
 Phase 2.7  Design Feasibility Check
 INFO:Place:834 - Only a subset of IOs are locked. Out of 88 IOs, 80 are locked
    and 8 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:c8d763bc) REAL time: 19 secs 
+Phase 2.7  Design Feasibility Check (Checksum:86f71d3d) REAL time: 15 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:170af016) REAL time: 19 secs 
+Phase 3.31  Local Placement Optimization (Checksum:e91b1ae3) REAL time: 15 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-....
-Phase 4.2  Initial Clock and IO Placement (Checksum:90b6179e) REAL time: 19 secs 
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:9aa04c4e) REAL time: 15 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:90b6179e) REAL time: 19 secs 
+Phase 5.36  Local Placement Optimization (Checksum:9aa04c4e) REAL time: 15 secs 
 
-......
-...............
-...............................................................
+
+.................
+...................................................
 Phase 6.30  Global Clock Region Assignment
 
 
@@ -81,12 +81,11 @@ Phase 6.30  Global Clock Region Assignment
 # GLOBAL CLOCK NET DISTRIBUTION UCF REPORT:
 #
 # Number of Global Clock Regions : 12
-# Number of Global Clock Networks: 11
+# Number of Global Clock Networks: 10
 #
 # Clock Region Assignment: SUCCESSFUL
 
 # Location of Clock Components
-INST "U_icon_pro/U0/U_ICON/I_YES_BSCAN.U_BS/I_USE_SOFTBSCAN_EQ0.I_USE_XST_TCK_WORKAROUND_EQ1.U_ICON_BSCAN_BUFG/U_BUFG" LOC = "BUFGCTRL_X0Y27" ;
 INST "XLXI_3411" LOC = "BUFGCTRL_X0Y2" ;
 INST "XLXI_6200" LOC = "BUFGCTRL_X0Y5" ;
 INST "XLXI_6040" LOC = "BUFGCTRL_X0Y28" ;
@@ -108,11 +107,6 @@ INST "XLXI_5949" LOC = "DCM_ADV_X0Y1" ;
 INST "GEL_RXCLK" LOC = "AD12" ;
 INST "BUSBHS_02DP_04S" LOC = "AE14" ;
 
-# icon_control0<0> driven by BUFGCTRL_X0Y27
-NET "icon_control0<0>" TNM_NET = "TN_icon_control0<0>" ;
-TIMEGRP "TN_icon_control0<0>" AREA_GROUP = "CLKAG_icon_control0<0>" ;
-AREA_GROUP "CLKAG_icon_control0<0>" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
-
 # XLXN_12229 driven by BUFGCTRL_X0Y2
 NET "XLXN_12229" TNM_NET = "TN_XLXN_12229" ;
 TIMEGRP "TN_XLXN_12229" AREA_GROUP = "CLKAG_XLXN_12229" ;
@@ -126,12 +120,12 @@ AREA_GROUP "CLKAG_FADC_DCLK" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCK
 # XLXN_15130 driven by BUFGCTRL_X0Y28
 NET "XLXN_15130" TNM_NET = "TN_XLXN_15130" ;
 TIMEGRP "TN_XLXN_15130" AREA_GROUP = "CLKAG_XLXN_15130" ;
-AREA_GROUP "CLKAG_XLXN_15130" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2 ;
+AREA_GROUP "CLKAG_XLXN_15130" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
 
 # XLXN_15064 driven by BUFGCTRL_X0Y1
 NET "XLXN_15064" TNM_NET = "TN_XLXN_15064" ;
 TIMEGRP "TN_XLXN_15064" AREA_GROUP = "CLKAG_XLXN_15064" ;
-AREA_GROUP "CLKAG_XLXN_15064" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+AREA_GROUP "CLKAG_XLXN_15064" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
 
 # XLXN_12661 driven by BUFGCTRL_X0Y3
 NET "XLXN_12661" TNM_NET = "TN_XLXN_12661" ;
@@ -141,12 +135,12 @@ AREA_GROUP "CLKAG_XLXN_12661" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOC
 # CLK_187_5 driven by BUFGCTRL_X0Y4
 NET "CLK_187_5" TNM_NET = "TN_CLK_187_5" ;
 TIMEGRP "TN_CLK_187_5" AREA_GROUP = "CLKAG_CLK_187_5" ;
-AREA_GROUP "CLKAG_CLK_187_5" RANGE =   CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+AREA_GROUP "CLKAG_CLK_187_5" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
 
 # XLXN_12672 driven by BUFGCTRL_X0Y30
 NET "XLXN_12672" TNM_NET = "TN_XLXN_12672" ;
 TIMEGRP "TN_XLXN_12672" AREA_GROUP = "CLKAG_XLXN_12672" ;
-AREA_GROUP "CLKAG_XLXN_12672" RANGE =   CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+AREA_GROUP "CLKAG_XLXN_12672" RANGE =   CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
 
 # XLXN_12923 driven by BUFGCTRL_X0Y29
 NET "XLXN_12923" TNM_NET = "TN_XLXN_12923" ;
@@ -156,7 +150,7 @@ AREA_GROUP "CLKAG_XLXN_12923" RANGE =   CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
 # CLK_375 driven by BUFGCTRL_X0Y31
 NET "CLK_375" TNM_NET = "TN_CLK_375" ;
 TIMEGRP "TN_CLK_375" AREA_GROUP = "CLKAG_CLK_375" ;
-AREA_GROUP "CLKAG_CLK_375" RANGE =   CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+AREA_GROUP "CLKAG_CLK_375" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
 
 # GTX_CLK_0_sig driven by BUFGCTRL_X0Y0
 NET "GTX_CLK_0_sig" TNM_NET = "TN_GTX_CLK_0_sig" ;
@@ -176,7 +170,7 @@ AREA_GROUP "CLKAG_GTX_CLK_0_sig" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, C
 GLOBAL CLOCK NET LOADS DISTRIBUTION REPORT:
 
 Number of Global Clock Regions : 12
-Number of Global Clock Networks: 11
+Number of Global Clock Networks: 10
 
 Clock Region Assignment: SUCCESSFUL
 
@@ -190,11 +184,11 @@ Clock-Region: <CLOCKREGION_X0Y0>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     46 |    273 |GTX_CLK_0_sig
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     68 |    351 |GTX_CLK_0_sig
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |XLXN_12229
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |XLXN_12661
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      1 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     46 |    273 | Total 
+      4 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     68 |    351 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -208,9 +202,9 @@ Clock-Region: <CLOCKREGION_X1Y0>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     84 |    304 |GTX_CLK_0_sig
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     60 |     98 |GTX_CLK_0_sig
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     84 |    304 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     60 |     98 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -225,11 +219,11 @@ Clock-Region: <CLOCKREGION_X0Y1>
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |FADC_DCLK
-      4 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    325 |GTX_CLK_0_sig
+      4 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |     65 |    497 |GTX_CLK_0_sig
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |XLXN_15064
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |XLXN_15130
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      4 |      2 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      1 |     12 |    325 | Total 
+      4 |      2 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      1 |     65 |    497 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -243,9 +237,9 @@ Clock-Region: <CLOCKREGION_X1Y1>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     50 |    338 |GTX_CLK_0_sig
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     46 |    123 |GTX_CLK_0_sig
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     50 |    338 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     46 |    123 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -259,15 +253,15 @@ Clock-Region: <CLOCKREGION_X0Y2>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |FADC_DCLK
-      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    384 |GTX_CLK_0_sig
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     11 |FADC_DCLK
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     53 |    394 |GTX_CLK_0_sig
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    386 | Total 
+      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     53 |    405 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y2> 
- key resource utilizations (used/available): global-clocks - 2/8 ;
+ key resource utilizations (used/available): global-clocks - 1/8 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -276,15 +270,14 @@ Clock-Region: <CLOCKREGION_X1Y2>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |FADC_DCLK
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     76 |    279 |GTX_CLK_0_sig
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     79 |GTX_CLK_0_sig
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     76 |    280 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     79 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y3> 
- key resource utilizations (used/available): global-clocks - 3/8 ;
+ key resource utilizations (used/available): global-clocks - 2/8 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -293,16 +286,15 @@ Clock-Region: <CLOCKREGION_X0Y3>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |FADC_DCLK
-      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     49 |    422 |GTX_CLK_0_sig
-      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |icon_control0<0>
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     10 |FADC_DCLK
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     56 |    263 |GTX_CLK_0_sig
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     49 |    426 | Total 
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     56 |    273 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y3> 
- key resource utilizations (used/available): global-clocks - 3/8 ;
+ key resource utilizations (used/available): global-clocks - 2/8 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -311,16 +303,15 @@ Clock-Region: <CLOCKREGION_X1Y3>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     19 |FADC_DCLK
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    113 |    165 |GTX_CLK_0_sig
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     27 |icon_control0<0>
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     18 |FADC_DCLK
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     27 |GTX_CLK_0_sig
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    113 |    211 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     45 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y4> 
- key resource utilizations (used/available): global-clocks - 2/8 ;
+ key resource utilizations (used/available): global-clocks - 1/8 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -329,15 +320,14 @@ Clock-Region: <CLOCKREGION_X0Y4>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    124 |    539 |GTX_CLK_0_sig
-      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     70 |     29 |icon_control0<0>
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     60 |    130 |GTX_CLK_0_sig
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    194 |    568 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     60 |    130 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y4> 
- key resource utilizations (used/available): global-clocks - 3/8 ;
+ key resource utilizations (used/available): global-clocks - 1/8 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -346,16 +336,14 @@ Clock-Region: <CLOCKREGION_X1Y4>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     13 |FADC_DCLK
-      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |    109 |GTX_CLK_0_sig
-      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |     17 |icon_control0<0>
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     38 |GTX_CLK_0_sig
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     56 |    139 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     38 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y5> 
- key resource utilizations (used/available): global-clocks - 6/8 ;
+ key resource utilizations (used/available): global-clocks - 5/8 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -366,17 +354,16 @@ Clock-Region: <CLOCKREGION_X0Y5>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |CLK_187_5
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |CLK_375
-      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     69 |    380 |GTX_CLK_0_sig
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     63 |GTX_CLK_0_sig
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |XLXN_12672
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |XLXN_12923
-      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |icon_control0<0>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      6 |      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     69 |    380 | Total 
+      0 |      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     63 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y5> 
- key resource utilizations (used/available): global-clocks - 2/8 ;
+ key resource utilizations (used/available): global-clocks - 1/8 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -385,10 +372,9 @@ Clock-Region: <CLOCKREGION_X1Y5>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     73 |GTX_CLK_0_sig
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     51 |     27 |icon_control0<0>
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     32 |GTX_CLK_0_sig
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     55 |    100 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     32 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 NOTE:
@@ -401,60 +387,170 @@ maybe moved to adjacent clock-regions as long as the "number of clocks per regio
 ######################################################################################
 
 
-Phase 6.30  Global Clock Region Assignment (Checksum:90b6179e) REAL time: 30 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:9aa04c4e) REAL time: 22 secs 
 
 Phase 7.3  Local Placement Optimization
-......
-Phase 7.3  Local Placement Optimization (Checksum:5b531563) REAL time: 30 secs 
+
+Phase 7.3  Local Placement Optimization (Checksum:e5dcf493) REAL time: 23 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:5b531563) REAL time: 30 secs 
+Phase 8.5  Local Placement Optimization (Checksum:e5dcf493) REAL time: 23 secs 
 
 Phase 9.8  Global Placement
-.............................
-............................................................................................
+.................................
+........................................................................................
 ..........
 ................
 ..
-........
-Phase 9.8  Global Placement (Checksum:6d44e947) REAL time: 41 secs 
+..........
+Phase 9.8  Global Placement (Checksum:4adbd874) REAL time: 29 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:6d44e947) REAL time: 41 secs 
+Phase 10.5  Local Placement Optimization (Checksum:4adbd874) REAL time: 30 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:b1c08194) REAL time: 56 secs 
+Phase 11.18  Placement Optimization (Checksum:f52cbdc0) REAL time: 39 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:b1c08194) REAL time: 56 secs 
+Phase 12.5  Local Placement Optimization (Checksum:f52cbdc0) REAL time: 40 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:b1c08194) REAL time: 56 secs 
+Phase 13.34  Placement Validation (Checksum:f52cbdc0) REAL time: 40 secs 
 
-Total REAL time to Placer completion: 56 secs 
-Total CPU  time to Placer completion: 54 secs 
+Total REAL time to Placer completion: 40 secs 
+Total CPU  time to Placer completion: 38 secs 
 Running physical synthesis...
 
 Physical synthesis completed.
 Running post-placement packing...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<30>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<63>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<31>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<62>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<15>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<61>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<24>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<60>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<25>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<59>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<28>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<58>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<29>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<57>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6004/O> is incomplete. The signal does not drive any load pins in the
-   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<56>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<55>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<54>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<53>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<44>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<52>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<51>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<50>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<49>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<48>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<47>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<46>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<45>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<43>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<42>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<41>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<40>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<39>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<38>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<37>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<36>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<35>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<26>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<34>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<33>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<32>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<31>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<30>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<29>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<28>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<27>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<25>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<24>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<23>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<22>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<21>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<20>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<19>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<18>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<17>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<8>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<16>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<15>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<14>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<13>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<12>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<11>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<10>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<9>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<7>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<6>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<5>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<4>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<3>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<2>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<1>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<0>> is incomplete. The signal does not drive any load pins in
+   the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D15> is incomplete. The signal does not drive any load pins in the
    design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The signal does not drive any load pins in the
@@ -471,59 +567,113 @@ WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The sign
    design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<35>> is incomplete. The signal does not drive any load pins in
-   the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<23>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<10>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<7>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<11>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<26>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<32>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<27>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<17>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<16>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<18>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<33>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<34>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<12>> is incomplete. The signal does not drive any load pins in the
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<5>> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<22>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The signal does not drive any load pins in the
+WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<7>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <threshold<0>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<5>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <veto_enabled> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6004/O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <threshold<4>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <threshold<5>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<8>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<9>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<6>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<7>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <trig_types<1>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <trig_types<3>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <trig_types<7>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<6>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <trig_types<4>> is incomplete. The signal does not drive any load pins in the
    design.
 WARNING:PhysDesignRules:367 - The signal <trig_types<5>> is incomplete. The signal does not drive any load pins in the
    design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<2>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<7>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<0>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<1>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<1>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<2>> is incomplete. The signal does not drive any load pins in the
+   design.
 WARNING:PhysDesignRules:367 - The signal <trig_types<6>> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <trig_types<7>> is incomplete. The signal does not drive any load pins in the
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<9>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <trig_types<0>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<4>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<5>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<1>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<2>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <threshold<6>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <threshold<7>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<3>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<4>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<0>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <threshold<2>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <threshold<3>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<0>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<3>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<4>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<8>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<3>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<6>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <threshold<1>> is incomplete. The signal does not drive any load pins in the
    design.
 WARNING:PhysDesignRules:367 - The signal
    <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>>
    is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> is incomplete.
-   The signal does not drive any load pins in the design.
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<12>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The signal does not drive any load pins in the
+   design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_5338/GLOBAL_LOGIC1> is incomplete. The signal does not drive any load
-   pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6415/GLOBAL_LOGIC0> is incomplete. The signal does not drive any load
    pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6>> is incomplete. The signal
    does not drive any load pins in the design.
@@ -531,52 +681,78 @@ WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fif
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<4>> is incomplete. The signal
    does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_data_fifo_empty> is incomplete. The signal does
-   not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full> is incomplete. The signal
    does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
+   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss
+   .rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.r
+   sts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
+   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_data_fifo_empty> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/RX_DATA_FIFO/empty> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
+   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss
+   .wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
+   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.w
+   sts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/full> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/empty> is incomplete. The signal does
+   not drive any load pins in the design.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   60
+Number of warnings:  153
 Logic Utilization:
-  Total Number Slice Registers:       3,771 out of  21,504   17%
-    Number used as Flip Flops:        3,770
-    Number used as Latches:               1
-  Number of 4 input LUTs:             5,759 out of  21,504   26%
+  Number of Slice Flip Flops:         2,169 out of  21,504   10%
+  Number of 4 input LUTs:             4,375 out of  21,504   20%
 Logic Distribution:
-  Number of occupied Slices:          4,640 out of  10,752   43%
-    Number of Slices containing only related logic:   4,640 out of   4,640 100%
-    Number of Slices containing unrelated logic:          0 out of   4,640   0%
+  Number of occupied Slices:          3,289 out of  10,752   30%
+    Number of Slices containing only related logic:   3,289 out of   3,289 100%
+    Number of Slices containing unrelated logic:          0 out of   3,289   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       6,079 out of  21,504   28%
-    Number used as logic:             4,884
-    Number used as a route-thru:        320
+  Total Number of 4 input LUTs:       4,583 out of  21,504   21%
+    Number used as logic:             3,967
+    Number used as a route-thru:        208
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
-    Number used as Shift registers:     491
+    Number used as Shift registers:      24
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
   Number of bonded LOWCAPIOBs              2 out of     112    1%
   Number of bonded IOBs:                 86 out of     448   19%
-  Number of BUFG/BUFGCTRLs:              11 out of      32   34%
-    Number used as BUFGs:                11
-  Number of FIFO16/RAMB16s:              24 out of      72   33%
-    Number used as RAMB16s:              24
+  Number of BUFG/BUFGCTRLs:              10 out of      32   31%
+    Number used as BUFGs:                10
+  Number of FIFO16/RAMB16s:              15 out of      72   20%
+    Number used as RAMB16s:              15
   Number of DCM_ADVs:                     5 out of       8   62%
-  Number of BSCAN_VIRTEX4s:               1 out of       4   25%
   Number of IDELAYCTRLs:                  1 out of      16    6%
 
-  Number of RPM macros:           13
-Average Fanout of Non-Clock Nets:                3.33
+Average Fanout of Non-Clock Nets:                3.45
 
-Peak Memory Usage:  646 MB
-Total REAL time to MAP completion:  1 mins 2 secs 
-Total CPU time to MAP completion:   1 mins 
+Peak Memory Usage:  598 MB
+Total REAL time to MAP completion:  44 secs 
+Total CPU time to MAP completion:   42 secs 
 
 Mapping completed.
 See MAP report file "TOP_LEVEL_map.mrp" for details.

@@ -477,6 +477,141 @@
 <msg type="warning" file="NgdBuild" num="1212" delta="old" >User specified non-default attribute value (<arg fmt="%s" index="1">5.33333333</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">XLXI_6199</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">5 ns.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.
 </msg>
 
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_6449</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6410/I_Q10</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6410/I_Q11</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6410/I_Q12</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6410/I_Q13</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6410/I_Q14</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6410/I_Q15</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6394/I_Q10</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6394/I_Q11</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6394/I_Q12</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6394/I_Q13</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6394/I_Q14</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6394/I_Q15</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q0</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q1</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q2</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q3</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q4</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q5</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q6</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q7</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q8</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q9</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q10</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q11</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q12</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q13</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q14</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6251/I_Q15</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6419/I_Q0</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6419/I_Q1</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6419/I_Q2</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6419/I_Q3</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6419/I_Q4</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6419/I_Q5</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6419/I_Q6</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6419/I_Q7</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6418/I_Q0</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6418/I_Q1</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6418/I_Q2</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6418/I_Q3</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6418/I_Q4</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6418/I_Q5</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6418/I_Q6</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">XLXI_6418/I_Q7</arg>&apos; has unconnected output pin
+</msg>
+
 <msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">XLXI_6227/ec_wrapper/udp_fwd_port&lt;0&gt;</arg>&apos; has no driver
 </msg>
 
