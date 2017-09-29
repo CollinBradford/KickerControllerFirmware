@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/28/2017 19:39:46
+-- /___/   /\     Timestamp : 09/29/2017 13:16:11
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -2009,7 +2009,7 @@ begin
    
    XLXI_6253 : data_send
       port map (clk=>MASTER_CLK,
-                clock_enable=>clock_enable,
+                clock_enable=>ram_en,
                 data_in(63 downto 0)=>data_send_in(63 downto 0),
                 debug_signals(7 downto 0)=>debug_signals(7 downto 0),
                 header(59 downto 0)=>XLXI_6253_header_openSignal(59 downto 0),
@@ -2120,7 +2120,7 @@ begin
    XLXI_6415 : event_analysis
       port map (clear_veto=>veto_clear,
                 clk=>MASTER_CLK,
-                clock_enable=>clock_enable,
+                clock_enable=>ram_en,
                 data_in(63 downto 0)=>event_data(63 downto 0),
                 data_in_end=>event_data_end,
                 data_in_we=>event_data_we,

@@ -1931,7 +1931,7 @@
             <blockpin signalname="reset_force_veto" name="reset_force_veto" />
             <blockpin signalname="b_data(63:0)" name="data_out(63:0)" />
             <blockpin signalname="zero_cross_count(7:0)" name="zero_cross_count(7:0)" />
-            <blockpin signalname="clock_enable" name="clock_enable" />
+            <blockpin signalname="ram_en" name="clock_enable" />
         </block>
         <block symbolname="data_send" name="XLXI_6253">
             <blockpin signalname="reset" name="rst" />
@@ -1949,7 +1949,7 @@
             <blockpin signalname="event_data_we" name="b_data_we" />
             <blockpin signalname="event_data_end" name="b_force_packet" />
             <blockpin signalname="event_data(63:0)" name="b_data(63:0)" />
-            <blockpin signalname="clock_enable" name="clock_enable" />
+            <blockpin signalname="ram_en" name="clock_enable" />
         </block>
         <block symbolname="fd8re" name="XLXI_6418">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -3009,11 +3009,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2624" type="branch" />
             <wire x2="2336" y1="2624" y2="2624" x1="2320" />
         </branch>
-        <branch name="clock_enable">
+        <branch name="ram_en">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="2176" type="branch" />
             <wire x2="4768" y1="2176" y2="2176" x1="4752" />
         </branch>
-        <branch name="clock_enable">
+        <branch name="ram_en">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1984" type="branch" />
             <wire x2="5888" y1="1984" y2="1984" x1="5872" />
         </branch>
