@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -175,7 +175,8 @@ Architecture behavioral of Entity trigger_recv_blk is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" in Library work.
 Architecture behavioral of Entity ethernet_interface is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" in Library work.
-Architecture behavioral of Entity data_send is up to date.
+Entity <data_send> compiled.
+Entity <data_send> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
 Architecture behavioral of Entity clocklatchsignals is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
@@ -189,18 +190,12 @@ Architecture behavioral of Entity event_analysis is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ext_ip_addr_map.vhd" in Library work.
 Architecture behavioral of Entity ext_ip_addr_map is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Entity <obuf8_mxilinx_top_level> compiled.
-Entity <obuf8_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <fd8re_mxilinx_top_level> compiled.
-Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <fd16re_mxilinx_top_level> compiled.
-Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <m2_1_mxilinx_top_level> compiled.
-Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <d4_16e_mxilinx_top_level> compiled.
-Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <top_level> compiled.
-Entity <TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity obuf8_mxilinx_top_level is up to date.
+Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
+Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
+Architecture behavioral of Entity top_level is up to date.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -212,7 +207,7 @@ Analysis of file <"TOP_LEVEL.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
@@ -300,7 +295,7 @@ Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "IOBDELAY_TYPE =  VARIABLE" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "IOBDELAY_VALUE =  0" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "CLKDV_DIVIDE =  2.0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
@@ -917,7 +912,7 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 10-bit comparator equal for signal <armed$cmp_eq0000> created at line 143.
     Found 10-bit comparator not equal for signal <b_data$cmp_ne0000> created at line 143.
     Found 64-bit 4-to-1 multiplexer for signal <b_data$mux0000>.
-    Found 10-bit comparator equal for signal <b_data_we$cmp_eq0000> created at line 160.
+    Found 10-bit comparator greatequal for signal <b_data_we$cmp_ge0000> created at line 160.
     Found 1-bit register for signal <busy>.
     Found 1-bit register for signal <delayed_clk_en>.
     Found 10-bit register for signal <endAddr>.
@@ -931,7 +926,7 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 16-bit register for signal <sampleSize>.
     Found 16-bit adder for signal <sampleSize$add0000> created at line 124.
     Found 1-bit register for signal <sendUDP>.
-    Found 10-bit comparator not equal for signal <sendUDP$cmp_ne0000> created at line 160.
+    Found 10-bit comparator less for signal <sendUDP$cmp_lt0000> created at line 160.
     Found 10-bit register for signal <startAddr>.
     Found 10-bit adder for signal <startAddr$addsub0000> created at line 125.
     Found 10-bit subtractor for signal <startAddr$sub0000> created at line 125.
@@ -1926,8 +1921,10 @@ Macro Statistics
  4-bit latch                                           : 1
  8-bit latch                                           : 1
 # Comparators                                          : 108
- 10-bit comparator equal                               : 2
- 10-bit comparator not equal                           : 2
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greatequal                          : 1
+ 10-bit comparator less                                : 1
+ 10-bit comparator not equal                           : 1
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
  16-bit comparator equal                               : 1
@@ -2375,8 +2372,10 @@ Macro Statistics
  4-bit latch                                           : 1
  8-bit latch                                           : 1
 # Comparators                                          : 108
- 10-bit comparator equal                               : 2
- 10-bit comparator not equal                           : 2
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greatequal                          : 1
+ 10-bit comparator less                                : 1
+ 10-bit comparator not equal                           : 1
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
  16-bit comparator equal                               : 1
@@ -2808,7 +2807,7 @@ Design Statistics
 # IOs                              : 89
 
 Cell Usage :
-# BELS                             : 6879
+# BELS                             : 6889
 #      AND2                        : 6
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2820,16 +2819,16 @@ Cell Usage :
 #      GND                         : 29
 #      INV                         : 189
 #      LUT1                        : 266
-#      LUT2                        : 845
+#      LUT2                        : 855
 #      LUT2_D                      : 23
 #      LUT2_L                      : 20
 #      LUT3                        : 1148
 #      LUT3_D                      : 18
 #      LUT3_L                      : 53
-#      LUT4                        : 2093
+#      LUT4                        : 2088
 #      LUT4_D                      : 55
 #      LUT4_L                      : 203
-#      MUXCY                       : 1200
+#      MUXCY                       : 1205
 #      MUXF5                       : 158
 #      MUXF6                       : 48
 #      OR2                         : 3
@@ -2875,10 +2874,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3345  out of  10752    31%  
+ Number of Slices:                     3347  out of  10752    31%  
  Number of Slice Flip Flops:           2495  out of  21504    11%  
- Number of 4 input LUTs:               5321  out of  21504    24%  
-    Number used as logic:              4913
+ Number of 4 input LUTs:               5326  out of  21504    24%  
+    Number used as logic:              4918
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          89
@@ -3043,7 +3042,7 @@ Offset:              2.748ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 111407 / 7558
+  Total number of paths / destination ports: 111477 / 7558
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 (FF)
@@ -3248,12 +3247,12 @@ Delay:               6.182ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 69.00 secs
-Total CPU time to Xst completion: 69.20 secs
+Total REAL time to Xst completion: 70.00 secs
+Total CPU time to Xst completion: 70.46 secs
  
 --> 
 
-Total memory usage is 725120 kilobytes
+Total memory usage is 634816 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  280 (   0 filtered)
