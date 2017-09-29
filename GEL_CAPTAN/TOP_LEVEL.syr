@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -173,10 +173,10 @@ Architecture behavioral of Entity buffer_10bit is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
 Architecture behavioral of Entity trigger_recv_blk is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" in Library work.
-Architecture behavioral of Entity ethernet_interface is up to date.
+Entity <ethernet_interface> compiled.
+Entity <ethernet_interface> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" in Library work.
-Entity <data_send> compiled.
-Entity <data_send> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity data_send is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
 Architecture behavioral of Entity clocklatchsignals is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
@@ -224,8 +224,6 @@ Analyzing hierarchy for entity <buffer_10bit> in library <work> (architecture <b
 Analyzing hierarchy for entity <trigger_recv_blk> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <ethernet_interface> in library <work> (architecture <behavioral>).
-WARNING:Xst:2094 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" line 124: Default value is ignored for signal <user_addr_byte>.
-WARNING:Xst:2094 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" line 125: Default value is ignored for signal <user_addr_sig>.
 
 Analyzing hierarchy for entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
@@ -671,8 +669,6 @@ Analyzing Entity <trigger_recv_blk> in library <work> (Architecture <behavioral>
 Entity <trigger_recv_blk> analyzed. Unit <trigger_recv_blk> generated.
 
 Analyzing Entity <ethernet_interface> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2094 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" line 124: Default value is ignored for signal <user_addr_byte>.
-WARNING:Xst:2094 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" line 125: Default value is ignored for signal <user_addr_sig>.
 WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" line 147: Unconnected output port 'udp_fwd_port' of component 'ethernet_controller_wrapper'.
 Entity <ethernet_interface> analyzed. Unit <ethernet_interface> generated.
 
@@ -3243,14 +3239,14 @@ Delay:               6.182ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 69.00 secs
-Total CPU time to Xst completion: 68.97 secs
+Total REAL time to Xst completion: 72.00 secs
+Total CPU time to Xst completion: 72.04 secs
  
 --> 
 
-Total memory usage is 725824 kilobytes
+Total memory usage is 666432 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  282 (   0 filtered)
+Number of warnings :  278 (   0 filtered)
 Number of infos    :  126 (   0 filtered)
 

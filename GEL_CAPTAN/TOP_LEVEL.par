@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-RIVIERA::  Fri Sep 29 15:55:41 2017
+RIVIERA::  Fri Sep 29 16:33:41 2017
 
 par -w -intstyle ise -ol high -t 1 TOP_LEVEL_map.ncd TOP_LEVEL.ncd
 TOP_LEVEL.pcf 
@@ -113,7 +113,7 @@ Starting Router
 
 Phase  1  : 28824 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 24651 unrouted;      REAL time: 11 secs 
+Phase  2  : 24651 unrouted;      REAL time: 12 secs 
 
 Phase  3  : 8641 unrouted;      REAL time: 14 secs 
 
@@ -133,7 +133,7 @@ Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL 
 
 Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 Total REAL time to Router completion: 23 secs 
-Total CPU time to Router completion: 20 secs 
+Total CPU time to Router completion: 21 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -287,9 +287,9 @@ All signals are completely routed.
 WARNING:Par:283 - There are 42 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
 Total REAL time to PAR completion: 25 secs 
-Total CPU time to PAR completion: 22 secs 
+Total CPU time to PAR completion: 23 secs 
 
-Peak Memory Usage:  542 MB
+Peak Memory Usage:  551 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
