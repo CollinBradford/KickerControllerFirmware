@@ -112,7 +112,7 @@ begin
 				
 				delayed_clk_en <= clock_enable;
 				
-				if(delayed_clk_en = '1') then
+				if(clock_enable = '1') then
 					--latch the address data as soon as we recieve a trigger event
 					if(new_trigger = '1') then
 						--only latch the new trigger if we don't already have one.  
@@ -157,7 +157,7 @@ begin
 						b_data <= dataOut;
 					end if;
 					--once we reach the end address
-					if(reading = '1' and ramAddrUns >= endAddr) then --Ends read cycle when buffer reaches the end point. 
+					if(reading = '1' and ramAddrUns = endAddr) then --Ends read cycle when buffer reaches the end point. 
 						b_data_we <= '0';
 						reading <= '0';
 						sendUDP <= '1';

@@ -127,7 +127,7 @@ begin
 			data_out_we <= '0';
 
 			
-			if(del_clk_en = '1') then
+			if(clock_enable = '1') then
 				--Reset pulsed signals
 				headerDelayOne <= '0';
 				headerDelayTwo <= '0';
@@ -146,7 +146,7 @@ begin
 				busy <= '0';
 			else
 			
-				if(del_clk_en = '1') then 
+				if(clock_enable = '1') then 
 				
 					if(data_in_we = '1') then
 						data_out_we <= '1';
