@@ -115,16 +115,14 @@ begin
 --		data_out(55 downto 48) <= data_in(55 downto 48);
 --		data_out(63 downto 56) <= data_in(63 downto 56);
 		
-		data_out <= data_in;
-		
-		out_enable <= clock_enable; --We are constantly recording to the ram loop buffer.  clock_enable = '1'
-		
 		if(reset = '0') then--reset is low
 		
 			if(rising_edge(clk)) then
 			
 				lastExtTrigState <= extTrigLatched;
 				extTrigLatched <= ext_trig;
+				
+				out_enable <= '0';
 				
 				--if external trigger mode is enabled 
 				if(extTrigEn = '1') then
@@ -141,6 +139,8 @@ begin
 				if(clock_enable = '1') then--rising edge of clk and the clock is enabled
 					
 					ramAddress <= ramAddress + 1;
+					out_enable <= '1';
+					data_out <= data_in;
 					
 					--These are the tests for each trigger state.  There is at least one if statement per trigger mode that is enabled when the 
 					--respective trigger mode is enabled.  If the trigger mode is active and the trigger state is also active, it enables the 
