@@ -307,8 +307,6 @@
         <signal name="ext_ip_addr(7:0)" />
         <signal name="ip_addr(7:0)" />
         <signal name="ip_addr1(7:0)" />
-        <signal name="ram_delay_clock_en" />
-        <signal name="ram_delay_clk_en" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -861,15 +859,6 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="416" y="-44" height="24" />
             <line x2="480" y1="-32" y2="-32" x1="416" />
-        </blockdef>
-        <blockdef name="fd">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <rect width="256" x="64" y="-320" height="256" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="64" y1="-256" y2="-256" x1="0" />
-            <line x2="320" y1="-256" y2="-256" x1="384" />
-            <line x2="64" y1="-128" y2="-144" x1="80" />
-            <line x2="80" y1="-112" y2="-128" x1="64" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
@@ -1942,7 +1931,7 @@
             <blockpin signalname="reset_force_veto" name="reset_force_veto" />
             <blockpin signalname="b_data(63:0)" name="data_out(63:0)" />
             <blockpin signalname="zero_cross_count(7:0)" name="zero_cross_count(7:0)" />
-            <blockpin signalname="ram_delay_clk_en" name="clock_enable" />
+            <blockpin signalname="ram_en" name="clock_enable" />
         </block>
         <block symbolname="data_send" name="XLXI_6253">
             <blockpin signalname="reset" name="rst" />
@@ -1960,7 +1949,7 @@
             <blockpin signalname="event_data_we" name="b_data_we" />
             <blockpin signalname="event_data_end" name="b_force_packet" />
             <blockpin signalname="event_data(63:0)" name="b_data(63:0)" />
-            <blockpin signalname="ram_delay_clk_en" name="clock_enable" />
+            <blockpin signalname="ram_en" name="clock_enable" />
         </block>
         <block symbolname="fd8re" name="XLXI_6418">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -2065,11 +2054,6 @@
         <block symbolname="ext_ip_addr_map" name="XLXI_6448">
             <blockpin signalname="ext_ip_addr(7:0)" name="ext_ip_addr(7:0)" />
             <blockpin signalname="ip_addr(7:0)" name="ip_addr_out(7:0)" />
-        </block>
-        <block symbolname="fd" name="XLXI_6449">
-            <blockpin signalname="MASTER_CLK" name="C" />
-            <blockpin signalname="ram_en" name="D" />
-            <blockpin signalname="ram_delay_clock_en" name="Q" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -3025,11 +3009,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2624" type="branch" />
             <wire x2="2336" y1="2624" y2="2624" x1="2320" />
         </branch>
-        <branch name="ram_delay_clk_en">
+        <branch name="ram_en">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="2176" type="branch" />
             <wire x2="4768" y1="2176" y2="2176" x1="4752" />
         </branch>
-        <branch name="ram_delay_clk_en">
+        <branch name="ram_en">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1984" type="branch" />
             <wire x2="5888" y1="1984" y2="1984" x1="5872" />
         </branch>
@@ -3077,19 +3061,6 @@
         </branch>
         <branch name="XLXN_15524">
             <wire x2="784" y1="1008" y2="1008" x1="752" />
-        </branch>
-        <instance x="3728" y="2720" name="XLXI_6449" orien="R0" />
-        <branch name="ram_en">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3712" y="2464" type="branch" />
-            <wire x2="3728" y1="2464" y2="2464" x1="3712" />
-        </branch>
-        <branch name="MASTER_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3712" y="2592" type="branch" />
-            <wire x2="3728" y1="2592" y2="2592" x1="3712" />
-        </branch>
-        <branch name="ram_delay_clock_en">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4128" y="2464" type="branch" />
-            <wire x2="4128" y1="2464" y2="2464" x1="4112" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">

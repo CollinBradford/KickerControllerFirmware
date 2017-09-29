@@ -9,43 +9,47 @@ Target Device  : xc4vlx25
 Target Package : ff668
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Fri Sep 29 13:37:33 2017
+Mapped Date    : Fri Sep 29 14:04:29 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:  153
+Number of warnings:   60
 Logic Utilization:
-  Number of Slice Flip Flops:         2,169 out of  21,504   10%
-  Number of 4 input LUTs:             4,375 out of  21,504   20%
+  Total Number Slice Registers:       3,780 out of  21,504   17%
+    Number used as Flip Flops:        3,779
+    Number used as Latches:               1
+  Number of 4 input LUTs:             5,761 out of  21,504   26%
 Logic Distribution:
-  Number of occupied Slices:          3,289 out of  10,752   30%
-    Number of Slices containing only related logic:   3,289 out of   3,289 100%
-    Number of Slices containing unrelated logic:          0 out of   3,289   0%
+  Number of occupied Slices:          4,795 out of  10,752   44%
+    Number of Slices containing only related logic:   4,795 out of   4,795 100%
+    Number of Slices containing unrelated logic:          0 out of   4,795   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,583 out of  21,504   21%
-    Number used as logic:             3,967
-    Number used as a route-thru:        208
+  Total Number of 4 input LUTs:       6,081 out of  21,504   28%
+    Number used as logic:             4,882
+    Number used as a route-thru:        320
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
-    Number used as Shift registers:      24
+    Number used as Shift registers:     495
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
   Number of bonded LOWCAPIOBs              2 out of     112    1%
   Number of bonded IOBs:                 86 out of     448   19%
-  Number of BUFG/BUFGCTRLs:              10 out of      32   31%
-    Number used as BUFGs:                10
-  Number of FIFO16/RAMB16s:              15 out of      72   20%
-    Number used as RAMB16s:              15
+  Number of BUFG/BUFGCTRLs:              11 out of      32   34%
+    Number used as BUFGs:                11
+  Number of FIFO16/RAMB16s:              24 out of      72   33%
+    Number used as RAMB16s:              24
   Number of DCM_ADVs:                     5 out of       8   62%
+  Number of BSCAN_VIRTEX4s:               1 out of       4   25%
   Number of IDELAYCTRLs:                  1 out of      16    6%
 
-Average Fanout of Non-Clock Nets:                3.45
+  Number of RPM macros:           13
+Average Fanout of Non-Clock Nets:                3.32
 
-Peak Memory Usage:  598 MB
-Total REAL time to MAP completion:  44 secs 
-Total CPU time to MAP completion:   42 secs 
+Peak Memory Usage:  649 MB
+Total REAL time to MAP completion:  1 mins 1 secs 
+Total CPU time to MAP completion:   58 secs 
 
 Table of Contents
 -----------------
@@ -100,134 +104,18 @@ WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
    "XLXI_5993" (output signal=CLK_375) has a mix of clock and non-clock loads.
    The non-clock loads are:
    Pin I2 of XLXI_6004/I_36_8
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<63>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<30>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<62>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<22>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<61>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<24>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<60>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<25>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<59>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<58>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<57>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<56>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<55>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<54>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<53>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<44>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<52>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<51>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<50>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<49>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<48>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<47>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<46>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<45>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<43>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<42>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<41>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<40>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<39>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<38>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<37>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<36>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<35>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<26>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<34>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<33>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<32>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<31>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<30>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<29>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<28>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<27>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<25>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<24>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<23>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<22>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<21>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<20>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<19>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<18>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<17>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<8>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<16>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<15>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<14>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<13>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<12>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<11>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<10>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<9>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<7>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<6>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<5>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<4>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<3>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<2>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<1>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6380/douta<0>> is incomplete. The signal does not drive any load pins in
-   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6004/O> is incomplete. The signal does not drive any load pins in the
+   design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D15> is incomplete. The signal does not drive any load pins in the
    design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The signal does not drive any load pins in the
@@ -240,117 +128,69 @@ WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D11> is incomplete. The sign
    design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D12> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The signal does not drive any load pins in the
-   design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The signal does not drive any load pins in the
    design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<35>> is incomplete. The signal does not drive any load pins in
+   the design.
 WARNING:PhysDesignRules:367 - The signal
    <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> is incomplete.
    The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<5>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<7>> is incomplete. The signal does not drive any load
-   pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <threshold<0>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<5>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <veto_enabled> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6004/O> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <threshold<4>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <threshold<5>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<8>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<9>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<6>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<7>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <trig_types<1>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <trig_types<3>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <trig_types<7>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<6>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <trig_types<4>> is incomplete. The signal does not drive any load pins in the
-   design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<28>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<29>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<33>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<17>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<23>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<27>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<31>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<10>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<15>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<7>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<11>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<16>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<18>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<34>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<26>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<32>> is incomplete. The signal does not drive any load pins in
+   the design.
 WARNING:PhysDesignRules:367 - The signal <trig_types<5>> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<2>> is incomplete. The signal does not drive any load pins in the
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<7>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<0>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<1>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<1>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<2>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <trig_types<6>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<9>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <trig_types<0>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<4>> is incomplete. The signal does not drive any load
-   pins in the design.
-WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<5>> is incomplete. The signal does not drive any load
-   pins in the design.
-WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<1>> is incomplete. The signal does not drive any load
-   pins in the design.
-WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<2>> is incomplete. The signal does not drive any load
-   pins in the design.
-WARNING:PhysDesignRules:367 - The signal <threshold<6>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <threshold<7>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<3>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6394/Q<4>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<0>> is incomplete. The signal does not drive any load
-   pins in the design.
-WARNING:PhysDesignRules:367 - The signal <threshold<2>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <threshold<3>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<0>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<3>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<4>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6410/Q<8>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<3>> is incomplete. The signal does not drive any load
-   pins in the design.
-WARNING:PhysDesignRules:367 - The signal <zero_cross_veto_thresh<6>> is incomplete. The signal does not drive any load
-   pins in the design.
-WARNING:PhysDesignRules:367 - The signal <threshold<1>> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>>
-   is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<12>> is incomplete. The signal does not drive any load pins in the
    design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The signal does not drive any load pins in the
    design.
+WARNING:PhysDesignRules:367 - The signal <trig_types<6>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <trig_types<7>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>>
+   is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_5338/GLOBAL_LOGIC1> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6415/GLOBAL_LOGIC0> is incomplete. The signal does not drive any load
    pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6>> is incomplete. The signal
    does not drive any load pins in the design.
@@ -360,51 +200,26 @@ WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fif
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full> is incomplete. The signal
    does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
-   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss
-   .rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.r
-   sts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
-   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_data_fifo_empty> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/RX_DATA_FIFO/empty> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
-   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss
-   .wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
-   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.w
-   sts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/full> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/empty> is incomplete. The signal does
    not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network threshold<0> has no load.
-INFO:LIT:395 - The above info message is repeated 357 more times for the
+INFO:LIT:243 - Logical network trig_types<5> has no load.
+INFO:LIT:395 - The above info message is repeated 273 more times for the
    following (max. 5 shown):
-   threshold<1>,
-   threshold<2>,
-   threshold<3>,
-   threshold<4>,
-   threshold<5>
+   trig_types<6>,
+   trig_types<7>,
+   icon_control0<10>,
+   icon_control0<11>,
+   icon_control0<15>
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
 INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
    Please note that there are new specifications for the DCMs to guarantee
    maximum frequency performance. If the DCM input clock might stop or if the
@@ -585,9 +400,9 @@ INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance w
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 108 block(s) removed
- 125 block(s) optimized away
-  90 signal(s) removed
+  61 block(s) removed
+ 329 block(s) optimized away
+  43 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -602,80 +417,43 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[1].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSR" (ROM) removed.
+Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B"
+(ROM) removed.
 Loadless block "XLXI_6009" (CKBUF) removed.
 Loadless block "XLXI_6202" (CKBUF) removed.
  The signal "XLXN_15092" is loadless and has been removed.
-Loadless block "XLXI_6251/I_Q0" (SFF) removed.
-Loadless block "XLXI_6251/I_Q1" (SFF) removed.
-Loadless block "XLXI_6251/I_Q10" (SFF) removed.
-Loadless block "XLXI_6251/I_Q11" (SFF) removed.
-Loadless block "XLXI_6251/I_Q12" (SFF) removed.
-Loadless block "XLXI_6251/I_Q13" (SFF) removed.
-Loadless block "XLXI_6251/I_Q14" (SFF) removed.
-Loadless block "XLXI_6251/I_Q15" (SFF) removed.
-Loadless block "XLXI_6251/I_Q2" (SFF) removed.
-Loadless block "XLXI_6251/I_Q3" (SFF) removed.
-Loadless block "XLXI_6251/I_Q4" (SFF) removed.
-Loadless block "XLXI_6251/I_Q5" (SFF) removed.
-Loadless block "XLXI_6251/I_Q6" (SFF) removed.
-Loadless block "XLXI_6251/I_Q7" (SFF) removed.
-Loadless block "XLXI_6251/I_Q8" (SFF) removed.
-Loadless block "XLXI_6251/I_Q9" (SFF) removed.
-Loadless block "XLXI_6394/I_Q10" (SFF) removed.
- The signal "rx_data<34>" is loadless and has been removed.
-Loadless block "XLXI_6394/I_Q11" (SFF) removed.
- The signal "rx_data<35>" is loadless and has been removed.
-Loadless block "XLXI_6394/I_Q12" (SFF) removed.
- The signal "rx_data<36>" is loadless and has been removed.
-Loadless block "XLXI_6394/I_Q13" (SFF) removed.
- The signal "rx_data<37>" is loadless and has been removed.
-Loadless block "XLXI_6394/I_Q14" (SFF) removed.
- The signal "rx_data<38>" is loadless and has been removed.
-Loadless block "XLXI_6394/I_Q15" (SFF) removed.
- The signal "rx_data<39>" is loadless and has been removed.
 Loadless block "XLXI_6408" (BUF) removed.
  The signal "U10_2" is loadless and has been removed.
   Loadless block "U10_2" (PAD) removed.
-Loadless block "XLXI_6410/I_Q10" (SFF) removed.
- The signal "rx_data<50>" is loadless and has been removed.
-  Loadless block "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_50" (SFF)
-removed.
-Loadless block "XLXI_6410/I_Q11" (SFF) removed.
- The signal "rx_data<51>" is loadless and has been removed.
-  Loadless block "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_51" (SFF)
-removed.
-Loadless block "XLXI_6410/I_Q12" (SFF) removed.
- The signal "rx_data<52>" is loadless and has been removed.
-  Loadless block "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_52" (SFF)
-removed.
-Loadless block "XLXI_6410/I_Q13" (SFF) removed.
- The signal "rx_data<53>" is loadless and has been removed.
-  Loadless block "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_53" (SFF)
-removed.
-Loadless block "XLXI_6410/I_Q14" (SFF) removed.
- The signal "rx_data<54>" is loadless and has been removed.
-  Loadless block "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_54" (SFF)
-removed.
-Loadless block "XLXI_6410/I_Q15" (SFF) removed.
- The signal "rx_data<55>" is loadless and has been removed.
-  Loadless block "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_55" (SFF)
-removed.
-Loadless block "XLXI_6418/I_Q0" (SFF) removed.
-Loadless block "XLXI_6418/I_Q1" (SFF) removed.
-Loadless block "XLXI_6418/I_Q2" (SFF) removed.
-Loadless block "XLXI_6418/I_Q3" (SFF) removed.
-Loadless block "XLXI_6418/I_Q4" (SFF) removed.
-Loadless block "XLXI_6418/I_Q5" (SFF) removed.
-Loadless block "XLXI_6418/I_Q6" (SFF) removed.
-Loadless block "XLXI_6418/I_Q7" (SFF) removed.
-Loadless block "XLXI_6419/I_Q0" (SFF) removed.
-Loadless block "XLXI_6419/I_Q1" (SFF) removed.
-Loadless block "XLXI_6419/I_Q2" (SFF) removed.
-Loadless block "XLXI_6419/I_Q3" (SFF) removed.
-Loadless block "XLXI_6419/I_Q4" (SFF) removed.
-Loadless block "XLXI_6419/I_Q5" (SFF) removed.
-Loadless block "XLXI_6419/I_Q6" (SFF) removed.
-Loadless block "XLXI_6419/I_Q7" (SFF) removed.
 Loadless block "XLXI_6436" (BUF) removed.
 Loadless block "XLXI_6437" (BUF) removed.
 Loadless block "XLXI_6439" (BUF) removed.
@@ -702,126 +480,9 @@ Loadless block "XLXI_6446" (BUF) removed.
 Loadless block "XLXI_6447" (BUF) removed.
  The signal "IP_MAC_7" is loadless and has been removed.
   Loadless block "IP_MAC_7" (PAD) removed.
-Loadless block "XLXI_6449" (FF) removed.
 The signal "XLXI_6227/internal_din<0>" is sourceless and has been removed.
 The signal "XLXI_6227/self_port<0>" is sourceless and has been removed.
 The signal "XLXI_6227/user_tx_size_in<0>" is sourceless and has been removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/N01" is sourceless and has
-been removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/N10" is sourceless and has
-been removed.
- Sourceless block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>30" (ROM)
-removed.
-  The signal
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>30" is
-sourceless and has been removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/N111" is sourceless and has
-been removed.
- Sourceless block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<6>_SW0"
-(ROM) removed.
- Sourceless block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<7>_SW0"
-(ROM) removed.
-  The signal "XLXI_6227/burst_traffic_controller_blk/N2" is sourceless and has
-been removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/N16" is sourceless and has
-been removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/N18" is sourceless and has
-been removed.
- Sourceless block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<3>51" (ROM)
-removed.
-  The signal "XLXI_6227/burst_traffic_controller_blk/N25" is sourceless and has
-been removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/N23" is sourceless and has
-been removed.
- Sourceless block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>60_SW0"
-(ROM) removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/N8" is sourceless and has
-been removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/N9" is sourceless and has
-been removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_or000013"
-is sourceless and has been removed.
- Sourceless block
-"XLXI_6227/burst_traffic_controller_blk/clocks_since_send_or000021" (ROM)
-removed.
-  The signal "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_or000021"
-is sourceless and has been removed.
-The signal
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<1>16" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<3>17" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<4>" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>111" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<6>" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<7>" is
-sourceless and has been removed.
-The signal "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_or000013/O"
-is sourceless and has been removed.
- Sourceless block
-"XLXI_6227/burst_traffic_controller_blk/clocks_since_send_or000013/LUT4_L_BUF"
-(BUF) removed.
-The signal
-"XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<2>" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<3>" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<4>" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<5>" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<6>" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<7>" is
-sourceless and has been removed.
-The signal "XLXI_6227/data_manager_blk/burst_controller_sm/just_reset_mux0002"
-is sourceless and has been removed.
-The signal "XLXI_6227/data_manager_blk/burst_controller_sm/reset_inv" is
-sourceless and has been removed.
-The signal
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux000033" is sourceless and has been removed.
- Sourceless block
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux0000162_SW0" (ROM) removed.
-  The signal "XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/N01" is sourceless and
-has been removed.
-The signal
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux000060" is sourceless and has been removed.
-The signal
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux000088" is sourceless and has been removed.
- Sourceless block
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux0000133" (ROM) removed.
-  The signal
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux0000133/O" is sourceless and has been removed.
-The signal
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux0000131" is sourceless and has been removed.
 The signal "XLXI_6227/ec_wrapper/udp_fwd_port<0>" is sourceless and has been
 removed.
 The signal "XLXI_6227/ec_wrapper/udp_fwd_port<10>" is sourceless and has been
@@ -887,61 +548,58 @@ The trimmed logic reported below is either:
    3. a side-effect of other trimmed logic
 
 The signal "tx_data<34>" is unused and has been removed.
-Unused block "XLXI_6227/burst_traffic_controller_blk/clocks_since_send_or000013"
-(ROM) removed.
 Unused block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<1>16" (ROM)
-removed.
-Unused block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<2>_SW1"
-(ROM) removed.
-Unused block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<3>17" (ROM)
-removed.
-Unused block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<3>21" (ROM)
-removed.
-Unused block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<3>51_SW2"
-(ROM) removed.
-Unused block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>111"
-(ROM) removed.
-Unused block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>21" (ROM)
-removed.
-Unused block
-"XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>211"
-(ROM) removed.
+"XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empt
+y_i" (FF) removed.
 Unused block "XLXI_6227/data_manager_blk/RX_DATA_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/RX_DATA_FIFO/VCC" (ONE) removed.
 Unused block "XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/VCC" (ONE) removed.
+Unused block
+"XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/
+grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/
+grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/g
+rf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/g
+rf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf
+/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf
+/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empt
+y_i" (FF) removed.
+Unused block
+"XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
+_i" (FF) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/VCC" (ONE) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/VCC" (ONE) removed.
 Unused block
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux0000131" (ROM) removed.
+"XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/
+grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i" (FF) removed.
 Unused block
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux000033" (ROM) removed.
-Unused block
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux000060" (ROM) removed.
-Unused block
-"XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full
-_i_mux000088" (ROM) removed.
+"XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/
+grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i" (FF) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_DATA_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_DATA_FIFO/VCC" (ONE) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/GND" (ZERO) removed.
 Unused block "XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/VCC" (ONE) removed.
-Unused block "XLXI_6227/data_manager_blk/burst_controller_sm/reset_inv1_INV_0"
-(BUF) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
+GND 		U_icon_pro/XST_GND
+VCC 		U_icon_pro/XST_VCC
+GND 		U_ila_pro_0/XST_GND
+VCC 		U_ila_pro_0/XST_VCC
 AND2B1 		XLXI_6057/I_36_7
 BUF 		XLXI_6135
 GND 		XLXI_6338
@@ -949,7 +607,6 @@ GND 		XLXI_6341/XST_GND
 VCC 		XLXI_6346
 GND 		XLXI_6380/XST_GND
 VCC 		XLXI_6380/XST_VCC
-AND2 		XLXI_6438
 GND 		XLXI_4359/XST_GND
 VCC 		XLXI_4359/XST_VCC
 LUT3 		XLXI_5338/Mmux_muxout_656
@@ -959,64 +616,8 @@ GND 		XLXI_6185/XST_GND
 VCC 		XLXI_6185/XST_VCC
 GND 		XLXI_6227/XST_GND
 VCC 		XLXI_6227/XST_VCC
-LUT2 		XLXI_6227/b_masked_we1
-   optimized to 0
 GND 		XLXI_6227/burst_traffic_controller_blk/XST_GND
 VCC 		XLXI_6227/burst_traffic_controller_blk/XST_VCC
-LUT2_L 		XLXI_6227/burst_traffic_controller_blk/clocks_since_send_or0000111
-	Property STUCK_AT NOT found
-LOCALBUF
-		XLXI_6227/burst_traffic_controller_blk/clocks_since_send_or0000111/LUT2_L_BUF
-FDRE 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_0
-	Property STUCK_AT NOT found
-FDRE 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_1
-	Property STUCK_AT NOT found
-FDRE 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_2
-	Property STUCK_AT NOT found
-FDRE 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_3
-	Property STUCK_AT NOT found
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<0>19
-	Property STUCK_AT NOT found
-LUT3
-		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<0>35_F
-   optimized to 0
-LUT3
-		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<0>35_G
-   optimized to 0
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<1>12
-	Property STUCK_AT NOT found
-LUT4
-		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<1>72_F
-   optimized to 0
-LUT4
-		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<1>72_G
-   optimized to 0
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<2>_F
-   optimized to 0
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<2>_G
-   optimized to 0
-LUT4
-		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<3>33_F
-   optimized to 0
-LUT3
-		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<3>33_G
-   optimized to 0
-LUT3 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<3>42
-	Property STUCK_AT NOT found
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<4>1
-   optimized to 0
-LUT3 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<4>111
-	Property STUCK_AT NOT found
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>60
-	Property STUCK_AT NOT found
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<5>83
-   optimized to 0
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<6>
-   optimized to 0
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<6>111
-   optimized to 1
-LUT4 		XLXI_6227/burst_traffic_controller_blk/writes_in_curr_burst_mux0001<7>
-   optimized to 0
 GND 		XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND
 VCC 		XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_VCC
 GND 		XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_GND
@@ -1025,23 +626,6 @@ GND 		XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_GND
 VCC 		XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_VCC
 GND 		XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_GND
 VCC 		XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_VCC
-LUT4
-		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_emp
-ty_fb_i_mux0000180
-	Property STUCK_AT NOT found
-LUT3_L
-		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_emp
-ty_fb_i_mux0000180_SW0
-	Property STUCK_AT NOT found
-LOCALBUF
-		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_emp
-ty_fb_i_mux0000180_SW0/LUT3_L_BUF
-LUT4
-		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_ful
-l_i_mux000085
-	Property STUCK_AT NOT found
-LUT2 		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.wr/ram_wr_en_i1
-   optimized to 0
 GND 		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND
 VCC 		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_VCC
 GND 		XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND
@@ -1052,104 +636,7 @@ GND 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_GND
 VCC 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_VCC
 GND 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_GND
 VCC 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_VCC
-LUT4 		XLXI_6227/data_manager_blk/burst_controller_sm/Sreg0_cmp_eq000018
-	Property STUCK_AT NOT found
-LUT2 		XLXI_6227/data_manager_blk/burst_controller_sm/Sreg0_cmp_eq000019
-	Property STUCK_AT NOT found
-LUT4 		XLXI_6227/data_manager_blk/burst_controller_sm/Sreg0_cmp_eq00007
-	Property STUCK_AT NOT found
 GND 		XLXI_6227/data_manager_blk/burst_controller_sm/XST_GND
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_0
-	Property STUCK_AT NOT found
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_1
-	Property STUCK_AT NOT found
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_2
-	Property STUCK_AT NOT found
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_3
-	Property STUCK_AT NOT found
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_4
-	Property STUCK_AT NOT found
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_5
-	Property STUCK_AT NOT found
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<0>12
-	Property STUCK_AT NOT found
-LUT3
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<0>21
-	Property STUCK_AT NOT found
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<0>35
-	Property STUCK_AT NOT found
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<0>73_F
-   optimized to 0
-LUT3
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<0>73_G
-   optimized to 0
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<1>12
-	Property STUCK_AT NOT found
-LUT3
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<1>57_F
-   optimized to 0
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<1>57_G
-   optimized to 0
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<2>11
-	Property STUCK_AT NOT found
-LUT2
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<2>11_S
-W0
-	Property STUCK_AT NOT found
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<2>17
-	Property STUCK_AT NOT found
-LUT2
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<2>23
-   optimized to 0
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<2>8
-	Property STUCK_AT NOT found
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<3>
-   optimized to 0
-LUT3
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<3>_SW2
-	Property STUCK_AT NOT found
-LUT3
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<4>1
-   optimized to 0
-LUT3
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<4>111
-	Property STUCK_AT NOT found
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<5>1
-   optimized to 0
-LUT3
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<6>1
-   optimized to 0
-LUT4
-		XLXI_6227/data_manager_blk/burst_controller_sm/b_packet_qw_size_mux0001<7>1
-   optimized to 0
-FDE 		XLXI_6227/data_manager_blk/burst_controller_sm/just_reset
-	Property STUCK_AT NOT found
-LUT4 		XLXI_6227/data_manager_blk/burst_controller_sm/just_reset_mux000211
-   optimized to 0
-LUT4 		XLXI_6227/data_manager_blk/burst_controller_sm/just_reset_mux00022
-   optimized to 0
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_10
-   optimized to 0
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_11
-   optimized to 0
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_12
-   optimized to 0
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_13
-   optimized to 0
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_8
-   optimized to 0
-FDRE 		XLXI_6227/data_manager_blk/burst_controller_sm/tx_info_9
-   optimized to 0
 GND 		XLXI_6227/ec_wrapper/crcSplice/XST_GND
 VCC 		XLXI_6227/ec_wrapper/ethernet_controller/AddressContainer/XST_VCC
 GND 		XLXI_6227/ec_wrapper/ethernet_controller/ArpReplyBlock/XST_GND
@@ -1166,9 +653,10 @@ GND 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/XST_GND
 VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/XST_VCC
 GND 		XLXI_6227/reset_mgr/XST_GND
 VCC 		XLXI_6227/reset_mgr/XST_VCC
+GND 		XLXI_6253/XST_GND
+VCC 		XLXI_6253/XST_VCC
 GND 		XLXI_6349/XST_GND
 VCC 		XLXI_6349/XST_VCC
-GND 		XLXI_6415/XST_GND
 VCC 		XLXI_6415/XST_VCC
 
 To enable printing of redundant blocks removed and signals merged, set the
@@ -1273,6 +761,24 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CDONE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCMPCE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WHCMPCE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WLCMPCE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_SCNT_CMP_I_SRL16.U
+_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_HCMP_I_SRL16.
+U_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_LCMP_I_SRL16.
+U_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_
+SRL16.U_GANDX_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_
+SRL16.U_GANDX_SRL16_MSET
 
 Section 8 - Guide Report
 ------------------------

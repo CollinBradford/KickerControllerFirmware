@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -185,22 +185,17 @@ Architecture behavioral of Entity peakfinder is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd" in Library work.
 Architecture ethernetram_a of Entity ethernetram is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.vhd" in Library work.
-Architecture behavioral of Entity event_analysis is up to date.
+Entity <event_analysis> compiled.
+Entity <event_analysis> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ext_ip_addr_map.vhd" in Library work.
 Architecture behavioral of Entity ext_ip_addr_map is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Entity <obuf8_mxilinx_top_level> compiled.
-Entity <obuf8_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <fd8re_mxilinx_top_level> compiled.
-Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <fd16re_mxilinx_top_level> compiled.
-Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <m2_1_mxilinx_top_level> compiled.
-Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <d4_16e_mxilinx_top_level> compiled.
-Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <top_level> compiled.
-Entity <top_level> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity obuf8_mxilinx_top_level is up to date.
+Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
+Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
+Architecture behavioral of Entity top_level is up to date.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -319,13 +314,13 @@ Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1361: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1361: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1361: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1361: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1361: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1361: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1361: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1351: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1351: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1351: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1351: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1351: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1351: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1351: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
@@ -465,7 +460,7 @@ WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vh
     Set user-defined property "DRIVE =  12" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  FAST" for instance <XLXI_5999> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1635: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1625: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_6004_1" for instance <XLXI_6004> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6016> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6025> in unit <TOP_LEVEL>.
@@ -590,8 +585,8 @@ WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vh
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6229> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6247_6" for instance <XLXI_6247> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6251_5" for instance <XLXI_6251> in unit <TOP_LEVEL>.
-WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2049: Instantiating black box module <ADC_FIFO>.
-WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2083: Instantiating black box module <EthernetRAM>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2039: Instantiating black box module <ADC_FIFO>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2073: Instantiating black box module <EthernetRAM>.
     Set user-defined property "HU_SET =  XLXI_6394_7" for instance <XLXI_6394> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6396> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6404> in unit <TOP_LEVEL>.
@@ -610,7 +605,7 @@ WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.v
     Set user-defined property "INIT =  0" for instance <XLXI_6421> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6422> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6423> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2206: Unconnected output port 'O' of component 'OBUF8_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2196: Unconnected output port 'O' of component 'OBUF8_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_6435_13" for instance <XLXI_6435> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6436> in unit <TOP_LEVEL>.
     Set user-defined property "DRIVE =  12" for instance <XLXI_6436> in unit <TOP_LEVEL>.
@@ -636,7 +631,6 @@ WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vh
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6446> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6447> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6447> in unit <TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <XLXI_6449> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
 Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
@@ -811,10 +805,10 @@ Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <beha
 Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
 
 Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
-WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 121: Width mismatch. <startAddr> has a width of 10 bits but assigned expression is 16-bit wide.
-WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 122: Width mismatch. <endAddr> has a width of 10 bits but assigned expression is 16-bit wide.
-WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 108: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <rst>, <clock_enable>
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 125: Width mismatch. <startAddr> has a width of 10 bits but assigned expression is 16-bit wide.
+WARNING:Xst:1610 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 126: Width mismatch. <endAddr> has a width of 10 bits but assigned expression is 16-bit wide.
+WARNING:Xst:819 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" line 109: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rst>
 Entity <data_send> analyzed. Unit <data_send> generated.
 
 Analyzing Entity <ClockLatchSignals> in library <work> (Architecture <behavioral>).
@@ -915,32 +909,36 @@ WARNING:Xst:1780 - Signal <burstWrEn> is never used or assigned. This unconnecte
     Found 64-bit register for signal <b_data>.
     Found 1-bit register for signal <b_data_we>.
     Found 1-bit register for signal <armed>.
-    Found 10-bit comparator equal for signal <b_data$cmp_eq0000> created at line 139.
+    Found 10-bit comparator equal for signal <armed$cmp_eq0000> created at line 143.
+    Found 10-bit comparator not equal for signal <b_data$cmp_ne0000> created at line 143.
     Found 64-bit 4-to-1 multiplexer for signal <b_data$mux0000>.
+    Found 10-bit comparator equal for signal <b_data_we$cmp_eq0000> created at line 160.
     Found 1-bit register for signal <busy>.
+    Found 1-bit register for signal <delayed_clk_en>.
     Found 10-bit register for signal <endAddr>.
-    Found 10-bit adder for signal <endAddr$add0000> created at line 122.
-    Found 10-bit adder for signal <endAddr$addsub0000> created at line 122.
+    Found 10-bit adder for signal <endAddr$add0000> created at line 126.
+    Found 10-bit adder for signal <endAddr$addsub0000> created at line 126.
     Found 1-bit register for signal <headerTwoStart>.
     Found 8-bit up counter for signal <missedTriggerCount>.
     Found 16-bit register for signal <positiveDelayTimer>.
-    Found 16-bit adder for signal <positiveDelayTimer$addsub0000> created at line 135.
+    Found 16-bit adder for signal <positiveDelayTimer$addsub0000> created at line 139.
     Found 1-bit register for signal <reading>.
     Found 16-bit register for signal <sampleSize>.
-    Found 16-bit adder for signal <sampleSize$add0000> created at line 120.
+    Found 16-bit adder for signal <sampleSize$add0000> created at line 124.
     Found 1-bit register for signal <sendUDP>.
-    Found 10-bit comparator equal for signal <sendUDP$cmp_eq0000> created at line 156.
+    Found 10-bit comparator not equal for signal <sendUDP$cmp_ne0000> created at line 160.
     Found 10-bit register for signal <startAddr>.
-    Found 10-bit adder for signal <startAddr$addsub0000> created at line 121.
-    Found 10-bit subtractor for signal <startAddr$sub0000> created at line 121.
+    Found 10-bit adder for signal <startAddr$addsub0000> created at line 125.
+    Found 10-bit subtractor for signal <startAddr$sub0000> created at line 125.
     Found 1-bit register for signal <timing>.
-    Found 16-bit comparator equal for signal <timing$cmp_eq0000> created at line 129.
+    Found 16-bit comparator equal for signal <timing$cmp_eq0000> created at line 133.
+    Found 16-bit comparator not equal for signal <timing$cmp_ne0000> created at line 133.
     Found 32-bit up counter for signal <triggerCount>.
     Summary:
 	inferred   2 Counter(s).
-	inferred 123 D-type flip-flop(s).
+	inferred 124 D-type flip-flop(s).
 	inferred   6 Adder/Subtractor(s).
-	inferred   3 Comparator(s).
+	inferred   6 Comparator(s).
 	inferred  64 Multiplexer(s).
 Unit <data_send> synthesized.
 
@@ -1026,68 +1024,69 @@ WARNING:Xst:646 - Signal <headerDelayTwo> is assigned but never used. This uncon
     Found 1-bit register for signal <busy>.
     Found 64-bit 8-to-1 multiplexer for signal <data_out$mux0000>.
     Found 1-bit register for signal <dataOutEnd>.
+    Found 1-bit register for signal <del_clk_en>.
     Found 1-bit register for signal <finish>.
     Found 1-bit register for signal <headerDelayOne>.
     Found 1-bit register for signal <lastSigHigh>.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0000> created at line 187.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0001> created at line 187.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0002> created at line 187.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0003> created at line 187.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0004> created at line 187.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0005> created at line 187.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0006> created at line 187.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0007> created at line 187.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0000> created at line 187.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0001> created at line 187.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0002> created at line 187.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0003> created at line 187.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0004> created at line 187.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0005> created at line 187.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0006> created at line 187.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0007> created at line 187.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0000> created at line 190.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0001> created at line 190.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0002> created at line 190.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0003> created at line 190.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0004> created at line 190.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0005> created at line 190.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0006> created at line 190.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0007> created at line 190.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0000> created at line 190.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0001> created at line 190.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0002> created at line 190.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0003> created at line 190.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0004> created at line 190.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0005> created at line 190.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0006> created at line 190.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0007> created at line 190.
     Found 1-bit register for signal <lastSigLow>.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0000> created at line 179.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0001> created at line 179.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0002> created at line 179.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0003> created at line 179.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0004> created at line 179.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0005> created at line 179.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0006> created at line 179.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0007> created at line 179.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0000> created at line 192.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0001> created at line 192.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0002> created at line 192.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0003> created at line 192.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0004> created at line 192.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0005> created at line 192.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0006> created at line 192.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0007> created at line 192.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0000> created at line 192.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0001> created at line 192.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0002> created at line 192.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0003> created at line 192.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0004> created at line 192.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0005> created at line 192.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0006> created at line 192.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0007> created at line 192.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0000> created at line 182.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0001> created at line 182.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0002> created at line 182.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0003> created at line 182.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0004> created at line 182.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0005> created at line 182.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0006> created at line 182.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0007> created at line 182.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0000> created at line 195.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0001> created at line 195.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0002> created at line 195.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0003> created at line 195.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0004> created at line 195.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0005> created at line 195.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0006> created at line 195.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0007> created at line 195.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0000> created at line 195.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0001> created at line 195.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0002> created at line 195.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0003> created at line 195.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0004> created at line 195.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0005> created at line 195.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0006> created at line 195.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0007> created at line 195.
     Found 1-bit register for signal <prepareEnd>.
     Found 1-bit register for signal <resetClearVeto>.
     Found 1-bit register for signal <resetForceVeto>.
     Found 1-bit register for signal <sendFooter>.
     Found 1-bit register for signal <vetoed>.
-    Found 8-bit comparator lessequal for signal <vetoed$cmp_le0000> created at line 209.
+    Found 8-bit comparator lessequal for signal <vetoed$cmp_le0000> created at line 212.
     Found 8-bit register for signal <zeroCrossCount>.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0000> created at line 171.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0001> created at line 171.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0002> created at line 171.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0003> created at line 171.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0004> created at line 171.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0005> created at line 171.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0006> created at line 171.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0007> created at line 171.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0000> created at line 174.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0001> created at line 174.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0002> created at line 174.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0003> created at line 174.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0004> created at line 174.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0005> created at line 174.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0006> created at line 174.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0007> created at line 174.
     Found 8-bit adder for signal <zeroCrossCount$mux0000>.
     Summary:
-	inferred  85 D-type flip-flop(s).
+	inferred  86 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred  49 Comparator(s).
 	inferred  64 Multiplexer(s).
@@ -1838,8 +1837,6 @@ Synthesizing Unit <TOP_LEVEL>.
 WARNING:Xst:653 - Signal <trig_debug<63:32>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:646 - Signal <rx_addr<31:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <ram_delay_clock_en> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <ram_delay_clk_en> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <psi_status<55:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <ip_addr1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:646 - Signal <ip_addr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1904,8 +1901,8 @@ Macro Statistics
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 2
-# Registers                                            : 723
- 1-bit register                                        : 625
+# Registers                                            : 725
+ 1-bit register                                        : 627
  10-bit register                                       : 3
  11-bit register                                       : 8
  16-bit register                                       : 8
@@ -1923,13 +1920,15 @@ Macro Statistics
  3-bit latch                                           : 1
  4-bit latch                                           : 1
  8-bit latch                                           : 1
-# Comparators                                          : 105
+# Comparators                                          : 108
  10-bit comparator equal                               : 2
+ 10-bit comparator not equal                           : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
  16-bit comparator equal                               : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
+ 16-bit comparator not equal                           : 1
  17-bit comparator greater                             : 1
  32-bit comparator equal                               : 1
  34-bit comparator greatequal                          : 1
@@ -2324,118 +2323,6 @@ WARNING:Xst:1290 - Hierarchical block <XLXI_6331> is unconnected in block <TOP_L
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6448> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_5> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_6> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_7> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_0> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_1> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_2> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_3> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_4> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_5> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_6> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_7> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_8> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_9> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_10> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_11> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_12> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_13> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_14> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_15> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_16> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_17> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_18> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_51> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_52> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_53> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_54> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_55> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_56> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_57> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_58> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_59> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_60> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_61> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_62> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_63> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_we> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <prepareEnd> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sendFooter> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <dataOutEnd> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <finish> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_0> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_1> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_2> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_3> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_4> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_42> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_43> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_44> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_45> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_46> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_47> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_48> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_49> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_50> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_51> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_52> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_53> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_54> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_55> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_56> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_57> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_58> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_59> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_60> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_61> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_62> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_63> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_19> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_20> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_21> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_22> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_23> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_24> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_25> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_26> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_27> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_28> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_29> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_30> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_31> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_32> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_33> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_34> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_35> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_36> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_37> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_38> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_39> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_40> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_41> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_10> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_11> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_12> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_13> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_14> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_15> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_1> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_2> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_3> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_4> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_5> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_6> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_7> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_8> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endAddr_9> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_1> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_2> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_3> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_4> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_5> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <add_sig_16> has a constant value of 0 in block <ChecksumCalcBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_0> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_1> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
@@ -2443,90 +2330,8 @@ WARNING:Xst:1710 - FF/Latch <test_data_2> (without init value) has a constant va
 WARNING:Xst:1710 - FF/Latch <test_data_3> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_7> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <tx_er> (without init value) has a constant value of 0 in block <crcSplice>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <force_packet_old> (without init value) has a constant value of 0 in block <burst_traffic_controller_blk>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <internal_eth_dout_48> (without init value) has a constant value of 0 in block <XLXI_6227>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sendUDP> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_we> (without init value) has a constant value of 1 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <reading> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <headerTwoStart> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_1> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_2> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_3> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_4> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_5> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_6> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_7> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_8> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sampleSize_9> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_29> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_30> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_31> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_32> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_33> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_34> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_35> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_36> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_37> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_38> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_39> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_40> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_41> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_42> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_43> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_44> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_45> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_46> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_47> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_48> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_49> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_50> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_6> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_7> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_8> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_9> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_10> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_11> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_12> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_13> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_14> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_15> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_16> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_17> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_18> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_19> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_20> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_21> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_22> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_23> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_24> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_25> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_26> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_27> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_28> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_0> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_1> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_2> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_3> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_4> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_5> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_6> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_7> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_8> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trigger_address_9> is unconnected in block <XLXI_6349>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ram_wdata_48> is unconnected in block <RAM_COMM_DEC>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ram_wdata_49> is unconnected in block <RAM_COMM_DEC>.
 WARNING:Xst:1710 - FF/Latch <test_data_6> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1290 - Hierarchical block <XLXI_6251> is unconnected in block <TOP_LEVEL>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <XLXI_6253> is unconnected in block <TOP_LEVEL>.
-   It will be removed from the design.
-WARNING:Xst:2677 - Node <lastThreshTrigState> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_active> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <extTrigLatched> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <lastExtTrigState> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:1290 - Hierarchical block <XLXI_6394> is unconnected in block <TOP_LEVEL>.
-   It will be removed from the design.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -2557,20 +2362,22 @@ Macro Statistics
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 2
-# Registers                                            : 2261
- Flip-Flops                                            : 2261
+# Registers                                            : 2262
+ Flip-Flops                                            : 2262
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
  4-bit latch                                           : 1
  8-bit latch                                           : 1
-# Comparators                                          : 105
+# Comparators                                          : 108
  10-bit comparator equal                               : 2
+ 10-bit comparator not equal                           : 2
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
  16-bit comparator equal                               : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
+ 16-bit comparator not equal                           : 1
  17-bit comparator greater                             : 1
  32-bit comparator equal                               : 1
  34-bit comparator greatequal                          : 1
@@ -2718,214 +2525,7 @@ Optimizing unit <ethernet_controller> ...
 Optimizing unit <ethernet_controller_wrapper> ...
 
 Optimizing unit <ethernet_interface> ...
-WARNING:Xst:1710 - FF/Latch <busy> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <headerDelayOne> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <prepareEnd> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sendFooter> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_we> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <dataOutEnd> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <analysisRunning> (without init value) has a constant value of 1 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <finish> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <lastSigHigh> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_0> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_1> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_2> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_3> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_4> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_5> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_6> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zeroCrossCount_7> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_8> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_9> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_10> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_11> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_12> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_13> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_14> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_15> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_16> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_17> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_18> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_19> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_20> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_21> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_22> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_23> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_24> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_25> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_26> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_27> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_28> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_29> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_30> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_31> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <missedTriggerCount_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <missedTriggerCount_1> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <missedTriggerCount_2> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <missedTriggerCount_3> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <missedTriggerCount_4> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <missedTriggerCount_5> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <missedTriggerCount_6> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <missedTriggerCount_7> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <lastSigLow> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_41> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_42> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_43> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_44> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_45> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_46> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_47> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_48> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_49> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_50> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_51> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_52> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_53> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_54> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_55> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_56> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_57> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_58> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_59> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_60> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_61> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_62> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_63> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <force_packet_old> (without init value) has a constant value of 0 in block <burst_traffic_controller_blk>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <tx_er> (without init value) has a constant value of 0 in block <crcSplice>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_16> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_17> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_18> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_19> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_20> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_21> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_22> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_23> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_24> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_25> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_26> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_27> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_28> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_29> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_30> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_31> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_32> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_33> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_34> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_35> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_36> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_37> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_38> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_39> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_out_40> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_7> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_8> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_9> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_10> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_11> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_12> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_13> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_14> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_15> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_16> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_17> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_18> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_19> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_20> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_21> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_22> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_23> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_24> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_25> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_26> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_27> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_28> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_29> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_30> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_31> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_32> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_33> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <timing> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sendUDP> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_1> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_2> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_3> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_4> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_5> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_6> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_7> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_8> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_9> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_10> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_11> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_12> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_13> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_14> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <positiveDelayTimer_15> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_we> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <reading> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_1> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_2> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_3> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_4> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_5> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_6> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_53> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_54> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_55> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_56> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_57> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_58> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_59> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_60> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_61> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_62> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_63> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_0> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_1> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_2> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_3> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_4> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_5> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_6> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_7> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_8> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_9> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_10> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_11> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_12> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_13> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_14> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <triggerCount_15> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_34> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_35> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_36> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_37> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_38> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_39> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_40> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_41> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_42> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_52> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_51> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_50> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_49> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_48> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_47> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_46> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_45> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_44> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <b_data_43> (without init value) has a constant value of 0 in block <XLXI_6253>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_0> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_1> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_2> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_3> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_4> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_5> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_6> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_7> (without init value) has a constant value of 0 in block <XLXI_6415>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6448> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6331> is unconnected in block <TOP_LEVEL>.
@@ -3047,56 +2647,12 @@ WARNING:Xst:2677 - Node <udp_data_count_7> of sequential type is unconnected in 
 WARNING:Xst:2677 - Node <udp_data_count_8> of sequential type is unconnected in block <DecipherBlock>.
 WARNING:Xst:2677 - Node <udp_data_count_9> of sequential type is unconnected in block <DecipherBlock>.
 WARNING:Xst:2677 - Node <udp_data_count_10> of sequential type is unconnected in block <DecipherBlock>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_0> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_1> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_2> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_3> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_4> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_5> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_6> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_7> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_8> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_9> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_10> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_11> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_12> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_13> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_14> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sampleSize_15> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_0> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_1> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_2> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_3> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_4> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_5> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_6> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_7> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_8> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <endAddr_9> is unconnected in block <XLXI_6253>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <busy> is unconnected in block <XLXI_6253>.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6124> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <XLXI_6253> is unconnected in block <TOP_LEVEL>.
-   It will be removed from the design.
-WARNING:Xst:2677 - Node <new_trigger_sig> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <extTrigLatched> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <lastThreshTrigState> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_active> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <lastExtTrigState> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_0> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_1> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_2> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_3> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_4> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_5> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_6> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_7> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_8> of sequential type is unconnected in block <XLXI_6349>.
-WARNING:Xst:2677 - Node <trigger_address_9> of sequential type is unconnected in block <XLXI_6349>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 30.
+Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 34.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
@@ -3197,10 +2753,6 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd1 has been replicated 1 time(s)
-FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd3 has been replicated 1 time(s)
-FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd4 has been replicated 1 time(s)
-FlipFlop XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_0 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -3219,8 +2771,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1687
- Flip-Flops                                            : 1687
+# Registers                                            : 1945
+ Flip-Flops                                            : 1945
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -3251,7 +2803,7 @@ Design Statistics
 # IOs                              : 89
 
 Cell Usage :
-# BELS                             : 5543
+# BELS                             : 6879
 #      AND2                        : 7
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -3261,36 +2813,36 @@ Cell Usage :
 #      AND5B4                      : 1
 #      BUF                         : 5
 #      GND                         : 28
-#      INV                         : 180
-#      LUT1                        : 204
-#      LUT2                        : 433
-#      LUT2_D                      : 33
-#      LUT2_L                      : 50
-#      LUT3                        : 1027
-#      LUT3_D                      : 27
-#      LUT3_L                      : 73
-#      LUT4                        : 1828
-#      LUT4_D                      : 85
-#      LUT4_L                      : 279
-#      MUXCY                       : 693
-#      MUXF5                       : 134
-#      MUXF6                       : 40
+#      INV                         : 189
+#      LUT1                        : 266
+#      LUT2                        : 845
+#      LUT2_D                      : 23
+#      LUT2_L                      : 20
+#      LUT3                        : 1145
+#      LUT3_D                      : 18
+#      LUT3_L                      : 54
+#      LUT4                        : 2096
+#      LUT4_D                      : 54
+#      LUT4_L                      : 203
+#      MUXCY                       : 1200
+#      MUXF5                       : 158
+#      MUXF6                       : 48
 #      OR2                         : 3
-#      VCC                         : 25
+#      VCC                         : 26
 #      XOR2                        : 2
-#      XORCY                       : 367
-# FlipFlops/Latches                : 2237
-#      FD                          : 91
+#      XORCY                       : 469
+# FlipFlops/Latches                : 2495
+#      FD                          : 81
 #      FDC                         : 54
 #      FDCE                        : 99
-#      FDE                         : 550
+#      FDE                         : 737
 #      FDP                         : 18
 #      FDPE                        : 6
-#      FDR                         : 145
-#      FDRE                        : 1137
-#      FDRS                        : 21
+#      FDR                         : 81
+#      FDRE                        : 1209
+#      FDRS                        : 86
 #      FDRSE                       : 1
-#      FDS                         : 19
+#      FDS                         : 27
 #      FDSE                        : 96
 # RAMS                             : 207
 #      RAM16X1D                    : 192
@@ -3318,10 +2870,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     2988  out of  10752    27%  
- Number of Slice Flip Flops:           2237  out of  21504    10%  
- Number of 4 input LUTs:               4627  out of  21504    21%  
-    Number used as logic:              4219
+ Number of Slices:                     3345  out of  10752    31%  
+ Number of Slice Flip Flops:           2495  out of  21504    11%  
+ Number of 4 input LUTs:               5321  out of  21504    24%  
+    Number used as logic:              4913
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          89
@@ -3352,7 +2904,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2411  |
+GEL_RXCLK                          | IBUFG+BUFG                                                                                                                        | 2669  |
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0                                                                                                                    | 41    |
 XLXI_6380/N1                       | NONE(XLXI_6380/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SP.SINGLE_PRIM.SP)| 4     |
 SECONDARY_CLK                      | IBUFG                                                                                                                             | 18    |
@@ -3381,10 +2933,10 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 7.860ns (Maximum Frequency: 127.220MHz)
-   Minimum input arrival time before clock: 6.517ns
-   Maximum output required time after clock: 6.397ns
-   Maximum combinational path delay: 6.165ns
+   Minimum period: 8.718ns (Maximum Frequency: 114.703MHz)
+   Minimum input arrival time before clock: 7.029ns
+   Maximum output required time after clock: 6.710ns
+   Maximum combinational path delay: 6.182ns
 
 Timing Detail:
 --------------
@@ -3434,10 +2986,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 7.768ns (frequency: 128.733MHz)
-  Total number of paths / destination ports: 2057 / 1787
+  Clock period: 8.718ns (frequency: 114.703MHz)
+  Total number of paths / destination ports: 2323 / 2052
 -------------------------------------------------------------------------
-Offset:              7.768ns (Levels of Logic = 5)
+Offset:              8.718ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -3447,18 +2999,18 @@ Offset:              7.768ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            143   0.360   1.362  reset (reset)
+     FDS:C->Q            223   0.360   1.675  reset (reset)
      end scope: 'reset_mgr'
-     BUF:I->O            491   0.358   2.886  reset_mgr_reset_1 (reset_mgr_reset_1)
+     BUF:I->O            481   0.358   2.846  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
-     LUT2:I1->O           38   0.195   1.279  tx_ctrl_fifo_reset_sig1 (tx_ctrl_fifo_reset_sig)
+     LUT2:I1->O          211   0.195   1.956  tx_ctrl_fifo_reset_sig1 (tx_ctrl_fifo_reset_sig)
      begin scope: 'TX_CTRL_FIFO'
      begin scope: 'BU2'
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      7.768ns (1.648ns logic, 6.120ns route)
-                                       (21.2% logic, 78.8% route)
+    Total                      8.718ns (1.648ns logic, 7.070ns route)
+                                       (18.9% logic, 81.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
@@ -3485,20 +3037,20 @@ Offset:              2.748ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 7.860ns (frequency: 127.220MHz)
-  Total number of paths / destination ports: 97988 / 6897
+  Clock period: 7.302ns (frequency: 136.947MHz)
+  Total number of paths / destination ports: 111553 / 7558
 -------------------------------------------------------------------------
-Delay:               7.860ns (Levels of Logic = 11)
+Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 (FF)
-  Destination:       XLXI_6227/tx_data_dest_port_0 (FF)
+  Destination:       XLXI_6410/I_Q0 (FF)
   Source Clock:      GEL_RXCLK rising
   Destination Clock: GEL_RXCLK rising
 
-  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 to XLXI_6227/tx_data_dest_port_0
+  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 to XLXI_6410/I_Q0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.360   0.756  ram_addr_sig_54 (ram_addr_sig_54)
+     FDRS:C->Q             3   0.360   0.756  ram_addr_sig_54 (ram_addr_sig_54)
      end scope: 'RAM_COMM_DEC'
      end scope: 'data_manager_blk'
      LUT4:I0->O            1   0.195   0.000  ots_user_mask_cmp_eq00001_wg_lut<1> (ots_user_mask_cmp_eq00001_wg_lut<1>)
@@ -3506,15 +3058,20 @@ Delay:               7.860ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<2> (ots_user_mask_cmp_eq00001_wg_cy<2>)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<3> (ots_user_mask_cmp_eq00001_wg_cy<3>)
      MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<4> (ots_user_mask_cmp_eq00001_wg_cy<4>)
-     MUXCY:CI->O           1   0.370   0.523  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
-     LUT3_D:I2->O         97   0.195   1.345  ots_user_mask_cmp_eq00001_wg_cy<7>1 (ots_user_mask_cmp_eq00001_wg_cy<7>)
-     LUT3:I2->O          105   0.195   1.376  tx_data_dest_mac_or00031 (tx_data_dest_mac_or0003)
-     LUT3:I2->O            1   0.195   0.523  tx_data_dest_addr_and00021 (tx_data_dest_addr_and0002)
-     LUT4:I3->O           16   0.195   0.593  tx_data_dest_port_not0001 (tx_data_dest_port_not0001)
-     FDE:CE                    0.540          tx_data_dest_port_0
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<6> (ots_user_mask_cmp_eq00001_wg_cy<6>)
+     MUXCY:CI->O          98   0.370   1.349  ots_user_mask_cmp_eq00001_wg_cy<7> (ots_user_mask_cmp_eq00001_wg_cy<7>)
+     LUT3:I2->O            1   0.195   0.688  rx_wren1 (rx_wren)
+     end scope: 'XLXI_6227'
+     AND2B1:I1->O         16   0.195   0.818  XLXI_4697 (XLXN_12617)
+     begin scope: 'XLXI_3432'
+     AND5B2:I2->O         64   0.195   1.053  I_36_63 (D5)
+     end scope: 'XLXI_3432'
+     begin scope: 'XLXI_6410'
+     FDRE:CE                   0.540          I_Q0
     ----------------------------------------
-    Total                      7.860ns (2.744ns logic, 5.116ns route)
-                                       (34.9% logic, 65.1% route)
+    Total                      7.302ns (2.638ns logic, 4.664ns route)
+                                       (36.1% logic, 63.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
@@ -3588,34 +3145,37 @@ Offset:              1.555ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GEL_RXCLK'
-  Total number of paths / destination ports: 967 / 350
+  Total number of paths / destination ports: 921 / 351
 -------------------------------------------------------------------------
-Offset:              6.517ns (Levels of Logic = 10)
+Offset:              7.029ns (Levels of Logic = 13)
   Source:            BUSC_19DN_39S (PAD)
-  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_8 (FF)
+  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_2 (FF)
   Destination Clock: GEL_RXCLK rising
 
-  Data Path: BUSC_19DN_39S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_8
+  Data Path: BUSC_19DN_39S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   0.965   0.711  XLXI_4217 (GMII_RXD_0_sig<4>)
+     IBUF:I->O             4   0.965   0.755  XLXI_4217 (GMII_RXD_0_sig<4>)
      begin scope: 'XLXI_6227'
      begin scope: 'ec_wrapper'
      begin scope: 'xgmii'
      end scope: 'xgmii'
      begin scope: 'ethernet_controller'
      begin scope: 'DecipherBlock'
-     LUT3:I0->O            1   0.195   0.741  is_arp_sig_mux0000112_SW0 (N911)
-     LUT4_D:I0->O          4   0.195   0.755  Sreg0_FSM_FFd6-In215 (N182)
-     LUT4_D:I0->O         17   0.195   0.743  udp_countdown_0_and00001 (udp_countdown_0_and0000)
-     LUT4:I3->O            1   0.195   0.741  udp_countdown_4_mux00002 (N24)
-     LUT4:I0->O            8   0.195   0.670  udp_countdown_10_mux0000128 (N62)
-     LUT4:I2->O            1   0.195   0.000  udp_countdown_9_mux000014 (udp_countdown_9_mux0000)
-     FDRE:D                    0.022          udp_countdown_9
+     LUT4_D:I0->LO         1   0.195   0.163  is_arp_sig_mux0000112 (N223)
+     LUT3:I2->O            3   0.195   0.600  Sreg0_FSM_FFd6-In215 (N182)
+     LUT4:I2->O            1   0.195   0.523  Sreg0_cmp_eq000332_SW0 (N140)
+     LUT4:I3->O           16   0.195   0.818  Sreg0_cmp_eq000332 (Sreg0_cmp_eq0003)
+     LUT4:I2->O            1   0.195   0.000  udp_countdown_4_mux00002_G (N1791)
+     MUXF5:I1->O           2   0.374   0.540  udp_countdown_4_mux00002 (N24)
+     LUT3_D:I2->O          5   0.195   0.546  udp_countdown_4_mux000031 (N63)
+     LUT4_L:I3->LO         1   0.195   0.163  udp_countdown_2_mux000047_SW0 (N104)
+     LUT4:I3->O            1   0.195   0.000  udp_countdown_2_mux000047 (udp_countdown_2_mux0000)
+     FDRE:D                    0.022          udp_countdown_2
     ----------------------------------------
-    Total                      6.517ns (2.157ns logic, 4.360ns route)
-                                       (33.1% logic, 66.9% route)
+    Total                      7.029ns (2.921ns logic, 4.108ns route)
+                                       (41.6% logic, 58.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GEL_RXCLK'
@@ -3643,7 +3203,7 @@ Offset:              6.331ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.397ns (Levels of Logic = 3)
+Offset:              6.710ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3652,20 +3212,20 @@ Offset:              6.397ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            143   0.360   1.362  reset (reset)
+     FDS:C->Q            223   0.360   1.675  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.397ns (4.675ns logic, 1.722ns route)
-                                       (73.1% logic, 26.9% route)
+    Total                      6.710ns (4.675ns logic, 2.035ns route)
+                                       (69.7% logic, 30.3% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 3 / 2
 -------------------------------------------------------------------------
-Delay:               6.165ns (Levels of Logic = 3)
+Delay:               6.182ns (Levels of Logic = 3)
   Source:            U10_1 (PAD)
   Destination:       U10_3 (PAD)
 
@@ -3673,24 +3233,24 @@ Delay:               6.165ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.965   0.688  XLXI_6409 (ext_trig)
+     IBUF:I->O             2   0.965   0.705  XLXI_6409 (ext_trig)
      AND2:I1->O            1   0.195   0.360  XLXI_6434 (trigger_out)
      OBUF:I->O                 3.957          XLXI_6404 (U10_3)
     ----------------------------------------
-    Total                      6.165ns (5.117ns logic, 1.048ns route)
-                                       (83.0% logic, 17.0% route)
+    Total                      6.182ns (5.117ns logic, 1.065ns route)
+                                       (82.8% logic, 17.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 72.00 secs
-Total CPU time to Xst completion: 71.65 secs
+Total REAL time to Xst completion: 70.00 secs
+Total CPU time to Xst completion: 69.67 secs
  
 --> 
 
-Total memory usage is 666944 kilobytes
+Total memory usage is 723456 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  723 (   0 filtered)
+Number of warnings :  280 (   0 filtered)
 Number of infos    :  126 (   0 filtered)
 

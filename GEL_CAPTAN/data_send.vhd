@@ -60,6 +60,7 @@ signal userPretrigSamplesUns : unsigned(15 downto 0);
 signal userPositiveDelayUns : unsigned(15 downto 0);
 signal triggerAddressUns : unsigned(9 downto 0);
 signal ramAddrUns : unsigned(9 downto 0);
+signal delayed_clk_en : std_logic;
 --positive delay signals
 signal positiveDelayTimer : unsigned(15 downto 0);
 signal timing : std_logic;
@@ -107,8 +108,11 @@ begin
 	
 	process(clk) begin
 		if(rst = '0') then
-			if(clock_enable = '1') then
-				if(rising_edge(clk)) then
+			if(rising_edge(clk)) then
+				
+				delayed_clk_en <= clock_enable;
+				
+				if(delayed_clk_en = '1') then
 					--latch the address data as soon as we recieve a trigger event
 					if(new_trigger = '1') then
 						--only latch the new trigger if we don't already have one.  
