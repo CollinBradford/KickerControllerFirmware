@@ -106,26 +106,41 @@ begin
 	
 	process(clk) begin
 		
-		data_out(7 downto 0) <= data_in(7 downto 0);
-		data_out(15 downto 8) <= data_in(15 downto 8);
-		data_out(23 downto 16) <= data_in(23 downto 16);
-		data_out(31 downto 24) <= data_in(31 downto 24);
-		data_out(39 downto 32) <= data_in(39 downto 32);
-		data_out(47 downto 40) <= data_in(47 downto 40);
-		data_out(55 downto 48) <= data_in(55 downto 48);
-		data_out(63 downto 56) <= data_in(63 downto 56);
+--		data_out(7 downto 0) <= data_in(7 downto 0);
+--		data_out(15 downto 8) <= data_in(15 downto 8);
+--		data_out(23 downto 16) <= data_in(23 downto 16);
+--		data_out(31 downto 24) <= data_in(31 downto 24);
+--		data_out(39 downto 32) <= data_in(39 downto 32);
+--		data_out(47 downto 40) <= data_in(47 downto 40);
+--		data_out(55 downto 48) <= data_in(55 downto 48);
+--		data_out(63 downto 56) <= data_in(63 downto 56);
+		
+		data_out <= data_in;
 		
 		out_enable <= clock_enable; --We are constantly recording to the ram loop buffer.  clock_enable = '1'
 		
 		if(reset = '0') then--reset is low
 		
-			if(clock_enable = '1') then
+			if(rising_edge(clk)) then
 			
-				if(rising_edge(clk)) then--rising edge of clk and the clock is enabled
+				lastExtTrigState <= extTrigLatched;
+				extTrigLatched <= ext_trig;
+				
+				--if external trigger mode is enabled 
+				if(extTrigEn = '1') then
+					--if we are triggering on the rising edge of the trigger and it actually is the rising edge
+					if(extTrigRising = '1' and lastExtTrigState = '0' and extTrigLatched = '1') then
+						trigger_active <= '1';
+					end if;
+					--if we are triggering on the falling edge of the trigger and it actually is the falling edge
+					if(extTrigRising = '0' and lastExtTrigState = '1' and extTrigLatched = '0') then
+						trigger_active <= '1';
+					end if;
+				end if;
+			
+				if(clock_enable = '1') then--rising edge of clk and the clock is enabled
 					
 					ramAddress <= ramAddress + 1;
-					lastExtTrigState <= extTrigLatched;
-					extTrigLatched <= ext_trig;
 					
 					--These are the tests for each trigger state.  There is at least one if statement per trigger mode that is enabled when the 
 					--respective trigger mode is enabled.  If the trigger mode is active and the trigger state is also active, it enables the 
@@ -167,19 +182,7 @@ begin
 						trigger_active <= '1';
 						clearManualTrigSig <= '1';
 					end if;
-					--if external trigger mode is enabled 
-					if(extTrigEn = '1') then
-						--if we are triggering on the rising edge of the trigger and it actually is the rising edge
-						if(extTrigRising = '1' and lastExtTrigState = '0' and extTrigLatched = '1') then
-							trigger_active <= '1';
-							extTrigLatched <= '0';
-						end if;
-						--if we are triggering on the falling edge of the trigger and it actually is the falling edge
-						if(extTrigRising = '0' and lastExtTrigState = '1' and extTrigLatched = '0') then
-							trigger_active <= '1';
-							extTrigLatched <= '0';
-						end if;
-					end if;
+					
 					--Code that needs to be run for each trigger
 					--
 					--Check for a trigger and run the code.  
@@ -196,6 +199,7 @@ begin
 					if(clearManualTrigSig = '1') then
 						clearManualTrigSig <= '0';
 					end if;
+				--clk_enable ends here.  
 				end if;
 			end if;
 		--reset is high

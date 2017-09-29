@@ -2500,35 +2500,16 @@
         <rect width="1416" x="20" y="16" height="268" />
         <instance x="1664" y="1008" name="XLXI_6346" orien="R0" />
         <instance x="384" y="896" name="XLXI_6342" orien="R0" />
-        <instance x="784" y="544" name="XLXI_6341" orien="R0">
-        </instance>
-        <branch name="adc_fifo_overflow">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="1136" type="branch" />
-            <wire x2="768" y1="1136" y2="1136" x1="752" />
-            <wire x2="784" y1="1136" y2="1136" x1="768" />
-        </branch>
         <branch name="XLXN_15533">
             <wire x2="448" y1="896" y2="912" x1="448" />
             <wire x2="752" y1="912" y2="912" x1="448" />
-            <wire x2="784" y1="816" y2="816" x1="752" />
             <wire x2="752" y1="816" y2="912" x1="752" />
+            <wire x2="784" y1="816" y2="816" x1="752" />
         </branch>
         <branch name="clock_enable">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1648" y="1136" type="branch" />
             <wire x2="1632" y1="1136" y2="1136" x1="1616" />
             <wire x2="1648" y1="1136" y2="1136" x1="1632" />
-        </branch>
-        <branch name="adc_fifo_empty">
-            <wire x2="1632" y1="1040" y2="1040" x1="1616" />
-            <wire x2="1648" y1="1040" y2="1040" x1="1632" />
-        </branch>
-        <branch name="XLXN_15529">
-            <wire x2="1632" y1="848" y2="848" x1="1616" />
-            <wire x2="1680" y1="848" y2="848" x1="1632" />
-            <wire x2="1680" y1="848" y2="1088" x1="1680" />
-            <wire x2="1728" y1="1088" y2="1088" x1="1680" />
-            <wire x2="1728" y1="1008" y2="1024" x1="1728" />
-            <wire x2="1728" y1="1024" y2="1088" x1="1728" />
         </branch>
         <branch name="fadc_fifo_data_out(63:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1632" y="816" type="branch" />
@@ -2537,19 +2518,6 @@
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1632" y="784" type="branch" />
             <wire x2="1632" y1="784" y2="784" x1="1616" />
-        </branch>
-        <branch name="XLXN_15524">
-            <wire x2="784" y1="1008" y2="1008" x1="752" />
-        </branch>
-        <branch name="fadc_data_in(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="784" type="branch" />
-            <wire x2="768" y1="784" y2="784" x1="752" />
-            <wire x2="784" y1="784" y2="784" x1="768" />
-        </branch>
-        <branch name="FADC_DCLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="752" type="branch" />
-            <wire x2="768" y1="752" y2="752" x1="752" />
-            <wire x2="784" y1="752" y2="752" x1="768" />
         </branch>
         <instance x="3616" y="912" name="XLXI_6380" orien="R0">
         </instance>
@@ -3061,6 +3029,38 @@
         <branch name="b_data_we">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6640" y="768" type="branch" />
             <wire x2="6640" y1="768" y2="768" x1="6624" />
+        </branch>
+        <branch name="XLXN_15529">
+            <wire x2="1632" y1="848" y2="848" x1="1616" />
+            <wire x2="1680" y1="848" y2="848" x1="1632" />
+            <wire x2="1680" y1="848" y2="1088" x1="1680" />
+            <wire x2="1728" y1="1088" y2="1088" x1="1680" />
+            <wire x2="1728" y1="1008" y2="1024" x1="1728" />
+            <wire x2="1728" y1="1024" y2="1088" x1="1728" />
+        </branch>
+        <branch name="adc_fifo_overflow">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="1136" type="branch" />
+            <wire x2="768" y1="1136" y2="1136" x1="752" />
+            <wire x2="784" y1="1136" y2="1136" x1="768" />
+        </branch>
+        <branch name="fadc_data_in(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="784" type="branch" />
+            <wire x2="768" y1="784" y2="784" x1="752" />
+            <wire x2="784" y1="784" y2="784" x1="768" />
+        </branch>
+        <branch name="FADC_DCLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="752" type="branch" />
+            <wire x2="768" y1="752" y2="752" x1="752" />
+            <wire x2="784" y1="752" y2="752" x1="768" />
+        </branch>
+        <instance x="784" y="544" name="XLXI_6341" orien="R0">
+        </instance>
+        <branch name="adc_fifo_empty">
+            <wire x2="1632" y1="1040" y2="1040" x1="1616" />
+            <wire x2="1648" y1="1040" y2="1040" x1="1632" />
+        </branch>
+        <branch name="XLXN_15524">
+            <wire x2="784" y1="1008" y2="1008" x1="752" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
