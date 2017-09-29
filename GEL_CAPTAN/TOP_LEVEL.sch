@@ -305,7 +305,6 @@
         <signal name="ext_ip_addr(0)" />
         <signal name="ext_ip_addr(7:0)" />
         <signal name="ip_addr(7:0)" />
-        <signal name="ip_addr1(7:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -1790,7 +1789,7 @@
             <blockpin signalname="rx_addr(31:0)" name="rx_addr(31:0)" />
             <blockpin signalname="rx_data(63:0)" name="rx_data(63:0)" />
             <blockpin signalname="PHY_TXD_sig(7:0)" name="PHY_TXD(7:0)" />
-            <blockpin signalname="ip_addr1(7:0)" name="user_addr(7:0)" />
+            <blockpin signalname="ip_addr(7:0)" name="user_addr(7:0)" />
         </block>
         <block symbolname="gnd" name="XLXI_6228">
             <blockpin signalname="XLXN_15140" name="G" />
@@ -2325,7 +2324,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2048" y="1968" type="branch" />
             <wire x2="2048" y1="1968" y2="1968" x1="2032" />
         </branch>
-        <branch name="ip_addr1(7:0)">
+        <branch name="ip_addr(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1248" y="1376" type="branch" />
             <wire x2="1264" y1="1376" y2="1376" x1="1248" />
         </branch>

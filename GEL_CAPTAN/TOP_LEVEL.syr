@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -173,8 +173,7 @@ Architecture behavioral of Entity buffer_10bit is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
 Architecture behavioral of Entity trigger_recv_blk is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/oei/ethernet_interface.vhd" in Library work.
-Entity <ethernet_interface> compiled.
-Entity <ethernet_interface> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity ethernet_interface is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.vhd" in Library work.
 Architecture behavioral of Entity data_send is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
@@ -190,12 +189,18 @@ Architecture behavioral of Entity event_analysis is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ext_ip_addr_map.vhd" in Library work.
 Architecture behavioral of Entity ext_ip_addr_map is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Architecture behavioral of Entity obuf8_mxilinx_top_level is up to date.
-Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
-Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
-Architecture behavioral of Entity top_level is up to date.
+Entity <obuf8_mxilinx_top_level> compiled.
+Entity <obuf8_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <fd8re_mxilinx_top_level> compiled.
+Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <fd16re_mxilinx_top_level> compiled.
+Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_top_level> compiled.
+Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <d4_16e_mxilinx_top_level> compiled.
+Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <top_level> compiled.
+Entity <top_level> (Architecture <behavioral>) compiled.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -312,13 +317,13 @@ Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1350: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1350: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1350: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1350: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1350: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1350: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1350: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1349: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1349: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1349: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1349: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1349: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1349: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1349: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
@@ -458,7 +463,7 @@ WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vh
     Set user-defined property "DRIVE =  12" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  FAST" for instance <XLXI_5999> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1624: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1623: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_6004_1" for instance <XLXI_6004> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6016> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6025> in unit <TOP_LEVEL>.
@@ -583,8 +588,8 @@ WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vh
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6229> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6247_6" for instance <XLXI_6247> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6251_5" for instance <XLXI_6251> in unit <TOP_LEVEL>.
-WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2038: Instantiating black box module <ADC_FIFO>.
-WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2072: Instantiating black box module <EthernetRAM>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2037: Instantiating black box module <ADC_FIFO>.
+WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2071: Instantiating black box module <EthernetRAM>.
     Set user-defined property "HU_SET =  XLXI_6394_7" for instance <XLXI_6394> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6396> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6404> in unit <TOP_LEVEL>.
@@ -603,7 +608,7 @@ WARNING:Xst:2211 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.v
     Set user-defined property "INIT =  0" for instance <XLXI_6421> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6422> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6423> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2195: Unconnected output port 'O' of component 'OBUF8_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 2194: Unconnected output port 'O' of component 'OBUF8_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_6435_13" for instance <XLXI_6435> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6436> in unit <TOP_LEVEL>.
     Set user-defined property "DRIVE =  12" for instance <XLXI_6436> in unit <TOP_LEVEL>.
@@ -1834,8 +1839,6 @@ WARNING:Xst:653 - Signal <trig_debug<63:32>> is used but never assigned. This so
 WARNING:Xst:646 - Signal <rx_addr<31:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <psi_status<55:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000.
-WARNING:Xst:653 - Signal <ip_addr1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
-WARNING:Xst:646 - Signal <ip_addr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <fadc_wctrl_done> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <fadc_waddr_rise> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000.
 WARNING:Xst:653 - Signal <fadc_rdy_for_trigger> is used but never assigned. This sourceless signal will be automatically connected to value 0.
@@ -2317,8 +2320,6 @@ WARNING:Xst:1290 - Hierarchical block <genDbgCRC[0].crcGenDebug> is unconnected 
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6331> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <XLXI_6448> is unconnected in block <TOP_LEVEL>.
-   It will be removed from the design.
 WARNING:Xst:1293 - FF/Latch <add_sig_16> has a constant value of 0 in block <ChecksumCalcBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_0> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_1> (without init value) has a constant value of 0 in block <CreatePacketBlock>. This FF/Latch will be trimmed during the optimization process.
@@ -2522,8 +2523,6 @@ Optimizing unit <ethernet_controller_wrapper> ...
 
 Optimizing unit <ethernet_interface> ...
 WARNING:Xst:1710 - FF/Latch <tx_er> (without init value) has a constant value of 0 in block <crcSplice>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1290 - Hierarchical block <XLXI_6448> is unconnected in block <TOP_LEVEL>.
-   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6331> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
 WARNING:Xst:2677 - Node <tmp_rd_sig> of sequential type is unconnected in block <ec_wrapper>.
@@ -2799,7 +2798,7 @@ Design Statistics
 # IOs                              : 89
 
 Cell Usage :
-# BELS                             : 6877
+# BELS                             : 6905
 #      AND2                        : 6
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2808,20 +2807,20 @@ Cell Usage :
 #      AND5B3                      : 4
 #      AND5B4                      : 1
 #      BUF                         : 5
-#      GND                         : 29
+#      GND                         : 30
 #      INV                         : 188
 #      LUT1                        : 266
 #      LUT2                        : 843
 #      LUT2_D                      : 23
 #      LUT2_L                      : 20
-#      LUT3                        : 1146
+#      LUT3                        : 1152
 #      LUT3_D                      : 19
 #      LUT3_L                      : 53
-#      LUT4                        : 2091
+#      LUT4                        : 2111
 #      LUT4_D                      : 56
 #      LUT4_L                      : 205
 #      MUXCY                       : 1200
-#      MUXF5                       : 159
+#      MUXF5                       : 160
 #      MUXF6                       : 48
 #      OR2                         : 3
 #      VCC                         : 26
@@ -2866,10 +2865,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3344  out of  10752    31%  
+ Number of Slices:                     3357  out of  10752    31%  
  Number of Slice Flip Flops:           2493  out of  21504    11%  
- Number of 4 input LUTs:               5318  out of  21504    24%  
-    Number used as logic:              4910
+ Number of 4 input LUTs:               5344  out of  21504    24%  
+    Number used as logic:              4936
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          89
@@ -3141,7 +3140,7 @@ Offset:              1.555ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GEL_RXCLK'
-  Total number of paths / destination ports: 921 / 351
+  Total number of paths / destination ports: 1416 / 359
 -------------------------------------------------------------------------
 Offset:              7.029ns (Levels of Logic = 13)
   Source:            BUSC_19DN_39S (PAD)
@@ -3240,13 +3239,13 @@ Delay:               6.182ns (Levels of Logic = 3)
 
 
 Total REAL time to Xst completion: 72.00 secs
-Total CPU time to Xst completion: 72.04 secs
+Total CPU time to Xst completion: 72.39 secs
  
 --> 
 
-Total memory usage is 666432 kilobytes
+Total memory usage is 667136 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  278 (   0 filtered)
+Number of warnings :  274 (   0 filtered)
 Number of infos    :  126 (   0 filtered)
 

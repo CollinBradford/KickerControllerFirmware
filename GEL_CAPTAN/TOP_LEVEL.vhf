@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/29/2017 14:46:15
+-- /___/   /\     Timestamp : 09/29/2017 17:43:06
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -766,7 +766,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal GMII_RX_ER_0_sig               : std_logic;
    signal GTX_CLK_0_sig                  : std_logic;
    signal ip_addr                        : std_logic_vector (7 downto 0);
-   signal ip_addr1                       : std_logic_vector (7 downto 0);
    signal manual_force_trig              : std_logic;
    signal MANUAL_TRIG_MAP                : std_logic;
    signal MASTER_CLK                     : std_logic;
@@ -1970,7 +1969,7 @@ begin
                 reset_in=>XLXN_15140,
                 slow_clk=>clock_5mhz,
                 tx_data(63 downto 0)=>tx_data(63 downto 0),
-                user_addr(7 downto 0)=>ip_addr1(7 downto 0),
+                user_addr(7 downto 0)=>ip_addr(7 downto 0),
                 b_enable=>b_enable,
                 PHY_TXD(7 downto 0)=>PHY_TXD_sig(7 downto 0),
                 PHY_TX_EN=>PHY_TXEN_sig,
