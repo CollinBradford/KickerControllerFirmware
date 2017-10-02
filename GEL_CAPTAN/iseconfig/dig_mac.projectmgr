@@ -10,6 +10,7 @@
          <ClosedNode>/TOP_LEVEL C:|Users|Collin|Fermilab|NewADCFirmware|GEL_CAPTAN|TOP_LEVEL.sch/XLXI_6227 - ethernet_interface - BEHAVIORAL</ClosedNode>
          <ClosedNode>/TOP_LEVEL D:|cbradford|DoubleClockNew|GEL_CAPTAN|TOP_LEVEL.sch/XLXI_6227 - ethernet_interface - BEHAVIORAL</ClosedNode>
          <ClosedNode>/TOP_LEVEL D:|cbradford|FiFoFix|GEL_CAPTAN|TOP_LEVEL.sch/XLXI_6227 - ethernet_interface - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/TOP_LEVEL D:|cbradford|KickerControllerFirmware|GEL_CAPTAN|TOP_LEVEL.sch/XLXI_6227 - ethernet_interface - BEHAVIORAL</ClosedNode>
          <ClosedNode>/TOP_LEVEL D:|cbradford|NewADCFirmware|GEL_CAPTAN|TOP_LEVEL.sch/XLXI_6227 - ethernet_interface - BEHAVIORAL</ClosedNode>
          <ClosedNode>/TOP_LEVEL D:|cbradford|PulsePerPackage|GEL_CAPTAN|TOP_LEVEL.sch/XLXI_6227 - ethernet_interface - BEHAVIORAL</ClosedNode>
          <ClosedNode>/TOP_LEVEL D:|cbradford|SignalProcessing|GEL_CAPTAN|TOP_LEVEL.sch/XLXI_6227 - ethernet_interface - BEHAVIORAL</ClosedNode>
@@ -19,27 +20,29 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000330000000020000000000000000000000000200000064ffffffff000000810000000300000002000003300000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c70000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>TOP_LEVEL (D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>View HDL Functional Model</SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >18</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e5000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>View HDL Functional Model</CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -73,7 +76,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e5000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Create Schematic Symbol</CurrentItem>
    </ItemView>
@@ -109,13 +112,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e5000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
