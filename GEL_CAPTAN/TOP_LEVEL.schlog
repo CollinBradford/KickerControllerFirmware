@@ -12,3 +12,5 @@ select figure at 2147 1673 8 -branches -sn=3
 select figure at 1910 2693 8 -branches -sn=3
 select figure at 5196 2271 8 -branches -sn=3
 select figure at 5165 1283 8 -branches -sn=3
+select figure at 2934 2307 8 -branches -sn=3
+select figure at 4939 1440 8 -branches -sn=3
