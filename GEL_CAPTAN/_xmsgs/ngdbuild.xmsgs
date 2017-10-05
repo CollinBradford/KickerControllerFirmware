@@ -445,6 +445,102 @@
 2. The specified object is spelled correctly in the constraint source file.
 </msg>
 
+<msg type="warning" file="ConstraintSystem" num="168" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(15)&quot; OFFSET =IN 0.2 ns VALID 1.461 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(620)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(15)&quot; OFFSET =IN 0.2 ns VALID 1.461 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(620)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(15)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(14)&quot; OFFSET =IN 0.2 ns VALID 2.24 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(621)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(14)&quot; OFFSET =IN 0.2 ns VALID 2.24 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(621)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(14)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(13)&quot; OFFSET =IN 0.2 ns VALID 1.166 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(622)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(13)&quot; OFFSET =IN 0.2 ns VALID 1.166 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(622)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(13)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(12)&quot; OFFSET =IN 0.2 ns VALID 1.166 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(623)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(12)&quot; OFFSET =IN 0.2 ns VALID 1.166 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(623)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(12)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(11)&quot; OFFSET =IN 0.2 ns VALID 1.437 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(624)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(11)&quot; OFFSET =IN 0.2 ns VALID 1.437 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(624)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(11)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(10)&quot; OFFSET =IN 0.2 ns VALID 1.142 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(625)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(10)&quot; OFFSET =IN 0.2 ns VALID 1.142 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(625)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(10)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(9)&quot; OFFSET =IN 0.2 ns VALID 1.308 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(626)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(9)&quot; OFFSET =IN 0.2 ns VALID 1.308 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(626)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(9)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(8)&quot; OFFSET =IN 0.2 ns VALID 1.898 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(627)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(8)&quot; OFFSET =IN 0.2 ns VALID 1.898 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(627)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(8)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(7)&quot; OFFSET =IN 0.2 ns VALID 2.535 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(870)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(7)&quot; OFFSET =IN 0.2 ns VALID 2.535 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(870)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(7)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(6)&quot; OFFSET =IN 0.2 ns VALID 2.535 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(871)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(6)&quot; OFFSET =IN 0.2 ns VALID 2.535 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(871)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(6)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(5)&quot; OFFSET =IN 0.2 ns VALID 1.7 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(872)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(5)&quot; OFFSET =IN 0.2 ns VALID 1.7 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(872)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(5)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(4)&quot; OFFSET =IN 0.2 ns VALID 1.7 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(873)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(4)&quot; OFFSET =IN 0.2 ns VALID 1.7 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(873)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(4)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(3)&quot; OFFSET =IN 0.2 ns VALID 2.511 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(874)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(3)&quot; OFFSET =IN 0.2 ns VALID 2.511 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(874)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(3)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(2)&quot; OFFSET =IN 0.2 ns VALID 2.216 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(875)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(2)&quot; OFFSET =IN 0.2 ns VALID 2.216 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(875)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(2)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(1)&quot; OFFSET =IN 0.2 ns VALID 2.216 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(876)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(1)&quot; OFFSET =IN 0.2 ns VALID 2.216 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(876)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(1)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="168" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(0)&quot; OFFSET =IN 0.2 ns VALID 1.921 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(877)]</arg>: This constraint will be ignored because <arg fmt="%s" index="2">NET &quot;FADC_DCLK&quot;</arg> could not be found or was not connected to a PAD.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;fadc_data_in(0)&quot; OFFSET =IN 0.2 ns VALID 1.921 ns BEFORE &quot;FADC_DCLK&quot;;&gt; [TOP_LEVEL.ucf(877)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;fadc_data_in(0)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">GEL_RXCLK</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_GEL_RXCLK</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">XLXI_3410</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
 <arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_XLXN_12257 = PERIOD &quot;XLXN_12257&quot; TS_GEL_RXCLK / 1.6 HIGH 50%&gt;</arg>
 </msg>

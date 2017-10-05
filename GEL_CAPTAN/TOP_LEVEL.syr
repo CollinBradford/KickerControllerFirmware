@@ -185,17 +185,22 @@ Architecture behavioral of Entity peakfinder is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.vhd" in Library work.
 Architecture ethernetram_a of Entity ethernetram is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.vhd" in Library work.
-Entity <event_analysis> compiled.
-Entity <event_analysis> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity event_analysis is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ext_ip_addr_map.vhd" in Library work.
 Architecture behavioral of Entity ext_ip_addr_map is up to date.
 Compiling vhdl file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Architecture behavioral of Entity obuf8_mxilinx_top_level is up to date.
-Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
-Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
-Architecture behavioral of Entity top_level is up to date.
+Entity <obuf8_mxilinx_top_level> compiled.
+Entity <obuf8_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <fd8re_mxilinx_top_level> compiled.
+Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <fd16re_mxilinx_top_level> compiled.
+Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_top_level> compiled.
+Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <d4_16e_mxilinx_top_level> compiled.
+Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <top_level> compiled.
+Entity <TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -207,7 +212,7 @@ Analysis of file <"TOP_LEVEL.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
 Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
@@ -293,7 +298,7 @@ Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
     Set user-defined property "IOBDELAY_TYPE =  VARIABLE" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "IOBDELAY_VALUE =  0" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "CLKDV_DIVIDE =  2.0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
@@ -1012,7 +1017,8 @@ Unit <PeakFinder> synthesized.
 
 Synthesizing Unit <event_analysis>.
     Related source file is "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.vhd".
-WARNING:Xst:653 - Signal <internalFooter<63:8>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <internalFooter<63:36>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000.
+WARNING:Xst:653 - Signal <internalFooter<11:10>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:646 - Signal <headerDelayTwo> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <del_clk_en> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 64-bit register for signal <data_out>.
@@ -1024,62 +1030,62 @@ WARNING:Xst:646 - Signal <del_clk_en> is assigned but never used. This unconnect
     Found 1-bit register for signal <finish>.
     Found 1-bit register for signal <headerDelayOne>.
     Found 1-bit register for signal <lastSigHigh>.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0000> created at line 192.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0001> created at line 192.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0002> created at line 192.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0003> created at line 192.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0004> created at line 192.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0005> created at line 192.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0006> created at line 192.
-    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0007> created at line 192.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0000> created at line 192.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0001> created at line 192.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0002> created at line 192.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0003> created at line 192.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0004> created at line 192.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0005> created at line 192.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0006> created at line 192.
-    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0007> created at line 192.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0000> created at line 197.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0001> created at line 197.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0002> created at line 197.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0003> created at line 197.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0004> created at line 197.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0005> created at line 197.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0006> created at line 197.
+    Found 8-bit comparator greatequal for signal <lastSigHigh$cmp_ge0007> created at line 197.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0000> created at line 197.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0001> created at line 197.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0002> created at line 197.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0003> created at line 197.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0004> created at line 197.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0005> created at line 197.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0006> created at line 197.
+    Found 8-bit comparator less for signal <lastSigHigh$cmp_lt0007> created at line 197.
     Found 1-bit register for signal <lastSigLow>.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0000> created at line 184.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0001> created at line 184.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0002> created at line 184.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0003> created at line 184.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0004> created at line 184.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0005> created at line 184.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0006> created at line 184.
-    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0007> created at line 184.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0000> created at line 197.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0001> created at line 197.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0002> created at line 197.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0003> created at line 197.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0004> created at line 197.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0005> created at line 197.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0006> created at line 197.
-    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0007> created at line 197.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0000> created at line 197.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0001> created at line 197.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0002> created at line 197.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0003> created at line 197.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0004> created at line 197.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0005> created at line 197.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0006> created at line 197.
-    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0007> created at line 197.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0000> created at line 189.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0001> created at line 189.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0002> created at line 189.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0003> created at line 189.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0004> created at line 189.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0005> created at line 189.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0006> created at line 189.
+    Found 8-bit comparator greatequal for signal <lastSigLow$cmp_ge0007> created at line 189.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0000> created at line 202.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0001> created at line 202.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0002> created at line 202.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0003> created at line 202.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0004> created at line 202.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0005> created at line 202.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0006> created at line 202.
+    Found 8-bit comparator greater for signal <lastSigLow$cmp_gt0007> created at line 202.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0000> created at line 202.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0001> created at line 202.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0002> created at line 202.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0003> created at line 202.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0004> created at line 202.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0005> created at line 202.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0006> created at line 202.
+    Found 8-bit comparator lessequal for signal <lastSigLow$cmp_le0007> created at line 202.
     Found 1-bit register for signal <prepareEnd>.
     Found 1-bit register for signal <resetClearVeto>.
     Found 1-bit register for signal <resetForceVeto>.
     Found 1-bit register for signal <sendFooter>.
     Found 1-bit register for signal <vetoed>.
-    Found 8-bit comparator lessequal for signal <vetoed$cmp_le0000> created at line 214.
+    Found 8-bit comparator lessequal for signal <vetoed$cmp_le0000> created at line 219.
     Found 8-bit register for signal <zeroCrossCount>.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0000> created at line 176.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0001> created at line 176.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0002> created at line 176.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0003> created at line 176.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0004> created at line 176.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0005> created at line 176.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0006> created at line 176.
-    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0007> created at line 176.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0000> created at line 181.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0001> created at line 181.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0002> created at line 181.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0003> created at line 181.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0004> created at line 181.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0005> created at line 181.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0006> created at line 181.
+    Found 8-bit comparator lessequal for signal <zeroCrossCount$cmp_le0007> created at line 181.
     Found 8-bit adder for signal <zeroCrossCount$mux0000>.
     Summary:
 	inferred  85 D-type flip-flop(s).
@@ -2642,7 +2648,7 @@ WARNING:Xst:1290 - Hierarchical block <XLXI_6124> is unconnected in block <TOP_L
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 34.
+Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 35.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6341> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
@@ -2793,7 +2799,7 @@ Design Statistics
 # IOs                              : 89
 
 Cell Usage :
-# BELS                             : 6905
+# BELS                             : 7061
 #      AND2                        : 6
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2804,19 +2810,19 @@ Cell Usage :
 #      BUF                         : 5
 #      GND                         : 30
 #      INV                         : 188
-#      LUT1                        : 266
-#      LUT2                        : 843
+#      LUT1                        : 292
+#      LUT2                        : 873
 #      LUT2_D                      : 23
 #      LUT2_L                      : 20
-#      LUT3                        : 1152
+#      LUT3                        : 1232
 #      LUT3_D                      : 19
 #      LUT3_L                      : 53
-#      LUT4                        : 2111
+#      LUT4                        : 2054
 #      LUT4_D                      : 56
 #      LUT4_L                      : 205
 #      MUXCY                       : 1200
-#      MUXF5                       : 160
-#      MUXF6                       : 48
+#      MUXF5                       : 211
+#      MUXF6                       : 74
 #      OR2                         : 3
 #      VCC                         : 26
 #      XOR2                        : 2
@@ -2860,10 +2866,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3357  out of  10752    31%  
+ Number of Slices:                     3395  out of  10752    31%  
  Number of Slice Flip Flops:           2493  out of  21504    11%  
- Number of 4 input LUTs:               5344  out of  21504    24%  
-    Number used as logic:              4936
+ Number of 4 input LUTs:               5423  out of  21504    25%  
+    Number used as logic:              5015
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          89
@@ -3028,7 +3034,7 @@ Offset:              2.748ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 111408 / 7556
+  Total number of paths / destination ports: 111671 / 7556
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54 (FF)
@@ -3171,7 +3177,7 @@ Offset:              7.029ns (Levels of Logic = 13)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GEL_RXCLK'
   Total number of paths / destination ports: 13 / 13
 -------------------------------------------------------------------------
-Offset:              6.331ns (Levels of Logic = 4)
+Offset:              6.346ns (Levels of Logic = 4)
   Source:            XLXI_6415/vetoed (FF)
   Destination:       U10_3 (PAD)
   Source Clock:      GEL_RXCLK rising
@@ -3180,14 +3186,14 @@ Offset:              6.331ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.360   0.360  vetoed (vetoed)
+     FDE:C->Q              3   0.360   0.375  vetoed (vetoed)
      end scope: 'XLXI_6415'
      INV:I->O              1   0.358   0.741  XLXI_6433 (XLXN_15958)
      AND2:I0->O            1   0.195   0.360  XLXI_6434 (trigger_out)
      OBUF:I->O                 3.957          XLXI_6404 (U10_3)
     ----------------------------------------
-    Total                      6.331ns (4.870ns logic, 1.461ns route)
-                                       (76.9% logic, 23.1% route)
+    Total                      6.346ns (4.870ns logic, 1.476ns route)
+                                       (76.7% logic, 23.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
@@ -3233,14 +3239,14 @@ Delay:               6.182ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 72.00 secs
-Total CPU time to Xst completion: 71.97 secs
+Total REAL time to Xst completion: 74.00 secs
+Total CPU time to Xst completion: 73.24 secs
  
 --> 
 
-Total memory usage is 667904 kilobytes
+Total memory usage is 723968 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  274 (   0 filtered)
+Number of warnings :  275 (   0 filtered)
 Number of infos    :  126 (   0 filtered)
 

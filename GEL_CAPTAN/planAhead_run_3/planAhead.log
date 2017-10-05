@@ -1,0 +1,1415 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Oct 04 14:50:58 2017
+# Process ID: 4276
+# Log file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/planAhead_run_3/planAhead.log
+# Journal file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/pa.fromNcd.tcl
+# create_project -name dig_mac -dir "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/planAhead_run_3" -part xc4vlx25ff668-10
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/cbradford/KickerControllerFirmware/GEL_CAPTAN} {../ipcore_dir} {ipcore_dir} }
+# add_files [list {../ipcore_dir/ADDR_FIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {../ipcore_dir/DATA_FIFO_0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {../ipcore_dir/INFO_FIFO_0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ADC_FIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ethernetFIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/EthernetRAM.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ethernet_FIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Ethernet_RAM.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_adc.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "TOP_LEVEL.ucf" [current_fileset -constrset]
+Adding file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf' to fileset 'constrs_1'
+# add_files [list {TOP_LEVEL.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc4vlx25ff668-10
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design TOP_LEVEL.ngc ...
+WARNING:NetListWriters:298 - No output is written to TOP_LEVEL.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Madd_req_chk_sum_sig_15_add0000_lut<15 :
+   0> on block icmp_ping_checksum_calc is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_udp_data_valid_sig_cmp_gt0000_lut<4 : 0> on block decipherer is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_zero_fill_count_not0000<10 : 0> on
+   block create_packet is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_tx_data_count_addsub0000_cy<8 : 3>
+   on block tx_seq_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_qw_count_addsub0000_cy<6 : 3> on
+   block tx_seq_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_mem_loc_count_reg_addsub0000_cy<5 :
+   2> on block ram_comm_dec is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_q_w_count_addsub0000_cy<5 : 3> on
+   block rx_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_q_w_counter_addsub0000_cy<5 : 2> on
+   block rx_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ots_dout<63 : 0> on block
+   ethernet_interface is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_endAddr_add0000_Madd_lut<9 : 0> on
+   block data_send is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file TOP_LEVEL.edif ...
+ngc2edif: Total memory usage is 94308 kilobytes
+
+Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/TOP_LEVEL_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/TOP_LEVEL_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design DATA_FIFO_0.ngc ...
+WARNING:NetListWriters:298 - No output is written to DATA_FIFO_0.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file DATA_FIFO_0.edif ...
+ngc2edif: Total memory usage is 78948 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/DATA_FIFO_0.ngc' for (cell view 'DATA_FIFO_0', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/DATA_FIFO_0_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/DATA_FIFO_0_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design INFO_FIFO_0.ngc ...
+WARNING:NetListWriters:298 - No output is written to INFO_FIFO_0.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file INFO_FIFO_0.edif ...
+ngc2edif: Total memory usage is 78948 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/INFO_FIFO_0.ngc' for (cell view 'INFO_FIFO_0', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/INFO_FIFO_0_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/INFO_FIFO_0_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADDR_FIFO.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADDR_FIFO.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ADDR_FIFO.edif ...
+ngc2edif: Total memory usage is 78244 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ngc' for (cell view 'ADDR_FIFO', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/ADDR_FIFO_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/ADDR_FIFO_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADC_FIFO.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADC_FIFO.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ADC_FIFO.edif ...
+ngc2edif: Total memory usage is 79780 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.ngc' for (cell view 'ADC_FIFO', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/ADC_FIFO_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/ADC_FIFO_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design EthernetRAM.ngc ...
+WARNING:NetListWriters:298 - No output is written to EthernetRAM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file EthernetRAM.edif ...
+ngc2edif: Total memory usage is 78948 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.ngc' for (cell view 'EthernetRAM', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/EthernetRAM_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/dig_mac.data/cache/EthernetRAM_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn]
+INFO: [Device 21-21] Reading bus macro file C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/pr_bus_macros.xml
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ff668/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ff668/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/virtex4lx-10.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/virtex4lx-10.lib.
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_30' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103663]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_30' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103665]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_31' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103671]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_31' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103673]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_32' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103679]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_32' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103681]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_33' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103687]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_33' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103689]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_34' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103695]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_34' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103697]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_35' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103703]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_35' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103705]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_36' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103711]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_36' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103713]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_37' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103719]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_37' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103721]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6436' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:138022]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6436' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:138024]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6437' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:138030]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6437' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:138032]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_00DP_00S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:285]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_00DP_00S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:286]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_00DN_01S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:287]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_00DN_01S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:288]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_01DP_02S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:289]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_01DP_02S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:290]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_01DN_03S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:291]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_01DN_03S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:292]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_02DP_04S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:293]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_02DP_04S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:294]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_02DN_05S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:295]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_02DN_05S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:296]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_03DP_06S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:297]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_03DP_06S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:298]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_03DN_07S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:299]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_03DN_07S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:300]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_04DP_08S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:301]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_04DP_08S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:302]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_04DN_09S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:303]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_04DN_09S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:304]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_05DP_10S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:305]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_05DP_10S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:306]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_05DN_11S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:307]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_05DN_11S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:308]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_06DP_12S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:309]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_06DP_12S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:310]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_06DN_13S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:311]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_06DN_13S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:312]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_07DP_14S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:313]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_07DP_14S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:314]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_07DN_15S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:315]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_07DN_15S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:316]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_08DP_16S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:317]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_08DP_16S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:318]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_08DN_17S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:319]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_08DN_17S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:320]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_09DP_18S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:321]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_09DP_18S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:322]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_09DN_19S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:323]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_09DN_19S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:324]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_10DP_20S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:325]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_10DP_20S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:326]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_10DN_21S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:327]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_10DN_21S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:328]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_11DP_22S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:329]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_11DP_22S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:330]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_11DN_23S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:331]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_11DN_23S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:332]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_12DP_24S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:333]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_12DP_24S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:334]
+INFO: [Common 17-14] Message 'Constraints 18-11' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(15)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:620]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(14)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:621]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(13)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:622]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(12)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:623]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(11)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:624]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(10)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:625]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(9)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:626]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(8)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:627]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(7)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:870]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(6)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:871]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(5)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:872]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(4)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:873]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(3)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:874]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(2)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:875]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(1)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:876]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(0)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:877]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: e8d60b4b
+link_design: Time (s): elapsed = 00:00:15 . Memory (MB): peak = 670.297 ; gain = 200.754
+# read_xdl -file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd"
+Release 14.7 - xdl P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '4vlx25.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "TOP_LEVEL" is an NCD, version 3.2, device xc4vlx25, package ff668, speed -10
+This design is using the default stepping level (major silicon revision) for this device (1). Unless your design is targeted at devices of this stepping level, it is recommended that you explicitly specify the stepping level of the parts you will be using.
+This will allow the tools to take advantage of any available performance and functional enhancements for this device. The latest stepping level for this device is '2'. Additional information on "stepping level" is available at support.xilinx.com.
+Successfully converted design 'D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\TOP_LEVEL.ncd' to 'D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\TOP_LEVEL.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<0>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<1>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<2>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<3>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<4>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<5>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<6>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<7>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+INFO: [Designutils 20-658] Finished Parsing Placement File : D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd
+INFO: [Designutils 20-671] Placed 9603 instances
+read_xdl: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 681.559 ; gain = 11.262
+# if {[catch {read_twx -name results_1 -file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.twx\": $eInfo"
+# }
+report_timing -from [get_ports BUSB_00DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [#UNDEF]  Finished parsing spd file virtex4lx/4vlx25 .
+INFO: [Timing 38-45] Going to infer timing constraints.
+INFO: [Timing 38-33] Done inferring timing constraints.
+INFO: [Timing 38-36] Done setting wire delays.
+INFO: [Timing 38-85] Total timing graph edges = 85462.
+INFO: [Timing 38-86] Total timing graph wire edges = 33850.
+INFO: [Timing 38-87] Total zero delay edges = 5911.
+INFO: [Timing 38-84] Total non-zero delay edges = 27850.
+INFO: [Dlyest 22-12] Total pin-pairs supplied = 33761 . 
+INFO: [Dlyest 22-11] Total data-paths obtained = 8802 . 
+INFO: [Dlyest 22-13] P2P = 29023, P2B = 0, P2NB = 1973, B2B = 0, B2NB = 0, NB2NB = 1 . 
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:52:02 2017
+| Command  :  report_timing -from [get_ports BUSB_00DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_00DP_00S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[7]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        3.439ns  (logic 1.763ns (51.271%)  route 1.676ns (48.729%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    P7                                                0.000     0.000 r  BUSB_00DP_00S
+                         net (fo=0)                   0.000     0.000    BUSB_00DP_00S
+    P7                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6074/O
+                         net (fo=1, unset)            1.676     3.209    XLXI_6341/din[7]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[7]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[7])
+                                                      0.230     3.439    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_01DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:55:04 2017
+| Command  :  report_timing -from [get_ports BUSB_01DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_01DP_02S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[6]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        3.439ns  (logic 1.763ns (51.271%)  route 1.676ns (48.729%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    R2                                                0.000     0.000 r  BUSB_01DP_02S
+                         net (fo=0)                   0.000     0.000    BUSB_01DP_02S
+    R2                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6150/O
+                         net (fo=1, unset)            1.676     3.209    XLXI_6341/din[6]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[6]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[6])
+                                                      0.230     3.439    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_02DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:55:18 2017
+| Command  :  report_timing -from [get_ports BUSB_02DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_02DP_04S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[5]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        3.734ns  (logic 1.763ns (47.220%)  route 1.971ns (52.780%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    R6                                                0.000     0.000 r  BUSB_02DP_04S
+                         net (fo=0)                   0.000     0.000    BUSB_02DP_04S
+    R6                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6151/O
+                         net (fo=1, unset)            1.971     3.504    XLXI_6341/din[5]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[5]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[5])
+                                                      0.230     3.734    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_00DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:55:30 2017
+| Command  :  report_timing -from [get_ports BUSB_00DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_00DP_00S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[7]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        3.439ns  (logic 1.763ns (51.271%)  route 1.676ns (48.729%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    P7                                                0.000     0.000 r  BUSB_00DP_00S
+                         net (fo=0)                   0.000     0.000    BUSB_00DP_00S
+    P7                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6074/O
+                         net (fo=1, unset)            1.676     3.209    XLXI_6341/din[7]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[7]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[7])
+                                                      0.230     3.439    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_03DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:55:36 2017
+| Command  :  report_timing -from [get_ports BUSB_03DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_03DP_06S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[4]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        3.734ns  (logic 1.763ns (47.220%)  route 1.971ns (52.780%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    P3                                                0.000     0.000 r  BUSB_03DP_06S
+                         net (fo=0)                   0.000     0.000    BUSB_03DP_06S
+    P3                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6152/O
+                         net (fo=1, unset)            1.971     3.504    XLXI_6341/din[4]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[4]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[4])
+                                                      0.230     3.734    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_04DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:55:58 2017
+| Command  :  report_timing -from [get_ports BUSB_04DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_04DP_08S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[3]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        3.462ns  (logic 1.763ns (50.921%)  route 1.699ns (49.079%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    T4                                                0.000     0.000 r  BUSB_04DP_08S
+                         net (fo=0)                   0.000     0.000    BUSB_04DP_08S
+    T4                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6153/O
+                         net (fo=1, unset)            1.699     3.232    XLXI_6341/din[3]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[3]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[3])
+                                                      0.230     3.462    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_05DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:56:13 2017
+| Command  :  report_timing -from [get_ports BUSB_05DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_05DP_10S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[2]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        3.757ns  (logic 1.763ns (46.923%)  route 1.994ns (53.077%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    T7                                                0.000     0.000 r  BUSB_05DP_10S
+                         net (fo=0)                   0.000     0.000    BUSB_05DP_10S
+    T7                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6154/O
+                         net (fo=1, unset)            1.994     3.527    XLXI_6341/din[2]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[2]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[2])
+                                                      0.230     3.757    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_06DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:56:49 2017
+| Command  :  report_timing -from [get_ports BUSB_06DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_06DP_12S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[1]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        3.757ns  (logic 1.763ns (46.923%)  route 1.994ns (53.077%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U3                                                0.000     0.000 r  BUSB_06DP_12S
+                         net (fo=0)                   0.000     0.000    BUSB_06DP_12S
+    U3                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6155/O
+                         net (fo=1, unset)            1.994     3.527    XLXI_6341/din[1]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[1]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[1])
+                                                      0.230     3.757    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_07DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:57:08 2017
+| Command  :  report_timing -from [get_ports BUSB_07DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_07DP_14S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[0]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.052ns  (logic 1.763ns (43.507%)  route 2.289ns (56.493%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V4                                                0.000     0.000 r  BUSB_07DP_14S
+                         net (fo=0)                   0.000     0.000    BUSB_07DP_14S
+    V4                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6156/O
+                         net (fo=1, unset)            2.289     3.822    XLXI_6341/din[0]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[0]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[0])
+                                                      0.230     4.052    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_08DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:57:28 2017
+| Command  :  report_timing -from [get_ports BUSB_08DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_08DP_16S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[6]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.465ns  (logic 1.763ns (39.483%)  route 2.702ns (60.517%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AD3                                               0.000     0.000 r  BUSB_08DP_16S
+                         net (fo=0)                   0.000     0.000    BUSB_08DP_16S
+    AD3                  IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6165/O
+                         net (fo=1, unset)            2.702     4.235    XLXI_6341/din[15]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[6]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[6])
+                                                      0.230     4.465    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_010DP*]
+WARNING: [PlanAhead 12-584] No ports matched 'BUSB_010DP*'.
+ERROR: [PlanAhead 12-1387] No valid object(s) found for report_timing constraint with option 'from'.
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object.
+report_timing -from [get_ports BUSB_10DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:57:50 2017
+| Command  :  report_timing -from [get_ports BUSB_10DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_10DP_20S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[4]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.194ns  (logic 1.763ns (42.038%)  route 2.431ns (57.962%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AA7                                               0.000     0.000 r  BUSB_10DP_20S
+                         net (fo=0)                   0.000     0.000    BUSB_10DP_20S
+    AA7                  IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6167/O
+                         net (fo=1, unset)            2.431     3.964    XLXI_6341/din[13]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[4]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[4])
+                                                      0.230     4.194    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_11DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:58:03 2017
+| Command  :  report_timing -from [get_ports BUSB_11DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_11DP_22S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[3]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.489ns  (logic 1.763ns (39.276%)  route 2.726ns (60.724%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AA9                                               0.000     0.000 r  BUSB_11DP_22S
+                         net (fo=0)                   0.000     0.000    BUSB_11DP_22S
+    AA9                  IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6168/O
+                         net (fo=1, unset)            2.726     4.259    XLXI_6341/din[12]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[3]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[3])
+                                                      0.230     4.489    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_11DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:58:17 2017
+| Command  :  report_timing -from [get_ports BUSB_11DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_11DP_22S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[3]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.489ns  (logic 1.763ns (39.276%)  route 2.726ns (60.724%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AA9                                               0.000     0.000 r  BUSB_11DP_22S
+                         net (fo=0)                   0.000     0.000    BUSB_11DP_22S
+    AA9                  IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6168/O
+                         net (fo=1, unset)            2.726     4.259    XLXI_6341/din[12]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[3]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[3])
+                                                      0.230     4.489    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_09DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:58:49 2017
+| Command  :  report_timing -from [get_ports BUSB_09DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_09DP_18S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[5]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.760ns  (logic 1.763ns (37.036%)  route 2.997ns (62.964%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AF6                                               0.000     0.000 r  BUSB_09DP_18S
+                         net (fo=0)                   0.000     0.000    BUSB_09DP_18S
+    AF6                  IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6166/O
+                         net (fo=1, unset)            2.997     4.530    XLXI_6341/din[14]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[5]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[5])
+                                                      0.230     4.760    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_10DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:59:04 2017
+| Command  :  report_timing -from [get_ports BUSB_10DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_10DP_20S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[4]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.194ns  (logic 1.763ns (42.038%)  route 2.431ns (57.962%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AA7                                               0.000     0.000 r  BUSB_10DP_20S
+                         net (fo=0)                   0.000     0.000    BUSB_10DP_20S
+    AA7                  IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6167/O
+                         net (fo=1, unset)            2.431     3.964    XLXI_6341/din[13]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[4]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[4])
+                                                      0.230     4.194    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_11DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:59:18 2017
+| Command  :  report_timing -from [get_ports BUSB_11DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_11DP_22S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[3]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.489ns  (logic 1.763ns (39.276%)  route 2.726ns (60.724%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AA9                                               0.000     0.000 r  BUSB_11DP_22S
+                         net (fo=0)                   0.000     0.000    BUSB_11DP_22S
+    AA9                  IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6168/O
+                         net (fo=1, unset)            2.726     4.259    XLXI_6341/din[12]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[3]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[3])
+                                                      0.230     4.489    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_12DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 14:59:33 2017
+| Command  :  report_timing -from [get_ports BUSB_12DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_12DP_24S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[2]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.489ns  (logic 1.763ns (39.276%)  route 2.726ns (60.724%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AD5                                               0.000     0.000 r  BUSB_12DP_24S
+                         net (fo=0)                   0.000     0.000    BUSB_12DP_24S
+    AD5                  IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6169/O
+                         net (fo=1, unset)            2.726     4.259    XLXI_6341/din[11]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[2]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[2])
+                                                      0.230     4.489    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_13DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 15:00:02 2017
+| Command  :  report_timing -from [get_ports BUSB_13DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_13DP_26S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[1]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.784ns  (logic 1.763ns (36.854%)  route 3.021ns (63.146%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AE7                                               0.000     0.000 r  BUSB_13DP_26S
+                         net (fo=0)                   0.000     0.000    BUSB_13DP_26S
+    AE7                  IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6170/O
+                         net (fo=1, unset)            3.021     4.554    XLXI_6341/din[10]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[1]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[1])
+                                                      0.230     4.784    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_14DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 15:00:19 2017
+| Command  :  report_timing -from [get_ports BUSB_14DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_14DP_28S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[0]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.052ns  (logic 1.763ns (43.507%)  route 2.289ns (56.493%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W2                                                0.000     0.000 r  BUSB_14DP_28S
+                         net (fo=0)                   0.000     0.000    BUSB_14DP_28S
+    W2                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6171/O
+                         net (fo=1, unset)            2.289     3.822    XLXI_6341/din[9]
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[0]
+    RAMB16_X2Y11         RAMB16 (Setup_ramb16_CLKA_DIA[0])
+                                                      0.230     4.052    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X2Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+report_timing -from [get_ports BUSB_15]DP*]
+WARNING: [PlanAhead 12-584] No ports matched 'BUSB_15'.
+WARNING: [PlanAhead 12-1580] clock, cell, port or pin 'DP*]' not found.
+ERROR: [PlanAhead 12-1387] No valid object(s) found for report_timing constraint with option 'from'.
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object.
+report_timing -from [get_ports BUSB_15DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 15:00:43 2017
+| Command  :  report_timing -from [get_ports BUSB_15DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_15DP_30S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIPA[0]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        4.076ns  (logic 1.763ns (43.255%)  route 2.313ns (56.745%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V6                                                0.000     0.000 r  BUSB_15DP_30S
+                         net (fo=0)                   0.000     0.000    BUSB_15DP_30S
+    V6                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6172/O
+                         net (fo=1, unset)            2.313     3.846    XLXI_6341/din[8]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIPA[0]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIPA[0])
+                                                      0.230     4.076    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See D:/cbradford/KickerControllerFirmware/GEL_CAPTAN\planAhead_pid4276.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Oct 04 15:51:23 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead

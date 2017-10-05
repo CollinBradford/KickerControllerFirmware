@@ -12,7 +12,7 @@ stepping level for this device is '2'. Additional information on "stepping
 level" is available at support.xilinx.com.
 Opened constraints file TOP_LEVEL.pcf.
 
-Tue Oct 03 15:15:26 2017
+Thu Oct 05 10:15:25 2017
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:4 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g InitPin:Pullup -g CsPin:Pullup -g DinPin:Pullup -g BusyPin:Pullup -g RdWrPin:Pullup -g PowerdownPin:PullUp -g HswapenPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCIUpdateMode:AsRequired -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Match_cycle:Auto -g Security:None -g DonePipe:No -g DriveDone:No -g Encrypt:No TOP_LEVEL.ncd 
 
@@ -120,12 +120,12 @@ There were 0 CONFIG constraint(s) processed from TOP_LEVEL.pcf.
 
 
 Running DRC.
+WARNING:PhysDesignRules:367 - The signal <trig_types<7>> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
    /gwhf.whf/overflow_i> is incomplete. The signal does not drive any load pins
    in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6004/O> is incomplete. The signal
-   does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D15> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The
@@ -138,10 +138,12 @@ WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D11> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D12> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The
-   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
+   /gwas.wsts/ram_full_i> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6004/O> is incomplete. The signal
+   does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.cl
    kx/gsync_stage[2].rd_stg_inst/Q_reg<1>> is incomplete. The signal does not
@@ -150,19 +152,17 @@ WARNING:PhysDesignRules:367 - The signal
    <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.cl
    kx/gsync_stage[2].rd_stg_inst/Q_reg<0>> is incomplete. The signal does not
    drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
-   /gwas.wsts/ram_full_i> is incomplete. The signal does not drive any load pins
-   in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<12>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <trig_types<5>> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <trig_types<7>> is incomplete. The
-   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <trig_types<6>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <trig_types<5>> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_5338/GLOBAL_LOGIC1> is
    incomplete. The signal does not drive any load pins in the design.

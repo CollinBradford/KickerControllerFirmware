@@ -29,9 +29,9 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 Timing constraint: TS_GEL_RXCLK = PERIOD TIMEGRP "GEL_RXCLK" 8 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 111311 paths analyzed, 11239 endpoints analyzed, 0 failing endpoints
+ 111574 paths analyzed, 11147 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.911ns.
+ Minimum period is   7.952ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -41,7 +41,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  615 paths analyzed, 71 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   5.937ns.
+ Minimum period is   6.264ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -100,7 +100,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  141 paths analyzed, 100 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   3.620ns.
+ Minimum period is   3.539ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -121,7 +121,7 @@ Derived Constraints for TS_GEL_RXCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GEL_RXCLK                   |      8.000ns|      7.911ns|      7.497ns|            0|            0|       111311|            0|
+|TS_GEL_RXCLK                   |      8.000ns|      7.952ns|      7.497ns|            0|            0|       111574|            0|
 | TS_XLXN_12257                 |      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_XLXN_12669                 |      5.333ns|      4.000ns|      4.998ns|            0|            0|            0|            0|
 |  TS_XLXN_12781                |      2.667ns|      2.499ns|          N/A|            0|            0|            0|            0|
@@ -143,8 +143,8 @@ Derived Constraints for TS_BUSBHS_02DP_04S
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_BUSBHS_02DP_04S             |      5.000ns|      3.600ns|      3.620ns|            0|            0|            0|          141|
-| TS_XLXN_15087_0               |      5.000ns|      3.620ns|          N/A|            0|            0|          141|            0|
+|TS_BUSBHS_02DP_04S             |      5.000ns|      3.600ns|      3.539ns|            0|            0|            0|          141|
+| TS_XLXN_15087_0               |      5.000ns|      3.539ns|          N/A|            0|            0|          141|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -159,8 +159,8 @@ Clock to Setup on destination clock BUSBHS_02DN_05S
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-BUSBHS_02DN_05S|    3.620|         |         |         |
-BUSBHS_02DP_04S|    3.620|         |         |         |
+BUSBHS_02DN_05S|    3.539|         |         |         |
+BUSBHS_02DP_04S|    3.539|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock BUSBHS_02DP_04S
@@ -168,8 +168,8 @@ Clock to Setup on destination clock BUSBHS_02DP_04S
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-BUSBHS_02DN_05S|    3.620|         |         |         |
-BUSBHS_02DP_04S|    3.620|         |         |         |
+BUSBHS_02DN_05S|    3.539|         |         |         |
+BUSBHS_02DP_04S|    3.539|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock GEL_RXCLK
@@ -177,7 +177,7 @@ Clock to Setup on destination clock GEL_RXCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GEL_RXCLK      |    7.911|         |         |         |
+GEL_RXCLK      |    7.952|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SECONDARY_CLK
@@ -185,7 +185,7 @@ Clock to Setup on destination clock SECONDARY_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SECONDARY_CLK  |    5.937|         |         |         |
+SECONDARY_CLK  |    6.264|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -194,20 +194,20 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 112067 paths, 0 nets, and 23479 connections
+Constraints cover 112330 paths, 0 nets, and 23633 connections
 
 Design statistics:
-   Minimum period:   7.911ns   (Maximum frequency: 126.406MHz)
+   Minimum period:   7.952ns   (Maximum frequency: 125.755MHz)
 
 
-Analysis completed Tue Oct 03 15:15:19 2017 
+Analysis completed Wed Oct 04 16:04:02 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 361 MB
+Peak Memory Usage: 362 MB
 
 
 

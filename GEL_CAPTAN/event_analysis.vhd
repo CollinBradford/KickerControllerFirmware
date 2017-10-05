@@ -118,6 +118,11 @@ begin
 	reset_force_veto <= resetForceVeto;
 	--assign footer signals 
 	internalFooter(7 downto 0) <= std_logic_vector(zeroCrossCount(7 downto 0));
+	internalFooter(8) <= vetoed;
+	internalFooter(9) <= veto_en;
+	internalFooter(19 downto 12) <= zero_cross_thresh_high;
+	internalFooter(27 downto 20) <= zero_cross_thresh_low;
+	internalFooter(35 downto 28) <= zero_cross_veto_thresh;
 	
 	process(clk) begin
 		--check for reset condition

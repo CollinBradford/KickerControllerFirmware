@@ -524,6 +524,182 @@ INFO:ConstraintSystem:59 - Constraint <INST "BUSA_15DN_31S" IOSTANDARD =
    1. The specified design element actually exists in the original design.
    2. The specified object is spelled correctly in the constraint source file.
 
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(15)" OFFSET =IN 0.2
+   ns VALID 1.461 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(620)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(15)" OFFSET =IN 0.2
+   ns VALID 1.461 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(620)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(15)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(14)" OFFSET =IN 0.2
+   ns VALID 2.24 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(621)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(14)" OFFSET =IN 0.2
+   ns VALID 2.24 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(621)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(14)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(13)" OFFSET =IN 0.2
+   ns VALID 1.166 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(622)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(13)" OFFSET =IN 0.2
+   ns VALID 1.166 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(622)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(13)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(12)" OFFSET =IN 0.2
+   ns VALID 1.166 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(623)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(12)" OFFSET =IN 0.2
+   ns VALID 1.166 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(623)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(12)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(11)" OFFSET =IN 0.2
+   ns VALID 1.437 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(624)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(11)" OFFSET =IN 0.2
+   ns VALID 1.437 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(624)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(11)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(10)" OFFSET =IN 0.2
+   ns VALID 1.142 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(625)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(10)" OFFSET =IN 0.2
+   ns VALID 1.142 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(625)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(10)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(9)" OFFSET =IN 0.2
+   ns VALID 1.308 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(626)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(9)" OFFSET =IN 0.2
+   ns VALID 1.308 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(626)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(9)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(8)" OFFSET =IN 0.2
+   ns VALID 1.898 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(627)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(8)" OFFSET =IN 0.2
+   ns VALID 1.898 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(627)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(8)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(7)" OFFSET =IN 0.2
+   ns VALID 2.535 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(870)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(7)" OFFSET =IN 0.2
+   ns VALID 2.535 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(870)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(7)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(6)" OFFSET =IN 0.2
+   ns VALID 2.535 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(871)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(6)" OFFSET =IN 0.2
+   ns VALID 2.535 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(871)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(6)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(5)" OFFSET =IN 0.2
+   ns VALID 1.7 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(872)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(5)" OFFSET =IN 0.2
+   ns VALID 1.7 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(872)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(5)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(4)" OFFSET =IN 0.2
+   ns VALID 1.7 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(873)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(4)" OFFSET =IN 0.2
+   ns VALID 1.7 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(873)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(4)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(3)" OFFSET =IN 0.2
+   ns VALID 2.511 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(874)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(3)" OFFSET =IN 0.2
+   ns VALID 2.511 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(874)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(3)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(2)" OFFSET =IN 0.2
+   ns VALID 2.216 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(875)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(2)" OFFSET =IN 0.2
+   ns VALID 2.216 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(875)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(2)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(1)" OFFSET =IN 0.2
+   ns VALID 2.216 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(876)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(1)" OFFSET =IN 0.2
+   ns VALID 2.216 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(876)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(1)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
+WARNING:ConstraintSystem:168 - Constraint <NET "fadc_data_in(0)" OFFSET =IN 0.2
+   ns VALID 1.921 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(877)]: This constraint
+   will be ignored because NET "FADC_DCLK" could not be found or was not
+   connected to a PAD.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fadc_data_in(0)" OFFSET =IN 0.2
+   ns VALID 1.921 ns BEFORE "FADC_DCLK";> [TOP_LEVEL.ucf(877)]: This constraint
+   cannot be distributed from the design objects matching 'NET
+   "fadc_data_in(0)"' because those design objects do not contain or drive any
+   instances of the correct type.
+
 INFO:ConstraintSystem:178 - TNM 'GEL_RXCLK', used in period specification
    'TS_GEL_RXCLK', was traced into DCM_ADV instance XLXI_3410. The following new
    TNM groups and period specifications were generated at the DCM_ADV output(s):
@@ -646,9 +822,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  63
+  Number of warnings:  95
 
-Total memory usage is 225596 kilobytes
+Total memory usage is 225724 kilobytes
 
 Writing NGD file "TOP_LEVEL.ngd" ...
 Total REAL time to NGDBUILD completion:  8 sec

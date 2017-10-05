@@ -8,10 +8,10 @@
 <msg type="warning" file="Par" num="251" delta="old" >Map -timing was run with a lower effort level setting than you are using for PAR.  Xilinx recommends that you rerun Map -timing with the effort level that you have set in PAR to achieve better design performance.
 </msg>
 
-<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i</arg> has no load.  PAR will not attempt to route this signal.
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">trig_types&lt;7&gt;</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6004/O</arg> has no load.  PAR will not attempt to route this signal.
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_3432/D15</arg> has no load.  PAR will not attempt to route this signal.
@@ -32,10 +32,10 @@
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_3432/D12</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_3432/D13</arg> has no load.  PAR will not attempt to route this signal.
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_3432/D14</arg> has no load.  PAR will not attempt to route this signal.
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6004/O</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg&lt;1&gt;</arg> has no load.  PAR will not attempt to route this signal.
@@ -44,22 +44,22 @@
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg&lt;0&gt;</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg> has no load.  PAR will not attempt to route this signal.
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_3432/D13</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6051/Q&lt;12&gt;</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_3432/D14</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6051/Q&lt;13&gt;</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">trig_types&lt;5&gt;</arg> has no load.  PAR will not attempt to route this signal.
-</msg>
-
-<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">trig_types&lt;7&gt;</arg> has no load.  PAR will not attempt to route this signal.
-</msg>
-
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">trig_types&lt;6&gt;</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">trig_types&lt;5&gt;</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">XLXI_6227/data_manager_blk/rx_info_fifo_rd_data&lt;6&gt;</arg> has no load.  PAR will not attempt to route this signal.
