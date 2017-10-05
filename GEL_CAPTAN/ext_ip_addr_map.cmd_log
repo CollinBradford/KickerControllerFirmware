@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ext_ip_addr_map.vhd -prj dig_mac -o ext_ip_addr_map.spl -module ext_ip_addr_map -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 -w ext_ip_addr_map.spl D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ext_ip_addr_map.sym 

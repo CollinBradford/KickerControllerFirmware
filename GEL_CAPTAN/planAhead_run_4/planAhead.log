@@ -1,0 +1,592 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Oct 04 16:04:22 2017
+# Process ID: 5016
+# Log file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/planAhead_run_4/planAhead.log
+# Journal file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/pa.fromNcd.tcl
+# create_project -name dig_mac -dir "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/planAhead_run_4" -part xc4vlx25ff668-10
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/cbradford/KickerControllerFirmware/GEL_CAPTAN} {../ipcore_dir} {ipcore_dir} }
+# add_files [list {../ipcore_dir/ADDR_FIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {../ipcore_dir/DATA_FIFO_0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {../ipcore_dir/INFO_FIFO_0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ADC_FIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ethernetFIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/EthernetRAM.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ethernet_FIFO.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Ethernet_RAM.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_adc.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "TOP_LEVEL.ucf" [current_fileset -constrset]
+Adding file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf' to fileset 'constrs_1'
+# add_files [list {TOP_LEVEL.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc4vlx25ff668-10
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design TOP_LEVEL.ngc ...
+WARNING:NetListWriters:298 - No output is written to TOP_LEVEL.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Madd_req_chk_sum_sig_15_add0000_lut<15 :
+   0> on block icmp_ping_checksum_calc is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_udp_data_valid_sig_cmp_gt0000_lut<4 : 0> on block decipherer is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_zero_fill_count_not0000<10 : 0> on
+   block create_packet is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_tx_data_count_addsub0000_cy<8 : 3>
+   on block tx_seq_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_qw_count_addsub0000_cy<6 : 3> on
+   block tx_seq_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_mem_loc_count_reg_addsub0000_cy<5 :
+   2> on block ram_comm_dec is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_q_w_count_addsub0000_cy<5 : 3> on
+   block rx_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_q_w_counter_addsub0000_cy<5 : 2> on
+   block rx_ctl is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ots_dout<63 : 0> on block
+   ethernet_interface is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_endAddr_add0000_Madd_lut<9 : 0> on
+   block data_send is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file TOP_LEVEL.edif ...
+ngc2edif: Total memory usage is 94564 kilobytes
+
+Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/TOP_LEVEL_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/TOP_LEVEL_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design DATA_FIFO_0.ngc ...
+WARNING:NetListWriters:298 - No output is written to DATA_FIFO_0.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file DATA_FIFO_0.edif ...
+ngc2edif: Total memory usage is 79908 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/DATA_FIFO_0.ngc' for (cell view 'DATA_FIFO_0', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/DATA_FIFO_0_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/DATA_FIFO_0_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design INFO_FIFO_0.ngc ...
+WARNING:NetListWriters:298 - No output is written to INFO_FIFO_0.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file INFO_FIFO_0.edif ...
+ngc2edif: Total memory usage is 79204 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/INFO_FIFO_0.ngc' for (cell view 'INFO_FIFO_0', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/INFO_FIFO_0_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/INFO_FIFO_0_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADDR_FIFO.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADDR_FIFO.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ADDR_FIFO.edif ...
+ngc2edif: Total memory usage is 78180 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ngc' for (cell view 'ADDR_FIFO', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/ADDR_FIFO_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/ADDR_FIFO_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADC_FIFO.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADC_FIFO.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ADC_FIFO.edif ...
+ngc2edif: Total memory usage is 79268 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.ngc' for (cell view 'ADC_FIFO', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/ADC_FIFO_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/ADC_FIFO_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design EthernetRAM.ngc ...
+WARNING:NetListWriters:298 - No output is written to EthernetRAM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file EthernetRAM.edif ...
+ngc2edif: Total memory usage is 79076 kilobytes
+
+Reading core file 'D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.ngc' for (cell view 'EthernetRAM', library 'TOP_LEVEL_lib', file 'TOP_LEVEL.ngc')
+Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/EthernetRAM_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/dig_mac.data/cache/EthernetRAM_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn]
+INFO: [Device 21-21] Reading bus macro file C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/pr_bus_macros.xml
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ff668/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/xc4vlx25/ff668/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/virtex4lx-10.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4lx/virtex4lx-10.lib.
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_30' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103663]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_30' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103665]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_31' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103671]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_31' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103673]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_32' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103679]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_32' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103681]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_33' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103687]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_33' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103689]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_34' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103695]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_34' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103697]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_35' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103703]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_35' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103705]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_36' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103711]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_36' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103713]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6435/I_36_37' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103719]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6435/I_36_37' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:103721]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6436' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:138022]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6436' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:138024]
+WARNING: [Constraints 18-505] Could not create 'DRIVE' constraint because cell 'XLXI_6437' is not directly connected to top level port. 'DRIVE' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:138030]
+WARNING: [Constraints 18-505] Could not create 'SLEW' constraint because cell 'XLXI_6437' is not directly connected to top level port. 'SLEW' is ignored by planAhead but preserved for implementation tool [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ngc:138032]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/ADDR_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/DATA_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/ipcore_dir/INFO_FIFO_0.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/ADC_FIFO.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.ncf]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/ipcore_dir/EthernetRAM.ncf]
+Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_00DP_00S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:285]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_00DP_00S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:286]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_00DN_01S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:287]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_00DN_01S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:288]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_01DP_02S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:289]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_01DP_02S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:290]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_01DN_03S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:291]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_01DN_03S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:292]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_02DP_04S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:293]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_02DP_04S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:294]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_02DN_05S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:295]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_02DN_05S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:296]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_03DP_06S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:297]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_03DP_06S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:298]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_03DN_07S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:299]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_03DN_07S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:300]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_04DP_08S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:301]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_04DP_08S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:302]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_04DN_09S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:303]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_04DN_09S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:304]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_05DP_10S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:305]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_05DP_10S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:306]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_05DN_11S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:307]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_05DN_11S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:308]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_06DP_12S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:309]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_06DP_12S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:310]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_06DN_13S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:311]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_06DN_13S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:312]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_07DP_14S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:313]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_07DP_14S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:314]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_07DN_15S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:315]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_07DN_15S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:316]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_08DP_16S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:317]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_08DP_16S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:318]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_08DN_17S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:319]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_08DN_17S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:320]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_09DP_18S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:321]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_09DP_18S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:322]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_09DN_19S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:323]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_09DN_19S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:324]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_10DP_20S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:325]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_10DP_20S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:326]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_10DN_21S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:327]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_10DN_21S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:328]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_11DP_22S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:329]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_11DP_22S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:330]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_11DN_23S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:331]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'BUSA_11DN_23S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:332]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_12DP_24S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:333]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BUSA_12DP_24S' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:334]
+INFO: [Common 17-14] Message 'Constraints 18-11' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(15)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:620]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(14)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:621]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(13)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:622]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(12)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:623]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(11)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:624]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(10)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:625]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(9)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:626]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(8)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:627]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(7)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:870]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(6)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:871]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(5)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:872]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(4)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:873]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(3)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:874]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(2)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:875]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(1)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:876]
+CRITICAL WARNING: [Constraints 18-15] Could not find terminal net corresponding to net 'fadc_data_in(0)' [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf:877]
+Finished Parsing UCF File [D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: e8d60b4b
+link_design: Time (s): elapsed = 00:00:15 . Memory (MB): peak = 653.547 ; gain = 235.871
+# read_xdl -file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd"
+Release 14.7 - xdl P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '4vlx25.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "TOP_LEVEL" is an NCD, version 3.2, device xc4vlx25, package ff668, speed -10
+This design is using the default stepping level (major silicon revision) for this device (1). Unless your design is targeted at devices of this stepping level, it is recommended that you explicitly specify the stepping level of the parts you will be using.
+This will allow the tools to take advantage of any available performance and functional enhancements for this device. The latest stepping level for this device is '2'. Additional information on "stepping level" is available at support.xilinx.com.
+Successfully converted design 'D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\TOP_LEVEL.ncd' to 'D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\TOP_LEVEL.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<0>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<1>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<2>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<3>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<4>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<5>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<6>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+WARNING: [Designutils 20-665] Net Name: XLXI_6435/O<7>. Found in file: D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd. Not Recognizable in the Context
+INFO: [Designutils 20-658] Finished Parsing Placement File : D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.ncd
+INFO: [Designutils 20-671] Placed 9603 instances
+read_xdl: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 657.965 ; gain = 4.043
+# if {[catch {read_twx -name results_1 -file "D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/TOP_LEVEL.twx\": $eInfo"
+# }
+report_timing -from [get_ports BUSB_00DP*]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -10, Delay Type: max, Constraints type: UCF.
+INFO: [#UNDEF]  Finished parsing spd file virtex4lx/4vlx25 .
+INFO: [Timing 38-45] Going to infer timing constraints.
+INFO: [Timing 38-33] Done inferring timing constraints.
+INFO: [Timing 38-36] Done setting wire delays.
+INFO: [Timing 38-85] Total timing graph edges = 85462.
+INFO: [Timing 38-86] Total timing graph wire edges = 33850.
+INFO: [Timing 38-87] Total zero delay edges = 5911.
+INFO: [Timing 38-84] Total non-zero delay edges = 27850.
+INFO: [Dlyest 22-12] Total pin-pairs supplied = 33761 . 
+INFO: [Dlyest 22-11] Total data-paths obtained = 8802 . 
+INFO: [Dlyest 22-13] P2P = 29023, P2B = 0, P2NB = 1973, B2B = 0, B2NB = 0, NB2NB = 1 . 
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+------------------------------------------------------------------------------------------------
+| Report   :  timing
+| Design   :  TOP_LEVEL
+| Part     :  Device=4vlx25  Package=ff668  Speed=-10 (PRODUCTION 1.68 2008-03-20)
+| Version  :  PlanAhead v14.7 (64-bit)  Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+| Date     :  Wed Oct 04 16:06:52 2017
+| Command  :  report_timing -from [get_ports BUSB_00DP*]
+------------------------------------------------------------------------------------------------
+
+
+Slack:                    inf
+  Source:                 BUSB_00DP_00S
+                            (input port)
+  Destination:            XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[7]
+                            (rising edge-triggered cell RAMB16 clocked by XLXN_15087  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             (none)
+  Path Type:              Max
+  Data Path Delay:        3.439ns  (logic 1.763ns (51.271%)  route 1.676ns (48.729%))
+  Logic Levels:           1  (IBUFDS_LVDS_25=1)
+  Clock Path Skew:        6.510ns (DCD - SCD)
+    Destination Clock Delay (DCD):    6.510ns
+    Source Clock Delay      (SCD):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    P7                                                0.000     0.000 r  BUSB_00DP_00S
+                         net (fo=0)                   0.000     0.000    BUSB_00DP_00S
+    P7                   IBUFDS_LVDS_25 (Prop_ibufds_lvds_25_I_O)
+                                                      1.533     1.533 r  XLXI_6074/O
+                         net (fo=1, unset)            1.676     3.209    XLXI_6341/din[7]
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/DIA[7]
+    RAMB16_X1Y11         RAMB16 (Setup_ramb16_CLKA_DIA[7])
+                                                      0.230     3.439    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock XLXN_15087 rise edge)
+                                                      0.000     0.000 r  
+    ILOGIC_X1Y55                                      0.000     0.000 r  XLXI_3405/O
+                         net (fo=1, unset)            2.988     2.988    XLXN_15075
+    BUFGCTRL_X0Y28       BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6040/O
+                         net (fo=1, unset)            2.988     6.510    XLXN_15130
+    DCM_ADV_X0Y2         DCM_ADV (Prop_dcm_adv_CLKIN_CLK0)
+                                                      0.000     6.510 r  XLXI_6199/CLK0
+                         net (fo=1, unset)           -3.522     2.988    XLXN_15087
+    BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.534     3.522 r  XLXI_6200/O
+                         net (fo=42, unset)           2.988     6.510    XLXI_6341/wr_clk
+    RAMB16_X1Y11                                                      r  XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP/CLKA
+
+
+
+
+set_input_delay -clock fadc_dclk -max 3.975 [get_ports {BUSB_00DP_00S}]
+invalid command name "set_input_delay"
+reset_timing
+ERROR: [PlanAhead 12-1438] You already have UCF based timing constraints created for design 'design_1'. You can only have either UCF or SDC based timing constraints for a design.
+source top.sdc
+couldn't read file "top.sdc": no such file or directory
+source top.sdc
+couldn't read file "top.sdc": no such file or directory
+dir
+WARNING: [Common 17-259] Unknown Tcl command 'dir' sending command to the OS shell for execution.
+invalid command name "dir"
+exec dir
+__ISE_repository_dig_mac.ise_.lock  GEC_TX_CTL_8.vhd
+_ngo				    GEC_TX_CTL_bogus.prj
+_xmsgs				    GEC_TX_CTL_bogus.spl
+arp_reply.vhd			    GEC_TX_CTL_bogus.stx
+blk_mem_gen_v2_6.ngc		    GEC_TX_CTL_bogus.sym
+blk_mem_gen_v2_6.spl		    GEC_TX_CTL_bogus.xst
+blk_mem_gen_v2_6.sym		    GEC_TX_CTL_bogus_vhdl.prj
+blk_mem_gen_v2_6.vhd		    GEC_TX_SEQ_CTL_8.spl
+buffer_10bit.sym		    GEC_TX_SEQ_CTL_8.sym
+buffer_10bit.vhd		    GEC_TX_SEQ_CTL_8.vhd
+buffer_12bit.jhd		    GEL_CAPTAN.ipf
+buffer_12bit.sym		    GEL_PROM.prm
+buffer_12bit.vhd		    GEL_PROM.sig
+buffer_4x12_to_10.sym		    gigabit_ethernet_controller.cmd_log
+buffer_4x12_to_10.vhd		    gigabit_ethernet_controller.jhd
+buffer_60bit.sym		    gigabit_ethernet_controller.sch
+buffer_60bit.vhd		    gigabit_ethernet_controller.schbak
+buffer_8bit.sym			    gigabit_ethernet_controller.schcmd
+buffer_8bit.vhd			    gigabit_ethernet_controller.sym
+burst_controller_sm.sym		    gigabit_ethernet_controller.vhf
+burst_controller_sm.vhd		    gigabit_ethernet_controller_summary.html
+burst_controller_sm_vhdl.prj	    IDELAY_CTRL.vhd
+burst_test_fifo64.ngc		    impact.xsl
+burst_test_fifo64.prj		    impact_impact.xwbt
+burst_test_fifo64.spl		    INFO_FIFO_0.ngc
+burst_test_fifo64.stx		    INFO_FIFO_0.spl
+burst_test_fifo64.sym		    INFO_FIFO_0.sym
+burst_test_fifo64.vhd		    INFO_FIFO_0.vhd
+burst_test_fifo64.xst		    INFO_FIFO64_0.spl
+burst_test_fifo64_vhdl.prj	    INFO_FIFO64_0.sym
+burst_throughput_test_blk.prj	    INFO_FIFO64_0.vhd
+burst_throughput_test_blk.spl	    ip_checksum_calc.vhd
+burst_throughput_test_blk.stx	    ipcore_dir
+burst_throughput_test_blk.sym	    iseconfig
+burst_throughput_test_blk.vhd	    isim
+burst_throughput_test_blk.xst	    isim.cmd
+burst_throughput_test_blk_vhdl.prj  isim.log
+burst_traffic_controller.sym	    MAC_core_example_design.sym
+burst_traffic_controller.vhd	    MUX16_2.prj
+ChipScopeAnalyzer.cpj		    MUX16_2.spl
+ClockLatchSignals.cmd_log	    MUX16_2.stx
+ClockLatchSignals.sym		    MUX16_2.sym
+ClockLatchSignals.vhd		    MUX16_2.vhd
+ClockLatchSignals_tb.vhd	    MUX16_2.xst
+ClockLatchSignals_tb_beh.prj	    MUX16_2_vhdl.prj
+ClockLatchSignals_tb_isim_beh.exe   MUX64_2.spl
+ClockLatchSignals_tb_isim_beh.wdb   MUX64_2.sym
+ClockLatchSignals_vhdl.prj	    MUX64_2.vhd
+CRC_chk.spl			    MUX64_4.sym
+CRC_chk.sym			    MUX64_4.vhd
+CRC_chk.v			    MUX64_8.sym
+CRC_gen.spl			    MUX64_8.vhd
+CRC_gen.sym			    Newest\ project.cpj
+CRC_gen.v			    ofnNtrc
+CRC_splice.spl			    or33.vhd
+CRC_splice.sym			    output.txt
+CRC_splice.vhd			    pa.fromNcd.tcl
+create_packet.vhd		    param.opt
+cs.cdc				    params_package.vhd
+DATA_FIFO_0.ngc			    PeakFinder.cmd_log
+DATA_FIFO_0.spl			    PeakFinder.sym
+DATA_FIFO_0.sym			    PeakFinder.vhd
+DATA_FIFO_0.vhd			    PeakFinder.vhi
+DATA_MANAGER.cmd_log		    PeakFinder_tb.vhd
+DATA_MANAGER.jhd		    PeakFinder_vhdl.prj
+DATA_MANAGER.sch		    PeakFinderTest.cdc
+DATA_MANAGER.schbak		    pepExtractor.prj
+DATA_MANAGER.schcmd		    planAhead.ngc2edif.log
+DATA_MANAGER.sym		    planAhead_pid11228.debug
+DATA_MANAGER.vhf		    planAhead_pid1936.debug
+data_send.cmd_log		    planAhead_pid4276.debug
+data_send.sym			    planAhead_pid7560.debug
+data_send.vhd			    planAhead_run_1
+data_send_vhdl.prj		    planAhead_run_2
+dataout_mux.vhd			    planAhead_run_3
+DataRepititionDebug.cdc		    planAhead_run_4
+decipherer.vhd			    Project\ Notes.txt
+delay_counter.prj		    ProjectNotes
+delay_counter.spl		    psudo_data_allOne.cmd_log
+delay_counter.stx		    psudo_data_allOne.sym
+delay_counter.sym		    psudo_data_allOne.vhd
+delay_counter.vhd		    PsudoCounter.cmd_log
+delay_counter.xst		    PsudoCounter.sym
+delay_counter_vhdl.prj		    PsudoCounter.vhd
+DELAY16.cmd_log			    PsudoCounter_vhdl.prj
+DELAY16.jhd			    psudoData.cmd_log
+DELAY16.sch			    psudoData.sym
+DELAY16.schbak			    psudoData.vhd
+DELAY16.schcmd			    psudoData_vhdl.prj
+DELAY16.sym			    Pulser.cmd_log
+DELAY16.vhf			    Pulser.sym
+demo_prom.prm			    Pulser.vhd
+demo_prom.sig			    Pulser_vhdl.prj
+dest_info_container.vhd		    RAM_COMM_DEC_9.cmd_log
+dev_wr_gate.spl			    RAM_COMM_DEC_9.sym
+dev_wr_gate.sym			    RAM_COMM_DEC_9.vhd
+dev_wr_gate.vhd			    RESET_INIT.cmd_log
+dev_wr_gate_t.spl		    RESET_INIT.jhd
+dev_wr_gate_t.sym		    RESET_INIT.sch
+dev_wr_gate_t.vhd		    RESET_INIT.sym
+device_usage_statistics.html	    RESET_INIT.vhf
+DIG_GEC.prj			    RX_IN_LATCH.prj
+DIG_GEC.spl			    RX_IN_LATCH.spl
+DIG_GEC.stx			    RX_IN_LATCH.stx
+DIG_GEC.sym			    RX_IN_LATCH.sym
+DIG_GEC.vhd			    RX_IN_LATCH.vhd
+DIG_GEC.xst			    RX_IN_LATCH.xst
+DIG_GEC_vhdl.prj		    RX_IN_LATCH_vhdl.prj
+dig_mac.gise			    Sample_Manager.sym
+dig_mac.ise_ISE_Backup		    Sample_Manager.vhd
+dig_mac.restore			    sch2HdlBatchFile
+dig_mac.xise			    stat_mux.vhd
+dig_mac_xdb			    stat_pulse.cmd_log
+ethernet_FIFO.bmm		    stat_pulse.spl
+ethernet_interface.cmd_log	    stat_pulse.sym
+ethernet_interface.sym		    stat_pulse.vhd
+ethernet_interface_vhdl.prj	    stat_pulse_module.cmd_log
+Ethernet_RAM.bmm		    stat_pulse_module.jhd
+ethernetBuffer.bmm		    stat_pulse_module.sch
+ethernetFIFOTester.vhd		    stat_pulse_module.sym
+event_analysis.cmd_log		    stat_pulse_module.vhf
+event_analysis.sym		    TOP_LEVEL.bld
+event_analysis.vhd		    TOP_LEVEL.cmd_log
+event_analysis_vhdl.prj		    TOP_LEVEL.lso
+ext_ip_addr_map.cmd_log		    TOP_LEVEL.ncd
+ext_ip_addr_map.sym		    TOP_LEVEL.ngc
+ext_ip_addr_map.vhd		    TOP_LEVEL.ngd
+fadc_mem.cmd_log		    TOP_LEVEL.ngr
+fadc_mem.ngc			    TOP_LEVEL.pad
+fadc_mem.sym			    TOP_LEVEL.par
+fadc_mem.vhd			    TOP_LEVEL.pcf
+fadc_params_package.vhd		    TOP_LEVEL.prj
+fadc_prom.cfi			    TOP_LEVEL.ptwx
+fadc_prom.mcs			    TOP_LEVEL.sch
+fadc_prom.prm			    TOP_LEVEL.schbak
+fadc_prom.sig			    TOP_LEVEL.schcmd
+FADC_READ_CTRL.cmd_log		    TOP_LEVEL.schlog
+FADC_READ_CTRL.sym		    top_level.sig
+FADC_READ_CTRL.vhd		    TOP_LEVEL.stx
+FADC_READ_CTRL_vhdl.prj		    TOP_LEVEL.syr
+FADC_WRITE_CTRL.cmd_log		    TOP_LEVEL.twr
+FADC_WRITE_CTRL.sym		    TOP_LEVEL.twx
+FADC_WRITE_CTRL.vhd		    TOP_LEVEL.ucf
+FADC_WRITE_CTRL_vhdl.prj	    TOP_LEVEL.unroutes
+fake_user_data.sym		    TOP_LEVEL.vhd
+fake_user_data.vhd		    TOP_LEVEL.vhf
+FIFO_SIM.cmd_log		    TOP_LEVEL.xdl
+FIFO_SIM.sym			    TOP_LEVEL.xpi
+FIFO_SIM.vhd			    TOP_LEVEL.xst
+FIFO_SIM_tb.vhd			    TOP_LEVEL_2011-4-5-16-14-53.twx
+FiFoSim.cdc			    TOP_LEVEL_2017-10-4-13-33-58.twx
+filter_data_out.vhd		    TOP_LEVEL_bitgen.xwbt
+fuse.log			    TOP_LEVEL_clkrgnrpt.xrpt
+fuse.xmsgs			    TOP_LEVEL_envsettings.html
+fuseRelaunch.cmd		    TOP_LEVEL_fpga_editor.log
+GEC_RX_CTL_0.prj		    TOP_LEVEL_guide.ncd
+GEC_RX_CTL_0.spl		    TOP_LEVEL_map.map
+GEC_RX_CTL_0.stx		    TOP_LEVEL_map.mrp
+GEC_RX_CTL_0.sym		    TOP_LEVEL_map.ncd
+GEC_RX_CTL_0.vhd		    TOP_LEVEL_map.ngm
+GEC_RX_CTL_0.xst		    TOP_LEVEL_map.xrpt
+GEC_RX_CTL_0_vhdl.prj		    TOP_LEVEL_ngdbuild.xrpt
+GEC_RX_CTL_1.spl		    TOP_LEVEL_old.ucf
+GEC_RX_CTL_1.sym		    TOP_LEVEL_pad.csv
+GEC_RX_CTL_1.vhd		    TOP_LEVEL_pad.txt
+GEC_RX_CTL_2.prj		    TOP_LEVEL_par.xrpt
+GEC_RX_CTL_2.spl		    TOP_LEVEL_prev_built.ngd
+GEC_RX_CTL_2.stx		    TOP_LEVEL_sta.nlf
+GEC_RX_CTL_2.sym		    TOP_LEVEL_sta.pcs
+GEC_RX_CTL_2.vhd		    TOP_LEVEL_sta.sdf
+GEC_RX_CTL_2.xst		    TOP_LEVEL_sta.v
+GEC_RX_CTL_2_vhdl.prj		    TOP_LEVEL_summary.html
+GEC_RX_CTL_8.prj		    TOP_LEVEL_summary.xml
+GEC_RX_CTL_8.spl		    TOP_LEVEL_usage.xml
+GEC_RX_CTL_8.stx		    TOP_LEVEL_vhdl.prj
+GEC_RX_CTL_8.sym		    TOP_LEVEL_xpa.log
+GEC_RX_CTL_8.vhd		    TOP_LEVEL_xst.xrpt
+GEC_RX_CTL_8.xst		    trigger_recv_blk.cmd_log
+GEC_RX_CTL_8_vhdl.prj		    trigger_recv_blk.sym
+GEC_RX_DATA_MUX.prj		    trigger_recv_blk.vhd
+GEC_RX_DATA_MUX.spl		    trigger_recv_blk_vhdl.prj
+GEC_RX_DATA_MUX.stx		    udp_data_splicer.vhd
+GEC_RX_DATA_MUX.sym		    user_addrs_mux.vhd
+GEC_RX_DATA_MUX.vhd		    VERSION_BLK.spl
+GEC_RX_DATA_MUX.xst		    VERSION_BLK.sym
+GEC_RX_DATA_MUX_vhdl.prj	    VERSION_BLK.vhd
+GEC_TX_CTL_0.spl		    vhdl.bmm
+GEC_TX_CTL_0.sym		    webtalk_impact.xml
+GEC_TX_CTL_0.vhd		    webtalk_pn.xml
+GEC_TX_CTL_1.spl		    xlnx_auto_0.ise
+GEC_TX_CTL_1.sym		    xlnx_auto_0_xdb
+GEC_TX_CTL_1.vhd		    XLXI_274#gigabit_ethernet_controller.ngr
+GEC_TX_CTL_8.spl		    xst
+GEC_TX_CTL_8.sym
+source top.sdc
+# set_input_delay -clock fadc_dclk -max 2.375 [get_ports BUSB_00DP*]
+invalid command name "set_input_delay"
+    while executing
+"set_input_delay -clock fadc_dclk -max 2.375 [get_ports BUSB_00DP*]"
+    (file "top.sdc" line 1)
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See D:/cbradford/KickerControllerFirmware/GEL_CAPTAN\planAhead_pid5016.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Oct 05 10:16:39 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead

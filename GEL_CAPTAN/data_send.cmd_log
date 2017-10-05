@@ -16,7 +16,3 @@ vhdtdtfi -lib work data_send.vhd -prj dig_mac -o data_send.spl -module data_send
 spl2sym -intstyle ise -family virtex4 -w data_send.spl D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.sym 
 vhdtdtfi -lib work data_send.vhd -prj dig_mac -o data_send.spl -module data_send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family virtex4 -w data_send.spl D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.sym 
-vhdtdtfi -lib work data_send.vhd -prj dig_mac -o data_send.spl -module data_send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family virtex4 -w data_send.spl D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.sym 
-vhdtdtfi -lib work data_send.vhd -prj dig_mac -o data_send.spl -module data_send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family virtex4 -w data_send.spl D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/data_send.sym 

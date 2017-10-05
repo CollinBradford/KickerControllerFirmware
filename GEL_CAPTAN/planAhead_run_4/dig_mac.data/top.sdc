@@ -1,0 +1,1 @@
+set_input_delay -clock fadc_dclk -max 2.375 [get_ports BUSB_00DP*]

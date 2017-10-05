@@ -52,6 +52,7 @@ entity ethernet_interface is
 		   
 --erased for simple interface  
 		  
+		  user_addr  			: in    std_logic_vector (7 downto 0);
 		  
 		  -- PHY interface signals
 		  MASTER_CLK           	: in    std_logic; 	
@@ -117,11 +118,11 @@ architecture BEHAVIORAL of ethernet_interface is
 	
 	signal arp_announce				: std_logic := '0';  	
 	signal burst_mode				: std_logic := '0';
-	signal self_addr				: std_logic_vector(23 downto 0) := x"C0A885";	 --192.168.133.X;  
+	signal self_addr				: std_logic_vector(23 downto 0) := x"C0A81E"; --192.168.30.X; x"C0A885";	 --192.168.133.X;
 	signal self_mac 				: std_logic_vector(39 downto 0) := x"008055EC00";                
 	signal self_port				: std_logic_vector(15 downto 0) := ETH_CONTROLLER_DEFAULT_PORT;							                
-	signal user_addr_byte			: std_logic_vector(7 downto 0)  := ETH_CONTROLLER_DEFAULT_ADDR;	
-	signal user_addr_sig			: std_logic_vector(7 downto 0)  := ETH_CONTROLLER_DEFAULT_ADDR;	
+	signal user_addr_byte			: std_logic_vector(7 downto 0) := ETH_CONTROLLER_DEFAULT_ADDR;	
+	signal user_addr_sig			: std_logic_vector(7 downto 0) := ETH_CONTROLLER_DEFAULT_ADDR;	
 	signal tx_data_dest_addr 		: std_logic_vector(31 downto 0);
 	signal tx_data_dest_mac 		: std_logic_vector(47 downto 0);
 	signal tx_data_dest_port 		: std_logic_vector(15 downto 0);
@@ -138,7 +139,7 @@ architecture BEHAVIORAL of ethernet_interface is
      signal internal_din				: std_logic_vector (63 downto 0):= (others => '0'); 	  
      signal internal_dout				: std_logic_vector (63 downto 0):= (others => '0'); 	
 		  
-     signal user_addr					: std_logic_vector (7 downto 0):= (others => '0'); 
+     --signal user_addr					: std_logic_vector (7 downto 0):= (others => '0'); 
 	-------- end simple declaration section -----------	
   	 											  								     
 begin										 

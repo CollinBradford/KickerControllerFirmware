@@ -16,7 +16,9 @@
         <signal name="ethernet_fifo_in_en" />
         <signal name="stat_ethernet_fifo_in_en" />
         <signal name="stat_b_data(63:0)" />
+        <signal name="XLXN_18" />
         <signal name="XLXN_19" />
+        <signal name="XLXN_20" />
         <signal name="XLXN_21" />
         <signal name="new_stat" />
         <port polarity="Input" name="master_clk" />

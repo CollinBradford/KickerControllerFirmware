@@ -1,2 +1,7 @@
-D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\TOP_LEVEL_cs.ngc 1505761883
+D:\cbradford\KickerControllerFirmware\GEL_CAPTAN\TOP_LEVEL.ngc 1507141688
+D:\cbradford\KickerControllerFirmware\GEL_CAPTAN/DATA_FIFO_0.ngc 1469047994
+D:\cbradford\KickerControllerFirmware\GEL_CAPTAN/INFO_FIFO_0.ngc 1469047994
+../ipcore_dir/ADDR_FIFO.ngc 1469047995
+ipcore_dir/ADC_FIFO.ngc 1506455080
+ipcore_dir/EthernetRAM.ngc 1504814972
 OK

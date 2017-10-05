@@ -1,0 +1,9 @@
+vhdtdtfi -lib work event_analysis.vhd -prj dig_mac -o event_analysis.spl -module event_analysis -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work event_analysis.vhd -prj dig_mac -o event_analysis.spl -module event_analysis -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 -w event_analysis.spl D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.sym 
+vhdtdtfi -lib work event_analysis.vhd -prj dig_mac -o event_analysis.spl -module event_analysis -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 -w event_analysis.spl D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.sym 
+vhdtdtfi -lib work event_analysis.vhd -prj dig_mac -o event_analysis.spl -module event_analysis -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 -w event_analysis.spl D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.sym 
+vhdtdtfi -lib work event_analysis.vhd -prj dig_mac -o event_analysis.spl -module event_analysis -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 -w event_analysis.spl D:/cbradford/KickerControllerFirmware/GEL_CAPTAN/event_analysis.sym 

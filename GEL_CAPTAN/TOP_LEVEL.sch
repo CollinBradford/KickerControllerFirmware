@@ -238,8 +238,7 @@
         <signal name="adc_fifo_overflow" />
         <signal name="fadc_fifo_data_out(63:0)" />
         <signal name="XLXN_15533" />
-        <signal name="XLXN_15532" />
-        <signal name="XLXN_15531" />
+        <signal name="adc_fifo_empty" />
         <signal name="XLXN_15529" />
         <signal name="XLXN_15524" />
         <signal name="fadc_data_in(15:0)" />
@@ -257,7 +256,6 @@
         <signal name="U10_1" />
         <signal name="manual_force_trig" />
         <signal name="ext_trig" />
-        <signal name="XLXN_15794" />
         <signal name="U10_2" />
         <signal name="user_positive_delay(15:0)" />
         <signal name="rx_data(55:40)" />
@@ -266,8 +264,47 @@
         <signal name="rx_data(0:0)" />
         <signal name="debug_signals(4)" />
         <signal name="debug_signals(7:0)" />
-        <signal name="XLXN_15826(7:0)" />
-        <signal name="XLXN_15828(3:0)" />
+        <signal name="event_data_we" />
+        <signal name="veto_clear" />
+        <signal name="veto_force" />
+        <signal name="XLXN_15874(63:0)" />
+        <signal name="reset_force_veto" />
+        <signal name="reset_clear_veto" />
+        <signal name="event_data(63:0)" />
+        <signal name="event_data_end" />
+        <signal name="EVENT_MAP" />
+        <signal name="rx_data(15:8)" />
+        <signal name="rx_data(23:16)" />
+        <signal name="rx_data(25:25)" />
+        <signal name="veto_enabled" />
+        <signal name="rx_data(24:24)" />
+        <signal name="rx_data(26:26)" />
+        <signal name="trigger_out" />
+        <signal name="XLXN_15958" />
+        <signal name="veto" />
+        <signal name="zero_cross_thresh_high(7:0)" />
+        <signal name="zero_cross_thresh_low(7:0)" />
+        <signal name="zero_cross_veto_thresh(7:0)" />
+        <signal name="zero_cross_count(7:0)" />
+        <signal name="clock_enable" />
+        <signal name="IP_MAC_0" />
+        <signal name="IP_MAC_1" />
+        <signal name="IP_MAC_2" />
+        <signal name="IP_MAC_3" />
+        <signal name="IP_MAC_4" />
+        <signal name="IP_MAC_5" />
+        <signal name="IP_MAC_6" />
+        <signal name="IP_MAC_7" />
+        <signal name="ext_ip_addr(7)" />
+        <signal name="ext_ip_addr(6)" />
+        <signal name="ext_ip_addr(5)" />
+        <signal name="ext_ip_addr(4)" />
+        <signal name="ext_ip_addr(3)" />
+        <signal name="ext_ip_addr(2)" />
+        <signal name="ext_ip_addr(1)" />
+        <signal name="ext_ip_addr(0)" />
+        <signal name="ext_ip_addr(7:0)" />
+        <signal name="ip_addr(7:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -349,6 +386,14 @@
         <port polarity="Output" name="U10_3" />
         <port polarity="Input" name="U10_1" />
         <port polarity="Input" name="U10_2" />
+        <port polarity="Input" name="IP_MAC_0" />
+        <port polarity="Input" name="IP_MAC_1" />
+        <port polarity="Input" name="IP_MAC_2" />
+        <port polarity="Input" name="IP_MAC_3" />
+        <port polarity="Input" name="IP_MAC_4" />
+        <port polarity="Input" name="IP_MAC_5" />
+        <port polarity="Input" name="IP_MAC_6" />
+        <port polarity="Input" name="IP_MAC_7" />
         <blockdef name="ibufg">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="0" y2="-64" x1="64" />
@@ -606,7 +651,9 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="ethernet_interface">
-            <timestamp>2017-5-12T17:55:44</timestamp>
+            <timestamp>2017-9-28T18:56:55</timestamp>
+            <rect width="64" x="0" y="148" height="24" />
+            <line x2="0" y1="160" y2="160" x1="64" />
             <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-544" y2="-544" x1="64" />
@@ -632,7 +679,7 @@
             <line x2="464" y1="-96" y2="-96" x1="400" />
             <rect width="64" x="400" y="-44" height="24" />
             <line x2="464" y1="-32" y2="-32" x1="400" />
-            <rect width="336" x="64" y="-576" height="704" />
+            <rect width="336" x="64" y="-576" height="768" />
         </blockdef>
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -659,11 +706,12 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="PeakFinder">
-            <timestamp>2017-9-15T15:53:27</timestamp>
-            <line x2="0" y1="608" y2="608" x1="64" />
+            <timestamp>2017-9-26T20:48:42</timestamp>
             <line x2="0" y1="672" y2="672" x1="64" />
-            <rect width="64" x="0" y="788" height="24" />
-            <line x2="0" y1="800" y2="800" x1="64" />
+            <line x2="0" y1="480" y2="480" x1="64" />
+            <line x2="0" y1="544" y2="544" x1="64" />
+            <rect width="64" x="0" y="596" height="24" />
+            <line x2="0" y1="608" y2="608" x1="64" />
             <line x2="528" y1="480" y2="480" x1="464" />
             <line x2="528" y1="288" y2="288" x1="464" />
             <rect width="64" x="464" y="340" height="24" />
@@ -679,18 +727,19 @@
             <line x2="528" y1="-288" y2="-288" x1="464" />
             <rect width="64" x="464" y="-44" height="24" />
             <line x2="528" y1="-32" y2="-32" x1="464" />
-            <rect width="400" x="64" y="-320" height="1216" />
+            <rect width="400" x="64" y="-320" height="1088" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2017-9-15T15:54:48</timestamp>
+            <timestamp>2017-9-26T20:51:42</timestamp>
+            <line x2="0" y1="800" y2="800" x1="64" />
+            <rect width="64" x="0" y="532" height="24" />
+            <line x2="0" y1="544" y2="544" x1="64" />
             <rect width="64" x="0" y="596" height="24" />
             <line x2="0" y1="608" y2="608" x1="64" />
             <rect width="64" x="0" y="660" height="24" />
             <line x2="0" y1="672" y2="672" x1="64" />
-            <rect width="64" x="0" y="788" height="24" />
-            <line x2="0" y1="800" y2="800" x1="64" />
-            <rect width="64" x="0" y="532" height="24" />
-            <line x2="0" y1="544" y2="544" x1="64" />
+            <rect width="64" x="0" y="724" height="24" />
+            <line x2="0" y1="736" y2="736" x1="64" />
             <line x2="0" y1="160" y2="160" x1="64" />
             <rect width="64" x="0" y="212" height="24" />
             <line x2="0" y1="224" y2="224" x1="64" />
@@ -719,7 +768,7 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
         <blockdef name="ADC_FIFO">
-            <timestamp>2017-9-14T19:2:13</timestamp>
+            <timestamp>2017-9-26T19:44:45</timestamp>
             <rect width="768" x="32" y="32" height="4032" />
             <line x2="32" y1="208" y2="208" x1="0" />
             <line x2="32" y1="240" y2="240" style="linewidth:W" x1="0" />
@@ -759,6 +808,55 @@
             <line x2="192" y1="-64" y2="-32" x1="192" />
             <line x2="64" y1="-32" y2="-32" x1="192" />
             <rect width="256" x="64" y="-320" height="256" />
+        </blockdef>
+        <blockdef name="event_analysis">
+            <timestamp>2017-9-26T21:4:46</timestamp>
+            <line x2="0" y1="480" y2="480" x1="64" />
+            <line x2="0" y1="416" y2="416" x1="64" />
+            <line x2="0" y1="32" y2="32" x1="64" />
+            <line x2="0" y1="96" y2="96" x1="64" />
+            <line x2="0" y1="160" y2="160" x1="64" />
+            <line x2="0" y1="224" y2="224" x1="64" />
+            <rect width="64" x="0" y="276" height="24" />
+            <line x2="0" y1="288" y2="288" x1="64" />
+            <rect width="64" x="0" y="340" height="24" />
+            <line x2="0" y1="352" y2="352" x1="64" />
+            <line x2="656" y1="32" y2="32" x1="592" />
+            <line x2="656" y1="96" y2="96" x1="592" />
+            <line x2="656" y1="160" y2="160" x1="592" />
+            <line x2="656" y1="224" y2="224" x1="592" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="656" y1="-416" y2="-416" x1="592" />
+            <rect width="64" x="592" y="-172" height="24" />
+            <line x2="656" y1="-160" y2="-160" x1="592" />
+            <rect width="64" x="592" y="-44" height="24" />
+            <line x2="656" y1="-32" y2="-32" x1="592" />
+            <rect width="528" x="64" y="-448" height="960" />
+        </blockdef>
+        <blockdef name="obuf8">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="64" y1="0" y2="-64" x1="64" />
+            <line x2="64" y1="-32" y2="0" x1="128" />
+            <line x2="128" y1="-64" y2="-32" x1="64" />
+            <line x2="128" y1="-32" y2="-32" x1="224" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <rect width="96" x="128" y="-44" height="24" />
+        </blockdef>
+        <blockdef name="ext_ip_addr_map">
+            <timestamp>2017-9-28T16:51:2</timestamp>
+            <rect width="352" x="64" y="-64" height="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="416" y="-44" height="24" />
+            <line x2="480" y1="-32" y2="-32" x1="416" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
@@ -875,7 +973,7 @@
             <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="D5" />
             <blockpin signalname="MANUAL_TRIG_MAP" name="D6" />
             <blockpin signalname="GLOBAL_RESET_MAP" name="D7" />
-            <blockpin name="D8" />
+            <blockpin signalname="EVENT_MAP" name="D8" />
             <blockpin name="D9" />
         </block>
         <block symbolname="and2b1" name="XLXI_4697">
@@ -1673,6 +1771,7 @@
         </block>
         <block symbolname="ethernet_interface" name="XLXI_6227">
             <blockpin signalname="XLXN_15140" name="reset_in" />
+            <blockpin signalname="b_force_packet" name="b_force_packet" />
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="MASTER_CLK" name="MASTER_CLK" />
             <blockpin signalname="clock_5mhz" name="slow_clk" />
@@ -1690,7 +1789,7 @@
             <blockpin signalname="rx_addr(31:0)" name="rx_addr(31:0)" />
             <blockpin signalname="rx_data(63:0)" name="rx_data(63:0)" />
             <blockpin signalname="PHY_TXD_sig(7:0)" name="PHY_TXD(7:0)" />
-            <blockpin signalname="b_force_packet" name="b_force_packet" />
+            <blockpin signalname="ip_addr(7:0)" name="user_addr(7:0)" />
         </block>
         <block symbolname="gnd" name="XLXI_6228">
             <blockpin signalname="XLXN_15140" name="G" />
@@ -1751,25 +1850,8 @@
             <blockpin signalname="MASTER_CLK" name="rd_clk" />
             <blockpin signalname="fadc_fifo_data_out(63:0)" name="dout(63:0)" />
             <blockpin signalname="XLXN_15529" name="rd_en" />
-            <blockpin signalname="XLXN_15531" name="empty" />
-            <blockpin signalname="XLXN_15532" name="valid" />
-        </block>
-        <block symbolname="data_send" name="XLXI_6253">
-            <blockpin signalname="reset" name="rst" />
-            <blockpin signalname="MASTER_CLK" name="clk" />
-            <blockpin signalname="new_trigger" name="new_trigger" />
-            <blockpin signalname="data_send_in(63:0)" name="data_in(63:0)" />
-            <blockpin signalname="trigger_addr(9:0)" name="trigger_addr(9:0)" />
-            <blockpin signalname="ram_addr(9:0)" name="ram_addr(9:0)" />
-            <blockpin signalname="user_sample_size(15:0)" name="user_sample_size(15:0)" />
-            <blockpin signalname="user_pretrig_sample_size(15:0)" name="user_pretrig_sample_size(15:0)" />
-            <blockpin signalname="user_positive_delay(15:0)" name="user_positive_delay(15:0)" />
-            <blockpin signalname="debug_signals(7:0)" name="debug_signals(7:0)" />
-            <blockpin signalname="XLXN_15826(7:0)" name="zero_crossing_count(7:0)" />
-            <blockpin signalname="XLXN_15828(3:0)" name="signal_ID(3:0)" />
-            <blockpin signalname="b_data_we" name="b_data_we" />
-            <blockpin signalname="b_force_packet" name="b_force_packet" />
-            <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
+            <blockpin signalname="adc_fifo_empty" name="empty" />
+            <blockpin signalname="clock_enable" name="valid" />
         </block>
         <block symbolname="fd16re" name="XLXI_6394">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -1792,13 +1874,11 @@
             <blockpin signalname="peak_finder_data_out(63:0)" name="data_out(63:0)" />
             <blockpin signalname="ram_addr(9:0)" name="addr_out(9:0)" />
             <blockpin signalname="trigger_addr(9:0)" name="trigger_address(9:0)" />
+            <blockpin signalname="clock_enable" name="clock_enable" />
         </block>
         <block symbolname="obuf" name="XLXI_6404">
-            <blockpin signalname="XLXN_15794" name="I" />
+            <blockpin signalname="trigger_out" name="I" />
             <blockpin signalname="U10_3" name="O" />
-        </block>
-        <block symbolname="gnd" name="XLXI_6406">
-            <blockpin signalname="XLXN_15794" name="G" />
         </block>
         <block symbolname="ibuf" name="XLXI_6408">
             <blockpin signalname="U10_2" name="I" />
@@ -1828,6 +1908,145 @@
             <blockpin signalname="clear_manual_trig" name="CLR" />
             <blockpin signalname="rx_data(0:0)" name="D" />
             <blockpin signalname="manual_force_trig" name="Q" />
+        </block>
+        <block symbolname="event_analysis" name="XLXI_6415">
+            <blockpin signalname="MASTER_CLK" name="clk" />
+            <blockpin signalname="reset" name="reset" />
+            <blockpin signalname="event_data_we" name="data_in_we" />
+            <blockpin signalname="event_data_end" name="data_in_end" />
+            <blockpin signalname="veto_clear" name="clear_veto" />
+            <blockpin signalname="veto_force" name="force_veto" />
+            <blockpin signalname="veto_enabled" name="veto_en" />
+            <blockpin signalname="event_data(63:0)" name="data_in(63:0)" />
+            <blockpin signalname="XLXN_15874(63:0)" name="footer_in(63:0)" />
+            <blockpin signalname="zero_cross_thresh_high(7:0)" name="zero_cross_thresh_high(7:0)" />
+            <blockpin signalname="zero_cross_thresh_low(7:0)" name="zero_cross_thresh_low(7:0)" />
+            <blockpin signalname="zero_cross_veto_thresh(7:0)" name="zero_cross_veto_thresh(7:0)" />
+            <blockpin signalname="b_data_we" name="data_out_we" />
+            <blockpin signalname="b_force_packet" name="data_out_end" />
+            <blockpin signalname="veto" name="veto" />
+            <blockpin signalname="reset_clear_veto" name="reset_clear_veto" />
+            <blockpin signalname="reset_force_veto" name="reset_force_veto" />
+            <blockpin signalname="b_data(63:0)" name="data_out(63:0)" />
+            <blockpin signalname="zero_cross_count(7:0)" name="zero_cross_count(7:0)" />
+            <blockpin signalname="ram_en" name="clock_enable" />
+        </block>
+        <block symbolname="data_send" name="XLXI_6253">
+            <blockpin signalname="reset" name="rst" />
+            <blockpin signalname="MASTER_CLK" name="clk" />
+            <blockpin signalname="new_trigger" name="new_trigger" />
+            <blockpin signalname="data_send_in(63:0)" name="data_in(63:0)" />
+            <blockpin signalname="trigger_addr(9:0)" name="trigger_addr(9:0)" />
+            <blockpin signalname="ram_addr(9:0)" name="ram_addr(9:0)" />
+            <blockpin signalname="user_sample_size(15:0)" name="user_sample_size(15:0)" />
+            <blockpin signalname="user_pretrig_sample_size(15:0)" name="user_pretrig_sample_size(15:0)" />
+            <blockpin signalname="user_positive_delay(15:0)" name="user_positive_delay(15:0)" />
+            <blockpin signalname="debug_signals(7:0)" name="debug_signals(7:0)" />
+            <blockpin name="signal_ID(3:0)" />
+            <blockpin name="header(59:0)" />
+            <blockpin signalname="event_data_we" name="b_data_we" />
+            <blockpin signalname="event_data_end" name="b_force_packet" />
+            <blockpin signalname="event_data(63:0)" name="b_data(63:0)" />
+            <blockpin signalname="ram_en" name="clock_enable" />
+        </block>
+        <block symbolname="fd8re" name="XLXI_6418">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="EVENT_MAP" name="CE" />
+            <blockpin signalname="rx_data(7:0)" name="D(7:0)" />
+            <blockpin signalname="reset" name="R" />
+            <blockpin signalname="zero_cross_thresh_low(7:0)" name="Q(7:0)" />
+        </block>
+        <block symbolname="fd8re" name="XLXI_6419">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="EVENT_MAP" name="CE" />
+            <blockpin signalname="rx_data(15:8)" name="D(7:0)" />
+            <blockpin signalname="reset" name="R" />
+            <blockpin signalname="zero_cross_thresh_high(7:0)" name="Q(7:0)" />
+        </block>
+        <block symbolname="fd8re" name="XLXI_6420">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="EVENT_MAP" name="CE" />
+            <blockpin signalname="rx_data(23:16)" name="D(7:0)" />
+            <blockpin signalname="reset" name="R" />
+            <blockpin signalname="zero_cross_veto_thresh(7:0)" name="Q(7:0)" />
+        </block>
+        <block symbolname="fdce" name="XLXI_6422">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="EVENT_MAP" name="CE" />
+            <blockpin signalname="reset_force_veto" name="CLR" />
+            <blockpin signalname="rx_data(25:25)" name="D" />
+            <blockpin signalname="veto_force" name="Q" />
+        </block>
+        <block symbolname="fdre" name="XLXI_6423">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="EVENT_MAP" name="CE" />
+            <blockpin signalname="rx_data(24:24)" name="D" />
+            <blockpin signalname="reset" name="R" />
+            <blockpin signalname="veto_enabled" name="Q" />
+        </block>
+        <block symbolname="fdce" name="XLXI_6421">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="EVENT_MAP" name="CE" />
+            <blockpin signalname="reset_clear_veto" name="CLR" />
+            <blockpin signalname="rx_data(26:26)" name="D" />
+            <blockpin signalname="veto_clear" name="Q" />
+        </block>
+        <block symbolname="inv" name="XLXI_6433">
+            <blockpin signalname="veto" name="I" />
+            <blockpin signalname="XLXN_15958" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_6434">
+            <blockpin signalname="XLXN_15958" name="I0" />
+            <blockpin signalname="ext_trig" name="I1" />
+            <blockpin signalname="trigger_out" name="O" />
+        </block>
+        <block symbolname="obuf8" name="XLXI_6435">
+            <blockpin signalname="zero_cross_count(7:0)" name="I(7:0)" />
+            <blockpin name="O(7:0)" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6436">
+            <blockpin signalname="adc_fifo_empty" name="I" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6437">
+            <blockpin signalname="clock_enable" name="I" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6439">
+            <blockpin signalname="IP_MAC_0" name="I" />
+            <blockpin signalname="ext_ip_addr(0)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6440">
+            <blockpin signalname="IP_MAC_1" name="I" />
+            <blockpin signalname="ext_ip_addr(1)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6441">
+            <blockpin signalname="IP_MAC_2" name="I" />
+            <blockpin signalname="ext_ip_addr(2)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6442">
+            <blockpin signalname="IP_MAC_3" name="I" />
+            <blockpin signalname="ext_ip_addr(3)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6443">
+            <blockpin signalname="IP_MAC_4" name="I" />
+            <blockpin signalname="ext_ip_addr(4)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6445">
+            <blockpin signalname="IP_MAC_5" name="I" />
+            <blockpin signalname="ext_ip_addr(5)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6446">
+            <blockpin signalname="IP_MAC_6" name="I" />
+            <blockpin signalname="ext_ip_addr(6)" name="O" />
+        </block>
+        <block symbolname="ibuf" name="XLXI_6447">
+            <blockpin signalname="IP_MAC_7" name="I" />
+            <blockpin signalname="ext_ip_addr(7)" name="O" />
+        </block>
+        <block symbolname="ext_ip_addr_map" name="XLXI_6448">
+            <blockpin signalname="ext_ip_addr(7:0)" name="ext_ip_addr(7:0)" />
+            <blockpin signalname="ip_addr(7:0)" name="ip_addr_out(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2019,6 +2238,96 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4672" y="3168" type="branch" />
             <wire x2="4672" y1="3168" y2="3168" x1="4512" />
         </branch>
+        <branch name="EVENT_MAP">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4528" y="3296" type="branch" />
+            <wire x2="4528" y1="3296" y2="3296" x1="4512" />
+        </branch>
+        <instance x="688" y="1776" name="XLXI_6439" orien="R0" />
+        <instance x="688" y="1840" name="XLXI_6440" orien="R0" />
+        <instance x="688" y="1904" name="XLXI_6441" orien="R0" />
+        <instance x="688" y="1968" name="XLXI_6442" orien="R0" />
+        <instance x="688" y="2032" name="XLXI_6443" orien="R0" />
+        <instance x="688" y="2096" name="XLXI_6445" orien="R0" />
+        <instance x="688" y="2160" name="XLXI_6446" orien="R0" />
+        <instance x="688" y="2224" name="XLXI_6447" orien="R0" />
+        <branch name="IP_MAC_0">
+            <wire x2="688" y1="1744" y2="1744" x1="672" />
+        </branch>
+        <branch name="IP_MAC_1">
+            <wire x2="688" y1="1808" y2="1808" x1="672" />
+        </branch>
+        <branch name="IP_MAC_2">
+            <wire x2="688" y1="1872" y2="1872" x1="672" />
+        </branch>
+        <branch name="IP_MAC_3">
+            <wire x2="688" y1="1936" y2="1936" x1="672" />
+        </branch>
+        <branch name="IP_MAC_4">
+            <wire x2="688" y1="2000" y2="2000" x1="672" />
+        </branch>
+        <branch name="IP_MAC_5">
+            <wire x2="688" y1="2064" y2="2064" x1="672" />
+        </branch>
+        <branch name="IP_MAC_6">
+            <wire x2="688" y1="2128" y2="2128" x1="672" />
+        </branch>
+        <branch name="IP_MAC_7">
+            <wire x2="688" y1="2192" y2="2192" x1="672" />
+        </branch>
+        <branch name="ext_ip_addr(7)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="2192" type="branch" />
+            <wire x2="928" y1="2192" y2="2192" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(6)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="2128" type="branch" />
+            <wire x2="928" y1="2128" y2="2128" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(5)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="2064" type="branch" />
+            <wire x2="928" y1="2064" y2="2064" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(4)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="2000" type="branch" />
+            <wire x2="928" y1="2000" y2="2000" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(3)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="1936" type="branch" />
+            <wire x2="928" y1="1936" y2="1936" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(2)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="1872" type="branch" />
+            <wire x2="928" y1="1872" y2="1872" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(1)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="1808" type="branch" />
+            <wire x2="928" y1="1808" y2="1808" x1="912" />
+        </branch>
+        <branch name="ext_ip_addr(0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="1744" type="branch" />
+            <wire x2="928" y1="1744" y2="1744" x1="912" />
+        </branch>
+        <iomarker fontsize="28" x="672" y="1744" name="IP_MAC_0" orien="R180" />
+        <iomarker fontsize="28" x="672" y="1808" name="IP_MAC_1" orien="R180" />
+        <iomarker fontsize="28" x="672" y="1872" name="IP_MAC_2" orien="R180" />
+        <iomarker fontsize="28" x="672" y="1936" name="IP_MAC_3" orien="R180" />
+        <iomarker fontsize="28" x="672" y="2000" name="IP_MAC_4" orien="R180" />
+        <iomarker fontsize="28" x="672" y="2064" name="IP_MAC_5" orien="R180" />
+        <iomarker fontsize="28" x="672" y="2128" name="IP_MAC_6" orien="R180" />
+        <iomarker fontsize="28" x="672" y="2192" name="IP_MAC_7" orien="R180" />
+        <instance x="1552" y="2000" name="XLXI_6448" orien="R0">
+        </instance>
+        <branch name="ext_ip_addr(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="1968" type="branch" />
+            <wire x2="1552" y1="1968" y2="1968" x1="1536" />
+        </branch>
+        <branch name="ip_addr(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2048" y="1968" type="branch" />
+            <wire x2="2048" y1="1968" y2="1968" x1="2032" />
+        </branch>
+        <branch name="ip_addr(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1248" y="1376" type="branch" />
+            <wire x2="1264" y1="1376" y2="1376" x1="1248" />
+        </branch>
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">
         <branch name="MASTER_CLK">
@@ -2184,32 +2493,16 @@
         <rect width="1416" x="20" y="16" height="268" />
         <instance x="1664" y="1008" name="XLXI_6346" orien="R0" />
         <instance x="384" y="896" name="XLXI_6342" orien="R0" />
-        <instance x="784" y="544" name="XLXI_6341" orien="R0">
-        </instance>
-        <branch name="adc_fifo_overflow">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="1136" type="branch" />
-            <wire x2="768" y1="1136" y2="1136" x1="752" />
-            <wire x2="784" y1="1136" y2="1136" x1="768" />
-        </branch>
         <branch name="XLXN_15533">
             <wire x2="448" y1="896" y2="912" x1="448" />
             <wire x2="752" y1="912" y2="912" x1="448" />
-            <wire x2="784" y1="816" y2="816" x1="752" />
             <wire x2="752" y1="816" y2="912" x1="752" />
+            <wire x2="784" y1="816" y2="816" x1="752" />
         </branch>
-        <branch name="XLXN_15532">
+        <branch name="clock_enable">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1648" y="1136" type="branch" />
             <wire x2="1632" y1="1136" y2="1136" x1="1616" />
-        </branch>
-        <branch name="XLXN_15531">
-            <wire x2="1632" y1="1040" y2="1040" x1="1616" />
-        </branch>
-        <branch name="XLXN_15529">
-            <wire x2="1632" y1="848" y2="848" x1="1616" />
-            <wire x2="1680" y1="848" y2="848" x1="1632" />
-            <wire x2="1680" y1="848" y2="1088" x1="1680" />
-            <wire x2="1728" y1="1088" y2="1088" x1="1680" />
-            <wire x2="1728" y1="1008" y2="1024" x1="1728" />
-            <wire x2="1728" y1="1024" y2="1088" x1="1728" />
+            <wire x2="1648" y1="1136" y2="1136" x1="1632" />
         </branch>
         <branch name="fadc_fifo_data_out(63:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1632" y="816" type="branch" />
@@ -2219,47 +2512,8 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1632" y="784" type="branch" />
             <wire x2="1632" y1="784" y2="784" x1="1616" />
         </branch>
-        <branch name="XLXN_15524">
-            <wire x2="784" y1="1008" y2="1008" x1="752" />
-        </branch>
-        <branch name="fadc_data_in(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="784" type="branch" />
-            <wire x2="768" y1="784" y2="784" x1="752" />
-            <wire x2="784" y1="784" y2="784" x1="768" />
-        </branch>
-        <branch name="FADC_DCLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="752" type="branch" />
-            <wire x2="768" y1="752" y2="752" x1="752" />
-            <wire x2="784" y1="752" y2="752" x1="768" />
-        </branch>
         <instance x="3616" y="912" name="XLXI_6380" orien="R0">
         </instance>
-        <instance x="5088" y="1696" name="XLXI_6253" orien="R0">
-        </instance>
-        <branch name="b_force_packet">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5488" y="1792" type="branch" />
-            <wire x2="5488" y1="1792" y2="1792" x1="5472" />
-        </branch>
-        <branch name="MASTER_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="1408" type="branch" />
-            <wire x2="5056" y1="1408" y2="1408" x1="5040" />
-            <wire x2="5088" y1="1408" y2="1408" x1="5056" />
-        </branch>
-        <branch name="b_data_we">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5504" y="1344" type="branch" />
-            <wire x2="5488" y1="1344" y2="1344" x1="5472" />
-            <wire x2="5504" y1="1344" y2="1344" x1="5488" />
-        </branch>
-        <branch name="b_data(63:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5520" y="1664" type="branch" />
-            <wire x2="5504" y1="1664" y2="1664" x1="5472" />
-            <wire x2="5520" y1="1664" y2="1664" x1="5504" />
-        </branch>
-        <branch name="reset">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="1344" type="branch" />
-            <wire x2="5056" y1="1344" y2="1344" x1="5040" />
-            <wire x2="5088" y1="1344" y2="1344" x1="5056" />
-        </branch>
         <branch name="ram_addr(9:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3600" y="992" type="branch" />
             <wire x2="3616" y1="992" y2="992" x1="3600" />
@@ -2279,30 +2533,6 @@
         <branch name="data_send_in(63:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4208" y="992" type="branch" />
             <wire x2="4208" y1="992" y2="992" x1="4192" />
-        </branch>
-        <branch name="new_trigger">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="1856" type="branch" />
-            <wire x2="5088" y1="1856" y2="1856" x1="5072" />
-        </branch>
-        <branch name="data_send_in(63:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="1920" type="branch" />
-            <wire x2="5088" y1="1920" y2="1920" x1="5072" />
-        </branch>
-        <branch name="trigger_addr(9:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="1984" type="branch" />
-            <wire x2="5088" y1="1984" y2="1984" x1="5072" />
-        </branch>
-        <branch name="ram_addr(9:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2048" type="branch" />
-            <wire x2="5088" y1="2048" y2="2048" x1="5072" />
-        </branch>
-        <branch name="user_sample_size(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2112" type="branch" />
-            <wire x2="5088" y1="2112" y2="2112" x1="5072" />
-        </branch>
-        <branch name="user_pretrig_sample_size(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2176" type="branch" />
-            <wire x2="5088" y1="2176" y2="2176" x1="5072" />
         </branch>
         <instance x="1536" y="5424" name="XLXI_6394" orien="R0" />
         <branch name="rx_data(39:24)">
@@ -2381,14 +2611,6 @@
             <wire x2="976" y1="80" y2="80" x1="960" />
             <wire x2="1008" y1="80" y2="80" x1="976" />
         </branch>
-        <instance x="720" y="336" name="XLXI_6406" orien="R0" />
-        <branch name="XLXN_15794">
-            <wire x2="784" y1="144" y2="208" x1="784" />
-            <wire x2="816" y1="144" y2="144" x1="784" />
-            <wire x2="816" y1="144" y2="208" x1="816" />
-            <wire x2="960" y1="208" y2="208" x1="816" />
-            <wire x2="976" y1="208" y2="208" x1="960" />
-        </branch>
         <iomarker fontsize="28" x="1328" y="80" name="U10_1" orien="R0" />
         <iomarker fontsize="28" x="1328" y="144" name="U10_2" orien="R0" />
         <iomarker fontsize="28" x="1328" y="208" name="U10_3" orien="R0" />
@@ -2398,10 +2620,6 @@
         </branch>
         <instance x="1232" y="112" name="XLXI_6408" orien="R180" />
         <instance x="1232" y="48" name="XLXI_6409" orien="R180" />
-        <branch name="user_positive_delay(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2240" type="branch" />
-            <wire x2="5088" y1="2240" y2="2240" x1="5072" />
-        </branch>
         <instance x="2672" y="5408" name="XLXI_6410" orien="R0" />
         <branch name="user_positive_delay(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3072" y="5152" type="branch" />
@@ -2422,18 +2640,6 @@
         <branch name="reset">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2656" y="5376" type="branch" />
             <wire x2="2672" y1="5376" y2="5376" x1="2656" />
-        </branch>
-        <branch name="manual_force_trig">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2560" type="branch" />
-            <wire x2="2336" y1="2560" y2="2560" x1="2320" />
-        </branch>
-        <branch name="ext_trig">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2624" type="branch" />
-            <wire x2="2336" y1="2624" y2="2624" x1="2320" />
-        </branch>
-        <branch name="trig_types(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2752" type="branch" />
-            <wire x2="2336" y1="2752" y2="2752" x1="2320" />
         </branch>
         <instance x="1616" y="5024" name="XLXI_6414" orien="R0" />
         <branch name="trig_types(7:0)">
@@ -2477,15 +2683,364 @@
             <wire x2="3024" y1="4720" y2="4720" x1="3008" />
         </branch>
         <instance x="2624" y="4976" name="XLXI_6396" orien="R0" />
+        <instance x="4768" y="1376" name="XLXI_6253" orien="R0">
+        </instance>
+        <branch name="event_data_end">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5168" y="1472" type="branch" />
+            <wire x2="5168" y1="1472" y2="1472" x1="5152" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4720" y="1088" type="branch" />
+            <wire x2="4736" y1="1088" y2="1088" x1="4720" />
+            <wire x2="4768" y1="1088" y2="1088" x1="4736" />
+        </branch>
+        <branch name="event_data_we">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5184" y="1024" type="branch" />
+            <wire x2="5168" y1="1024" y2="1024" x1="5152" />
+            <wire x2="5184" y1="1024" y2="1024" x1="5168" />
+        </branch>
+        <branch name="event_data(63:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5200" y="1344" type="branch" />
+            <wire x2="5184" y1="1344" y2="1344" x1="5152" />
+            <wire x2="5200" y1="1344" y2="1344" x1="5184" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4720" y="1024" type="branch" />
+            <wire x2="4736" y1="1024" y2="1024" x1="4720" />
+            <wire x2="4768" y1="1024" y2="1024" x1="4736" />
+        </branch>
+        <branch name="new_trigger">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="1536" type="branch" />
+            <wire x2="4768" y1="1536" y2="1536" x1="4752" />
+        </branch>
+        <branch name="data_send_in(63:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="1600" type="branch" />
+            <wire x2="4768" y1="1600" y2="1600" x1="4752" />
+        </branch>
+        <branch name="trigger_addr(9:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="1664" type="branch" />
+            <wire x2="4768" y1="1664" y2="1664" x1="4752" />
+        </branch>
+        <branch name="ram_addr(9:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="1728" type="branch" />
+            <wire x2="4768" y1="1728" y2="1728" x1="4752" />
+        </branch>
+        <branch name="user_sample_size(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="1792" type="branch" />
+            <wire x2="4768" y1="1792" y2="1792" x1="4752" />
+        </branch>
+        <branch name="user_pretrig_sample_size(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="1856" type="branch" />
+            <wire x2="4768" y1="1856" y2="1856" x1="4752" />
+        </branch>
+        <branch name="user_positive_delay(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="1920" type="branch" />
+            <wire x2="4768" y1="1920" y2="1920" x1="4752" />
+        </branch>
         <branch name="debug_signals(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5072" y="2304" type="branch" />
-            <wire x2="5088" y1="2304" y2="2304" x1="5072" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="1984" type="branch" />
+            <wire x2="4768" y1="1984" y2="1984" x1="4752" />
         </branch>
-        <branch name="XLXN_15826(7:0)">
-            <wire x2="5088" y1="2368" y2="2368" x1="5072" />
+        <instance x="5888" y="1504" name="XLXI_6415" orien="R0">
+        </instance>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5856" y="1152" type="branch" />
+            <wire x2="5872" y1="1152" y2="1152" x1="5856" />
+            <wire x2="5888" y1="1152" y2="1152" x1="5872" />
         </branch>
-        <branch name="XLXN_15828(3:0)">
-            <wire x2="5088" y1="2496" y2="2496" x1="5072" />
+        <branch name="event_data_we">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5856" y="1216" type="branch" />
+            <wire x2="5872" y1="1216" y2="1216" x1="5856" />
+            <wire x2="5888" y1="1216" y2="1216" x1="5872" />
+        </branch>
+        <branch name="event_data(63:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1344" type="branch" />
+            <wire x2="5888" y1="1344" y2="1344" x1="5872" />
+        </branch>
+        <branch name="zero_cross_thresh_high(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1408" type="branch" />
+            <wire x2="5888" y1="1408" y2="1408" x1="5872" />
+        </branch>
+        <branch name="zero_cross_thresh_low(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1472" type="branch" />
+            <wire x2="5888" y1="1472" y2="1472" x1="5872" />
+        </branch>
+        <branch name="b_data(63:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1344" type="branch" />
+            <wire x2="6560" y1="1344" y2="1344" x1="6544" />
+        </branch>
+        <branch name="b_data_we">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1088" type="branch" />
+            <wire x2="6560" y1="1088" y2="1088" x1="6544" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1536" type="branch" />
+            <wire x2="5888" y1="1536" y2="1536" x1="5872" />
+        </branch>
+        <branch name="event_data_end">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1600" type="branch" />
+            <wire x2="5888" y1="1600" y2="1600" x1="5872" />
+        </branch>
+        <branch name="veto_clear">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1664" type="branch" />
+            <wire x2="5888" y1="1664" y2="1664" x1="5872" />
+        </branch>
+        <branch name="veto_force">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1728" type="branch" />
+            <wire x2="5888" y1="1728" y2="1728" x1="5872" />
+        </branch>
+        <branch name="XLXN_15874(63:0)">
+            <wire x2="5888" y1="1792" y2="1792" x1="5872" />
+        </branch>
+        <branch name="zero_cross_veto_thresh(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1856" type="branch" />
+            <wire x2="5888" y1="1856" y2="1856" x1="5872" />
+        </branch>
+        <branch name="reset_force_veto">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1728" type="branch" />
+            <wire x2="6560" y1="1728" y2="1728" x1="6544" />
+        </branch>
+        <branch name="reset_clear_veto">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1664" type="branch" />
+            <wire x2="6560" y1="1664" y2="1664" x1="6544" />
+        </branch>
+        <branch name="veto">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1600" type="branch" />
+            <wire x2="6560" y1="1600" y2="1600" x1="6544" />
+        </branch>
+        <rect width="3452" x="12" y="4564" height="872" />
+        <text style="fontsize:36;fontname:Arial" x="1960" y="4524">TRIGGER_ATTRIBUTES_MAP</text>
+        <instance x="3824" y="4944" name="XLXI_6418" orien="R0" />
+        <instance x="3808" y="5376" name="XLXI_6419" orien="R0" />
+        <instance x="4480" y="4928" name="XLXI_6420" orien="R0" />
+        <instance x="5120" y="4928" name="XLXI_6422" orien="R0" />
+        <branch name="rx_data(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3808" y="4688" type="branch" />
+            <wire x2="3824" y1="4688" y2="4688" x1="3808" />
+        </branch>
+        <branch name="EVENT_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3808" y="4752" type="branch" />
+            <wire x2="3824" y1="4752" y2="4752" x1="3808" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3808" y="4816" type="branch" />
+            <wire x2="3824" y1="4816" y2="4816" x1="3808" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3808" y="4912" type="branch" />
+            <wire x2="3824" y1="4912" y2="4912" x1="3808" />
+        </branch>
+        <branch name="zero_cross_thresh_low(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4224" y="4688" type="branch" />
+            <wire x2="4224" y1="4688" y2="4688" x1="4208" />
+        </branch>
+        <branch name="rx_data(15:8)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3792" y="5120" type="branch" />
+            <wire x2="3808" y1="5120" y2="5120" x1="3792" />
+        </branch>
+        <branch name="EVENT_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3792" y="5184" type="branch" />
+            <wire x2="3808" y1="5184" y2="5184" x1="3792" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3792" y="5248" type="branch" />
+            <wire x2="3808" y1="5248" y2="5248" x1="3792" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3792" y="5344" type="branch" />
+            <wire x2="3808" y1="5344" y2="5344" x1="3792" />
+        </branch>
+        <branch name="zero_cross_thresh_high(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4224" y="5120" type="branch" />
+            <wire x2="4224" y1="5120" y2="5120" x1="4192" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4464" y="4896" type="branch" />
+            <wire x2="4480" y1="4896" y2="4896" x1="4464" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4464" y="4800" type="branch" />
+            <wire x2="4480" y1="4800" y2="4800" x1="4464" />
+        </branch>
+        <branch name="EVENT_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4464" y="4736" type="branch" />
+            <wire x2="4480" y1="4736" y2="4736" x1="4464" />
+        </branch>
+        <branch name="rx_data(23:16)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4464" y="4672" type="branch" />
+            <wire x2="4480" y1="4672" y2="4672" x1="4464" />
+        </branch>
+        <branch name="zero_cross_veto_thresh(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4880" y="4672" type="branch" />
+            <wire x2="4880" y1="4672" y2="4672" x1="4864" />
+        </branch>
+        <branch name="rx_data(25:25)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5104" y="4672" type="branch" />
+            <wire x2="5120" y1="4672" y2="4672" x1="5104" />
+        </branch>
+        <branch name="EVENT_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5104" y="4736" type="branch" />
+            <wire x2="5120" y1="4736" y2="4736" x1="5104" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5104" y="4800" type="branch" />
+            <wire x2="5120" y1="4800" y2="4800" x1="5104" />
+        </branch>
+        <branch name="reset_force_veto">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5104" y="4896" type="branch" />
+            <wire x2="5120" y1="4896" y2="4896" x1="5104" />
+        </branch>
+        <branch name="veto_force">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5520" y="4672" type="branch" />
+            <wire x2="5520" y1="4672" y2="4672" x1="5504" />
+        </branch>
+        <branch name="veto_enabled">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1920" type="branch" />
+            <wire x2="5888" y1="1920" y2="1920" x1="5872" />
+        </branch>
+        <branch name="rx_data(24:24)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4432" y="5104" type="branch" />
+            <wire x2="4448" y1="5104" y2="5104" x1="4432" />
+        </branch>
+        <branch name="EVENT_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4432" y="5168" type="branch" />
+            <wire x2="4448" y1="5168" y2="5168" x1="4432" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4432" y="5232" type="branch" />
+            <wire x2="4448" y1="5232" y2="5232" x1="4432" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4432" y="5328" type="branch" />
+            <wire x2="4448" y1="5328" y2="5328" x1="4432" />
+        </branch>
+        <branch name="veto_enabled">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4848" y="5104" type="branch" />
+            <wire x2="4848" y1="5104" y2="5104" x1="4832" />
+        </branch>
+        <instance x="4448" y="5360" name="XLXI_6423" orien="R0" />
+        <branch name="reset_clear_veto">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5136" y="5296" type="branch" />
+            <wire x2="5152" y1="5296" y2="5296" x1="5136" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5136" y="5200" type="branch" />
+            <wire x2="5152" y1="5200" y2="5200" x1="5136" />
+        </branch>
+        <branch name="EVENT_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5136" y="5136" type="branch" />
+            <wire x2="5152" y1="5136" y2="5136" x1="5136" />
+        </branch>
+        <branch name="rx_data(26:26)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5136" y="5072" type="branch" />
+            <wire x2="5152" y1="5072" y2="5072" x1="5136" />
+        </branch>
+        <branch name="veto_clear">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5552" y="5072" type="branch" />
+            <wire x2="5552" y1="5072" y2="5072" x1="5536" />
+        </branch>
+        <instance x="5152" y="5328" name="XLXI_6421" orien="R0" />
+        <rect width="2364" x="3524" y="4524" height="876" />
+        <text style="fontsize:36;fontname:Arial" x="4428" y="4468">EVENT_MAP</text>
+        <branch name="trigger_out">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="960" y="208" type="branch" />
+            <wire x2="976" y1="208" y2="208" x1="960" />
+        </branch>
+        <instance x="5936" y="2368" name="XLXI_6433" orien="R0" />
+        <instance x="6208" y="2400" name="XLXI_6434" orien="R0" />
+        <branch name="XLXN_15958">
+            <wire x2="6208" y1="2336" y2="2336" x1="6160" />
+        </branch>
+        <branch name="veto">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5920" y="2336" type="branch" />
+            <wire x2="5936" y1="2336" y2="2336" x1="5920" />
+        </branch>
+        <branch name="trigger_out">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="2304" type="branch" />
+            <wire x2="6480" y1="2304" y2="2304" x1="6464" />
+        </branch>
+        <branch name="ext_trig">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6192" y="2272" type="branch" />
+            <wire x2="6208" y1="2272" y2="2272" x1="6192" />
+        </branch>
+        <instance x="6656" y="2208" name="XLXI_6435" orien="R0" />
+        <branch name="zero_cross_count(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1472" type="branch" />
+            <wire x2="6560" y1="1472" y2="1472" x1="6544" />
+        </branch>
+        <branch name="zero_cross_count(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6640" y="2176" type="branch" />
+            <wire x2="6656" y1="2176" y2="2176" x1="6640" />
+        </branch>
+        <branch name="b_force_packet">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1536" type="branch" />
+            <wire x2="6560" y1="1536" y2="1536" x1="6544" />
+        </branch>
+        <branch name="manual_force_trig">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2432" type="branch" />
+            <wire x2="2336" y1="2432" y2="2432" x1="2320" />
+        </branch>
+        <branch name="ext_trig">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2496" type="branch" />
+            <wire x2="2336" y1="2496" y2="2496" x1="2320" />
+        </branch>
+        <branch name="trig_types(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2560" type="branch" />
+            <wire x2="2336" y1="2560" y2="2560" x1="2320" />
+        </branch>
+        <instance x="1968" y="1104" name="XLXI_6436" orien="R0" />
+        <instance x="2000" y="1216" name="XLXI_6437" orien="R0" />
+        <branch name="adc_fifo_empty">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1952" y="1072" type="branch" />
+            <wire x2="1968" y1="1072" y2="1072" x1="1952" />
+        </branch>
+        <branch name="clock_enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1984" y="1184" type="branch" />
+            <wire x2="2000" y1="1184" y2="1184" x1="1984" />
+        </branch>
+        <branch name="clock_enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2624" type="branch" />
+            <wire x2="2336" y1="2624" y2="2624" x1="2320" />
+        </branch>
+        <branch name="ram_en">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4752" y="2176" type="branch" />
+            <wire x2="4768" y1="2176" y2="2176" x1="4752" />
+        </branch>
+        <branch name="ram_en">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="1984" type="branch" />
+            <wire x2="5888" y1="1984" y2="1984" x1="5872" />
+        </branch>
+        <branch name="XLXN_15529">
+            <wire x2="1632" y1="848" y2="848" x1="1616" />
+            <wire x2="1680" y1="848" y2="848" x1="1632" />
+            <wire x2="1680" y1="848" y2="1088" x1="1680" />
+            <wire x2="1728" y1="1088" y2="1088" x1="1680" />
+            <wire x2="1728" y1="1008" y2="1024" x1="1728" />
+            <wire x2="1728" y1="1024" y2="1088" x1="1728" />
+        </branch>
+        <branch name="adc_fifo_overflow">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="1136" type="branch" />
+            <wire x2="768" y1="1136" y2="1136" x1="752" />
+            <wire x2="784" y1="1136" y2="1136" x1="768" />
+        </branch>
+        <branch name="fadc_data_in(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="784" type="branch" />
+            <wire x2="768" y1="784" y2="784" x1="752" />
+            <wire x2="784" y1="784" y2="784" x1="768" />
+        </branch>
+        <branch name="FADC_DCLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="752" type="branch" />
+            <wire x2="768" y1="752" y2="752" x1="752" />
+            <wire x2="784" y1="752" y2="752" x1="768" />
+        </branch>
+        <instance x="784" y="544" name="XLXI_6341" orien="R0">
+        </instance>
+        <branch name="adc_fifo_empty">
+            <wire x2="1632" y1="1040" y2="1040" x1="1616" />
+            <wire x2="1648" y1="1040" y2="1040" x1="1632" />
+        </branch>
+        <branch name="XLXN_15524">
+            <wire x2="784" y1="1008" y2="1008" x1="752" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">

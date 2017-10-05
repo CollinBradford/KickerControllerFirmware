@@ -1,11 +1,11 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Sep 18 14:13:06 2017
+Wed Oct 04 16:03:48 2017
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 47 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 23 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    XLXI_3432/D10
@@ -15,7 +15,6 @@ WARNING:ParHelpers:361 - There are 47 loadless signals in this design. This desi
    XLXI_3432/D14
    XLXI_3432/D15
    XLXI_3432/D7
-   XLXI_3432/D8
    XLXI_3432/D9
    XLXI_6004/O
    XLXI_6051/Q<12>
@@ -27,31 +26,8 @@ WARNING:ParHelpers:361 - There are 47 loadless signals in this design. This desi
    XLXI_6227/data_manager_blk/tx_data_fifo_empty
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>
-   XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
    XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow_i
-   icon_control0<10>
-   icon_control0<11>
-   icon_control0<15>
-   icon_control0<16>
-   icon_control0<17>
-   icon_control0<18>
-   icon_control0<21>
-   icon_control0<22>
-   icon_control0<23>
-   icon_control0<24>
-   icon_control0<25>
-   icon_control0<26>
-   icon_control0<27>
-   icon_control0<28>
-   icon_control0<29>
-   icon_control0<30>
-   icon_control0<31>
-   icon_control0<32>
-   icon_control0<33>
-   icon_control0<34>
-   icon_control0<35>
-   icon_control0<7>
    trig_types<5>
    trig_types<6>
    trig_types<7>

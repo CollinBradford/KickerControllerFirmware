@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Mon Sep 18 14:07:11 2017">
+  <application stringID="Xst" timeStamp="Wed Oct 04 13:26:55 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -113,7 +113,7 @@
       <item DEFAULT="0%" label="-slice_utilization_ratio_maxmargin" stringID="XST_SLICEUTILIZATIONRATIOMAXMARGIN" value="5"/>
     </section>
     <section stringID="XST_HDL_SYNTHESIS_REPORT">
-      <item dataType="int" stringID="XST_ADDERSSUBTRACTORS" value="33">
+      <item dataType="int" stringID="XST_ADDERSSUBTRACTORS" value="34">
         <item dataType="int" stringID="XST_10BIT_ADDER" value="3"/>
         <item dataType="int" stringID="XST_10BIT_SUBTRACTOR" value="1"/>
         <item dataType="int" stringID="XST_11BIT_SUBTRACTOR" value="3"/>
@@ -121,7 +121,7 @@
         <item dataType="int" stringID="XST_16BIT_SUBTRACTOR" value="5"/>
         <item dataType="int" stringID="XST_3BIT_ADDER" value="2"/>
         <item dataType="int" stringID="XST_4BIT_ADDER" value="1"/>
-        <item dataType="int" stringID="XST_8BIT_ADDER" value="4"/>
+        <item dataType="int" stringID="XST_8BIT_ADDER" value="5"/>
       </item>
       <item dataType="int" stringID="XST_COUNTERS" value="14">
         <item dataType="int" stringID="XST_10BIT_UP_COUNTER" value="1"/>
@@ -130,25 +130,25 @@
         <item dataType="int" stringID="XST_4BIT_UP_COUNTER" value="3"/>
         <item dataType="int" stringID="XST_5BIT_DOWN_COUNTER" value="1"/>
       </item>
-      <item dataType="int" stringID="XST_REGISTERS" value="706">
-        <item dataType="int" stringID="XST_1BIT_REGISTER" value="611"/>
+      <item dataType="int" stringID="XST_REGISTERS" value="723">
+        <item dataType="int" stringID="XST_1BIT_REGISTER" value="625"/>
         <item dataType="int" stringID="XST_10BIT_REGISTER" value="3"/>
         <item dataType="int" stringID="XST_11BIT_REGISTER" value="8"/>
         <item dataType="int" stringID="XST_16BIT_REGISTER" value="8"/>
         <item dataType="int" stringID="XST_3BIT_REGISTER" value="1"/>
         <item dataType="int" stringID="XST_32BIT_REGISTER" value="5"/>
         <item dataType="int" stringID="XST_4BIT_REGISTER" value="1"/>
-        <item dataType="int" stringID="XST_8BIT_REGISTER" value="59"/>
+        <item dataType="int" stringID="XST_8BIT_REGISTER" value="60"/>
       </item>
-      <item dataType="int" stringID="XST_COMPARATORS" value="56">
+      <item dataType="int" stringID="XST_COMPARATORS" value="108">
         <item dataType="int" stringID="XST_10BIT_COMPARATOR_EQUAL" value="2"/>
         <item dataType="int" stringID="XST_16BIT_COMPARATOR_LESSEQUAL" value="2"/>
         <item dataType="int" stringID="XST_32BIT_COMPARATOR_EQUAL" value="1"/>
         <item dataType="int" stringID="XST_4BIT_COMPARATOR_GREATER" value="1"/>
-        <item dataType="int" stringID="XST_8BIT_COMPARATOR_GREATER" value="9"/>
-        <item dataType="int" stringID="XST_8BIT_COMPARATOR_LESS" value="8"/>
+        <item dataType="int" stringID="XST_8BIT_COMPARATOR_GREATER" value="17"/>
+        <item dataType="int" stringID="XST_8BIT_COMPARATOR_LESS" value="16"/>
       </item>
-      <item dataType="int" stringID="XST_MULTIPLEXERS" value="8">
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="9">
         <item dataType="int" stringID="XST_32BIT_4TO1_MULTIPLEXER" value="4"/>
       </item>
       <item dataType="int" stringID="XST_XORS" value="153">
@@ -159,7 +159,7 @@
     </section>
     <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORT">
       <item dataType="int" stringID="XST_FSMS" value="8"/>
-      <item dataType="int" stringID="XST_ADDERSSUBTRACTORS" value="33">
+      <item dataType="int" stringID="XST_ADDERSSUBTRACTORS" value="34">
         <item dataType="int" stringID="XST_10BIT_ADDER" value="3"/>
         <item dataType="int" stringID="XST_10BIT_SUBTRACTOR" value="1"/>
         <item dataType="int" stringID="XST_11BIT_SUBTRACTOR" value="3"/>
@@ -167,7 +167,7 @@
         <item dataType="int" stringID="XST_16BIT_SUBTRACTOR" value="5"/>
         <item dataType="int" stringID="XST_3BIT_ADDER" value="2"/>
         <item dataType="int" stringID="XST_4BIT_ADDER" value="1"/>
-        <item dataType="int" stringID="XST_8BIT_ADDER" value="4"/>
+        <item dataType="int" stringID="XST_8BIT_ADDER" value="5"/>
       </item>
       <item dataType="int" stringID="XST_COUNTERS" value="14">
         <item dataType="int" stringID="XST_10BIT_UP_COUNTER" value="1"/>
@@ -176,18 +176,18 @@
         <item dataType="int" stringID="XST_4BIT_UP_COUNTER" value="3"/>
         <item dataType="int" stringID="XST_5BIT_DOWN_COUNTER" value="1"/>
       </item>
-      <item dataType="int" stringID="XST_REGISTERS" value="2083">
-        <item dataType="int" stringID="XST_FLIPFLOPS" value="2083"/>
+      <item dataType="int" stringID="XST_REGISTERS" value="2260">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="2260"/>
       </item>
-      <item dataType="int" stringID="XST_COMPARATORS" value="56">
+      <item dataType="int" stringID="XST_COMPARATORS" value="108">
         <item dataType="int" stringID="XST_10BIT_COMPARATOR_EQUAL" value="2"/>
         <item dataType="int" stringID="XST_16BIT_COMPARATOR_LESSEQUAL" value="2"/>
         <item dataType="int" stringID="XST_32BIT_COMPARATOR_EQUAL" value="1"/>
         <item dataType="int" stringID="XST_4BIT_COMPARATOR_GREATER" value="1"/>
-        <item dataType="int" stringID="XST_8BIT_COMPARATOR_GREATER" value="9"/>
-        <item dataType="int" stringID="XST_8BIT_COMPARATOR_LESS" value="8"/>
+        <item dataType="int" stringID="XST_8BIT_COMPARATOR_GREATER" value="17"/>
+        <item dataType="int" stringID="XST_8BIT_COMPARATOR_LESS" value="16"/>
       </item>
-      <item dataType="int" stringID="XST_MULTIPLEXERS" value="8">
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="9">
         <item dataType="int" stringID="XST_32BIT_4TO1_MULTIPLEXER" value="4"/>
       </item>
       <item dataType="int" stringID="XST_XORS" value="153">
@@ -197,8 +197,8 @@
       </item>
     </section>
     <section stringID="XST_FINAL_REGISTER_REPORT">
-      <item dataType="int" stringID="XST_REGISTERS" value="1767">
-        <item dataType="int" stringID="XST_FLIPFLOPS" value="1767"/>
+      <item dataType="int" stringID="XST_REGISTERS" value="1943">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="1943"/>
       </item>
       <item dataType="int" stringID="XST_SHIFT_REGISTERS" value="8"></item>
     </section>
@@ -216,44 +216,44 @@
         <item stringID="XST_KEEP_HIERARCHY" value="Yes"/>
       </section>
       <section stringID="XST_DESIGN_STATISTICS">
-        <item stringID="XST_IOS" value="81"/>
+        <item stringID="XST_IOS" value="89"/>
       </section>
       <section stringID="XST_CELL_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="6201">
-          <item dataType="int" stringID="XST_AND2" value="5"/>
+        <item dataType="int" stringID="XST_BELS" value="7061">
+          <item dataType="int" stringID="XST_AND2" value="6"/>
           <item dataType="int" stringID="XST_AND2B1" value="4"/>
           <item dataType="int" stringID="XST_BUF" value="5"/>
-          <item dataType="int" stringID="XST_GND" value="28"/>
-          <item dataType="int" stringID="XST_INV" value="186"/>
-          <item dataType="int" stringID="XST_LUT1" value="258"/>
-          <item dataType="int" stringID="XST_LUT2" value="621"/>
-          <item dataType="int" stringID="XST_LUT2D" value="27"/>
-          <item dataType="int" stringID="XST_LUT2L" value="37"/>
-          <item dataType="int" stringID="XST_LUT3" value="1036"/>
-          <item dataType="int" stringID="XST_LUT3D" value="29"/>
-          <item dataType="int" stringID="XST_LUT3L" value="66"/>
-          <item dataType="int" stringID="XST_LUT4" value="1970"/>
-          <item dataType="int" stringID="XST_LUT4D" value="85"/>
-          <item dataType="int" stringID="XST_LUT4L" value="208"/>
-          <item dataType="int" stringID="XST_MUXCY" value="936"/>
-          <item dataType="int" stringID="XST_MUXF5" value="145"/>
-          <item dataType="int" stringID="XST_MUXF6" value="40"/>
+          <item dataType="int" stringID="XST_GND" value="30"/>
+          <item dataType="int" stringID="XST_INV" value="188"/>
+          <item dataType="int" stringID="XST_LUT1" value="292"/>
+          <item dataType="int" stringID="XST_LUT2" value="873"/>
+          <item dataType="int" stringID="XST_LUT2D" value="23"/>
+          <item dataType="int" stringID="XST_LUT2L" value="20"/>
+          <item dataType="int" stringID="XST_LUT3" value="1232"/>
+          <item dataType="int" stringID="XST_LUT3D" value="19"/>
+          <item dataType="int" stringID="XST_LUT3L" value="53"/>
+          <item dataType="int" stringID="XST_LUT4" value="2054"/>
+          <item dataType="int" stringID="XST_LUT4D" value="56"/>
+          <item dataType="int" stringID="XST_LUT4L" value="205"/>
+          <item dataType="int" stringID="XST_MUXCY" value="1200"/>
+          <item dataType="int" stringID="XST_MUXF5" value="211"/>
+          <item dataType="int" stringID="XST_MUXF6" value="74"/>
           <item dataType="int" stringID="XST_OR2" value="3"/>
-          <item dataType="int" stringID="XST_VCC" value="25"/>
+          <item dataType="int" stringID="XST_VCC" value="26"/>
           <item dataType="int" stringID="XST_XOR2" value="2"/>
           <item dataType="int" stringID="XST_XORCY" value="469"/>
         </item>
-        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="2317">
-          <item dataType="int" stringID="XST_FD" value="91"/>
+        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="2493">
+          <item dataType="int" stringID="XST_FD" value="80"/>
           <item dataType="int" stringID="XST_FDC" value="54"/>
-          <item dataType="int" stringID="XST_FDCE" value="97"/>
-          <item dataType="int" stringID="XST_FDE" value="597"/>
+          <item dataType="int" stringID="XST_FDCE" value="99"/>
+          <item dataType="int" stringID="XST_FDE" value="735"/>
           <item dataType="int" stringID="XST_FDP" value="18"/>
           <item dataType="int" stringID="XST_FDPE" value="6"/>
-          <item dataType="int" stringID="XST_FDR" value="96"/>
-          <item dataType="int" stringID="XST_FDRE" value="1165"/>
-          <item dataType="int" stringID="XST_FDRS" value="80"/>
-          <item dataType="int" stringID="XST_FDS" value="16"/>
+          <item dataType="int" stringID="XST_FDR" value="81"/>
+          <item dataType="int" stringID="XST_FDRE" value="1209"/>
+          <item dataType="int" stringID="XST_FDRS" value="87"/>
+          <item dataType="int" stringID="XST_FDS" value="27"/>
           <item dataType="int" stringID="XST_FDSE" value="96"/>
         </item>
         <item dataType="int" stringID="XST_RAMS" value="207">
@@ -266,24 +266,24 @@
         <item dataType="int" stringID="XST_CLOCK_BUFFERS" value="12">
           <item dataType="int" label="-bufg" stringID="XST_BUFG" value="12"/>
         </item>
-        <item dataType="int" stringID="XST_IO_BUFFERS" value="60">
-          <item dataType="int" stringID="XST_IBUF" value="12"/>
+        <item dataType="int" stringID="XST_IO_BUFFERS" value="78">
+          <item dataType="int" stringID="XST_IBUF" value="20"/>
           <item dataType="int" stringID="XST_IBUFG" value="2"/>
-          <item dataType="int" stringID="XST_OBUF" value="25"/>
+          <item dataType="int" stringID="XST_OBUF" value="35"/>
         </item>
         <item dataType="int" stringID="XST_OTHERS" value="2"></item>
       </section>
     </section>
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="4vlx25ff668-10"/>
-      <item AVAILABLE="10752" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="3096"/>
-      <item AVAILABLE="21504" dataType="int" label="Number of Slice Flip Flops" stringID="XST_NUMBER_OF_SLICE_FLIP_FLOPS" value="2317"/>
-      <item AVAILABLE="21504" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="4931"/>
-      <item dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="4523"/>
+      <item AVAILABLE="10752" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="3395"/>
+      <item AVAILABLE="21504" dataType="int" label="Number of Slice Flip Flops" stringID="XST_NUMBER_OF_SLICE_FLIP_FLOPS" value="2493"/>
+      <item AVAILABLE="21504" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="5423"/>
+      <item dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="5015"/>
       <item dataType="int" label="Number used as Shift registers" stringID="XST_NUMBER_USED_AS_SHIFT_REGISTERS" value="24"/>
       <item dataType="int" stringID="XST_NUMBER_USED_AS_RAMS" value="384"/>
-      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="81"/>
-      <item AVAILABLE="448" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="81"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="89"/>
+      <item AVAILABLE="448" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="89"/>
       <item AVAILABLE="32" dataType="int" label="Number of GCLKs" stringID="XST_NUMBER_OF_GCLKS" value="12"/>
       <item AVAILABLE="8" dataType="int" label="Number of DCM_ADVs" stringID="XST_NUMBER_OF_DCMADVS" value="5"/>
     </section>
@@ -292,7 +292,7 @@
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="273"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="275"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="126"/>
     </section>
   </application>

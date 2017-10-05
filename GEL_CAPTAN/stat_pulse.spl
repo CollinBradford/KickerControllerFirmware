@@ -1,0 +1,14 @@
+[Inputs]
+master_clk
+reset
+adc_fifo_overflow
+ethernet_fifo_overflow
+new_peak
+ethernet_fifo_in_en
+[Outputs]
+adc_fifo_overflow_lat_res
+ethernet_fifo_overflow_lat_res
+stat_ethernet_fifo_in_en
+new_stat
+=tx_data[63:0]=
+[BiDir]
